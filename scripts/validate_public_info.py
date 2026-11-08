@@ -27,11 +27,14 @@ def validate(name,d):
    assert isinstance(day.get("soup"),str)
  if name=="source-health.json":
   assert isinstance(d.get("failed"),list) and isinstance(d.get("ok"),bool)
+  assert d["ok"] == (len(d["failed"])==0)
+  assert d.get("total",0)>=len(d["failed"])
  if name=="city-newsletter.json":url(d["url"])
 for name in sorted(FILES):
  p=DATA/name
  if not p.exists():
-  print("PENDING",name)
+  if name=="source-health.json":raise AssertionError("Missing mandatory source-health.json")
+  print("PENDING (source not yet verified)",name)
   continue
  validate(name,json.loads(p.read_text(encoding="utf-8")))
  print("VALID",name)
