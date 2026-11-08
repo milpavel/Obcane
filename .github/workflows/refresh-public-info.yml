@@ -48,4 +48,3 @@ jobs:
               print("Chyby:",len(d.get("failed",[])))
               for f in d.get("failed",[]): print("- ",f.get("source"),":",f.get("error"))
           PY
-          fi
