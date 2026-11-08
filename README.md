@@ -16,3 +16,6 @@ Barvy: fialová #39118b, tyrkysová #008d9a, růžová #ec1763. Původní logo j
 
 ## Redakční pravidla
 Oficiální činnost finančního výboru nezaměňovat za stanoviska sdružení. U finančních údajů vždy přidat ověřitelný zdroj, datum a kontext.
+
+## Cloudflare Pages
+Projekt: `obcane-pro-rtyni`; GitHub deployment z `main`; preview URL: https://obcane-pro-rtyni.pages.dev.
