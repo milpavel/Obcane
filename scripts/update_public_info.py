@@ -121,8 +121,48 @@ def city_news():
  if not out:raise ValueError("No city announcements matched")
  save("city-news.json",{"items":out,"source_url":"https://www.rtyne.cz/"})
 
+
+def city_events():
+ from urllib.parse import urljoin,urlparse
+ soup=get("https://www.rtyne.cz/")
+ today=NOW.date()
+ events=[]
+ # Extract only cards with a clearly stated date and an official detail link.
+ for a in soup.select("a[href]"):
+  title=clean(a.get_text(" ",strip=True))
+  href=urljoin("https://www.rtyne.cz/",a.get("href",""))
+  if urlparse(href).hostname not in ("rtyne.cz","www.rtyne.cz"):continue
+  card=a.find_parent(["article","li","div"])
+  context=clean(card.get_text(" ",strip=True))[:450] if card else title
+  matches=re.findall(r"(?<!\\d)(\\d{1,2})\\.\\s*(\\d{1,2})\\.\\s*(20\\d{2})(?!\\d)",context)
+  for day,month,year in matches[:2]:
+   try:dt=datetime.date(int(year),int(month),int(day))
+   except ValueError:continue
+   if dt<today or dt>today+datetime.timedelta(days=180):continue
+   if len(title)<8 or len(title)>130 or title.lower() in ("všechny události","kalendář událostí"):continue
+   if href not in [x["url"] for x in events]:events.append({"date":dt.isoformat(),"title":title,"url":href})
+ events.sort(key=lambda x:(x["date"],x["title"]))
+ if not events:raise ValueError("No unambiguously dated city events; preserving prior verified data")
+ save("city-events.json",{"items":events[:18],"source_url":"https://www.rtyne.cz/","note":"Dates parsed from official linked event cards; confirm changes with organizer"})
+
+def city_newsletter():
+ from urllib.parse import urljoin,urlparse
+ soup=get("https://www.rtyne.cz/")
+ candidates=[]
+ for a in soup.select("a[href]"):
+  title=clean(a.get_text(" ",strip=True))
+  href=urljoin("https://www.rtyne.cz/",a["href"])
+  if urlparse(href).hostname not in ("www.rtyne.cz","rtyne.cz"):continue
+  if re.search(r"zpravodaj",title+" "+href,re.I):
+   m=re.search(r"(20\\d{2})",title+" "+href)
+   if m:candidates.append((int(m.group(1)),title or "Městský zpravodaj",href))
+ if not candidates:raise ValueError("No newsletter reference")
+ candidates.sort(reverse=True)
+ year,title,url=candidates[0]
+ save("city-newsletter.json",{"title":title,"url":url,"source_url":"https://www.rtyne.cz/","year":year,"note":"Link to official issue; editorial extraction requires separate PDF validation"})
+
 failures=[]
-for label,fn in [("city-news.json",city_news),("school-menu.json",menu),("school-news.json",school_news),("water-news.json",water),("preschool-news.json",preschool)]:
+for label,fn in [("city-events.json",city_events),("city-newsletter.json",city_newsletter),("city-news.json",city_news),("school-menu.json",menu),("school-news.json",school_news),("water-news.json",water),("preschool-news.json",preschool)]:
  try:fn();print("OK",label)
  except Exception as e:
   print("FAILED",label,str(e))
