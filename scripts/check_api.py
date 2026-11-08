@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Live contract checks for the public feed and import authorization."""
-import json,re,urllib.request,urllib.error,datetime
+import json,re,urllib.request,urllib.error,datetime,time
 API='https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api'
+def request(url):
+ for attempt in range(2):
+  try:return urllib.request.urlopen(url,timeout=40)
+  except (urllib.error.URLError,TimeoutError):
+   if attempt:raise
+   time.sleep(1)
 def get(url):
- with urllib.request.urlopen(url,timeout=35) as r:return json.load(r)
+ with request(url) as r:return json.load(r)
 d=get(API)
-assert {s['source_key'] for s in d['sources']}=={'city','school','preschool','water'}
+assert {'city','school','preschool','water','calendar','library','preschool_menu','clubs','services','scouts','orel','koletovka','museum'} <= {s['source_key'] for s in d['sources']}
 assert d['items'], 'No imported items'
 keys=[(x['source_key'],x['external_url']) for x in d['items']]
 assert len(keys)==len(set(keys)), 'Duplicate source URLs'
@@ -20,10 +26,16 @@ assert menus, 'School menu missing'
 for x in menus:
  for day in x['payload']['days']:
   datetime.date.fromisoformat(day['date']);assert day['meals'] and day['soup']
+nursery=next(x for x in d['items'] if x['source_key']=='preschool_menu')
+assert len(nursery['payload']['preschool_days'])==5
+assert all(day['text'] and datetime.date.fromisoformat(day['date']) for day in nursery['payload']['preschool_days'])
+assert any(x['payload'].get('kind')=='club' for x in d['items'])
+assert any(x['source_key']=='calendar' and x['event_date'] for x in d['items'])
+assert any(x['source_key']=='library' for x in d['items'])
 item=d['items'][0]
 assert get(API+'?id='+str(item['id']))['items'][0]['id']==item['id']
 try:
- urllib.request.urlopen(urllib.request.Request(API,data=b'{}',headers={'Content-Type':'application/json'}),timeout=20)
+ request(urllib.request.Request(API,data=b'{}',headers={'Content-Type':'application/json'}))
  raise AssertionError('Anonymous import unexpectedly allowed')
 except urllib.error.HTTPError as e:assert e.code==401, e.code
-print(f"PASS: {len(d['items'])} unique items, 4 sources, menu, ISO event dates, article lookup, anonymous import denied")
+print(f"PASS: {len(d['items'])} unique items, {len(d['sources'])} sources, ZŠ/MŠ menus, clubs, calendar, cancellations, ISO event dates, article lookup, anonymous import denied")
