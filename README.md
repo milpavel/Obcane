@@ -46,3 +46,7 @@ Zachovat původní logo a barvy #39118b, #008d9a, #ec1763. Převzaté informace 
 Spolkový přehled odděluje adresář organizací z webu města od automatických aktualit skautů, Orla a Koletovky. Samostatné profily obsahují původní web. Zprávy dostupné pouze na uzavřených sociálních sítích se nevydávají za automaticky importované.
 
 Praktické služby obsahují odpady a svozový kalendář, sběrný dvůr, městský úřad, lékařské služby, dopravu seniorů, místní poplatky, pečovatelskou službu a muzeum. U každého přehledu je poslední čas načtení. PDF přílohy města lze zobrazit přímo v detailu. Údaje o elektřině a dopravě pocházejí z oznámení města; nejde o přímý dispečink dodavatelů.
+
+## Sloučení odstávek a omezení
+
+`assets/notices.js` slučuje oznámení podle druhu omezení, skutečného termínu a společné lokality (ulice, silnice nebo dotčená čísla domů). Samotný obecný nadpis a datum ke sloučení nestačí. U vody má přednost přímý zdroj VAK; u etap asfaltování souhrnné oznámení s celým rozsahem termínu. Původní odkazy zůstávají v detailu. Aktuální omezení se zobrazují v jedné vlastní sekci; v běžném přehledu zpráv se neopakují. Výslovné hledání a filtr Voda používají stejný sloučený přehled. Původní ID článků zůstávají funkční. Testy `scripts/test_notices.mjs` ověřují sloučení vody a asfaltování, vyřazení skončených omezení a zachování různých dat a ulic.
