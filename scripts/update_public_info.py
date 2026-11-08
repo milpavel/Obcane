@@ -12,7 +12,11 @@ def get(url):
  return BeautifulSoup(r.text,"html.parser")
 def clean(s):return re.sub(r"\s+"," ",s or "").strip()
 def save(name,data):
- (BASE/name).write_text(json.dumps({"checked_at":NOW.isoformat(),**data},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ path=BASE/name
+ content=json.dumps({"checked_at":NOW.isoformat(),**data},ensure_ascii=False,indent=2)+"\n"
+ temp=path.with_suffix(path.suffix+".tmp")
+ temp.write_text(content,encoding="utf-8")
+ temp.replace(path)
 def menu():
  root="https://www.zsrtyne.cz"
  soup=get(root+"/pro-verejnost/aktuality")
@@ -118,7 +122,8 @@ def city_news():
   if any(x in title.lower() for x in ("rozpočtové opatření","přerušení dodávky","uzavření skládky","frézování komunikace","závěrečný účet","veřejná vyhláška","kulturní a sportovní akce","aktuální informace")):
    if href not in [x["url"] for x in out]:out.append({"title":title,"url":href})
   if len(out)>=12:break
- if not out:raise ValueError("No city announcements matched")
+ if not out:
+  save("city-news.json",{"items":[],"source_url":"https://www.rtyne.cz/","note":"No matching city announcements found in this source snapshot"})
  save("city-news.json",{"items":out,"source_url":"https://www.rtyne.cz/"})
 
 
@@ -169,4 +174,4 @@ for label,fn in [("city-events.json",city_events),("city-newsletter.json",city_n
   # Never overwrite previously verified data on a failed fetch; UI checks freshness.
   failures.append({"source":label,"error":str(e)[:180]})
 
-save("source-health.json",{"failed":failures,"ok":len(failures)==0})
+save("source-health.json",{"failed":failures,"ok":len(failures)==0,"successful":7-len(failures),"total":7})
