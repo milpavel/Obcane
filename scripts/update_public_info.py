@@ -134,7 +134,7 @@ def city_events():
   if urlparse(href).hostname not in ("rtyne.cz","www.rtyne.cz"):continue
   card=a.find_parent(["article","li","div"])
   context=clean(card.get_text(" ",strip=True))[:450] if card else title
-  matches=re.findall(r"(?<!\\d)(\\d{1,2})\\.\\s*(\\d{1,2})\\.\\s*(20\\d{2})(?!\\d)",context)
+  matches=re.findall(r"(?<!\d)(\d{1,2})\.\s*(\d{1,2})\.\s*(20\d{2})(?!\d)",context)
   for day,month,year in matches[:2]:
    try:dt=datetime.date(int(year),int(month),int(day))
    except ValueError:continue
@@ -154,7 +154,7 @@ def city_newsletter():
   href=urljoin("https://www.rtyne.cz/",a["href"])
   if urlparse(href).hostname not in ("www.rtyne.cz","rtyne.cz"):continue
   if re.search(r"zpravodaj",title+" "+href,re.I):
-   m=re.search(r"(20\\d{2})",title+" "+href)
+   m=re.search(r"(20\d{2})",title+" "+href)
    if m:candidates.append((int(m.group(1)),title or "Městský zpravodaj",href))
  if not candidates:raise ValueError("No newsletter reference")
  candidates.sort(reverse=True)
