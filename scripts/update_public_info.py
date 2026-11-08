@@ -8,7 +8,7 @@ BASE=pathlib.Path("data");BASE.mkdir(exist_ok=True)
 HEAD={"User-Agent":"ObcaneProRtyni/1.0 (+https://obcane-pro-rtyni.pages.dev; public information monitor)"}
 def get(url):
  r=requests.get(url,headers=HEAD,timeout=22);r.raise_for_status()
- r.encoding=r.apparent_encoding or "utf-8"
+ if not r.encoding or r.encoding.lower()=="iso-8859-1":r.encoding=r.apparent_encoding or "utf-8"
  return BeautifulSoup(r.text,"html.parser")
 def clean(s):return re.sub(r"\s+"," ",s or "").strip()
 def save(name,data):
