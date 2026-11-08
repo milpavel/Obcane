@@ -61,32 +61,38 @@ def school_news():
  soup=get("https://www.zsrtyne.cz/pro-verejnost/aktuality")
  out=[]
  from urllib.parse import urljoin
- for h in soup.select("h1,h2,h3"):
-  a=h.find("a",href=True)
+ for h in soup.select("h1,h2,h3,h4"):
+  a=h.find("a",href=True) or h.find_parent("a",href=True)
   if not a:continue
   title=clean(a.get_text(" ",strip=True))
   if not title or len(title)>125 or title.lower() in ("aktuality","školní jídelna"):continue
   url=urljoin("https://www.zsrtyne.cz",a["href"])
-  if "zsrtyne.cz" not in url:continue
+  from urllib.parse import urlparse
+  if urlparse(url).hostname not in ("zsrtyne.cz","www.zsrtyne.cz"):continue
   if url not in [x["url"] for x in out]:out.append({"title":title,"url":url})
   if len(out)==8:break
- if not out:raise ValueError("No news")
+ if not out:raise ValueError("No school news found; inspect selector")
  save("school-news.json",{"items":out,"source_url":"https://www.zsrtyne.cz/pro-verejnost/aktuality"})
 def water():
  soup=get("https://www.vakrtyne.cz/havarie-a-odstavky")
  main=soup.select_one("main") or soup
  items=[]
  from urllib.parse import urljoin
- for h in main.select("h2,h3"):
+ for h in main.select("h1,h2,h3,h4"):
   title=clean(h.get_text(" ",strip=True))
   if not re.search("odstáv|přerušení|havári|odkalov|upozornění",title,re.I):continue
+  if re.search(r"(202[0-9])",title):
+   yr=int(re.search(r"(202[0-9])",title).group(1))
+   if yr<NOW.year:continue
   par=h.find_next(["p","div"])
   desc=clean(par.get_text(" ",strip=True))[:240] if par else ""
   a=h.find("a",href=True)
   url=urljoin("https://www.vakrtyne.cz",a["href"]) if a else "https://www.vakrtyne.cz/havarie-a-odstavky"
   if title not in [x["title"] for x in items]:items.append({"title":title,"description":desc,"url":url})
   if len(items)>=8:break
- if not items:raise ValueError("No notices")
+ if not items:
+  save("water-news.json",{"items":[],"source_url":"https://www.vakrtyne.cz/havarie-a-odstavky","verified_active":False})
+  return
  # Do not infer active or upcoming from publication date; website may contain old notices.
  save("water-news.json",{"items":items,"source_url":"https://www.vakrtyne.cz/havarie-a-odstavky","verified_active":False})
 def preschool():
