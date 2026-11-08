@@ -4,7 +4,7 @@ import datetime,json,pathlib,re,sys
 from urllib.parse import urlparse
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DATA=ROOT/"data"
-FILES={"school-menu.json","school-news.json","water-news.json","preschool-news.json","city-news.json","city-events.json","city-newsletter.json","source-health.json"}
+FILES={"school-menu.json","school-news.json","water-news.json","preschool-news.json","city-news.json","city-events.json","city-newsletter.json","source-health.json","preschool-menu.json","newsletter-highlights.json"}
 HOSTS={"rtyne.cz","www.rtyne.cz","zsrtyne.cz","www.zsrtyne.cz","msrtyne.cz","www.msrtyne.cz","vakrtyne.cz","www.vakrtyne.cz"}
 def url(value):
  u=urlparse(value)
