@@ -1,0 +1,1231 @@
+{
+  "items": [
+    {
+      "id": "22",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/preruseni-dodavky-vody-ve-vysehradske-ulici-10-listopadu-2026",
+      "title": "Přerušení dodávky vody ve Vyšehradské ulici – 10. listopadu 2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-11-06T00:00:00.000Z",
+      "summary": "Odstávka se dotkne domů č. p. 831, 862, 867, 833, 575, 787 a 938 a objektu č. ev. 64.",
+      "payload": {
+        "body": [
+          "VAK Rtyně v Podkrkonoší upozorňuje, že v úterý 10. listopadu 2026 od 8:00 hodin bude v uvedených objektech ve Vyšehradské ulici přerušena dodávka vody.",
+          "Důvodem je oprava úniku vody na přípojkovém ventilu. Odstávka potrvá po nezbytně nutnou dobu opravy.",
+          "Děkujeme za pochopení.",
+          "Petr Vernervedoucí VAK Rtyně v Podkrkonoší"
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "21",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/zaznam-on-line-prenosu-z-23-verejneho-zasedani-zastupitelstva-mesta-ze-dne-22-4-2026",
+      "title": "Záznam on-line přenosu z 23. veřejného zasedání Zastupitelstva města ze dne 22. 4. 2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-11-06T00:00:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "20",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/zaznam-on-line-prenosu-z-24-verejneho-zasedani-zastupitelstva-mesta-ze-dne-17-6-2026",
+      "title": "Záznam on-line přenosu z 24. veřejného zasedání Zastupitelstva města ze dne 17. 6. 2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-11-06T00:00:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "19",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/zaznam-on-line-prenosu-z-25-verejneho-zasedani-zastupitelstva-mesta-ze-dne-30-9-2026",
+      "title": "Záznam on-line přenosu z 25. veřejného zasedání Zastupitelstva města ze dne 30. 9. 2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-11-06T00:00:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "18",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/zaznam-on-line-prenosu-z-ustavujiciho-verejneho-zasedani-zastupitelstva-mesta-ze-dne-3-11-2026",
+      "title": "Záznam on-line přenosu z ustavujícího veřejného zasedání Zastupitelstva města ze dne 3. 11. 2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-11-06T00:00:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "17",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/svatek-strasidel-kouzelne-strasidelne-odpoledne-1",
+      "title": "SVÁTEK STRAŠIDEL – kouzelné strašidelné odpoledne",
+      "category": "Město",
+      "event_date": "2026-11-14",
+      "published_at": "2026-11-06T00:00:00.000Z",
+      "summary": "Sobota 14. listopadu 2026 od 15:00 do 18:00 hodin – zahrada Königovy vily ve Rtyni v Podkrkonoší.",
+      "payload": {
+        "body": [
+          "Spolky TŠ Bonifác a Contemporary Region zvou malé i velké na kouzelné strašidelné odpoledne plné zábavy a dobrodružství.",
+          "Děti se mohou těšit na plnění strašidelných úkolů a sladkou odměnu v podobě koláče Strašpidlíka.",
+          "Občerstvení zajištěno, masky a kostýmy vítány!Vstupné je dobrovolné.",
+          "Zahradu Königovy vily najdete v ulici Hornická, u odbočky k prodejně Protec PLUS."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "24",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/rozhlasove-hlaseni-5-11-2026",
+      "title": "Rozhlasové hlášení 5. 11. 2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-11-05T00:00:00.000Z",
+      "summary": "Písemný záznam pravidelných a mimořádných rozhlasových hlášení",
+      "payload": {
+        "body": [
+          "Zveme vás na tradiční Martinské slavnosti, které se uskuteční v sobotu 7. listopadu na nádvoří Rychty. Program začne ve 14 hodin příjezdem svatého Martina. Od 15 hodin vystoupí skupina historického šermu Manové Přemysla Otakara. V 16 hodin bude v kině promítána pohádka o svatém Martinovi. Od 14 do 17 hodin bude rovněž umožněn bezplatný vstup do městského muzea. Od 19 hodin proběhne divadelní představení Drahá Mathilda v kině Na Rychtě. Vstupné na divadelní představení činí 100 korun za osobu a vstupenky bude možné zakoupit na místě 30 minut před začátkem. Na odpolední Martinské slavnosti je vstup zdarma.",
+          "Základní organizace Českého zahrádkářského svazu oznamuje, že poslední moštování ovoce proběhne tuto sobotu 7. 11. 2026 od 9.00 do 12.00 hod. a od 13.00 do 16.00 hodin."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "23",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/pokladka-asfaltu-v-opravovanem-useku-hronovske-ulice-6-listopadu-2026",
+      "title": "Pokládka asfaltu v opravovaném úseku Hronovské ulice – 6. listopadu 2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-11-05T00:00:00.000Z",
+      "summary": "Řidiče prosíme o včasné přeparkování vozidel z opravovaného úseku silnice II/567, využití náhradních parkovacích míst a objízdných tras. Omezení souvisí s pokládkou nového asfaltového povrchu.",
+      "payload": {
+        "body": [
+          "Společnost EUROVIA upozorňuje, že v pátek 6. listopadu 2026 od 7:00 do 17:00 hodin bude v opravovaném úseku silnice II/567 v ulici Hronovská ve Rtyni v Podkrkonoší probíhat pokládka asfaltových směsí.",
+          "Z technologických a bezpečnostních důvodů nebude v tomto čase možný průjezd dotčeným úsekem.",
+          "Děkujeme za pochopení a trpělivost během provádění stavebních prací."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "9",
+      "source_key": "water",
+      "external_url": "https://www.vakrtyne.cz/preruseni-dodavky-vody-10-11-2026",
+      "title": "Přerušení dodávky vody 10.11.2026",
+      "category": "Voda",
+      "event_date": "2026-11-10",
+      "published_at": "2026-11-05T00:00:00.000Z",
+      "summary": "Vyšehradská čp. 831, 862, 867, 833, 575, 787, 938 a če. 64 od 8:00",
+      "payload": {
+        "body": [
+          "V úterý 10. listopadu 2026 nepoteče voda v ulici Vyšehradská v čp. 831, 862, 867, 833, 575, 787, 938 a v če. 64. Důvodem je oprava úniku vody na přípojkovém ventilu. Voda nepoteče od 8:00 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "VAK Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.024Z"
+    },
+    {
+      "id": "1",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20261103102641",
+      "title": "„Školky sobě“",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-11-03T09:26:41.000Z",
+      "summary": "Vážení rodiče, ve čtvrtek 5. listopadu 2026 se v naší mateřské škole uskuteční setkání „Školky sobě“, pořádané ve spolupráci s MAS Království – Jestřebí hory v rámci projektu MAP Trutnovsko. Naše mateřská škola bude hostit ředitelky a zástupkyně dalších mateřských škol z regionu. Cílem setkání je vzájemné poznávání, sdílení zkušeností, inspirace a předávání dobré praxe v oblasti předškolního vzdělávání. Jsme rádi, že můžeme naši mateřskou školu představit a přivítat kolegyně z okolních školek.",
+      "payload": {
+        "body": [
+          "Vážení rodiče,",
+          "ve čtvrtek 5. listopadu 2026 se v naší mateřské škole uskuteční setkání „Školky sobě“, pořádané ve spolupráci s MAS Království – Jestřebí hory v rámci projektu MAP Trutnovsko.",
+          "Naše mateřská škola bude hostit ředitelky a zástupkyně dalších mateřských škol z regionu. Cílem setkání je vzájemné poznávání, sdílení zkušeností, inspirace a předávání dobré praxe v oblasti předškolního vzdělávání.",
+          "Jsme rádi, že můžeme naši mateřskou školu představit a přivítat kolegyně z okolních školek."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:30.799Z"
+    },
+    {
+      "id": "2",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20261103062849",
+      "title": "Podzimní zastavení v Žabičkách",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-11-03T05:28:49.000Z",
+      "summary": "Podzimní zastavení v Žabičkách Srdečně Vás zveme ve čtvrtek 12.11.2026 v 15h na ,,Podzimní zastavení\" do třídy Žabiček. Těšit se můžete na pásmo plné písní, básní, tanečků a říkadel. Děti a paní učitelky ze Žabiček.",
+      "payload": {
+        "body": [
+          "Podzimní zastavení v Žabičkách",
+          "Srdečně Vás zveme ve čtvrtek 12.11.2026 v 15h na ,,Podzimní zastavení\" do třídy Žabiček.",
+          "Těšit se můžete na pásmo plné písní, básní, tanečků a říkadel.",
+          "Děti a paní učitelky ze Žabiček."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:30.799Z"
+    },
+    {
+      "id": "31",
+      "source_key": "school",
+      "external_url": "https://www.zsrtyne.cz/zmena-jidelnicku-13",
+      "title": "Změna jídelníčku",
+      "category": "Škola",
+      "event_date": null,
+      "published_at": "2026-11-02T14:58:51.000Z",
+      "summary": "Z důvodu přihlášení malého počtu strávníků se v úterý 3.11. vaří pouze oběd č. 1: Pol. Hovězí … ",
+      "payload": {
+        "body": [
+          "Z důvodu přihlášení malého počtu strávníků se v úterý 3.11. vaří pouze oběd č. 1: Pol. Hovězí vývar s písmenky Pečené kuřecí stehýnko, brambor, obloha",
+          "Oběd č. 2 SE NEVAŘÍ",
+          "Děkujeme za pochopení, kolektiv ŠJ"
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "ZŠ a ZUŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.464Z"
+    },
+    {
+      "id": "12",
+      "source_key": "water",
+      "external_url": "https://www.vakrtyne.cz/preruseni-dodavky-vody-27-10-2026",
+      "title": "Přerušení dodávky vody 27.10.2026",
+      "category": "Voda",
+      "event_date": "2026-10-27",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "summary": "Hornická čp. 618, 594, 593, 592, 591, 621, 597, 596, 595; K jídelně 623; Cesta osvobození 586, 587, 588, 589, 620, 450, od 7:30",
+      "payload": {
+        "body": [
+          "V úterý 27. řijna 2026 nepoteče voda v částích ulic Hornická, K Jídelně a Cesta osvobození. Konkrétně se jedná o čp. 618, 594, 593, 592, 591, 621, 597, 596, 595, 623, 30, 586, 587, 588, 589, 620 a 450. Důvodem je oprava havárie na vodovodu v sídlišti. Voda nepoteče od 7:30 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "VAK Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.024Z"
+    },
+    {
+      "id": "11",
+      "source_key": "water",
+      "external_url": "https://www.vakrtyne.cz/odkalovani-vodovodu-3-11-2026",
+      "title": "Odkalování vodovodu 3.11.2026",
+      "category": "Voda",
+      "event_date": "2026-11-03",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "summary": "Náměrka, Partyzánů, K Františce, Na Rozhraní a Hronovská od železničního viaduktu dále pod Bohdašín od 7:00 do 15:00",
+      "payload": {
+        "body": [
+          "V úterý 3. listopadu 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Náměrka, Partyzánů, K Františce, Na Rozhraní a Hronovská od železničního viaduktu dále pod Bohdašín. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "VAK Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.024Z"
+    },
+    {
+      "id": "10",
+      "source_key": "water",
+      "external_url": "https://www.vakrtyne.cz/odkalovani-vodovodu-5-11-2026",
+      "title": "Odkalování vodovodu 5.11.2026",
+      "category": "Voda",
+      "event_date": "2026-11-05",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "summary": "K Žabárně, Trhovka od 7:00 do 15:00",
+      "payload": {
+        "body": [
+          "Ve čtvrtek 5. listopadu 2025 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích K Žabárně a Trhovka. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "VAK Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.024Z"
+    },
+    {
+      "id": "32",
+      "source_key": "school",
+      "external_url": "https://www.zsrtyne.cz/jidelnicek-na-listopad-2026",
+      "title": "Jídelníček na listopad 2026",
+      "category": "Škola",
+      "event_date": null,
+      "published_at": "2026-10-24T07:33:52.000Z",
+      "summary": "Pondělí 2.11.2026 polévka Z jarní zeleniny Masové kuličky v rajské omáčce, rýže Bramborové šišky s perníkem Úterý 3.11.2026 … ",
+      "payload": {
+        "body": [
+          "polévka Z jarní zeleniny",
+          "Masové kuličky v rajské omáčce, rýže",
+          "Bramborové šišky s perníkem",
+          "polévka Hovězí vývar s písmenky",
+          "Pečené kuřecí stehýnko, brambor, obloha",
+          "Zelňáky",
+          "polévka Kmínová s vajíčkem",
+          "Plněné bramborové knedlíky uzeným masem, zelí",
+          "Rýžová kaše politá čokoládou",
+          "polévka Drůbeží vývar s domácími nudlemi",
+          "Aljašská treska na másle, bramborová kaše, zel. salát",
+          "Špagety s kečupem sypané sýrem",
+          "polévka Mrkvová",
+          "Čočka na kyselo, vejce, okurka",
+          "Vepřové maso v mrkvi, brambor",
+          "polévka Zeleninová s bulgurem",
+          "Krůtí maso po provensálsku, rýže basmati",
+          "Těstoviny zapečené s uzeným mase, červená řepa",
+          "polévka Květáková",
+          "Sekaná pečeně, brambor, zel. salát",
+          "Tortilly plněné kuřecím masem, zeleninou a dresinkem",
+          "polévka Krupicová s vejcem",
+          "Hovězí maso na česneku, bramborové špalíčky, špenát",
+          "Těstovinový salát s tuňákem",
+          "polévka Bramborová skleněná",
+          "Rybí karbanátky se sýrem, bramborová kaše, zel. salát",
+          "Karbanátky z červené čočky, jogurtový dresink",
+          "polévka Hovězí vývar s jáhlami",
+          "Vepřová kýta na smetaně, houskový knedlík",
+          "Fazolky na kyselo, brambor, vejce",
+          "polévka Drůbeží s pohankou",
+          "Rýžový nákyp se švestkami",
+          "polévka Zeleninová se sýrovým kapáním",
+          "Kuřecí rizoto sypané sýrem, červená řepa",
+          "Smetanové bulgureto s hermelínem a žampiony"
+        ],
+        "days": [
+          {
+            "date": "2026-11-02",
+            "soup": "Z jarní zeleniny",
+            "meals": [
+              "Masové kuličky v rajské omáčce, rýže",
+              "Bramborové šišky s perníkem"
+            ]
+          },
+          {
+            "date": "2026-11-03",
+            "soup": "Hovězí vývar s písmenky",
+            "meals": [
+              "Pečené kuřecí stehýnko, brambor, obloha",
+              "Zelňáky"
+            ]
+          },
+          {
+            "date": "2026-11-04",
+            "soup": "Kmínová s vajíčkem",
+            "meals": [
+              "Plněné bramborové knedlíky uzeným masem, zelí",
+              "Rýžová kaše politá čokoládou"
+            ]
+          },
+          {
+            "date": "2026-11-05",
+            "soup": "Drůbeží vývar s domácími nudlemi",
+            "meals": [
+              "Aljašská treska na másle, bramborová kaše, zel. salát",
+              "Špagety s kečupem sypané sýrem"
+            ]
+          },
+          {
+            "date": "2026-11-06",
+            "soup": "Mrkvová",
+            "meals": [
+              "Čočka na kyselo, vejce, okurka",
+              "Vepřové maso v mrkvi, brambor"
+            ]
+          },
+          {
+            "date": "2026-11-09",
+            "soup": "Zeleninová s bulgurem",
+            "meals": [
+              "Krůtí maso po provensálsku, rýže basmati",
+              "Těstoviny zapečené s uzeným mase, červená řepa"
+            ]
+          },
+          {
+            "date": "2026-11-10",
+            "soup": "Květáková",
+            "meals": [
+              "Sekaná pečeně, brambor, zel. salát",
+              "Tortilly plněné kuřecím masem, zeleninou a dresinkem"
+            ]
+          },
+          {
+            "date": "2026-11-11",
+            "soup": "Krupicová s vejcem",
+            "meals": [
+              "Hovězí maso na česneku, bramborové špalíčky, špenát",
+              "Těstovinový salát s tuňákem"
+            ]
+          },
+          {
+            "date": "2026-11-12",
+            "soup": "Bramborová skleněná",
+            "meals": [
+              "Rybí karbanátky se sýrem, bramborová kaše, zel. salát",
+              "Karbanátky z červené čočky, jogurtový dresink"
+            ]
+          },
+          {
+            "date": "2026-11-13",
+            "soup": "Hovězí vývar s jáhlami",
+            "meals": [
+              "Vepřová kýta na smetaně, houskový knedlík",
+              "Fazolky na kyselo, brambor, vejce"
+            ]
+          },
+          {
+            "date": "2026-11-16",
+            "soup": "Drůbeží s pohankou",
+            "meals": [
+              "Rýžový nákyp se švestkami"
+            ]
+          },
+          {
+            "date": "2026-11-18",
+            "soup": "Zeleninová se sýrovým kapáním",
+            "meals": [
+              "Kuřecí rizoto sypané sýrem, červená řepa",
+              "Smetanové bulgureto s hermelínem a žampiony"
+            ]
+          },
+          {
+            "date": "2026-11-19",
+            "soup": "Rybí",
+            "meals": [
+              "Čevabčiči, brambor, hořčice, cibule",
+              "Bramborové placky s jablky"
+            ]
+          },
+          {
+            "date": "2026-11-20",
+            "soup": "Z vaječné jíšky",
+            "meals": [
+              "Cikánská hovězí pečeně, rýže",
+              "Cizrnová kaše s vajíčkem, čalamáda"
+            ]
+          },
+          {
+            "date": "2026-11-23",
+            "soup": "Drůbeží se strouháním",
+            "meals": [
+              "Vepřové maso na paprice, noky",
+              "Makovec, kakao"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "soup": "Selská",
+            "meals": [
+              "Bílá klobása, bramborový salát",
+              "Pizza s kečupem a sýrem"
+            ]
+          },
+          {
+            "date": "2026-11-25",
+            "soup": "Z červené čočky",
+            "meals": [
+              "Dukátové buchtičky s vanilkovým krémem",
+              "Máslový mletý řízek, brambor, zel. salát"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "soup": "Z hlávkového zelí",
+            "meals": [
+              "Vepřová játra na cibulce, rýže",
+              "Smažené filé v sezamové strouhance, bramborová kaše, obloha"
+            ]
+          },
+          {
+            "date": "2026-11-27",
+            "soup": "Hovězí vývar s kuskusem",
+            "meals": [
+              "Vepřový guláš, houskový knedlík",
+              "Kapustové karbanátky, brambor, zel. salát"
+            ]
+          },
+          {
+            "date": "2026-11-30",
+            "soup": "Uzená s rýží",
+            "meals": [
+              "Kuřecí nudličky na kari, barevné těstoviny",
+              "Střapačky se zelím"
+            ]
+          }
+        ],
+        "detail_ok": true,
+        "source_name": "ZŠ a ZUŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.464Z"
+    },
+    {
+      "id": "33",
+      "source_key": "school",
+      "external_url": "https://www.zsrtyne.cz/placeni-obedu-na-mesic-listopad-2026",
+      "title": "Placení obědů na měsíc listopad 2026",
+      "category": "Škola",
+      "event_date": null,
+      "published_at": "2026-10-24T07:30:37.000Z",
+      "summary": "Výběr peněz za obědy na měsíc listopad 2026 bude: Ve čtvrtek 29. 10. 2026 od 8:00 hod. do … ",
+      "payload": {
+        "body": [
+          "Výběr peněz za obědy na měsíc listopad 2026 bude:",
+          "Ve čtvrtek 29. 10. 2026 od 8:00 hod. do 12:00 hod.",
+          "Platby za obědy budou:",
+          "Krásný podzim přeje kolektiv školní jídelny."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "ZŠ a ZUŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.464Z"
+    },
+    {
+      "id": "3",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20261023204739",
+      "title": "Podzimní prázdniny",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-10-23T19:47:39.000Z",
+      "summary": "Podzimní prázdniny Ve čtvrtek 29.10. a v pátek 30.10.2026 budou všechny děti ve třídě Žabiček. Nepřítomné děti budou automaticky odhlášeny.",
+      "payload": {
+        "body": [
+          "Podzimní prázdniny",
+          "Ve čtvrtek 29.10. a v pátek 30.10.2026 budou všechny děti ve třídě Žabiček. Nepřítomné děti budou automaticky odhlášeny."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:30.799Z"
+    },
+    {
+      "id": "25",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/upozorneni-k-odstraneni-a-oklesteni-stromovi-a-jinych-porostu-14",
+      "title": "Upozornění k odstranění a okleštění stromoví a jiných porostů",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-10-21T00:00:00.000Z",
+      "summary": "Zásah provádějte průběžně v období vegetačního klidu dle níže uvedeného rozsahu",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "13",
+      "source_key": "water",
+      "external_url": "https://www.vakrtyne.cz/odkalovani-vodovodu-26-10-2026",
+      "title": "Odkalování vodovodu 26.10.2026",
+      "category": "Voda",
+      "event_date": "2026-10-26",
+      "published_at": "2026-10-21T00:00:00.000Z",
+      "summary": "Úpická, Na Písku, Bosenská, Svatoňovická, Vyšehradská, K Haldě, Zemědělská, U Čističky, Zahradní, Na Ohradech, Pod Opukou od 7:00 do 15:00",
+      "payload": {
+        "body": [
+          "V pondělí 26. řijna 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Úpická, Na Písku, Bosenská, Svatoňovická, Vyšehradská, K Haldě, Zemědělská, U Čističky, Zahradní, Na Ohradech a Pod Opukou. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "VAK Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.024Z"
+    },
+    {
+      "id": "14",
+      "source_key": "water",
+      "external_url": "https://www.vakrtyne.cz/preruseni-dodavky-vody-21-10-2026",
+      "title": "Přerušení dodávky vody 21.10.2026",
+      "category": "Voda",
+      "event_date": "2026-10-21",
+      "published_at": "2026-10-19T00:00:00.000Z",
+      "summary": "Vyšehradská čp. 831, 862, 867, 833, 575, 787, 938 a če. 64 od 8:00",
+      "payload": {
+        "body": [
+          "Ve středu 21. řijna 2026 nepoteče voda v ulici Vyšehradská v čp. 831, 862, 867, 833, 575, 787, 938 a v če. 64. Důvodem je oprava úniku vody na přípojkovém ventilu. Voda nepoteče od 8:00 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "VAK Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.024Z"
+    },
+    {
+      "id": "16",
+      "source_key": "water",
+      "external_url": "https://www.vakrtyne.cz/odkalovani-vodovodu-20-10-2026",
+      "title": "Odkalování vodovodu 20.10.2026",
+      "category": "Voda",
+      "event_date": "2026-10-20",
+      "published_at": "2026-10-14T00:00:00.000Z",
+      "summary": "Družstevní, Úzká, Ke Skalce a Na Rovni od 7:00 do 15:00",
+      "payload": {
+        "body": [
+          "V úterý 20. řijna 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Družstevní, Úzká, Ke Skalce a Na Rovni. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "VAK Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.024Z"
+    },
+    {
+      "id": "15",
+      "source_key": "water",
+      "external_url": "https://www.vakrtyne.cz/odkalovani-vodovodu-22-10-2026",
+      "title": "Odkalování vodovodu 22.10.2026",
+      "category": "Voda",
+      "event_date": "2026-10-22",
+      "published_at": "2026-10-14T00:00:00.000Z",
+      "summary": "K Žabárně, Trhovka, Končiny, Rychetského, Sadová a Kostelecká od 7:00 do 15:00",
+      "payload": {
+        "body": [
+          "Ve čtvrtek 22. října 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích K Žabárně, Trhovka, Končiny, Rychetského, Sadová a Kostelecká. V ulicích Rychetského, Sadová a Kostelecká se jedná o odběratele napojené na vodojem Končiny. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "VAK Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.024Z"
+    },
+    {
+      "id": "4",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20261012094527",
+      "title": "Divadlo",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-10-12T08:45:27.000Z",
+      "summary": "Divadlo V pátek 16.10.2026 děti z mateřské školy navštíví loutkové divadlo ,,O ČERVENÉ KARKULCE\".",
+      "payload": {
+        "body": [
+          "Divadlo",
+          "V pátek 16.10.2026 děti z mateřské školy navštíví loutkové divadlo ,,O ČERVENÉ KARKULCE\"."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:30.799Z"
+    },
+    {
+      "id": "26",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/dotacni-program-na-podporu-projektu-v-roce-2027",
+      "title": "Dotační program na podporu projektů v roce 2027",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-10-09T00:00:00.000Z",
+      "summary": "Město Rtyně v Podkrkonoší na základě usnesení zastupitelstva města č. 25/8/2026 ze dne 30.09.2026 vyhlašuje v souladu s § 10c zákona 650/2000 Sb., o rozpočtových pravidlech územních rozpočtů Program na podporu projektů v roce 2027",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "34",
+      "source_key": "school",
+      "external_url": "https://www.zsrtyne.cz/prezentace-strednich-skol",
+      "title": "Prezentace středních škol",
+      "category": "Škola",
+      "event_date": null,
+      "published_at": "2026-10-08T06:27:15.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "ZŠ a ZUŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.464Z"
+    },
+    {
+      "id": "27",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/rozpoctove-opatreni-c-4-2026",
+      "title": "Rozpočtové opatření č. 4/2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-10-08T00:00:00.000Z",
+      "summary": "Rozpočtové opatření č. 4/2026 - schváleno ZM dne 30.09.2026, usnesení č. 25/2/2026. Do listinné podoby lze nahlédnout na finančním odboru Městského úřadu ve Rtyni v Podkrkonoší v úředních hodinách úřadu.",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "35",
+      "source_key": "school",
+      "external_url": "https://www.zsrtyne.cz/zmena-jidelnicku-12",
+      "title": "Změna jídelníčku",
+      "category": "Škola",
+      "event_date": null,
+      "published_at": "2026-10-07T14:25:00.000Z",
+      "summary": "Z důvodu plánovaného přerušení dodávky elektřiny se v úterý 20.10.2026 vaří pouze oběd č. 1: Pol. mléčná s … ",
+      "payload": {
+        "body": [
+          "Z důvodu plánovaného přerušení dodávky elektřiny se v úterý 20.10.2026 vaří pouze oběd č. 1:",
+          "Pol. mléčná s vajíčkem Pečená vepřová krkovička, brambor, dušená mrkev",
+          "Oběd č. 2 se NEVAŘÍ",
+          "Děkujeme za pochopení, kolektiv ŠJ"
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "ZŠ a ZUŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.464Z"
+    },
+    {
+      "id": "36",
+      "source_key": "school",
+      "external_url": "https://www.zsrtyne.cz/zmena-jidelnicku-11",
+      "title": "Změna jídelníčku",
+      "category": "Škola",
+      "event_date": null,
+      "published_at": "2026-09-30T05:43:21.000Z",
+      "summary": "Z důvodu přihlášení malého počtu strávníků se ve čtvrtek 1.10. vaří pouze oběd č. 1:Pol. Vývar s játrovými knedlíčkyMleté řízečky … ",
+      "payload": {
+        "body": [
+          "Z důvodu přihlášení malého počtu strávníků se ve čtvrtek 1.10. vaří pouze oběd č. 1:Pol. Vývar s játrovými knedlíčkyMleté řízečky se zeleninou, bramborová kaše",
+          "Oběd č. 2 SE NEVAŘÍ",
+          "Děkujeme za pochopení, kolektiv ŠJ"
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "ZŠ a ZUŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.464Z"
+    },
+    {
+      "id": "37",
+      "source_key": "school",
+      "external_url": "https://www.zsrtyne.cz/jidelnicek-na-rijen-2026",
+      "title": "Jídelníček na říjen 2026",
+      "category": "Škola",
+      "event_date": null,
+      "published_at": "2026-09-23T21:31:59.000Z",
+      "summary": "Čtvrtek 1.10.2026 polévka Vývar s játrovými knedlíčky Mleté řízečky se zeleninou, bramborová kaše Sojový salát se zeleninou a … ",
+      "payload": {
+        "body": [
+          "polévka Vývar s játrovými knedlíčky",
+          "Mleté řízečky se zeleninou, bramborová kaše",
+          "Sojový salát se zeleninou a smetanou, cel. pečivo",
+          "polévka Fazolová",
+          "Znojemská hovězí pečeně, houskový knedlík",
+          "Přírodní kuřecí plátek, dušená zelenina, brambor",
+          "polévka Bramborová",
+          "Srbské rizoto z vepřového masa sypané sýrem, kyselá okurka",
+          "Bílé fazole s klobásou, rajčaty, chléb, čalamáda",
+          "polévka Vývar se strouháním",
+          "Rybí karbanátky, bramborová kaše, obloha",
+          "Bramborový guláš, chléb",
+          "polévka Rajská s rýží",
+          "Kynuté buchty s mákem, jablkovými povidly",
+          "Kuskusový salát s balkánským sýrem a sušenými rajčaty",
+          "polévka Kuřecí s bylinkovým kapáním",
+          "Vepřenky, brambor, burgrová omáčka",
+          "Brokolicové krokety, jogurtový dresink, obloha",
+          "polévka Dýňová",
+          "Hovězí pečeně po orientálsku, rýže",
+          "Kuřecí v kapustě, brambor",
+          "polévka Uzená s kroupami",
+          "Vepřové maso cibulář, bramborový knedlík",
+          "Zeleninová quinoa s grilovaným hermelínem",
+          "polévka Rybí",
+          "Přírodní kuřecí nudličky, brambor, fazolky se slaninou",
+          "Luštěninové rizoto sypané sýrem, červená řepa",
+          "polévka Hovězí vývar s domácími nudlemi",
+          "Bavorské vdolečky, kakao",
+          "Těstovinový salát s kuřecím masem",
+          "polévka Podkrkonošské kyselo",
+          "Čočka po orientálsku, vařené vejce, kyselá okurka",
+          "Holandský karbanátek, brambor, zel. salát",
+          "polévka Zeleninová s drožďovými knedlíčky",
+          "Svíčková hovězí pečeně, houskový knedlík"
+        ],
+        "days": [
+          {
+            "date": "2026-10-01",
+            "soup": "Vývar s játrovými knedlíčky",
+            "meals": [
+              "Mleté řízečky se zeleninou, bramborová kaše",
+              "Sojový salát se zeleninou a smetanou, cel. pečivo"
+            ]
+          },
+          {
+            "date": "2026-10-02",
+            "soup": "Fazolová",
+            "meals": [
+              "Znojemská hovězí pečeně, houskový knedlík",
+              "Přírodní kuřecí plátek, dušená zelenina, brambor"
+            ]
+          },
+          {
+            "date": "2026-10-05",
+            "soup": "Bramborová",
+            "meals": [
+              "Srbské rizoto z vepřového masa sypané sýrem, kyselá okurka",
+              "Bílé fazole s klobásou, rajčaty, chléb, čalamáda"
+            ]
+          },
+          {
+            "date": "2026-10-06",
+            "soup": "Vývar se strouháním",
+            "meals": [
+              "Rybí karbanátky, bramborová kaše, obloha",
+              "Bramborový guláš, chléb"
+            ]
+          },
+          {
+            "date": "2026-10-07",
+            "soup": "Rajská s rýží",
+            "meals": [
+              "Kynuté buchty s mákem, jablkovými povidly",
+              "Kuskusový salát s balkánským sýrem a sušenými rajčaty"
+            ]
+          },
+          {
+            "date": "2026-10-08",
+            "soup": "Kuřecí s bylinkovým kapáním",
+            "meals": [
+              "Vepřenky, brambor, burgrová omáčka",
+              "Brokolicové krokety, jogurtový dresink, obloha"
+            ]
+          },
+          {
+            "date": "2026-10-09",
+            "soup": "Dýňová",
+            "meals": [
+              "Hovězí pečeně po orientálsku, rýže",
+              "Kuřecí v kapustě, brambor"
+            ]
+          },
+          {
+            "date": "2026-10-12",
+            "soup": "Uzená s kroupami",
+            "meals": [
+              "Vepřové maso cibulář, bramborový knedlík",
+              "Zeleninová quinoa s grilovaným hermelínem"
+            ]
+          },
+          {
+            "date": "2026-10-13",
+            "soup": "Rybí",
+            "meals": [
+              "Přírodní kuřecí nudličky, brambor, fazolky se slaninou",
+              "Luštěninové rizoto sypané sýrem, červená řepa"
+            ]
+          },
+          {
+            "date": "2026-10-14",
+            "soup": "Hovězí vývar s domácími nudlemi",
+            "meals": [
+              "Bavorské vdolečky, kakao",
+              "Těstovinový salát s kuřecím masem"
+            ]
+          },
+          {
+            "date": "2026-10-15",
+            "soup": "Podkrkonošské kyselo",
+            "meals": [
+              "Čočka po orientálsku, vařené vejce, kyselá okurka",
+              "Holandský karbanátek, brambor, zel. salát"
+            ]
+          },
+          {
+            "date": "2026-10-16",
+            "soup": "Zeleninová s drožďovými knedlíčky",
+            "meals": [
+              "Svíčková hovězí pečeně, houskový knedlík",
+              "Smažený sýr, brambor, tatarka"
+            ]
+          },
+          {
+            "date": "2026-10-19",
+            "soup": "Zelňačka",
+            "meals": [
+              "Karlovarské vepřové maso, noky",
+              "Brambory na loupačku, máslo, tvaroh, acidofilní mléko"
+            ]
+          },
+          {
+            "date": "2026-10-20",
+            "soup": "Mléčná s vajíčkem",
+            "meals": [
+              "Pečená vepřová krkovička, brambor, dušená mrkev",
+              "Bramborové placky s jablíčky"
+            ]
+          },
+          {
+            "date": "2026-10-21",
+            "soup": "Hrstková",
+            "meals": [
+              "Krůtí maso na žampionech, těstoviny",
+              "Perník politý čokoládou, ochucené mléko"
+            ]
+          },
+          {
+            "date": "2026-10-22",
+            "soup": "Boršč",
+            "meals": [
+              "Ryba se slaninou a hořčicí, brambor, obloha",
+              "Špekové knedlíky s opečenou cibulkou, kys. zelí"
+            ]
+          },
+          {
+            "date": "2026-10-23",
+            "soup": "Vývar s ovesnými vločkami",
+            "meals": [
+              "Boloňské špagety sypané sýrem",
+              "Hrachová kaše s opečenou klobásou, čalamáda"
+            ]
+          },
+          {
+            "date": "2026-10-26",
+            "soup": "Gulášová",
+            "meals": [
+              "Kuřecí maso s hráškem a mrkví, brambor",
+              "Myslivecká směs (vepřová kýta, drůbeží játra, paprika, rajčata, žampiony)"
+            ]
+          },
+          {
+            "date": "2026-10-27",
+            "soup": "Hovězí vývar s tarhoňou",
+            "meals": [
+              "Moravský vrabec, bramborové špalíčky, špenát",
+              "Krupicová kaše sypaná kakaem"
+            ]
+          },
+          {
+            "date": "2026-10-29",
+            "soup": "Pórková s vajíčkem",
+            "meals": [
+              "Pštrosí vejce, brambor, kys. okurka"
+            ]
+          },
+          {
+            "date": "2026-10-30",
+            "soup": "Drůbeží vývar s fritátovými nudlemi",
+            "meals": [
+              "Segedinský guláš, houskový knedlík"
+            ]
+          }
+        ],
+        "detail_ok": true,
+        "source_name": "ZŠ a ZUŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.464Z"
+    },
+    {
+      "id": "38",
+      "source_key": "school",
+      "external_url": "https://www.zsrtyne.cz/placeni-obedu-na-mesic-rijen-2026",
+      "title": "Placení obědů na měsíc říjen 2026",
+      "category": "Škola",
+      "event_date": null,
+      "published_at": "2026-09-23T21:28:20.000Z",
+      "summary": "Výběr peněz za obědy na měsíc říjen 2026 bude: V úterý 29. 9. 2026 od 8:00 hod. do … ",
+      "payload": {
+        "body": [
+          "Výběr peněz za obědy na měsíc říjen 2026 bude:",
+          "V úterý 29. 9. 2026 od 8:00 hod. do 12:00 hod.",
+          "Platby za obědy budou:",
+          "Krásné dny přeje kolektiv školní jídelny."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "ZŠ a ZUŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:31.464Z"
+    },
+    {
+      "id": "5",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20260910132649",
+      "title": "PLATBA NA FOND RODIČŮ - školní rok 2026-2027",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-09-10T12:26:49.000Z",
+      "summary": "PLATBA NA FOND RODIČŮ - školní rok 2026-2027 Platbu 1000KČ na fond rodičů pro školní rok 2026-2027 zasílejte v termínu 15.9. – 22.9.2026 (ne dříve, ne později) na č. účtu 130 464 0319/0800. Do zprávy pro příjemce napište F.R. – příjmení a jméno Vašeho dítěte. Děkujeme za spolupráci",
+      "payload": {
+        "body": [
+          "PLATBA NA FOND RODIČŮ - školní rok 2026-2027",
+          "Platbu 1000KČ na fond rodičů pro školní rok 2026-2027 zasílejte",
+          "v termínu 15.9. – 22.9.2026 (ne dříve, ne později) na",
+          "č. účtu 130 464 0319/0800.",
+          "Do zprávy pro příjemce napište F.R. – příjmení a jméno Vašeho dítěte.",
+          "Děkujeme za spolupráci"
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:30.799Z"
+    },
+    {
+      "id": "6",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20260831123737",
+      "title": "Zahájení školního roku 2026 – 2027",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-08-31T11:37:37.000Z",
+      "summary": "Zahájení školního roku 2026 – 2027 Vážení rodiče, nový školní rok 2026/2027 zahájíme ve všech třídách v pondělí 1. září 2026. Provoz MŠ je od 6.15 – 16.15 hodin. Provoz jednotlivých tříd MŠ: Třída Žabičky: 6.15 – 16.15 hodin. Třída Rybičky: 6.45 - 15.15 hodin (od 6.15 hodin se děti scházejí ve třídě Žabiček, odpoledne se rozcházejí od 15.15 hodin opět ze třídy Žabiček. Třída Želvičky: 7.00 – 14.00 hodin (od 6.15 hodin se děti scházejí ve třídě Žabiček, odpoledne se děti rozcházejí ze třídy Rybič",
+      "payload": {
+        "body": [
+          "Zahájení školního roku 2026 – 2027",
+          "Vážení rodiče,",
+          "nový školní rok 2026/2027 zahájíme ve všech třídách v pondělí 1. září 2026.",
+          "Provoz MŠ je od 6.15 – 16.15 hodin.",
+          "Provoz jednotlivých tříd MŠ:",
+          "Třída Žabičky: 6.15 – 16.15 hodin.",
+          "Třída Rybičky: 6.45 - 15.15 hodin (od 6.15 hodin se děti scházejí ve třídě Žabiček, odpoledne se rozcházejí od 15.15 hodin opět ze třídy Žabiček.",
+          "Třída Želvičky: 7.00 – 14.00 hodin (od 6.15 hodin se děti scházejí ve třídě Žabiček, odpoledne se děti rozcházejí ze třídy Rybiček, poté od 15.15 hodin ze třídy Žabiček.",
+          "Třída Kačenky: 6.15 – 15.30 hodin (od 15.30 hodin se děti rozcházejí ze třídy Žabiček."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:30.799Z"
+    },
+    {
+      "id": "7",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20260828102423",
+      "title": "Schůzka pro rodiče",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-08-28T09:24:23.000Z",
+      "summary": "Schůzka pro rodiče v září Žabičky Rodičovská schůzka se koná ve čtvrtek 3.9. 2026 v 15.30h ve třídě Žabiček (bez dětí). Těšíme se na Vás! Želvičky Rodičovská schůzka se koná ve čtvrtek 3.9. 2026 v 15.30h ve třídě Želviček (bez dětí). Těšíme se na Vás! Rybičky Rodičovská schůzka se koná v úterý 8.9. 2026 v 15.30h ve třídě Rybiček (bez dětí). Těšíme se na Vás! Kačenky Rodičovská schůzka se koná ve čtvrtek 10.9. 2026 v 15.30h ve třídě Kačenek (bez dětí). Těšíme se na Vás!",
+      "payload": {
+        "body": [
+          "Schůzka pro rodiče v září",
+          "Žabičky",
+          "Rodičovská schůzka se koná ve čtvrtek 3.9. 2026 v 15.30h ve třídě Žabiček (bez dětí). Těšíme se na Vás!",
+          "Želvičky",
+          "Rodičovská schůzka se koná ve čtvrtek 3.9. 2026 v 15.30h ve třídě Želviček (bez dětí). Těšíme se na Vás!",
+          "Rybičky",
+          "Rodičovská schůzka se koná v úterý 8.9. 2026 v 15.30h ve třídě Rybiček (bez dětí). Těšíme se na Vás!",
+          "Kačenky",
+          "Rodičovská schůzka se koná ve čtvrtek 10.9. 2026 v 15.30h ve třídě Kačenek (bez dětí). Těšíme se na Vás!"
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:30.799Z"
+    },
+    {
+      "id": "8",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20260827093254",
+      "title": "Seznamy na šk. rok 2026-2027",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-08-27T08:32:54.000Z",
+      "summary": "Seznamy na šk. rok 2026-2027 Seznamy jsou zveřejněny ve složce ke stažení.",
+      "payload": {
+        "body": [
+          "Seznamy na šk. rok 2026-2027",
+          "Seznamy jsou zveřejněny ve složce ke stažení."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:30.799Z"
+    },
+    {
+      "id": "29",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/rozpoctove-opatreni-c-3-2026",
+      "title": "Rozpočtové opatření č. 3/2026",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-06-24T00:00:00.000Z",
+      "summary": "Schváleno ZM dne 17.06.2026, usnesení č. 24/2/2026. Do listinné podoby lze nahlédnout na finančním odboru Městského úřadu ve Rtyni v Podkrkonoší v úředních hodinách úřadu.",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "28",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/zaverecny-ucet-mesta-rtyne-v-podkrkonosi-za-rok-2025",
+      "title": "Závěrečný účet města Rtyně v Podkrkonoší za rok 2025",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-06-24T00:00:00.000Z",
+      "summary": "Schválen ZM dne 17.06.2026, usnesení č. 24/4/2026. Do listinné podoby lze nahlédnout na finančním odboru Městského úřadu ve Rtyni v Podkrkonoší v úředních hodinách úřadu.",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    },
+    {
+      "id": "30",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/zaverecny-ucet-sojh-za-rok-2025",
+      "title": "Závěrečný účet SOJH za rok 2025",
+      "category": "Město",
+      "event_date": null,
+      "published_at": "2026-06-18T00:00:00.000Z",
+      "summary": "Svazek obcí Jestřebí hory oznamuje, že závěrečný účet za rok 2025 včetně zprávy o výsledku přezkoumání hospodaření, který byl schválen 16. 6. 2026 výborem SOJH, byl zveřejněn v elektronické podobě na webových stránkách svazku www.jestrebihory.net. Do jeho listinné podoby lze nahlédnout na obecních úřadech členských obcí svazku.",
+      "payload": {
+        "body": [],
+        "days": [],
+        "detail_ok": false,
+        "source_name": "Město Rtyně",
+        "detail_error": null
+      },
+      "last_seen_at": "2026-11-08T18:33:52.171Z"
+    }
+  ],
+  "posts": [],
+  "events": [],
+  "finances": [],
+  "sources": [
+    {
+      "source_key": "city",
+      "source_url": "https://www.rtyne.cz/",
+      "status": "ok",
+      "checked_at": "2026-11-08T18:33:52.171Z",
+      "last_success_at": "2026-11-08T18:33:52.171Z",
+      "last_error": null,
+      "item_count": 14
+    },
+    {
+      "source_key": "preschool",
+      "source_url": "https://www.msrtyne.cz/aktuality/",
+      "status": "ok",
+      "checked_at": "2026-11-08T18:33:30.799Z",
+      "last_success_at": "2026-11-08T18:33:30.799Z",
+      "last_error": null,
+      "item_count": 8
+    },
+    {
+      "source_key": "school",
+      "source_url": "https://www.zsrtyne.cz/pro-verejnost/aktuality",
+      "status": "ok",
+      "checked_at": "2026-11-08T18:33:31.464Z",
+      "last_success_at": "2026-11-08T18:33:31.464Z",
+      "last_error": null,
+      "item_count": 8
+    },
+    {
+      "source_key": "water",
+      "source_url": "https://www.vakrtyne.cz/havarie-a-odstavky",
+      "status": "ok",
+      "checked_at": "2026-11-08T18:33:31.024Z",
+      "last_success_at": "2026-11-08T18:33:31.024Z",
+      "last_error": null,
+      "item_count": 8
+    }
+  ],
+  "generated_at": "2026-11-08T18:34:17.882Z"
+}
