@@ -58,43 +58,40 @@ def menu():
    return
  raise ValueError("No trustworthy school menu structure found")
 def school_news():
+ from urllib.parse import urljoin,urlparse
  soup=get("https://www.zsrtyne.cz/pro-verejnost/aktuality")
  out=[]
- from urllib.parse import urljoin
  for h in soup.select("h1,h2,h3,h4"):
   a=h.find("a",href=True) or h.find_parent("a",href=True)
   if not a:continue
   title=clean(a.get_text(" ",strip=True))
-  if not title or len(title)>125 or title.lower() in ("aktuality","školní jídelna"):continue
+  if not 12<=len(title)<=125 or title.lower() in ("aktuality","školní jídelna"):continue
   url=urljoin("https://www.zsrtyne.cz",a["href"])
-  from urllib.parse import urlparse
   if urlparse(url).hostname not in ("zsrtyne.cz","www.zsrtyne.cz"):continue
   if url not in [x["url"] for x in out]:out.append({"title":title,"url":url})
-  if len(out)==8:break
- if not out:raise ValueError("No school news found; inspect selector")
+  if len(out)>=10:break
+ if not out:raise ValueError("No school news found")
  save("school-news.json",{"items":out,"source_url":"https://www.zsrtyne.cz/pro-verejnost/aktuality"})
 def water():
- soup=get("https://www.vakrtyne.cz/havarie-a-odstavky")
- main=soup.select_one("main") or soup
- items=[]
  from urllib.parse import urljoin
- for h in main.select("h1,h2,h3,h4"):
-  title=clean(h.get_text(" ",strip=True))
-  if not re.search("odstáv|přerušení|havári|odkalov|upozornění",title,re.I):continue
-  if re.search(r"(202[0-9])",title):
-   yr=int(re.search(r"(202[0-9])",title).group(1))
-   if yr<NOW.year:continue
-  par=h.find_next(["p","div"])
-  desc=clean(par.get_text(" ",strip=True))[:240] if par else ""
-  a=h.find("a",href=True)
-  url=urljoin("https://www.vakrtyne.cz",a["href"]) if a else "https://www.vakrtyne.cz/havarie-a-odstavky"
-  if title not in [x["title"] for x in items]:items.append({"title":title,"description":desc,"url":url})
-  if len(items)>=8:break
- if not items:
-  save("water-news.json",{"items":[],"source_url":"https://www.vakrtyne.cz/havarie-a-odstavky","verified_active":False})
-  return
- # Do not infer active or upcoming from publication date; website may contain old notices.
- save("water-news.json",{"items":items,"source_url":"https://www.vakrtyne.cz/havarie-a-odstavky","verified_active":False})
+ soup=get("https://www.vakrtyne.cz/havarie-a-odstavky")
+ items=[]
+ today=NOW.date()
+ for a in soup.select("a[href]"):
+  title=clean(a.get_text(" ",strip=True))
+  if not re.search(r"odstáv|přerušení dodávky|havári|odkalování",title,re.I):continue
+  match=re.search(r"(\d{1,2})\.(\d{1,2})\.(20\d{2})",title)
+  if not match:continue
+  try:date=datetime.date(int(match.group(3)),int(match.group(2)),int(match.group(1)))
+  except ValueError:continue
+  if date<today or date>today+datetime.timedelta(days=90):continue
+  if re.search("zrušeno|zrušena|odvoláno",title,re.I):continue
+  url=urljoin("https://www.vakrtyne.cz",a["href"])
+  if not url.startswith("https://www.vakrtyne.cz/"):continue
+  if url in [x["url"] for x in items]:continue
+  items.append({"title":title,"date":date.isoformat(),"url":url})
+ items.sort(key=lambda x:x["date"])
+ save("water-news.json",{"items":items[:12],"source_url":"https://www.vakrtyne.cz/havarie-a-odstavky","verified_active":False,"note":"Only dated upcoming notices; ongoing incidents and cancellations must be verified with VAK"})
 def preschool():
  soup=get("https://www.msrtyne.cz/")
  text=soup.get_text(" ",strip=True)
