@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-11-08T00:00:00+01:00",
+  "ok": false,
+  "successful": 0,
+  "total": 9,
+  "failed": [
+    {
+      "source": "city-events.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    },
+    {
+      "source": "city-newsletter.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    },
+    {
+      "source": "city-news.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    },
+    {
+      "source": "school-menu.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    },
+    {
+      "source": "school-news.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    },
+    {
+      "source": "water-news.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    },
+    {
+      "source": "preschool-news.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    },
+    {
+      "source": "preschool-menu.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    },
+    {
+      "source": "newsletter-highlights.json",
+      "error": "Import dosud nebyl ověřen úspěšným během automatizace."
+    }
+  ],
+  "note": "Initial state only. checked_at is placeholder, not evidence of a successful fetch."
+}
