@@ -42,3 +42,12 @@ jobs:
               print("Chyby:",len(d.get("failed",[])))
               for f in d.get("failed",[]): print("- ",f.get("source"),":",f.get("error"))
           PY
+      - name: Fail workflow when any source failed
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("data/source-health.json").read_text(encoding="utf-8"))
+          if not data.get("ok"):
+              raise SystemExit("Failed public sources: "+", ".join(x["source"] for x in data["failed"]))
+          PY
