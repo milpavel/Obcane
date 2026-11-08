@@ -168,18 +168,41 @@ def city_newsletter():
 
 
 def preschool_menu():
- """Find the latest PDF menu; never invent individual meals from an unreadable PDF."""
+ """Discover the current weekly .doc menu and extract its text with antiword."""
  from urllib.parse import urljoin,urlparse
- soup=get("https://www.msrtyne.cz/")
+ import subprocess,tempfile
+ root="https://www.msrtyne.cz/"
+ soup=get(root)
  links=[]
  for a in soup.select("a[href]"):
   title=clean(a.get_text(" ",strip=True))
-  url=urljoin("https://www.msrtyne.cz/",a["href"])
+  url=urljoin(root,a["href"])
   if urlparse(url).hostname not in ("msrtyne.cz","www.msrtyne.cz"):continue
-  if re.search(r"jídelní|stravov|menu",title+" "+url,re.I):
-   links.append({"title":title or "Jídelníček MŠ","url":url})
+  if re.search(r"jídelní|stravov|\\.docx?$|menu",title+" "+url,re.I):
+   links.append((title,url))
  if not links:raise ValueError("No preschool menu link found")
- save("preschool-menu.json",{"items":links[:5],"source_url":"https://www.msrtyne.cz/","note":"Menu source links only; meal text is not yet verified"})
+ def dates(pair):
+  m=re.search(r"(\\d{1,2})\\.(\\d{1,2})\\.\\s*[-–]\\s*(\\d{1,2})\\.(\\d{1,2})\\.(20\\d{2})",pair[1])
+  if not m:return (datetime.date.min,datetime.date.min)
+  try:return (datetime.date(int(m[5]),int(m[2]),int(m[1])),datetime.date(int(m[5]),int(m[4]),int(m[3])))
+  except ValueError:return (datetime.date.min,datetime.date.min)
+ links.sort(key=lambda p:dates(p)[0],reverse=True)
+ candidates=[p for p in links if dates(p)[1]>=NOW.date()-datetime.timedelta(days=2)]
+ if not candidates:raise ValueError("No current dated preschool menu document")
+ title,url=candidates[0]
+ response=requests.get(url,headers=HEAD,timeout=25)
+ response.raise_for_status()
+ if len(response.content)>3_000_000:raise ValueError("Preschool document too large")
+ if not urlparse(url).path.lower().endswith(".doc"):raise ValueError("Unsupported preschool menu format")
+ if not response.content.startswith(bytes.fromhex("d0cf11e0a1b11ae1")):raise ValueError("Not a valid legacy Word .doc file")
+ with tempfile.NamedTemporaryFile(suffix=".doc") as doc:
+  doc.write(response.content);doc.flush()
+  result=subprocess.run(["antiword","-w","100",doc.name],capture_output=True,text=True,timeout=15)
+ if result.returncode:raise ValueError("antiword failed: "+result.stderr[:100])
+ text=result.stdout
+ if len(text.strip())<70:raise ValueError("Extracted menu text too short")
+ start_date,end_date=dates(candidates[0])
+ save("preschool-menu.json",{"items":[{"title":title or "Jídelníček MŠ","url":url}],"source_url":root,"document_url":url,"week_start":start_date.isoformat(),"week_end":end_date.isoformat(),"extracted_text":text[:10000],"note":"Text extracted from official .doc using antiword; not automatically assigned to individual meals"})
 
 def newsletter_highlights():
  """Extract only short dated notices from the official newsletter page; never republish full PDF."""
