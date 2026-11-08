@@ -177,11 +177,11 @@ def preschool_menu():
   title=clean(a.get_text(" ",strip=True))
   url=urljoin(root,a["href"])
   if urlparse(url).hostname not in ("msrtyne.cz","www.msrtyne.cz"):continue
-  if re.search(r"jídelní|stravov|\\.docx?$|menu",title+" "+url,re.I):
+  if re.search(r"jídelní|stravov|\.docx?$|menu",title+" "+url,re.I):
    links.append((title,url))
  if not links:raise ValueError("No preschool menu link found")
  def dates(pair):
-  m=re.search(r"(\\d{1,2})\\.(\\d{1,2})\\.\\s*[-–]\\s*(\\d{1,2})\\.(\\d{1,2})\\.(20\\d{2})",pair[1])
+  m=re.search(r"(\d{1,2})\.(\d{1,2})\.\s*[-–]\s*(\d{1,2})\.(\d{1,2})\.(20\d{2})",pair[1])
   if not m:return (datetime.date.min,datetime.date.min)
   try:return (datetime.date(int(m[5]),int(m[2]),int(m[1])),datetime.date(int(m[5]),int(m[4]),int(m[3])))
   except ValueError:return (datetime.date.min,datetime.date.min)
