@@ -14,14 +14,15 @@
           "VAK Rtyně v Podkrkonoší upozorňuje, že v úterý 10. listopadu 2026 od 8:00 hodin bude v uvedených objektech ve Vyšehradské ulici přerušena dodávka vody.",
           "Důvodem je oprava úniku vody na přípojkovém ventilu. Odstávka potrvá po nezbytně nutnou dobu opravy.",
           "Děkujeme za pochopení.",
-          "Petr Vernervedoucí VAK Rtyně v Podkrkonoší"
+          "Petr Verner vedoucí VAK Rtyně v Podkrkonoší"
         ],
         "days": [],
         "detail_ok": true,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:07.266Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "21",
@@ -37,9 +38,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:05.571Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "20",
@@ -55,9 +57,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:03.316Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "19",
@@ -73,9 +76,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:01.654Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "18",
@@ -91,9 +95,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:59.974Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "17",
@@ -108,15 +113,16 @@
         "body": [
           "Spolky TŠ Bonifác a Contemporary Region zvou malé i velké na kouzelné strašidelné odpoledne plné zábavy a dobrodružství.",
           "Děti se mohou těšit na plnění strašidelných úkolů a sladkou odměnu v podobě koláče Strašpidlíka.",
-          "Občerstvení zajištěno, masky a kostýmy vítány!Vstupné je dobrovolné.",
+          "Občerstvení zajištěno, masky a kostýmy vítány! Vstupné je dobrovolné.",
           "Zahradu Königovy vily najdete v ulici Hornická, u odbočky k prodejně Protec PLUS."
         ],
         "days": [],
         "detail_ok": true,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:58.310Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "24",
@@ -135,9 +141,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:10.595Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "23",
@@ -157,9 +164,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:08.939Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "9",
@@ -177,9 +185,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "VAK Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:57.164Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.024Z"
+      "last_seen_at": "2026-11-08T18:34:58.589Z"
     },
     {
       "id": "1",
@@ -200,9 +209,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "MŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:56.225Z"
       },
-      "last_seen_at": "2026-11-08T18:33:30.799Z"
+      "last_seen_at": "2026-11-08T18:34:56.225Z"
     },
     {
       "id": "2",
@@ -223,9 +233,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "MŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:56.225Z"
       },
-      "last_seen_at": "2026-11-08T18:33:30.799Z"
+      "last_seen_at": "2026-11-08T18:34:56.225Z"
     },
     {
       "id": "31",
@@ -245,9 +256,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "ZŠ a ZUŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:57.517Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.464Z"
+      "last_seen_at": "2026-11-08T18:35:01.283Z"
     },
     {
       "id": "12",
@@ -265,9 +277,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "VAK Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:57.623Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.024Z"
+      "last_seen_at": "2026-11-08T18:34:58.589Z"
     },
     {
       "id": "11",
@@ -285,9 +298,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "VAK Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:57.592Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.024Z"
+      "last_seen_at": "2026-11-08T18:34:58.589Z"
     },
     {
       "id": "10",
@@ -305,9 +319,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "VAK Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:57.137Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.024Z"
+      "last_seen_at": "2026-11-08T18:34:58.589Z"
     },
     {
       "id": "32",
@@ -519,9 +534,10 @@
         ],
         "detail_ok": true,
         "source_name": "ZŠ a ZUŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:57.534Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.464Z"
+      "last_seen_at": "2026-11-08T18:35:01.283Z"
     },
     {
       "id": "33",
@@ -542,9 +558,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "ZŠ a ZUŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:58.738Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.464Z"
+      "last_seen_at": "2026-11-08T18:35:01.283Z"
     },
     {
       "id": "3",
@@ -563,9 +580,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "MŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:56.225Z"
       },
-      "last_seen_at": "2026-11-08T18:33:30.799Z"
+      "last_seen_at": "2026-11-08T18:34:56.225Z"
     },
     {
       "id": "25",
@@ -581,9 +599,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:12.290Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "13",
@@ -601,9 +620,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "VAK Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:58.070Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.024Z"
+      "last_seen_at": "2026-11-08T18:34:58.589Z"
     },
     {
       "id": "14",
@@ -621,9 +641,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "VAK Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:58.098Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.024Z"
+      "last_seen_at": "2026-11-08T18:34:58.589Z"
     },
     {
       "id": "16",
@@ -641,9 +662,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "VAK Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:58.589Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.024Z"
+      "last_seen_at": "2026-11-08T18:34:58.589Z"
     },
     {
       "id": "15",
@@ -661,9 +683,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "VAK Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:58.556Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.024Z"
+      "last_seen_at": "2026-11-08T18:34:58.589Z"
     },
     {
       "id": "4",
@@ -682,9 +705,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "MŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:56.225Z"
       },
-      "last_seen_at": "2026-11-08T18:33:30.799Z"
+      "last_seen_at": "2026-11-08T18:34:56.225Z"
     },
     {
       "id": "26",
@@ -700,9 +724,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:13.967Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "34",
@@ -718,9 +743,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "ZŠ a ZUŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:58.800Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.464Z"
+      "last_seen_at": "2026-11-08T18:35:01.283Z"
     },
     {
       "id": "27",
@@ -736,9 +762,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:15.651Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "35",
@@ -759,9 +786,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "ZŠ a ZUŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:00.000Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.464Z"
+      "last_seen_at": "2026-11-08T18:35:01.283Z"
     },
     {
       "id": "36",
@@ -774,16 +802,17 @@
       "summary": "Z důvodu přihlášení malého počtu strávníků se ve čtvrtek 1.10. vaří pouze oběd č. 1:Pol. Vývar s játrovými knedlíčkyMleté řízečky … ",
       "payload": {
         "body": [
-          "Z důvodu přihlášení malého počtu strávníků se ve čtvrtek 1.10. vaří pouze oběd č. 1:Pol. Vývar s játrovými knedlíčkyMleté řízečky se zeleninou, bramborová kaše",
+          "Z důvodu přihlášení malého počtu strávníků se ve čtvrtek 1.10. vaří pouze oběd č. 1: Pol. Vývar s játrovými knedlíčky Mleté řízečky se zeleninou, bramborová kaše",
           "Oběd č. 2 SE NEVAŘÍ",
           "Děkujeme za pochopení, kolektiv ŠJ"
         ],
         "days": [],
         "detail_ok": true,
         "source_name": "ZŠ a ZUŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:00.014Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.464Z"
+      "last_seen_at": "2026-11-08T18:35:01.283Z"
     },
     {
       "id": "37",
@@ -1002,9 +1031,10 @@
         ],
         "detail_ok": true,
         "source_name": "ZŠ a ZUŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:01.261Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.464Z"
+      "last_seen_at": "2026-11-08T18:35:01.283Z"
     },
     {
       "id": "38",
@@ -1025,9 +1055,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "ZŠ a ZUŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:01.283Z"
       },
-      "last_seen_at": "2026-11-08T18:33:31.464Z"
+      "last_seen_at": "2026-11-08T18:35:01.283Z"
     },
     {
       "id": "5",
@@ -1050,9 +1081,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "MŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:56.225Z"
       },
-      "last_seen_at": "2026-11-08T18:33:30.799Z"
+      "last_seen_at": "2026-11-08T18:34:56.225Z"
     },
     {
       "id": "6",
@@ -1078,9 +1110,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "MŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:56.225Z"
       },
-      "last_seen_at": "2026-11-08T18:33:30.799Z"
+      "last_seen_at": "2026-11-08T18:34:56.225Z"
     },
     {
       "id": "7",
@@ -1106,9 +1139,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "MŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:56.225Z"
       },
-      "last_seen_at": "2026-11-08T18:33:30.799Z"
+      "last_seen_at": "2026-11-08T18:34:56.225Z"
     },
     {
       "id": "8",
@@ -1127,9 +1161,10 @@
         "days": [],
         "detail_ok": true,
         "source_name": "MŠ Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:34:56.225Z"
       },
-      "last_seen_at": "2026-11-08T18:33:30.799Z"
+      "last_seen_at": "2026-11-08T18:34:56.225Z"
     },
     {
       "id": "29",
@@ -1145,9 +1180,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:18.980Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "28",
@@ -1163,9 +1199,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:17.318Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     },
     {
       "id": "30",
@@ -1181,9 +1218,10 @@
         "days": [],
         "detail_ok": false,
         "source_name": "Město Rtyně",
-        "detail_error": null
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-08T18:35:20.669Z"
       },
-      "last_seen_at": "2026-11-08T18:33:52.171Z"
+      "last_seen_at": "2026-11-08T18:35:20.669Z"
     }
   ],
   "posts": [],
@@ -1194,8 +1232,8 @@
       "source_key": "city",
       "source_url": "https://www.rtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-08T18:33:52.171Z",
-      "last_success_at": "2026-11-08T18:33:52.171Z",
+      "checked_at": "2026-11-08T18:35:20.669Z",
+      "last_success_at": "2026-11-08T18:35:20.669Z",
       "last_error": null,
       "item_count": 14
     },
@@ -1203,8 +1241,8 @@
       "source_key": "preschool",
       "source_url": "https://www.msrtyne.cz/aktuality/",
       "status": "ok",
-      "checked_at": "2026-11-08T18:33:30.799Z",
-      "last_success_at": "2026-11-08T18:33:30.799Z",
+      "checked_at": "2026-11-08T18:34:56.225Z",
+      "last_success_at": "2026-11-08T18:34:56.225Z",
       "last_error": null,
       "item_count": 8
     },
@@ -1212,8 +1250,8 @@
       "source_key": "school",
       "source_url": "https://www.zsrtyne.cz/pro-verejnost/aktuality",
       "status": "ok",
-      "checked_at": "2026-11-08T18:33:31.464Z",
-      "last_success_at": "2026-11-08T18:33:31.464Z",
+      "checked_at": "2026-11-08T18:35:01.283Z",
+      "last_success_at": "2026-11-08T18:35:01.283Z",
       "last_error": null,
       "item_count": 8
     },
@@ -1221,11 +1259,11 @@
       "source_key": "water",
       "source_url": "https://www.vakrtyne.cz/havarie-a-odstavky",
       "status": "ok",
-      "checked_at": "2026-11-08T18:33:31.024Z",
-      "last_success_at": "2026-11-08T18:33:31.024Z",
+      "checked_at": "2026-11-08T18:34:58.589Z",
+      "last_success_at": "2026-11-08T18:34:58.589Z",
       "last_error": null,
       "item_count": 8
     }
   ],
-  "generated_at": "2026-11-08T18:34:17.882Z"
+  "generated_at": "2026-11-08T18:39:17.592Z"
 }
