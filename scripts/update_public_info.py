@@ -122,8 +122,7 @@ def city_news():
   if any(x in title.lower() for x in ("rozpočtové opatření","přerušení dodávky","uzavření skládky","frézování komunikace","závěrečný účet","veřejná vyhláška","kulturní a sportovní akce","aktuální informace")):
    if href not in [x["url"] for x in out]:out.append({"title":title,"url":href})
   if len(out)>=12:break
- if not out:
-  save("city-news.json",{"items":[],"source_url":"https://www.rtyne.cz/","note":"No matching city announcements found in this source snapshot"})
+ if not out:raise ValueError("No matching city announcements found; preserving previously verified data")
  save("city-news.json",{"items":out,"source_url":"https://www.rtyne.cz/"})
 
 
@@ -187,7 +186,7 @@ def preschool_menu():
   try:return (datetime.date(int(m[5]),int(m[2]),int(m[1])),datetime.date(int(m[5]),int(m[4]),int(m[3])))
   except ValueError:return (datetime.date.min,datetime.date.min)
  links.sort(key=lambda p:dates(p)[0],reverse=True)
- candidates=[p for p in links if dates(p)[1]>=NOW.date()-datetime.timedelta(days=2)]
+ candidates=[p for p in links if dates(p)[0]<=NOW.date()+datetime.timedelta(days=7) and dates(p)[1]>=NOW.date()-datetime.timedelta(days=2)]
  if not candidates:raise ValueError("No current dated preschool menu document")
  title,url=candidates[0]
  response=requests.get(url,headers=HEAD,timeout=25)
@@ -214,7 +213,7 @@ def newsletter_highlights():
  if urlparse(url).hostname not in ("www.rtyne.cz","rtyne.cz"):raise ValueError("Invalid newsletter host")
  page=get(url)
  main=page.select_one("main") or page
- lines=[clean(x) for x in main.get_text("\\n",strip=True).splitlines()]
+ lines=[clean(x) for x in main.get_text("\n",strip=True).splitlines()]
  matches=[]
  for line in lines:
   if not 35<=len(line)<=210:continue
