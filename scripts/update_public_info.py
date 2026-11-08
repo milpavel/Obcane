@@ -166,12 +166,47 @@ def city_newsletter():
  year,title,url=candidates[0]
  save("city-newsletter.json",{"title":title,"url":url,"source_url":"https://www.rtyne.cz/","year":year,"note":"Link to official issue; editorial extraction requires separate PDF validation"})
 
+
+def preschool_menu():
+ """Find the latest PDF menu; never invent individual meals from an unreadable PDF."""
+ from urllib.parse import urljoin,urlparse
+ soup=get("https://www.msrtyne.cz/")
+ links=[]
+ for a in soup.select("a[href]"):
+  title=clean(a.get_text(" ",strip=True))
+  url=urljoin("https://www.msrtyne.cz/",a["href"])
+  if urlparse(url).hostname not in ("msrtyne.cz","www.msrtyne.cz"):continue
+  if re.search(r"jídelní|stravov|menu",title+" "+url,re.I):
+   links.append({"title":title or "Jídelníček MŠ","url":url})
+ if not links:raise ValueError("No preschool menu link found")
+ save("preschool-menu.json",{"items":links[:5],"source_url":"https://www.msrtyne.cz/","note":"Menu source links only; meal text is not yet verified"})
+
+def newsletter_highlights():
+ """Extract only short dated notices from the official newsletter page; never republish full PDF."""
+ from urllib.parse import urljoin,urlparse
+ info_path=BASE/"city-newsletter.json"
+ if not info_path.exists():raise ValueError("Newsletter URL not discovered")
+ info=json.loads(info_path.read_text(encoding="utf-8"))
+ url=info["url"]
+ if urlparse(url).hostname not in ("www.rtyne.cz","rtyne.cz"):raise ValueError("Invalid newsletter host")
+ page=get(url)
+ main=page.select_one("main") or page
+ lines=[clean(x) for x in main.get_text("\\n",strip=True).splitlines()]
+ matches=[]
+ for line in lines:
+  if not 35<=len(line)<=210:continue
+  if not re.search(r"odstáv|uzavír|termín|svoz|poplat|zastupitel|rozpočet|výstavb|oprava|rekonstrukc",line,re.I):continue
+  if line in matches:continue
+  matches.append(line)
+  if len(matches)>=6:break
+ save("newsletter-highlights.json",{"items":[{"title":line,"url":url} for line in matches],"source_url":url,"note":"Keyword matches from official issue landing page, not extracted from PDF"})
+
 failures=[]
-for label,fn in [("city-events.json",city_events),("city-newsletter.json",city_newsletter),("city-news.json",city_news),("school-menu.json",menu),("school-news.json",school_news),("water-news.json",water),("preschool-news.json",preschool)]:
+for label,fn in [("city-events.json",city_events),("city-newsletter.json",city_newsletter),("city-news.json",city_news),("school-menu.json",menu),("school-news.json",school_news),("water-news.json",water),("preschool-news.json",preschool),("preschool-menu.json",preschool_menu),("newsletter-highlights.json",newsletter_highlights)]:
  try:fn();print("OK",label)
  except Exception as e:
   print("FAILED",label,str(e))
   # Never overwrite previously verified data on a failed fetch; UI checks freshness.
   failures.append({"source":label,"error":str(e)[:180]})
 
-save("source-health.json",{"failed":failures,"ok":len(failures)==0,"successful":7-len(failures),"total":7})
+save("source-health.json",{"failed":failures,"ok":len(failures)==0,"successful":9-len(failures),"total":9})
