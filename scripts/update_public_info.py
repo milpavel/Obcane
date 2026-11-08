@@ -53,7 +53,7 @@ def menu():
    try:dt=datetime.datetime.strptime(re.sub(r"\s+","",m.group(2)),"%d.%m.%Y").date().isoformat()
    except ValueError:continue
    days.append({"date":dt,"soup":soup_line or "Polévka neuvedena","meals":food})
-  if len(days)>=3:
+  if len(days)>=3 and max(x["date"] for x in days)>=NOW.date().isoformat():
    save("school-menu.json",{"source_url":url,"days":days,"source_name":"ZŠ a ZUŠ Rtyně"})
    return
  raise ValueError("No trustworthy school menu structure found")
@@ -102,6 +102,28 @@ def preschool():
   if title not in [x["title"] for x in out]:out.append({"title":title,"url":"https://www.msrtyne.cz/"})
   if len(out)==6:break
  save("preschool-news.json",{"items":out,"source_url":"https://www.msrtyne.cz/"})
-for label,fn in [("school-menu.json",menu),("school-news.json",school_news),("water-news.json",water),("preschool-news.json",preschool)]:
+
+def city_news():
+ from urllib.parse import urljoin,urlparse
+ soup=get("https://www.rtyne.cz/")
+ out=[]
+ # City publishes actual announcements as linked article titles.
+ for a in soup.select("a[href]"):
+  title=clean(a.get_text(" ",strip=True))
+  href=urljoin("https://www.rtyne.cz/",a["href"])
+  if not 18<=len(title)<=145 or urlparse(href).hostname not in ("www.rtyne.cz","rtyne.cz"):continue
+  if any(x in title.lower() for x in ("rozpočtové opatření","přerušení dodávky","uzavření skládky","frézování komunikace","závěrečný účet","veřejná vyhláška","kulturní a sportovní akce","aktuální informace")):
+   if href not in [x["url"] for x in out]:out.append({"title":title,"url":href})
+  if len(out)>=12:break
+ if not out:raise ValueError("No city announcements matched")
+ save("city-news.json",{"items":out,"source_url":"https://www.rtyne.cz/"})
+
+failures=[]
+for label,fn in [("city-news.json",city_news),("school-menu.json",menu),("school-news.json",school_news),("water-news.json",water),("preschool-news.json",preschool)]:
  try:fn();print("OK",label)
- except Exception as e:print("FAILED",label,str(e))
+ except Exception as e:
+  print("FAILED",label,str(e))
+  # Never overwrite previously verified data on a failed fetch; UI checks freshness.
+  failures.append({"source":label,"error":str(e)[:180]})
+
+save("source-health.json",{"failed":failures,"ok":len(failures)==0})
