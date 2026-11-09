@@ -339,6 +339,7 @@ const profiles:Record<string,any>={
   "summary": "Dobrovolní hasiči a kolektiv mladých hasičů. Hasičský sport, práce s mládeží a místní spolkový život.",
   "body": [],
   "extra": {
+   "website": "https://www.facebook.com/sdhrtyne",
    "activities": [
     "Sbor zveřejňuje zprávy o činnosti mladých hasičů i soutěžích. Pozvánka na Mikulášské hasičské klání 2026 počítá s přípravkou, mladšími a staršími dětmi i dorostem.",
     "Zájem o dětský kolektiv a aktuální podmínky docházky ověřte přímo u sboru. Kontaktní osoba níže je uvedena pro mládežnickou soutěž; nejde o tísňový kontakt."
@@ -349,8 +350,8 @@ const profiles:Record<string,any>={
    "fees": null,
    "profile_sources": [
     {
-     "title": "SDH Rtyně – web sboru",
-     "url": "https://hasici.rtyne.com/"
+     "title": "SDH Rtyně – Facebook",
+     "url": "https://www.facebook.com/sdhrtyne"
     },
     {
      "title": "Pozvánka SDH – mládež a kontakt 2026",

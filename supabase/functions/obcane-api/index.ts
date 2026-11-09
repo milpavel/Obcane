@@ -94,6 +94,8 @@ async function extract(s:any) {
  return items;
 }
 async function importSource(s:any){
+ if(s.feed==='external'){await sql`insert into obcane.sources(source_key,source_url,status,checked_at) values(${s.key},${s.url},'pending',now()) on conflict(source_key) do update set source_url=excluded.source_url,status='pending',last_error=null,checked_at=now(),updated_at=now()`;return {key:s.key,status:'skipped',reason:'Externí stránka; automatický import není napojený'};}
+
  await sql`insert into obcane.sources (source_key,source_url,status) values (${s.key},${s.url},'pending') on conflict (source_key) do nothing`;
  try {
   const items=await extract(s);const checked=new Date().toISOString();const detailFailures=items.filter(x=>x.detail_error).length;
@@ -135,7 +137,7 @@ Deno.serve(async(req:Request)=>{
    const events=await sql`select id,title,starts_at,location,description,source_url from public.obcane_events where status='published' order by starts_at desc limit 30`;
    const finances=await sql`select id,year,title,amount_czk,kind,explanation,source_url from public.obcane_finances where status='published' order by year desc,id desc limit 30`;
    const state=await sql`select source_key,source_url,status,checked_at,last_success_at,last_error,item_count from obcane.sources order by source_key`;
-   return response({items,posts,events,finances,sources:state.map((x:any)=>({...x,name:sources.find(s=>s.key===x.source_key)?.name,community:communitySources.some(s=>s.key===x.source_key),news_note:communitySources.find(s=>s.key===x.source_key)?.note||null})),generated_at:new Date().toISOString()});
+   return response({items,posts,events,finances,sources:state.map((x:any)=>({...x,name:sources.find(s=>s.key===x.source_key)?.name,mode:sources.find(s=>s.key===x.source_key)?.feed==='external'?'external':'automatic',community:communitySources.some(s=>s.key===x.source_key),news_note:communitySources.find(s=>s.key===x.source_key)?.note||null})),generated_at:new Date().toISOString()});
   }
   if(req.method!=='POST')return response({error:'Metoda není podporována'},405);
   const token=req.headers.get('x-import-token')||'';
@@ -144,7 +146,7 @@ Deno.serve(async(req:Request)=>{
   if(!access.length&&!await isEditor(req))return response({error:'Přihlášení editora je vyžadováno'},401);
   const lock=await sql`update obcane.import_control set lease_until=now()+interval '4 minutes' where id=true and (lease_until is null or lease_until<now()) returning id`;
   if(!lock.length)return response({error:'Import již běží'},409);
-  try {const results=await Promise.all(sources.filter(s=>!extraSources.some(x=>x.key===s.key)).map(importSource));const official=async()=>{const out=[];for(const s of extraSources.filter(s=>['calendar','clubs','services'].includes(s.key)))out.push(await importSource(s));return out;};const extra=await Promise.all([official(),...extraSources.filter(s=>!['calendar','clubs','services'].includes(s.key)).map(async s=>[await importSource(s)])]);results.push(...extra.flat());return response({ok:results.every(x=>x.status==='ok'),results});}
+  try {const results=await Promise.all(sources.filter(s=>!extraSources.some(x=>x.key===s.key)).map(importSource));const official=async()=>{const out=[];for(const s of extraSources.filter(s=>['calendar','clubs','services'].includes(s.key)))out.push(await importSource(s));return out;};const extra=await Promise.all([official(),...extraSources.filter(s=>!['calendar','clubs','services'].includes(s.key)).map(async s=>[await importSource(s)])]);results.push(...extra.flat());return response({ok:results.every(x=>['ok','skipped'].includes(x.status)),results});}
   finally {await sql`update obcane.import_control set lease_until=null where id=true`;}
  }catch(e){console.error('obcane-api',String(e));return response({error:'Data se nepodařilo zpracovat. Zkuste to později.'},500);}
 });

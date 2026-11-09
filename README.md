@@ -76,3 +76,6 @@ Hlavní adresa je připravena jako `prortyni.cz` v Pages projektu `obcane-pro-rt
 ## Hlavní zprávy
 
 Samostatná rubrika `/zpravy/` kombinuje zveřejněné `public.obcane_posts` a uložený redakční přehled `data/editorial-news.json`. Položky se slučují podle slugu. Kategorie `original` znamená vlastní článek, `media` vlastní shrnutí cizí zprávy. Média mají původní datum, jméno zdroje a odkazy; fotografie ani plné cizí texty se nepřebírají. Pole `author`, `source_name`, `source_date`, `source_refs` jsou doplněna migrací `schema-news.sql`. Nová oprávnění editorů nebyla udělena. Hasičské zprávy zůstávají v městském přehledu pod filtrem Hasiči.
+
+
+Detaily Hlavních zpráv podporují mezititulky `## ` v samostatných odstavcích a `summary_points` (pole textů) pro závěrečný box Naše shrnutí. Zdroje jsou drobnou kurzívou pod boxem. SDH Rtyně má jako veřejný kanál Facebook; `feed: external` se záměrně neimportuje bez napojení a veřejné API jej označuje `mode: external`. Neúspěšný starý RSS web se již nekontroluje.
