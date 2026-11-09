@@ -79,3 +79,13 @@ Samostatná rubrika `/zpravy/` kombinuje zveřejněné `public.obcane_posts` a u
 
 
 Detaily Hlavních zpráv podporují mezititulky `## ` v samostatných odstavcích a `summary_points` (pole textů) pro závěrečný box Naše shrnutí. Zdroje jsou drobnou kurzívou pod boxem. SDH Rtyně má jako veřejný kanál Facebook; `feed: external` se záměrně neimportuje bez napojení a veřejné API jej označuje `mode: external`. Neúspěšný starý RSS web se již nekontroluje.
+
+## Odjezdy vlaků a autobusů
+
+Veřejný GET `?transport=1` načítá tabule IREDO (`iredo.online/crws/departures/{id}`), stejné veřejné čtení jako mapa IREDO. Parametry `train` a `bus` přijímají pouze lokální zastávky z pevného seznamu. Výchozí jsou Rtyně v Podkrkonoší a autobusové stanoviště. Uživatelská volba se ukládá pouze v prohlížeči. Souhrn u počasí i sekce `#doprava` používají stejné vybrané zastávky.
+
+Odjezdy se obnovují každých 60 sekund při otevřené stránce a při návratu na ni. Server sdílí souběžné požadavky a drží úspěšnou tabuli 25 sekund. Po 120 sekundách se číselné odjezdy skryjí; při chybě se nevydává starý přehled za živý. Rozsah zdroje je následujících 120 minut. Žádné odjezdy se nedopočítávají z pevných časů, intervalů ani ze starších snapshotů.
+
+`delay=-1` nebo chybějící hodnota znamená neznámé zpoždění, nikoli jízdu včas. Známé zpoždění v minutách se přičte k plánovanému času. Řazení a nejbližší spoj vycházejí z očekávaného odjezdu. Příjezdy končící ve vybrané zastávce se odstraní. Časy bez offsetu se interpretují v Europe/Prague; neexistující a nejednoznačné časy při změně letního času se neodhadují. Hlášené zpoždění nemá samostatnou časovou značku měření od dopravce a není zárukou skutečného odjezdu. Odkaz na originální tabuli a IDOS zůstává dostupný i při chybě. Jde o veřejné rozhraní webové aplikace IREDO bez garantované dostupnosti; změna jeho formátu může vyžadovat úpravu adaptéru.
+
+Testy `scripts/test_transport.mjs` ověřují časová pásma a DST, terminalní příjezdy, zpožděné odjezdy po plánovaném čase, neznámé zpoždění, deduplikaci, chyby zdroje, whitelist zastávek, cache a souběh požadavků. Nasazení Edge Function je nutné provést spolu s publikací statické části.
