@@ -2,7 +2,7 @@
 // Restore that requested section once rendering finishes, unless the visitor
 // has already started scrolling or interacting elsewhere.
 export function preserveInitialAnchor(win,doc){
- let pending=win.location.hash,done=false;
+ let pending=win.location.hash,done=false,contentReady=false,doctorsReady=!doc.getElementById('doctor-news-grid');
  const cancel=()=>{pending='';};
  const changed=()=>{pending=win.location.hash;};
  const clicked=event=>{
@@ -18,8 +18,8 @@ export function preserveInitialAnchor(win,doc){
  };
  for(const type of ['wheel','touchstart','keydown'])win.addEventListener(type,cancel,{passive:true});
  win.addEventListener('hashchange',changed);doc.addEventListener('pointerdown',cancel);doc.addEventListener('click',clicked);
- doc.addEventListener('rtyne:content-ready',()=>{
-  if(done)return;done=true;cleanup();
+ const restore=()=>{
+  if(done||!contentReady||!doctorsReady)return;done=true;cleanup();
   const requested=pending;
   if(!requested||requested!==win.location.hash)return;
   let id;try{id=decodeURIComponent(requested.slice(1));}catch{return;}
@@ -28,6 +28,8 @@ export function preserveInitialAnchor(win,doc){
    const target=doc.getElementById(id);
    if(target&&!target.closest('[hidden]'))target.scrollIntoView({behavior:'instant',block:'start'});
   });
- },{once:true});
+ };
+ doc.addEventListener('rtyne:content-ready',()=>{contentReady=true;restore();},{once:true});
+ if(!doctorsReady)doc.addEventListener('rtyne:doctor-news-ready',()=>{doctorsReady=true;restore();},{once:true});
 }
 if(typeof window!=='undefined'&&document.getElementById('home'))preserveInitialAnchor(window,document);
