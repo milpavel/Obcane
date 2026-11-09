@@ -16,7 +16,13 @@ export function fallbackBlocks(lines=[]){return lines.map(cleanDetailText).filte
  if(/1213[-–]15/.test(text))text='Ordinační hodiny od pondělí do středy nejsou na webu města jednoznačně zapsané. Potvrďte si je prosím telefonicky v ordinaci.';
  return {type:'paragraph',text};
  });}
-function hourRow(text){const m=text?.match(/^(Po(?:ndělí)?|Út(?:erý)?|St(?:ředa)?|Čt(?:vrtek)?|Pá(?:tek)?|Sobota|Neděle)(?:\s*[·:\-]?\s+)(.+)$/i);return m&&/\d{1,2}[:.]\d{2}|zavřeno/i.test(m[2])?[m[1],m[2]]:null;}
+function hourRow(text){
+ const day='(?:Po(?:ndělí)?|Út(?:erý)?|St(?:ředa)?|Čt(?:vrtek)?|Pá(?:tek)?|Sobota|Neděle)';
+ const pattern=new RegExp('^('+day+'(?:\\s*(?:,|[-–])\\s*'+day+')?)\\s*[:·-]?\\s+(.+)$','i'),m=text?.match(pattern);
+ if(!m||!(/\d{1,2}[:.]\d{2}|zavřeno/i.test(m[2])))return null;
+ const hours=m[2].replace(/\b(\d{1,2})[.](\d{2})\b/g,'$1:$2').replace(/\b(\d{1,2}) (\d{2})(?=\s|$)/g,'$1:$2').replace(/\b(\d{1,2})\s*[-–]\s*(\d{1,2})(?![:\d])/g,'$1:00 – $2:00');
+ return [m[1],hours];
+}
 export function renderBlocks(target,blocks=[]){
  let hours=null;
  for(const b of blocks){const text=cleanDetailText(b.text);if(junk.test(text))continue;const row=b.type==='paragraph'?hourRow(text):null;
