@@ -52,16 +52,43 @@ export const serviceDescriptions:Record<string,string>={
  'doprava-senioru-senior-taxi':'Žádost o dopravu Senior TAXI a dokumenty k využití služby.',
  'svoz-odpadu-a-odpadove-hospodarstvi':'Informace o svozu komunálního a tříděného odpadu, sběru a nakládání s odpady.'
 };
+export const hartmanovaURL='https://www.doktor-rtyne.cz/nadezda-hartmanova';
+export function hartmanovaHours(doc:any){
+ const tables=doc.querySelectorAll('table.ord_hodiny.rtyne');
+ if(tables.length!==1)throw Error('Chybí jednoznačná tabulka ordinace');
+ const rows=Array.from(tables[0].querySelectorAll('tr')).map((r:any)=>Array.from(r.querySelectorAll('td,th')).map((c:any)=>cleanContent(c.textContent)).filter(Boolean));
+ const days=['Po','Út','St','Čt','Pá'];
+ if(rows.length!==5||rows.some((r:any,i:number)=>r[0]!==days[i]||r.length<2||r.slice(1).some((t:string)=>!/^\d{1,2}:\d{2}\s*[-–]\s*\d{1,2}:\d{2}$/.test(t))))throw Error('Neplatné ordinační hodiny');
+ return rows;
+}
+export function correctHartmanova(blocks:any[],rows:any[]|null){
+ const start=blocks.findIndex(b=>b.type==='heading'&&/Naděžda Hartmanová/.test(b.text));
+ if(start<0)return blocks;
+ let end=blocks.findIndex((b,i)=>i>start&&b.type==='heading'&&b.level===2);if(end<0)end=blocks.length;
+ const section=blocks.slice(start,end).filter(b=>!(b.type==='table'||b.type==='paragraph'&&/^(?:PO|ÚT|ST|ČT|PÁ)\s+\d/i.test(b.text)));
+ for(const b of section){if(b.links?.some((l:any)=>l.url?.includes('doktor-rtyne.cz')))b.links=[{text:'Web ordinace – aktuální ordinační hodiny',url:hartmanovaURL}];}
+ const at=section.findIndex(b=>b.type==='heading'&&/^Ordinační hodiny$/i.test(b.text));
+ section.splice(at>=0?at+1:2,0,
+  {type:'paragraph',text:'Před vyšetřením je nutné telefonické objednání na 499 888 180.'},
+  ...(rows?[{type:'table',rows}]:[{type:'paragraph',text:'Aktuální ordinační hodiny se nepodařilo ověřit. Otevřete prosím web ordinace.'}]),
+  {type:'paragraph',text:'Zdroj ordinačních hodin: web MUDr. Naděždy Hartmanové.',links:[{text:'Web ordinace – aktuální ordinační hodiny',url:hartmanovaURL}]});
+ return [...blocks.slice(0,start),...section,...blocks.slice(end)];
+}
 export async function serviceDetail(doc:any,url:string,page:any,clean:any){
  const root=doc.querySelector('article.article');if(!root)throw Error('Chybí obsah služby');
- const blocks=contentBlocks(root.querySelector('.article__body')||root,url),found=assets(root,url),sections:any[]=[],links:any[]=[];
+ let blocks=contentBlocks(root.querySelector('.article__body')||root,url);const found=assets(root,url),sections:any[]=[],links:any[]=[];
+ let hoursSource:any=null;
+ if(new URL(url).pathname==='/lekarske-sluzby-1'){
+  let rows=null;try{rows=hartmanovaHours(await page(hartmanovaURL));}catch{/* Never restore the conflicting city timetable. */}
+  blocks=correctHartmanova(blocks,rows);hoursSource={url:hartmanovaURL,status:rows?'ok':'unavailable',checked_at:new Date().toISOString()};
+ }
  const children=Array.from(root.querySelectorAll('.tile__link,.document__link')) as any[];
  for(const a of children){const target=new URL(a.getAttribute('href'),url);if(target.hostname!==new URL(url).hostname||!['http:','https:'].includes(target.protocol))continue;const title=clean(a.textContent);links.push({title,url:target.href});
   // Follow information and document pages, not unrelated news archives.
   if(blocks.length&&!a.matches('.tile__link')||sections.length>=6||/^(Akce|Výroční zprávy|Svozový kalendář|Aktuální informace)/i.test(title))continue;
   try{const d=await page(target.href),r=d.querySelector('article.article'),b=contentBlocks(r?.querySelector('.article__body'),target.href),f=assets(r,target.href);if(b.length||f.attachments.length)sections.push({title,blocks:b,attachments:f.attachments});}catch{/* Keep a usable link if a child is temporarily unavailable. */}
  }
- return {blocks,sections,service_links:links.slice(0,15),content_version:2,...found};
+ return {blocks,sections,service_links:links.slice(0,15),content_version:2,...(hoursSource?{hours_source_hartmanova:hoursSource}:{}),...found};
 }
 export function richText(root:any,clean:any):string[]{
  if(!root)return [];
@@ -185,7 +212,7 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
   const seen=new Set();for(const d of [doc,sport])for(const a of Array.from(d.querySelectorAll('.tile__link')) as any[]){const title=text(a),href=new URL(a.getAttribute('href'),s.url).href;if(seen.has(href)||!/^https?:/.test(href))continue;seen.add(href);out.push({title,url:s.url+'#'+slug(title),summary:'Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.',body:[],detail_ok:true,...clubProfile(title,href),extra:{kind:'club',website:href,directory_source:s.url,in_latest:true,...clubProfile(title,href).extra,news_source_key:communitySources.find(c=>c.profile===title)?.key||null}});}
  }else if(s.key==='services'){
   const paths=['svoz-odpadu-a-odpadove-hospodarstvi','svozovy-kalendar-'+new Date().getUTCFullYear(),'skladka-pod-haldou','kontakt','lekarske-sluzby-1','doprava-senioru-senior-taxi','informace-k-uhradam-mistnich-poplatku-v-roce-'+new Date().getUTCFullYear(),'pecovatelska-sluzba'];
-  for(const path of paths){await pause(1100);const url='https://www.rtyne.cz/'+path;try{const d=url===s.url?doc:await page(url),root=d.querySelector('article.article');const title=text(d.querySelector('h1.article__heading'));if(!title)throw Error('Chybí název služby');const detail=await serviceDetail(d,url,page,clean),body=richText(root.querySelector('.article__text'),clean);out.push({title,url,summary:serviceDescriptions[path]||cleanContent(text(d.querySelector('.article__perex')))||body[0]?.slice(0,240)||'Informace a dokumenty k této službě.',body,detail_ok:true,extra:{kind:'service',...detail}});}catch(e){out.push({title:path.replaceAll('-',' '),url,body:[],detail_error:String(e).slice(0,160),extra:{kind:'service'}});}}
+  for(const path of paths){await pause(1100);const url='https://www.rtyne.cz/'+path;try{const d=url===s.url?doc:await page(url),root=d.querySelector('article.article');const title=text(d.querySelector('h1.article__heading'));if(!title)throw Error('Chybí název služby');const detail=await serviceDetail(d,url,page,clean),body=path==='lekarske-sluzby-1'?detail.blocks.flatMap((b:any)=>b.type==='table'?b.rows.map((r:any)=>r.join(' · ')):b.type==='list'?b.items:[b.text]).filter(Boolean):richText(root.querySelector('.article__text'),clean);out.push({title,url,summary:serviceDescriptions[path]||cleanContent(text(d.querySelector('.article__perex')))||body[0]?.slice(0,240)||'Informace a dokumenty k této službě.',body,detail_ok:true,extra:{kind:'service',...detail}});}catch(e){out.push({title:path.replaceAll('-',' '),url,body:[],detail_error:String(e).slice(0,160),extra:{kind:'service'}});}}
  }else if(s.key==='museum'){
   const root=doc.querySelector('.articlesBlock .text')||doc.querySelector('main article')||doc.querySelector('main');if(!root)throw Error('Chybí obsah muzea');
   const blocks=contentBlocks(root,s.url),sections:any[]=[];
