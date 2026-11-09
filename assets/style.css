@@ -149,3 +149,5 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 .waste-symbol{display:block;width:38px;height:38px;margin-top:1px}.waste-copy{min-width:0}.waste-kind{display:block;font-size:12px;font-weight:750;letter-spacing:.06em;line-height:1.5;margin-bottom:7px;color:#655d73}.daily-overview .waste-date strong{font-size:20px;line-height:1.35;overflow-wrap:break-word}.daily-overview .daily-waste .waste-weekday{font-size:12px;line-height:1.6;color:#655d73;margin-top:6px}
 @media(max-width:1100px){.daily-overview .waste-date.bio,.daily-overview .waste-date.communal{grid-template-columns:minmax(0,1fr);gap:10px}.waste-symbol{width:34px;height:34px}.daily-overview .waste-date strong{font-size:18px}}
 @media(max-width:760px){.daily-overview .waste-dates{gap:24px}.daily-overview .waste-date strong{font-size:18px}.daily-overview .daily-grid .daily-waste .eyebrow{margin-bottom:14px}}
+
+@media(max-width:760px){.daily-strip .daily-overview .daily-grid>.daily-waste{border-top:1px solid #e4e0e9;padding-top:18px}}
