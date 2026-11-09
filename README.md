@@ -71,3 +71,8 @@ Kontroly zahrnují i veřejné profily Contemporary, ČZS a Sokola; nepřepisuj�
 ## Domény
 
 Hlavní adresa je připravena jako `prortyni.cz` v Pages projektu `obcane-pro-rtyni`. Cloudflare zóny: prortyni.cz `ddcb7bccd6c0264be3e4a3ec873e8d9b`, pro-rtyni.cz `e18de1f257c8125d59d6251b2622ac79`. Oběma byly přiděleny nameservery `june.ns.cloudflare.com` a `zac.ns.cloudflare.com`. Do jejich nastavení u registrátora jsou zóny pending. Doména pro-rtyni.cz a její www varianta mají 301 na https://prortyni.cz se zachováním cesty a dotazu; www.prortyni.cz se také sjednocuje na hlavní adresu. Po aktivaci ověřit HTTPS a přesměrování včetně odkazu `?zprava=…`.
+
+
+## Hlavní zprávy
+
+Samostatná rubrika `/zpravy/` kombinuje zveřejněné `public.obcane_posts` a uložený redakční přehled `data/editorial-news.json`. Položky se slučují podle slugu. Kategorie `original` znamená vlastní článek, `media` vlastní shrnutí cizí zprávy. Média mají původní datum, jméno zdroje a odkazy; fotografie ani plné cizí texty se nepřebírají. Pole `author`, `source_name`, `source_date`, `source_refs` jsou doplněna migrací `schema-news.sql`. Nová oprávnění editorů nebyla udělena. Hasičské zprávy zůstávají v městském přehledu pod filtrem Hasiči.
