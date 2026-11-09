@@ -105,3 +105,9 @@ Obnova je součástí existujícího workflow `refresh-public-info.yml` čtyřik
 ### Pruh počasí
 
 `assets/weather.js` načítá bez klíče Open-Meteo pro souřadnice 50.505, 16.073, časové pásmo Praha, teploty v °C a vítr v km/h. Pruh ukazuje aktuální modelový stav (teplota, pocitová teplota, vítr, nárazy, vlhkost a srážky za interval poskytovatele) a výhled na tři následující dny. Ikony rozlišují den a noc i druh srážek. Aktualizace běží každých deset minut a při návratu do stránky. Při výpadku lze zobrazit označený uložený přehled nejvýše 90 minut starý, jinak se místo hodnot ukáže nedostupnost. Data a zdroj zůstávají oddělené od svátku, školních prázdnin a svozu odpadu.
+
+### Denní přehled a svátky
+
+`assets/topbar.js` zobrazuje jméno oslavence vedle data v horním pruhu na úvodu i stránce zpráv. Jméno se přijímá jen pro aktuální pražské datum. `assets/public-holidays.js` vybírá nejbližší český svátek včetně dneška, rozlišuje státní a ostatní svátky a počítá Velký pátek a Velikonoční pondělí podle gregoriánských Velikonoc. Podklady byly ověřeny v zákoně 245/2000 Sb. a přehledu ČNB dne 9. 11. 2026. Výběr zahrnuje i Vánoce; označení karty se řídí druhem příštího svátku. Ověření pokrývá velikonoční data, přechod roku i stáří údajů o jmeninách.
+
+Počasí, termíny a odjezdy sdílejí `.daily-overview`: na větších obrazovkách všechny poloviny začínají na téže středové ose; odjezdy nemají bílé pozadí ani rámeček. Na mobilu jsou prázdniny a příští svátek vedle sebe, svoz a odjezdy pod nimi. Dělicí čáry se na mobilu přizpůsobují pořadí informací.
