@@ -1,4 +1,4 @@
-import {fetchPracticalInfo,mergePracticalInfo,renderPracticalExtras} from './practical-info.js?v=20261109-mobile-daily-5';
+import {fetchPracticalInfo,mergePracticalInfo,renderPracticalExtras} from './practical-info.js?v=20261110-details-1';
 import './anchors.js?v=20261109-doctors-2';
 import {cleanDetailText,renderDetailContent,renderAttachments,organizeDetail} from './details.js?v=20261109-education-1';
 import {uniqueEvents} from './events.js';

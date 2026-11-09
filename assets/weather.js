@@ -1,7 +1,8 @@
 const endpoint='https://api.open-meteo.com/v1/forecast?latitude=50.505&longitude=16.073&current=temperature_2m,apparent_temperature,relative_humidity_2m,precipitation,weather_code,is_day,wind_speed_10m,wind_direction_10m,wind_gusts_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&temperature_unit=celsius&precipitation_unit=mm&wind_speed_unit=kmh&forecast_days=4&timezone=Europe%2FPrague';
 const key='rtyne-weather-v1';
 const labels={0:'Jasno',1:'Převážně jasno',2:'Polojasno',3:'Zataženo',45:'Mlha',48:'Mrznoucí mlha',51:'Slabé mrholení',53:'Mrholení',55:'Silné mrholení',56:'Mrznoucí mrholení',57:'Mrznoucí mrholení',61:'Slabý déšť',63:'Déšť',65:'Silný déšť',66:'Mrznoucí déšť',67:'Mrznoucí déšť',71:'Slabé sněžení',73:'Sněžení',75:'Silné sněžení',77:'Sněhová zrna',80:'Slabé přeháňky',81:'Přeháňky',82:'Silné přeháňky',85:'Sněhové přeháňky',86:'Silné sněhové přeháňky',95:'Bouřka',96:'Bouřka s kroupami',99:'Bouřka s kroupami'};
-const number=(n,digits=0)=>Number(n).toLocaleString('cs-CZ',{maximumFractionDigits:digits});
+export const formatWeatherNumber=(n,digits=0)=>Number(n).toLocaleString('cs-CZ',{maximumFractionDigits:digits,signDisplay:'negative'});
+const number=formatWeatherNumber;
 export const direction=d=>Number.isFinite(d)?['S','SV','V','JV','J','JZ','Z','SZ'][Math.round(((d%360)+360)%360/45)%8]:'';
 export function weatherKind(code,day=true){if(code===0||code===1)return day?'sun':'moon';if(code===2)return day?'partly':'partly-night';if(code===45||code===48)return 'fog';if(code>=95)return 'storm';if([71,73,75,77,85,86].includes(code))return 'snow';if([51,53,55,56,57,61,63,65,66,67,80,81,82].includes(code))return 'rain';return 'cloud';}
 export function weatherData(raw,now=new Date()){
