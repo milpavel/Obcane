@@ -1,1 +1,12 @@
-{"name":"obcane-pro-rtyni","private":true,"type":"module","scripts":{"test":"node scripts/test_sources.mjs && node scripts/test_notices.mjs"},"devDependencies":{"linkedom":"0.18.12","word-extractor":"1.0.4"}}
+{
+  "name": "obcane-pro-rtyni",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/test_sources.mjs && node scripts/test_notices.mjs && node scripts/test_events.mjs"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.12",
+    "word-extractor": "1.0.4"
+  }
+}
