@@ -136,11 +136,7 @@
                 "type": "paragraph"
               },
               {
-                "text": "Sociální pracovnice: Irena",
-                "type": "paragraph"
-              },
-              {
-                "text": "Lelková",
+                "text": "Sociální pracovnice: Irena Lelková",
                 "type": "paragraph"
               },
               {
@@ -218,79 +214,51 @@
                 "type": "paragraph"
               },
               {
-                "text": "Základní",
+                "text": "Základní činnosti pečovatelské služby",
                 "type": "paragraph"
               },
               {
-                "text": "činnosti pečovatelské služby",
+                "text": "- Základní a sociální poradenství",
                 "type": "paragraph"
               },
               {
-                "text": "- Základní",
+                "text": "- Pomoc při zvládání běžných úkonů péče o vlastní osobu",
                 "type": "paragraph"
               },
               {
-                "text": "a sociální poradenství",
+                "text": "- Pomoc při osobní hygieně nebo poskytnutí, podmínek pro osobní hygienu",
                 "type": "paragraph"
               },
               {
-                "text": "- Pomoc",
+                "text": "- Poskytnutí stravy nebo pomoc při zajištění stravy",
                 "type": "paragraph"
               },
               {
-                "text": "při zvládání běžných úkonů péče o vlastní osobu",
+                "text": "- Pomoc při zajištění chodu domácnosti",
                 "type": "paragraph"
               },
               {
-                "text": "při osobní hygieně nebo poskytnutí, podmínek pro osobní hygienu",
+                "text": "- Zprostředkování kontaktu se společenským prostředím",
                 "type": "paragraph"
               },
               {
-                "text": "- Poskytnutí",
+                "text": "- Pomoc při uplatňování kontaktu se společenským prostředím",
                 "type": "paragraph"
               },
               {
-                "text": "stravy nebo pomoc při zajištění stravy",
+                "text": "- Pomoc při uplatňování práv, oprávněných zájmů a při obstarávání osobních záležitostí",
                 "type": "paragraph"
               },
               {
-                "text": "při zajištění chodu domácnosti",
+                "text": "- Pomoc při zajištění bezpečí a možnosti setrvání v přirozeném sociálním prostředí",
                 "type": "paragraph"
               },
               {
-                "text": "- Zprostředkování",
+                "text": "Fakultativní (doplňkové) činnosti pečovatelské služby",
                 "type": "paragraph"
               },
               {
-                "text": "kontaktu se společenským prostředím",
-                "type": "paragraph"
-              },
-              {
-                "text": "při uplatňování kontaktu se společenským prostředím",
-                "type": "paragraph"
-              },
-              {
-                "text": "při uplatňování práv, oprávněných zájmů a při obstarávání osobních záležitostí",
-                "type": "paragraph"
-              },
-              {
-                "text": "při zajištění bezpečí a možnosti setrvání v přirozeném sociálním prostředí",
-                "type": "paragraph"
-              },
-              {
-                "text": "Fakultativní",
-                "type": "paragraph"
-              },
-              {
-                "text": "(doplňkové) činnosti pečovatelské služby",
-                "type": "paragraph"
-              },
-              {
-                "text": "- Doprovod",
-                "type": "paragraph"
-              },
-              {
-                "text": "služebním vozem PS",
+                "text": "- Doprovod služebním vozem PS",
                 "type": "paragraph"
               }
             ],
@@ -431,7 +399,7 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:41.956Z"
+        "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T12:38:41.956Z"
     },
@@ -464,7 +432,7 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:41.956Z"
+        "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T12:38:41.956Z"
     },
@@ -508,7 +476,7 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:41.956Z"
+        "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T12:38:41.956Z"
     },
@@ -543,11 +511,14 @@
           "telefon: 499 888 105",
           "e-mail: hartmanrtyne@gmail.com",
           "Adresa",
-          "Náměstí horníků 830 Rtyně v Podkrkonoší 542 33",
+          "Náměstí horníků 830",
+          "Rtyně v Podkrkonoší",
+          "542 33",
           "MUDr. Naděžda Hartmanová",
           "Praktická lékařka pro děti a dorost",
           "U dětských lékařů platí rezervační systém. Pacienti si ráno musí zavolat o čas vyšetření.",
-          "oficiální stránky - https://www.doktor-rtyne.cz - ve vyhledávačích \"Lékařská péče Rtyně v Podkrkonoší",
+          "oficiální stránky - https://www.doktor-rtyne.cz",
+          "Ordinační hodiny",
           "Sestra Pavlína Brejtrová",
           "Tel. 499 888 180",
           "IČO 49290657",
@@ -559,11 +530,21 @@
           "Úterky a čtvrtky dopoledne děláme převážně kojeneckou poradnu, očkujeme a zbylý čas doplníme nemocnými. Ordinaci začínáme vždy zdravými – kontroly a prevence.",
           "Každý den všechny pacienty telefonicky objednáváme na přesně určenou dobu (při akutních komplikacích někdy nelze časový limit dodržet - děkuji za pochopení).",
           "Objednávat se nemusíte, pokud potřebujete pouze potvrdit přihlášku do školy, tábor, řidičský průkaz, ošetřování apod.",
+          "Smluvní pojišťovny",
+          "Všeobecná zdravotní pojišťovna (111)",
+          "Zdravotní pojišťovna ministerstva vnitra ČR (211)",
+          "Vojenská zdravotní pojišťovna (201)",
+          "Česká národní zdravotní pojišťovna (222)",
+          "Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví (207)",
+          "Kontakt",
           "telefon: 499 888 180 (Rtyně v Podkrkonoší), 775 959 211 (Malé Svatoňovice)",
           "e-mail: nadezda.hartmanova@seznam.cz",
-          "Zubní ordinace",
+          "Adresa",
+          "Náměstí horníků 830",
+          "Rtyně v Podkrkonoší",
+          "542 33",
           "MUDr. Eva Jirásková",
-          "Po-St 7:30 – 1213-15",
+          "Ordinační hodiny od pondělí do středy nejsou na webu města jednoznačně zapsané. Potvrďte si je prosím telefonicky v ordinaci.",
           "Čt, Pá – 7:30 – 12:30",
           "Hornická 417",
           "Tel. 776589020",
@@ -668,7 +649,15 @@
             "level": 3
           },
           {
-            "text": "Náměstí horníků 830 Rtyně v Podkrkonoší 542 33",
+            "text": "Náměstí horníků 830",
+            "type": "paragraph"
+          },
+          {
+            "text": "Rtyně v Podkrkonoší",
+            "type": "paragraph"
+          },
+          {
+            "text": "542 33",
             "type": "paragraph"
           },
           {
@@ -778,7 +767,15 @@
             "level": 3
           },
           {
-            "text": "Náměstí horníků 830 Rtyně v Podkrkonoší 542 33",
+            "text": "Náměstí horníků 830",
+            "type": "paragraph"
+          },
+          {
+            "text": "Rtyně v Podkrkonoší",
+            "type": "paragraph"
+          },
+          {
+            "text": "542 33",
             "type": "paragraph"
           },
           {
@@ -833,7 +830,7 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:41.956Z"
+        "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T12:38:41.956Z"
     },
@@ -848,7 +845,20 @@
       "summary": "Kontakty městského úřadu, úřední hodiny, adresa a bankovní spojení.",
       "payload": {
         "body": [
-          "Www:: http://www.rtyne.cz"
+          "Www:: http://www.rtyne.cz",
+          "Telefon: 499888140",
+          "E-mail: podatelna@mestortyne.cz",
+          "Datová schránka: 2awbshw",
+          "IČO: 00278238",
+          "DIČ: CZ00278238",
+          "Bankovní spojení: 245909204/0300",
+          "Úřední dny a hodiny",
+          "Pondělí: 8:00 - 17:00 hod. (11:30 - 12:30 polední pauza)",
+          "Úterý: 8:00 - 11:30 hod.",
+          "Středa: 8:00 - 17:00 hod. (11:30 - 12:30 polední pauza)",
+          "Čtvrtek: 8:00 - 11:30 hod.",
+          "Město Rtyně v Podkrkonoší",
+          "Hronovská 431 542 33 Rtyně v Podkrkonoší"
         ],
         "days": [],
         "kind": "service",
@@ -917,11 +927,7 @@
             "level": 3
           },
           {
-            "text": "Hronovská 431",
-            "type": "paragraph"
-          },
-          {
-            "text": "542 33 Rtyně v Podkrkonoší",
+            "text": "Hronovská 431 542 33 Rtyně v Podkrkonoší",
             "type": "paragraph"
           }
         ],
@@ -934,7 +940,7 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:41.956Z"
+        "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T12:38:41.956Z"
     },
@@ -969,7 +975,31 @@
             "title": "Otevírací doba",
             "blocks": [
               {
-                "text": "Pondělí - 8.00 - 12.00 a 12.30 - 16.30 Úterý - 8.00 - 12.00 a 12.30 - 16.30 Středa - 8.00 - 12.00 a 12.30 - 16.30 Čtvrtek - ZAVŘENO Pátek - ZAVŘENO Sobota - 1. sobota v měsíci (DUBEN - LISTOPAD) - 8.00 - 11.00 Neděle - ZAVŘENO",
+                "text": "Pondělí - 8.00 - 12.00 a 12.30 - 16.30",
+                "type": "paragraph"
+              },
+              {
+                "text": "Úterý - 8.00 - 12.00 a 12.30 - 16.30",
+                "type": "paragraph"
+              },
+              {
+                "text": "Středa - 8.00 - 12.00 a 12.30 - 16.30",
+                "type": "paragraph"
+              },
+              {
+                "text": "Čtvrtek - ZAVŘENO",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pátek - ZAVŘENO",
+                "type": "paragraph"
+              },
+              {
+                "text": "Sobota - 1. sobota v měsíci (DUBEN - LISTOPAD) - 8.00 - 11.00",
+                "type": "paragraph"
+              },
+              {
+                "text": "Neděle - ZAVŘENO",
                 "type": "paragraph"
               }
             ],
@@ -990,7 +1020,31 @@
             "title": "Kontakty",
             "blocks": [
               {
-                "text": "JEDNATEL František Pěkný tel. 602 114 718 email: skladka.podhaldou@seznam.cz VEDOUCÍ Michal Pěkný tel. 607 129 131",
+                "text": "JEDNATEL",
+                "type": "paragraph"
+              },
+              {
+                "text": "František Pěkný",
+                "type": "paragraph"
+              },
+              {
+                "text": "tel. 602 114 718",
+                "type": "paragraph"
+              },
+              {
+                "text": "email: skladka.podhaldou@seznam.cz",
+                "type": "paragraph"
+              },
+              {
+                "text": "VEDOUCÍ",
+                "type": "paragraph"
+              },
+              {
+                "text": "Michal Pěkný",
+                "type": "paragraph"
+              },
+              {
+                "text": "tel. 607 129 131",
                 "type": "paragraph"
               }
             ],
@@ -1029,7 +1083,7 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:41.956Z"
+        "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T12:38:41.956Z"
     },
@@ -1062,7 +1116,7 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:41.956Z"
+        "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T12:38:41.956Z"
     },
@@ -1257,7 +1311,7 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:41.956Z"
+        "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T12:38:41.956Z"
     },
@@ -2606,7 +2660,9 @@
       "payload": {
         "body": [
           "AKCE PRO ROK 2026",
-          "Po hornických památkách Rtyně"
+          "Po hornických památkách Rtyně",
+          "Video k tématu",
+          "Video k tématu"
         ],
         "days": [],
         "kind": "service",
@@ -2710,7 +2766,7 @@
         "source_name": "Muzeum a infocentrum",
         "detail_error": null,
         "content_version": 2,
-        "detail_fetched_at": "2026-11-09T12:38:14.044Z"
+        "detail_fetched_at": "2026-11-09T10:17:22.083Z"
       },
       "last_seen_at": "2026-11-09T12:38:14.044Z"
     },
@@ -10329,5 +10385,5 @@
       "news_note": null
     }
   ],
-  "generated_at": "2026-11-09T12:44:39.742Z"
+  "generated_at": "2026-11-09T12:47:24.715Z"
 }
