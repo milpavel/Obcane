@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node scripts/test_sources.mjs && node scripts/test_notices.mjs && node scripts/test_events.mjs"
+    "test": "node scripts/test_sources.mjs && node scripts/test_notices.mjs && node scripts/test_events.mjs && node scripts/test_suggestions.mjs"
   },
   "devDependencies": {
     "linkedom": "0.18.12",

@@ -1,3 +1,4 @@
+import {handleSuggestions} from './suggestions.ts';
 import {communitySources} from './community-sources.ts';
 import {dailyInfo} from './daily.ts';
 import postgres from 'npm:postgres@3.4.7';
@@ -116,9 +117,15 @@ async function isEditor(req:Request){
  const r=await fetch(Deno.env.get('SUPABASE_URL')+'/auth/v1/user',{headers:{Authorization:token,apikey:Deno.env.get('SUPABASE_ANON_KEY')!}});if(!r.ok)return false;
  const user=await r.json();if(!user.id)return false;const rows=await sql`select 1 from public.obcane_editors where user_id=${user.id}`;return rows.length>0;
 }
+async function canManageSuggestions(req:Request){
+ const token=req.headers.get('authorization');if(!token?.startsWith('Bearer '))return false;
+ const r=await fetch(Deno.env.get('SUPABASE_URL')+'/auth/v1/user',{headers:{Authorization:token,apikey:Deno.env.get('SUPABASE_ANON_KEY')!},signal:AbortSignal.timeout(10000)});if(!r.ok)return false;const user=await r.json();if(!user.id)return false;
+ const rows=await sql`select 1 from obcane.suggestion_managers where user_id=${user.id} union all select 1 from public.obcane_editors where user_id=${user.id} limit 1`;return rows.length>0;
+}
 Deno.serve(async(req:Request)=>{
  if(req.method==='OPTIONS')return new Response(null,{headers:cors});
  try {
+  const suggestionResult=await handleSuggestions(req,{sql,response,secret:Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!,canManage:canManageSuggestions});if(suggestionResult)return suggestionResult;
   if(req.method==='GET') {
    if(new URL(req.url).searchParams.get('daily')==='1')return response(await dailyInfo());
    const id=new URL(req.url).searchParams.get('id');
