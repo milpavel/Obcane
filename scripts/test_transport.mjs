@@ -32,3 +32,6 @@ for(const kind of ['train','bus'])assert.ok(document.getElementById('next-'+kind
 for(const s of STOPS)assert.ok(document.querySelector(`option[value="${s.id}"]`));
 assert.ok(document.querySelector('#doprava'));
 console.log('PASS: Prague timezone and DST, terminal arrivals, delayed/past departures, missing delay, deduplication, source errors, whitelist, caching, offline fallback, stop selectors');
+const priorDocument=globalThis.document;globalThis.document=parseHTML('<html><body></body></html>').document;
+try{const {delayBadge}=await import('../assets/transport.js');assert.equal(delayBadge(null),null);assert.equal(delayBadge(0),null);assert.equal(delayBadge(NaN),null);const badge=delayBadge(11);assert.equal(badge.textContent,'+11 min');assert.equal(badge.className,'departure-delay');assert.ok(badge.getAttribute('aria-label').includes('11 minut'));}finally{if(priorDocument)globalThis.document=priorDocument;else delete globalThis.document;}
+console.log('PASS: positive delay badge and no badge for on-time or unknown delay');
