@@ -6,3 +6,12 @@
   Cache-Control: public, max-age=0, must-revalidate
 /data/*
   Cache-Control: no-cache
+
+/
+  Cache-Control: no-cache, max-age=0, must-revalidate
+/index.html
+  Cache-Control: no-cache, max-age=0, must-revalidate
+/zpravy/
+  Cache-Control: no-cache, max-age=0, must-revalidate
+/zpravy/index.html
+  Cache-Control: no-cache, max-age=0, must-revalidate
