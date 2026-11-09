@@ -1,3 +1,4 @@
+import {dailyInfo} from './daily.ts';
 import postgres from 'npm:postgres@3.4.7';
 import { extraSources, extractExtra, assets } from './extra-sources.ts';
 import { parseHTML } from 'npm:linkedom@0.18.12';
@@ -103,7 +104,7 @@ async function importSource(s:any){
       published_at=coalesce(excluded.published_at,obcane.items.published_at),summary=excluded.summary,
       payload=case when excluded.payload->>'detail_error' is not null then obcane.items.payload || jsonb_build_object('detail_error',excluded.payload->>'detail_error') else excluded.payload end,last_seen_at=excluded.last_seen_at`;
    }
-   if(['calendar','clubs','library'].includes(s.key))await tx`update obcane.items set payload=payload || '{"in_latest":false}'::jsonb where source_key=${s.key} and last_seen_at < ${checked}::timestamptz`;
+   if(['calendar','clubs','library','scouts','orel','koletovka'].includes(s.key))await tx`update obcane.items set payload=payload || '{"in_latest":false}'::jsonb where source_key=${s.key} and last_seen_at < ${checked}::timestamptz`;
    await tx`update obcane.sources set checked_at=${checked},last_success_at=${checked},updated_at=${checked},status=${detailFailures?'error':'ok'},last_error=${detailFailures?'Nenačtené detaily: '+detailFailures:null},item_count=${items.length} where source_key=${s.key}`;
   });
   return {key:s.key,status:detailFailures?'partial':'ok',count:items.length,detail_failures:detailFailures};
@@ -118,6 +119,7 @@ Deno.serve(async(req:Request)=>{
  if(req.method==='OPTIONS')return new Response(null,{headers:cors});
  try {
   if(req.method==='GET') {
+   if(new URL(req.url).searchParams.get('daily')==='1')return response(await dailyInfo());
    const id=new URL(req.url).searchParams.get('id');
    if(id&&!/^\d{1,16}$/.test(id))return response({error:'Neplatný identifikátor'},400);
    const items=id?await sql`select id,source_key,external_url,title,category,event_date::text,published_at,summary,payload,last_seen_at from obcane.items where id=${id} limit 1`:await sql`select id,source_key,external_url,title,category,event_date::text,published_at,summary,payload,last_seen_at from obcane.items order by coalesce(published_at,last_seen_at) desc,id desc limit 450`;

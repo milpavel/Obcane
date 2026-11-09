@@ -1,3 +1,4 @@
+import {clubProfile} from './club-profiles.ts';
 import WordExtractor from 'npm:word-extractor@1.0.4';
 import { DOMParser, parseHTML } from 'npm:linkedom@0.18.12';
 import { Buffer } from 'node:buffer';
@@ -47,18 +48,41 @@ export function parsePreschoolMenu(raw:string,url:string,czDate:any){
  if(days.length!==5||days.some(d=>d.date>end))throw Error('Neúplný týden jídelníčku MŠ');
  return {title:`Jídelníček MŠ ${range[1]}. ${range[2]}. – ${range[3]}. ${range[4]}. ${range[5]}`,url,summary:'Přesnídávky, obědy a svačiny přímo z týdenního jídelníčku MŠ, včetně uvedených alergenů.',body:[],extra:{kind:'preschool_menu',week_start:start,week_end:end,preschool_days:days,menu_note:raw.slice(raw.indexOf('Změna jídelníčku')).trim()},detail_ok:true};
 }
+// Dates of the event are distinct from RSS publication dates.
+export function communityDates(title:string,body:string,eventDate:any):string[]{
+ const raw=title+' '+body,range=raw.match(/(\d{1,2})\.\s*[–-]\s*(\d{1,2})\.\s*(\d{1,2})\.\s*(20\d{2})/);
+ if(range){const a=eventDate(`${range[1]}.${range[3]}.${range[4]}`),b=eventDate(`${range[2]}.${range[3]}.${range[4]}`);if(a&&b&&b>=a){const out=[];for(let d=new Date(a+'T12:00:00Z');d.toISOString().slice(0,10)<=b&&out.length<10;d.setUTCDate(d.getUTCDate()+1))out.push(d.toISOString().slice(0,10));return out;}}
+ const explicit=eventDate(title);if(explicit)return [explicit];
+ // Only invitation-like articles can supply a date from their text.
+ if(!/ples|koncert|pozván|zveme|turnaj|festival|nábor|setkání/i.test(title+' '+body.slice(0,180)))return [];
+ const date=eventDate(body);return date?[date]:[];
+}
 export async function extractExtra(s:any,h:any):Promise<any[]|null>{
  const {page,text,clean,eventDate,czDate,safeURL}=h;
  if(!extraSources.some(x=>x.key===s.key))return null;
  let out:any[]=[];
  if(['scouts','orel','koletovka'].includes(s.key)){
   const r=await fetch(s.url,{signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Spolkový zdroj HTTP '+r.status);const raw=await r.text();if(raw.length>3000000)throw Error('Zdroj je příliš velký');
-  const entries=s.key==='koletovka'?JSON.parse(raw):Array.from(new DOMParser().parseFromString(raw,'text/xml').querySelectorAll('item')).slice(0,6);
+  const entries=s.key==='koletovka'?JSON.parse(raw):Array.from(new DOMParser().parseFromString(raw,'text/xml').querySelectorAll('item')).slice(0,20);
   for(const x of entries){let title,link,content,published;
    if(s.key==='koletovka'){title=x.title?.rendered;link=x.link;content=x.content?.rendered;published=x.date_gmt?x.date_gmt+'Z':null;}
    else{title=x.querySelector('title')?.textContent;link=x.querySelector('link')?.textContent;content=Array.from(x.children).find((c:any)=>c.tagName==='content:encoded')?.textContent||x.querySelector('description')?.textContent;const d=new Date(x.querySelector('pubDate')?.textContent||'');published=Number.isFinite(d.getTime())?d.toISOString():null;}
    const d=parseHTML('<article>'+String(content||'')+'</article>').document;d.querySelectorAll('script,style,nav,footer,form').forEach((n:any)=>n.remove());const root=d.querySelector('article'),body=richText(root,clean),heading=parseHTML('<b>'+String(title||'')+'</b>').document.querySelector('b');
-   if(!title||!link)continue;out.push({title:text(heading),url:safeURL(link,s.url),body,summary:body.join(' ').slice(0,350),published,detail_ok:true,extra:{kind:'community',...assets(root,s.url)}});
+   if(!title||!link)continue;
+   const dates=communityDates(text(heading),body.join(' '),eventDate),item:any={title:text(heading),url:safeURL(link,s.url),body,summary:body.join(' ').slice(0,350),published,event:dates[0]||null,detail_ok:true,extra:{kind:dates.length?'event':'community',...assets(root,s.url)}};
+   if(dates.some(date=>date>=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Prague'}))){
+    const detailLink=Array.from(root.querySelectorAll('a[href]')).find((a:any)=>/informace|podrobnosti/i.test(body.join(' '))&&a.getAttribute('href')&&!/\.(jpg|png|pdf)/i.test(a.getAttribute('href')));
+    if(detailLink)try{const url=safeURL((detailLink as any).getAttribute('href'),s.url),detail=await page(url,s.url),main=detail.querySelector('.entry-content,main article,main')||detail.body;const more=richText(main,clean);if(more.length){item.body=[...new Set([...body,...more])];item.summary=more.join(' ').slice(0,350);item.extra={...item.extra,...assets(main,url),event_sources:[{title:'Podrobnosti od pořadatele',url}]};}}catch{/* RSS invitation remains usable. */}
+   }
+   out.push(item);for(const date of dates.slice(1))out.push({...item,url:item.url+'#termin-'+date,event:date,extra:{...item.extra,calendar_only:true}});
+  }
+  if(s.key==='koletovka'){
+   const calendarDoc=await page('https://koletovka.cz/');
+   for(const row of Array.from(calendarDoc.querySelectorAll('table.responsive-table tbody tr')) as any[]){
+    const cells=Array.from(row.querySelectorAll('td')) as any[];if(cells.length<3)continue;
+    const title=text(cells[1]),location=text(cells[2]),dates=communityDates(text(cells[0]),'',eventDate),time=location.match(/od\s+(\d{1,2}:\d{2})/i)?.[1]||null;
+    for(const event of dates){if(event<new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Prague'}))continue;out.push({title,url:'https://koletovka.cz/#akce-'+slug(title)+'-'+event,event,summary:location,body:[location],detail_ok:true,extra:{kind:'event',calendar_only:true,time,location,event_sources:[{title:'Kalendář Koletovy hornické hudby',url:'https://koletovka.cz/'}]}});}
+   }
   }
   if(!out.length)throw Error('Spolkový zdroj neobsahuje články');return out;
  }
@@ -91,7 +115,7 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
   for(const x of out){await pause(1100);try{const d=await page(x.url,s.url);x.body=richText(d.querySelector('.article__text .text-component'),clean);x.summary=x.summary||text(d.querySelector('.article__perex'))||x.body.join(' ').slice(0,350);x.extra={...x.extra,...assets(d.querySelector('article.article'),x.url)};x.detail_ok=!!(x.body.length||x.extra.images.length||x.extra.attachments.length);}catch(e){x.detail_error=String(e).slice(0,160);}}
  }else if(s.key==='clubs'){
   const sport=await page('https://www.rtyne.cz/sportovni-organizace');
-  const seen=new Set();for(const d of [doc,sport])for(const a of Array.from(d.querySelectorAll('.tile__link')) as any[]){const title=text(a),href=new URL(a.getAttribute('href'),s.url).href;if(seen.has(href)||!/^https?:/.test(href))continue;seen.add(href);out.push({title,url:s.url+'#'+slug(title),summary:'Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.',body:[],detail_ok:true,extra:{kind:'club',website:href,directory_source:s.url,in_latest:true}});}
+  const seen=new Set();for(const d of [doc,sport])for(const a of Array.from(d.querySelectorAll('.tile__link')) as any[]){const title=text(a),href=new URL(a.getAttribute('href'),s.url).href;if(seen.has(href)||!/^https?:/.test(href))continue;seen.add(href);out.push({title,url:s.url+'#'+slug(title),summary:'Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.',body:[],detail_ok:true,...clubProfile(title,href),extra:{kind:'club',website:href,directory_source:s.url,in_latest:true,...clubProfile(title,href).extra}});}
  }else if(s.key==='services'){
   const paths=['svoz-odpadu-a-odpadove-hospodarstvi','svozovy-kalendar-'+new Date().getUTCFullYear(),'skladka-pod-haldou','kontakt','lekarske-sluzby-1','doprava-senioru-senior-taxi','informace-k-uhradam-mistnich-poplatku-v-roce-'+new Date().getUTCFullYear(),'pecovatelska-sluzba'];
   for(const path of paths){await pause(1100);const url='https://www.rtyne.cz/'+path;try{const d=url===s.url?doc:await page(url),root=d.querySelector('article.article');const title=text(d.querySelector('h1.article__heading'));if(!title)throw Error('Chybí název služby');const body=richText(root,clean);out.push({title,url,summary:text(d.querySelector('.article__perex'))||body.slice(0,2).join(' ').slice(0,350),body,detail_ok:true,extra:{kind:'service',...assets(root,url)}});}catch(e){out.push({title:path.replaceAll('-',' '),url,body:[],detail_error:String(e).slice(0,160),extra:{kind:'service'}});}}

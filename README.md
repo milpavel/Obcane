@@ -33,7 +33,7 @@ python scripts/check_api.py
 python scripts/export_snapshot.py
 ```
 
-Při změně parseru ověřit aktuální HTML zdroje a znovu nasadit `obcane-api`. Cloudflare automaticky nasazuje statický web z GitHubu; Edge Function se nasazuje samostatně přes Supabase. Přehled zdrojů na webu i v administraci ukazuje poslední úspěch a případné chyby.
+Při změně parseru ověřit aktuální HTML zdroje a znovu nasadit `obcane-api`. Cloudflare automaticky nasazuje statický web z GitHubu; Edge Function se nasazuje samostatně přes Supabase. Administrace ukazuje poslední úspěch a případné chyby zdrojů. Veřejné stránky zachovávají zdroj a datum načtení u jednotlivých informací.
 
 ## Redakční pravidla
 
@@ -50,3 +50,12 @@ Praktické služby obsahují odpady a svozový kalendář, sběrný dvůr, měst
 ## Sloučení odstávek a omezení
 
 `assets/notices.js` slučuje oznámení podle druhu omezení, skutečného termínu a společné lokality (ulice, silnice nebo dotčená čísla domů). Samotný obecný nadpis a datum ke sloučení nestačí. U vody má přednost přímý zdroj VAK; u etap asfaltování souhrnné oznámení s celým rozsahem termínu. Původní odkazy zůstávají v detailu. Aktuální omezení se zobrazují v jedné vlastní sekci; v běžném přehledu zpráv se neopakují. Výslovné hledání a filtr Voda používají stejný sloučený přehled. Původní ID článků zůstávají funkční. Testy `scripts/test_notices.mjs` ověřují sloučení vody a asfaltování, vyřazení skončených omezení a zachování různých dat a ulic.
+
+
+## Profily spolků a denní přehled
+
+`club-profiles.ts` obsahuje redakčně ověřené profily organizací, kontakty, zveřejněné ceny a konkrétní zdrojové odkazy. Datum `profile_checked` aktualizovat až po kontrole těchto stránek. Import městského adresáře propojuje profily s trvalými ID; alias jednoty Orla se v seznamu neopakuje. Chybějící ceny se nevymýšlejí. Ceník florbalu obsahuje rozpor ve slevách pro sourozence, na který profil upozorňuje.
+
+Spolkové RSS pozvánky s jednoznačným datem konání vstupují do kalendáře. Datum publikace zůstává oddělené. Rozsahy více dnů mají samostatné termíny; Koletovka doplňuje i vlastní tabulku akcí. Skautská pozvánka načte související stránku s podrobnostmi na stejném webu. Po úspěšném importu se i odstraněné spolkové pozvánky skryjí z aktuálního přehledu.
+
+`GET obcane-api?daily=1` vrací počasí Open-Meteo pro Rtyni a jmeniny ze Svátky API. Datum se určuje podle Europe/Prague, odpovědi poskytovatelů se ověřují proti tomuto dni. Cache je nejvýše 15 minut, při výpadku 1 minuta; neúspěch jedné služby neblokuje druhou ani zprávy. Veřejný přehled zobrazuje poskytovatele a čas počasí. Profily a denní přehled nepoužívají žádné nové klíče ani přihlašování.

@@ -7,7 +7,8 @@ const require=createRequire(import.meta.url),tmp=await mkdtemp(new URL('../.sour
 try{
  let source=await readFile(new URL('../supabase/functions/obcane-api/extra-sources.ts',import.meta.url),'utf8');
  source=source.replaceAll('npm:word-extractor@1.0.4',pathToFileURL(require.resolve('word-extractor')).href).replaceAll('npm:linkedom@0.18.12',pathToFileURL(require.resolve('linkedom')).href);
- const path=tmp+'/extra.mjs';await writeFile(path,stripTypeScriptTypes(source));const {parsePreschoolMenu,extractExtra,extraSources,richText}=await import(pathToFileURL(path));
+ const profiles=await readFile(new URL('../supabase/functions/obcane-api/club-profiles.ts',import.meta.url),'utf8');await writeFile(tmp+'/club-profiles.mjs',stripTypeScriptTypes(profiles));source=source.replace('./club-profiles.ts','./club-profiles.mjs');
+ const path=tmp+'/extra.mjs';await writeFile(path,stripTypeScriptTypes(source));const {parsePreschoolMenu,extractExtra,extraSources,richText,communityDates}=await import(pathToFileURL(path));
  const czDate=s=>{const m=s.match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(20\d{2})/);if(!m)return null;const iso=`${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}`;return iso;};
  const clean=s=>String(s||'').replace(/\s+/g,' ').trim(),text=n=>clean(n?.textContent);
  const raw='Jídelní lístek od: 09. 11. do: 13. 11. 2026\n'+['Pondělí','Úterý','Středa','Čtvrtek','Pátek'].map(d=>d+': přesnídávka: pečivo A1-pšenice, A7 oběd: polévka, rýže A3 svačina: ovoce A7').join('\n')+'\nZměna jídelníčku vyhrazena.';
@@ -20,5 +21,14 @@ try{
  const rows=await extractExtra(extraSources.find(x=>x.key==='library'),{page:async()=>parseHTML(html).document,text,clean,czDate,eventDate:czDate});
  assert.equal(rows[0].extra.cancelled,true);assert.equal(rows[1].extra.cancelled,true);assert.equal(rows[2].extra.cancelled,false);
  const table=parseHTML('<article><table><tr><td>Po</td><td>8:00–17:00</td></tr></table></article>').document;assert.deepEqual(richText(table.querySelector('article'),clean),['Po · 8:00–17:00']);
- console.log('PASS: MŠ dates, five days, allergens, malformed documents, cancellation propagation, opening-hours tables');
+ assert.deepEqual(communityDates('Skautský ples (21. 11. 2026)','Veškeré informace',czDate),['2026-11-21']);
+ assert.deepEqual(communityDates('Adventní koncerty','Zveme vás 27.–28.11.2026',czDate),['2026-11-27','2026-11-28']);
+ assert.deepEqual(communityDates('Zápis ze schůze','Zveřejněno 4.10.2026',czDate),[]);
+ const {clubProfile}=await import(pathToFileURL(tmp+'/club-profiles.mjs'));assert.ok(clubProfile('TŠ Bonifác','').extra.fees.includes('1 490'));assert.ok(clubProfile('SKAUT Rtyně','').extra.contacts.length);
+ const originalFetch=globalThis.fetch;
+ try{globalThis.fetch=async()=>new Response('<rss><channel><item><title>Skautský ples (21.11.2026)</title><link>https://skaut-rtyne.skauting.cz/2026/ples/</link><pubDate>Sun, 04 Oct 2026 08:00:00 GMT</pubDate><description><![CDATA[<p>Veškeré informace: <a href="https://skaut-rtyne.skauting.cz/ples/">Podrobnosti</a></p>]]></description></item></channel></rss>');
+ const scoutRows=await extractExtra(extraSources.find(x=>x.key==='scouts'),{page:async()=>parseHTML('<main><div class="entry-content"><p>Cena vstupenky: 350 Kč.</p></div></main>').document,text,clean,czDate,eventDate:czDate,safeURL:(url,base)=>{const u=new URL(url,base);assert.equal(u.hostname,new URL(base).hostname);return u.href;}});
+ assert.equal(scoutRows[0].event,'2026-11-21');assert.equal(scoutRows[0].extra.kind,'event');assert.ok(scoutRows[0].body.some(x=>x.includes('350')));assert.ok(scoutRows[0].published.startsWith('2026-10-04'));
+ }finally{globalThis.fetch=originalFetch;}
+ console.log('PASS: MŠ dates, five days, allergens, malformed documents, cancellation propagation, opening-hours tables, community event dates and scout linked details');
 }finally{await rm(tmp,{recursive:true,force:true});}

@@ -29,7 +29,9 @@ for x in menus:
 nursery=next(x for x in d['items'] if x['source_key']=='preschool_menu')
 assert len(nursery['payload']['preschool_days'])==5
 assert all(day['text'] and datetime.date.fromisoformat(day['date']) for day in nursery['payload']['preschool_days'])
-assert any(x['payload'].get('kind')=='club' for x in d['items'])
+clubs=[x for x in d['items'] if x['payload'].get('kind')=='club' and x['payload'].get('in_latest') is not False]
+assert clubs
+assert all(x['payload'].get('activities') and x['payload'].get('profile_sources') and x['payload'].get('profile_checked') for x in clubs), 'Club profile missing sources or activities'
 assert any(x['source_key']=='calendar' and x['event_date'] for x in d['items'])
 assert any(x['source_key']=='library' for x in d['items'])
 item=d['items'][0]

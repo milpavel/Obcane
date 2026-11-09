@@ -21,9 +21,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:19:11.003Z"
+        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
       },
-      "last_seen_at": "2026-11-08T20:19:11.003Z"
+      "last_seen_at": "2026-11-09T09:19:39.715Z"
     },
     {
       "id": "282",
@@ -54,9 +54,9 @@
         ],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:19:11.003Z"
+        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
       },
-      "last_seen_at": "2026-11-08T20:19:11.003Z"
+      "last_seen_at": "2026-11-09T09:19:39.715Z"
     },
     {
       "id": "281",
@@ -81,9 +81,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:19:11.003Z"
+        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
       },
-      "last_seen_at": "2026-11-08T20:19:11.003Z"
+      "last_seen_at": "2026-11-09T09:19:39.715Z"
     },
     {
       "id": "280",
@@ -156,9 +156,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:19:11.003Z"
+        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
       },
-      "last_seen_at": "2026-11-08T20:19:11.003Z"
+      "last_seen_at": "2026-11-09T09:19:39.715Z"
     },
     {
       "id": "279",
@@ -202,9 +202,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:19:11.003Z"
+        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
       },
-      "last_seen_at": "2026-11-08T20:19:11.003Z"
+      "last_seen_at": "2026-11-09T09:19:39.715Z"
     },
     {
       "id": "278",
@@ -227,9 +227,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:19:11.003Z"
+        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
       },
-      "last_seen_at": "2026-11-08T20:19:11.003Z"
+      "last_seen_at": "2026-11-09T09:19:39.715Z"
     },
     {
       "id": "277",
@@ -260,9 +260,9 @@
         ],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:19:11.003Z"
+        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
       },
-      "last_seen_at": "2026-11-08T20:19:11.003Z"
+      "last_seen_at": "2026-11-09T09:19:39.715Z"
     },
     {
       "id": "276",
@@ -325,9 +325,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:19:11.003Z"
+        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
       },
-      "last_seen_at": "2026-11-08T20:19:11.003Z"
+      "last_seen_at": "2026-11-09T09:19:39.715Z"
     },
     {
       "id": "275",
@@ -337,20 +337,40 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Volejbalový oddíl TJ Baník. Týmový sport, tréninky, zápasy a turnaje pro mládež.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://volejbal-rtyne.estranky.cz/",
+        "contacts": [
+          "Oddílový kontakt: volejbal.rtyne@seznam.cz",
+          "Ve zveřejněném kontaktním seznamu jsou uvedeni Dana Vajsarová, Eva Hrabová a Ríša Vajsar. Platnost osobních kontaktů je vhodné ověřit."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Oddílový web představuje zejména volejbal žákyň a slouží pro informace o trénincích, zápasech a turnajích.",
+          "Na webu zůstává i starší archiv. Aktuální trenéry, věkové skupiny, rozvrh a možnost přidat se proto nejprve ověřte e-mailem."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://volejbal-rtyne.estranky.cz/",
+            "title": "Volejbalový oddíl"
+          },
+          {
+            "url": "https://volejbal-rtyne.estranky.cz/clanky/kontakty.html",
+            "title": "Zveřejněné kontakty"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "274",
@@ -360,20 +380,45 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "FBC Orel Rtyně nabízí florbal dívkám, chlapcům i dospělým. Vlastní hala, pravidelné tréninky a soutěžní týmy.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": "Sezona 2026/2027 – první + druhé pololetí:\nPřípravka a elévové: 3 000 + 1 000 Kč.\nMladší a starší žactvo: 3 100 + 1 100 Kč.\nDorost: 3 500 + 1 500 Kč.\nMuži A, junioři, ženy A a juniorky: 3 600 + 1 600 Kč.\nMuži B/C a ženy B: zveřejněna první platba 3 000 Kč.\nŠkolní kroužky a Orlíček: 600 + 600 Kč.\nPři vstupu během sezony klub uvádí poměrnou částku a registrační poplatek 809 Kč. U sourozeneckých slev obsahuje stránka rozdílné údaje, konkrétní slevu proto potvrďte se sekretariátem.",
         "kind": "club",
         "website": "https://www.fbcorelrtyne.cz/",
+        "contacts": [
+          "Nábor: Lucie Krýslová · +420 774 982 468 · nabory@fbcorelrtyne.cz",
+          "Sekretář: Miloslav Krýsl · +420 728 481 322 · sekretar@fbcorelrtyne.cz",
+          "Adresa oddílu: náměstí Horníků 856, Rtyně v Podkrkonoší."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Oddíl přijímá hráče od přípravky po dospělé; pro sezonu 2026/2027 je přípravka určena ročníkům 2020–2021. Dívčí i chlapecké týmy vedou vyškolení trenéři.",
+          "První návštěvu domluvte s náborovou koordinátorkou. Po vyzkoušení tréninku následuje registrace do členské sekce a domluva podmínek členství."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://www.fbcorelrtyne.cz/nabor",
+            "title": "Nábor – věkové kategorie"
+          },
+          {
+            "url": "https://www.fbcorelrtyne.cz/kontakty",
+            "title": "Kontakty klubu"
+          },
+          {
+            "url": "https://www.fbcorelrtyne.cz/prispevky",
+            "title": "Příspěvky 2026/2027 a podmínky"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "273",
@@ -383,20 +428,41 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Sportovní a společenské zázemí místní jednoty Orla. Patří sem i dětský Orlíček a florbal.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://www.orel.cz/?ukaz=jednota&zid=2&jid=2008",
+        "contacts": [
+          "Starostka Lucie Hejnová · +420 732 116 429 · luckahejnova@atlas.cz",
+          "Obsazenost haly: Miloslav Krýsl · +420 728 481 322 · halaorlovna@gmail.com"
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Jednota připravuje pohybové aktivity pro děti a zapojuje se do společenského života města. Aktuálně zveřejňuje nábor do Orlíčku a florbalu.",
+          "Florbal má v přehledu samostatný profil s kategoriemi a příspěvky. Pro jiné aktivity i využití haly se obraťte na vedení jednoty."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "directory_alias": true,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://www.orelrtyne.cz/",
+            "title": "Orel Rtyně – vedení a aktuality"
+          },
+          {
+            "url": "https://www.fbcorelrtyne.cz/kontakty",
+            "title": "Florbal – kontakty"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "272",
@@ -406,20 +472,40 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Nadšenci do vojenské historie a československého opevnění. Pečují o pěchotní srub T-S 26 u Odolova.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://pechotni-srub-t-s-26.webnode.cz/",
+        "contacts": [
+          "Předseda David Beneš · benes@bunkry.cz",
+          "Sídlo: Horní Kostelec 241, Červený Kostelec, 549 41."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Klub zve zájemce o rekonstrukci objektu a provázení v muzeu. Pro členství uvádí minimální věk 18 let a zájem o pevnostní a vojenskou tematiku.",
+          "Upozornění pro návštěvníky: web při ověření uvádí uzavření objektu ze zdravotních a technických důvodů do odvolání. Před cestou si ověřte možnost návštěvy."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://pechotni-srub-t-s-26.webnode.cz/",
+            "title": "Činnost a aktuální oznámení o uzavření"
+          },
+          {
+            "url": "https://pechotni-srub-t-s-26.webnode.cz/kontakt/",
+            "title": "Kontakt na předsedu"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "271",
@@ -429,20 +515,44 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Pobočka tanečního studia Contemporary ve Rtyni. Současný a pouliční tanec i další pohybové kurzy.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": "Ceník pro pobočku Rtyně uvádí 2 390 Kč při jedné lekci týdně a 3 590 Kč při dvou lekcích týdně. U těchto řádků není výslovně uvedeno účtované období; před platbou si potvrďte období i konečnou cenu konkrétního kurzu.",
         "kind": "club",
         "website": "https://contemporary.cz/",
+        "contacts": [
+          "Regionální kurzy: Petra Dědková · peta@contemporary.cz",
+          "Informace: info@contemporary.cz · +420 773 751 545"
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Rtyňské kurzy zprostředkovává také Bonifác. Jeho nabídka 2026/2027 uvádí contemporary, street dance, latino a kurzy pro děti od 7 let i dospělé.",
+          "Konkrétní otevřené skupiny, věk účastníků a rozvrh ve Rtyni potvrďte s manažerkou regionů. Nabídka hlavního studia zahrnuje také pražské kurzy, které nejsou automaticky dostupné ve Rtyni."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://contemporary.cz/cs/",
+            "title": "Studio a regionální kontakty"
+          },
+          {
+            "url": "https://contemporary.cz/cs/cenik/",
+            "title": "Pobočka Rtyně – ceník"
+          },
+          {
+            "url": "https://www.bonifac.eu/aktivity/krouzky/",
+            "title": "Rtyňská nabídka 2026/2027"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "270",
@@ -452,20 +562,37 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Výpravy, tábory a kamarádi pro holky a kluky od první třídy. Středisko Permoník působí ve Rtyni i v Havlovicích.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://skaut-rtyne.skauting.cz/",
+        "contacts": [
+          "Středisko a chlapecký oddíl: Jakub Klusáček · +420 608 927 073 · kuba.klusacek@skaut.cz",
+          "Dívčí oddíl: Kristýna Straková · +420 736 687 344 · tynuse.strakova@seznam.cz",
+          "Rtyňské klubovny: Končiny, ev. č. 4 a 5, Rtyně v Podkrkonoší."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Děti se při hrách a výpravách učí spolupracovat, poznávají přírodu a získávají samostatnost. Středisko sdružuje chlapecký a dívčí oddíl ve Rtyni a smíšený oddíl Medvědi v Havlovicích.",
+          "Družiny se dělí podle věku. Přijetí do vhodné družiny, volná místa i termín první schůzky domluvte s vedoucím oddílu."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://skaut-rtyne.skauting.cz/",
+            "title": "Středisko Permoník – oddíly a kontakty"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "269",
@@ -475,20 +602,40 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Místní zahrádkářská organizace navazující na tradici ovocnářství ve Rtyni.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://www.rtyne.cz/cesky-zahradkarsky-svaz-rtyne",
+        "contacts": [
+          "Kontakt zveřejněný organizací: +420 724 468 108 · pavlova.mila@seznam.cz",
+          "Sídlo: Potoční 86, Rtyně v Podkrkonoší."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Spolek spojuje zájem o zahrady, pěstování a ovocné stromy. Na vlastním webu přibližuje historii místního ovocnářství a uvádí také tradici moštování.",
+          "Aktuální sezonní služby, provoz moštárny, program a možnost členství je potřeba potvrdit přímo u organizace; historický článek není aktuálním provozním řádem."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://www.zahradkari.cz/zo/rtyne/",
+            "title": "Oficiální web základní organizace"
+          },
+          {
+            "url": "https://www.zahradkari.cz/zo/rtyne/admin.php",
+            "title": "Veřejný kontakt organizace"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "268",
@@ -498,20 +645,36 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Dechový orchestr s dlouhou tradicí ve Rtyni. Koncerty, festival Koletova Rtyně a místní hudební život.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://koletovka.cz/",
+        "contacts": [
+          "info@koletovka.cz",
+          "Sadová 850, Rtyně v Podkrkonoší."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Orchestr propojuje muzikanty a zpěváky napříč generacemi. Věnuje se koncertnímu repertoáru a pořádá hudební akce pro veřejnost.",
+          "Pokud hrajete na nástroj nebo se chcete zapojit do činnosti orchestru, napište na společný kontakt. Podmínky přijetí a zkoušky nejsou na úvodní stránce upřesněné."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://koletovka.cz/",
+            "title": "Koletova hornická hudba – činnost a kontakt"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "267",
@@ -521,20 +684,37 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Sokolská jednota ve Rtyni. Oficiální adresář České obce sokolské uvádí oddíl zápasu.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://www.sokol.eu/sokolovna/tj-sokol-rtyne-v-podkrkonosi",
+        "contacts": [
+          "Starosta Pavel Blažek · +420 732 714 549 · sokol.rtyne@tiscali.cz",
+          "E-mail jednoty: rtyne_v_podkrkonosi@sokol.eu",
+          "Adresa uvedená v adresáři: Hronovská 431, Rtyně v Podkrkonoší."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Zápas rozvíjí sílu, obratnost a práci s tělem. Sokolský adresář eviduje v tomto oddílu žáky, dorostence, muže a seniory.",
+          "Nábor, případnou nabídku pro další věkové skupiny a časy tréninků ověřte přímo u jednoty."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://www.sokol.eu/sokolovna/tj-sokol-rtyne-v-podkrkonosi",
+            "title": "Oficiální adresář Sokola – oddíl a kontakty"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "266",
@@ -544,20 +724,40 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Sportovní a společenské zázemí místní jednoty Orla. Patří sem i dětský Orlíček a florbal.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://www.orelrtyne.cz/",
+        "contacts": [
+          "Starostka Lucie Hejnová · +420 732 116 429 · luckahejnova@atlas.cz",
+          "Obsazenost haly: Miloslav Krýsl · +420 728 481 322 · halaorlovna@gmail.com"
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Jednota připravuje pohybové aktivity pro děti a zapojuje se do společenského života města. Aktuálně zveřejňuje nábor do Orlíčku a florbalu.",
+          "Florbal má v přehledu samostatný profil s kategoriemi a příspěvky. Pro jiné aktivity i využití haly se obraťte na vedení jednoty."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://www.orelrtyne.cz/",
+            "title": "Orel Rtyně – vedení a aktuality"
+          },
+          {
+            "url": "https://www.fbcorelrtyne.cz/kontakty",
+            "title": "Florbal – kontakty"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "265",
@@ -567,20 +767,40 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Místní tělovýchovná jednota s fotbalovým a volejbalovým oddílem. Fotbal pro děti, mládež i dospělé.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "http://www.banikrtyne-fotbal.cz/",
+        "contacts": [
+          "Sekretariát: +420 724 794 843 · sekretar@banikrtyne-fotbal.cz",
+          "Adresa TJ: Školní 826, Rtyně v Podkrkonoší."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Fotbalový oddíl zveřejňuje zprávy o týmech, trénování mládeže i nejmenší kategorii U7. Zájemce o trénink nasměruje sekretář k trenérovi vhodné věkové kategorie.",
+          "Volejbal má v tomto přehledu samostatný profil. Volná místa, vybavení na první trénink i aktuální rozvrh ověřte u oddílu."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "http://www.banikrtyne-fotbal.cz/",
+            "title": "Fotbalový oddíl – činnost"
+          },
+          {
+            "url": "http://www.banikrtyne-fotbal.cz/kontakt/",
+            "title": "Sekretariát a adresa"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "264",
@@ -590,20 +810,41 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Taneční a pohybové kroužky, tvořivé akce a letní tábory pro děti a mládež. Také kurzy pro dospělé.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": "Cvičísek–Rytmísek i Capoeira: 1 490 Kč za pololetí v sezoně 2026/2027. Spolek uvádí možnost požádat o snížení ceny při finančně náročné situaci rodiny. Ceny dalších kurzů si ověřte při přihlášení.",
         "kind": "club",
         "website": "http://www.bonifac.eu/",
+        "contacts": [
+          "Iveta Nývltová · +420 603 546 021 · iveta.nyvltova@seznam.cz",
+          "Blanka Brojarová – kroužky · +420 725 883 840 · blanka.brojarova@seznam.cz",
+          "Cesta osvobození 712, Rtyně v Podkrkonoší."
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "V sezoně 2026/2027 nabízí Cvičísek–Rytmísek pro děti 3–7 let: hry, rytmus, tanečky a pohyb s pomůckami. Koná se ve čtvrtek 16:30–17:30 v Bonihausu.",
+          "Capoeira pro děti od 8 let propojuje pohyb, hudbu a brazilské bojové umění. Veřejný rozvrh uvádí středu 17:00–18:00 v Bonihausu. Přihlášení je možné přes web spolku."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://www.bonifac.eu/aktivity/krouzky/",
+            "title": "Kroužky a školné 2026/2027"
+          },
+          {
+            "url": "https://www.bonifac.eu/kontakt/",
+            "title": "Kontaktní osoby"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "263",
@@ -613,20 +854,36 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Taneční skupiny pro děti a mládež od nejmenších tanečníků. Moderní, společenský, mažoretkový i lidový tanec.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "https://ballare.cz/",
+        "contacts": [
+          "Vedení: Lenka Kašparová · +420 724 539 227 · kasparova-lenka@centrum.cz",
+          "Martin Kašpar · +420 721 201 998 · kaspar.ma@seznam.cz"
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Děti trénují ve skupinách podle věku a tanečního zaměření. Na webu jsou uvedeny například skupiny Motýlci, Berušky, Broučci, Žížalky a další.",
+          "Součástí činnosti jsou vystoupení a taneční soutěže. Některé popisy skupin mají starší ročníky; aktuální zařazení dítěte, rozvrh a volná místa proto potvrďte s vedením."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://ballare.cz/",
+            "title": "Ballare – skupiny a vedení"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
     },
     {
       "id": "262",
@@ -636,20 +893,135 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.",
+      "summary": "Dobrovolní hasiči a kolektiv mladých hasičů. Hasičský sport, práce s mládeží a místní spolkový život.",
       "payload": {
         "body": [],
         "days": [],
+        "fees": null,
         "kind": "club",
         "website": "http://hasici.rtyne.com/",
+        "contacts": [
+          "Kontakt pro informace k mládežnické soutěži: +420 720 272 735 · jan.klimesml@seznam.cz"
+        ],
         "detail_ok": true,
         "in_latest": true,
+        "activities": [
+          "Sbor zveřejňuje zprávy o činnosti mladých hasičů i soutěžích. Pozvánka na Mikulášské hasičské klání 2026 počítá s přípravkou, mladšími a staršími dětmi i dorostem.",
+          "Zájem o dětský kolektiv a aktuální podmínky docházky ověřte přímo u sboru. Kontaktní osoba níže je uvedena pro mládežnickou soutěž; nejde o tísňový kontakt."
+        ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "profile_checked": "2026-11-09",
+        "profile_sources": [
+          {
+            "url": "https://hasici.rtyne.com/",
+            "title": "SDH Rtyně – web sboru"
+          },
+          {
+            "url": "https://www.oshrychnov.cz/mladez/wp-content/uploads/2026/02/3151_OSTATNI_propozice_Rtyne.pdf",
+            "title": "Pozvánka SDH – mládež a kontakt 2026"
+          }
+        ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-08T20:19:00.310Z"
+        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
       },
-      "last_seen_at": "2026-11-08T20:19:00.310Z"
+      "last_seen_at": "2026-11-09T09:19:28.266Z"
+    },
+    {
+      "id": "705",
+      "source_key": "koletovka",
+      "external_url": "https://koletovka.cz/#akce-koletovka-hraje-vanocni-koledy-2026-12-24",
+      "title": "Koletovka hraje vánoční koledy",
+      "category": "Kultura a spolky",
+      "event_date": "2026-12-24",
+      "published_at": null,
+      "summary": "Nádvoří Na Rychtě, Rtyně v Podkrkonoší (od 22:00)",
+      "payload": {
+        "body": [
+          "Nádvoří Na Rychtě, Rtyně v Podkrkonoší (od 22:00)"
+        ],
+        "days": [],
+        "kind": "event",
+        "time": "22:00",
+        "location": "Nádvoří Na Rychtě, Rtyně v Podkrkonoší (od 22:00)",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Koletova hornická hudba",
+        "detail_error": null,
+        "calendar_only": true,
+        "event_sources": [
+          {
+            "url": "https://koletovka.cz/",
+            "title": "Kalendář Koletovy hornické hudby"
+          }
+        ],
+        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:17.051Z"
+    },
+    {
+      "id": "704",
+      "source_key": "koletovka",
+      "external_url": "https://koletovka.cz/#akce-adventni-koncerty-2026-11-28",
+      "title": "Adventní koncerty",
+      "category": "Kultura a spolky",
+      "event_date": "2026-11-28",
+      "published_at": null,
+      "summary": "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)",
+      "payload": {
+        "body": [
+          "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)"
+        ],
+        "days": [],
+        "kind": "event",
+        "time": "19:00",
+        "location": "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Koletova hornická hudba",
+        "detail_error": null,
+        "calendar_only": true,
+        "event_sources": [
+          {
+            "url": "https://koletovka.cz/",
+            "title": "Kalendář Koletovy hornické hudby"
+          }
+        ],
+        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:17.051Z"
+    },
+    {
+      "id": "703",
+      "source_key": "koletovka",
+      "external_url": "https://koletovka.cz/#akce-adventni-koncerty-2026-11-27",
+      "title": "Adventní koncerty",
+      "category": "Kultura a spolky",
+      "event_date": "2026-11-27",
+      "published_at": null,
+      "summary": "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)",
+      "payload": {
+        "body": [
+          "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)"
+        ],
+        "days": [],
+        "kind": "event",
+        "time": "19:00",
+        "location": "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Koletova hornická hudba",
+        "detail_error": null,
+        "calendar_only": true,
+        "event_sources": [
+          {
+            "url": "https://koletovka.cz/",
+            "title": "Kalendář Koletovy hornické hudby"
+          }
+        ],
+        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:17.051Z"
     },
     {
       "id": "254",
@@ -678,9 +1050,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "253",
@@ -709,9 +1081,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "252",
@@ -740,9 +1112,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "251",
@@ -771,9 +1143,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "250",
@@ -802,9 +1174,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "249",
@@ -833,9 +1205,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "248",
@@ -864,9 +1236,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "247",
@@ -895,9 +1267,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "246",
@@ -926,9 +1298,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "245",
@@ -957,9 +1329,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "244",
@@ -988,9 +1360,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "243",
@@ -1019,9 +1391,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "242",
@@ -1050,9 +1422,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "241",
@@ -1081,9 +1453,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "240",
@@ -1112,9 +1484,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.476Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.476Z"
+      "last_seen_at": "2026-11-09T09:19:16.018Z"
     },
     {
       "id": "228",
@@ -1177,8 +1549,8 @@
             "url": "https://www.muzeumrtyne.cz//img/icons/mapa.svg"
           },
           {
-            "alt": "Pozvánka od pořadatele",
-            "url": "https://www.muzeumrtyne.cz/cache/artefakty-front/default/_cms-30.jpg"
+            "alt": "Typická domácnost v Podkrkonoší",
+            "url": "https://www.muzeumrtyne.cz/cache/artefakty-front/default/_cms-24.jpg?v=2"
           }
         ],
         "detail_ok": true,
@@ -1186,9 +1558,9 @@
         "attachments": [],
         "source_name": "Muzeum a infocentrum",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.331Z"
+        "detail_fetched_at": "2026-11-09T09:19:15.792Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.331Z"
+      "last_seen_at": "2026-11-09T09:19:15.792Z"
     },
     {
       "id": "227",
@@ -1237,9 +1609,170 @@
             "weekday": "Pátek"
           }
         ],
-        "detail_fetched_at": "2026-11-08T18:55:24.240Z"
+        "detail_fetched_at": "2026-11-09T09:19:15.655Z"
       },
-      "last_seen_at": "2026-11-08T18:55:24.240Z"
+      "last_seen_at": "2026-11-09T09:19:15.655Z"
+    },
+    {
+      "id": "602",
+      "source_key": "preschool",
+      "external_url": "https://www.msrtyne.cz/aktuality/#zprava-20261109095351",
+      "title": "Fotografování s panem Hurdálkem",
+      "category": "Školka",
+      "event_date": null,
+      "published_at": "2026-11-09T08:53:51.000Z",
+      "summary": "Fotografování s panem Hurdálkem V úterý 10. 11. 2026 dopoledne se v MŠ uskuteční předvánoční fotografování. Přihlášené děti se budou fotografovat ve třídě Rybiček.",
+      "payload": {
+        "body": [
+          "Fotografování s panem Hurdálkem",
+          "V úterý 10. 11. 2026 dopoledne se v MŠ uskuteční předvánoční fotografování.",
+          "Přihlášené děti se budou fotografovat ve třídě Rybiček."
+        ],
+        "days": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "MŠ Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+      },
+      "last_seen_at": "2026-11-09T09:18:32.761Z"
+    },
+    {
+      "id": "707",
+      "source_key": "calendar",
+      "external_url": "https://www.rtyne.cz/cestopisna-prednaska-po-spicberkach",
+      "title": "Cestopisná přednáška po Špicberkách",
+      "category": "Akce",
+      "event_date": "2026-11-11",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "event",
+        "time": "17:00",
+        "images": [
+          {
+            "alt": "Cestopisná přednáška po Špicberkách",
+            "url": "https://www.rtyne.cz/image/4664602/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
+        "end_time": null,
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Kalendář města",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
+    },
+    {
+      "id": "706",
+      "source_key": "calendar",
+      "external_url": "https://www.rtyne.cz/hra-o-truny-prijdte-si-zahrat",
+      "title": "Hra o trůny – přijďte si zahrát!",
+      "category": "Akce",
+      "event_date": "2026-11-10",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "event",
+        "time": "17:00",
+        "images": [
+          {
+            "alt": "Hra o trůny – přijďte si zahrát!",
+            "url": "https://www.rtyne.cz/image/4664596/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
+        "end_time": null,
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Kalendář města",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
+    },
+    {
+      "id": "627",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/hra-o-truny-prijdte-si-zahrat-1",
+      "title": "Hra o trůny – přijďte si zahrát!",
+      "category": "Město",
+      "event_date": "2026-11-10",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "summary": "Úterý 10. listopadu 2026 od 17.00 hodin – Městská knihovna Rtyně v Podkrkonoší.",
+      "payload": {
+        "body": [
+          "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání.",
+          "Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategických rozhodnutí a boje o moc. A pak už se můžete pustit do hry!",
+          "Zájemci se musí předem přihlásit na e-mailu: info@mkrtyne.cz.",
+          "Nemusíte být zkušenými hráči – stačí chuť poznat novou hru a užít si příjemný večer ve společnosti dalších nadšenců. Těšíme se na vás!",
+          "Přiložený plakát zve na pravidelná setkání klubu od 18 hodin. Setkání ke hře Hra o trůny dne 10. listopadu začíná již v 17.00 hodin."
+        ],
+        "days": [],
+        "images": [
+          {
+            "alt": "Hra o trůny – přijďte si zahrát!",
+            "url": "https://www.rtyne.cz/image/4664638/800/600"
+          }
+        ],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Město Rtyně",
+        "detail_error": null,
+        "restriction_date": null,
+        "detail_fetched_at": "2026-11-09T09:18:36.107Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
+    },
+    {
+      "id": "626",
+      "source_key": "city",
+      "external_url": "https://www.rtyne.cz/putovani-po-spicberkach-s-jarmilou-olivovou",
+      "title": "Putování po Špicberkách s Jarmilou Olivovou",
+      "category": "Město",
+      "event_date": "2026-11-11",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "summary": "Středa 11. listopadu 2026 od 17.00 hodin – Městská knihovna Rtyně v Podkrkonoší.",
+      "payload": {
+        "body": [
+          "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicberkách.",
+          "Součástí setkání bude také cestopisný film z jejích cest.",
+          "Vstupné dobrovolné.",
+          "Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění."
+        ],
+        "days": [],
+        "images": [
+          {
+            "alt": "Putování po Špicberkách s Jarmilou Olivovou",
+            "url": "https://www.rtyne.cz/image/4664664/800/600"
+          }
+        ],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Město Rtyně",
+        "detail_error": null,
+        "restriction_date": null,
+        "detail_fetched_at": "2026-11-09T09:18:34.367Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "22",
@@ -1264,10 +1797,10 @@
         "attachments": [],
         "source_name": "Město Rtyně",
         "detail_error": null,
-        "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:35:07.266Z"
+        "restriction_date": "2026-11-10",
+        "detail_fetched_at": "2026-11-09T09:18:46.668Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "21",
@@ -1288,9 +1821,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:10.349Z"
+        "detail_fetched_at": "2026-11-09T09:18:44.797Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "20",
@@ -1311,9 +1844,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:08.651Z"
+        "detail_fetched_at": "2026-11-09T09:18:42.958Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "19",
@@ -1334,9 +1867,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:06.997Z"
+        "detail_fetched_at": "2026-11-09T09:18:41.276Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "18",
@@ -1357,9 +1890,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:05.251Z"
+        "detail_fetched_at": "2026-11-09T09:18:39.610Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "17",
@@ -1378,16 +1911,21 @@
           "Zahradu Königovy vily najdete v ulici Hornická, u odbočky k prodejně Protec PLUS."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "SVÁTEK STRAŠIDEL – kouzelné strašidelné odpoledne",
+            "url": "https://www.rtyne.cz/image/4661759/800/600"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:58.310Z"
+        "detail_fetched_at": "2026-11-09T09:18:37.865Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "213",
@@ -1443,9 +1981,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:47:51.900Z"
+        "detail_fetched_at": "2026-11-09T09:19:01.916Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "24",
@@ -1471,7 +2009,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-08T18:35:10.595Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T05:17:21.511Z"
     },
     {
       "id": "23",
@@ -1495,10 +2033,10 @@
         "attachments": [],
         "source_name": "Město Rtyně",
         "detail_error": null,
-        "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:35:08.939Z"
+        "restriction_date": "2026-11-06",
+        "detail_fetched_at": "2026-11-09T09:18:59.870Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "9",
@@ -1514,16 +2052,21 @@
           "V úterý 10. listopadu 2026 nepoteče voda v ulici Vyšehradská v čp. 831, 862, 867, 833, 575, 787, 938 a v če. 64. Důvodem je oprava úniku vody na přípojkovém ventilu. Voda nepoteče od 8:00 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "Ikona ODSTAVKA",
+            "url": "https://www.vakrtyne.cz/images/Tag/1/pictoDetail/Ikona-ODSTAVKA.svg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
-        "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:57.164Z"
+        "restriction_date": "2026-11-10",
+        "detail_fetched_at": "2026-11-09T09:18:33.511Z"
       },
-      "last_seen_at": "2026-11-08T20:17:03.536Z"
+      "last_seen_at": "2026-11-09T09:18:35.078Z"
     },
     {
       "id": "259",
@@ -1556,9 +2099,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:59.873Z"
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
       },
-      "last_seen_at": "2026-11-08T20:18:59.873Z"
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
     },
     {
       "id": "255",
@@ -1591,9 +2134,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:59.873Z"
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
       },
-      "last_seen_at": "2026-11-08T20:18:59.873Z"
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
     },
     {
       "id": "214",
@@ -1618,9 +2161,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:47:53.572Z"
+        "detail_fetched_at": "2026-11-09T09:19:03.928Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "1",
@@ -1643,9 +2186,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T18:55:04.573Z"
+        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
       },
-      "last_seen_at": "2026-11-08T18:55:04.573Z"
+      "last_seen_at": "2026-11-09T09:18:32.761Z"
     },
     {
       "id": "2",
@@ -1668,9 +2211,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T18:55:04.573Z"
+        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
       },
-      "last_seen_at": "2026-11-08T18:55:04.573Z"
+      "last_seen_at": "2026-11-09T09:18:32.761Z"
     },
     {
       "id": "31",
@@ -1695,9 +2238,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:57.517Z"
+        "detail_fetched_at": "2026-11-09T09:18:33.878Z"
       },
-      "last_seen_at": "2026-11-08T20:17:04.183Z"
+      "last_seen_at": "2026-11-09T09:18:37.931Z"
     },
     {
       "id": "215",
@@ -1722,9 +2265,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:47:55.305Z"
+        "detail_fetched_at": "2026-11-09T09:19:05.596Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "218",
@@ -1748,9 +2291,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:48:00.327Z"
+        "detail_fetched_at": "2026-11-09T09:19:11.219Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "217",
@@ -1774,9 +2317,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:47:58.664Z"
+        "detail_fetched_at": "2026-11-09T09:19:09.114Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "216",
@@ -1843,9 +2386,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:47:56.995Z"
+        "detail_fetched_at": "2026-11-09T09:19:07.306Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "221",
@@ -1853,7 +2396,7 @@
       "external_url": "https://skaut-rtyne.skauting.cz/2026/10/strediskovy-snem-24-10-2026/",
       "title": "Střediskový sněm (24. 10. 2026)",
       "category": "Spolky",
-      "event_date": null,
+      "event_date": "2026-10-24",
       "published_at": "2026-10-26T06:09:30.000Z",
       "summary": "V sobotu 24. října se po třech letech uskutečnil střediskový sněm, na němž proběhla volba nového vedení střediska a delegátů na sněmy nadřízených organizačních jednotek. Vedoucím střediska byl opět zvolen Jakub Klusáček. Jeho zástupci se stali Stanislav Řezníček a nově také Jitka Bočarovová, která ve vedení střediska nahradila Barboru Nývltovou. Ve",
       "payload": {
@@ -1862,16 +2405,16 @@
           "Vedení střediska zajišťuje jeho řádný chod, zastupuje středisko navenek a odpovídá za jeho finanční i technické zázemí. Před nově zvoleným vedením nyní stojí významná výzva. Již delší dobu totiž sdílíme sen postavit na Žabárně nové klubovny. Právě na uskutečnění tohoto cíle se bude vedení v následujících letech intenzivně podílet a snažit se proměnit tento sen ve skutečnost."
         ],
         "days": [],
-        "kind": "community",
+        "kind": "event",
         "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Skaut – středisko Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:50.860Z"
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
       },
-      "last_seen_at": "2026-11-08T20:18:50.860Z"
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
     },
     {
       "id": "220",
@@ -1893,10 +2436,10 @@
         "attachments": [],
         "source_name": "Město Rtyně",
         "detail_error": null,
-        "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:48:03.783Z"
+        "restriction_date": "2026-10-27",
+        "detail_fetched_at": "2026-11-09T09:19:14.941Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "219",
@@ -1923,9 +2466,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:22.888Z"
+        "detail_fetched_at": "2026-11-09T09:19:13.229Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "12",
@@ -1941,16 +2484,21 @@
           "V úterý 27. řijna 2026 nepoteče voda v částích ulic Hornická, K Jídelně a Cesta osvobození. Konkrétně se jedná o čp. 618, 594, 593, 592, 591, 621, 597, 596, 595, 623, 30, 586, 587, 588, 589, 620 a 450. Důvodem je oprava havárie na vodovodu v sídlišti. Voda nepoteče od 7:30 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "Ikona HAVARIE",
+            "url": "https://www.vakrtyne.cz/images/Tag/2/pictoDetail/Ikona-HAVARIE.svg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
-        "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:57.623Z"
+        "restriction_date": "2026-10-27",
+        "detail_fetched_at": "2026-11-09T09:18:34.024Z"
       },
-      "last_seen_at": "2026-11-08T20:17:03.536Z"
+      "last_seen_at": "2026-11-09T09:18:35.078Z"
     },
     {
       "id": "11",
@@ -1966,16 +2514,21 @@
           "V úterý 3. listopadu 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Náměrka, Partyzánů, K Františce, Na Rozhraní a Hronovská od železničního viaduktu dále pod Bohdašín. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "Ikona ICKO",
+            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:57.592Z"
+        "detail_fetched_at": "2026-11-09T09:18:34.018Z"
       },
-      "last_seen_at": "2026-11-08T20:17:03.536Z"
+      "last_seen_at": "2026-11-09T09:18:35.078Z"
     },
     {
       "id": "10",
@@ -1991,16 +2544,21 @@
           "Ve čtvrtek 5. listopadu 2025 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích K Žabárně a Trhovka. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "Ikona ICKO",
+            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:57.137Z"
+        "detail_fetched_at": "2026-11-09T09:18:33.486Z"
       },
-      "last_seen_at": "2026-11-08T20:17:03.536Z"
+      "last_seen_at": "2026-11-09T09:18:35.078Z"
     },
     {
       "id": "32",
@@ -2217,9 +2775,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:57.534Z"
+        "detail_fetched_at": "2026-11-09T09:18:33.895Z"
       },
-      "last_seen_at": "2026-11-08T20:17:04.183Z"
+      "last_seen_at": "2026-11-09T09:18:37.931Z"
     },
     {
       "id": "33",
@@ -2245,9 +2803,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:58.738Z"
+        "detail_fetched_at": "2026-11-09T09:18:35.187Z"
       },
-      "last_seen_at": "2026-11-08T20:17:04.183Z"
+      "last_seen_at": "2026-11-09T09:18:37.931Z"
     },
     {
       "id": "3",
@@ -2268,9 +2826,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T18:55:04.573Z"
+        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
       },
-      "last_seen_at": "2026-11-08T18:55:04.573Z"
+      "last_seen_at": "2026-11-09T09:18:32.761Z"
     },
     {
       "id": "25",
@@ -2297,9 +2855,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:12.259Z"
+        "detail_fetched_at": "2026-11-09T09:18:48.632Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "13",
@@ -2315,16 +2873,21 @@
           "V pondělí 26. řijna 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Úpická, Na Písku, Bosenská, Svatoňovická, Vyšehradská, K Haldě, Zemědělská, U Čističky, Zahradní, Na Ohradech a Pod Opukou. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "Ikona ICKO",
+            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:58.070Z"
+        "detail_fetched_at": "2026-11-09T09:18:34.485Z"
       },
-      "last_seen_at": "2026-11-08T20:17:03.536Z"
+      "last_seen_at": "2026-11-09T09:18:35.078Z"
     },
     {
       "id": "257",
@@ -2357,9 +2920,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:59.873Z"
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
       },
-      "last_seen_at": "2026-11-08T20:18:59.873Z"
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
     },
     {
       "id": "14",
@@ -2375,16 +2938,21 @@
           "Ve středu 21. řijna 2026 nepoteče voda v ulici Vyšehradská v čp. 831, 862, 867, 833, 575, 787, 938 a v če. 64. Důvodem je oprava úniku vody na přípojkovém ventilu. Voda nepoteče od 8:00 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "Ikona ODSTAVKA",
+            "url": "https://www.vakrtyne.cz/images/Tag/1/pictoDetail/Ikona-ODSTAVKA.svg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
-        "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:58.098Z"
+        "restriction_date": "2026-10-21",
+        "detail_fetched_at": "2026-11-09T09:18:34.511Z"
       },
-      "last_seen_at": "2026-11-08T20:17:03.536Z"
+      "last_seen_at": "2026-11-09T09:18:35.078Z"
     },
     {
       "id": "261",
@@ -2417,9 +2985,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:59.873Z"
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
       },
-      "last_seen_at": "2026-11-08T20:18:59.873Z"
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
     },
     {
       "id": "258",
@@ -2452,9 +3020,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:59.873Z"
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
       },
-      "last_seen_at": "2026-11-08T20:18:59.873Z"
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
     },
     {
       "id": "16",
@@ -2470,16 +3038,21 @@
           "V úterý 20. řijna 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Družstevní, Úzká, Ke Skalce a Na Rovni. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "Ikona ICKO",
+            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:58.589Z"
+        "detail_fetched_at": "2026-11-09T09:18:35.078Z"
       },
-      "last_seen_at": "2026-11-08T20:17:03.536Z"
+      "last_seen_at": "2026-11-09T09:18:35.078Z"
     },
     {
       "id": "15",
@@ -2495,16 +3068,21 @@
           "Ve čtvrtek 22. října 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích K Žabárně, Trhovka, Končiny, Rychetského, Sadová a Kostelecká. V ulicích Rychetského, Sadová a Kostelecká se jedná o odběratele napojené na vodojem Končiny. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [],
+        "images": [
+          {
+            "alt": "Ikona ICKO",
+            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:34:58.556Z"
+        "detail_fetched_at": "2026-11-09T09:18:35.062Z"
       },
-      "last_seen_at": "2026-11-08T20:17:03.536Z"
+      "last_seen_at": "2026-11-09T09:18:35.078Z"
     },
     {
       "id": "4",
@@ -2525,9 +3103,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T18:55:04.573Z"
+        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
       },
-      "last_seen_at": "2026-11-08T18:55:04.573Z"
+      "last_seen_at": "2026-11-09T09:18:32.761Z"
     },
     {
       "id": "256",
@@ -2560,9 +3138,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:59.873Z"
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
       },
-      "last_seen_at": "2026-11-08T20:18:59.873Z"
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
     },
     {
       "id": "26",
@@ -2599,9 +3177,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:14.033Z"
+        "detail_fetched_at": "2026-11-09T09:18:50.479Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "34",
@@ -2627,9 +3205,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:04.183Z"
+        "detail_fetched_at": "2026-11-09T09:18:35.329Z"
       },
-      "last_seen_at": "2026-11-08T20:17:04.183Z"
+      "last_seen_at": "2026-11-09T09:18:37.931Z"
     },
     {
       "id": "27",
@@ -2656,9 +3234,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:15.762Z"
+        "detail_fetched_at": "2026-11-09T09:18:52.258Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "35",
@@ -2684,9 +3262,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:35:00.000Z"
+        "detail_fetched_at": "2026-11-09T09:18:36.457Z"
       },
-      "last_seen_at": "2026-11-08T20:17:04.183Z"
+      "last_seen_at": "2026-11-09T09:18:37.931Z"
     },
     {
       "id": "222",
@@ -2694,24 +3272,46 @@
       "external_url": "https://skaut-rtyne.skauting.cz/2026/10/skautsky-ples-21-11-2026/",
       "title": "Skautský ples (21. 11. 2026)",
       "category": "Spolky",
-      "event_date": null,
+      "event_date": "2026-11-21",
       "published_at": "2026-10-04T06:54:53.000Z",
-      "summary": "Veškeré informace: https://skaut-rtyne.skauting.cz/ples/",
+      "summary": "Předprodej lístků bude zahájen od 2. 11. ve rtyňské knihovně (mapa). Otevírací doba knihovny: Po: 12 – 16 Út: 8 – 12, 13 – 17 St: 12 – 16 Čt: 8 – 12, 13 – 17 Cena vstupenky: 350,-/ks Sál bude otevřen od 19:00. Vstup pouze ve společenském. Lístky na stání k dispozici na místě. Těšíme se!",
       "payload": {
         "body": [
-          "Veškeré informace: https://skaut-rtyne.skauting.cz/ples/"
+          "Veškeré informace: https://skaut-rtyne.skauting.cz/ples/",
+          "Předprodej lístků bude zahájen od 2. 11. ve rtyňské knihovně (mapa).",
+          "Otevírací doba knihovny:",
+          "Po: 12 – 16",
+          "Út: 8 – 12, 13 – 17",
+          "St: 12 – 16",
+          "Čt: 8 – 12, 13 – 17",
+          "Cena vstupenky: 350,-/ks",
+          "Sál bude otevřen od 19:00.",
+          "Vstup pouze ve společenském.",
+          "Lístky na stání k dispozici na místě.",
+          "Těšíme se!"
         ],
         "days": [],
-        "kind": "community",
-        "images": [],
+        "kind": "event",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://skaut-rtyne.skauting.cz/wp-content/uploads/2026/10/Plakat-skautsky-ples-2026.jpg"
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Skaut – středisko Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:50.860Z"
+        "event_sources": [
+          {
+            "url": "https://skaut-rtyne.skauting.cz/ples/",
+            "title": "Podrobnosti od pořadatele"
+          }
+        ],
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
       },
-      "last_seen_at": "2026-11-08T20:18:50.860Z"
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
     },
     {
       "id": "235",
@@ -2734,9 +3334,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.641Z"
+        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.641Z"
+      "last_seen_at": "2026-11-09T09:19:17.051Z"
     },
     {
       "id": "36",
@@ -2761,9 +3361,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:35:00.014Z"
+        "detail_fetched_at": "2026-11-09T09:18:36.639Z"
       },
-      "last_seen_at": "2026-11-08T20:17:04.183Z"
+      "last_seen_at": "2026-11-09T09:18:37.931Z"
     },
     {
       "id": "260",
@@ -2796,9 +3396,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:59.873Z"
+        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
       },
-      "last_seen_at": "2026-11-08T20:18:59.873Z"
+      "last_seen_at": "2026-11-09T09:19:27.591Z"
     },
     {
       "id": "37",
@@ -3022,9 +3622,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:35:01.261Z"
+        "detail_fetched_at": "2026-11-09T09:18:37.729Z"
       },
-      "last_seen_at": "2026-11-08T20:17:04.183Z"
+      "last_seen_at": "2026-11-09T09:18:37.931Z"
     },
     {
       "id": "38",
@@ -3050,9 +3650,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T18:35:01.283Z"
+        "detail_fetched_at": "2026-11-09T09:18:37.931Z"
       },
-      "last_seen_at": "2026-11-08T20:17:04.183Z"
+      "last_seen_at": "2026-11-09T09:18:37.931Z"
     },
     {
       "id": "223",
@@ -3060,7 +3660,7 @@
       "external_url": "https://skaut-rtyne.skauting.cz/2026/09/forum-mladsich-clenu-12-9-2026/",
       "title": "Fórum mladších členů (12. 9. 2026)",
       "category": "Spolky",
-      "event_date": null,
+      "event_date": "2026-09-12",
       "published_at": "2026-09-17T15:42:26.000Z",
       "summary": "Fórum mladších členů se setkání všech členů ve věku od 12 do 18 let. Probíhá před střediskovým sněmem (střediskovými volbami) a holky a kluci mají možnost zvolit si na tento sněm svého zástupce, který je tam bude zastupovat. My jsme tuto akci pořádali v sobotu 12. 9. v MAKUSu poprvé. Na tuto naši premiéru dorazilo celkem 26 dětí, kteří se seznámili",
       "payload": {
@@ -3068,16 +3668,16 @@
           "Fórum mladších členů se setkání všech členů ve věku od 12 do 18 let. Probíhá před střediskovým sněmem (střediskovými volbami) a holky a kluci mají možnost zvolit si na tento sněm svého zástupce, který je tam bude zastupovat. My jsme tuto akci pořádali v sobotu 12. 9. v MAKUSu poprvé. Na tuto naši premiéru dorazilo celkem 26 dětí, kteří se seznámili s chodem našeho střediska, a to nejen teoreticky skrze prezentaci, ale i prakticky díky hře. V ní měl každý nějakou roli, např. vedoucí střediska, hospodář, vedoucí oddílu, rádce apod. Společně procházeli jednotlivými měsíci skautského roku a stejně jako reálné vedení střediska si museli poradit s různými úkoly, např. vytvořit náborový plakát, provést inventarizaci majetku, vytvořit rozpočet, připravit tábor nebo zorganizovat ples. Nakonec došlo i na samotnou volbu delegáta střediskového sněmu. Akci jsme si všichni užili a už teď víme, že za tři roky ji pro děti zorganizujeme znovu. Moc děkujeme všem maminkám, které nám napekli různé dobroty."
         ],
         "days": [],
-        "kind": "community",
+        "kind": "event",
         "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Skaut – středisko Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:50.860Z"
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
       },
-      "last_seen_at": "2026-11-08T20:18:50.860Z"
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
     },
     {
       "id": "224",
@@ -3085,7 +3685,7 @@
       "external_url": "https://skaut-rtyne.skauting.cz/2026/09/zahajeni-noveho-skautskeho-roku-2026-27-6-9-2026/",
       "title": "Zahájení nového skautského roku 2026/27 (6. 9. 2026)",
       "category": "Spolky",
-      "event_date": null,
+      "event_date": "2026-09-06",
       "published_at": "2026-09-16T11:45:01.000Z",
       "summary": "V neděli 6. 9. se na Žabárně uskutečnilo zahájení nového skautského roku 1. chlapeckého oddílu. V našem oddíle se jedná již o tradiční akci, při které společně posedíme u ohně, opečeme si buřty, zahrajeme si nějaké hry a povíme si, co nás v následujícím roce čeká. Letos byla účast hojná, a tak se nám akce vydařila. Celé akce se zúčastnilo 40 členů ",
       "payload": {
@@ -3093,16 +3693,16 @@
           "V neděli 6. 9. se na Žabárně uskutečnilo zahájení nového skautského roku 1. chlapeckého oddílu. V našem oddíle se jedná již o tradiční akci, při které společně posedíme u ohně, opečeme si buřty, zahrajeme si nějaké hry a povíme si, co nás v následujícím roce čeká. Letos byla účast hojná, a tak se nám akce vydařila. Celé akce se zúčastnilo 40 členů našeho oddílu."
         ],
         "days": [],
-        "kind": "community",
+        "kind": "event",
         "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Skaut – středisko Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:50.860Z"
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
       },
-      "last_seen_at": "2026-11-08T20:18:50.860Z"
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
     },
     {
       "id": "5",
@@ -3127,9 +3727,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T18:55:04.573Z"
+        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
       },
-      "last_seen_at": "2026-11-08T18:55:04.573Z"
+      "last_seen_at": "2026-11-09T09:18:32.761Z"
     },
     {
       "id": "225",
@@ -3137,7 +3737,7 @@
       "external_url": "https://skaut-rtyne.skauting.cz/2026/09/den-obce-a-zahajeni-skautskeho-roku-u-medvedu/",
       "title": "Den obce a zahájení skautského roku u Medvědů (5. 9. 2026)",
       "category": "Spolky",
-      "event_date": null,
+      "event_date": "2026-09-05",
       "published_at": "2026-09-08T19:47:34.000Z",
       "summary": "Letošní skautský rok Medvědi zahájili velmi časně. V rámci možnosti prohlídky klubovny při Dni obce (5. 9. 2026) jsme se všichni skauti sešli v krojích, a v podkroví opět zazněl oddílový pokřik. Část pokřiku “…kdo nezkazí legraci…” jsme hned potvrdili při první hře – želvičky. Statečný Seky byl prvním lovcem a postupně s přibývajícími lovci ulovil ",
       "payload": {
@@ -3149,16 +3749,16 @@
           "Sesmolila Kečup"
         ],
         "days": [],
-        "kind": "community",
+        "kind": "event",
         "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Skaut – středisko Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:50.860Z"
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
       },
-      "last_seen_at": "2026-11-08T20:18:50.860Z"
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
     },
     {
       "id": "229",
@@ -3179,9 +3779,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.280Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.280Z"
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
     },
     {
       "id": "230",
@@ -3202,9 +3802,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.280Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.280Z"
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
     },
     {
       "id": "6",
@@ -3232,9 +3832,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T18:55:04.573Z"
+        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
       },
-      "last_seen_at": "2026-11-08T18:55:04.573Z"
+      "last_seen_at": "2026-11-09T09:18:32.761Z"
     },
     {
       "id": "7",
@@ -3262,9 +3862,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T18:55:04.573Z"
+        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
       },
-      "last_seen_at": "2026-11-08T18:55:04.573Z"
+      "last_seen_at": "2026-11-09T09:18:32.761Z"
     },
     {
       "id": "8",
@@ -3285,9 +3885,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T18:55:04.573Z"
+        "detail_fetched_at": "2026-11-09T05:17:02.228Z"
       },
-      "last_seen_at": "2026-11-08T18:55:04.573Z"
+      "last_seen_at": "2026-11-09T05:17:02.228Z"
     },
     {
       "id": "226",
@@ -3310,9 +3910,293 @@
         "attachments": [],
         "source_name": "Skaut – středisko Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:50.860Z"
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
       },
-      "last_seen_at": "2026-11-08T20:18:50.860Z"
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "664",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-12",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-12",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "663",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-11",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-11",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "662",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-10",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-10",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "661",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-09",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-09",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "660",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-08",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-08",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "659",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-07",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-07",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "658",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-06",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-06",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "657",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-05",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-05",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "656",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-04",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-04",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "655",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/",
+      "title": "Skautcraft (3. – 18. 7. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-07-03",
+      "published_at": "2026-08-09T12:33:06.000Z",
+      "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
+      "payload": {
+        "body": [
+          "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou jsme letos museli na táboře udělat, byla stavba tábora. Společnými silami jsme postavili vše od kuchyně a jídelny přes všechny stany až po stožár a hráz. V průběhu tábora se každá družina zapojila do jeho chodu jako služba. Starší kluci pomáhali v kuchyni, každé ráno zatápěli a vařili čaj nebo kakao. Vedoucí si pro kluky připravili pestrý program, jehož součástí byl mimo jiné orientační běh, gladiator race, stezka odvahy nebo simulace dopravní nehody. Při družinových programech kluci stříleli ze vzduchovky nebo luku, připravovali se na vlčácký nebo skautský slib, stavěli pec nebo hledali poklad. Během tábora jsme se také vydali na výlet do Meziměstí, kde si kluci měli možnost prohlédnout místní depo a různé lokomotivy, které zde zrovna byly. V některých z nich jsme se poté projeli. Kluci se na táboře dostali do světa Skautcraftu, kterým putovali společně se Stevem. V průběhu tábora těžili různé suroviny a bojovali se zombíky, kostlivci, creepry nebo pavouky. Postupně objevili místní vesnici, postavili si dům nebo se dostali až do Netheru, odkud museli zachránit Steva, kterého unesli zlí piglini. Na konci tábora se klukům povedlo postavit portál do endu a v něm porazit ender draka a získat od něj jeho vejce. Počasí nám letos moc nepřálo. První týden se nesl ve znamení neustálých přeháněk a chladných nocí. Naštěstí v druhém týdnu se výrazně oteplilo ale místo přeháněk se na nás skoro každý den valily přívalové deště. Mimo nepřízně počasí nás letos zasáhla i vlna horeček, která zasáhla část táborníků a některým tábor předčasně ukončila. I přes to všechno hodnotíme tábor pozitivně a těšíme se už na schůzky a výpravy, které nás na podzim čekají. Obrovské díky patří našemu kuchyňskému týmu, který se celý tábor staral, aby naše bříška byla plná. Děkujeme také panu Ing. Matěnovi za zajímavý program o našich lesích, panu Kašparovi za odvoz kufrů, lékárně Clara za sladký dar a panu místostarostovi Albertu Jankovi za milou návštěvu."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "665",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/06/podekovani-za-dar/",
+      "title": "Poděkování za dar",
+      "category": "Spolky",
+      "event_date": null,
+      "published_at": "2026-06-29T07:48:00.000Z",
+      "summary": "Chtěli bychom poděkovat firmě Elektro Lelek s.r.o. z Úpice za poskytnutí finančního daru. Finanční dar bude použit na podporu naší činnosti, pořádání akcí, vzdělávání našich vedoucích a nákup vybavení potřebného pro naši práci s dětmi. Velmi si tohoto daru vážíme a moc za něj děkujeme.",
+      "payload": {
+        "body": [
+          "Chtěli bychom poděkovat firmě Elektro Lelek s.r.o. z Úpice za poskytnutí finančního daru. Finanční dar bude použit na podporu naší činnosti, pořádání akcí, vzdělávání našich vedoucích a nákup vybavení potřebného pro naši práci s dětmi. Velmi si tohoto daru vážíme a moc za něj děkujeme."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
     },
     {
       "id": "29",
@@ -3339,9 +4223,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:19.552Z"
+        "detail_fetched_at": "2026-11-09T09:18:55.745Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "28",
@@ -3368,9 +4252,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:17.870Z"
+        "detail_fetched_at": "2026-11-09T09:18:54.029Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
     },
     {
       "id": "30",
@@ -3397,9 +4281,83 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-08T20:17:21.217Z"
+        "detail_fetched_at": "2026-11-09T09:18:57.679Z"
       },
-      "last_seen_at": "2026-11-08T20:17:22.888Z"
+      "last_seen_at": "2026-11-09T09:19:14.941Z"
+    },
+    {
+      "id": "667",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/06/zachrana-babicky-30-31-5-2026/#termin-2026-05-31",
+      "title": "Záchrana babičky (30. – 31. 5. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-05-31",
+      "published_at": "2026-06-02T20:06:06.000Z",
+      "summary": "Dne 30. – 31. 5. 2026 se uskutečnila přespávací výprava s názvem Záchrana babičky. Na akci přišlo 22 kluků. Kluci se na začátku dozvěděli, že vědec ing. Pankrác má nemocnou babičku a potřebuje pomoc, aby ji zachránil. Do toho se přimotal i jeho kolega Ignác, který se snažil ukrást indicie na výrobu receptu na lék. Kluci museli v týmech rozluštit in",
+      "payload": {
+        "body": [
+          "Dne 30. – 31. 5. 2026 se uskutečnila přespávací výprava s názvem Záchrana babičky. Na akci přišlo 22 kluků. Kluci se na začátku dozvěděli, že vědec ing. Pankrác má nemocnou babičku a potřebuje pomoc, aby ji zachránil. Do toho se přimotal i jeho kolega Ignác, který se snažil ukrást indicie na výrobu receptu na lék. Kluci museli v týmech rozluštit indicie, najít recept v začarovaném lese, kde se ukrývali pašeráci, sehnat potřebné položky na seznamu, a dojít na klubovnu do Havlovic, aby mohli uvařit lék a tím zachránit umírající babičku. K večeru byl připraven workshop, kde kluci psali přání babičce pro brzké uzdravení neviditelným inkoustem, který následně zviditelnili. V druhé části workshopu si mohli s pomocí vedoucího udělat večeři. Ráno, ještě před odchodem zpět, jsme museli zneškodnit Ignáce, kterého kluci našli podle mapy a museli ho přehodit kostkou, aby padl. Potom jsme se za teplého počasí vrátili na Žabárnu, kde jsme akci společně ukončili.Pavel Semerák"
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "666",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/06/zachrana-babicky-30-31-5-2026/",
+      "title": "Záchrana babičky (30. – 31. 5. 2026)",
+      "category": "Spolky",
+      "event_date": "2026-05-30",
+      "published_at": "2026-06-02T20:06:06.000Z",
+      "summary": "Dne 30. – 31. 5. 2026 se uskutečnila přespávací výprava s názvem Záchrana babičky. Na akci přišlo 22 kluků. Kluci se na začátku dozvěděli, že vědec ing. Pankrác má nemocnou babičku a potřebuje pomoc, aby ji zachránil. Do toho se přimotal i jeho kolega Ignác, který se snažil ukrást indicie na výrobu receptu na lék. Kluci museli v týmech rozluštit in",
+      "payload": {
+        "body": [
+          "Dne 30. – 31. 5. 2026 se uskutečnila přespávací výprava s názvem Záchrana babičky. Na akci přišlo 22 kluků. Kluci se na začátku dozvěděli, že vědec ing. Pankrác má nemocnou babičku a potřebuje pomoc, aby ji zachránil. Do toho se přimotal i jeho kolega Ignác, který se snažil ukrást indicie na výrobu receptu na lék. Kluci museli v týmech rozluštit indicie, najít recept v začarovaném lese, kde se ukrývali pašeráci, sehnat potřebné položky na seznamu, a dojít na klubovnu do Havlovic, aby mohli uvařit lék a tím zachránit umírající babičku. K večeru byl připraven workshop, kde kluci psali přání babičce pro brzké uzdravení neviditelným inkoustem, který následně zviditelnili. V druhé části workshopu si mohli s pomocí vedoucího udělat večeři. Ráno, ještě před odchodem zpět, jsme museli zneškodnit Ignáce, kterého kluci našli podle mapy a museli ho přehodit kostkou, aby padl. Potom jsme se za teplého počasí vrátili na Žabárnu, kde jsme akci společně ukončili.Pavel Semerák"
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
+    },
+    {
+      "id": "668",
+      "source_key": "scouts",
+      "external_url": "https://skaut-rtyne.skauting.cz/2026/05/nabor-novych-clenu-pro-rok-2026-2027-do-3-oddilu-medvedi-havlovice/",
+      "title": "Nábor nových členů pro rok 2026/2027 do 3. oddílu Medvědi Havlovice",
+      "category": "Spolky",
+      "event_date": null,
+      "published_at": "2026-05-18T14:49:08.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Skaut – středisko Permoník",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:15.561Z"
     },
     {
       "id": "231",
@@ -3420,9 +4378,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.280Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.280Z"
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
     },
     {
       "id": "236",
@@ -3445,9 +4403,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.641Z"
+        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.641Z"
+      "last_seen_at": "2026-11-09T09:19:17.051Z"
     },
     {
       "id": "232",
@@ -3468,9 +4426,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.280Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.280Z"
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
     },
     {
       "id": "237",
@@ -3478,7 +4436,7 @@
       "external_url": "https://koletovka.cz/uncategorized/maly-jarni-koncert-rtyne-2026/",
       "title": "Malý jarní koncert",
       "category": "Kultura a spolky",
-      "event_date": null,
+      "event_date": "2026-03-05",
       "published_at": "2026-02-15T09:46:42.000Z",
       "summary": "Přijďte na Malý jarní koncert do Rtyně! 5.3.2026 od 19:00 zazní orchestrální hudba i oblíbené české melodie. Vstupenky online přes SMSticket.",
       "payload": {
@@ -3486,16 +4444,16 @@
           "Přijďte na Malý jarní koncert do Rtyně! 5.3.2026 od 19:00 zazní orchestrální hudba i oblíbené české melodie. Vstupenky online přes SMSticket."
         ],
         "days": [],
-        "kind": "community",
+        "kind": "event",
         "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.641Z"
+        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.641Z"
+      "last_seen_at": "2026-11-09T09:19:17.051Z"
     },
     {
       "id": "238",
@@ -3518,9 +4476,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.641Z"
+        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.641Z"
+      "last_seen_at": "2026-11-09T09:19:17.051Z"
     },
     {
       "id": "233",
@@ -3528,7 +4486,7 @@
       "external_url": "https://www.orelrtyne.cz/tanecne-tradicni-ples-17-1-2026/",
       "title": "Tanečně tradiční ples 17.1.2026",
       "category": "Sport a spolky",
-      "event_date": null,
+      "event_date": "2026-01-17",
       "published_at": "2025-11-17T10:00:02.000Z",
       "summary": "Vstupenky jsou již v prodeji od 1.11.2025! 3. Tanečně Tradiční ples už 17. ledna 2026! Hudba: HF Band & Koala Party Band Taneční lekce s Martinem Kubečkem Vstupenky pouze online na Objednat ZDE → Rychlé kontakty Miloslav KrýslTel.: +420 728 481 322Email.: halaorlovna@gmail.com Adresa sportovní haly náměstí Horníků 856Rtyně v Podkrkonoší54233IČ: 711",
       "payload": {
@@ -3549,7 +4507,7 @@
           "Archiv novinek"
         ],
         "days": [],
-        "kind": "community",
+        "kind": "event",
         "images": [
           {
             "alt": "Pozvánka od pořadatele",
@@ -3561,9 +4519,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.280Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.280Z"
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
     },
     {
       "id": "239",
@@ -3586,9 +4544,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.641Z"
+        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.641Z"
+      "last_seen_at": "2026-11-09T09:19:17.051Z"
     },
     {
       "id": "234",
@@ -3609,9 +4567,253 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-08T20:18:51.280Z"
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
       },
-      "last_seen_at": "2026-11-08T20:18:51.280Z"
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
+    },
+    {
+      "id": "694",
+      "source_key": "orel",
+      "external_url": "https://www.orelrtyne.cz/orel-cup-a-koncert-ewy-farne/#termin-2025-12-28",
+      "title": "Orel cup a koncert Ewy Farné",
+      "category": "Sport a spolky",
+      "event_date": "2025-12-28",
+      "published_at": "2025-08-05T13:10:37.000Z",
+      "summary": "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění: Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší b",
+      "payload": {
+        "body": [
+          "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění:",
+          "Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší brankář: Martin Frühbauer (Sykyho Sexy Krtečci)",
+          "Ženy 🏆🥇 1. místo – Krása střídá nádheru🥈 2. místo – Příjdu dýl🥉 3. místo – Kuřecí prsíčka🏅 Nejlepší hráčka v kanadském bodování: Sabina Labudová (Kuřecí prsíčka)🧤 Nejlepší brankářka: Lucie Petráková (Kuřecí prsíčka)",
+          "Velké díky patří všem pomocníkům, sponzorům a městu Rtyně v Podkrkonoší za podporu a umožnění uspořádat celou víkendovou akci.",
+          "Další termíny 📆🎅 Santa Open 26.–28. 12. 2025🦅 Orel Cup Kids 20. 7. 2026🦅 Orel Cup 17.–19. 7. 2026",
+          "📸 Fotografie z turnaje i koncertu najdete již brzy na 👉 https://eu.zonerama.com/TurnajeRtynevPodkrkonosi/843942?r=orel-cup",
+          "Psalo se o nás i v krkonošských novinách, článek viz níže:",
+          "https://krkonossky.denik.cz/zpravy_region/koncert-rtyne-ewa-farna-rozzarila-louku-pri-nocni-show.html",
+          "Přejeme krásný zbytek prázdnin 🏖️ a v zimě se na vás opět těšíme!",
+          "IMG_0383",
+          "IMG_0384",
+          "IMG_0385",
+          "IMG_0386"
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0383-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0384-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0385-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0386-400x284.jpeg"
+          }
+        ],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Orel Rtyně",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
+    },
+    {
+      "id": "693",
+      "source_key": "orel",
+      "external_url": "https://www.orelrtyne.cz/orel-cup-a-koncert-ewy-farne/#termin-2025-12-27",
+      "title": "Orel cup a koncert Ewy Farné",
+      "category": "Sport a spolky",
+      "event_date": "2025-12-27",
+      "published_at": "2025-08-05T13:10:37.000Z",
+      "summary": "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění: Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší b",
+      "payload": {
+        "body": [
+          "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění:",
+          "Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší brankář: Martin Frühbauer (Sykyho Sexy Krtečci)",
+          "Ženy 🏆🥇 1. místo – Krása střídá nádheru🥈 2. místo – Příjdu dýl🥉 3. místo – Kuřecí prsíčka🏅 Nejlepší hráčka v kanadském bodování: Sabina Labudová (Kuřecí prsíčka)🧤 Nejlepší brankářka: Lucie Petráková (Kuřecí prsíčka)",
+          "Velké díky patří všem pomocníkům, sponzorům a městu Rtyně v Podkrkonoší za podporu a umožnění uspořádat celou víkendovou akci.",
+          "Další termíny 📆🎅 Santa Open 26.–28. 12. 2025🦅 Orel Cup Kids 20. 7. 2026🦅 Orel Cup 17.–19. 7. 2026",
+          "📸 Fotografie z turnaje i koncertu najdete již brzy na 👉 https://eu.zonerama.com/TurnajeRtynevPodkrkonosi/843942?r=orel-cup",
+          "Psalo se o nás i v krkonošských novinách, článek viz níže:",
+          "https://krkonossky.denik.cz/zpravy_region/koncert-rtyne-ewa-farna-rozzarila-louku-pri-nocni-show.html",
+          "Přejeme krásný zbytek prázdnin 🏖️ a v zimě se na vás opět těšíme!",
+          "IMG_0383",
+          "IMG_0384",
+          "IMG_0385",
+          "IMG_0386"
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0383-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0384-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0385-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0386-400x284.jpeg"
+          }
+        ],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Orel Rtyně",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
+    },
+    {
+      "id": "692",
+      "source_key": "orel",
+      "external_url": "https://www.orelrtyne.cz/orel-cup-a-koncert-ewy-farne/",
+      "title": "Orel cup a koncert Ewy Farné",
+      "category": "Sport a spolky",
+      "event_date": "2025-12-26",
+      "published_at": "2025-08-05T13:10:37.000Z",
+      "summary": "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění: Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší b",
+      "payload": {
+        "body": [
+          "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění:",
+          "Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší brankář: Martin Frühbauer (Sykyho Sexy Krtečci)",
+          "Ženy 🏆🥇 1. místo – Krása střídá nádheru🥈 2. místo – Příjdu dýl🥉 3. místo – Kuřecí prsíčka🏅 Nejlepší hráčka v kanadském bodování: Sabina Labudová (Kuřecí prsíčka)🧤 Nejlepší brankářka: Lucie Petráková (Kuřecí prsíčka)",
+          "Velké díky patří všem pomocníkům, sponzorům a městu Rtyně v Podkrkonoší za podporu a umožnění uspořádat celou víkendovou akci.",
+          "Další termíny 📆🎅 Santa Open 26.–28. 12. 2025🦅 Orel Cup Kids 20. 7. 2026🦅 Orel Cup 17.–19. 7. 2026",
+          "📸 Fotografie z turnaje i koncertu najdete již brzy na 👉 https://eu.zonerama.com/TurnajeRtynevPodkrkonosi/843942?r=orel-cup",
+          "Psalo se o nás i v krkonošských novinách, článek viz níže:",
+          "https://krkonossky.denik.cz/zpravy_region/koncert-rtyne-ewa-farna-rozzarila-louku-pri-nocni-show.html",
+          "Přejeme krásný zbytek prázdnin 🏖️ a v zimě se na vás opět těšíme!",
+          "IMG_0383",
+          "IMG_0384",
+          "IMG_0385",
+          "IMG_0386"
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0383-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0384-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0385-400x284.jpeg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0386-400x284.jpeg"
+          }
+        ],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
+    },
+    {
+      "id": "695",
+      "source_key": "orel",
+      "external_url": "https://www.orelrtyne.cz/1-detsky-turnaj-orel-cup-kids-2025/",
+      "title": "1.dětský turnaj „Orel cup kids“ 2025",
+      "category": "Sport a spolky",
+      "event_date": "2025-06-14",
+      "published_at": "2025-07-05T13:22:05.000Z",
+      "summary": "Termín turnaje:14. 6. 2025 Místo konání:Sportovní hala ORLOVNA ve Rtyni v Podkrkonoší (Na náměstí)Hala má speciální litý povrch (gumu) Vedoucí turnaje:Miloslav Krýsl, Tel.: +420728481322, turnaje@fbcorelrtyne.czDaniel Hejna, Tel.: +420735773026 https://kids.orel-cup.cz/ Časový pořad:Zahájení 14. 6. 2025 v 8:00 hod.Ukončení 14. 6. 2025 do 19:00 hod.",
+      "payload": {
+        "body": [
+          "Termín turnaje:14. 6. 2025",
+          "Místo konání:Sportovní hala ORLOVNA ve Rtyni v Podkrkonoší (Na náměstí)Hala má speciální litý povrch (gumu)",
+          "Vedoucí turnaje:Miloslav Krýsl, Tel.: +420728481322, turnaje@fbcorelrtyne.czDaniel Hejna, Tel.: +420735773026 https://kids.orel-cup.cz/",
+          "Časový pořad:Zahájení 14. 6. 2025 v 8:00 hod.Ukončení 14. 6. 2025 do 19:00 hod.Startovné U11, B13, G13, B15, G15:Startovné zaplacené do 31.5.2025 2000kč. Platbu provést dle pokynů, které vám dorazí na email po registraci ve formě faktury.Startovné U9:Startovné zaplacené do 31.5.2025 1500kč. Platbu provést dle pokynů, které vám dorazí na email po registraci ve formě faktury.",
+          "Více informací najdete na webových stránkách:"
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
+    },
+    {
+      "id": "696",
+      "source_key": "orel",
+      "external_url": "https://www.orelrtyne.cz/20-let-florbalu-ve-rtyni-v-podkrkonosi/",
+      "title": "20 let florbalu ve Rtyni v Podkrkonoší",
+      "category": "Sport a spolky",
+      "event_date": null,
+      "published_at": "2025-05-02T11:07:18.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/05/ucast-reprezentatntu.jpg"
+          }
+        ],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
+    },
+    {
+      "id": "697",
+      "source_key": "orel",
+      "external_url": "https://www.orelrtyne.cz/2302-2/",
+      "title": "Taneční soutěž „O rtyňskou zvonici“ 2025",
+      "category": "Sport a spolky",
+      "event_date": null,
+      "published_at": "2025-05-02T10:38:27.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+      },
+      "last_seen_at": "2026-11-09T09:19:16.085Z"
     }
   ],
   "posts": [],
@@ -3622,28 +4824,28 @@
       "source_key": "calendar",
       "source_url": "https://www.rtyne.cz/kalendar-udalosti",
       "status": "ok",
-      "checked_at": "2026-11-08T20:18:59.873Z",
-      "last_success_at": "2026-11-08T20:18:59.873Z",
+      "checked_at": "2026-11-09T09:19:27.591Z",
+      "last_success_at": "2026-11-09T09:19:27.591Z",
       "last_error": null,
-      "item_count": 7,
+      "item_count": 9,
       "name": "Kalendář města"
     },
     {
       "source_key": "city",
       "source_url": "https://www.rtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-08T20:17:22.888Z",
-      "last_success_at": "2026-11-08T20:17:22.888Z",
+      "checked_at": "2026-11-09T09:19:14.941Z",
+      "last_success_at": "2026-11-09T09:19:14.941Z",
       "last_error": null,
-      "item_count": 22,
+      "item_count": 23,
       "name": "Město Rtyně"
     },
     {
       "source_key": "clubs",
       "source_url": "https://www.rtyne.cz/spolky-a-sdruzeni",
       "status": "ok",
-      "checked_at": "2026-11-08T20:19:00.310Z",
-      "last_success_at": "2026-11-08T20:19:00.310Z",
+      "checked_at": "2026-11-09T09:19:28.266Z",
+      "last_success_at": "2026-11-09T09:19:28.266Z",
       "last_error": null,
       "item_count": 14,
       "name": "Spolky a sportovní oddíly"
@@ -3652,18 +4854,18 @@
       "source_key": "koletovka",
       "source_url": "https://koletovka.cz/wp-json/wp/v2/posts?per_page=5",
       "status": "ok",
-      "checked_at": "2026-11-08T20:18:51.641Z",
-      "last_success_at": "2026-11-08T20:18:51.641Z",
+      "checked_at": "2026-11-09T09:19:17.051Z",
+      "last_success_at": "2026-11-09T09:19:17.051Z",
       "last_error": null,
-      "item_count": 5,
+      "item_count": 8,
       "name": "Koletova hornická hudba"
     },
     {
       "source_key": "library",
       "source_url": "https://www.mkrtyne.cz/akce.html",
       "status": "ok",
-      "checked_at": "2026-11-08T20:18:51.476Z",
-      "last_success_at": "2026-11-08T20:18:51.476Z",
+      "checked_at": "2026-11-09T09:19:16.018Z",
+      "last_success_at": "2026-11-09T09:19:16.018Z",
       "last_error": null,
       "item_count": 15,
       "name": "Městská knihovna"
@@ -3672,8 +4874,8 @@
       "source_key": "museum",
       "source_url": "https://www.muzeumrtyne.cz/akce",
       "status": "ok",
-      "checked_at": "2026-11-08T20:18:51.331Z",
-      "last_success_at": "2026-11-08T20:18:51.331Z",
+      "checked_at": "2026-11-09T09:19:15.792Z",
+      "last_success_at": "2026-11-09T09:19:15.792Z",
       "last_error": null,
       "item_count": 1,
       "name": "Muzeum a infocentrum"
@@ -3682,29 +4884,29 @@
       "source_key": "orel",
       "source_url": "https://www.orelrtyne.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-08T20:18:51.280Z",
-      "last_success_at": "2026-11-08T20:18:51.280Z",
+      "checked_at": "2026-11-09T09:19:16.085Z",
+      "last_success_at": "2026-11-09T09:19:16.085Z",
       "last_error": null,
-      "item_count": 6,
+      "item_count": 12,
       "name": "Orel Rtyně"
     },
     {
       "source_key": "preschool",
       "source_url": "https://www.msrtyne.cz/aktuality/",
-      "status": "error",
-      "checked_at": "2026-11-08T20:18:50.531Z",
-      "last_success_at": "2026-11-08T18:55:04.573Z",
-      "last_error": "TimeoutError: Signal timed out.",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:18:32.761Z",
+      "last_success_at": "2026-11-09T09:18:32.761Z",
+      "last_error": null,
       "item_count": 8,
       "name": "MŠ Rtyně"
     },
     {
       "source_key": "preschool_menu",
       "source_url": "https://www.msrtyne.cz/",
-      "status": "error",
-      "checked_at": "2026-11-08T20:19:44.664Z",
-      "last_success_at": "2026-11-08T18:55:24.240Z",
-      "last_error": "TimeoutError: Signal timed out.",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:19:15.655Z",
+      "last_success_at": "2026-11-09T09:19:15.655Z",
+      "last_error": null,
       "item_count": 1,
       "name": "Jídelníček MŠ"
     },
@@ -3712,8 +4914,8 @@
       "source_key": "school",
       "source_url": "https://www.zsrtyne.cz/pro-verejnost/aktuality",
       "status": "ok",
-      "checked_at": "2026-11-08T20:17:04.183Z",
-      "last_success_at": "2026-11-08T20:17:04.183Z",
+      "checked_at": "2026-11-09T09:18:37.931Z",
+      "last_success_at": "2026-11-09T09:18:37.931Z",
       "last_error": null,
       "item_count": 8,
       "name": "ZŠ a ZUŠ Rtyně"
@@ -3722,18 +4924,18 @@
       "source_key": "scouts",
       "source_url": "https://skaut-rtyne.skauting.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-08T20:18:50.860Z",
-      "last_success_at": "2026-11-08T20:18:50.860Z",
+      "checked_at": "2026-11-09T09:19:15.561Z",
+      "last_success_at": "2026-11-09T09:19:15.561Z",
       "last_error": null,
-      "item_count": 6,
+      "item_count": 20,
       "name": "Skaut – středisko Permoník"
     },
     {
       "source_key": "services",
       "source_url": "https://www.rtyne.cz/svoz-odpadu-a-odpadove-hospodarstvi",
       "status": "ok",
-      "checked_at": "2026-11-08T20:19:11.003Z",
-      "last_success_at": "2026-11-08T20:19:11.003Z",
+      "checked_at": "2026-11-09T09:19:39.715Z",
+      "last_success_at": "2026-11-09T09:19:39.715Z",
       "last_error": null,
       "item_count": 8,
       "name": "Praktické informace města"
@@ -3742,12 +4944,12 @@
       "source_key": "water",
       "source_url": "https://www.vakrtyne.cz/havarie-a-odstavky",
       "status": "ok",
-      "checked_at": "2026-11-08T20:17:03.536Z",
-      "last_success_at": "2026-11-08T20:17:03.536Z",
+      "checked_at": "2026-11-09T09:18:35.078Z",
+      "last_success_at": "2026-11-09T09:18:35.078Z",
       "last_error": null,
       "item_count": 8,
       "name": "VAK Rtyně"
     }
   ],
-  "generated_at": "2026-11-09T00:07:18.933Z"
+  "generated_at": "2026-11-09T09:21:06.461Z"
 }
