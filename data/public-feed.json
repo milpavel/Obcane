@@ -8,19 +8,429 @@
       "category": "Praktické informace",
       "event_date": null,
       "published_at": null,
-      "summary": "Dlaždice",
+      "summary": "Pomoc v domácnosti, osobní péče a podpora soběstačnosti. Kontakty, jak požádat o službu a potřebné dokumenty.",
       "payload": {
-        "body": [
-          "Dlaždice"
-        ],
+        "body": [],
         "days": [],
         "kind": "service",
+        "blocks": [],
         "images": [],
+        "sections": [
+          {
+            "title": "Základní informace",
+            "blocks": [
+              {
+                "text": "Název organizace: Pečovatelská služba Města Rtyně v Podkrkonoší",
+                "type": "paragraph"
+              },
+              {
+                "text": "Sídlo pečovatelské služby: K Jídelně 616, Rtyně v Podkrkonoší",
+                "type": "paragraph"
+              },
+              {
+                "text": "Identifikátor: 8522302",
+                "type": "paragraph"
+              },
+              {
+                "text": "Telefon: 720 512 632, 724 192 552",
+                "type": "paragraph"
+              },
+              {
+                "text": "E-mail: pecovatelky.rtyne@seznam.cz",
+                "type": "paragraph",
+                "links": [
+                  {
+                    "url": "mailto:pecovatelky.rtyne@seznam.cz",
+                    "text": "pecovatelky.rtyne@seznam.cz"
+                  }
+                ]
+              },
+              {
+                "text": "Pracovní doba: Po – Pá 6:30 – 15:00 hod.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Adresa zřizovatele: Město Rtyně v Podkrkonoší",
+                "type": "paragraph"
+              },
+              {
+                "text": "Hronovská 431, 549 33 Rtyně v Podkrkonoší",
+                "type": "paragraph"
+              },
+              {
+                "text": "IČO: 00278238",
+                "type": "paragraph"
+              },
+              {
+                "text": "Statutární zástupce: Bc. Stanislav řezníček, DiS, starosta města",
+                "type": "paragraph"
+              },
+              {
+                "text": "www.rtyne.cz Telefon: 499 888 140",
+                "type": "paragraph",
+                "links": [
+                  {
+                    "url": "https://www.rtyne.cz/",
+                    "text": "www.rtyne.cz"
+                  }
+                ]
+              },
+              {
+                "text": "E- mail: podatelna@mestortyne.cz Datová schránka: 2awbshw",
+                "type": "paragraph",
+                "links": [
+                  {
+                    "url": "mailto:podatelna@mestortyne.cz",
+                    "text": "podatelna@mestortyne.cz"
+                  }
+                ]
+              },
+              {
+                "text": "Pečovatelská služba se řídí zákonem č. 108/2006 Sb., o sociálních službách a prováděcí vyhláškou MPSV č. 505/2006 Sb.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pečovatelskou službu finančně podporuje Ministerstvo práce a sociálních věcí a Královéhradecký kraj.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pečovatelská služba byla zaregistrována u Krajského úřadu Královéhradeckého kraje dne",
+                "type": "paragraph"
+              },
+              {
+                "text": "1. 6. 2007.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Mezi největší donátory patří zřizovatel – město Rtyně v Podkrkonoší, Ministerstvo práce a sociálních věcí a Krajský úřad Královéhradeckého kraje.",
+                "type": "paragraph"
+              }
+            ],
+            "attachments": []
+          },
+          {
+            "title": "Kdo a jak může o službu požádat",
+            "blocks": [
+              {
+                "text": "Jak zažádat o pečovatelskou službu",
+                "type": "paragraph"
+              },
+              {
+                "text": "Zájemce o pečovatelskou službu se může obrátit na pečovatelky nebo na správní odbor městského úřadu a to buď osobně, e-mailem, písemně nebo telefonicky.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Sociální pracovnice navštíví zájemce v jeho domácnosti. Společně si domluví potřebný rozsah péče, aby i nadále mohl zůstat v domácím prostředí, kde se cítí bezpečně. Vyhotoví „Záznam z jednání se zájemcem“, který slouží jako podklad pro sepsání Smlouvy o poskytování pečovatelské služby.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pečovatelka: Petra Návesníková, tel: 724 192 552",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pečovatelka: Ludmila Zelená, tel: 720 512 632",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pečovatelka: Barbora Odrobiňáková",
+                "type": "paragraph"
+              },
+              {
+                "text": "Sociální pracovnice: Irena",
+                "type": "paragraph"
+              },
+              {
+                "text": "Lelková",
+                "type": "paragraph"
+              },
+              {
+                "text": "Vedoucí správního odboru: Kateřina Buriánková, tel: 499 888 140, 605 263 348",
+                "type": "paragraph"
+              },
+              {
+                "text": "E – mail: pecovatelky.rtyne@seznam.cz, matrika@mestortyne.cz",
+                "type": "paragraph",
+                "links": [
+                  {
+                    "url": "mailto:pecovatelky.rtyne@seznam.cz",
+                    "text": "pecovatelky.rtyne@seznam.cz"
+                  }
+                ]
+              },
+              {
+                "text": "Adresa: Město Rtyně v Podkrkonoší, Hronovská 431, 542 33 Rtyně v Podkrkonoší",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pro koho je služba určena – cílové skupiny",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pečovatelská služba je určena lidem se sníženou soběstačností z důvodu:",
+                "type": "paragraph"
+              },
+              {
+                "text": "- věku",
+                "type": "paragraph"
+              },
+              {
+                "text": "- chronického onemocnění",
+                "type": "paragraph"
+              },
+              {
+                "text": "- zdravotního postižení",
+                "type": "paragraph"
+              },
+              {
+                "text": "- osobám, které se ocitly v nepříznivé sociální situaci následkem úrazu a nejsou schopny situaci řešit vlastními silami",
+                "type": "paragraph"
+              },
+              {
+                "text": "- dospělí (27 -64 let)",
+                "type": "paragraph"
+              },
+              {
+                "text": "- mladší senioři (65-80 let)",
+                "type": "paragraph"
+              },
+              {
+                "text": "- starší senioři (nad 80 let)",
+                "type": "paragraph"
+              },
+              {
+                "text": "Místo a čas poskytování pečovatelské služby:",
+                "type": "paragraph"
+              },
+              {
+                "text": "- v domácnostech uživatelů na území města Rtyně v Podkrkonoší a v obcích Malé a Velké Svatoňovice",
+                "type": "paragraph"
+              },
+              {
+                "text": "- v bytech pečovatelské služby nacházejících se v přízemním patře domu čp. 616, ulice K Jídelně,",
+                "type": "paragraph"
+              },
+              {
+                "text": "- v domě s podporovanými byty v ulici Nad Lipkou čp. 902",
+                "type": "paragraph"
+              },
+              {
+                "text": "ve vymezeném čase a to v pracovních dnech (tj. pondělí až pátek) od 6:30 do 15:00 hodin.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Základní",
+                "type": "paragraph"
+              },
+              {
+                "text": "činnosti pečovatelské služby",
+                "type": "paragraph"
+              },
+              {
+                "text": "- Základní",
+                "type": "paragraph"
+              },
+              {
+                "text": "a sociální poradenství",
+                "type": "paragraph"
+              },
+              {
+                "text": "- Pomoc",
+                "type": "paragraph"
+              },
+              {
+                "text": "při zvládání běžných úkonů péče o vlastní osobu",
+                "type": "paragraph"
+              },
+              {
+                "text": "při osobní hygieně nebo poskytnutí, podmínek pro osobní hygienu",
+                "type": "paragraph"
+              },
+              {
+                "text": "- Poskytnutí",
+                "type": "paragraph"
+              },
+              {
+                "text": "stravy nebo pomoc při zajištění stravy",
+                "type": "paragraph"
+              },
+              {
+                "text": "při zajištění chodu domácnosti",
+                "type": "paragraph"
+              },
+              {
+                "text": "- Zprostředkování",
+                "type": "paragraph"
+              },
+              {
+                "text": "kontaktu se společenským prostředím",
+                "type": "paragraph"
+              },
+              {
+                "text": "při uplatňování kontaktu se společenským prostředím",
+                "type": "paragraph"
+              },
+              {
+                "text": "při uplatňování práv, oprávněných zájmů a při obstarávání osobních záležitostí",
+                "type": "paragraph"
+              },
+              {
+                "text": "při zajištění bezpečí a možnosti setrvání v přirozeném sociálním prostředí",
+                "type": "paragraph"
+              },
+              {
+                "text": "Fakultativní",
+                "type": "paragraph"
+              },
+              {
+                "text": "(doplňkové) činnosti pečovatelské služby",
+                "type": "paragraph"
+              },
+              {
+                "text": "- Doprovod",
+                "type": "paragraph"
+              },
+              {
+                "text": "služebním vozem PS",
+                "type": "paragraph"
+              }
+            ],
+            "attachments": []
+          },
+          {
+            "title": "Ceník úkonů pečovatelské služby",
+            "blocks": [],
+            "attachments": [
+              {
+                "url": "https://www.rtyne.cz/file/4400537",
+                "type": "pdf",
+                "title": "Ceník úkonů pečovatelské služby od 01.10.2026.pdf pdf 194 kB"
+              }
+            ]
+          },
+          {
+            "title": "Dokumenty ke stažení",
+            "blocks": [],
+            "attachments": [
+              {
+                "url": "https://www.rtyne.cz/file/4096899",
+                "type": "pdf",
+                "title": "V_1_Pravidla pro poskytování pečovatelské služby 7 2026.pdf pdf 332 kB"
+              },
+              {
+                "url": "https://www.rtyne.cz/file/1000465",
+                "type": "pdf",
+                "title": "Garantovaná nabídka služeb PS od 01.11.2024.pdf pdf 214 kB"
+              },
+              {
+                "url": "https://www.rtyne.cz/file/795976",
+                "type": "docx",
+                "title": "Žádost o zavedení pečovatelské služby.docx docx 19 kB"
+              },
+              {
+                "url": "https://www.rtyne.cz/file/795973",
+                "type": "docx",
+                "title": "garantovaná nabídka.docx docx 18 kB"
+              },
+              {
+                "url": "https://www.rtyne.cz/file/3258208",
+                "type": "pdf",
+                "title": "V_3_Směrnice pro podávání stížností na PS (002).pdf pdf 217 kB"
+              }
+            ]
+          },
+          {
+            "title": "Poslání a cíle pečovatelské služby",
+            "blocks": [
+              {
+                "text": "* Posláním pečovatelské služby je umožnit lidem se sníženou soběstačností z důvodu věku, chronického onemocnění nebo zdravotního postižení a osobám, které jsou po úrazech a jejichž situace vyžaduje pomoc jiné fyzické osoby, zůstat co nejdéle ve svém domácím prostředí.",
+                "type": "paragraph"
+              },
+              {
+                "text": "* Cílem pečovatelské služby je zajistit základní životní potřeby uživatelů, podporovat samostatný a nezávislý způsob života v domácnosti, zachovat dosavadní sociální kontakty, případně pomoc při budování a vytváření vztahů nových.",
+                "type": "paragraph"
+              },
+              {
+                "text": "* Pomoc a podpora vychází z individuálních potřeb uživatelů. Respektuje a zachovává jejich důstojnost.",
+                "type": "paragraph"
+              }
+            ],
+            "attachments": []
+          },
+          {
+            "title": "Zásady poskytování služby",
+            "blocks": [
+              {
+                "text": "* Služby jsou poskytovány na profesionální úrovni.",
+                "type": "paragraph"
+              },
+              {
+                "text": "* Zaměstnanci splňují kvalifikační i morální předpoklady pro výkon své funkce.",
+                "type": "paragraph"
+              },
+              {
+                "text": "* Při poskytování služby respektují lidská práva uživatelů, ochranu lidské důstojnosti a jedinečnost každého člověka.",
+                "type": "paragraph"
+              },
+              {
+                "text": "* Služba je poskytována podle osobních přání, zájmů a cílů uživatelů.",
+                "type": "paragraph"
+              },
+              {
+                "text": "* Je uplatňován partnerský a osobní přístup.",
+                "type": "paragraph"
+              },
+              {
+                "text": "* Respektujeme jedinečnost každého člověka bez ohledu na jeho původ, etnickou příslušnost, barvu pleti, národnost, sexuální orientaci, náboženské nebo politické přesvědčení.",
+                "type": "paragraph"
+              },
+              {
+                "text": "* Pečovatelská služba je poskytována za úplatu, dle platného Ceníku úkonů poskytovaných pečovatelskou službou.",
+                "type": "paragraph"
+              }
+            ],
+            "attachments": []
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
+        "service_links": [
+          {
+            "url": "https://www.rtyne.cz/zakladni-informace",
+            "title": "Základní informace"
+          },
+          {
+            "url": "https://www.rtyne.cz/kdo-a-jak-muze-o-sluzbu-pozadat",
+            "title": "Kdo a jak může o službu požádat"
+          },
+          {
+            "url": "https://www.rtyne.cz/cenik-ukonu-pecovatelske-sluzby",
+            "title": "Ceník úkonů pečovatelské služby"
+          },
+          {
+            "url": "https://www.rtyne.cz/dokumenty-ke-stazeni",
+            "title": "Dokumenty ke stažení"
+          },
+          {
+            "url": "https://www.rtyne.cz/akce",
+            "title": "Akce"
+          },
+          {
+            "url": "https://www.rtyne.cz/vyrocni-zpravy-pecovatelske-sluzby",
+            "title": "Výroční zprávy pečovatelské služby"
+          },
+          {
+            "url": "https://www.rtyne.cz/poslani-a-cile-pecovatelske-sluzby",
+            "title": "Poslání a cíle pečovatelské služby"
+          },
+          {
+            "url": "https://www.rtyne.cz/zasady-poskytovani-sluzby",
+            "title": "Zásady poskytování služby"
+          }
+        ],
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T10:17:44.410Z"
@@ -35,14 +445,12 @@
       "published_at": null,
       "summary": "V roce 2024 byla zprovozněna aplikace, kde je možné uhradit zejména místní poplatky za odpady a psy on-line. Nově je možné provést i platbu za nájem hrobových míst.",
       "payload": {
-        "body": [
-          "V roce 2024 byla zprovozněna aplikace, kde je možné uhradit zejména místní poplatky za odpady a psy on-line. Nově je možné provést i platbu za nájem hrobových míst.",
-          "Přílohy",
-          "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2026.pdf pdf 160 kB"
-        ],
+        "body": [],
         "days": [],
         "kind": "service",
+        "blocks": [],
         "images": [],
+        "sections": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [
@@ -54,6 +462,8 @@
         ],
         "source_name": "Praktické informace města",
         "detail_error": null,
+        "service_links": [],
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T10:17:44.410Z"
@@ -66,21 +476,38 @@
       "category": "Praktické informace",
       "event_date": null,
       "published_at": null,
-      "summary": "Dokumenty Žádost o dopravu 26. 9. 2024",
+      "summary": "Žádost o dopravu Senior TAXI a dokumenty k využití služby.",
       "payload": {
-        "body": [
-          "Dokumenty",
-          "Žádost o dopravu 26. 9. 2024",
-          "Žádost o dopravu"
-        ],
+        "body": [],
         "days": [],
         "kind": "service",
+        "blocks": [],
         "images": [],
+        "sections": [
+          {
+            "title": "Žádost o dopravu",
+            "blocks": [],
+            "attachments": [
+              {
+                "url": "https://www.rtyne.cz/file/4010714",
+                "type": "docx",
+                "title": "Žádost DOPRAVA SENIORŮ Rtyně v P..docx docx 22 kB"
+              }
+            ]
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
+        "service_links": [
+          {
+            "url": "https://www.rtyne.cz/zadost-o-dopravu",
+            "title": "Žádost o dopravu"
+          }
+        ],
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T10:17:44.410Z"
@@ -93,10 +520,9 @@
       "category": "Praktické informace",
       "event_date": null,
       "published_at": null,
-      "summary": "Text stránky MUDr. Jan Hartman",
+      "summary": "Praktičtí lékaři, dětská a zubní ordinace i lékárna. Kontakty a přehled ordinačních hodin.",
       "payload": {
         "body": [
-          "Text stránky",
           "MUDr. Jan Hartman",
           "Praktický lékař pro dospělé",
           "oficiální stránky - https://www.doktor-rtyne.cz",
@@ -117,12 +543,14 @@
           "telefon: 499 888 105",
           "e-mail: hartmanrtyne@gmail.com",
           "Adresa",
-          "Náměstí horníků 830 Rtyně v Podkrkonoší 542 33",
-          "ukázat na mapě",
+          "Náměstí horníků 830",
+          "Rtyně v Podkrkonoší",
+          "542 33",
           "MUDr. Naděžda Hartmanová",
           "Praktická lékařka pro děti a dorost",
           "U dětských lékařů platí rezervační systém. Pacienti si ráno musí zavolat o čas vyšetření.",
-          "oficiální stránky - https://www.doktor-rtyne.cz - ve vyhledávačích \"Lékařská péče Rtyně v Podkrkonoší",
+          "oficiální stránky - https://www.doktor-rtyne.cz",
+          "Ordinační hodiny",
           "Sestra Pavlína Brejtrová",
           "Tel. 499 888 180",
           "IČO 49290657",
@@ -134,11 +562,21 @@
           "Úterky a čtvrtky dopoledne děláme převážně kojeneckou poradnu, očkujeme a zbylý čas doplníme nemocnými. Ordinaci začínáme vždy zdravými – kontroly a prevence.",
           "Každý den všechny pacienty telefonicky objednáváme na přesně určenou dobu (při akutních komplikacích někdy nelze časový limit dodržet - děkuji za pochopení).",
           "Objednávat se nemusíte, pokud potřebujete pouze potvrdit přihlášku do školy, tábor, řidičský průkaz, ošetřování apod.",
+          "Smluvní pojišťovny",
+          "Všeobecná zdravotní pojišťovna (111)",
+          "Zdravotní pojišťovna ministerstva vnitra ČR (211)",
+          "Vojenská zdravotní pojišťovna (201)",
+          "Česká národní zdravotní pojišťovna (222)",
+          "Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví (207)",
+          "Kontakt",
           "telefon: 499 888 180 (Rtyně v Podkrkonoší), 775 959 211 (Malé Svatoňovice)",
           "e-mail: nadezda.hartmanova@seznam.cz",
-          "Zubní ordinace",
+          "Adresa",
+          "Náměstí horníků 830",
+          "Rtyně v Podkrkonoší",
+          "542 33",
           "MUDr. Eva Jirásková",
-          "Po-St 7:30 – 1213-15",
+          "Ordinační hodiny od pondělí do středy nejsou na webu města jednoznačně zapsané. Potvrďte si je prosím telefonicky v ordinaci.",
           "Čt, Pá – 7:30 – 12:30",
           "Hornická 417",
           "Tel. 776589020",
@@ -150,12 +588,280 @@
         ],
         "days": [],
         "kind": "service",
+        "blocks": [
+          {
+            "text": "MUDr. Jan Hartman",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Praktický lékař pro dospělé",
+            "type": "paragraph"
+          },
+          {
+            "text": "oficiální stránky - https://www.doktor-rtyne.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "https://www.doktor-rtyne.cz/",
+                "text": "https://www.doktor-rtyne.cz"
+              }
+            ]
+          },
+          {
+            "text": "Ordinační hodiny",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "rows": [
+              [
+                "Po",
+                "10:00 - 12:00",
+                "13:00 - 18:00",
+                "zejména pro pracující"
+              ],
+              [
+                "Út",
+                "07:00 - 12:00"
+              ],
+              [
+                "St",
+                "07:00 - 12:00"
+              ],
+              [
+                "Čt",
+                "07:00 - 12:00",
+                "13:00 - 14:00",
+                "zejména pro pracující"
+              ],
+              [
+                "Pá",
+                "07:00 - 12:00"
+              ]
+            ],
+            "type": "table"
+          },
+          {
+            "text": "V případě akutního stavu a potřeby je možné ošetření i mimo ordinační dobu pro nemocné.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Smluvní pojišťovny",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "type": "list",
+            "items": [
+              "Všeobecná zdravotní pojišťovna (111)",
+              "Zdravotní pojišťovna ministerstva vnitra ČR (211)",
+              "Vojenská zdravotní pojišťovna (201)",
+              "Česká národní zdravotní pojišťovna (222)",
+              "Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví (207)"
+            ],
+            "ordered": false
+          },
+          {
+            "text": "Kontakt",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "type": "list",
+            "items": [
+              "telefon: 499 888 105",
+              "e-mail: hartmanrtyne@gmail.com"
+            ],
+            "ordered": false
+          },
+          {
+            "text": "Adresa",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "text": "Náměstí horníků 830",
+            "type": "paragraph"
+          },
+          {
+            "text": "Rtyně v Podkrkonoší",
+            "type": "paragraph"
+          },
+          {
+            "text": "542 33",
+            "type": "paragraph"
+          },
+          {
+            "text": "MUDr. Naděžda Hartmanová",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Praktická lékařka pro děti a dorost",
+            "type": "paragraph"
+          },
+          {
+            "text": "U dětských lékařů platí rezervační systém. Pacienti si ráno musí zavolat o čas vyšetření.",
+            "type": "paragraph"
+          },
+          {
+            "text": "oficiální stránky - https://www.doktor-rtyne.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "https://www.doktor-rtyne.cz/",
+                "text": "https://www.doktor-rtyne.cz"
+              }
+            ]
+          },
+          {
+            "text": "Ordinační hodiny",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "text": "Sestra Pavlína Brejtrová",
+            "type": "paragraph"
+          },
+          {
+            "text": "Tel. 499 888 180",
+            "type": "paragraph"
+          },
+          {
+            "text": "IČO 49290657",
+            "type": "paragraph"
+          },
+          {
+            "text": "PO 7:00 – 12:30 13:00 – 14:00",
+            "type": "paragraph"
+          },
+          {
+            "text": "ÚT 9:30 – 12:00 13:00 – 18:00",
+            "type": "paragraph"
+          },
+          {
+            "text": "ST 6:30 – 10:30",
+            "type": "paragraph"
+          },
+          {
+            "text": "ČT 8:00 – 12:00 13:00 – 15:00",
+            "type": "paragraph"
+          },
+          {
+            "text": "PÁ 6:30 – 12:30",
+            "type": "paragraph"
+          },
+          {
+            "text": "Úterky a čtvrtky dopoledne děláme převážně kojeneckou poradnu, očkujeme a zbylý čas doplníme nemocnými. Ordinaci začínáme vždy zdravými – kontroly a prevence.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Každý den všechny pacienty telefonicky objednáváme na přesně určenou dobu (při akutních komplikacích někdy nelze časový limit dodržet - děkuji za pochopení).",
+            "type": "paragraph"
+          },
+          {
+            "text": "Objednávat se nemusíte, pokud potřebujete pouze potvrdit přihlášku do školy, tábor, řidičský průkaz, ošetřování apod.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Smluvní pojišťovny",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "type": "list",
+            "items": [
+              "Všeobecná zdravotní pojišťovna (111)",
+              "Zdravotní pojišťovna ministerstva vnitra ČR (211)",
+              "Vojenská zdravotní pojišťovna (201)",
+              "Česká národní zdravotní pojišťovna (222)",
+              "Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví (207)"
+            ],
+            "ordered": false
+          },
+          {
+            "text": "Kontakt",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "type": "list",
+            "items": [
+              "telefon: 499 888 180 (Rtyně v Podkrkonoší), 775 959 211 (Malé Svatoňovice)",
+              "e-mail: nadezda.hartmanova@seznam.cz"
+            ],
+            "ordered": false
+          },
+          {
+            "text": "Adresa",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "text": "Náměstí horníků 830",
+            "type": "paragraph"
+          },
+          {
+            "text": "Rtyně v Podkrkonoší",
+            "type": "paragraph"
+          },
+          {
+            "text": "542 33",
+            "type": "paragraph"
+          },
+          {
+            "text": "MUDr. Eva Jirásková",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Ordinační hodiny od pondělí do středy nejsou na webu města jednoznačně zapsané. Potvrďte si je prosím telefonicky v ordinaci.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Čt, Pá – 7:30 – 12:30",
+            "type": "paragraph"
+          },
+          {
+            "text": "Hornická 417",
+            "type": "paragraph"
+          },
+          {
+            "text": "Tel. 776589020",
+            "type": "paragraph"
+          },
+          {
+            "text": "LÉKÁRNA CLARA",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Tel. 499 888 142",
+            "type": "paragraph"
+          },
+          {
+            "text": "prodejna: náměstí Horníků 460, Rtyně v P.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Pondělí 7.30 – 12 30 13 - 17",
+            "type": "paragraph"
+          },
+          {
+            "text": "Úterý – pátek 7.30 – 12 30 13 - 16",
+            "type": "paragraph"
+          }
+        ],
         "images": [],
+        "sections": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
+        "service_links": [],
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T10:17:44.410Z"
@@ -168,40 +874,109 @@
       "category": "Praktické informace",
       "event_date": null,
       "published_at": null,
-      "summary": "Náplň činnosti Www:: http://www.rtyne.cz",
+      "summary": "Kontakty městského úřadu, úřední hodiny, adresa a bankovní spojení.",
       "payload": {
         "body": [
-          "Náplň činnosti",
           "Www:: http://www.rtyne.cz",
-          "Telefon",
           "Telefon: 499888140",
-          "E-mail",
           "E-mail: podatelna@mestortyne.cz",
-          "ID datové schránky:",
-          "IČO:",
-          "DIČ:",
-          "Bankovní spojení",
+          "Datová schránka: 2awbshw",
+          "IČO: 00278238",
+          "DIČ: CZ00278238",
           "Bankovní spojení: 245909204/0300",
-          "Otevírací doba",
-          "Úřední dny a hodiny Pondělí: 8:00 - 17:00 hod. (11:30 - 12:30 polední pauza) Úterý: 8:00 - 11:30 hod. Středa: 8:00 - 17:00 hod. (11:30 - 12:30 polední pauza) Čtvrtek: 8:00 - 11:30 hod.",
           "Úřední dny a hodiny",
           "Pondělí: 8:00 - 17:00 hod. (11:30 - 12:30 polední pauza)",
           "Úterý: 8:00 - 11:30 hod.",
           "Středa: 8:00 - 17:00 hod. (11:30 - 12:30 polední pauza)",
           "Čtvrtek: 8:00 - 11:30 hod.",
-          "Adresa / umístění",
-          "Město Rtyně v Podkrkonoší Hronovská 431 542 33 Rtyně v Podkrkonoší",
           "Město Rtyně v Podkrkonoší",
-          "Hronovská 431 542 33 Rtyně v Podkrkonoší"
+          "Hronovská 431",
+          "542 33 Rtyně v Podkrkonoší"
         ],
         "days": [],
         "kind": "service",
+        "blocks": [
+          {
+            "text": "Www:: http://www.rtyne.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "http://www.rtyne.cz/",
+                "text": "http://www.rtyne.cz"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "items": [
+              "Telefon: 499888140"
+            ],
+            "ordered": false
+          },
+          {
+            "type": "list",
+            "items": [
+              "E-mail: podatelna@mestortyne.cz"
+            ],
+            "ordered": false
+          },
+          {
+            "text": "Datová schránka: 2awbshw",
+            "type": "paragraph"
+          },
+          {
+            "text": "IČO: 00278238",
+            "type": "paragraph"
+          },
+          {
+            "text": "DIČ: CZ00278238",
+            "type": "paragraph"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Bankovní spojení: 245909204/0300"
+            ],
+            "ordered": false
+          },
+          {
+            "text": "Úřední dny a hodiny",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "type": "list",
+            "items": [
+              "Pondělí: 8:00 - 17:00 hod. (11:30 - 12:30 polední pauza)",
+              "Úterý: 8:00 - 11:30 hod.",
+              "Středa: 8:00 - 17:00 hod. (11:30 - 12:30 polední pauza)",
+              "Čtvrtek: 8:00 - 11:30 hod."
+            ],
+            "ordered": false
+          },
+          {
+            "text": "Město Rtyně v Podkrkonoší",
+            "type": "heading",
+            "level": 3
+          },
+          {
+            "text": "Hronovská 431",
+            "type": "paragraph"
+          },
+          {
+            "text": "542 33 Rtyně v Podkrkonoší",
+            "type": "paragraph"
+          }
+        ],
         "images": [],
+        "sections": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
+        "service_links": [],
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T10:17:44.410Z"
@@ -214,19 +989,137 @@
       "category": "Praktické informace",
       "event_date": null,
       "published_at": null,
-      "summary": "Dlaždice",
+      "summary": "Otevírací doba, kontakty a ceníky pro odevzdání odpadu.",
       "payload": {
-        "body": [
-          "Dlaždice"
-        ],
+        "body": [],
         "days": [],
         "kind": "service",
+        "blocks": [],
         "images": [],
+        "sections": [
+          {
+            "title": "Ceník odpadů",
+            "blocks": [],
+            "attachments": [
+              {
+                "url": "https://www.rtyne.cz/file/3333800",
+                "type": "pdf",
+                "title": "Nový ceník odpadů 2026.pdf pdf 126 kB"
+              }
+            ]
+          },
+          {
+            "title": "Otevírací doba",
+            "blocks": [
+              {
+                "text": "Pondělí - 8.00 - 12.00 a 12.30 - 16.30",
+                "type": "paragraph"
+              },
+              {
+                "text": "Úterý - 8.00 - 12.00 a 12.30 - 16.30",
+                "type": "paragraph"
+              },
+              {
+                "text": "Středa - 8.00 - 12.00 a 12.30 - 16.30",
+                "type": "paragraph"
+              },
+              {
+                "text": "Čtvrtek - ZAVŘENO",
+                "type": "paragraph"
+              },
+              {
+                "text": "Pátek - ZAVŘENO",
+                "type": "paragraph"
+              },
+              {
+                "text": "Sobota - 1. sobota v měsíci (DUBEN - LISTOPAD) - 8.00 - 11.00",
+                "type": "paragraph"
+              },
+              {
+                "text": "Neděle - ZAVŘENO",
+                "type": "paragraph"
+              }
+            ],
+            "attachments": []
+          },
+          {
+            "title": "Ceník zemních prací",
+            "blocks": [],
+            "attachments": [
+              {
+                "url": "https://www.rtyne.cz/file/3333809",
+                "type": "pdf",
+                "title": "cenik zemní práce (1.1.2026).pdf pdf 107 kB"
+              }
+            ]
+          },
+          {
+            "title": "Kontakty",
+            "blocks": [
+              {
+                "text": "JEDNATEL",
+                "type": "paragraph"
+              },
+              {
+                "text": "František Pěkný",
+                "type": "paragraph"
+              },
+              {
+                "text": "tel. 602 114 718",
+                "type": "paragraph"
+              },
+              {
+                "text": "email: skladka.podhaldou@seznam.cz",
+                "type": "paragraph"
+              },
+              {
+                "text": "VEDOUCÍ",
+                "type": "paragraph"
+              },
+              {
+                "text": "Michal Pěkný",
+                "type": "paragraph"
+              },
+              {
+                "text": "tel. 607 129 131",
+                "type": "paragraph"
+              }
+            ],
+            "attachments": []
+          }
+        ],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
+        "service_links": [
+          {
+            "url": "https://www.rtyne.cz/aktualni-informace-1",
+            "title": "Aktuální informace"
+          },
+          {
+            "url": "https://www.rtyne.cz/svozovy-kalendar-2026",
+            "title": "Svozový kalendář 2026"
+          },
+          {
+            "url": "https://www.rtyne.cz/cenik-odpadu",
+            "title": "Ceník odpadů"
+          },
+          {
+            "url": "https://www.rtyne.cz/oteviraci-doba",
+            "title": "Otevírací doba"
+          },
+          {
+            "url": "https://www.rtyne.cz/cenik-zemnich-praci",
+            "title": "Ceník zemních prací"
+          },
+          {
+            "url": "https://www.rtyne.cz/kontakty-1",
+            "title": "Kontakty"
+          }
+        ],
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T10:17:44.410Z"
@@ -241,14 +1134,12 @@
       "published_at": null,
       "summary": "Kalendář pro svoz odpadu na rok 2026",
       "payload": {
-        "body": [
-          "Kalendář pro svoz odpadu na rok 2026",
-          "Přílohy",
-          "Svozový kalendář Rtyně 2026.pdf pdf 242 kB"
-        ],
+        "body": [],
         "days": [],
         "kind": "service",
+        "blocks": [],
         "images": [],
+        "sections": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [
@@ -260,6 +1151,8 @@
         ],
         "source_name": "Praktické informace města",
         "detail_error": null,
+        "service_links": [],
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T10:17:44.410Z"
@@ -272,10 +1165,9 @@
       "category": "Praktické informace",
       "event_date": null,
       "published_at": null,
-      "summary": "Text složky Svoz komunálního i separovaného odpadu v našem městě zajišťuje společnost SKLÁDKA POD HALDOU s.r.o., která je 100% vlastněna Městem Rtyně v Podkrkonoší, její činnost řídí v souladu se zákonem o obcích rada města. Podrobnější informace o společnosti na https://www.rtyne.cz/skladka-pod-haldou",
+      "summary": "Informace o svozu komunálního a tříděného odpadu, sběru a nakládání s odpady.",
       "payload": {
         "body": [
-          "Text složky",
           "Svoz komunálního i separovaného odpadu v našem městě zajišťuje společnost SKLÁDKA POD HALDOU s.r.o., která je 100% vlastněna Městem Rtyně v Podkrkonoší, její činnost řídí v souladu se zákonem o obcích rada města. Podrobnější informace o společnosti na https://www.rtyne.cz/skladka-pod-haldou",
           "V našem městě třídíme tento separovaný odpad - papír, sklo, plast, nápojové kartony (ve směsi s plastem), kovy, staré oblečení a látky, vysloužilé elektrospotřebiče.",
           "Na krytí nákladů spojený se systémem sběru a využívání separovaných odpadů se podílí společnost EKO-KOM, a.s. (www.ekokom.cz), se kterou má město uzavřenu smlouvu o zajištění zpětného odběru a využití odpadů z obalů.",
@@ -286,45 +1178,176 @@
           "Textileco - www.textileco.cz",
           "Ekolamp - www.ekolamp.cz",
           "Sběr druhotných surovin (papír, kovy) probíhá ve spolupráci s výkupnou druhotných surovin P+P Pavel Plíštil - www.kovosrotplistil.cz",
-          "Město dále prostřednictvím společnosti SKLÁDKA POD HALDOU s.r.o. provozuje vlastní sběrný dvůr umístěný na adrese Na Rovni 849, Rtyně v Podkrkonoší. Podrobné informace o sběrném dvoře https://www.rtyne.cz/skladka-pod-haldou",
-          "Dokumenty",
-          "Informace dle § 60, odst. 4) zákona č. 541/2020 Sb., o odpadech za rok 2025 12. 2. 2026 Souhrnná zpráva o odpadovém hospodářství za rok 2025",
-          "Informace dle § 60, odst. 4) zákona č. 541/2020 Sb., o odpadech za rok 2025",
-          "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2026 6. 1. 2026 V roce 2024 byla zprovozněna aplikace, kde je možné uhradit zejména místní poplatky za odpady a psy on-line. Nově je možné provést i platbu za nájem hrobových míst.",
-          "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2026",
-          "Svozový kalendář 2026 5. 1. 2026 Kalendář pro svoz odpadu na rok 2026",
-          "Svozový kalendář 2026",
-          "Informace dle § 60, odst. 4) zákona č. 541/2020 Sb., o odpadech za rok 2024 10. 2. 2025 souhrnná zpráva o odpadovém hospodářství za rok 2024",
-          "Informace dle § 60, odst. 4) zákona č. 541/2020 Sb., o odpadech za rok 2024",
-          "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2025 6. 1. 2025 Místní poplatek za obecní systém odpadového hospodářství a poplatek ze psů.",
-          "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2025",
-          "Svozový kalendář 2025 6. 1. 2025 Kalendář pro svoz odpadu na rok 2025",
-          "Svozový kalendář 2025",
-          "FORMULÁŘE ODPADOVÉHO HOSPODÁŘSTVÍ 6. 3. 2024 Elektronické formuláře odpadového hospodářství",
-          "FORMULÁŘE ODPADOVÉHO HOSPODÁŘSTVÍ",
-          "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2023 15. 2. 2024 souhrnná zpráva o odpadovém hospodářství za rok 2023",
-          "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2023",
-          "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2024 9. 1. 2024 Platbu můžete provádět bezhotovostně na účet číslo 245909204/0300. Zaplatit lze také prostřednictvím nového platebního portálu „Služby na webu“. Platební bránu najdete na úvodní webové stránce našeho města. Pokud chcete uskutečnit úhradu za celou rodinu, musí se do platebního portálu přihlásit osoba vedená jako plátce.",
-          "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2024",
-          "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2022 22. 2. 2023 souhrnná zpráva o odpadovém hospodářství za rok 2022",
-          "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2022",
-          "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2021 11. 3. 2022 souhrnná zpráva o odpadovém hospodářství za rok 2021",
-          "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2021",
-          "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2020 21. 4. 2021 souhrnná zpráva o odpadovém hospodářství za rok 2020",
-          "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2020",
-          "Kontejnerová stání na tříděný odpad ve Rtyni v Podkrkonoší 1. 9. 2021",
-          "Kontejnerová stání na tříděný odpad ve Rtyni v Podkrkonoší",
-          "Svozový kalendář 2024 18. 12. 2014 Kalendář pro svoz odpadu na rok 2024",
-          "Svozový kalendář 2024"
+          "Město dále prostřednictvím společnosti SKLÁDKA POD HALDOU s.r.o. provozuje vlastní sběrný dvůr umístěný na adrese Na Rovni 849, Rtyně v Podkrkonoší. Podrobné informace o sběrném dvoře https://www.rtyne.cz/skladka-pod-haldou"
         ],
         "days": [],
         "kind": "service",
+        "blocks": [
+          {
+            "text": "Svoz komunálního i separovaného odpadu v našem městě zajišťuje společnost SKLÁDKA POD HALDOU s.r.o., která je 100% vlastněna Městem Rtyně v Podkrkonoší, její činnost řídí v souladu se zákonem o obcích rada města. Podrobnější informace o společnosti na https://www.rtyne.cz/skladka-pod-haldou",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "https://www.rtyne.cz/skladka-pod-haldou",
+                "text": "https://www.rtyne.cz/skladka-pod-haldou"
+              }
+            ]
+          },
+          {
+            "text": "V našem městě třídíme tento separovaný odpad - papír, sklo, plast, nápojové kartony (ve směsi s plastem), kovy, staré oblečení a látky, vysloužilé elektrospotřebiče.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Na krytí nákladů spojený se systémem sběru a využívání separovaných odpadů se podílí společnost EKO-KOM, a.s. (www.ekokom.cz), se kterou má město uzavřenu smlouvu o zajištění zpětného odběru a využití odpadů z obalů.",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "http://www.ekokom.cz/",
+                "text": "www.ekokom.cz"
+              }
+            ]
+          },
+          {
+            "text": "Dále je město zapojeno do těchto kolektivních systémů sběru odpadů:",
+            "type": "paragraph"
+          },
+          {
+            "text": "Asekol - www.asekol.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "http://www.asekol.cz/",
+                "text": "www.asekol.cz"
+              }
+            ]
+          },
+          {
+            "text": "Elektrowin - www.elektrowin.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "http://www.elektrowin.cz/",
+                "text": "www.elektrowin.cz"
+              }
+            ]
+          },
+          {
+            "text": "Ecobat - www.ecobat.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "http://www.ecobat.cz/",
+                "text": "www.ecobat.cz"
+              }
+            ]
+          },
+          {
+            "text": "Textileco - www.textileco.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "http://www.textileco.cz/",
+                "text": "www.textileco.cz"
+              }
+            ]
+          },
+          {
+            "text": "Ekolamp - www.ekolamp.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "http://www.ekolamp.cz/",
+                "text": "www.ekolamp.cz"
+              }
+            ]
+          },
+          {
+            "text": "Sběr druhotných surovin (papír, kovy) probíhá ve spolupráci s výkupnou druhotných surovin P+P Pavel Plíštil - www.kovosrotplistil.cz",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "http://www.kovosrotplistil.cz/",
+                "text": "www.kovosrotplistil.cz"
+              }
+            ]
+          },
+          {
+            "text": "Město dále prostřednictvím společnosti SKLÁDKA POD HALDOU s.r.o. provozuje vlastní sběrný dvůr umístěný na adrese Na Rovni 849, Rtyně v Podkrkonoší. Podrobné informace o sběrném dvoře https://www.rtyne.cz/skladka-pod-haldou",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "https://www.rtyne.cz/skladka-pod-haldou",
+                "text": "https://www.rtyne.cz/skladka-pod-haldou"
+              }
+            ]
+          }
+        ],
         "images": [],
+        "sections": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
+        "service_links": [
+          {
+            "url": "https://www.rtyne.cz/informace-dle-60-odst-4-zakona-c-541-2020-sb-o-odpadech-za-rok-2025",
+            "title": "Informace dle § 60, odst. 4) zákona č. 541/2020 Sb., o odpadech za rok 2025"
+          },
+          {
+            "url": "https://www.rtyne.cz/informace-k-uhradam-mistnich-poplatku-v-roce-2026",
+            "title": "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2026"
+          },
+          {
+            "url": "https://www.rtyne.cz/svozovy-kalendar-2026",
+            "title": "Svozový kalendář 2026"
+          },
+          {
+            "url": "https://www.rtyne.cz/informace-dle-60-odst-4-zakona-c-541-2020-sb-o-odpadech-za-rok-2024",
+            "title": "Informace dle § 60, odst. 4) zákona č. 541/2020 Sb., o odpadech za rok 2024"
+          },
+          {
+            "url": "https://www.rtyne.cz/informace-k-uhradam-mistnich-poplatku-v-roce-2025",
+            "title": "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2025"
+          },
+          {
+            "url": "https://www.rtyne.cz/svozovy-kalendar-2025",
+            "title": "Svozový kalendář 2025"
+          },
+          {
+            "url": "https://www.rtyne.cz/formulare-odpadoveho-hospodarstvi",
+            "title": "FORMULÁŘE ODPADOVÉHO HOSPODÁŘSTVÍ"
+          },
+          {
+            "url": "https://www.rtyne.cz/zprava-o-odpadovem-hospodarstvi-dle-60-odst-4-zakona-541-2020-za-rok-2023",
+            "title": "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2023"
+          },
+          {
+            "url": "https://www.rtyne.cz/informace-k-uhradam-mistnich-poplatku-v-roce-2024",
+            "title": "INFORMACE K ÚHRADÁM MÍSTNÍCH POPLATKŮ V ROCE 2024"
+          },
+          {
+            "url": "https://www.rtyne.cz/zprava-o-odpadovem-hospodarstvi-dle-60-odst-4-zakona-541-2020-za-rok-2022",
+            "title": "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2022"
+          },
+          {
+            "url": "https://www.rtyne.cz/zprava-o-odpadovem-hospodarstvi-dle-60-odst-4-zakona-541-2020-za-rok-2021",
+            "title": "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2021"
+          },
+          {
+            "url": "https://www.rtyne.cz/zprava-o-odpadovem-hospodarstvi-dle-60-odst-4-zakona-541-2020-za-rok-2020",
+            "title": "Zpráva o odpadovém hospodářství dle §60 odst 4 zákona 541_2020_za rok 2020"
+          },
+          {
+            "url": "https://www.rtyne.cz/kontejnerova-stani-na-trideny-odpad-ve-rtyni-v-podkrkonosi",
+            "title": "Kontejnerová stání na tříděný odpad ve Rtyni v Podkrkonoší"
+          },
+          {
+            "url": "https://www.rtyne.cz/svozovy-kalendar-2024",
+            "title": "Svozový kalendář 2024"
+          }
+        ],
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:44.410Z"
       },
       "last_seen_at": "2026-11-09T10:17:44.410Z"
@@ -1516,61 +2539,108 @@
       "category": "Kultura",
       "event_date": null,
       "published_at": null,
-      "summary": "Program muzea, pozvánky a informace o provozu.",
+      "summary": "Program muzea, pozvánky, kontakty a informace o provozu.",
       "payload": {
         "body": [
-          "EXPOZICE",
-          "Etnografická expozice",
-          "Selské povstání 1775",
-          "Dolování v Jestřebích horách 1590 - 1990",
-          "Zvonice",
-          "Naučná stezka po hornických památkách",
-          "Hmatová stezka",
-          "Permonický důl",
-          "O MUZEU",
-          "HISTORIE RTYNĚ",
-          "Historie",
-          "Infocentrum",
-          "Pamětihodnosti",
-          "FOTOGALERIE",
-          "KONTAKT",
           "AKCE PRO ROK 2026",
-          "Po hornických památkách Rtyně"
+          "Po hornických památkách Rtyně",
+          "Video k tématu",
+          "Video k tématu"
         ],
         "days": [],
         "kind": "service",
+        "blocks": [
+          {
+            "text": "AKCE PRO ROK 2026",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Po hornických památkách Rtyně",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Video k tématu",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "https://www.youtube.com/embed/rWtiWYMsBVI",
+                "text": "Přehrát video"
+              }
+            ]
+          },
+          {
+            "text": "Video k tématu",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "https://www.youtube.com/embed/4wUcqXL9xNc",
+                "text": "Přehrát video"
+              }
+            ]
+          }
+        ],
         "images": [
-          {
-            "alt": "EDGE",
-            "url": "https://www.muzeumrtyne.cz/img/brands/logo.svg?v=2"
-          },
-          {
-            "alt": "Info",
-            "url": "https://www.muzeumrtyne.cz//img/icko.svg"
-          },
-          {
-            "alt": "Web",
-            "url": "https://www.muzeumrtyne.cz//img/icons/web.svg"
-          },
-          {
-            "alt": "Facebook",
-            "url": "https://www.muzeumrtyne.cz//img/icons/facebook.svg"
-          },
-          {
-            "alt": "Youtube",
-            "url": "https://www.muzeumrtyne.cz//img/icons/youtube.svg"
-          },
           {
             "alt": "Pozvánka od pořadatele",
             "url": "https://www.muzeumrtyne.cz/data-img/fileman/krimi.png"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Kontakt a návštěva",
+            "blocks": [
+              {
+                "text": "Pod Rychtou 542 33 Rtyně v Podkrkonoší",
+                "type": "paragraph"
+              },
+              {
+                "text": "602 123 990",
+                "type": "paragraph"
+              },
+              {
+                "text": "muzeum@mestortyne.cz",
+                "type": "paragraph"
+              }
+            ]
           },
           {
-            "alt": "mapa",
-            "url": "https://www.muzeumrtyne.cz//img/icons/mapa.svg"
-          },
-          {
-            "alt": "Elektrická reflektorová lampa 16621D",
-            "url": "https://www.muzeumrtyne.cz/cache/artefakty-front/default/_cms-7.jpg?v=3"
+            "title": "Otevírací doba",
+            "blocks": [
+              {
+                "text": "KVĚTEN, ČERVEN, ZÁŘÍ",
+                "type": "paragraph"
+              },
+              {
+                "text": "pátek – neděle",
+                "type": "paragraph"
+              },
+              {
+                "text": "10:00 – 12:00 a 12:30 – 16:00",
+                "type": "paragraph"
+              },
+              {
+                "text": "ČERVENEC, SRPEN",
+                "type": "paragraph"
+              },
+              {
+                "text": "úterý – neděle",
+                "type": "paragraph"
+              },
+              {
+                "text": "10:00 – 12:00 a 12:30 – 16:00",
+                "type": "paragraph"
+              },
+              {
+                "text": "ŘÍJEN - DUBEN",
+                "type": "paragraph"
+              },
+              {
+                "text": "pro rekonstrukci zavřeno",
+                "type": "paragraph"
+              }
+            ]
           }
         ],
         "detail_ok": true,
@@ -1578,6 +2648,7 @@
         "attachments": [],
         "source_name": "Muzeum a infocentrum",
         "detail_error": null,
+        "content_version": 2,
         "detail_fetched_at": "2026-11-09T10:17:22.083Z"
       },
       "last_seen_at": "2026-11-09T10:17:22.083Z"
@@ -1653,9 +2724,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T10:17:02.527Z"
+        "detail_fetched_at": "2026-11-09T12:37:28.854Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.527Z"
+      "last_seen_at": "2026-11-09T12:37:28.854Z"
     },
     {
       "id": "707",
@@ -2147,6 +3218,12 @@
           "V úterý 10. listopadu 2026 nepoteče voda v ulici Vyšehradská v čp. 831, 862, 867, 833, 575, 787, 938 a v če. 64. Důvodem je oprava úniku vody na přípojkovém ventilu. Voda nepoteče od 8:00 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
         ],
         "days": [],
+        "blocks": [
+          {
+            "text": "V úterý 10. listopadu 2026 nepoteče voda v ulici Vyšehradská v čp. 831, 862, 867, 833, 575, 787, 938 a v če. 64. Důvodem je oprava úniku vody na přípojkovém ventilu. Voda nepoteče od 8:00 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení.",
+            "type": "paragraph"
+          }
+        ],
         "images": [
           {
             "alt": "Ikona ODSTAVKA",
@@ -2159,9 +3236,9 @@
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": "2026-11-10",
-        "detail_fetched_at": "2026-11-09T09:18:33.511Z"
+        "detail_fetched_at": "2026-11-09T12:37:29.644Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.349Z"
+      "last_seen_at": "2026-11-09T12:37:31.098Z"
     },
     {
       "id": "259",
@@ -2281,9 +3358,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T10:17:02.527Z"
+        "detail_fetched_at": "2026-11-09T12:37:28.854Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.527Z"
+      "last_seen_at": "2026-11-09T12:37:28.854Z"
     },
     {
       "id": "2",
@@ -2306,9 +3383,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T10:17:02.527Z"
+        "detail_fetched_at": "2026-11-09T12:37:28.854Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.527Z"
+      "last_seen_at": "2026-11-09T12:37:28.854Z"
     },
     {
       "id": "31",
@@ -2753,6 +3830,12 @@
           "V úterý 27. řijna 2026 nepoteče voda v částích ulic Hornická, K Jídelně a Cesta osvobození. Konkrétně se jedná o čp. 618, 594, 593, 592, 591, 621, 597, 596, 595, 623, 30, 586, 587, 588, 589, 620 a 450. Důvodem je oprava havárie na vodovodu v sídlišti. Voda nepoteče od 7:30 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
         ],
         "days": [],
+        "blocks": [
+          {
+            "text": "V úterý 27. řijna 2026 nepoteče voda v částích ulic Hornická, K Jídelně a Cesta osvobození. Konkrétně se jedná o čp. 618, 594, 593, 592, 591, 621, 597, 596, 595, 623, 30, 586, 587, 588, 589, 620 a 450. Důvodem je oprava havárie na vodovodu v sídlišti. Voda nepoteče od 7:30 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení.",
+            "type": "paragraph"
+          }
+        ],
         "images": [
           {
             "alt": "Ikona HAVARIE",
@@ -2765,9 +3848,9 @@
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": "2026-10-27",
-        "detail_fetched_at": "2026-11-09T09:18:34.024Z"
+        "detail_fetched_at": "2026-11-09T12:37:30.142Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.349Z"
+      "last_seen_at": "2026-11-09T12:37:31.098Z"
     },
     {
       "id": "11",
@@ -2783,21 +3866,22 @@
           "V úterý 3. listopadu 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Náměrka, Partyzánů, K Františce, Na Rozhraní a Hronovská od železničního viaduktu dále pod Bohdašín. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [
+        "blocks": [
           {
-            "alt": "Ikona ICKO",
-            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+            "text": "V úterý 3. listopadu 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Náměrka, Partyzánů, K Františce, Na Rozhraní a Hronovská od železničního viaduktu dále pod Bohdašín. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody.",
+            "type": "paragraph"
           }
         ],
+        "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:34.018Z"
+        "detail_fetched_at": "2026-11-09T12:37:30.114Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.349Z"
+      "last_seen_at": "2026-11-09T12:37:31.098Z"
     },
     {
       "id": "10",
@@ -2813,21 +3897,22 @@
           "Ve čtvrtek 5. listopadu 2025 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích K Žabárně a Trhovka. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [
+        "blocks": [
           {
-            "alt": "Ikona ICKO",
-            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+            "text": "Ve čtvrtek 5. listopadu 2025 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích K Žabárně a Trhovka. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody.",
+            "type": "paragraph"
           }
         ],
+        "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:33.486Z"
+        "detail_fetched_at": "2026-11-09T12:37:29.669Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.349Z"
+      "last_seen_at": "2026-11-09T12:37:31.098Z"
     },
     {
       "id": "32",
@@ -3095,9 +4180,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T10:17:02.527Z"
+        "detail_fetched_at": "2026-11-09T12:37:28.854Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.527Z"
+      "last_seen_at": "2026-11-09T12:37:28.854Z"
     },
     {
       "id": "25",
@@ -3142,21 +4227,22 @@
           "V pondělí 26. řijna 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Úpická, Na Písku, Bosenská, Svatoňovická, Vyšehradská, K Haldě, Zemědělská, U Čističky, Zahradní, Na Ohradech a Pod Opukou. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [
+        "blocks": [
           {
-            "alt": "Ikona ICKO",
-            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+            "text": "V pondělí 26. řijna 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Úpická, Na Písku, Bosenská, Svatoňovická, Vyšehradská, K Haldě, Zemědělská, U Čističky, Zahradní, Na Ohradech a Pod Opukou. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody.",
+            "type": "paragraph"
           }
         ],
+        "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:34.485Z"
+        "detail_fetched_at": "2026-11-09T12:37:30.579Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.349Z"
+      "last_seen_at": "2026-11-09T12:37:31.098Z"
     },
     {
       "id": "257",
@@ -3207,6 +4293,12 @@
           "Ve středu 21. řijna 2026 nepoteče voda v ulici Vyšehradská v čp. 831, 862, 867, 833, 575, 787, 938 a v če. 64. Důvodem je oprava úniku vody na přípojkovém ventilu. Voda nepoteče od 8:00 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení."
         ],
         "days": [],
+        "blocks": [
+          {
+            "text": "Ve středu 21. řijna 2026 nepoteče voda v ulici Vyšehradská v čp. 831, 862, 867, 833, 575, 787, 938 a v če. 64. Důvodem je oprava úniku vody na přípojkovém ventilu. Voda nepoteče od 8:00 po nezbytně dlouhou dobu opravy. Děkujeme za pochopení.",
+            "type": "paragraph"
+          }
+        ],
         "images": [
           {
             "alt": "Ikona ODSTAVKA",
@@ -3219,9 +4311,9 @@
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": "2026-10-21",
-        "detail_fetched_at": "2026-11-09T09:18:34.511Z"
+        "detail_fetched_at": "2026-11-09T12:37:30.605Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.349Z"
+      "last_seen_at": "2026-11-09T12:37:31.098Z"
     },
     {
       "id": "261",
@@ -3307,21 +4399,22 @@
           "V úterý 20. řijna 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Družstevní, Úzká, Ke Skalce a Na Rovni. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [
+        "blocks": [
           {
-            "alt": "Ikona ICKO",
-            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+            "text": "V úterý 20. řijna 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích Družstevní, Úzká, Ke Skalce a Na Rovni. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody.",
+            "type": "paragraph"
           }
         ],
+        "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:35.078Z"
+        "detail_fetched_at": "2026-11-09T12:37:31.098Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.349Z"
+      "last_seen_at": "2026-11-09T12:37:31.098Z"
     },
     {
       "id": "15",
@@ -3337,21 +4430,22 @@
           "Ve čtvrtek 22. října 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích K Žabárně, Trhovka, Končiny, Rychetského, Sadová a Kostelecká. V ulicích Rychetského, Sadová a Kostelecká se jedná o odběratele napojené na vodojem Končiny. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody."
         ],
         "days": [],
-        "images": [
+        "blocks": [
           {
-            "alt": "Ikona ICKO",
-            "url": "https://www.vakrtyne.cz/images/Tag/3/pictoDetail/Ikona-ICKO.svg"
+            "text": "Ve čtvrtek 22. října 2026 proběhne od 7:00 do 15:00 odkalování vodovodního řadu v ulicích K Žabárně, Trhovka, Končiny, Rychetského, Sadová a Kostelecká. V ulicích Rychetského, Sadová a Kostelecká se jedná o odběratele napojené na vodojem Končiny. V průběhu prací se může objevit zákal vody a krátkodobý pokles tlaku. V uvedený den doporučujeme omezit používání spotřebičů vody.",
+            "type": "paragraph"
           }
         ],
+        "images": [],
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "VAK Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:35.062Z"
+        "detail_fetched_at": "2026-11-09T12:37:31.060Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.349Z"
+      "last_seen_at": "2026-11-09T12:37:31.098Z"
     },
     {
       "id": "4",
@@ -3372,9 +4466,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T10:17:02.527Z"
+        "detail_fetched_at": "2026-11-09T12:37:28.854Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.527Z"
+      "last_seen_at": "2026-11-09T12:37:28.854Z"
     },
     {
       "id": "256",
@@ -4096,9 +5190,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T10:17:02.527Z"
+        "detail_fetched_at": "2026-11-09T12:37:28.854Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.527Z"
+      "last_seen_at": "2026-11-09T12:37:28.854Z"
     },
     {
       "id": "225",
@@ -4207,9 +5301,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T10:17:02.527Z"
+        "detail_fetched_at": "2026-11-09T12:37:28.854Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.527Z"
+      "last_seen_at": "2026-11-09T12:37:28.854Z"
     },
     {
       "id": "850",
@@ -4277,9 +5371,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T10:17:02.527Z"
+        "detail_fetched_at": "2026-11-09T12:37:28.854Z"
       },
-      "last_seen_at": "2026-11-09T10:17:02.527Z"
+      "last_seen_at": "2026-11-09T12:37:28.854Z"
     },
     {
       "id": "8",
@@ -6248,8 +7342,8 @@
       "source_key": "preschool",
       "source_url": "https://www.msrtyne.cz/aktuality/",
       "status": "ok",
-      "checked_at": "2026-11-09T10:17:02.527Z",
-      "last_success_at": "2026-11-09T10:17:02.527Z",
+      "checked_at": "2026-11-09T12:37:28.854Z",
+      "last_success_at": "2026-11-09T12:37:28.854Z",
       "last_error": null,
       "item_count": 8,
       "name": "MŠ Rtyně",
@@ -6339,8 +7433,8 @@
       "source_key": "water",
       "source_url": "https://www.vakrtyne.cz/havarie-a-odstavky",
       "status": "ok",
-      "checked_at": "2026-11-09T10:17:02.349Z",
-      "last_success_at": "2026-11-09T10:17:02.349Z",
+      "checked_at": "2026-11-09T12:37:31.098Z",
+      "last_success_at": "2026-11-09T12:37:31.098Z",
       "last_error": null,
       "item_count": 8,
       "name": "VAK Rtyně",
@@ -6349,5 +7443,5 @@
       "news_note": null
     }
   ],
-  "generated_at": "2026-11-09T12:16:57.314Z"
+  "generated_at": "2026-11-09T12:37:34.116Z"
 }

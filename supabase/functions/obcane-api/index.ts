@@ -2,7 +2,7 @@ import {handleSuggestions} from './suggestions.ts';
 import {communitySources} from './community-sources.ts';
 import {dailyInfo} from './daily.ts';
 import postgres from 'npm:postgres@3.4.7';
-import { extraSources, extractExtra, assets } from './extra-sources.ts';
+import { extraSources, extractExtra, assets, contentBlocks, cleanContent } from './extra-sources.ts';
 import { parseHTML } from 'npm:linkedom@0.18.12';
 
 const sql = postgres(Deno.env.get('SUPABASE_DB_URL')!, {max: 1, prepare: false, idle_timeout: 15, connect_timeout: 10});
@@ -41,7 +41,7 @@ function eventDate(value:string) {
 }
 function paragraphs(root:any) {
  if(!root)return [];
- return Array.from(root.querySelectorAll('p,li')).map(text).filter((s:any)=>s.length>4).filter((s:any,i:number,a:any[])=>a.indexOf(s)===i).slice(0,35);
+ return Array.from(root.querySelectorAll('p,li')).map((n:any)=>cleanContent(text(n))).filter((s:any)=>s.length>4).filter((s:any,i:number,a:any[])=>a.indexOf(s)===i).slice(0,35);
 }
 async function extract(s:any) {
  const extra=await extractExtra(s,{page,text,clean,eventDate,czDate,safeURL});if(extra!==null)return extra;
@@ -69,7 +69,7 @@ async function extract(s:any) {
   const queue=items.slice();
   async function details(){let item:any;while((item=queue.shift())){
    const prior=cached.find((x:any)=>x.external_url===item.url);
-   if(prior?.payload?.detail_ok&&!prior.payload.detail_error&&(s.key!=='water'||prior.published_at)&&Date.now()-Date.parse(prior.payload.detail_fetched_at||'')<12*3600*1000){item.body=prior.payload.body;item.days=prior.payload.days;item.published=prior.published_at||item.published;item.summary=item.summary||prior.summary||(item.body||[]).join(' ').slice(0,500);item.extra={images:prior.payload.images||[],attachments:prior.payload.attachments||[],restriction_date:prior.payload.restriction_date||null};item.detail_fetched_at=prior.payload.detail_fetched_at;item.detail_ok=true;continue;}
+   if(prior?.payload?.detail_ok&&Array.isArray(prior.payload.blocks)&&!prior.payload.detail_error&&(s.key!=='water'||prior.published_at)&&Date.now()-Date.parse(prior.payload.detail_fetched_at||'')<12*3600*1000){item.body=prior.payload.body;item.days=prior.payload.days;item.published=prior.published_at||item.published;item.summary=item.summary||prior.summary||(item.body||[]).join(' ').slice(0,500);item.extra={blocks:prior.payload.blocks||null,images:prior.payload.images||[],attachments:prior.payload.attachments||[],restriction_date:prior.payload.restriction_date||null};item.detail_fetched_at=prior.payload.detail_fetched_at;item.detail_ok=true;continue;}
    await new Promise(resolve=>setTimeout(resolve,s.key==='city'?1500:300));
    try {
     const detail=await page(item.url,s.url);
@@ -84,7 +84,7 @@ async function extract(s:any) {
      const days=Array.from(detail.querySelectorAll('.food-menu .day')).map((day:any)=>({date:czDate(text(day.querySelector('.date'))),soup:text(day.querySelector('.day-content p')).replace(/^polévka\s*/i,''),meals:Array.from(day.querySelectorAll('.day-content li')).map(text)})).filter((d:any)=>d.date&&d.meals.length);
      if(days.length)item.days=days;
     }
-    item.extra={...assets(detail.querySelector('article'),item.url),restriction_date:/odstáv|dodávk|uzav|fréz|asfalt|elektř|havár/i.test(item.title)?eventDate(item.title+' '+item.summary):null};
+    item.extra={blocks:contentBlocks(root,item.url),...assets(detail.querySelector('article')||root,item.url),restriction_date:/odstáv|dodávk|uzav|fréz|asfalt|elektř|havár/i.test(item.title)?eventDate(item.title+' '+item.summary):null};
     item.detail_fetched_at=new Date().toISOString();item.detail_ok=!!item.body.length;
    }catch(e){item.detail_error=String(e).slice(0,160);}
   }}
