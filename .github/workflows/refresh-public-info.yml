@@ -33,13 +33,15 @@ jobs:
         run: python scripts/check_api.py
       - name: Refresh verified waste collection calendar
         run: python scripts/update_waste_calendar.py
+      - name: Refresh school, canteen and utility information
+        run: node scripts/update_practical_info.mjs
       - name: Save read-only public snapshot
         run: python scripts/export_snapshot.py
       - name: Commit updated snapshot
         run: |
           git config user.name 'obcane-info-bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/public-feed.json data/waste-calendar.json
+          git add data/public-feed.json data/waste-calendar.json data/practical-info.json documents/
           if ! git diff --cached --quiet; then
             git commit -m 'data: update public information snapshot'
             git push
