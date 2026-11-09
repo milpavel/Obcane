@@ -4305,6 +4305,29 @@
       "last_seen_at": "2026-11-09T05:17:02.228Z"
     },
     {
+      "id": "1072",
+      "source_key": "fire_reports",
+      "external_url": "https://www.pozary.cz/clanek/307328-pri-pozaru-kuchynske-linky-v-rodinnem-dome-ve-rtyni-v-podkrkonosi-na-trutnovsku-se-zranila-jedna-osoba/",
+      "title": "Srpen 2026: hasiči zasahovali u požáru kuchyně v Sadové ulici",
+      "category": "Hasiči",
+      "event_date": null,
+      "published_at": "2026-08-25T13:04:00.000Z",
+      "summary": "K požáru rodinného domu vyjeli místní dobrovolní hasiči i profesionální jednotky. O zásahu informoval portál POŽÁRY.cz s uvedením HZS Královéhradeckého kraje.",
+      "payload": {
+        "body": [
+          "Podle zprávy zveřejněné 25. srpna 2026 zasahovali hasiči u požáru kuchyně v Sadové ulici ve Rtyni. Na místo dorazily profesionální jednotky z Velkého Poříčí a Trutnova spolu s dobrovolnými hasiči ze Rtyně a Červeného Kostelce.",
+          "Jde o stručné vlastní shrnutí starší zveřejněné zprávy, nikoli o aktuálně probíhající zásah."
+        ],
+        "kind": "fire_report",
+        "archive": true,
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "POŽÁRY.cz / HZS Královéhradeckého kraje",
+        "summary_by_us": true
+      },
+      "last_seen_at": "2026-11-09T11:33:11.315Z"
+    },
+    {
       "id": "226",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/nove-skladovaci-zazemi-na-zabarne/",
@@ -4974,6 +4997,29 @@
         "detail_fetched_at": "2026-11-09T10:17:23.633Z"
       },
       "last_seen_at": "2026-11-09T10:17:23.633Z"
+    },
+    {
+      "id": "1073",
+      "source_key": "fire_reports",
+      "external_url": "https://www.pozary.cz/clanek/302216-nocni-pozar-opusteneho-rodinneho-domu-likvidovali-hasici-ve-rtyni-v-podkrkonosi/",
+      "title": "Duben 2026: noční požár neobývaného domu ve Rtyni",
+      "category": "Hasiči",
+      "event_date": null,
+      "published_at": "2026-04-12T21:44:00.000Z",
+      "summary": "Tři hasičské jednotky likvidovaly požár střechy. Zpráva připisovaná HZS Královéhradeckého kraje uvedla, že při události nebyl nikdo zraněn.",
+      "payload": {
+        "body": [
+          "Portál POŽÁRY.cz zveřejnil zprávu o nočním požáru neobývaného rodinného domu ve Rtyni. Hasiči po příjezdu zjistili, že hoří střešní konstrukce; zásah pokračoval do ranních hodin.",
+          "Po uhašení zůstala na místě místní dobrovolná jednotka na dohled. Text je vlastním krátkým shrnutím archivní zprávy, nikoli živým hlášením."
+        ],
+        "kind": "fire_report",
+        "archive": true,
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "POŽÁRY.cz / HZS Královéhradeckého kraje",
+        "summary_by_us": true
+      },
+      "last_seen_at": "2026-11-09T11:33:11.315Z"
     },
     {
       "id": "236",
@@ -5959,7 +6005,35 @@
       "last_seen_at": "2026-11-09T09:55:13.514Z"
     }
   ],
-  "posts": [],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Baník proti rezervě Bělohradu nebodoval",
+      "excerpt": "Domácí utkání skončilo výsledkem 0:2. Zveřejněná anotace Deníku zmiňuje nevyužité šance a dvě vyloučení na straně Rtyně.",
+      "body": "Podle veřejné anotace článku Krkonošského deníku prohráli fotbalisté Baníku Rtyně s rezervou Lázní Bělohradu 0:2. V zápase přišli o dva vyloučené hráče.\n\nPo tomto utkání měla Rtyně odehráno jedenáct zápasů a byla devátá. Jde o stav popsaný 26. října 2026, nikoli o aktuální pořadí soutěže.\n\nShrnutí vychází pouze z volně dostupné anotace. Placenou část článku jsme nepřebírali.",
+      "category": "media",
+      "source_url": "https://krkonossky.denik.cz/fotbal-kraj/dve-cervene-nepromenene-sance-a-porazka-rtyne-padla-s-druhym-tymem-tabulky/",
+      "published_at": "2026-10-26T09:47:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "Léto s cisternami: jak média popsala problémy s vodou",
+      "excerpt": "Ohlédnutí za červnovou povodní a červencovým zásobováním vodou. VAK mimořádné opatření ukončil 10. července 2026.",
+      "body": "Červencová reportáž Českého rozhlasu zachytila dopad znečištění vodních zdrojů po bleskové povodni na každodenní život ve Rtyni. Obyvatelé v té době využívali náhradní zásobování cisternami a část z nich žádala kompenzaci.\n\nDůležité doplnění: VAK Rtyně 10. července 2026 oznámil ukončení mimořádného opatření a návrat běžného používání vody. Podle jeho oznámení se kvalita vody po kontrolních rozborech obnovila.\n\nTento text je ohlédnutím za událostmi léta 2026. Není aktuálním upozorněním na závadnost vody. Současná oznámení sledujte v přehledu odstávek a u provozovatele vodovodu.",
+      "category": "media",
+      "source_url": "https://www.irozhlas.cz/zpravy-domov/nebudeme-tady-pit-splasky-z-pole-rtyne-je-uz-treti-tyden-bez-pitne-vody-lide_2607091549_jho",
+      "published_at": "2026-07-09T13:49:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Šedesátá Koletova Rtyně zazněla i v Českém rozhlase",
+      "excerpt": "Jubilejní ročník spojil místní hornickou hudbu s hostujícími orchestry. Rozhlas nabídl také přímý přenos z festivalu.",
+      "body": "Český rozhlas Hradec Králové se ohlédl za šedesátým ročníkem festivalu Koletova Rtyně. Program zahrnoval Koletovu hornickou hudbu, Hudbu Hradní stráže a Policie ČR i Lašský dechový orchestr ze Štramberka.\n\nSoučástí festivalu byl společný koncert orchestrů a večerní vystoupení dalších kapel. Rozhlas z akce připravil přímý přenos; původní příspěvek nabízí také zvukový obsah.\n\nJde o ohlédnutí za ročníkem 2026, nikoli o pozvánku na nadcházející akci.",
+      "category": "media",
+      "source_url": "https://hradec.rozhlas.cz/60-rocnik-tradicniho-festivalu-koletova-rtyne-ve-rtyni-v-podkrkonosi-byl-oslavou-9618786",
+      "published_at": "2026-05-25T10:00:00.000Z"
+    }
+  ],
   "events": [],
   "finances": [],
   "sources": [
@@ -6046,6 +6120,17 @@
       "name": "Contemporary Region",
       "community": true,
       "news_note": "Zveřejníme pouze datované zprávy týkající se pobočky ve Rtyni."
+    },
+    {
+      "source_key": "fire_reports",
+      "source_url": "https://www.pozary.cz/",
+      "status": "ok",
+      "checked_at": "2026-11-09T11:33:11.315Z",
+      "last_success_at": "2026-11-09T11:33:11.315Z",
+      "last_error": null,
+      "item_count": 2,
+      "community": false,
+      "news_note": null
     },
     {
       "source_key": "florbal",
@@ -6240,5 +6325,5 @@
       "news_note": null
     }
   ],
-  "generated_at": "2026-11-09T11:17:25.389Z"
+  "generated_at": "2026-11-09T11:35:09.918Z"
 }
