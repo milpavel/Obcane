@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {parseHTML} from 'linkedom';
+import {parseSmsVenue} from '../supabase/functions/obcane-api/smsticket.mjs';
+const source={url:'https://www.smsticket.cz/mista/4699-prirodni-areal-rtyne-v-podkrkonosi',venue_name:'Přírodní areál'};
+const title='QUEENIE, WALDA GANG a KABÁT(revival)';
+const card=(start='2027-07-16T14:00:00.0000000Z',href='/vstupenky/77130-queenie',place=source.url)=>`<div class="event" property="event" typeof="MusicEvent"><span property="location" typeof="Place"><link property="url" href="${place}"><meta property="name" content="Přírodní areál"></span><strong property="name">${title}</strong><div property="startDate" content="${start}"></div><a href="${href}">Více informací</a></div>`;
+const doc=body=>parseHTML('<h1>Přírodní areál Rtyně v Podkrkonoší</h1>'+body).document;
+const rows=parseSmsVenue(doc(card()+card()),source,'2026-11-10');assert.equal(rows.length,1);assert.equal(rows[0].title,title);assert.equal(rows[0].event,'2027-07-16');assert.equal(rows[0].extra.time,'16:00');assert.ok(rows[0].extra.ticket_url.startsWith('https://www.smsticket.cz/vstupenky/'));assert.equal(rows[0].published,null);
+assert.equal(parseSmsVenue(doc(card('2026-11-09T18:00:00Z')),source,'2026-11-10').length,0);
+const overnight=parseSmsVenue(doc(card('2027-07-15T22:30:00Z')),source,'2026-11-10')[0];assert.equal(overnight.event,'2027-07-16');assert.equal(overnight.extra.time,'00:30');
+assert.equal(parseSmsVenue(doc(''),source,'2026-11-10').length,0,'An empty venue is a valid successful refresh');
+assert.throws(()=>parseSmsVenue(doc(card('not-a-date')),source));
+assert.throws(()=>parseSmsVenue(doc(card(undefined,'https://evil.test/vstupenky/1-x')),source));
+assert.throws(()=>parseSmsVenue(doc(card(undefined,undefined,'https://www.smsticket.cz/mista/999-other')),source));
+assert.throws(()=>parseSmsVenue(parseHTML('<h1>Jiné místo</h1>'+card()).document,source));
+assert.throws(()=>parseSmsVenue(doc('<a href="/vstupenky/1-x">Changed markup</a>'),source));
+console.log('PASS: SMS ticket venue identity, exact event timestamps, summer timezone and midnight rollover, future 2027 events, deduplication, safe ticket URLs, valid empty program and malformed-page preservation');

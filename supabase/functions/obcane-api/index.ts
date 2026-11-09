@@ -109,7 +109,7 @@ async function importSource(s:any){
       published_at=coalesce(excluded.published_at,obcane.items.published_at),summary=excluded.summary,
       payload=case when excluded.payload->>'detail_error' is not null then obcane.items.payload || jsonb_build_object('detail_error',excluded.payload->>'detail_error') else excluded.payload end,last_seen_at=excluded.last_seen_at`;
    }
-   if((['calendar','clubs','library'].includes(s.key)||s.community))await tx`update obcane.items set payload=payload || '{"in_latest":false}'::jsonb where source_key=${s.key} and last_seen_at < ${checked}::timestamptz`;
+   if((['calendar','clubs','library','sms_areal','sms_orlovna'].includes(s.key)||s.community))await tx`update obcane.items set payload=payload || '{"in_latest":false}'::jsonb where source_key=${s.key} and last_seen_at < ${checked}::timestamptz`;
    await tx`update obcane.sources set checked_at=${checked},last_success_at=${checked},updated_at=${checked},status=${detailFailures?'error':'ok'},last_error=${detailFailures?'Nenačtené detaily: '+detailFailures:null},item_count=${items.length} where source_key=${s.key}`;
   });
   return {key:s.key,status:detailFailures?'partial':'ok',count:items.length,detail_failures:detailFailures};

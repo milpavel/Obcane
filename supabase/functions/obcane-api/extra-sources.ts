@@ -1,3 +1,4 @@
+import {parseSmsVenue} from './smsticket.mjs';
 import {communitySources,communityPublished} from './community-sources.ts';
 import {clubProfile} from './club-profiles.ts';
 import WordExtractor from 'npm:word-extractor@1.0.4';
@@ -5,6 +6,8 @@ import { DOMParser, parseHTML } from 'npm:linkedom@0.18.12';
 import { Buffer } from 'node:buffer';
 export const extraSources = [
  ...communitySources,
+ {key:'sms_areal',name:'SMS ticket – Přírodní areál',url:'https://www.smsticket.cz/mista/4699-prirodni-areal-rtyne-v-podkrkonosi',category:'Akce',feed:'smsticket',venue_name:'Přírodní areál'},
+ {key:'sms_orlovna',name:'SMS ticket – Orlovna',url:'https://www.smsticket.cz/mista/4478-sportovni-hala-orlovna-rtyne-v-podkrkonosi',category:'Akce',feed:'smsticket',venue_name:'Sportovní hala Orlovna'},
  {key:'calendar',name:'Kalendář města',url:'https://www.rtyne.cz/kalendar-udalosti',category:'Akce'},
  {key:'library',name:'Městská knihovna',url:'https://www.mkrtyne.cz/akce.html',category:'Knihovna'},
  {key:'preschool_menu',name:'Jídelníček MŠ',url:'https://www.msrtyne.cz/',category:'Jídelníček MŠ'},
@@ -137,6 +140,13 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
  const {page,text,clean,eventDate,czDate,safeURL}=h;
  if(!extraSources.some(x=>x.key===s.key))return null;
  let out:any[]=[];
+ if(s.feed==='smsticket'){
+  const items=parseSmsVenue(await page(s.url),s);
+  for(const item of items.slice(0,12)){
+   try{const detail=await page(item.url,s.url),root=detail.querySelector('[property="description"]');const description=clean(root?.textContent).slice(0,600);if(description)item.body.push(description);}catch{/* The dated venue listing remains usable when its detail is unavailable. */}
+  }
+  return items;
+ }
  if(s.feed==='rss'||s.feed==='json'){
   const r=await fetch(s.url,{signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Spolkový zdroj HTTP '+r.status);const raw=await r.text();if(raw.length>3000000)throw Error('Zdroj je příliš velký');
   const entries=s.key==='koletovka'?JSON.parse(raw):Array.from(new DOMParser().parseFromString(raw,'text/xml').querySelectorAll('item')).slice(0,20);

@@ -151,3 +151,5 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 @media(max-width:760px){.daily-overview .waste-dates{gap:24px}.daily-overview .waste-date strong{font-size:18px}.daily-overview .daily-grid .daily-waste .eyebrow{margin-bottom:14px}}
 
 @media(max-width:760px){.daily-strip .daily-overview .daily-grid>.daily-waste{border-top:1px solid #e4e0e9;padding-top:18px}}
+
+.event-date .event-year{display:block;font-size:11px;letter-spacing:.03em;margin-top:6px}
