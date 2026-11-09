@@ -5,5 +5,5 @@ if(header&&toggle&&menu){
  menu.addEventListener('click',e=>{if(e.target.closest('a'))close();});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&toggle.getAttribute('aria-expanded')==='true'){close();toggle.focus();}});
  document.addEventListener('click',e=>{if(!header.contains(e.target))close();});
- const wide=matchMedia('(min-width:1101px)');wide.addEventListener('change',e=>{if(e.matches)close();});
+ const wide=matchMedia('(min-width:1201px)');wide.addEventListener('change',e=>{if(e.matches)close();});
 }
