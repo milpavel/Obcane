@@ -17,7 +17,7 @@ keys=[(x['source_key'],x['external_url']) for x in d['items']]
 assert len(keys)==len(set(keys)), 'Duplicate source URLs'
 for x in d['items']:
  assert str(x['id']).isdigit() and x['title']
- assert x['external_url'].startswith('https://')
+ assert x['external_url'].startswith('https://') or x['external_url'].startswith('http://www.banikrtyne-fotbal.cz/')
  assert x['event_date'] is None or re.fullmatch(r'20\d\d-\d\d-\d\d',x['event_date']), x['event_date']
  assert isinstance(x['payload'].get('body',[]),list)
  assert not any('<script' in t.lower() for t in x['payload'].get('body',[]))

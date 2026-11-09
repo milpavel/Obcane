@@ -1,11 +1,10 @@
+import {communitySources,communityPublished} from './community-sources.ts';
 import {clubProfile} from './club-profiles.ts';
 import WordExtractor from 'npm:word-extractor@1.0.4';
 import { DOMParser, parseHTML } from 'npm:linkedom@0.18.12';
 import { Buffer } from 'node:buffer';
 export const extraSources = [
- {key:'scouts',name:'Skaut – středisko Permoník',url:'https://skaut-rtyne.skauting.cz/feed/',category:'Spolky'},
- {key:'orel',name:'Orel Rtyně',url:'https://www.orelrtyne.cz/feed/',category:'Sport a spolky'},
- {key:'koletovka',name:'Koletova hornická hudba',url:'https://koletovka.cz/wp-json/wp/v2/posts?per_page=5',category:'Kultura a spolky'},
+ ...communitySources,
  {key:'calendar',name:'Kalendář města',url:'https://www.rtyne.cz/kalendar-udalosti',category:'Akce'},
  {key:'library',name:'Městská knihovna',url:'https://www.mkrtyne.cz/akce.html',category:'Knihovna'},
  {key:'preschool_menu',name:'Jídelníček MŠ',url:'https://www.msrtyne.cz/',category:'Jídelníček MŠ'},
@@ -57,19 +56,21 @@ export function communityDates(title:string,body:string,eventDate:any):string[]{
  if(!/ples|koncert|pozván|zveme|turnaj|festival|nábor|setkání/i.test(title+' '+body.slice(0,180)))return [];
  const date=eventDate(body);return date?[date]:[];
 }
+export function canonicalSourceURL(value:string){const u=new URL(value);for(const k of [...u.searchParams.keys()])if(k.startsWith('utm_'))u.searchParams.delete(k);return u.href;}
 export async function extractExtra(s:any,h:any):Promise<any[]|null>{
  const {page,text,clean,eventDate,czDate,safeURL}=h;
  if(!extraSources.some(x=>x.key===s.key))return null;
  let out:any[]=[];
- if(['scouts','orel','koletovka'].includes(s.key)){
+ if(s.feed==='rss'||s.feed==='json'){
   const r=await fetch(s.url,{signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Spolkový zdroj HTTP '+r.status);const raw=await r.text();if(raw.length>3000000)throw Error('Zdroj je příliš velký');
   const entries=s.key==='koletovka'?JSON.parse(raw):Array.from(new DOMParser().parseFromString(raw,'text/xml').querySelectorAll('item')).slice(0,20);
-  for(const x of entries){let title,link,content,published;
+  for(const x of entries){if(s.news_category&&!Array.from(x.querySelectorAll('category')).some((c:any)=>c.textContent===s.news_category))continue;let title,link,content,published;
    if(s.key==='koletovka'){title=x.title?.rendered;link=x.link;content=x.content?.rendered;published=x.date_gmt?x.date_gmt+'Z':null;}
    else{title=x.querySelector('title')?.textContent;link=x.querySelector('link')?.textContent;content=Array.from(x.children).find((c:any)=>c.tagName==='content:encoded')?.textContent||x.querySelector('description')?.textContent;const d=new Date(x.querySelector('pubDate')?.textContent||'');published=Number.isFinite(d.getTime())?d.toISOString():null;}
+   if(!content)content=x.querySelector?.('description')?.textContent||'';
    const d=parseHTML('<article>'+String(content||'')+'</article>').document;d.querySelectorAll('script,style,nav,footer,form').forEach((n:any)=>n.remove());const root=d.querySelector('article'),body=richText(root,clean),heading=parseHTML('<b>'+String(title||'')+'</b>').document.querySelector('b');
    if(!title||!link)continue;
-   const dates=communityDates(text(heading),body.join(' '),eventDate),item:any={title:text(heading),url:safeURL(link,s.url),body,summary:body.join(' ').slice(0,350),published,event:dates[0]||null,detail_ok:true,extra:{kind:dates.length?'event':'community',...assets(root,s.url)}};
+   const dates=communityDates(text(heading),body.join(' '),eventDate),item:any={title:text(heading),url:canonicalSourceURL(safeURL(link,s.url)),body,summary:body.join(' ').slice(0,350),published,event:dates[0]||null,detail_ok:true,extra:{kind:dates.length?'event':'community',...assets(root,s.url)}};
    if(dates.some(date=>date>=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Prague'}))){
     const detailLink=Array.from(root.querySelectorAll('a[href]')).find((a:any)=>/informace|podrobnosti/i.test(body.join(' '))&&a.getAttribute('href')&&!/\.(jpg|png|pdf)/i.test(a.getAttribute('href')));
     if(detailLink)try{const url=safeURL((detailLink as any).getAttribute('href'),s.url),detail=await page(url,s.url),main=detail.querySelector('.entry-content,main article,main')||detail.body;const more=richText(main,clean);if(more.length){item.body=[...new Set([...body,...more])];item.summary=more.join(' ').slice(0,350);item.extra={...item.extra,...assets(main,url),event_sources:[{title:'Podrobnosti od pořadatele',url}]};}}catch{/* RSS invitation remains usable. */}
@@ -84,9 +85,25 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
     for(const event of dates){if(event<new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Prague'}))continue;out.push({title,url:'https://koletovka.cz/#akce-'+slug(title)+'-'+event,event,summary:location,body:[location],detail_ok:true,extra:{kind:'event',calendar_only:true,time,location,event_sources:[{title:'Kalendář Koletovy hornické hudby',url:'https://koletovka.cz/'}]}});}
    }
   }
-  if(!out.length)throw Error('Spolkový zdroj neobsahuje články');return out;
+  if(!entries.length)throw Error('Ve zdroji nebyly nalezeny zprávy; web může být nedostupný nebo změněný');return out;
  }
  const doc=await page(s.url);
+ if(s.feed==='florbal'){
+  const seen=new Set();for(const a of Array.from(doc.querySelectorAll('a[href^="/c/"]')) as any[]){const url=safeURL(a.getAttribute('href'),s.url);if(seen.has(url))continue;seen.add(url);const card=a.closest('article'),title=text(card?.querySelector('.article-title-heading')||a.querySelector('.article-title-heading'));if(!title)continue;
+   let published=communityPublished(text(card?.querySelector('.article-meta-date')),czDate),body:any[]=[],summary=text(card?.querySelector('.article-perex'));
+   try{const d=await page(url,s.url),root=d.querySelector('h1.heading-2')?.closest('article');if(!root)throw Error('Chybí článek');body=richText(root.querySelector('.prose'),clean);summary=text(root.querySelector('.perex'))||summary;published=communityPublished(text(root.querySelector('.article-meta-date')),czDate)||published;}catch{/* The attributed list entry is still usable. */}
+   out.push({title,url,published,summary,body,detail_ok:true,extra:{kind:'community'}});if(out.length>=8)break;
+  }if(!out.length)throw Error('Nenalezeny články florbalu');return out;
+ }
+ if(s.feed==='estranky'){
+  const seen=new Set();for(const a of Array.from(doc.querySelectorAll('a[href]')) as any[]){const href=a.getAttribute('href');if(!href?.startsWith('/clanky/clanky/')||!href.endsWith('.html')||seen.has(href)||!text(a)||/Celý příspěvek/.test(text(a)))continue;seen.add(href);const url=safeURL(href,s.url),container=a.closest('article,.article,.entry,.post')||a.parentElement?.parentElement,published=czDate(text(container));let body:any[]=[];try{const d=await page(url,s.url),root=d.querySelector('#main,#content,.article-content,.entry-content');body=richText(root,clean).filter(t=>!/^Celý příspěvek|Rubrika:|Komentáře|Menu$/.test(t));}catch{}out.push({title:text(a),url,published,summary:body[0]||'Příspěvek z oddílového archivu. Datum uvádíme podle původního webu.',body:body.slice(0,12),detail_ok:true,extra:{kind:'community',archive:true}});if(out.length>=5)break;}
+  return out;
+ }
+ if(s.feed==='local'){
+  // Do not import a central Prague workshop or an old organization history as local news.
+  for(const card of Array.from(doc.querySelectorAll('article.news,article.post,.news-item')) as any[]){const heading=card.querySelector('h2 a,h3 a'),body=richText(card,clean),published=czDate(text(card.querySelector('time,.date')));if(!heading||!published||!/(Rtyn|rtyň)/i.test(text(card)))continue;out.push({title:text(heading),url:safeURL(heading.getAttribute('href'),s.url),published,body,summary:body.join(' ').slice(0,350),detail_ok:true,extra:{kind:'community'}});}
+  return out;
+ }
  if(s.key==='library'){
   out=Array.from(doc.querySelectorAll('.news-item')).slice(0,15).map((c:any)=>{
    const title=text(c.querySelector('h2')),body=richText(c.querySelector('.news-item-content'),clean),content=body.join(' ');
@@ -115,7 +132,7 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
   for(const x of out){await pause(1100);try{const d=await page(x.url,s.url);x.body=richText(d.querySelector('.article__text .text-component'),clean);x.summary=x.summary||text(d.querySelector('.article__perex'))||x.body.join(' ').slice(0,350);x.extra={...x.extra,...assets(d.querySelector('article.article'),x.url)};x.detail_ok=!!(x.body.length||x.extra.images.length||x.extra.attachments.length);}catch(e){x.detail_error=String(e).slice(0,160);}}
  }else if(s.key==='clubs'){
   const sport=await page('https://www.rtyne.cz/sportovni-organizace');
-  const seen=new Set();for(const d of [doc,sport])for(const a of Array.from(d.querySelectorAll('.tile__link')) as any[]){const title=text(a),href=new URL(a.getAttribute('href'),s.url).href;if(seen.has(href)||!/^https?:/.test(href))continue;seen.add(href);out.push({title,url:s.url+'#'+slug(title),summary:'Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.',body:[],detail_ok:true,...clubProfile(title,href),extra:{kind:'club',website:href,directory_source:s.url,in_latest:true,...clubProfile(title,href).extra}});}
+  const seen=new Set();for(const d of [doc,sport])for(const a of Array.from(d.querySelectorAll('.tile__link')) as any[]){const title=text(a),href=new URL(a.getAttribute('href'),s.url).href;if(seen.has(href)||!/^https?:/.test(href))continue;seen.add(href);out.push({title,url:s.url+'#'+slug(title),summary:'Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.',body:[],detail_ok:true,...clubProfile(title,href),extra:{kind:'club',website:href,directory_source:s.url,in_latest:true,...clubProfile(title,href).extra,news_source_key:communitySources.find(c=>c.profile===title)?.key||null}});}
  }else if(s.key==='services'){
   const paths=['svoz-odpadu-a-odpadove-hospodarstvi','svozovy-kalendar-'+new Date().getUTCFullYear(),'skladka-pod-haldou','kontakt','lekarske-sluzby-1','doprava-senioru-senior-taxi','informace-k-uhradam-mistnich-poplatku-v-roce-'+new Date().getUTCFullYear(),'pecovatelska-sluzba'];
   for(const path of paths){await pause(1100);const url='https://www.rtyne.cz/'+path;try{const d=url===s.url?doc:await page(url),root=d.querySelector('article.article');const title=text(d.querySelector('h1.article__heading'));if(!title)throw Error('Chybí název služby');const body=richText(root,clean);out.push({title,url,summary:text(d.querySelector('.article__perex'))||body.slice(0,2).join(' ').slice(0,350),body,detail_ok:true,extra:{kind:'service',...assets(root,url)}});}catch(e){out.push({title:path.replaceAll('-',' '),url,body:[],detail_error:String(e).slice(0,160),extra:{kind:'service'}});}}

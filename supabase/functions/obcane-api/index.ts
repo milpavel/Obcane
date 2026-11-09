@@ -1,3 +1,4 @@
+import {communitySources} from './community-sources.ts';
 import {dailyInfo} from './daily.ts';
 import postgres from 'npm:postgres@3.4.7';
 import { extraSources, extractExtra, assets } from './extra-sources.ts';
@@ -15,7 +16,7 @@ const sources = [
 const clean = (s:any) => String(s || '').replace(/\s+/g,' ').trim();
 const text = (el:any) => clean(el?.textContent);
 const response = (value:any,status=200) => new Response(JSON.stringify(value),{status,headers:{...cors,'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}});
-function safeURL(href:string,base:string) { const u=new URL(href,base), b=new URL(base); if(u.protocol!=='https:'||u.hostname!==b.hostname||u.username||u.password)throw Error('Nepovolený odkaz zdroje');return u.href; }
+function safeURL(href:string,base:string) { const u=new URL(href,base), b=new URL(base); if((u.protocol!=='https:'&&!(u.protocol==='http:'&&b.protocol==='http:'&&b.hostname==='www.banikrtyne-fotbal.cz'))||u.hostname!==b.hostname||u.username||u.password)throw Error('Nepovolený odkaz zdroje');return u.href; }
 async function page(url:string,base=url) {
  safeURL(url,base);
  for(let n=0;n<3;n++){
@@ -97,14 +98,14 @@ async function importSource(s:any){
   const items=await extract(s);const checked=new Date().toISOString();const detailFailures=items.filter(x=>x.detail_error).length;
   await sql.begin(async(tx:any)=>{
    for(const item of items) {
-    const payload={in_latest:true,...(item.extra||{}),source_name:s.name,body:item.body||[],days:item.days||[],detail_ok:!!item.detail_ok,detail_fetched_at:item.detail_fetched_at||checked,detail_error:item.detail_error||null};
+    const payload={in_latest:true,...(s.community?{club_key:s.key,club_name:s.name}:{}),...(item.extra||{}),source_name:s.name,body:item.body||[],days:item.days||[],detail_ok:!!item.detail_ok,detail_fetched_at:item.detail_fetched_at||checked,detail_error:item.detail_error||null};
     await tx`insert into obcane.items (source_key,external_url,title,category,event_date,published_at,summary,payload,last_seen_at)
       values (${s.key},${item.url},${item.title},${s.category},${item.event||null},${item.published||null},${item.summary||''},${tx.json(payload)},${checked})
       on conflict (source_key,external_url) do update set title=excluded.title,category=excluded.category,event_date=excluded.event_date,
       published_at=coalesce(excluded.published_at,obcane.items.published_at),summary=excluded.summary,
       payload=case when excluded.payload->>'detail_error' is not null then obcane.items.payload || jsonb_build_object('detail_error',excluded.payload->>'detail_error') else excluded.payload end,last_seen_at=excluded.last_seen_at`;
    }
-   if(['calendar','clubs','library','scouts','orel','koletovka'].includes(s.key))await tx`update obcane.items set payload=payload || '{"in_latest":false}'::jsonb where source_key=${s.key} and last_seen_at < ${checked}::timestamptz`;
+   if((['calendar','clubs','library'].includes(s.key)||s.community))await tx`update obcane.items set payload=payload || '{"in_latest":false}'::jsonb where source_key=${s.key} and last_seen_at < ${checked}::timestamptz`;
    await tx`update obcane.sources set checked_at=${checked},last_success_at=${checked},updated_at=${checked},status=${detailFailures?'error':'ok'},last_error=${detailFailures?'Nenačtené detaily: '+detailFailures:null},item_count=${items.length} where source_key=${s.key}`;
   });
   return {key:s.key,status:detailFailures?'partial':'ok',count:items.length,detail_failures:detailFailures};
@@ -127,7 +128,7 @@ Deno.serve(async(req:Request)=>{
    const events=await sql`select id,title,starts_at,location,description,source_url from public.obcane_events where status='published' order by starts_at desc limit 30`;
    const finances=await sql`select id,year,title,amount_czk,kind,explanation,source_url from public.obcane_finances where status='published' order by year desc,id desc limit 30`;
    const state=await sql`select source_key,source_url,status,checked_at,last_success_at,last_error,item_count from obcane.sources order by source_key`;
-   return response({items,posts,events,finances,sources:state.map((x:any)=>({...x,name:sources.find(s=>s.key===x.source_key)?.name})),generated_at:new Date().toISOString()});
+   return response({items,posts,events,finances,sources:state.map((x:any)=>({...x,name:sources.find(s=>s.key===x.source_key)?.name,community:communitySources.some(s=>s.key===x.source_key),news_note:communitySources.find(s=>s.key===x.source_key)?.note||null})),generated_at:new Date().toISOString()});
   }
   if(req.method!=='POST')return response({error:'Metoda není podporována'},405);
   const token=req.headers.get('x-import-token')||'';

@@ -21,9 +21,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
+        "detail_fetched_at": "2026-11-09T09:55:33.070Z"
       },
-      "last_seen_at": "2026-11-09T09:19:39.715Z"
+      "last_seen_at": "2026-11-09T09:55:33.070Z"
     },
     {
       "id": "282",
@@ -54,9 +54,9 @@
         ],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
+        "detail_fetched_at": "2026-11-09T09:55:33.070Z"
       },
-      "last_seen_at": "2026-11-09T09:19:39.715Z"
+      "last_seen_at": "2026-11-09T09:55:33.070Z"
     },
     {
       "id": "281",
@@ -81,9 +81,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
+        "detail_fetched_at": "2026-11-09T09:55:33.070Z"
       },
-      "last_seen_at": "2026-11-09T09:19:39.715Z"
+      "last_seen_at": "2026-11-09T09:55:33.070Z"
     },
     {
       "id": "280",
@@ -156,9 +156,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
+        "detail_fetched_at": "2026-11-09T09:55:33.070Z"
       },
-      "last_seen_at": "2026-11-09T09:19:39.715Z"
+      "last_seen_at": "2026-11-09T09:55:33.070Z"
     },
     {
       "id": "279",
@@ -202,9 +202,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
+        "detail_fetched_at": "2026-11-09T09:55:33.070Z"
       },
-      "last_seen_at": "2026-11-09T09:19:39.715Z"
+      "last_seen_at": "2026-11-09T09:55:33.070Z"
     },
     {
       "id": "278",
@@ -227,9 +227,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
+        "detail_fetched_at": "2026-11-09T09:55:33.070Z"
       },
-      "last_seen_at": "2026-11-09T09:19:39.715Z"
+      "last_seen_at": "2026-11-09T09:55:33.070Z"
     },
     {
       "id": "277",
@@ -260,9 +260,9 @@
         ],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
+        "detail_fetched_at": "2026-11-09T09:55:33.070Z"
       },
-      "last_seen_at": "2026-11-09T09:19:39.715Z"
+      "last_seen_at": "2026-11-09T09:55:33.070Z"
     },
     {
       "id": "276",
@@ -325,9 +325,9 @@
         "attachments": [],
         "source_name": "Praktické informace města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:39.715Z"
+        "detail_fetched_at": "2026-11-09T09:55:33.070Z"
       },
-      "last_seen_at": "2026-11-09T09:19:39.715Z"
+      "last_seen_at": "2026-11-09T09:55:33.070Z"
     },
     {
       "id": "275",
@@ -356,6 +356,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "volejbal",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -368,9 +369,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "274",
@@ -400,6 +401,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "florbal",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -416,9 +418,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "273",
@@ -448,6 +450,7 @@
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
         "directory_alias": true,
+        "news_source_key": null,
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -460,9 +463,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "272",
@@ -491,6 +494,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "odolov",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -503,9 +507,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "271",
@@ -534,6 +538,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "contemporary",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -550,9 +555,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "270",
@@ -582,6 +587,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "scouts",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -590,9 +596,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "269",
@@ -621,6 +627,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "garden",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -633,9 +640,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "268",
@@ -664,6 +671,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "koletovka",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -672,9 +680,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "267",
@@ -704,6 +712,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "sokol",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -712,9 +721,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "266",
@@ -743,6 +752,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "orel",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -755,9 +765,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "265",
@@ -786,6 +796,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "banik",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -798,9 +809,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "264",
@@ -830,6 +841,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "bonifac",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -842,9 +854,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "263",
@@ -873,6 +885,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "ballare",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -881,9 +894,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "262",
@@ -911,6 +924,7 @@
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
+        "news_source_key": "hasici",
         "profile_checked": "2026-11-09",
         "profile_sources": [
           {
@@ -923,16 +937,16 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-09T09:19:28.266Z"
+        "detail_fetched_at": "2026-11-09T09:55:22.206Z"
       },
-      "last_seen_at": "2026-11-09T09:19:28.266Z"
+      "last_seen_at": "2026-11-09T09:55:22.206Z"
     },
     {
       "id": "705",
       "source_key": "koletovka",
       "external_url": "https://koletovka.cz/#akce-koletovka-hraje-vanocni-koledy-2026-12-24",
       "title": "Koletovka hraje vánoční koledy",
-      "category": "Kultura a spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-12-24",
       "published_at": null,
       "summary": "Nádvoří Na Rychtě, Rtyně v Podkrkonoší (od 22:00)",
@@ -943,7 +957,9 @@
         "days": [],
         "kind": "event",
         "time": "22:00",
+        "club_key": "koletovka",
         "location": "Nádvoří Na Rychtě, Rtyně v Podkrkonoší (od 22:00)",
+        "club_name": "Koletova hornická hudba",
         "detail_ok": true,
         "in_latest": true,
         "source_name": "Koletova hornická hudba",
@@ -955,16 +971,16 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+        "detail_fetched_at": "2026-11-09T09:55:12.305Z"
       },
-      "last_seen_at": "2026-11-09T09:19:17.051Z"
+      "last_seen_at": "2026-11-09T09:55:12.305Z"
     },
     {
       "id": "704",
       "source_key": "koletovka",
       "external_url": "https://koletovka.cz/#akce-adventni-koncerty-2026-11-28",
       "title": "Adventní koncerty",
-      "category": "Kultura a spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-11-28",
       "published_at": null,
       "summary": "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)",
@@ -975,7 +991,9 @@
         "days": [],
         "kind": "event",
         "time": "19:00",
+        "club_key": "koletovka",
         "location": "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)",
+        "club_name": "Koletova hornická hudba",
         "detail_ok": true,
         "in_latest": true,
         "source_name": "Koletova hornická hudba",
@@ -987,16 +1005,16 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+        "detail_fetched_at": "2026-11-09T09:55:12.305Z"
       },
-      "last_seen_at": "2026-11-09T09:19:17.051Z"
+      "last_seen_at": "2026-11-09T09:55:12.305Z"
     },
     {
       "id": "703",
       "source_key": "koletovka",
       "external_url": "https://koletovka.cz/#akce-adventni-koncerty-2026-11-27",
       "title": "Adventní koncerty",
-      "category": "Kultura a spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-11-27",
       "published_at": null,
       "summary": "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)",
@@ -1007,7 +1025,9 @@
         "days": [],
         "kind": "event",
         "time": "19:00",
+        "club_key": "koletovka",
         "location": "Hala Orlovna, Rtyně v Podkrkonoší (od 19:00)",
+        "club_name": "Koletova hornická hudba",
         "detail_ok": true,
         "in_latest": true,
         "source_name": "Koletova hornická hudba",
@@ -1019,9 +1039,9 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+        "detail_fetched_at": "2026-11-09T09:55:12.305Z"
       },
-      "last_seen_at": "2026-11-09T09:19:17.051Z"
+      "last_seen_at": "2026-11-09T09:55:12.305Z"
     },
     {
       "id": "254",
@@ -1050,9 +1070,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "253",
@@ -1081,9 +1101,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "252",
@@ -1112,9 +1132,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "251",
@@ -1143,9 +1163,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "250",
@@ -1174,9 +1194,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "249",
@@ -1205,9 +1225,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "248",
@@ -1236,9 +1256,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "247",
@@ -1267,9 +1287,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "246",
@@ -1298,9 +1318,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "245",
@@ -1329,9 +1349,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "244",
@@ -1360,9 +1380,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "243",
@@ -1391,9 +1411,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "242",
@@ -1422,9 +1442,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "241",
@@ -1453,9 +1473,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "240",
@@ -1484,9 +1504,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.018Z"
+        "detail_fetched_at": "2026-11-09T09:55:11.148Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.018Z"
+      "last_seen_at": "2026-11-09T09:55:11.148Z"
     },
     {
       "id": "228",
@@ -1549,8 +1569,8 @@
             "url": "https://www.muzeumrtyne.cz//img/icons/mapa.svg"
           },
           {
-            "alt": "Typická domácnost v Podkrkonoší",
-            "url": "https://www.muzeumrtyne.cz/cache/artefakty-front/default/_cms-24.jpg?v=2"
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.muzeumrtyne.cz/cache/artefakty-front/default/_cms-30.jpg"
           }
         ],
         "detail_ok": true,
@@ -1558,9 +1578,9 @@
         "attachments": [],
         "source_name": "Muzeum a infocentrum",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.792Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.224Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.792Z"
+      "last_seen_at": "2026-11-09T09:55:10.224Z"
     },
     {
       "id": "227",
@@ -1609,9 +1629,9 @@
             "weekday": "Pátek"
           }
         ],
-        "detail_fetched_at": "2026-11-09T09:19:15.655Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.132Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.655Z"
+      "last_seen_at": "2026-11-09T09:55:10.132Z"
     },
     {
       "id": "602",
@@ -1633,9 +1653,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+        "detail_fetched_at": "2026-11-09T09:54:50.533Z"
       },
-      "last_seen_at": "2026-11-09T09:18:32.761Z"
+      "last_seen_at": "2026-11-09T09:54:50.533Z"
     },
     {
       "id": "707",
@@ -1668,9 +1688,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "706",
@@ -1703,9 +1723,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "627",
@@ -1739,7 +1759,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:36.107Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "626",
@@ -1772,7 +1792,82 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:34.367Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
+    },
+    {
+      "id": "866",
+      "source_key": "florbal",
+      "external_url": "https://www.fbcorelrtyne.cz/c/vysledkovy-servis-muzi-411",
+      "title": "Výsledkový servis #Muži",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-11-08T00:00:00.000Z",
+      "summary": "9. kolo Divize C FBC Orel Rtyně - HAGA Pardubice",
+      "payload": {
+        "body": [
+          "Muži zvládli další ligovou prověrku a před domácím publikem potvrdili svou převahu, která jim vynesla plný počet bodů!🙌"
+        ],
+        "days": [],
+        "kind": "community",
+        "club_key": "florbal",
+        "club_name": "FBC Orel Rtyně",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "FBC Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.066Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.066Z"
+    },
+    {
+      "id": "865",
+      "source_key": "florbal",
+      "external_url": "https://www.fbcorelrtyne.cz/c/zeny-hraji-doma-410",
+      "title": "Ženy hrají doma!",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-11-08T00:00:00.000Z",
+      "summary": "8. kolo 1. ligy žen FBC Orel Rtyně - TJ Sokol Nové Strašecí",
+      "payload": {
+        "body": [
+          "V neděli 8. 11. od 16:00 hodin odehrají naše ženy mistrovské utkání v rámci 8. kola 1. ligy žen proti týmu TJ Sokol Nové Strašecí."
+        ],
+        "days": [],
+        "kind": "community",
+        "club_key": "florbal",
+        "club_name": "FBC Orel Rtyně",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "FBC Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.066Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.066Z"
+    },
+    {
+      "id": "864",
+      "source_key": "florbal",
+      "external_url": "https://www.fbcorelrtyne.cz/c/muzi-hraji-doma-409",
+      "title": "Muži hrají doma!",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-11-06T00:00:00.000Z",
+      "summary": "9. kolo Divize C FBC Orel Rtyně - HAGA Pardubice",
+      "payload": {
+        "body": [
+          "V sobotu 7. 11. od 19:00 hodin odehrají naši muži mistrovské utkání v rámci 9. kola divize proti týmu HAGA Pardubice."
+        ],
+        "days": [],
+        "kind": "community",
+        "club_key": "florbal",
+        "club_name": "FBC Orel Rtyně",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "FBC Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.066Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.066Z"
     },
     {
       "id": "22",
@@ -1800,7 +1895,7 @@
         "restriction_date": "2026-11-10",
         "detail_fetched_at": "2026-11-09T09:18:46.668Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "21",
@@ -1821,9 +1916,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:44.797Z"
+        "detail_fetched_at": "2026-11-09T09:54:57.444Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "20",
@@ -1844,9 +1939,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:42.958Z"
+        "detail_fetched_at": "2026-11-09T09:54:55.781Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "19",
@@ -1867,9 +1962,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:41.276Z"
+        "detail_fetched_at": "2026-11-09T09:54:54.019Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "18",
@@ -1890,9 +1985,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:39.610Z"
+        "detail_fetched_at": "2026-11-09T09:54:52.329Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "17",
@@ -1925,7 +2020,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:37.865Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "213",
@@ -1983,7 +2078,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:19:01.916Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "24",
@@ -2036,7 +2131,7 @@
         "restriction_date": "2026-11-06",
         "detail_fetched_at": "2026-11-09T09:18:59.870Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "9",
@@ -2066,7 +2161,7 @@
         "restriction_date": "2026-11-10",
         "detail_fetched_at": "2026-11-09T09:18:33.511Z"
       },
-      "last_seen_at": "2026-11-09T09:18:35.078Z"
+      "last_seen_at": "2026-11-09T09:54:50.780Z"
     },
     {
       "id": "259",
@@ -2099,9 +2194,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "255",
@@ -2134,9 +2229,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "214",
@@ -2163,7 +2258,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:19:03.928Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "1",
@@ -2186,9 +2281,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+        "detail_fetched_at": "2026-11-09T09:54:50.533Z"
       },
-      "last_seen_at": "2026-11-09T09:18:32.761Z"
+      "last_seen_at": "2026-11-09T09:54:50.533Z"
     },
     {
       "id": "2",
@@ -2211,9 +2306,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+        "detail_fetched_at": "2026-11-09T09:54:50.533Z"
       },
-      "last_seen_at": "2026-11-09T09:18:32.761Z"
+      "last_seen_at": "2026-11-09T09:54:50.533Z"
     },
     {
       "id": "31",
@@ -2240,7 +2335,107 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:33.878Z"
       },
-      "last_seen_at": "2026-11-09T09:18:37.931Z"
+      "last_seen_at": "2026-11-09T09:54:51.382Z"
+    },
+    {
+      "id": "868",
+      "source_key": "florbal",
+      "external_url": "https://www.fbcorelrtyne.cz/c/vysledkovy-servis-zeny-407",
+      "title": "Výsledkový servis #Ženy",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "summary": "7. kolo 1. ligy žen FBC Orel Rtyně - FA Č. Budějovice",
+      "payload": {
+        "body": [
+          "Z dalekých Českých Budějovic se nevracíme s prázdnou! Ženy zvládly venkovní utkání a do Rtyně tak přivezly další cenné body.💪"
+        ],
+        "days": [],
+        "kind": "community",
+        "club_key": "florbal",
+        "club_name": "FBC Orel Rtyně",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "FBC Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.066Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.066Z"
+    },
+    {
+      "id": "867",
+      "source_key": "florbal",
+      "external_url": "https://www.fbcorelrtyne.cz/c/vysledkovy-servis-muzi-408",
+      "title": "Výsledkový servis #Muži",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "summary": "8. kolo Divize C FBC Orel Rtyně - FBŠ Všestary",
+      "payload": {
+        "body": [
+          "Muži porazili dosavadního lídra tabulky! Od začátku si šli za vítězstvím a po přesvědčivém výkonu tak slavili úspěch na venkovní půdě.🤩"
+        ],
+        "days": [],
+        "kind": "community",
+        "club_key": "florbal",
+        "club_name": "FBC Orel Rtyně",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "FBC Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.066Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.066Z"
+    },
+    {
+      "id": "869",
+      "source_key": "florbal",
+      "external_url": "https://www.fbcorelrtyne.cz/c/muzi-hraji-venku-406",
+      "title": "Muži hrají venku!",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "summary": "8. kolo Divize C FBC Orel Rtyně - FBŠ Všestary",
+      "payload": {
+        "body": [
+          "V neděli 1. 11. od 18:00 hodin odehrají naši muži mistrovské utkání v rámci 8. kola divize proti týmu FBŠ Všestary."
+        ],
+        "days": [],
+        "kind": "community",
+        "club_key": "florbal",
+        "club_name": "FBC Orel Rtyně",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "FBC Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.066Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.066Z"
+    },
+    {
+      "id": "870",
+      "source_key": "florbal",
+      "external_url": "https://www.fbcorelrtyne.cz/c/zeny-hraji-venku-405",
+      "title": "Ženy hrají venku!",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-10-30T00:00:00.000Z",
+      "summary": "7. kolo 1. ligy žen FBC Orel Rtyně - FA Č. Budějovice",
+      "payload": {
+        "body": [
+          "V sobotu 31. 10. od 17:10 hodin odehrají naše ženy mistrovské utkání v rámci 7. kola 1. ligy žen proti týmu FA Č. Budějovice."
+        ],
+        "days": [],
+        "kind": "community",
+        "club_key": "florbal",
+        "club_name": "FBC Orel Rtyně",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "FBC Orel Rtyně",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.066Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.066Z"
     },
     {
       "id": "215",
@@ -2267,7 +2462,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:19:05.596Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "218",
@@ -2293,7 +2488,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:19:11.219Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "217",
@@ -2319,7 +2514,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:19:09.114Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "216",
@@ -2388,14 +2583,86 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:19:07.306Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
+    },
+    {
+      "id": "846",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/10/pozvanka-na-svatek-strasidel/",
+      "title": "Pozvánka na „Svátek strašidel“",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-10-26T16:32:46.000Z",
+      "summary": "SVÁTEK STRAŠIDEL se blíží! Zveme všechny rodiny s dětmi na kouzelně zábavné odpoledne plné strašidel, dobrodružství a podzimní atmosféry! 14. listopadu od 15:00 do 18 hod Zahrada Königovy vily ve Rtyni v Podkrkonoší (ulice Hornická, odbočka PROTEC Plus) Těšit se můžete na strašidelné úkoly. Masky vítány, občerstvení zajištěno! Těšíme se na vás! Poř",
+      "payload": {
+        "body": [
+          "SVÁTEK STRAŠIDEL se blíží!",
+          "Zveme všechny rodiny s dětmi na kouzelně zábavné odpoledne plné strašidel, dobrodružství a podzimní atmosféry!",
+          "14. listopadu od 15:00 do 18 hod Zahrada Königovy vily ve Rtyni v Podkrkonoší (ulice Hornická, odbočka PROTEC Plus)",
+          "Těšit se můžete na strašidelné úkoly.",
+          "Masky vítány, občerstvení zajištěno! Těšíme se na vás!",
+          "Pořádají spolky TŠ Bonifác a Contemporary Region",
+          "Článek Pozvánka na „Svátek strašidel“ se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.bonifac.eu/wp-content/uploads/2026/10/svatek_strasidel_2026-1-807x1280.png"
+          }
+        ],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
+    },
+    {
+      "id": "847",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/10/drakiada-aneb-draci-slunicko-a-prima-odpoledne/",
+      "title": "DRAKIÁDA aneb draci, sluníčko a prima odpoledne",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-10-26T16:25:08.000Z",
+      "summary": "V sobotu 3. října se uskutečnila u rtyňské benzínky oblíbená rodinná akce DRAKIÁDA, která přilákala děti i dospělé na společné odpoledne plné podzimní pohody. Počasí nám přálo – bylo krásně slunečno a teplo, jen ten správný větřík nám trochu chyběl. Pouštění draků se tak proměnilo ve zkoušku trpělivosti a vytrvalosti. Do vzduchu se je většinou poda",
+      "payload": {
+        "body": [
+          "V sobotu 3. října se uskutečnila u rtyňské benzínky oblíbená rodinná akce DRAKIÁDA, která přilákala děti i dospělé na společné odpoledne plné podzimní pohody.",
+          "Počasí nám přálo – bylo krásně slunečno a teplo, jen ten správný větřík nám trochu chyběl. Pouštění draků se tak proměnilo ve zkoušku trpělivosti a vytrvalosti. Do vzduchu se je většinou podařilo dostat jen na chvilku. Menší děti si proto udělaly vlastní „běžeckou drakiádu“ a s dráčky nad hlavou probíhaly louku.",
+          "O zábavu ale bylo postaráno i jinak. Děti si mohly vyzkoušet nejrůznější úkoly – domalovat si dráčka, procvičit počítání s houbičkami, zdolat mini překážkovou dráhu nebo poskládat puzzle.",
+          "Občerstvení zajistil stánek u benzinky, takže nechybělo ani něco dobrého na doplnění energie.",
+          "Po 15. hodině se z Hubertské jízdy vrátili koně a povozy. Poté přišlo na řadu také vyhlášení ceny Halali a ocenění dalších vítězů.",
+          "A i když nám tentokrát vítr při pouštění draků příliš nepřál, sluníčko, hry a společná setkání se postaraly o příjemné podzimní odpoledne. Budeme se těšit zase příště!",
+          "Pořadatelé: TŠ Bonifác a Contemporary Region",
+          "Článek DRAKIÁDA aneb draci, sluníčko a prima odpoledne se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
     },
     {
       "id": "221",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/10/strediskovy-snem-24-10-2026/",
       "title": "Střediskový sněm (24. 10. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-10-24",
       "published_at": "2026-10-26T06:09:30.000Z",
       "summary": "V sobotu 24. října se po třech letech uskutečnil střediskový sněm, na němž proběhla volba nového vedení střediska a delegátů na sněmy nadřízených organizačních jednotek. Vedoucím střediska byl opět zvolen Jakub Klusáček. Jeho zástupci se stali Stanislav Řezníček a nově také Jitka Bočarovová, která ve vedení střediska nahradila Barboru Nývltovou. Ve",
@@ -2407,14 +2674,16 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "220",
@@ -2439,7 +2708,7 @@
         "restriction_date": "2026-10-27",
         "detail_fetched_at": "2026-11-09T09:19:14.941Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "219",
@@ -2466,9 +2735,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:19:13.229Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.346Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "12",
@@ -2498,7 +2767,7 @@
         "restriction_date": "2026-10-27",
         "detail_fetched_at": "2026-11-09T09:18:34.024Z"
       },
-      "last_seen_at": "2026-11-09T09:18:35.078Z"
+      "last_seen_at": "2026-11-09T09:54:50.780Z"
     },
     {
       "id": "11",
@@ -2528,7 +2797,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:34.018Z"
       },
-      "last_seen_at": "2026-11-09T09:18:35.078Z"
+      "last_seen_at": "2026-11-09T09:54:50.780Z"
     },
     {
       "id": "10",
@@ -2558,7 +2827,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:33.486Z"
       },
-      "last_seen_at": "2026-11-09T09:18:35.078Z"
+      "last_seen_at": "2026-11-09T09:54:50.780Z"
     },
     {
       "id": "32",
@@ -2777,7 +3046,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:33.895Z"
       },
-      "last_seen_at": "2026-11-09T09:18:37.931Z"
+      "last_seen_at": "2026-11-09T09:54:51.382Z"
     },
     {
       "id": "33",
@@ -2805,7 +3074,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:35.187Z"
       },
-      "last_seen_at": "2026-11-09T09:18:37.931Z"
+      "last_seen_at": "2026-11-09T09:54:51.382Z"
     },
     {
       "id": "3",
@@ -2826,9 +3095,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+        "detail_fetched_at": "2026-11-09T09:54:50.533Z"
       },
-      "last_seen_at": "2026-11-09T09:18:32.761Z"
+      "last_seen_at": "2026-11-09T09:54:50.533Z"
     },
     {
       "id": "25",
@@ -2855,9 +3124,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:48.632Z"
+        "detail_fetched_at": "2026-11-09T09:54:59.131Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "13",
@@ -2887,7 +3156,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:34.485Z"
       },
-      "last_seen_at": "2026-11-09T09:18:35.078Z"
+      "last_seen_at": "2026-11-09T09:54:50.780Z"
     },
     {
       "id": "257",
@@ -2920,9 +3189,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "14",
@@ -2952,7 +3221,7 @@
         "restriction_date": "2026-10-21",
         "detail_fetched_at": "2026-11-09T09:18:34.511Z"
       },
-      "last_seen_at": "2026-11-09T09:18:35.078Z"
+      "last_seen_at": "2026-11-09T09:54:50.780Z"
     },
     {
       "id": "261",
@@ -2985,9 +3254,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "258",
@@ -3020,9 +3289,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "16",
@@ -3052,7 +3321,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:35.078Z"
       },
-      "last_seen_at": "2026-11-09T09:18:35.078Z"
+      "last_seen_at": "2026-11-09T09:54:50.780Z"
     },
     {
       "id": "15",
@@ -3082,7 +3351,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:35.062Z"
       },
-      "last_seen_at": "2026-11-09T09:18:35.078Z"
+      "last_seen_at": "2026-11-09T09:54:50.780Z"
     },
     {
       "id": "4",
@@ -3103,9 +3372,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+        "detail_fetched_at": "2026-11-09T09:54:50.533Z"
       },
-      "last_seen_at": "2026-11-09T09:18:32.761Z"
+      "last_seen_at": "2026-11-09T09:54:50.533Z"
     },
     {
       "id": "256",
@@ -3138,9 +3407,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "26",
@@ -3177,9 +3446,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:50.479Z"
+        "detail_fetched_at": "2026-11-09T09:55:00.831Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "34",
@@ -3205,9 +3474,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:35.329Z"
+        "detail_fetched_at": "2026-11-09T09:54:51.382Z"
       },
-      "last_seen_at": "2026-11-09T09:18:37.931Z"
+      "last_seen_at": "2026-11-09T09:54:51.382Z"
     },
     {
       "id": "27",
@@ -3234,9 +3503,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:52.258Z"
+        "detail_fetched_at": "2026-11-09T09:55:02.533Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "35",
@@ -3264,14 +3533,14 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:36.457Z"
       },
-      "last_seen_at": "2026-11-09T09:18:37.931Z"
+      "last_seen_at": "2026-11-09T09:54:51.382Z"
     },
     {
       "id": "222",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/10/skautsky-ples-21-11-2026/",
       "title": "Skautský ples (21. 11. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-11-21",
       "published_at": "2026-10-04T06:54:53.000Z",
       "summary": "Předprodej lístků bude zahájen od 2. 11. ve rtyňské knihovně (mapa). Otevírací doba knihovny: Po: 12 – 16 Út: 8 – 12, 13 – 17 St: 12 – 16 Čt: 8 – 12, 13 – 17 Cena vstupenky: 350,-/ks Sál bude otevřen od 19:00. Vstup pouze ve společenském. Lístky na stání k dispozici na místě. Těšíme se!",
@@ -3298,10 +3567,12 @@
             "url": "https://skaut-rtyne.skauting.cz/wp-content/uploads/2026/10/Plakat-skautsky-ples-2026.jpg"
           }
         ],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "event_sources": [
           {
@@ -3309,16 +3580,41 @@
             "title": "Podrobnosti od pořadatele"
           }
         ],
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
+    },
+    {
+      "id": "845",
+      "source_key": "banik",
+      "external_url": "http://www.banikrtyne-fotbal.cz/petr-lnenicka-ocenen-cenou-josefa-soucka/",
+      "title": "Petr Lněnička oceněn Cenou Josefa Součka",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-10-03T20:07:19.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "banik",
+        "club_name": "TJ Baník – fotbal",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TJ Baník – fotbal",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.438Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.438Z"
     },
     {
       "id": "235",
       "source_key": "koletovka",
       "external_url": "https://koletovka.cz/uncategorized/prodej-vstupenek-adventni-koncerty-rtyni-2026/",
       "title": "Prodej vstupenek na Adventní koncerty 2026",
-      "category": "Kultura a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-10-02T13:06:50.000Z",
       "summary": "Rádi bychom Vás pozvali na naše tradiční Adventní koncerty v roce 2026, na které se se začátkem dalšího školního roku a po prázdninovém odpočinku už plně soustředíme a připravujeme.",
@@ -3329,14 +3625,48 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "koletovka",
+        "club_name": "Koletova hornická hudba",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+        "detail_fetched_at": "2026-11-09T09:55:12.305Z"
       },
-      "last_seen_at": "2026-11-09T09:19:17.051Z"
+      "last_seen_at": "2026-11-09T09:55:12.305Z"
+    },
+    {
+      "id": "848",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/09/drakiada-ve-rtyni-v-podkrkonosi-%f0%9f%90%89/",
+      "title": "Drakiáda ve Rtyni v Podkrkonoší 🐉",
+      "category": "Spolky a sport",
+      "event_date": "2026-10-03",
+      "published_at": "2026-09-30T21:28:58.000Z",
+      "summary": "Podzim je tady a s ním přichází čas draků! Zveme děti i dospělé na Drakiádu, která se uskuteční v rámci akce Rtyňský Hubert 2026. Sobota 3. října 2026 Louka nad benzinkou ve Rtyni v Podkrkonoší 13:00–15:00 hodin Přijďte si užít příjemné podzimní odpoledne, vypustit své draky a strávit společný čas s rodinou a přáteli. Nezapomeňte si s sebou vzít dr",
+      "payload": {
+        "body": [
+          "Podzim je tady a s ním přichází čas draků! Zveme děti i dospělé na Drakiádu, která se uskuteční v rámci akce Rtyňský Hubert 2026.",
+          "Sobota 3. října 2026 Louka nad benzinkou ve Rtyni v Podkrkonoší 13:00–15:00 hodin",
+          "Přijďte si užít příjemné podzimní odpoledne, vypustit své draky a strávit společný čas s rodinou a přáteli. Nezapomeňte si s sebou vzít draka a dobrou náladu!",
+          "Pořadatelé: TŠ Bonifác a Contemporary RegionDrakiáda probíhá ve spolupráci s paní Martinou Wernerovou a dalšími organizátory akce Rtyňský Hubert 2026.",
+          "Těšíme se na vás!",
+          "Článek Drakiáda ve Rtyni v Podkrkonoší 🐉 se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
     },
     {
       "id": "36",
@@ -3363,7 +3693,42 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:36.639Z"
       },
-      "last_seen_at": "2026-11-09T09:18:37.931Z"
+      "last_seen_at": "2026-11-09T09:54:51.382Z"
+    },
+    {
+      "id": "849",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/09/bonifac-na-dni-mesta-rtyne/",
+      "title": "Bonifác na Dni města Rtyně",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-09-26T16:18:00.000Z",
+      "summary": "Spolek TŠ Bonifác se zapojil do zářijové oslavy Dne města Rtyně v Podkrkonoší a připravil pro děti tvořivé úkoly. A byla to opravdová výtvarná jízda! Děti si s námi vyrobily desítky barevných klaunů, točících káč a veselých medailí. U našeho stánku se po celou dobu pilně tvořilo a bylo radostí sledovat, s jakým nadšením se do vyrábění pouštěli malí",
+      "payload": {
+        "body": [
+          "Spolek TŠ Bonifác se zapojil do zářijové oslavy Dne města Rtyně v Podkrkonoší a připravil pro děti tvořivé úkoly. A byla to opravdová výtvarná jízda!",
+          "Děti si s námi vyrobily desítky barevných klaunů, točících káč a veselých medailí. U našeho stánku se po celou dobu pilně tvořilo a bylo radostí sledovat, s jakým nadšením se do vyrábění pouštěli malí i velcí výtvarníci.",
+          "Věříme, že vám vaše výtvory doma stále dělají radost! Moc děkujeme všem, kteří se u nás zastavili a užili si tvoření společně s námi.",
+          "Článek Bonifác na Dni města Rtyně se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.bonifac.eu/wp-content/uploads/2026/10/Bily-a-Pastelovy-Jednoducha-Kolaz-Post-na-Facebook-1-1280x1073.png"
+          }
+        ],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
     },
     {
       "id": "260",
@@ -3396,9 +3761,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:27.591Z"
+        "detail_fetched_at": "2026-11-09T09:55:21.687Z"
       },
-      "last_seen_at": "2026-11-09T09:19:27.591Z"
+      "last_seen_at": "2026-11-09T09:55:21.687Z"
     },
     {
       "id": "37",
@@ -3624,7 +3989,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:37.729Z"
       },
-      "last_seen_at": "2026-11-09T09:18:37.931Z"
+      "last_seen_at": "2026-11-09T09:54:51.382Z"
     },
     {
       "id": "38",
@@ -3652,14 +4017,14 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-09T09:18:37.931Z"
       },
-      "last_seen_at": "2026-11-09T09:18:37.931Z"
+      "last_seen_at": "2026-11-09T09:54:51.382Z"
     },
     {
       "id": "223",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/09/forum-mladsich-clenu-12-9-2026/",
       "title": "Fórum mladších členů (12. 9. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-09-12",
       "published_at": "2026-09-17T15:42:26.000Z",
       "summary": "Fórum mladších členů se setkání všech členů ve věku od 12 do 18 let. Probíhá před střediskovým sněmem (střediskovými volbami) a holky a kluci mají možnost zvolit si na tento sněm svého zástupce, který je tam bude zastupovat. My jsme tuto akci pořádali v sobotu 12. 9. v MAKUSu poprvé. Na tuto naši premiéru dorazilo celkem 26 dětí, kteří se seznámili",
@@ -3670,21 +4035,23 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "224",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/09/zahajeni-noveho-skautskeho-roku-2026-27-6-9-2026/",
       "title": "Zahájení nového skautského roku 2026/27 (6. 9. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-09-06",
       "published_at": "2026-09-16T11:45:01.000Z",
       "summary": "V neděli 6. 9. se na Žabárně uskutečnilo zahájení nového skautského roku 1. chlapeckého oddílu. V našem oddíle se jedná již o tradiční akci, při které společně posedíme u ohně, opečeme si buřty, zahrajeme si nějaké hry a povíme si, co nás v následujícím roce čeká. Letos byla účast hojná, a tak se nám akce vydařila. Celé akce se zúčastnilo 40 členů ",
@@ -3695,14 +4062,16 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "5",
@@ -3727,16 +4096,16 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+        "detail_fetched_at": "2026-11-09T09:54:50.533Z"
       },
-      "last_seen_at": "2026-11-09T09:18:32.761Z"
+      "last_seen_at": "2026-11-09T09:54:50.533Z"
     },
     {
       "id": "225",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/09/den-obce-a-zahajeni-skautskeho-roku-u-medvedu/",
       "title": "Den obce a zahájení skautského roku u Medvědů (5. 9. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-09-05",
       "published_at": "2026-09-08T19:47:34.000Z",
       "summary": "Letošní skautský rok Medvědi zahájili velmi časně. V rámci možnosti prohlídky klubovny při Dni obce (5. 9. 2026) jsme se všichni skauti sešli v krojích, a v podkroví opět zazněl oddílový pokřik. Část pokřiku “…kdo nezkazí legraci…” jsme hned potvrdili při první hře – želvičky. Statečný Seky byl prvním lovcem a postupně s přibývajícími lovci ulovil ",
@@ -3751,21 +4120,23 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "229",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/orlicek-hledame-male-nezbedy/",
       "title": "Orlíček – hledáme malé nezbedy",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-09-06T14:12:13.000Z",
       "summary": "",
@@ -3774,21 +4145,23 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "230",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/nabor-novych-talentu/",
       "title": "Nábor nových talentů",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-09-06T14:03:03.000Z",
       "summary": "",
@@ -3797,14 +4170,16 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "6",
@@ -3832,9 +4207,49 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+        "detail_fetched_at": "2026-11-09T09:54:50.533Z"
       },
-      "last_seen_at": "2026-11-09T09:18:32.761Z"
+      "last_seen_at": "2026-11-09T09:54:50.533Z"
+    },
+    {
+      "id": "850",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/08/po-prazdninach-opet-startuji-zajmove-krouzky-v-bonihausu/",
+      "title": "Po prázdninách opět startují zájmové kroužky v Bonihausu",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-08-30T08:37:36.000Z",
+      "summary": "Léto pomalu končí a s ním se blíží i návrat našich oblíbených zájmových kroužků. Po prázdninové pauze se opět můžete těšit na pravidelná setkávání plná pohybu, zábavy a nových zážitků. Cvičísek Rytmísek Pohybový a taneční kroužek pro děti od 3 do 7 let, který děti hravou formou provede světem pohybu, rytmu a tance. Čekají je balanční a pohybové hry",
+      "payload": {
+        "body": [
+          "Léto pomalu končí a s ním se blíží i návrat našich oblíbených zájmových kroužků. Po prázdninové pauze se opět můžete těšit na pravidelná setkávání plná pohybu, zábavy a nových zážitků.",
+          "Cvičísek Rytmísek",
+          "Pohybový a taneční kroužek pro děti od 3 do 7 let, který děti hravou formou provede světem pohybu, rytmu a tance.",
+          "Čekají je balanční a pohybové hry, tanečky na veselé písničky, prvky jógy i jednoduchá dechová cvičení. Děti si při tom procvičí motoriku, koordinaci, správné držení těla i soustředění – a především si užijí spoustu zábavy.",
+          "Každý čtvrtek od 16:30 do 17:30 hod, PRVNÍ HODINA VE ČTVRTEK 17. ZÁŘÍ Bonihaus, Cesta Osvobození 712, Rtyně v Podkrkonoší Kroužek vede Blanka Brojarová",
+          "Capoeira",
+          "Pro děti od 8 let je připraven kroužek brazilského bojového umění capoeira. Nejde jen o bojové umění – capoeira spojuje pohyb, tanec, hudbu, rytmus, hru a týmovou spolupráci.",
+          "Děti si rozvíjejí sílu, obratnost a flexibilitu, učí se disciplíně a respektu a zároveň si užívají pohyb plný energie.",
+          "Každou středu od 17:00 do 18:00 hod, PRVNÍ HODINA VE STŘEDU 16. ZÁŘÍ Bonihaus, Cesta Osvobození 712, Rtyně v Podkrkonoší Kroužek vede Jan May",
+          "Přijďte si kroužky vyzkoušet!",
+          "První hodiny jsou ukázkové, takže si děti mohou přijít nezávazně vyzkoušet, co je čeká.",
+          "Stačí pohodlné oblečení vhodné na pohyb a láhev s pitím.",
+          "Těšíme se na všechny malé i větší účastníky a na společný nový kroužkový rok!",
+          "Článek Po prázdninách opět startují zájmové kroužky v Bonihausu se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
     },
     {
       "id": "7",
@@ -3862,9 +4277,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:18:32.761Z"
+        "detail_fetched_at": "2026-11-09T09:54:50.533Z"
       },
-      "last_seen_at": "2026-11-09T09:18:32.761Z"
+      "last_seen_at": "2026-11-09T09:54:50.533Z"
     },
     {
       "id": "8",
@@ -3894,7 +4309,7 @@
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/nove-skladovaci-zazemi-na-zabarne/",
       "title": "Nové skladovací zázemí na Žabárně",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-08-09T19:02:48.000Z",
       "summary": "Současný sklad našeho oddílového a táborového vybavení, které využíváme při družinových schůzkách, výpravách a táborech, je ve špatném technickém stavu. Proto jsme pořídili dva použité lodní kontejnery, do kterých postupně přesouváme naše vybavení (stany, podsady, kuchyňské zázemí, technické vybavení apod.). Vybavení bude díky novým prostorům lépe ",
@@ -3905,21 +4320,23 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "664",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-12",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-12",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -3930,22 +4347,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "663",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-11",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-11",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -3956,22 +4375,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "662",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-10",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-10",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -3982,22 +4403,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "661",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-09",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-09",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -4008,22 +4431,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "660",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-08",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-08",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -4034,22 +4459,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "659",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-07",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-07",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -4060,22 +4487,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "658",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-06",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-06",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -4086,22 +4515,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "657",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-05",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-05",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -4112,22 +4543,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "656",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/#termin-2026-07-04",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-04",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -4138,22 +4571,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "655",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/08/skautcraft-3-18-7-2026/",
       "title": "Skautcraft (3. – 18. 7. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-07-03",
       "published_at": "2026-08-09T12:33:06.000Z",
       "summary": "Letošní rok se vydal 1. chlapecký oddíl na tábor společně s družinou vlčat z trutnovského střediska Hraničář. Společně jsme se vydali na naše tábořiště do Ruprechtic, kde jsme strávili prvních čtrnáct dní v červenci, tj. od 3. do 18. července 2026. Tábor absolvovalo 27 chlapců z našeho oddílu, 10 kluků Trutnova a 15 vedoucích. První věcí, kterou js",
@@ -4164,21 +4599,23 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "665",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/06/podekovani-za-dar/",
       "title": "Poděkování za dar",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-06-29T07:48:00.000Z",
       "summary": "Chtěli bychom poděkovat firmě Elektro Lelek s.r.o. z Úpice za poskytnutí finančního daru. Finanční dar bude použit na podporu naší činnosti, pořádání akcí, vzdělávání našich vedoucích a nákup vybavení potřebného pro naši práci s dětmi. Velmi si tohoto daru vážíme a moc za něj děkujeme.",
@@ -4189,14 +4626,16 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "29",
@@ -4223,9 +4662,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:55.745Z"
+        "detail_fetched_at": "2026-11-09T09:55:05.950Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "28",
@@ -4252,9 +4691,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:54.029Z"
+        "detail_fetched_at": "2026-11-09T09:55:04.260Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "30",
@@ -4281,16 +4720,16 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-09T09:18:57.679Z"
+        "detail_fetched_at": "2026-11-09T09:55:07.638Z"
       },
-      "last_seen_at": "2026-11-09T09:19:14.941Z"
+      "last_seen_at": "2026-11-09T09:55:09.346Z"
     },
     {
       "id": "667",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/06/zachrana-babicky-30-31-5-2026/#termin-2026-05-31",
       "title": "Záchrana babičky (30. – 31. 5. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-05-31",
       "published_at": "2026-06-02T20:06:06.000Z",
       "summary": "Dne 30. – 31. 5. 2026 se uskutečnila přespávací výprava s názvem Záchrana babičky. Na akci přišlo 22 kluků. Kluci se na začátku dozvěděli, že vědec ing. Pankrác má nemocnou babičku a potřebuje pomoc, aby ji zachránil. Do toho se přimotal i jeho kolega Ignác, který se snažil ukrást indicie na výrobu receptu na lék. Kluci museli v týmech rozluštit in",
@@ -4301,22 +4740,24 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
     },
     {
       "id": "666",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/06/zachrana-babicky-30-31-5-2026/",
       "title": "Záchrana babičky (30. – 31. 5. 2026)",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-05-30",
       "published_at": "2026-06-02T20:06:06.000Z",
       "summary": "Dne 30. – 31. 5. 2026 se uskutečnila přespávací výprava s názvem Záchrana babičky. Na akci přišlo 22 kluků. Kluci se na začátku dozvěděli, že vědec ing. Pankrác má nemocnou babičku a potřebuje pomoc, aby ji zachránil. Do toho se přimotal i jeho kolega Ignác, který se snažil ukrást indicie na výrobu receptu na lék. Kluci museli v týmech rozluštit in",
@@ -4327,21 +4768,61 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
+    },
+    {
+      "id": "851",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/05/pozvanka-na-tanecni-predstaveni-vaiana/",
+      "title": "Pozvánka na Taneční představení VAIANA",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-05-24T20:34:39.000Z",
+      "summary": "Srdečně Vás zveme na Taneční představení VAIANA. Na jevišti vystoupí všechny dětské skupiny východočeské pobočky Contemporary – prostor pro tanec společně s dětmi z TŠ Bonifác. Čeká Vás kouzelný příběh inspirovaný oblíbenou pohádkou, podmanivá hudba i originální projekce v režii Petry Dědkové . Čtvrtek 28. 5. Kino Na Rychtě 17:00 V první části uvid",
+      "payload": {
+        "body": [
+          "Srdečně Vás zveme na Taneční představení VAIANA.",
+          "Na jevišti vystoupí všechny dětské skupiny východočeské pobočky Contemporary – prostor pro tanec společně s dětmi z TŠ Bonifác.",
+          "Čeká Vás kouzelný příběh inspirovaný oblíbenou pohádkou, podmanivá hudba i originální projekce v režii Petry Dědkové .",
+          "Čtvrtek 28. 5. Kino Na Rychtě 17:00",
+          "V první části uvidíte taneční příběh o Vaianě a ve druhé polovině pestré choreografie plné energie a radosti",
+          "Těšíme se na Vás!",
+          "Článek Pozvánka na Taneční představení VAIANA se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.bonifac.eu/wp-content/uploads/2026/05/pozvanka_tanecni_predstaveni_VAIANA-908x1280.jpg"
+          }
+        ],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
     },
     {
       "id": "668",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/05/nabor-novych-clenu-pro-rok-2026-2027-do-3-oddilu-medvedi-havlovice/",
       "title": "Nábor nových členů pro rok 2026/2027 do 3. oddílu Medvědi Havlovice",
-      "category": "Spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-05-18T14:49:08.000Z",
       "summary": "",
@@ -4350,21 +4831,94 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "scouts",
+        "club_name": "Skaut – Permoník",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
-        "source_name": "Skaut – středisko Permoník",
+        "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:15.561Z"
+        "detail_fetched_at": "2026-11-09T09:55:09.983Z"
       },
-      "last_seen_at": "2026-11-09T09:19:15.561Z"
+      "last_seen_at": "2026-11-09T09:55:09.983Z"
+    },
+    {
+      "id": "852",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/05/zapis-do-krouzku/",
+      "title": "Zápis do kroužků",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-05-05T19:14:20.000Z",
+      "summary": "Hledáte pro děti aktivitu, kde se budou hýbat, bavit a zároveň rozvíjet? CVIČÍSEK RYTMÍSEK (3–7 let) pohybové hry tanec a rytmus prvky jógy zábava a radost z pohybu CAPOEIRA (od 8 let) brazilské bojové umění síla, flexibilita a koordinace hudba, rytmus a týmový duch disciplína i spousta zábavy Přijďte s námi objevit svůj rytmus a najít kroužek, kte",
+      "payload": {
+        "body": [
+          "Hledáte pro děti aktivitu, kde se budou hýbat, bavit a zároveň rozvíjet?",
+          "CVIČÍSEK RYTMÍSEK (3–7 let) pohybové hry tanec a rytmus prvky jógy zábava a radost z pohybu",
+          "CAPOEIRA (od 8 let) brazilské bojové umění síla, flexibilita a koordinace hudba, rytmus a týmový duch disciplína i spousta zábavy",
+          "Přijďte s námi objevit svůj rytmus a najít kroužek, který děti bude opravdu bavit",
+          "Článek Zápis do kroužků se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
+    },
+    {
+      "id": "853",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/05/vceli-stezka-s-bonifacem/",
+      "title": "ZRUŠENO: Včelí stezka s Bonifácem",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-05-05T19:09:19.000Z",
+      "summary": "AKTUÁLNĚ: Vážení rodiče, z technických důvodů jsme nuceni plánovanou akci „Včelí stezka“ zrušit. Omlouváme se za vzniklé komplikace a aktuálně hledáme náhradní termín, o kterém vás budeme včas informovat. Děkujeme za pochopení a těšíme se na setkání při náhradním termínu. Už za měsíc se můžete těšit na malou „Včelí stezku s Bonifácem!“ Přijďte s ná",
+      "payload": {
+        "body": [
+          "AKTUÁLNĚ:",
+          "Vážení rodiče,",
+          "z technických důvodů jsme nuceni plánovanou akci „Včelí stezka“ zrušit. Omlouváme se za vzniklé komplikace a aktuálně hledáme náhradní termín, o kterém vás budeme včas informovat.",
+          "Děkujeme za pochopení a těšíme se na setkání při náhradním termínu.",
+          "Už za měsíc se můžete těšit na malou „Včelí stezku s Bonifácem!“",
+          "Přijďte s námi oslavit Den dětí zábavným odpolednem plným malých úkolů, tvoření a odměn pro malé účastníky.",
+          "Pátek 5. června Rtyně v Podkrkonoší",
+          "Podrobnosti akce budeme postupně upřesňovat, tak nás sledujte, ať vám nic neuteče.",
+          "Článek ZRUŠENO: Včelí stezka s Bonifácem se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.bonifac.eu/wp-content/uploads/2026/05/ts_bonifac_vceli_stezka_s_bonifacem_2026-905x1280.png"
+          }
+        ],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
     },
     {
       "id": "231",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/rtynacek-2026/",
       "title": "Rtyňáček 2026",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-05-01T16:23:07.000Z",
       "summary": "",
@@ -4373,21 +4927,60 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
+    },
+    {
+      "id": "854",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/04/fotogalerie-jarni-carovani/",
+      "title": "Fotogalerie Jarní čarování",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2026-04-28T20:16:16.000Z",
+      "summary": "MAKUS OŽIL JARNÍM ČAROVÁNÍM A SETKÁNÍM VŠECH GENERACÍ Sobota 28. března patřila ve rtyňském Makusu všem generacím. Spolky TŠ Bonifác a Contemporary Region zde uspořádaly vydařenou akci s názvem „JARNÍ ČAROVÁNÍ“, která nabídla pestrý téměř celodenní program. Akce začala tvořivými dílničkami. Účastníci si mohli s pomocí floristky Karolíny Volhejnové ",
+      "payload": {
+        "body": [
+          "MAKUS OŽIL JARNÍM ČAROVÁNÍM A SETKÁNÍM VŠECH GENERACÍ",
+          "Sobota 28. března patřila ve rtyňském Makusu všem generacím. Spolky TŠ Bonifác a Contemporary Region zde uspořádaly vydařenou akci s názvem „JARNÍ ČAROVÁNÍ“, která nabídla pestrý téměř celodenní program.",
+          "Akce začala tvořivými dílničkami. Účastníci si mohli s pomocí floristky Karolíny Volhejnové (Květina pro radost Červený Kostelec) vytvořit květinové dekorace z živých květin. Dále se vyráběly velikonoční třpytivé obrázky. Probíhala také dílna pod vedením Ivany Mackové zaměřená na výrobu papírových pestrobarevných květin pro finální scénu připravovaného tanečního představení „VAIANA“, které se uskuteční ve čtvrtek 28. května v kinosále ve Rtyni.",
+          "Bylo milé sledovat, jak rodiče i prarodiče tvoří společně se svými dětmi a vnoučaty. Senioři si s velkým zájmem užili také promítání historických fotografií města Rtyně a jeho proměn.",
+          "Pro zájemce byl zajištěn chutný oběd, podávala se domácí kulajda a řízečky s bramborovou kaší. Následoval krátký odpočinek a zábava při hraní deskových her.",
+          "Skvělé hudební zpestření zajistily žáci ze ZŠ a MŠ Batňovice pod vedením Jitky Bartoníčkové, které vystoupily s pásmem krásných českých písniček za kytarového doprovodu.",
+          "Odpoledne pak patřilo nejmenším dětem a oblíbenému karnevalu v maskách. Tanečky, hry, soutěže i spoustu legrace zajistil skvělý Honza Krejčík, kterého děti znají z TV. Velký úspěch u malých princezen, víl, superhrdinů, pirátů i zvířátek měly balónkové aktivity. Nechyběly ani „mašinky“ projíždějící tunely, do kterých se s nadšením zapojili také rodiče. Připravena byla i bohatá tombola plná drobných i větších dárečků, hraček a dobrot. O ty největší ceny proběhlo závěrečné slosování.",
+          "Byl to skvělý den plný barev, smíchu, radosti a milých setkání, na který budou účastníci ještě dlouho vzpomínat.",
+          "Velké poděkování patří všem dobrovolníkům a partnerům akce, díky nimž se mohla uskutečnit: Městu Rtyně v Podkrkonoší, Královéhradeckému kraji, MŠMT, společnosti Karel KULT-STAVO s.r.o., sdružení Naše Rtyně, společnostem ART Presto s.r.o., N.Y. Quality s.r.o. a Vetim s.r.o.",
+          "Foto: Milan Romančák, archiv TŠ Bonifác",
+          "Článek Fotogalerie Jarní čarování se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
     },
     {
       "id": "236",
       "source_key": "koletovka",
       "external_url": "https://koletovka.cz/uncategorized/predprodej-vstupenek-koletova-rtyne-2026/",
       "title": "Koletova Rtyně se blíží",
-      "category": "Kultura a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-04-10T13:04:00.000Z",
       "summary": "Srdečně Vás zveme na 60. ročník tradičního hudebního festivalu Koletova Rtyně ve Rtyni v Podkrkonoší.",
@@ -4398,21 +4991,68 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "koletovka",
+        "club_name": "Koletova hornická hudba",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+        "detail_fetched_at": "2026-11-09T09:55:12.305Z"
       },
-      "last_seen_at": "2026-11-09T09:19:17.051Z"
+      "last_seen_at": "2026-11-09T09:55:12.305Z"
+    },
+    {
+      "id": "855",
+      "source_key": "bonifac",
+      "external_url": "https://www.bonifac.eu/2026/03/pozvanka-na-jarni-carovani/",
+      "title": "Pozvánka na JARNÍ ČAROVÁNÍ",
+      "category": "Spolky a sport",
+      "event_date": "2026-03-28",
+      "published_at": "2026-03-15T21:12:57.000Z",
+      "summary": "Přijďte s námi přivítat jaro! Srdečně Vás zveme na JARNÍ ČAROVÁNÍ – den plný tvoření, her, hudby, milých setkání i zábava s Honzou Krejčíkem. Čeká vás program pro všechny generace! Sobota 28. března 2026 Makus – Malý kulturní sál ve Rtyni Těšíme se na vás! Článek Pozvánka na JARNÍ ČAROVÁNÍ se nejdříve objevil na TŠ Bonifác, z. s..",
+      "payload": {
+        "body": [
+          "Přijďte s námi přivítat jaro!",
+          "Srdečně Vás zveme na JARNÍ ČAROVÁNÍ – den plný tvoření, her, hudby, milých setkání i zábava s Honzou Krejčíkem. Čeká vás program pro všechny generace!",
+          "Sobota 28. března 2026",
+          "Makus – Malý kulturní sál ve Rtyni",
+          "Těšíme se na vás!",
+          "Článek Pozvánka na JARNÍ ČAROVÁNÍ se nejdříve objevil na TŠ Bonifác, z. s.."
+        ],
+        "days": [],
+        "kind": "event",
+        "images": [
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.bonifac.eu/wp-content/uploads/2026/03/karneval-1280x915.jpg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.bonifac.eu/wp-content/uploads/2026/03/jarni_carovani-1280x915.jpg"
+          },
+          {
+            "alt": "Pozvánka od pořadatele",
+            "url": "https://www.bonifac.eu/wp-content/uploads/2026/03/kvetinova_dilna-1280x915.jpg"
+          }
+        ],
+        "club_key": "bonifac",
+        "club_name": "TŠ Bonifác",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TŠ Bonifác",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:11.881Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:11.881Z"
     },
     {
       "id": "232",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/vyrocni-clenska-schuze/",
       "title": "Výroční členská schůze 2026",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-03-15T20:49:31.000Z",
       "summary": "",
@@ -4421,21 +5061,23 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "237",
       "source_key": "koletovka",
       "external_url": "https://koletovka.cz/uncategorized/maly-jarni-koncert-rtyne-2026/",
       "title": "Malý jarní koncert",
-      "category": "Kultura a spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-03-05",
       "published_at": "2026-02-15T09:46:42.000Z",
       "summary": "Přijďte na Malý jarní koncert do Rtyně! 5.3.2026 od 19:00 zazní orchestrální hudba i oblíbené české melodie. Vstupenky online přes SMSticket.",
@@ -4446,21 +5088,23 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "koletovka",
+        "club_name": "Koletova hornická hudba",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+        "detail_fetched_at": "2026-11-09T09:55:12.305Z"
       },
-      "last_seen_at": "2026-11-09T09:19:17.051Z"
+      "last_seen_at": "2026-11-09T09:55:12.305Z"
     },
     {
       "id": "238",
       "source_key": "koletovka",
       "external_url": "https://koletovka.cz/uncategorized/hudebni-ples-rtyne-2026/",
       "title": "Hudební ples 2026",
-      "category": "Kultura a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2026-01-16T14:47:13.000Z",
       "summary": "Rádi Vás zveme na tradiční Hudební ples, kde se můžete těšit na večer plný hudby, zábavy a nezapomenutelných zážitků v podání Koletovy hornické hudby.",
@@ -4471,21 +5115,23 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "koletovka",
+        "club_name": "Koletova hornická hudba",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+        "detail_fetched_at": "2026-11-09T09:55:12.305Z"
       },
-      "last_seen_at": "2026-11-09T09:19:17.051Z"
+      "last_seen_at": "2026-11-09T09:55:12.305Z"
     },
     {
       "id": "233",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/tanecne-tradicni-ples-17-1-2026/",
       "title": "Tanečně tradiční ples 17.1.2026",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": "2026-01-17",
       "published_at": "2025-11-17T10:00:02.000Z",
       "summary": "Vstupenky jsou již v prodeji od 1.11.2025! 3. Tanečně Tradiční ples už 17. ledna 2026! Hudba: HF Band & Koala Party Band Taneční lekce s Martinem Kubečkem Vstupenky pouze online na Objednat ZDE → Rychlé kontakty Miloslav KrýslTel.: +420 728 481 322Email.: halaorlovna@gmail.com Adresa sportovní haly náměstí Horníků 856Rtyně v Podkrkonoší54233IČ: 711",
@@ -4514,21 +5160,23 @@
             "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/11/IMG_0452.jpeg"
           }
         ],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "239",
       "source_key": "koletovka",
       "external_url": "https://koletovka.cz/uncategorized/prodej-vstupenek-adventni-koncerty-rtyni/",
       "title": "Prodej vstupenek na Adventní koncerty",
-      "category": "Kultura a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2025-10-05T13:44:40.000Z",
       "summary": "Rádi bychom Vás pozvali na naše tradiční Adventní koncerty, na které se se začátkem dalšího školního roku a po prázdninovém odpočinku už plně soustředíme a připravujeme.",
@@ -4539,21 +5187,48 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "koletovka",
+        "club_name": "Koletova hornická hudba",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:17.051Z"
+        "detail_fetched_at": "2026-11-09T09:55:12.305Z"
       },
-      "last_seen_at": "2026-11-09T09:19:17.051Z"
+      "last_seen_at": "2026-11-09T09:55:12.305Z"
+    },
+    {
+      "id": "784",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/uzavreni-muzea2/",
+      "title": "Uzavření muzea - INFO",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2025-08-22T22:00:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
     },
     {
       "id": "234",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/letni-sportovni-primestsky-kemp/",
       "title": "Letní sportovní příměstský kemp",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2025-08-05T13:20:25.000Z",
       "summary": "",
@@ -4562,21 +5237,23 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "694",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/orel-cup-a-koncert-ewy-farne/#termin-2025-12-28",
       "title": "Orel cup a koncert Ewy Farné",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": "2025-12-28",
       "published_at": "2025-08-05T13:10:37.000Z",
       "summary": "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění: Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší b",
@@ -4616,22 +5293,24 @@
             "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0386-400x284.jpeg"
           }
         ],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "693",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/orel-cup-a-koncert-ewy-farne/#termin-2025-12-27",
       "title": "Orel cup a koncert Ewy Farné",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": "2025-12-27",
       "published_at": "2025-08-05T13:10:37.000Z",
       "summary": "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění: Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší b",
@@ -4671,22 +5350,24 @@
             "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0386-400x284.jpeg"
           }
         ],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "692",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/orel-cup-a-koncert-ewy-farne/",
       "title": "Orel cup a koncert Ewy Farné",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": "2025-12-26",
       "published_at": "2025-08-05T13:10:37.000Z",
       "summary": "22. ročník turnaje je minulostí!O putovní pohár se utkalo 16 mužských a 8 ženských týmů. Děkujeme všem zúčastněným a zde je konečné pořadí včetně individuálních ocenění: Muži 🏆🥇 1. místo – Sykyho Sexy Krtečci🥈 2. místo – Pštrosí Marmeláda🥉 3. místo – No Limit🏅 Nejlepší hráč v kanadském bodování: Krteček Sváťa (Sykyho Sexy Krtečci)🧤 Nejlepší b",
@@ -4726,21 +5407,23 @@
             "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/08/IMG_0386-400x284.jpeg"
           }
         ],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "695",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/1-detsky-turnaj-orel-cup-kids-2025/",
       "title": "1.dětský turnaj „Orel cup kids“ 2025",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": "2025-06-14",
       "published_at": "2025-07-05T13:22:05.000Z",
       "summary": "Termín turnaje:14. 6. 2025 Místo konání:Sportovní hala ORLOVNA ve Rtyni v Podkrkonoší (Na náměstí)Hala má speciální litý povrch (gumu) Vedoucí turnaje:Miloslav Krýsl, Tel.: +420728481322, turnaje@fbcorelrtyne.czDaniel Hejna, Tel.: +420735773026 https://kids.orel-cup.cz/ Časový pořad:Zahájení 14. 6. 2025 v 8:00 hod.Ukončení 14. 6. 2025 do 19:00 hod.",
@@ -4755,21 +5438,48 @@
         "days": [],
         "kind": "event",
         "images": [],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
+    },
+    {
+      "id": "829",
+      "source_key": "ballare",
+      "external_url": "https://ballare.cz/zvonice-2025/",
+      "title": "Zvonice 2025",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2025-05-15T14:31:46.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "ballare",
+        "club_name": "TS Ballare",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "TS Ballare",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:10.364Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:10.364Z"
     },
     {
       "id": "696",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/20-let-florbalu-ve-rtyni-v-podkrkonosi/",
       "title": "20 let florbalu ve Rtyni v Podkrkonoší",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2025-05-02T11:07:18.000Z",
       "summary": "",
@@ -4783,21 +5493,23 @@
             "url": "https://www.orelrtyne.cz/wp-content/uploads/2025/05/ucast-reprezentatntu.jpg"
           }
         ],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
     },
     {
       "id": "697",
       "source_key": "orel",
       "external_url": "https://www.orelrtyne.cz/2302-2/",
       "title": "Taneční soutěž „O rtyňskou zvonici“ 2025",
-      "category": "Sport a spolky",
+      "category": "Spolky a sport",
       "event_date": null,
       "published_at": "2025-05-02T10:38:27.000Z",
       "summary": "",
@@ -4806,14 +5518,445 @@
         "days": [],
         "kind": "community",
         "images": [],
+        "club_key": "orel",
+        "club_name": "Orel Rtyně",
         "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-09T09:19:16.085Z"
+        "detail_fetched_at": "2026-11-09T09:55:10.362Z"
       },
-      "last_seen_at": "2026-11-09T09:19:16.085Z"
+      "last_seen_at": "2026-11-09T09:55:10.362Z"
+    },
+    {
+      "id": "785",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/zahajeni-sezony-2025/",
+      "title": "Zahájení sezony 2025",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2025-03-16T09:15:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "786",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/obcerstveni-na-bunkru/",
+      "title": "Občerstvení na bunkru",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2024-06-01T12:30:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "787",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/zahajeni-sezony-2024/",
+      "title": "Zahájení sezony 2024",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2024-03-29T12:17:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "788",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/otviraci-doba/",
+      "title": "Otvírací doba",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2023-07-01T15:53:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "789",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/pf-2023/",
+      "title": "PF 2023",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2022-12-31T14:53:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "790",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/otviraci-doba-v-rijnu/",
+      "title": "Otvírací doba v říjnu",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2022-10-09T07:40:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "791",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/turisticke-magnetky/",
+      "title": "Turistické magnetky",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2022-09-04T10:01:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "792",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/novinky/",
+      "title": "Novinky",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2022-08-31T14:51:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "793",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/uzavreni-bunkru1/",
+      "title": "Uzavření bunkru",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2022-08-17T11:57:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "794",
+      "source_key": "odolov",
+      "external_url": "https://pechotni-srub-t-s-26.webnode.cz/news/historie-vojenskeho-muzea/",
+      "title": "Historie vojenského muzea",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2013-11-02T13:42:00.000Z",
+      "summary": "",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "community",
+        "images": [],
+        "club_key": "odolov",
+        "club_name": "KVH Odolov",
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "KVH Odolov",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:09.754Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:09.754Z"
+    },
+    {
+      "id": "871",
+      "source_key": "volejbal",
+      "external_url": "https://volejbal-rtyne.estranky.cz/clanky/clanky/naklady-na-turnaj-2013.html",
+      "title": "Náklady na turnaj 2013",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2013-03-17T00:00:00.000Z",
+      "summary": "Náklady na turnaj 2013",
+      "payload": {
+        "body": [
+          "Náklady na turnaj 2013",
+          "ROZHODČÍ ·  · ",
+          "Miroslav Mědílek · pořadatel · 2 dny",
+          "Ladislav Ott · 800 Kč · 2 dny",
+          "Kurt Flogel · 200 Kč · 2 zápasy",
+          "Martin Burdych · pořadatel · 1 den",
+          "Václav Anděl · 400 Kč · 1 den",
+          "Miroslav Frýba · 800 Kč · 2 dny",
+          "Pavel Kafka ·  · 1 den",
+          "Miroslav Semerák ·  · 1/2 dne",
+          "Dana Vajsarová · pořadatel · 3 zápasy",
+          "Ludvík Vlach · pořadatel · 2 dny"
+        ],
+        "days": [],
+        "kind": "community",
+        "archive": true,
+        "club_key": "volejbal",
+        "club_name": "TJ Baník – volejbal",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "TJ Baník – volejbal",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.514Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.514Z"
+    },
+    {
+      "id": "872",
+      "source_key": "volejbal",
+      "external_url": "https://volejbal-rtyne.estranky.cz/clanky/clanky/prazdninove-aktivity-2012.html",
+      "title": "Prázdninové aktivity 2012",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2012-09-05T00:00:00.000Z",
+      "summary": "Prázdninové aktivity 2012",
+      "payload": {
+        "body": [
+          "Prázdninové aktivity 2012",
+          "PRÁZDNINOVÉ AKTIVITY VOLEJBALOVÉHO ODDÍLU MLÁDEŽE",
+          "1. KEMPY",
+          "V prvním prázdninovém týdnu se tři naše hráčky zúčastnily volejbalového kempu v České Třebové. Pavlína Fišerová, Martina Hrabová a Silvie Hejzlarová trénovaly pod vedením současných i bývalých špičkových hráčů i trenérů národních výběrů a extraligových družstev /Luboš Vašina, Zdeněk Šmejkal, Jiří Šiller, Peter Goga, Tomáš Zedník, Petr Skála a další/. 14. ročníku kempu v České Třebové se zúčastnilo 120 frekventantů, na kurtech bylo v rámci večerních turnajů odehráno celkem 193 zápasů v různých modifikacích volejbalu (šestky, trojky, nudle, beach…) Věříme, že kemp byl pro dívky přínosem.",
+          "2. BEACH – Ideastav cup 2012",
+          "Ani o prázdninách nezahálela naše beachvolejbalová dvojice Silvie Hejzlarová a Zuzana Vajsarová. Beze strachu z kvalitních soupeřek bojovala děvčata na největším volejbalovém turnaji v ČR - Ideastav cupu 2012 v Praze na Pankráci. Hlavní pořadatel Saša Mráz byl 20. 6. hostem Snídaně s Novou a na Óčku jste mohli shlédnout reportáže a rozhovory účastků turnaje. Hlavní myšlenkou Ideastav cupu je podporovat juniorské hráče a hráčky a umožnit jim, společně s amatérskými hráči, turnajová utkání s profesionály. Už v základní skupině se naše dvojice setkala s finalistkami Mistrovství republiky do 18. a 20. let - Markétou Bendíkovou & Norou Havlínovou. S jedinou porážkou ze skupiny postoupila Silva se Zuzkou z 2. místa do další fáze turnaje. Tam na ně čekala dvojice Hana Třešňáková & Bára Třešňáková /obě sestry jsou v beachvolejbalové reprezentaci a mladší Hana spolu s Barborou Pilátovou obsadila na Mistrovství Evropy do 18. let 4. místo. Tento zápas měl být jednoznačnou záležitostí sester Třešňákových. Naše dvojice však zahrála výborně a nadělila favoritkám 1 set. Tato prohra 1:2 odsunula Zuzku a Sísu o boj o 5. - 6. místo. V tomto zápase si děvčata poradila se sestrami Dostálovými /Magdalena Dostálová - v beachvolejbalové reprezentaci, 1. místo v MČR do 18. let/ a obsadila konečné 5. místo. Dívky si dokázaly, že hrát se dá s každým soupeřem a trochu si spravily chuť z Mistrovství ČR žákyň, kde jim nepřál los. V konečném pořadí za sebou zanechaly i vítězku tohoto turnaje v Chodově Gabrielu Gergelyovou.",
+          "pozice ·  · body",
+          "1. · Markéta Bendíková & Nora Havlínová · 11",
+          "2. · Nikola Vandasová & Alice Suchá · 10",
+          "3. · Lucie Pehalová & Martina Jansová · 9",
+          "4. · Hana Třešňáková & Bára Třešňáková · 8",
+          "5. · Zuzana Vajsarová & Silvie Hejzlarová · 7"
+        ],
+        "days": [],
+        "kind": "community",
+        "archive": true,
+        "club_key": "volejbal",
+        "club_name": "TJ Baník – volejbal",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "TJ Baník – volejbal",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.514Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.514Z"
+    },
+    {
+      "id": "874",
+      "source_key": "volejbal",
+      "external_url": "https://volejbal-rtyne.estranky.cz/clanky/clanky/o-pohar-jestrebich-hor-2010.html",
+      "title": "O pohár Jestřebích hor 2010",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2010-04-23T00:00:00.000Z",
+      "summary": "O pohár Jestřebích hor 2010",
+      "payload": {
+        "body": [
+          "O pohár Jestřebích hor 2010",
+          "O pohár Jestřebích hor",
+          "16. a 17. 4. 2010 jsme uspořádali již 5. ročník volejbalového turnaje starších žákyň O Pohár Jestřebích hor. I přes tragedii, která postihla Polsko, dorazila dvě špičková polská družstva z Lodže a Aleksandrowa. Hráčky uctily památku obětí černou páskou na dresu. Dalším V.I.P. hostem našeho turnaje byl bývalý reprezentační nahrávač a extraligový hráč se zahraničními zkušenostmi z Německa, Rakouska a Slovenska a současný sportovní ředitel VK Prostějov Ing. Peter Goga.",
+          "Vyhověl naší prosbě a pomohl vybrat 12 hráček z českých družstev, sestavil All Star Team, a ten pak vedl v při exhibičním utkání proti výběru Polska. I když Česko těsně prohrálo, byl vidět opravdu kvalitní volejbal. Zástupci VK Prostějov u nás zároveň vedli jednání o přestupu jedné z blokařek do extraligy kadetek. Zájem velkých klubů o naše hráčky je dobrou vizitkou trenérské práce. A pochvala za organizaci a úroveň turnaje od osobností, které se pohybují v těch vyšších volejbalových sférách, potěší dvojnásob. Škoda jen, že stále nemáme důstojné hřiště pro venkovní trénink a větší turnaje musíme pořádat v blízkém okolí.",
+          "Pořadí družstev:",
+          "1. KS Dziewiątka Łódź /Polsko/",
+          "2. UKS Czwórka Aleksandrów Łódzki /Polsko/",
+          "3. TJ Červený Kostelec",
+          "4. VK Prostějov",
+          "5. TJ Baník Rtyně v Podkrkonoší",
+          "6. TJ Sokol Malšovice",
+          "7. TJ Slavia Hradec Králové"
+        ],
+        "days": [],
+        "kind": "community",
+        "archive": true,
+        "club_key": "volejbal",
+        "club_name": "TJ Baník – volejbal",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "TJ Baník – volejbal",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.514Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.514Z"
+    },
+    {
+      "id": "873",
+      "source_key": "volejbal",
+      "external_url": "https://volejbal-rtyne.estranky.cz/clanky/clanky/okresni-pohar-ve-volejbale-a-prehazovane-2009_10.html",
+      "title": "Okresní pohár ve volejbale a přehazované 2009/10",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2010-04-23T00:00:00.000Z",
+      "summary": "Okresní pohár ve volejbale a přehazované 2009/10",
+      "payload": {
+        "body": [
+          "Okresní pohár ve volejbale a přehazované 2009/10",
+          "Okresní volejbalový svaz v Trutnově zorganizoval soutěž ve volejbale a přehazované pro mládež, kterého se zúčastnila i naše družstva žákyň a přípravky.",
+          "Obě soutěže se nám ve čtyřech kolech podařilo vyhrát a přivézt si z Trutnova 2 poháry.",
+          "Celkové pořadí ve volejbale Celkové pořadí v přehazované",
+          "1. místo: TJ Baník Rtyně v P. 1. místo: TJ Baník Rtyně v P.",
+          "2. místo: TJ Bílá Třemešná 2. místo: Loko Trutnov A",
+          "3. místo: Loko Trutnov 3. místo: TJ Červený Kostelec",
+          "4. místo: TJ Červený Kostelec 4. místo: Loko Trutnov B"
+        ],
+        "days": [],
+        "kind": "community",
+        "archive": true,
+        "club_key": "volejbal",
+        "club_name": "TJ Baník – volejbal",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "TJ Baník – volejbal",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.514Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.514Z"
+    },
+    {
+      "id": "875",
+      "source_key": "volejbal",
+      "external_url": "https://volejbal-rtyne.estranky.cz/clanky/clanky/do-zpravodaje.html",
+      "title": "DO ZPRAVODAJE",
+      "category": "Spolky a sport",
+      "event_date": null,
+      "published_at": "2009-11-23T00:00:00.000Z",
+      "summary": "DO ZPRAVODAJE",
+      "payload": {
+        "body": [
+          "DO ZPRAVODAJE",
+          "Volejbal - mládež",
+          "První kolo OKRESNÍ POHÁRU MLÁDEŽE pořádaného Volejbalovým svazem v Trutnově zcela ovládla družstva TJ Baníku Rtyně. Mimořádnou pochvalu si zaslouží naše mladé volejbalové naděje, které zatím bojovaly v přehazované. Pro některé z nich to byly první zápasy a hned všechny vítězné. I družstvo žákyň prošlo volejbalovým turnajem bez jediné porážky. Doufejme, že i další kola poháru v roce 2010 budou pro nás stejně vydařená.",
+          "Volejbal : Přehazovaná:",
+          "1. TJ Baník Rtyně v P. 1. TJ Baník Rtyně v P.",
+          "- přípravka",
+          "2. Loko Trutnov 2. Loko Trutnov A",
+          "3. Bílá Třemešná 3. TJ Červený Kostelec",
+          "4. TJ Červený Kostelec 4. Loko Trutnov B",
+          "Trenéři volejbalové mládeže TJ Baníku Rtyně"
+        ],
+        "days": [],
+        "kind": "community",
+        "archive": true,
+        "club_key": "volejbal",
+        "club_name": "TJ Baník – volejbal",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "TJ Baník – volejbal",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-09T09:55:13.514Z"
+      },
+      "last_seen_at": "2026-11-09T09:55:13.514Z"
     }
   ],
   "posts": [],
@@ -4821,135 +5964,281 @@
   "finances": [],
   "sources": [
     {
+      "source_key": "ballare",
+      "source_url": "https://ballare.cz/feed/",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:10.364Z",
+      "last_success_at": "2026-11-09T09:55:10.364Z",
+      "last_error": null,
+      "item_count": 1,
+      "name": "TS Ballare",
+      "community": true,
+      "news_note": null
+    },
+    {
+      "source_key": "banik",
+      "source_url": "http://www.banikrtyne-fotbal.cz/feed/",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:11.438Z",
+      "last_success_at": "2026-11-09T09:55:11.438Z",
+      "last_error": null,
+      "item_count": 1,
+      "name": "TJ Baník – fotbal",
+      "community": true,
+      "news_note": null
+    },
+    {
+      "source_key": "bonifac",
+      "source_url": "https://www.bonifac.eu/feed/",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:11.881Z",
+      "last_success_at": "2026-11-09T09:55:11.881Z",
+      "last_error": null,
+      "item_count": 10,
+      "name": "TŠ Bonifác",
+      "community": true,
+      "news_note": null
+    },
+    {
       "source_key": "calendar",
       "source_url": "https://www.rtyne.cz/kalendar-udalosti",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:27.591Z",
-      "last_success_at": "2026-11-09T09:19:27.591Z",
+      "checked_at": "2026-11-09T09:55:21.687Z",
+      "last_success_at": "2026-11-09T09:55:21.687Z",
       "last_error": null,
       "item_count": 9,
-      "name": "Kalendář města"
+      "name": "Kalendář města",
+      "community": false,
+      "news_note": null
     },
     {
       "source_key": "city",
       "source_url": "https://www.rtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:14.941Z",
-      "last_success_at": "2026-11-09T09:19:14.941Z",
+      "checked_at": "2026-11-09T09:55:09.346Z",
+      "last_success_at": "2026-11-09T09:55:09.346Z",
       "last_error": null,
       "item_count": 23,
-      "name": "Město Rtyně"
+      "name": "Město Rtyně",
+      "community": false,
+      "news_note": null
     },
     {
       "source_key": "clubs",
       "source_url": "https://www.rtyne.cz/spolky-a-sdruzeni",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:28.266Z",
-      "last_success_at": "2026-11-09T09:19:28.266Z",
+      "checked_at": "2026-11-09T09:55:22.206Z",
+      "last_success_at": "2026-11-09T09:55:22.206Z",
       "last_error": null,
       "item_count": 14,
-      "name": "Spolky a sportovní oddíly"
+      "name": "Spolky a sportovní oddíly",
+      "community": false,
+      "news_note": null
+    },
+    {
+      "source_key": "contemporary",
+      "source_url": "https://contemporary.cz/cs/",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:10.694Z",
+      "last_success_at": "2026-11-09T09:55:10.694Z",
+      "last_error": null,
+      "item_count": 0,
+      "name": "Contemporary Region",
+      "community": true,
+      "news_note": "Zveřejníme pouze datované zprávy týkající se pobočky ve Rtyni."
+    },
+    {
+      "source_key": "florbal",
+      "source_url": "https://www.fbcorelrtyne.cz/",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:13.066Z",
+      "last_success_at": "2026-11-09T09:55:13.066Z",
+      "last_error": null,
+      "item_count": 7,
+      "name": "FBC Orel Rtyně",
+      "community": true,
+      "news_note": null
+    },
+    {
+      "source_key": "garden",
+      "source_url": "https://www.zahradkari.cz/zo/rtyne/",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:09.991Z",
+      "last_success_at": "2026-11-09T09:55:09.991Z",
+      "last_error": null,
+      "item_count": 0,
+      "name": "ČZS Rtyně",
+      "community": true,
+      "news_note": "Místní web nyní obsahuje hlavně historii a kontakty; bez nových datovaných zpráv."
+    },
+    {
+      "source_key": "hasici",
+      "source_url": "https://hasici.rtyne.com/feed/",
+      "status": "error",
+      "checked_at": "2026-11-09T09:55:10.081Z",
+      "last_success_at": null,
+      "last_error": "Error: Ve zdroji nebyly nalezeny zprávy; web může být nedostupný nebo změněný",
+      "item_count": 0,
+      "name": "SDH Rtyně",
+      "community": true,
+      "news_note": null
     },
     {
       "source_key": "koletovka",
       "source_url": "https://koletovka.cz/wp-json/wp/v2/posts?per_page=5",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:17.051Z",
-      "last_success_at": "2026-11-09T09:19:17.051Z",
+      "checked_at": "2026-11-09T09:55:12.305Z",
+      "last_success_at": "2026-11-09T09:55:12.305Z",
       "last_error": null,
       "item_count": 8,
-      "name": "Koletova hornická hudba"
+      "name": "Koletova hornická hudba",
+      "community": true,
+      "news_note": null
     },
     {
       "source_key": "library",
       "source_url": "https://www.mkrtyne.cz/akce.html",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:16.018Z",
-      "last_success_at": "2026-11-09T09:19:16.018Z",
+      "checked_at": "2026-11-09T09:55:11.148Z",
+      "last_success_at": "2026-11-09T09:55:11.148Z",
       "last_error": null,
       "item_count": 15,
-      "name": "Městská knihovna"
+      "name": "Městská knihovna",
+      "community": false,
+      "news_note": null
     },
     {
       "source_key": "museum",
       "source_url": "https://www.muzeumrtyne.cz/akce",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:15.792Z",
-      "last_success_at": "2026-11-09T09:19:15.792Z",
+      "checked_at": "2026-11-09T09:55:10.224Z",
+      "last_success_at": "2026-11-09T09:55:10.224Z",
       "last_error": null,
       "item_count": 1,
-      "name": "Muzeum a infocentrum"
+      "name": "Muzeum a infocentrum",
+      "community": false,
+      "news_note": null
+    },
+    {
+      "source_key": "odolov",
+      "source_url": "https://pechotni-srub-t-s-26.webnode.cz/rss/all.xml",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:09.754Z",
+      "last_success_at": "2026-11-09T09:55:09.754Z",
+      "last_error": null,
+      "item_count": 11,
+      "name": "KVH Odolov",
+      "community": true,
+      "news_note": null
     },
     {
       "source_key": "orel",
       "source_url": "https://www.orelrtyne.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:16.085Z",
-      "last_success_at": "2026-11-09T09:19:16.085Z",
+      "checked_at": "2026-11-09T09:55:10.362Z",
+      "last_success_at": "2026-11-09T09:55:10.362Z",
       "last_error": null,
       "item_count": 12,
-      "name": "Orel Rtyně"
+      "name": "Orel Rtyně",
+      "community": true,
+      "news_note": null
     },
     {
       "source_key": "preschool",
       "source_url": "https://www.msrtyne.cz/aktuality/",
       "status": "ok",
-      "checked_at": "2026-11-09T09:18:32.761Z",
-      "last_success_at": "2026-11-09T09:18:32.761Z",
+      "checked_at": "2026-11-09T09:54:50.533Z",
+      "last_success_at": "2026-11-09T09:54:50.533Z",
       "last_error": null,
       "item_count": 8,
-      "name": "MŠ Rtyně"
+      "name": "MŠ Rtyně",
+      "community": false,
+      "news_note": null
     },
     {
       "source_key": "preschool_menu",
       "source_url": "https://www.msrtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:15.655Z",
-      "last_success_at": "2026-11-09T09:19:15.655Z",
+      "checked_at": "2026-11-09T09:55:10.132Z",
+      "last_success_at": "2026-11-09T09:55:10.132Z",
       "last_error": null,
       "item_count": 1,
-      "name": "Jídelníček MŠ"
+      "name": "Jídelníček MŠ",
+      "community": false,
+      "news_note": null
     },
     {
       "source_key": "school",
       "source_url": "https://www.zsrtyne.cz/pro-verejnost/aktuality",
       "status": "ok",
-      "checked_at": "2026-11-09T09:18:37.931Z",
-      "last_success_at": "2026-11-09T09:18:37.931Z",
+      "checked_at": "2026-11-09T09:54:51.382Z",
+      "last_success_at": "2026-11-09T09:54:51.382Z",
       "last_error": null,
       "item_count": 8,
-      "name": "ZŠ a ZUŠ Rtyně"
+      "name": "ZŠ a ZUŠ Rtyně",
+      "community": false,
+      "news_note": null
     },
     {
       "source_key": "scouts",
       "source_url": "https://skaut-rtyne.skauting.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:15.561Z",
-      "last_success_at": "2026-11-09T09:19:15.561Z",
+      "checked_at": "2026-11-09T09:55:09.983Z",
+      "last_success_at": "2026-11-09T09:55:09.983Z",
       "last_error": null,
       "item_count": 20,
-      "name": "Skaut – středisko Permoník"
+      "name": "Skaut – Permoník",
+      "community": true,
+      "news_note": null
     },
     {
       "source_key": "services",
       "source_url": "https://www.rtyne.cz/svoz-odpadu-a-odpadove-hospodarstvi",
       "status": "ok",
-      "checked_at": "2026-11-09T09:19:39.715Z",
-      "last_success_at": "2026-11-09T09:19:39.715Z",
+      "checked_at": "2026-11-09T09:55:33.070Z",
+      "last_success_at": "2026-11-09T09:55:33.070Z",
       "last_error": null,
       "item_count": 8,
-      "name": "Praktické informace města"
+      "name": "Praktické informace města",
+      "community": false,
+      "news_note": null
+    },
+    {
+      "source_key": "sokol",
+      "source_url": "https://www.sokol.eu/sokolovna/tj-sokol-rtyne-v-podkrkonosi",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:09.862Z",
+      "last_success_at": "2026-11-09T09:55:09.862Z",
+      "last_error": null,
+      "item_count": 0,
+      "name": "T. J. Sokol Rtyně",
+      "community": true,
+      "news_note": "Oficiální adresář obsahuje profil jednoty; datované místní novinky zatím chybí."
+    },
+    {
+      "source_key": "volejbal",
+      "source_url": "https://volejbal-rtyne.estranky.cz/clanky/clanky/",
+      "status": "ok",
+      "checked_at": "2026-11-09T09:55:13.514Z",
+      "last_success_at": "2026-11-09T09:55:13.514Z",
+      "last_error": null,
+      "item_count": 5,
+      "name": "TJ Baník – volejbal",
+      "community": true,
+      "news_note": null
     },
     {
       "source_key": "water",
       "source_url": "https://www.vakrtyne.cz/havarie-a-odstavky",
       "status": "ok",
-      "checked_at": "2026-11-09T09:18:35.078Z",
-      "last_success_at": "2026-11-09T09:18:35.078Z",
+      "checked_at": "2026-11-09T09:54:50.780Z",
+      "last_success_at": "2026-11-09T09:54:50.780Z",
       "last_error": null,
       "item_count": 8,
-      "name": "VAK Rtyně"
+      "name": "VAK Rtyně",
+      "community": false,
+      "news_note": null
     }
   ],
-  "generated_at": "2026-11-09T09:40:30.108Z"
+  "generated_at": "2026-11-09T09:57:00.062Z"
 }
