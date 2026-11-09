@@ -1,5 +1,5 @@
 import './anchors.js?v=20261109-1';
-import {cleanDetailText,renderDetailContent,renderAttachments,organizeDetail} from './details.js?v=20261109-details-4';
+import {cleanDetailText,renderDetailContent,renderAttachments,organizeDetail} from './details.js?v=20261109-landfill-1';
 import {uniqueEvents} from './events.js';
 import {isRestriction,groupRestrictions,upcomingRestrictions,noticeDate} from './notices.js';
 'use strict';

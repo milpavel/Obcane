@@ -3,7 +3,7 @@ import {readFile,writeFile,mkdtemp,rm} from 'node:fs/promises';
 import {stripTypeScriptTypes,createRequire} from 'node:module';
 import {pathToFileURL} from 'node:url';
 import {parseHTML} from 'linkedom';
-import {renderBlocks,renderAttachments,organizeDetail,cleanDetailText,fallbackBlocks} from '../assets/details.js';
+import {renderBlocks,renderAttachments,organizeDetail,cleanDetailText,fallbackBlocks,landfillBlocks,renderDetailContent} from '../assets/details.js';
 const require=createRequire(import.meta.url),tmp=await mkdtemp(new URL('../.details-test-',import.meta.url));
 try{
  let source=await readFile(new URL('../supabase/functions/obcane-api/extra-sources.ts',import.meta.url),'utf8');
@@ -20,5 +20,10 @@ try{
  assert.equal(cleanDetailText('Text složky Skutečný obsah'),'Skutečný obsah');assert.equal(fallbackBlocks(['Dlaždice','Text stránky','Adresa']).length,1);
  const unsafe=document.createElement('div');renderBlocks(unsafe,[{type:'paragraph',text:'<img src=x onerror=alert(1)>',links:[{text:'x',url:'javascript:alert(1)'}]}]);assert.ok(!unsafe.querySelector('img,a'));
  const times=document.createElement('div');renderBlocks(times,[{type:'paragraph',text:'Úterý – pátek 7.30 – 12 30 13 - 16'},{type:'paragraph',text:'Čt, Pá – 7:30 – 12:30'}]);assert.equal(times.querySelector('th').textContent,'Úterý – pátek');assert.ok(times.textContent.includes('7:30 – 12:30 13:00 – 16:00'));assert.equal(times.querySelectorAll('tr').length,2);
- console.log('PASS: semantic import, directory children, exact table cells, ambiguous hours, safe contacts, shared sections and lazy document previews');
+ const opening='Pondělí - 8.00 - 12.00 a 12.30 - 16.30 Úterý - 8.00 - 12.00 a 12.30 - 16.30 Středa - 8.00 - 12.00 a 12.30 - 16.30 Čtvrtek - ZAVŘENO Pátek - ZAVŘENO Sobota - 1. sobota v měsíci (DUBEN - LISTOPAD) - 8.00 - 11.00 Neděle - ZAVŘENO';
+ const contact='JEDNATEL František Pěkný tel. 602 114 718 email: skladka.podhaldou@seznam.cz VEDOUCÍ Michal Pěkný tel. 607 129 131';
+ const landfill=document.createElement('div');renderDetailContent(landfill,{external_url:'https://www.rtyne.cz/skladka-pod-haldou',payload:{blocks:[],sections:[{title:'Otevírací doba',blocks:[{type:'paragraph',text:opening}]},{title:'Kontakty',blocks:[{type:'paragraph',text:contact}]}]}});organizeDetail(landfill);
+ assert.deepEqual([...landfill.querySelectorAll('.hours-table th')].map(n=>n.textContent),['Pondělí','Úterý','Středa','Čtvrtek','Pátek','Sobota','Neděle']);assert.equal(landfill.querySelectorAll('.hours-table tr').length,7);assert.ok(landfill.querySelectorAll('tr')[5].textContent.includes('1. sobota v měsíci (DUBEN - LISTOPAD)'));assert.equal(landfill.querySelectorAll('.detail-contact').length,2);assert.equal(landfill.querySelector('.detail-contact h3').textContent,'František Pěkný');assert.equal(landfill.querySelectorAll('.detail-contact h3')[1].textContent,'Michal Pěkný');assert.ok(landfill.querySelector('a[href="mailto:skladka.podhaldou@seznam.cz"]'));assert.ok(landfill.querySelectorAll('.detail-contact')[1].querySelector('a[href="tel:607129131"]'));assert.equal(landfill.querySelectorAll('.detail-section').length,2);
+ assert.deepEqual(landfillBlocks([{type:'paragraph',text:'Kontaktní informace bez rolí'}],'Kontakty'),[{type:'paragraph',text:'Kontaktní informace bez rolí'}]);
+ console.log('PASS: semantic import, directory children, exact table cells, ambiguous hours, safe contacts, landfill weekdays and contact cards, shared sections and lazy document previews');
 }finally{await rm(tmp,{recursive:true,force:true});}

@@ -23,11 +23,35 @@ function hourRow(text){
  const hours=m[2].replace(/\b(\d{1,2})[.](\d{2})\b/g,'$1:$2').replace(/\b(\d{1,2}) (\d{2})(?=\s|$)/g,'$1:$2').replace(/\b(\d{1,2})\s*[-–]\s*(\d{1,2})(?![:\d])/g,'$1:00 – $2:00');
  return [m[1],hours];
 }
+export function landfillBlocks(blocks=[],title=''){
+ if(/^Otevírací doba$/i.test(title))return blocks.flatMap(b=>{
+  if(b.type!=='paragraph')return [b];
+  const text=cleanDetailText(b.text),days=[...text.matchAll(/(?:^|\s)(Pondělí|Úterý|Středa|Čtvrtek|Pátek|Sobota|Neděle)\s*[-–:]\s*/gi)];
+  if(days.length<2)return [b];
+  const split=days.map((m,i)=>({type:'paragraph',text:m[1]+' '+text.slice(m.index+m[0].length,days[i+1]?.index??text.length).trim()}));
+  return split.every(x=>hourRow(x.text))?split:[b];
+ });
+ if(/^Kontakty$/i.test(title))return blocks.flatMap(b=>{
+  if(b.type!=='paragraph')return [b];
+  const text=cleanDetailText(b.text),roles=[...text.matchAll(/(?:^|\s)(JEDNATEL|VEDOUCÍ)\s+/g)];
+  if(roles.length<2)return [b];
+  const contacts=roles.map((m,i)=>{
+   const part=text.slice(m.index+m[0].length,roles[i+1]?.index??text.length),name=part.match(/^(.+?)\s+tel\.?\s+/i)?.[1],phone=part.match(/tel\.?\s+((?:\+420\s*)?\d{3}\s*\d{3}\s*\d{3})/i)?.[1],email=part.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i)?.[0];
+   return {type:'contact',role:m[1]==='JEDNATEL'?'Jednatel':'Vedoucí',name,phone,...(email?{email}:{})};
+  });
+  return contacts.every(c=>c.name&&c.phone)?contacts:[b];
+ });
+ return blocks;
+}
 export function renderBlocks(target,blocks=[]){
  let hours=null,bullets=null;
  for(const b of blocks){const text=cleanDetailText(b.text);if(junk.test(text))continue;if(b.type==='paragraph'&&/^[*•-]\s+/.test(text)){if(!bullets){bullets=node('ul',null,'detail-list');target.append(bullets);}bullets.append(linkedText(node('li'),text.replace(/^[*•-]\s+/,'')));hours=null;continue;}bullets=null;const row=b.type==='paragraph'?hourRow(text):null;
  if(row){if(!hours){hours=node('table',null,'detail-table hours-table');const caption=node('caption','Přehled hodin');hours.append(caption,node('tbody'));target.append(hours);}const tr=node('tr');tr.append(node('th',row[0]),linkedText(node('td'),row[1]));tr.firstChild.scope='row';hours.lastChild.append(tr);continue;}hours=null;
- if(b.type==='heading'&&text){target.append(node(b.level===2?'h2':'h3',text));}
+ if(b.type==='contact'){
+  const card=node('article',null,'detail-contact');card.append(node('span',b.role,'eyebrow'),node('h3',b.name));
+  card.append(linkedText(node('p'),'Telefon: '+b.phone));if(b.email)card.append(linkedText(node('p'),'E-mail: '+b.email));target.append(card);
+ }
+ else if(b.type==='heading'&&text){target.append(node(b.level===2?'h2':'h3',text));}
  else if(b.type==='table'&&Array.isArray(b.rows)){const wrap=node('div',null,'detail-table-wrap'),table=node('table',null,'detail-table');table.append(node('caption','Přehled údajů'));const tb=node('tbody');for(const values of b.rows){if(!Array.isArray(values))continue;const tr=node('tr');values.forEach((v,i)=>{const cell=linkedText(node(i===0?'th':'td'),v);if(i===0)cell.scope='row';tr.append(cell);});tb.append(tr);}table.append(tb);wrap.append(table);target.append(wrap);}
  else if(b.type==='list'&&Array.isArray(b.items)){
  const items=b.items.map(cleanDetailText).filter(t=>t&&!junk.test(t));
@@ -39,7 +63,9 @@ export function renderBlocks(target,blocks=[]){
  }
 }
 export function renderDetailContent(body,x){const p=x.payload||{};let blocks=Array.isArray(p.blocks)?p.blocks:fallbackBlocks(p.body||[]);blocks=blocks.filter(b=>b.type!=='paragraph'||cleanDetailText(b.text)!==cleanDetailText(x.summary));renderBlocks(body,blocks);
- for(const section of p.sections||[]){body.append(node('h2',section.title));renderBlocks(body,section.blocks);renderAttachments(body,section.attachments);}
+ for(const section of p.sections||[]){body.append(node('h2',section.title));const blocks=x.external_url==='https://www.rtyne.cz/skladka-pod-haldou'?landfillBlocks(section.blocks,section.title):section.blocks;
+  if(blocks?.length&&blocks.every(b=>b.type==='contact')){const grid=node('div',null,'detail-contacts-grid');renderBlocks(grid,blocks);body.append(grid);}else renderBlocks(body,blocks);
+  renderAttachments(body,section.attachments);}
  if(p.service_links?.length){const section=node('details',null,'service-resources');section.append(node('summary','Další informace ke službě'));for(const ref of p.service_links){const href=safeURL(ref.url);if(!href||!/^https?:/.test(href))continue;const a=node('a',ref.title+' ↗','attachment');a.href=href;a.target='_blank';a.rel='noopener noreferrer';section.append(a);}body.append(section);}
  return blocks.length+(p.sections?.length||0);
 }
