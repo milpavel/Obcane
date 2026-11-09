@@ -16,7 +16,7 @@ export function collectionLabel(date,today=isoNow()){
 export function renderCollections(data,today=isoNow()){
  const bio=document.getElementById('waste-bio'),communal=document.getElementById('waste-communal');if(!bio||!communal)return;
  const next=nextCollections(data,today);bio.textContent=next.calendar?collectionLabel(next.bio,today):'Čekáme na nový kalendář';communal.textContent=next.calendar?collectionLabel(next.communal?.start,today):'Čekáme na nový kalendář';
- for(const [id,date] of [['waste-bio-day',next.bio],['waste-communal-day',next.communal?.start]]){const label=document.getElementById(id);if(label)label.textContent=date?new Date(date+'T12:00:00Z').toLocaleDateString('cs-CZ',{weekday:'long'}):'';}
+ for(const [id,date] of [['waste-bio-day',next.bio],['waste-communal-day',next.communal?.start]]){const label=document.getElementById(id);if(label)label.textContent=date?new Date(date+'T12:00:00Z').toLocaleDateString('cs-CZ',{weekday:'long'})+(id==='waste-communal-day'?' od 7:00':''):'';}
 }
 export async function loadCollections(){try{const r=await fetch('/data/waste-calendar.json',{cache:'no-store'});if(!r.ok)throw Error('Calendar');renderCollections(await r.json());}catch{for(const id of ['waste-bio','waste-communal']){const n=document.getElementById(id);if(n)n.textContent='Termín se nepodařilo načíst';}}}
 if(typeof document!=='undefined'&&document.getElementById('waste-bio')){loadCollections();setInterval(loadCollections,15*60*1000);}
