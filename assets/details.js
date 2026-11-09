@@ -24,8 +24,8 @@ function hourRow(text){
  return [m[1],hours];
 }
 export function renderBlocks(target,blocks=[]){
- let hours=null;
- for(const b of blocks){const text=cleanDetailText(b.text);if(junk.test(text))continue;const row=b.type==='paragraph'?hourRow(text):null;
+ let hours=null,bullets=null;
+ for(const b of blocks){const text=cleanDetailText(b.text);if(junk.test(text))continue;if(b.type==='paragraph'&&/^[*•-]\s+/.test(text)){if(!bullets){bullets=node('ul',null,'detail-list');target.append(bullets);}bullets.append(linkedText(node('li'),text.replace(/^[*•-]\s+/,'')));hours=null;continue;}bullets=null;const row=b.type==='paragraph'?hourRow(text):null;
  if(row){if(!hours){hours=node('table',null,'detail-table hours-table');const caption=node('caption','Přehled hodin');hours.append(caption,node('tbody'));target.append(hours);}const tr=node('tr');tr.append(node('th',row[0]),linkedText(node('td'),row[1]));tr.firstChild.scope='row';hours.lastChild.append(tr);continue;}hours=null;
  if(b.type==='heading'&&text){target.append(node(b.level===2?'h2':'h3',text));}
  else if(b.type==='table'&&Array.isArray(b.rows)){const wrap=node('div',null,'detail-table-wrap'),table=node('table',null,'detail-table');table.append(node('caption','Přehled údajů'));const tb=node('tbody');for(const values of b.rows){if(!Array.isArray(values))continue;const tr=node('tr');values.forEach((v,i)=>{const cell=linkedText(node(i===0?'th':'td'),v);if(i===0)cell.scope='row';tr.append(cell);});tb.append(tr);}table.append(tb);wrap.append(table);target.append(wrap);}

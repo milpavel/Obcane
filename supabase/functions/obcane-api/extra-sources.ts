@@ -33,8 +33,8 @@ export function contentBlocks(root:any,base:string){
   if(/^MUDr\.|^LÉKÁRNA /i.test(value)&&value.length<85){if(provider===value)continue;provider=value;seen.clear();add({type:'heading',level:2,text:value});continue;}
   if(/^H[234]$/.test(n.tagName)||/^(?:Ordinační hodiny|Otevírací doba|Pracovní doba|Smluvní pojišťovny|Kontakt|Adresa|Bankovní spojení)$/i.test(value)){add({type:'heading',level:n.tagName==='H2'?2:3,text:value});continue;}
   // Preserve line breaks used for addresses and opening hours.
-  const c=n.cloneNode(true);c.querySelectorAll('br').forEach((br:any)=>br.replaceWith('\n'));
-  const lines=c.textContent.split('\n').map(cleanContent).filter(Boolean);
+  const c=n.cloneNode(true);c.querySelectorAll('br').forEach((br:any)=>br.replaceWith('__CONTENT_BREAK__'));
+  const lines=c.textContent.split('__CONTENT_BREAK__').map(cleanContent).filter(Boolean);
   for(let line of lines){
    line=line.replace(/\s*-\s*ve vyhledávačích.*$/i,'');
    if(/^Zubní ordinace$/i.test(line))continue;

@@ -1,4 +1,4 @@
-import {cleanDetailText,renderDetailContent,renderAttachments,organizeDetail} from './details.js?v=20261109-details-3';
+import {cleanDetailText,renderDetailContent,renderAttachments,organizeDetail} from './details.js?v=20261109-details-4';
 import {uniqueEvents} from './events.js';
 import {isRestriction,groupRestrictions,upcomingRestrictions,noticeDate} from './notices.js';
 'use strict';
