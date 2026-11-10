@@ -227,7 +227,7 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
  .daily-overview .holiday-symbol{width:32px;height:32px}
  .daily-overview .public-holiday-name{font-size:12px;line-height:1.5}
  .daily-overview .daily-grid .daily-waste>.eyebrow{min-height:0;margin:0 0 16px}
- .daily-overview .waste-dates{gap:0}
+ .daily-overview .daily-waste .waste-dates{grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
  .daily-overview .waste-date.bio,.daily-overview .waste-date.communal{grid-template-columns:32px minmax(0,1fr);grid-template-rows:auto;gap:8px;max-width:none;padding-right:10px}
  .daily-overview .waste-date.communal{padding-left:14px;padding-right:0;border-left:1px solid #e1daea}
  .daily-overview .waste-symbol{width:32px;height:32px}
