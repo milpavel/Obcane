@@ -21,6 +21,11 @@ for x in d['items']:
  assert x['event_date'] is None or re.fullmatch(r'20\d\d-\d\d-\d\d',x['event_date']), x['event_date']
  assert isinstance(x['payload'].get('body',[]),list)
  assert not any('<script' in t.lower() for t in x['payload'].get('body',[]))
+ p=x['payload']
+ if p.get('in_latest') is not False and p.get('kind')!='club' and not p.get('detail_error'):
+  assert any(p.get(k) for k in ('body','blocks','images','attachments','sections','days','preschool_days')), 'Empty published detail: '+x['title']
+ if p.get('source_empty'):
+  assert p.get('in_latest') is False, 'Empty source placeholder must not appear among current news'
 menus=[x for x in d['items'] if x['payload'].get('days')]
 assert menus, 'School menu missing'
 for x in menus:

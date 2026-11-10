@@ -2,6 +2,7 @@ import {handleSuggestions} from './suggestions.ts';
 import {communitySources} from './community-sources.ts';
 import {dailyInfo} from './daily.ts';
 import {transportInfo} from './transport.mjs';
+import {municipalPDF,validDocumentId} from './documents.mjs';
 import postgres from 'npm:postgres@3.4.7';
 import { extraSources, extractExtra, assets, contentBlocks, cleanContent } from './extra-sources.ts';
 import { parseHTML } from 'npm:linkedom@0.18.12';
@@ -130,6 +131,12 @@ Deno.serve(async(req:Request)=>{
  try {
   const suggestionResult=await handleSuggestions(req,{sql,response,secret:Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!,canManage:canManageSuggestions});if(suggestionResult)return suggestionResult;
   if(req.method==='GET') {
+   const documentId=new URL(req.url).searchParams.get('document');
+   if(documentId!==null){
+    if(!validDocumentId(documentId))return municipalPDF(documentId,false);
+    const approved=await sql`select 1 from obcane.items where payload::text like ${'%"https://www.rtyne.cz/file/'+documentId+'"%'} limit 1`;
+    return municipalPDF(documentId,approved.length>0);
+   }
    if(new URL(req.url).searchParams.get('transport')==='1'){
     const result=await transportInfo(new URL(req.url).searchParams);
     return response(result,result.error?400:200);

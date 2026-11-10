@@ -1,6 +1,6 @@
 import {fetchPracticalInfo,mergePracticalInfo,renderPracticalExtras} from './practical-info.js?v=20261110-local-services-1';
 import './anchors.js?v=20261109-doctors-2';
-import {cleanDetailText,renderDetailContent,renderAttachments,organizeDetail} from './details.js?v=20261109-education-1';
+import {cleanDetailText,renderDetailContent,renderAttachments,organizeDetail} from './details.js?v=20261110-pdf-preview-1';
 import {uniqueEvents} from './events.js?v=20261110-smsticket-1';
 import {isRestriction,groupRestrictions,upcomingRestrictions,noticeDate} from './notices.js';
 'use strict';

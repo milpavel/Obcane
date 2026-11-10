@@ -53,6 +53,7 @@ export function contentBlocks(root:any,base:string){
  }return out.slice(0,220);
 }
 export const serviceDescriptions:Record<string,string>={
+ 'zpravodaj':'Nezávislý zpravodaj města: poslední vydání v PDF, informace o tištěné verzi a odkaz na celý archiv.',
  'pohrebnictvi':'Hřbitov a urnový háj: kontakty, pronájem hrobových míst, ceník hřbitovních služeb a dokumenty ke stažení.',
  'pecovatelska-sluzba':'Pomoc v domácnosti, osobní péče a podpora soběstačnosti. Kontakty, jak požádat o službu a potřebné dokumenty.',
  'lekarske-sluzby-1':'Praktičtí lékaři, dětská a zubní ordinace i lékárna. Kontakty a přehled ordinačních hodin.',
@@ -83,18 +84,42 @@ export function correctHartmanova(blocks:any[],rows:any[]|null){
   {type:'paragraph',text:'Zdroj ordinačních hodin: web MUDr. Naděždy Hartmanové.',links:[{text:'Web ordinace – aktuální ordinační hodiny',url:hartmanovaURL}]});
  return [...blocks.slice(0,start),...section,...blocks.slice(end)];
 }
+export function correctDoctorLists(blocks:any[],name:string,doc:any,url:string){
+ const start=blocks.findIndex(b=>b.type==='heading'&&b.text===name);if(start<0)return blocks;
+ let end=blocks.findIndex((b,i)=>i>start&&b.type==='heading'&&b.level===2);if(end<0)end=blocks.length;
+ const section=blocks.slice(start,end);
+ for(const label of ['Smluvní pojišťovny','Kontakt']){
+  const at=section.findIndex(b=>b.type==='heading'&&b.text===label);if(at<0)continue;
+  let stop=section.findIndex((b,i)=>i>at&&b.type==='heading');if(stop<0)stop=section.length;
+  const heading=Array.from(doc?.querySelectorAll('h2')||[]).find((h:any)=>cleanContent(h.textContent)===label) as any;
+  const list=heading?.nextElementSibling;const items=list?.tagName==='UL'?Array.from(list.querySelectorAll('li')).map((n:any)=>cleanContent(n.textContent).replace('zravotní','zdravotní')):[];
+  section.splice(at+1,stop-at-1,...(items.length?[{type:'list',items,ordered:false}]:[{type:'paragraph',text:label==='Kontakt'?'Aktuální kontakt ověřte na webu ordinace.':'Aktuální smluvní pojišťovny ověřte na webu ordinace.'}]),{type:'paragraph',text:'Zdroj: web ordinace.',links:[{text:'Aktuální údaje ordinace',url}]});
+ }
+ return [...blocks.slice(0,start),...section,...blocks.slice(end)];
+}
+export function flagPharmacyConflict(blocks:any[]){
+ const start=blocks.findIndex(b=>b.type==='heading'&&/^LÉKÁRNA CLARA$/i.test(b.text));if(start<0)return blocks;
+ let end=blocks.findIndex((b,i)=>i>start&&b.type==='heading'&&b.level===2);if(end<0)end=blocks.length;
+ const section=blocks.slice(start,end).filter(b=>!(b.type==='paragraph'&&/^(Pondělí|Úterý)/.test(b.text)));
+ section.push({type:'paragraph',text:'Otevírací doba není mezi zdroji jednotná. Městský web a registr České lékárnické komory uvádějí rozdílnou polední přestávku i pondělní zavírací dobu; jiné přehledy se liší také u středečního odpoledne. Před návštěvou si prosím provoz potvrďte na 499 888 142.',links:[{text:'Údaje České lékárnické komory',url:'https://lekarnici.cz/lekarna/clara-namesti-horniku-460-rtyne-v-podkrkonosi/'},{text:'Údaje města',url:'https://www.rtyne.cz/lekarske-sluzby-1'}]});
+ return [...blocks.slice(0,start),...section,...blocks.slice(end)];
+}
 export async function serviceDetail(doc:any,url:string,page:any,clean:any){
  const root=doc.querySelector('article.article');if(!root)throw Error('Chybí obsah služby');
  let blocks=contentBlocks(root.querySelector('.article__body')||root,url);const found=assets(root,url),sections:any[]=[],links:any[]=[],childErrors:any[]=[];
  let hoursSource:any=null;
  if(new URL(url).pathname==='/lekarske-sluzby-1'){
-  let rows=null;try{rows=hartmanovaHours(await page(hartmanovaURL));}catch{/* Never restore the conflicting city timetable. */}
+  let rows=null,doctorDoc=null;try{doctorDoc=await page(hartmanovaURL);rows=hartmanovaHours(doctorDoc);}catch{/* Never restore the conflicting city timetable. */}
   blocks=correctHartmanova(blocks,rows);hoursSource={url:hartmanovaURL,status:rows?'ok':'unavailable',checked_at:new Date().toISOString()};
+  blocks=correctDoctorLists(blocks,'MUDr. Naděžda Hartmanová',doctorDoc,hartmanovaURL);
+  let adultDoc=null;const adultURL='https://www.doktor-rtyne.cz/jan-hartman';try{adultDoc=await page(adultURL);}catch{}
+  blocks=correctDoctorLists(blocks,'MUDr. Jan Hartman',adultDoc,adultURL);
+  blocks=flagPharmacyConflict(blocks);
  }
  const children=Array.from(root.querySelectorAll('.tile__link,.document__link')) as any[];
  for(const a of children){const target=new URL(a.getAttribute('href'),url);if(target.hostname!==new URL(url).hostname||!['http:','https:'].includes(target.protocol))continue;const title=clean(a.textContent);links.push({title,url:target.href});
   // Follow information and document pages, not unrelated news archives.
-  if(sections.length>=20||/^(Akce|Výroční zprávy|Aktuální informace)/i.test(title))continue;
+  if(sections.length>=(new URL(url).pathname==='/zpravodaj'?6:20)||/^(Akce|Výroční zprávy|Aktuální informace)/i.test(title))continue;
   await pause(1100);
   try{const d=await page(target.href),r=d.querySelector('article.article'),b=contentBlocks(r?.querySelector('.article__body'),target.href),f=assets(r,target.href);
    // The waste forms page is a signpost to the actual electronic form directory.
@@ -107,7 +132,22 @@ export async function serviceDetail(doc:any,url:string,page:any,clean:any){
    if(b.length||f.attachments.length)sections.push({title,blocks:b,attachments:f.attachments});}catch(e){childErrors.push({title,url:target.href,error:String(e).slice(0,160)});}
  }
  if(!blocks.length&&!sections.length&&!found.attachments.length&&!found.images.length)throw Error('Chybí text, dokumenty i podrobnosti služby');
+ if(new URL(url).pathname==='/zpravodaj')blocks.push({type:'paragraph',text:'Starší vydání najdete v úplném archivu města.',links:[{text:'Celý archiv zpravodaje',url}]});
  return {blocks,sections,service_links:links.slice(0,25),service_child_errors:childErrors,content_version:3,...(hoursSource?{hours_source_hartmanova:hoursSource}:{}),...found};
+}
+export function communityDetail(doc:any,url:string,clean:any){
+ const main=doc.querySelector('.entry-content,.et_pb_post_content,.colMain .contBlock .wsw')||doc.querySelector('.et_pb_post_title');
+ if(!main)throw Error('Chybí obsah spolkové zprávy');
+ const copy=main.cloneNode(true);copy.querySelectorAll('nav,header,footer,.et_pb_menu,.et_pb_fullwidth_menu,.et_pb_sidebar,.post-meta,.et-l--footer,.et-l--header').forEach((n:any)=>n.remove());
+ const body=richText(copy,clean),blocks=contentBlocks(copy,url),found=assets(copy,url);
+ // A WordPress post can consist only of its featured invitation, outside entry-content.
+ for(const featured of Array.from(doc.querySelectorAll('article .featured-media,article .et_post_meta_wrapper,.et_pb_post_title .et_pb_title_featured_container')) as any[])found.images.push(...assets(featured,url).images);
+ found.images=[...new Map(found.images.map((im:any)=>[im.url,im])).values()].slice(0,8);
+ if(!body.length&&!blocks.length&&!found.images.length&&!found.attachments.length){
+  if(main.matches('.colMain .contBlock .wsw')&&/^\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}$/.test(clean(copy.textContent)))return {body,blocks,...found,source_empty:true,in_latest:false};
+  throw Error('Spolková zpráva neobsahuje text ani pozvánku');
+ }
+ return {body,blocks,...found};
 }
 export function richText(root:any,clean:any):string[]{
  if(!root)return [];
@@ -179,9 +219,10 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
    else{title=x.querySelector('title')?.textContent;link=x.querySelector('link')?.textContent;content=Array.from(x.children).find((c:any)=>c.tagName==='content:encoded')?.textContent||x.querySelector('description')?.textContent;const d=new Date(x.querySelector('pubDate')?.textContent||'');published=Number.isFinite(d.getTime())?d.toISOString():null;}
    if(!content)content=x.querySelector?.('description')?.textContent||'';
    const d=parseHTML('<article>'+String(content||'')+'</article>').document;d.querySelectorAll('script,style,nav,footer,form').forEach((n:any)=>n.remove());const root=d.querySelector('article'),body=richText(root,clean),heading=parseHTML('<b>'+String(title||'')+'</b>').document.querySelector('b');
+   if(!body.length&&!root.children.length&&clean(root.textContent))body.push(clean(root.textContent));
    if(!title||!link)continue;
    const dates=communityDates(text(heading),body.join(' '),eventDate),item:any={title:text(heading),url:canonicalSourceURL(safeURL(link,s.url)),body,summary:body.join(' ').slice(0,350),published,event:dates[0]||null,detail_ok:true,extra:{kind:dates.length?'event':'community',blocks:contentBlocks(root,s.url),...assets(root,s.url)}};
-   if(!body.length&&out.length<6)try{const detail=await page(item.url,s.url),main=detail.querySelector('.entry-content,#main-content,main article,article');if(main){const copy=main.cloneNode(true);copy.querySelectorAll('nav,header,footer,.et_pb_menu,.et_pb_fullwidth_menu,.et_pb_sidebar,.post-meta').forEach((n:any)=>n.remove());item.body=richText(copy,clean);item.summary=item.body.join(' ').slice(0,350)||item.summary;item.extra={...item.extra,blocks:contentBlocks(copy,item.url),...assets(copy,item.url)};}}catch{}
+   if(!body.length&&!item.extra.images.length&&!item.extra.attachments.length)try{await pause(1100);const detail=communityDetail(await page(item.url,s.url),item.url,clean);item.body=detail.body;item.summary=item.body.join(' ').slice(0,350)||item.summary;item.extra={...item.extra,...detail};delete item.extra.body;}catch(e){item.detail_error=String(e).slice(0,160);item.detail_ok=false;}
    if(dates.some(date=>date>=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Prague'}))){
     const detailLink=Array.from(root.querySelectorAll('a[href]')).find((a:any)=>/informace|podrobnosti/i.test(body.join(' '))&&a.getAttribute('href')&&!/\.(jpg|png|pdf)/i.test(a.getAttribute('href')));
     if(detailLink)try{const url=safeURL((detailLink as any).getAttribute('href'),s.url),detail=await page(url,s.url),main=detail.querySelector('.entry-content,main article,main')||detail.body;const more=richText(main,clean);if(more.length){item.body=[...new Set([...body,...more])];item.summary=more.join(' ').slice(0,350);item.extra={...item.extra,blocks:contentBlocks(main,url),...assets(main,url),event_sources:[{title:'Podrobnosti od pořadatele',url}]};}}catch{/* RSS invitation remains usable. */}
@@ -245,7 +286,7 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
   const sport=await page('https://www.rtyne.cz/sportovni-organizace');
   const seen=new Set();for(const d of [doc,sport])for(const a of Array.from(d.querySelectorAll('.tile__link')) as any[]){const title=text(a),href=new URL(a.getAttribute('href'),s.url).href;if(seen.has(href)||!/^https?:/.test(href))continue;seen.add(href);out.push({title,url:s.url+'#'+slug(title),summary:'Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.',body:[],detail_ok:true,...clubProfile(title,href),extra:{kind:'club',website:href,directory_source:s.url,in_latest:true,...clubProfile(title,href).extra,news_source_key:communitySources.find(c=>c.profile===title)?.key||null}});}
  }else if(s.key==='services'){
-  const paths=['svoz-odpadu-a-odpadove-hospodarstvi','svozovy-kalendar-'+new Date().getUTCFullYear(),'skladka-pod-haldou','kontakt','lekarske-sluzby-1','doprava-senioru-senior-taxi','informace-k-uhradam-mistnich-poplatku-v-roce-'+new Date().getUTCFullYear(),'pecovatelska-sluzba','pohrebnictvi'];
+  const paths=['svoz-odpadu-a-odpadove-hospodarstvi','svozovy-kalendar-'+new Date().getUTCFullYear(),'skladka-pod-haldou','kontakt','lekarske-sluzby-1','doprava-senioru-senior-taxi','informace-k-uhradam-mistnich-poplatku-v-roce-'+new Date().getUTCFullYear(),'pecovatelska-sluzba','pohrebnictvi','zpravodaj'];
   for(const path of paths){await pause(1100);const url='https://www.rtyne.cz/'+path;try{const d=url===s.url?doc:await page(url),root=d.querySelector('article.article');const title=text(d.querySelector('h1.article__heading'));if(!title)throw Error('Chybí název služby');const detail=await serviceDetail(d,url,page,clean),body=path==='lekarske-sluzby-1'?detail.blocks.flatMap((b:any)=>b.type==='table'?b.rows.map((r:any)=>r.join(' · ')):b.type==='list'?b.items:[b.text]).filter(Boolean):richText(root.querySelector('.article__text'),clean);out.push({title,url,summary:serviceDescriptions[path]||cleanContent(text(d.querySelector('.article__perex')))||body[0]?.slice(0,240)||'Informace a dokumenty k této službě.',body,detail_ok:true,extra:{kind:'service',...detail}});}catch(e){out.push({title:path.replaceAll('-',' '),url,body:[],detail_error:String(e).slice(0,160),extra:{kind:'service'}});}}
  }else if(s.key==='museum'){
   const root=doc.querySelector('.articlesBlock .text')||doc.querySelector('main article')||doc.querySelector('main');if(!root)throw Error('Chybí obsah muzea');

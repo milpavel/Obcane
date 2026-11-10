@@ -45,7 +45,11 @@ Zachovat původní logo a barvy #39118b, #008d9a, #ec1763. Převzaté informace 
 
 Spolkový přehled odděluje adresář organizací z webu města od automatických aktualit skautů, Orla a Koletovky. Samostatné profily obsahují původní web. Zprávy dostupné pouze na uzavřených sociálních sítích se nevydávají za automaticky importované.
 
-Praktické služby obsahují odpady a svozový kalendář, sběrný dvůr, městský úřad, lékařské služby, dopravu seniorů, místní poplatky, pečovatelskou službu a muzeum. U každého přehledu je poslední čas načtení. PDF přílohy města lze zobrazit přímo v detailu. Údaje o elektřině a dopravě pocházejí z oznámení města; nejde o přímý dispečink dodavatelů.
+Praktické služby obsahují odpady a svozový kalendář, sběrný dvůr, městský úřad, lékařské služby, dopravu seniorů, místní poplatky, pečovatelskou službu, městský zpravodaj a muzeum. U každého přehledu je poslední čas načtení. PDF přílohy města lze zobrazit přímo v detailu. Zpravodaj načítá šest nejnovějších vydání z první stránky městského archivu a odkazuje na celý archiv. Údaje o elektřině a dopravě pocházejí z oznámení města; nejde o přímý dispečink dodavatelů.
+
+Audit 10. 11. 2026: spolkové RSS zachovává i prostý text a obrázkové pozvánky mimo hlavní text článku (WordPress a Divi). Ověřené prázdné archivní stránky Webnode se nezobrazují mezi aktuálními zprávami. Smluvní pojišťovny a kontakty obou ordinací Hartmanových se přebírají z webu ordinací; při nedostupnosti se nevrací zastaralý seznam města. U lékárny Clara detail upozorňuje na rozpor otevíracích hodin, místo aby uváděl jednu variantu jako potvrzenou. Podrobný rozsah a omezení kontroly: `docs/audit-2026-11-10.md`.
+
+Městské PDF se pro náhled otevírá přes `GET obcane-api?document=ID`, protože přímé vložení původního serveru je blokováno. Endpoint dovolí jen číselné ID veřejného souboru již odkazovaného v importovaných datech, nepřijímá vlastní URL, kontroluje PDF signaturu a omezuje velikost na 20 MB. Původní odkaz ke stažení se nemění.
 
 ## Sloučení odstávek a omezení
 

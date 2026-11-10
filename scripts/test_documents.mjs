@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {municipalPDF,MAX_PDF_BYTES} from '../supabase/functions/obcane-api/documents.mjs';
+import {documentPreviewURL} from '../assets/details.js';
+let calls=0;
+const fetcher=async url=>{calls++;assert.equal(url,'https://www.rtyne.cz/file/4605876');return new Response('%PDF-1.7\npublic document',{headers:{'X-Frame-Options':'DENY'}});};
+for(const id of ['https://example.com/','../123','123?x=1','1234567890123',''])assert.equal((await municipalPDF(id,true,fetcher)).status,400);
+assert.equal((await municipalPDF('4605876',false,fetcher)).status,404);assert.equal(calls,0);
+const result=await municipalPDF('4605876',true,fetcher);assert.equal(result.status,200);assert.equal(result.headers.get('Content-Type'),'application/pdf');assert.equal(result.headers.get('X-Frame-Options'),null);assert.equal(result.headers.get('X-Content-Type-Options'),'nosniff');assert.ok((await result.text()).startsWith('%PDF-'));
+assert.equal((await municipalPDF('4605876',true,async()=>new Response('<html>Service unavailable</html>'))).status,415);
+assert.equal((await municipalPDF('4605876',true,async()=>new Response('x',{status:503}))).status,502);
+assert.equal((await municipalPDF('4605876',true,async()=>{throw Error('network');})).status,502);
+assert.equal((await municipalPDF('4605876',true,async()=>new Response('x',{headers:{'Content-Length':String(MAX_PDF_BYTES+1)}}))).status,413);
+assert.equal((await municipalPDF('4605876',true,async()=>new Response(new ReadableStream({start(c){c.enqueue(new Uint8Array(MAX_PDF_BYTES));c.enqueue(new Uint8Array(1));c.close();}})))).status,413);
+assert.equal(documentPreviewURL('https://www.rtyne.cz/file/4605876'),'https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api?document=4605876');
+assert.equal(documentPreviewURL('/documents/local.pdf'),'/documents/local.pdf');assert.equal(documentPreviewURL('https://evil.example/file/4605876'),'https://evil.example/file/4605876');
+console.log('PASS: approved municipal PDF preview, fixed host, ID validation, byte integrity, file size limits and source failures');
