@@ -27,8 +27,13 @@ export function contentBlocks(root:any,base:string){
  const out:any[]=[],seen=new Set<string>();let provider='';
  const text=(n:any)=>String(n?.textContent||'').replace(/\s+/g,' ').trim();
  function add(b:any){const key=JSON.stringify(b);if(!seen.has(key)){out.push(b);seen.add(key);}}
- for(const n of Array.from(copy.querySelectorAll('h2,h3,h4,p,ul,ol,table,address,iframe')) as any[]){
+ for(const n of Array.from(copy.querySelectorAll('h2,h3,h4,p,ul,ol,table,address,iframe,a[href]')) as any[]){
   if(n.closest('td,th')||n.closest('li')&&!['UL','OL'].includes(n.tagName)||n.parentElement?.closest('ul,ol')&&!['UL','OL'].includes(n.tagName)||n.tagName!=='TABLE'&&n.closest('table'))continue;
+  if(n.tagName==='A'){
+   if(!n.closest('.text-component')||n.closest('p,li,table,h2,h3,h4,address'))continue;
+   try{const u=new URL(n.getAttribute('href'),base),label=text(n);if(label&&['https:','http:','mailto:','tel:'].includes(u.protocol)&&!u.username&&!u.password)add({type:'paragraph',text:label,links:[{text:label,url:u.href}]});}catch{}
+   continue;
+  }
   if(n.tagName==='IFRAME'){try{const u=new URL(n.getAttribute('src'),base);if(u.protocol==='https:'&&['www.youtube.com','www.youtube-nocookie.com'].includes(u.hostname))add({type:'paragraph',text:'Video k tématu',links:[{text:'Přehrát video',url:u.href}]});}catch{}continue;}
   if(n.tagName==='TABLE'){const rows=Array.from(n.querySelectorAll('tr')).map((r:any)=>Array.from(r.querySelectorAll('th,td')).map(text));if(rows.length)add({type:'table',rows});continue;}
   if(['UL','OL'].includes(n.tagName)){if(n.querySelector('ul,ol'))continue;const items=Array.from(n.children).filter((x:any)=>x.tagName==='LI').map(text).filter(Boolean);if(items.length)add({type:'list',items,ordered:n.tagName==='OL'});continue;}
@@ -80,7 +85,7 @@ export function correctHartmanova(blocks:any[],rows:any[]|null){
 }
 export async function serviceDetail(doc:any,url:string,page:any,clean:any){
  const root=doc.querySelector('article.article');if(!root)throw Error('Chybí obsah služby');
- let blocks=contentBlocks(root.querySelector('.article__body')||root,url);const found=assets(root,url),sections:any[]=[],links:any[]=[];
+ let blocks=contentBlocks(root.querySelector('.article__body')||root,url);const found=assets(root,url),sections:any[]=[],links:any[]=[],childErrors:any[]=[];
  let hoursSource:any=null;
  if(new URL(url).pathname==='/lekarske-sluzby-1'){
   let rows=null;try{rows=hartmanovaHours(await page(hartmanovaURL));}catch{/* Never restore the conflicting city timetable. */}
@@ -89,10 +94,20 @@ export async function serviceDetail(doc:any,url:string,page:any,clean:any){
  const children=Array.from(root.querySelectorAll('.tile__link,.document__link')) as any[];
  for(const a of children){const target=new URL(a.getAttribute('href'),url);if(target.hostname!==new URL(url).hostname||!['http:','https:'].includes(target.protocol))continue;const title=clean(a.textContent);links.push({title,url:target.href});
   // Follow information and document pages, not unrelated news archives.
-  if(blocks.length&&!a.matches('.tile__link')&&new URL(url).pathname!=='/pohrebnictvi'||sections.length>=6||/^(Akce|Výroční zprávy|Svozový kalendář|Aktuální informace)/i.test(title))continue;
-  try{const d=await page(target.href),r=d.querySelector('article.article'),b=contentBlocks(r?.querySelector('.article__body'),target.href),f=assets(r,target.href);if(b.length||f.attachments.length)sections.push({title,blocks:b,attachments:f.attachments});}catch{/* Keep a usable link if a child is temporarily unavailable. */}
+  if(sections.length>=20||/^(Akce|Výroční zprávy|Aktuální informace)/i.test(title))continue;
+  await pause(1100);
+  try{const d=await page(target.href),r=d.querySelector('article.article'),b=contentBlocks(r?.querySelector('.article__body'),target.href),f=assets(r,target.href);
+   // The waste forms page is a signpost to the actual electronic form directory.
+   if(target.pathname==='/formulare-odpadoveho-hospodarstvi'){
+    const signpost=r?.querySelector('.text-component a[href="/formulare-odpadoveho-hospodarstvi-1"]');
+    if(signpost){await pause(1100);const formURL=new URL(signpost.getAttribute('href'),target.href),directory=await page(formURL.href);
+     for(const form of Array.from(directory.querySelectorAll('article.article .tile__link[href]')) as any[]){const u=new URL(form.getAttribute('href'),formURL),label=clean(form.textContent);if(u.hostname===formURL.hostname&&['http:','https:'].includes(u.protocol)&&label)b.push({type:'paragraph',text:label,links:[{text:'Otevřít elektronický formulář',url:u.href}]});}
+    }
+   }
+   if(b.length||f.attachments.length)sections.push({title,blocks:b,attachments:f.attachments});}catch(e){childErrors.push({title,url:target.href,error:String(e).slice(0,160)});}
  }
- return {blocks,sections,service_links:links.slice(0,15),content_version:2,...(hoursSource?{hours_source_hartmanova:hoursSource}:{}),...found};
+ if(!blocks.length&&!sections.length&&!found.attachments.length&&!found.images.length)throw Error('Chybí text, dokumenty i podrobnosti služby');
+ return {blocks,sections,service_links:links.slice(0,25),service_child_errors:childErrors,content_version:3,...(hoursSource?{hours_source_hartmanova:hoursSource}:{}),...found};
 }
 export function richText(root:any,clean:any):string[]{
  if(!root)return [];

@@ -99,7 +99,7 @@ async function importSource(s:any){
 
  await sql`insert into obcane.sources (source_key,source_url,status) values (${s.key},${s.url},'pending') on conflict (source_key) do nothing`;
  try {
-  const items=await extract(s);const checked=new Date().toISOString();const detailFailures=items.filter(x=>x.detail_error).length;
+  const items=await extract(s);const checked=new Date().toISOString();const detailFailures=items.filter(x=>x.detail_error||x.extra?.service_child_errors?.length).length;
   await sql.begin(async(tx:any)=>{
    for(const item of items) {
     const payload={in_latest:true,...(s.community?{club_key:s.key,club_name:s.name}:{}),...(item.extra||{}),source_name:s.name,body:item.body||[],days:item.days||[],detail_ok:!!item.detail_ok,detail_fetched_at:item.detail_fetched_at||checked,detail_error:item.detail_error||null};
