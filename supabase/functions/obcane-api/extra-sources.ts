@@ -108,8 +108,16 @@ export function richText(root:any,clean:any):string[]{
 export function assets(root:any,base:string){
  const images:any[]=[],attachments:any[]=[];
  for(const a of Array.from(root?.querySelectorAll('a[href]')||[]) as any[]){try{const u=new URL(a.getAttribute('href'),base);if(!['https:','http:'].includes(u.protocol)||u.username||u.password)continue;const label=(a.textContent||'').replace(/\s+/g,' ').trim();if(!label)continue;if(/\.pdf(?:$|\?)|\/file\/|\.docx?(?:$|\?)/i.test(u.href)||a.matches('.global-attachment__link'))attachments.push({title:label.slice(0,150),url:u.href,type:a.getAttribute('data-attachment-type')||(/\.pdf/.test(u.pathname)?'pdf':'link')});}catch{}}
- for(const im of Array.from(root?.querySelectorAll('img[src]')||[]) as any[]){try{const u=new URL(im.getAttribute('src'),base);if(u.protocol==='https:'&&u.hostname.replace(/^www\./,'')===new URL(base).hostname.replace(/^www\./,'')&&!/logo|favicon|facebook|youtube|mapa|icko|icon|brand/i.test(u.pathname)&&!im.closest('nav,header,footer'))images.push({url:u.href,alt:im.getAttribute('alt')||'Pozvánka od pořadatele'});}catch{}}
+ for(const im of Array.from(root?.querySelectorAll('img[src]')||[]) as any[]){try{const u=new URL(im.getAttribute('src'),base);if(u.protocol==='https:'&&u.hostname.replace(/^www\./,'')===new URL(base).hostname.replace(/^www\./,'')&&!/logo|favicon|facebook|youtube|mapa|icko|icon|brand/i.test(u.pathname)&&!im.closest('nav,footer,header:not(.article__header)'))images.push({url:u.href,alt:im.getAttribute('alt')||'Pozvánka od pořadatele'});}catch{}}
  return {images:images.slice(0,8),attachments:attachments.slice(0,15)};
+}
+export function calendarDetail(doc:any,url:string){
+ const article=doc.querySelector('article.article');if(!article)throw Error('Chybí obsah události');
+ const root=(article.querySelector('.article-event__text')||article.querySelector('.article__text')||article.querySelector('.article__body'))?.cloneNode(true);
+ root?.querySelectorAll('.element-type-heading').forEach((n:any)=>n.remove());
+ const body=richText(root,cleanContent),blocks=contentBlocks(root,url),found=assets(article,url);
+ if(!body.length&&!blocks.length&&!found.images.length&&!found.attachments.length)throw Error('Detail události neobsahuje text, pozvánku ani dokument');
+ return {body,summary:cleanContent(article.querySelector('.article-event__perex,.article__perex')?.textContent)||body.join(' ').slice(0,350),detail_ok:true,extra:{blocks,...found}};
 }
 export function parsePreschoolMenu(raw:string,url:string,czDate:any){
  const range=raw.match(/od:\s*(\d{1,2})\.\s*(\d{1,2})\.\s*do:\s*(\d{1,2})\.\s*(\d{1,2})\.\s*(20\d{2})/i);
@@ -217,7 +225,7 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
   const r=await fetch(url,{signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Kalendář HTTP '+r.status);const data=await r.json();if(!Array.isArray(data.result?.items))throw Error('Neplatná odpověď kalendáře');
   const unique=new Map();for(const day of data.result.items)for(const x of day.events||[]){if(unique.has(x['v-id']))continue;const item:any={title:clean(x.name),url:safeURL(x['v-viewUrl'],s.url),summary:clean(x.perex),event:day.date.slice(0,10),published:x['v-creationTime']?.slice(0,10),body:[],extra:{kind:'event',time:x.fromTime||null,end_time:x.toTime||null,cancelled:!!x.IsCanceled,in_latest:true}};unique.set(x['v-id'],item);}
   out=[...unique.values()].slice(0,30);
-  for(const x of out){await pause(1100);try{const d=await page(x.url,s.url);x.body=richText(d.querySelector('.article__text .text-component'),clean);x.summary=x.summary||text(d.querySelector('.article__perex'))||x.body.join(' ').slice(0,350);x.extra={...x.extra,blocks:contentBlocks(d.querySelector('.article__text .text-component'),x.url),...assets(d.querySelector('article.article'),x.url)};x.detail_ok=!!(x.body.length||x.extra.images.length||x.extra.attachments.length);}catch(e){x.detail_error=String(e).slice(0,160);}}
+  for(const x of out){await pause(1100);try{const detail=calendarDetail(await page(x.url,s.url),x.url);x.body=detail.body;x.summary=x.summary||detail.summary;x.extra={...x.extra,...detail.extra};x.detail_ok=detail.detail_ok;}catch(e){x.detail_error=String(e).slice(0,160);}}
  }else if(s.key==='clubs'){
   const sport=await page('https://www.rtyne.cz/sportovni-organizace');
   const seen=new Set();for(const d of [doc,sport])for(const a of Array.from(d.querySelectorAll('.tile__link')) as any[]){const title=text(a),href=new URL(a.getAttribute('href'),s.url).href;if(seen.has(href)||!/^https?:/.test(href))continue;seen.add(href);out.push({title,url:s.url+'#'+slug(title),summary:'Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.',body:[],detail_ok:true,...clubProfile(title,href),extra:{kind:'club',website:href,directory_source:s.url,in_latest:true,...clubProfile(title,href).extra,news_source_key:communitySources.find(c=>c.profile===title)?.key||null}});}
