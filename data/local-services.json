@@ -3,7 +3,7 @@
     {
       "id": "info-vycistime-to-za-vas",
       "source_key": "services",
-      "title": "Vyčistíme to za vás",
+      "title": "Vyčistíme to za vás – Detailing Vozák",
       "summary": "Čištění interiérů a exteriérů aut, leštění a ochrana laku i tepování sedaček a koberců. Místní služba ve Rtyni.",
       "category": "Praktické informace",
       "external_url": "https://vycistimetozavas.cz/",
@@ -26,16 +26,30 @@
           {
             "type": "list",
             "items": [
-              "Ruční čištění interiérů a exteriérů vozidel.",
-              "Leštění a retušování laku, voskování a keramická ochrana.",
-              "Tepování sedaček a čištění koberců v domácnosti.",
+              "Ruční čištění interiérů a exteriérů vozidel, kompletní balíčky.",
+              "Strojní leštění a retuš laku, voskování a keramická ochrana.",
+              "PPF fólie – podle dodaného propagačního letáku.",
+              "Čištění domácností a firem: gauče, židle, koberce, matrace a další textilní povrchy.",
               "Vyzvednutí a vrácení vozu po předchozí domluvě."
             ]
           },
           {
             "type": "heading",
             "level": 2,
+            "text": "Dárkové poukazy"
+          },
+          {
+            "type": "paragraph",
+            "text": "Podle dodaného vánočního letáku jsou nabízeny poukazy v hodnotě 500, 1 000, 2 000 a 3 000 Kč. Poukazy lze pořídit také na interiér, exteriér nebo kompletní balíček. Aktuální nabídku a podmínky si ověřte u provozovatele."
+          },
+          {
+            "type": "heading",
+            "level": 2,
             "text": "Kontakty a objednání"
+          },
+          {
+            "type": "paragraph",
+            "text": "Detailing Vozák – Jaroslav Vozák"
           },
           {
             "type": "paragraph",
@@ -68,7 +82,17 @@
           "phone": "+420731850260",
           "email": "vycistimetozavas@gmail.com",
           "address": "U Čističky, 542 33 Rtyně v Podkrkonoší"
-        }
+        },
+        "images": [
+          {
+            "url": "https://prortyni.cz/assets/services/detailing-vozak-banner.jpg",
+            "alt": "Vyčistíme to za vás – Detailing Vozák: kontakt a web"
+          },
+          {
+            "url": "https://prortyni.cz/assets/services/detailing-vozak-poukazy.jpg",
+            "alt": "Detailing Vozák: vánoční dárkové poukazy a přehled služeb"
+          }
+        ]
       }
     }
   ]
