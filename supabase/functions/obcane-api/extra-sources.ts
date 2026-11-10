@@ -108,7 +108,7 @@ export function richText(root:any,clean:any):string[]{
 export function assets(root:any,base:string){
  const images:any[]=[],attachments:any[]=[];
  for(const a of Array.from(root?.querySelectorAll('a[href]')||[]) as any[]){try{const u=new URL(a.getAttribute('href'),base);if(!['https:','http:'].includes(u.protocol)||u.username||u.password)continue;const label=(a.textContent||'').replace(/\s+/g,' ').trim();if(!label)continue;if(/\.pdf(?:$|\?)|\/file\/|\.docx?(?:$|\?)/i.test(u.href)||a.matches('.global-attachment__link'))attachments.push({title:label.slice(0,150),url:u.href,type:a.getAttribute('data-attachment-type')||(/\.pdf/.test(u.pathname)?'pdf':'link')});}catch{}}
- for(const im of Array.from(root?.querySelectorAll('img[src]')||[]) as any[]){try{const u=new URL(im.getAttribute('src'),base);if(u.protocol==='https:'&&u.hostname.replace(/^www\./,'')===new URL(base).hostname.replace(/^www\./,'')&&!/logo|favicon|facebook|youtube|mapa|icko|icon|brand/i.test(u.pathname)&&!im.closest('nav,footer,header:not(.article__header)'))images.push({url:u.href,alt:im.getAttribute('alt')||'Pozvánka od pořadatele'});}catch{}}
+ for(const im of Array.from(root?.querySelectorAll('img[src]')||[]) as any[]){try{const u=new URL(im.getAttribute('src'),base);if(u.protocol==='https:'&&u.hostname.replace(/^www\./,'')===new URL(base).hostname.replace(/^www\./,'')&&!/logo|favicon|facebook|youtube|mapa|icko|icon|brand/i.test(u.pathname)&&!im.closest('nav,footer,header:not(.article__header),.ical-add-link'))images.push({url:u.href,alt:im.getAttribute('alt')||'Pozvánka od pořadatele'});}catch{}}
  return {images:images.slice(0,8),attachments:attachments.slice(0,15)};
 }
 export function calendarDetail(doc:any,url:string){
