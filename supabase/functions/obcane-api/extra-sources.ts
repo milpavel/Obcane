@@ -9,6 +9,7 @@ export const extraSources = [
  {key:'sms_areal',name:'SMS ticket – Přírodní areál',url:'https://www.smsticket.cz/mista/4699-prirodni-areal-rtyne-v-podkrkonosi',category:'Akce',feed:'smsticket',venue_name:'Přírodní areál'},
  {key:'sms_orlovna',name:'SMS ticket – Orlovna',url:'https://www.smsticket.cz/mista/4478-sportovni-hala-orlovna-rtyne-v-podkrkonosi',category:'Akce',feed:'smsticket',venue_name:'Sportovní hala Orlovna'},
  {key:'calendar',name:'Kalendář města',url:'https://www.rtyne.cz/kalendar-udalosti',category:'Akce'},
+ {key:'radio',name:'Městský rozhlas',url:'https://www.rtyne.cz/mestsky-rozhlas',category:'Městský rozhlas'},
  {key:'library',name:'Městská knihovna',url:'https://www.mkrtyne.cz/akce.html',category:'Knihovna'},
  {key:'preschool_menu',name:'Jídelníček MŠ',url:'https://www.msrtyne.cz/',category:'Jídelníček MŠ'},
  {key:'clubs',name:'Spolky a sportovní oddíly',url:'https://www.rtyne.cz/spolky-a-sdruzeni',category:'Spolky'},
@@ -174,6 +175,17 @@ export function calendarDetail(doc:any,url:string){
  if(!body.length&&!blocks.length&&!found.images.length&&!found.attachments.length)throw Error('Detail události neobsahuje text, pozvánku ani dokument');
  return {body,summary:cleanContent(article.querySelector('.article-event__perex,.article__perex')?.textContent)||body.join(' ').slice(0,350),detail_ok:true,extra:{blocks,...found}};
 }
+export function radioListing(doc:any,base:string){
+ const rows:any[]=[],seen=new Set();
+ for(const a of Array.from(doc.querySelectorAll('article.article .document__link')) as any[]){
+  const u=new URL(a.getAttribute('href'),base),title=cleanContent(a.textContent);if(u.hostname!==new URL(base).hostname||!/^https?:$/.test(u.protocol)||!/^Rozhlasové hlášení/i.test(title)||seen.has(u.href))continue;
+  const match=title.match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(20\d{2})/),date=match?`${match[3]}-${match[2].padStart(2,'0')}-${match[1].padStart(2,'0')}`:null;
+  if(!date||Number.isNaN(Date.parse(date))||new Date(date+'T12:00:00Z').toISOString().slice(0,10)!==date)continue;
+  seen.add(u.href);rows.push({title,url:u.href,published:date+'T12:00:00Z',body:[],extra:{kind:'radio',broadcast_date:date}});if(rows.length>=30)break;
+ }
+ if(!rows.length)throw Error('Nenalezen seznam datovaných rozhlasových hlášení');
+ return rows.sort((a,b)=>b.published.localeCompare(a.published));
+}
 export function parsePreschoolMenu(raw:string,url:string,czDate:any){
  const range=raw.match(/od:\s*(\d{1,2})\.\s*(\d{1,2})\.\s*do:\s*(\d{1,2})\.\s*(\d{1,2})\.\s*(20\d{2})/i);
  if(!range)throw Error('Jídelníček MŠ nemá jednoznačně určený týden');
@@ -240,6 +252,11 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
   if(!entries.length)throw Error('Ve zdroji nebyly nalezeny zprávy; web může být nedostupný nebo změněný');return out;
  }
  const doc=await page(s.url);
+ if(s.key==='radio'){
+  out=radioListing(doc,s.url);
+  for(const item of out){await pause(1100);try{const detail=calendarDetail(await page(item.url),item.url);item.body=detail.body;item.summary=detail.body.join(' ').slice(0,240);item.extra={...item.extra,...detail.extra};item.detail_ok=true;}catch(e){item.detail_error=String(e).slice(0,160);}}
+  return out;
+ }
  if(s.feed==='florbal'){
   const seen=new Set();for(const a of Array.from(doc.querySelectorAll('a[href^="/c/"]')) as any[]){const url=safeURL(a.getAttribute('href'),s.url);if(seen.has(url))continue;seen.add(url);const card=a.closest('article'),title=text(card?.querySelector('.article-title-heading')||a.querySelector('.article-title-heading'));if(!title)continue;
    let published=communityPublished(text(card?.querySelector('.article-meta-date')),czDate),body:any[]=[],summary=text(card?.querySelector('.article-perex'));

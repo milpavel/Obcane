@@ -13,6 +13,8 @@ def get(url):
 d=get(API)
 assert {'city','school','preschool','water','calendar','library','preschool_menu','clubs','services','scouts','orel','koletovka','museum'} <= {s['source_key'] for s in d['sources']}
 assert d['items'], 'No imported items'
+radio=[x for x in d['items'] if x['source_key']=='radio' and x['payload'].get('in_latest') is not False]
+assert radio and all(x['payload'].get('broadcast_date') and x['payload'].get('body') for x in radio), 'Radio transcripts missing'
 keys=[(x['source_key'],x['external_url']) for x in d['items']]
 assert len(keys)==len(set(keys)), 'Duplicate source URLs'
 for x in d['items']:

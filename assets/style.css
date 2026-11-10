@@ -259,3 +259,5 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 .departure-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px 16px;margin-top:9px}
 .departure-footer .departure-updated,.daily-overview .departure-footer .departure-more{margin:0;padding:0;font-size:11px;line-height:1.6}
 @media(max-width:760px){.daily-overview .departure-summary .departure-headline{flex-direction:column;align-items:flex-start;gap:1px}.daily-overview .departure-summary .departure-direction{flex:auto;padding-bottom:5px}.departure-footer{gap:6px;margin-top:8px}.daily-overview .departure-footer .departure-more{font-size:12px}}
+
+.radio-section{background:#f8f6fb;border-block:1px solid var(--line)}.radio-section .feed-heading{align-items:center}.radio-card p{line-height:1.7}.radio-card:hover{transform:none}.radio-section #radio-status{margin-top:18px}

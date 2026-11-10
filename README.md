@@ -115,3 +115,7 @@ Obnova je součástí existujícího workflow `refresh-public-info.yml` čtyřik
 `assets/topbar.js` zobrazuje jméno oslavence vedle data v horním pruhu na úvodu i stránce zpráv. Jméno se přijímá jen pro aktuální pražské datum. `assets/public-holidays.js` vybírá nejbližší český svátek včetně dneška, rozlišuje státní a ostatní svátky a počítá Velký pátek a Velikonoční pondělí podle gregoriánských Velikonoc. Podklady byly ověřeny v zákoně 245/2000 Sb. a přehledu ČNB dne 9. 11. 2026. Výběr zahrnuje i Vánoce; označení karty se řídí druhem příštího svátku. Ověření pokrývá velikonoční data, přechod roku i stáří údajů o jmeninách.
 
 Počasí, termíny a odjezdy sdílejí `.daily-overview`: na větších obrazovkách všechny poloviny začínají na téže středové ose; odjezdy nemají bílé pozadí ani rámeček. Na mobilu jsou prázdniny a příští svátek vedle sebe, svoz a odjezdy pod nimi. Dělicí čáry se na mobilu přizpůsobují pořadí informací.
+
+### Městský rozhlas
+
+Zdroj `radio` načítá datovaná hlášení z první stránky městského archivu `/mestsky-rozhlas` a úplné přepisy z jednotlivých detailů při pravidelném importu. Jedno hlášení zůstává jednou kartou, i když obsahuje několik oznámení. Sekce `#rozhlas` řadí podle data hlášení a přidává karty po šesti. Přepisy jsou zahrnuté do celkového vyhledávání. Při chybě zdroje zůstává poslední uložená verze a upozornění; odkaz na úplný archiv města je vždy dostupný.

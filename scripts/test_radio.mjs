@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {parseHTML} from 'linkedom';
+import {radioItems,renderRadio} from '../assets/radio.js';
+const {document}=parseHTML('<div id="radio-grid"></div><button id="radio-more"></button><p id="radio-status"></p>');
+const items=Array.from({length:14},(_,i)=>({id:i+1,source_key:'radio',title:'Rozhlasové hlášení '+(i+1),summary:'Přepis hlášení '+(i+1),payload:{kind:'radio',broadcast_date:'2026-10-'+String(i+1).padStart(2,'0')}}));
+items.push({id:999,source_key:'radio',payload:{in_latest:false,broadcast_date:'2026-12-31'}},{id:998,source_key:'city',title:'Jiná zpráva'});
+const feed={items,sources:[{source_key:'radio',status:'ok',last_success_at:'2026-11-10T12:00:00Z'}]};
+assert.equal(radioItems(items).length,14);assert.equal(radioItems(items)[0].id,14);
+renderRadio(feed,6,document);assert.equal(document.querySelectorAll('article').length,6);assert.equal(document.getElementById('radio-more').hidden,false);assert.equal(document.querySelector('h3 a').getAttribute('href'),'/?zprava=14');assert.equal(document.querySelector('time').dateTime,'2026-10-14');
+renderRadio(feed,12,document);assert.equal(document.querySelectorAll('article').length,12);assert.equal(document.getElementById('radio-more').hidden,false);
+renderRadio(feed,18,document);assert.equal(document.querySelectorAll('article').length,14);assert.equal(document.getElementById('radio-more').hidden,true);
+renderRadio({...feed,sources:[{source_key:'radio',status:'error'}]},6,document);assert.ok(document.getElementById('radio-status').textContent.includes('dříve načtená'));
+renderRadio({items:[]},6,document);assert.equal(document.querySelectorAll('article').length,0);assert.ok(document.getElementById('radio-grid').textContent.includes('archiv města'));assert.equal(document.getElementById('radio-more').hidden,true);
+console.log('PASS: one broadcast per card, dates, newest first, six-card batches, complete detail links and source failure fallback');
