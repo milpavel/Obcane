@@ -21,6 +21,8 @@ function render(){
  for(const kind of ['train','bus']){
   const board=data?.boards.find(b=>b.kind===kind),summary=$('next-'+kind),list=$('departures-'+kind),meta=$('transport-meta-'+kind),source=$('transport-source-'+kind);
   summary.replaceChildren();list.replaceChildren();meta.replaceChildren();
+  const updated=summary.closest('.departure-summary')?.querySelector('.departure-updated');
+  if(updated)updated.textContent=fresh(board)?'Aktualizováno '+time.format(Date.parse(board.fetched_at))+' · IREDO':'';
   const selected=$('transport-stop-'+kind),stopName=selected.selectedOptions[0]?.textContent||'';
   source.href=board?.source_url||'https://iredo.online/departures/'+selected.value;
   summary.append(node('small',stopName,'departure-stop'));
