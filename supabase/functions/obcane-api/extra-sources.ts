@@ -48,6 +48,7 @@ export function contentBlocks(root:any,base:string){
  }return out.slice(0,220);
 }
 export const serviceDescriptions:Record<string,string>={
+ 'pohrebnictvi':'Hřbitov a urnový háj: kontakty, pronájem hrobových míst, ceník hřbitovních služeb a dokumenty ke stažení.',
  'pecovatelska-sluzba':'Pomoc v domácnosti, osobní péče a podpora soběstačnosti. Kontakty, jak požádat o službu a potřebné dokumenty.',
  'lekarske-sluzby-1':'Praktičtí lékaři, dětská a zubní ordinace i lékárna. Kontakty a přehled ordinačních hodin.',
  'skladka-pod-haldou':'Otevírací doba, kontakty a ceníky pro odevzdání odpadu.',
@@ -88,7 +89,7 @@ export async function serviceDetail(doc:any,url:string,page:any,clean:any){
  const children=Array.from(root.querySelectorAll('.tile__link,.document__link')) as any[];
  for(const a of children){const target=new URL(a.getAttribute('href'),url);if(target.hostname!==new URL(url).hostname||!['http:','https:'].includes(target.protocol))continue;const title=clean(a.textContent);links.push({title,url:target.href});
   // Follow information and document pages, not unrelated news archives.
-  if(blocks.length&&!a.matches('.tile__link')||sections.length>=6||/^(Akce|Výroční zprávy|Svozový kalendář|Aktuální informace)/i.test(title))continue;
+  if(blocks.length&&!a.matches('.tile__link')&&new URL(url).pathname!=='/pohrebnictvi'||sections.length>=6||/^(Akce|Výroční zprávy|Svozový kalendář|Aktuální informace)/i.test(title))continue;
   try{const d=await page(target.href),r=d.querySelector('article.article'),b=contentBlocks(r?.querySelector('.article__body'),target.href),f=assets(r,target.href);if(b.length||f.attachments.length)sections.push({title,blocks:b,attachments:f.attachments});}catch{/* Keep a usable link if a child is temporarily unavailable. */}
  }
  return {blocks,sections,service_links:links.slice(0,15),content_version:2,...(hoursSource?{hours_source_hartmanova:hoursSource}:{}),...found};
@@ -221,7 +222,7 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
   const sport=await page('https://www.rtyne.cz/sportovni-organizace');
   const seen=new Set();for(const d of [doc,sport])for(const a of Array.from(d.querySelectorAll('.tile__link')) as any[]){const title=text(a),href=new URL(a.getAttribute('href'),s.url).href;if(seen.has(href)||!/^https?:/.test(href))continue;seen.add(href);out.push({title,url:s.url+'#'+slug(title),summary:'Místní organizace uvedená v přehledu města. Otevřete profil pro web a další informace.',body:[],detail_ok:true,...clubProfile(title,href),extra:{kind:'club',website:href,directory_source:s.url,in_latest:true,...clubProfile(title,href).extra,news_source_key:communitySources.find(c=>c.profile===title)?.key||null}});}
  }else if(s.key==='services'){
-  const paths=['svoz-odpadu-a-odpadove-hospodarstvi','svozovy-kalendar-'+new Date().getUTCFullYear(),'skladka-pod-haldou','kontakt','lekarske-sluzby-1','doprava-senioru-senior-taxi','informace-k-uhradam-mistnich-poplatku-v-roce-'+new Date().getUTCFullYear(),'pecovatelska-sluzba'];
+  const paths=['svoz-odpadu-a-odpadove-hospodarstvi','svozovy-kalendar-'+new Date().getUTCFullYear(),'skladka-pod-haldou','kontakt','lekarske-sluzby-1','doprava-senioru-senior-taxi','informace-k-uhradam-mistnich-poplatku-v-roce-'+new Date().getUTCFullYear(),'pecovatelska-sluzba','pohrebnictvi'];
   for(const path of paths){await pause(1100);const url='https://www.rtyne.cz/'+path;try{const d=url===s.url?doc:await page(url),root=d.querySelector('article.article');const title=text(d.querySelector('h1.article__heading'));if(!title)throw Error('Chybí název služby');const detail=await serviceDetail(d,url,page,clean),body=path==='lekarske-sluzby-1'?detail.blocks.flatMap((b:any)=>b.type==='table'?b.rows.map((r:any)=>r.join(' · ')):b.type==='list'?b.items:[b.text]).filter(Boolean):richText(root.querySelector('.article__text'),clean);out.push({title,url,summary:serviceDescriptions[path]||cleanContent(text(d.querySelector('.article__perex')))||body[0]?.slice(0,240)||'Informace a dokumenty k této službě.',body,detail_ok:true,extra:{kind:'service',...detail}});}catch(e){out.push({title:path.replaceAll('-',' '),url,body:[],detail_error:String(e).slice(0,160),extra:{kind:'service'}});}}
  }else if(s.key==='museum'){
   const root=doc.querySelector('.articlesBlock .text')||doc.querySelector('main article')||doc.querySelector('main');if(!root)throw Error('Chybí obsah muzea');
