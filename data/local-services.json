@@ -1,0 +1,75 @@
+{
+  "items": [
+    {
+      "id": "info-vycistime-to-za-vas",
+      "source_key": "services",
+      "title": "Vyčistíme to za vás",
+      "summary": "Čištění interiérů a exteriérů aut, leštění a ochrana laku i tepování sedaček a koberců. Místní služba ve Rtyni.",
+      "category": "Praktické informace",
+      "external_url": "https://vycistimetozavas.cz/",
+      "last_seen_at": "2026-11-10T15:38:10.072872Z",
+      "payload": {
+        "kind": "service",
+        "local_practical": true,
+        "detail_ok": true,
+        "source_status": "ok",
+        "checked_at": "2026-11-10T15:38:10.072872Z",
+        "source_urls": [
+          "https://vycistimetozavas.cz/"
+        ],
+        "blocks": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Nabídka služeb"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Ruční čištění interiérů a exteriérů vozidel.",
+              "Leštění a retušování laku, voskování a keramická ochrana.",
+              "Tepování sedaček a čištění koberců v domácnosti.",
+              "Vyzvednutí a vrácení vozu po předchozí domluvě."
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Kontakty a objednání"
+          },
+          {
+            "type": "paragraph",
+            "text": "Adresa: U Čističky, 542 33 Rtyně v Podkrkonoší."
+          },
+          {
+            "type": "paragraph",
+            "text": "Telefon: +420 731 850 260"
+          },
+          {
+            "type": "paragraph",
+            "text": "E-mail: vycistimetozavas@gmail.com"
+          },
+          {
+            "type": "paragraph",
+            "text": "Web uvádí provoz každý den od 8:00 do 15:00. Termín čištění je potřeba předem domluvit telefonicky nebo přes formulář na webu."
+          },
+          {
+            "type": "paragraph",
+            "text": "Nabídka, aktuální ceník a nezávazná poptávka",
+            "links": [
+              {
+                "text": "Nabídka, aktuální ceník a nezávazná poptávka",
+                "url": "https://vycistimetozavas.cz/"
+              }
+            ]
+          }
+        ],
+        "contacts": {
+          "phone": "+420731850260",
+          "email": "vycistimetozavas@gmail.com",
+          "address": "U Čističky, 542 33 Rtyně v Podkrkonoší"
+        }
+      }
+    }
+  ]
+}

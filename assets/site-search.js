@@ -1,4 +1,4 @@
-import {fetchPracticalInfo,mergePracticalInfo} from './practical-info.js?v=20261110-details-1';
+import {fetchPracticalInfo,mergePracticalInfo} from './practical-info.js?v=20261110-local-services-1';
 import {fetchDoctorAnnouncements} from './doctor-data.js?v=20261109-1';
 const API='https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api';
 const REST='https://dvbaihwplzwljxrtkymi.supabase.co/rest/v1/obcane_posts?select=id,title,slug,excerpt,body,category,source_name,published_at&status=eq.published&order=published_at.desc&limit=100';

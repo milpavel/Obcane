@@ -16,3 +16,5 @@ const home=parseHTML(await readFile(new URL('../index.html',import.meta.url),'ut
 console.log('PASS: school holiday rollover, Czech dates, local document downloads, separate doctor section, seven indexed practical cards and source allowlist');
 
 const was=globalThis.document;globalThis.document=document;const linked=linkedText(document.createElement('p'),'Účet 104047567/0300, telefon 499 888 137.');assert.equal(linked.querySelectorAll('a').length,1);assert.equal(linked.querySelector('a').href,'tel:499888137');if(was)globalThis.document=was;else delete globalThis.document;
+
+const localServices=JSON.parse(await readFile(new URL('../data/local-services.json',import.meta.url),'utf8'));const withServices=mergePracticalInfo(merged,{items:[...local.items,...localServices.items]});assert.equal(withServices.items.at(-1).id,'info-vycistime-to-za-vas');assert.equal(withServices.items.filter(x=>x.id==='info-zs').length,1);assert.ok(searchIndex(buildSearchIndex(withServices),'vycistime').some(x=>x.href==='/?zprava=info-vycistime-to-za-vas'));assert.ok(searchIndex(buildSearchIndex(withServices),'731850260').some(x=>x.href==='/?zprava=info-vycistime-to-za-vas'));
