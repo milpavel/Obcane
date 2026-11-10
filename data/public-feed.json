@@ -147,9 +147,9 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z"
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z"
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "283",
@@ -550,9 +550,9 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z"
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z"
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "282",
@@ -583,9 +583,9 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z"
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z"
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "281",
@@ -627,9 +627,9 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z"
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z"
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "280",
@@ -984,14 +984,14 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z",
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z",
         "hours_source_hartmanova": {
           "url": "https://www.doktor-rtyne.cz/nadezda-hartmanova",
           "status": "ok",
-          "checked_at": "2026-11-10T11:06:23.648Z"
+          "checked_at": "2026-11-10T15:22:44.596Z"
         }
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "279",
@@ -1086,9 +1086,9 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z"
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z"
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "278",
@@ -1181,9 +1181,9 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z"
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z"
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "277",
@@ -1214,9 +1214,9 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z"
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z"
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "276",
@@ -1409,9 +1409,9 @@
           }
         ],
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:31.566Z"
+        "detail_fetched_at": "2026-11-10T15:22:53.137Z"
       },
-      "last_seen_at": "2026-11-10T11:06:31.566Z"
+      "last_seen_at": "2026-11-10T15:22:53.137Z"
     },
     {
       "id": "275",
@@ -1453,9 +1453,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "274",
@@ -1502,9 +1502,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "273",
@@ -1547,9 +1547,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "272",
@@ -1591,9 +1591,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "271",
@@ -1639,9 +1639,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "270",
@@ -1680,9 +1680,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "269",
@@ -1724,9 +1724,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "268",
@@ -1764,9 +1764,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "267",
@@ -1805,9 +1805,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "266",
@@ -1849,9 +1849,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "265",
@@ -1893,9 +1893,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "264",
@@ -1938,9 +1938,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "263",
@@ -1978,9 +1978,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "262",
@@ -2021,9 +2021,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-10T11:06:15.044Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.602Z"
       },
-      "last_seen_at": "2026-11-10T11:06:15.044Z"
+      "last_seen_at": "2026-11-10T15:22:35.602Z"
     },
     {
       "id": "705",
@@ -2055,9 +2055,9 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-10T11:06:03.758Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.090Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.758Z"
+      "last_seen_at": "2026-11-10T15:22:25.090Z"
     },
     {
       "id": "704",
@@ -2089,9 +2089,9 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-10T11:06:03.758Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.090Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.758Z"
+      "last_seen_at": "2026-11-10T15:22:25.090Z"
     },
     {
       "id": "703",
@@ -2123,9 +2123,60 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-10T11:06:03.758Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.090Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.758Z"
+      "last_seen_at": "2026-11-10T15:22:25.090Z"
+    },
+    {
+      "id": "227",
+      "source_key": "preschool_menu",
+      "external_url": "https://www.msrtyne.cz/corexdeay/uploads/2026/11/09.11.-13.11.2026.doc",
+      "title": "Jídelníček MŠ 09. 11. – 13. 11. 2026",
+      "category": "Jídelníček MŠ",
+      "event_date": null,
+      "published_at": null,
+      "summary": "Přesnídávky, obědy a svačiny přímo z týdenního jídelníčku MŠ, včetně uvedených alergenů.",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "preschool_menu",
+        "week_end": "2026-11-13",
+        "detail_ok": true,
+        "in_latest": true,
+        "menu_note": "Změna jídelníčku a alergenů vyhrazena.\nDěti mají během celého dne zajištěn pitný režim - slazený, neslazený nápoj",
+        "week_start": "2026-11-09",
+        "source_name": "Jídelníček MŠ",
+        "detail_error": null,
+        "preschool_days": [
+          {
+            "date": "2026-11-09",
+            "text": "přesnídávka:  luštěninový chlebíček  obložený sýrem a zeleninou, mléko\n                                               A 1-pšenice, A7\n                         oběd:             pol. kuřecí rychlá s vejci\n                                               A1 - pšenice, A3, A7, A9\n                                               dukátové buchtičky s vanilkovým krémem, mandarinka \n                                               voda A1-pšenice, A3, A7     \n                        svačina:         chléb, ředkvičková pomazánka, čaj A1-pšenice, A3, A7",
+            "weekday": "Pondělí"
+          },
+          {
+            "date": "2026-11-10",
+            "text": "přesnídávka:  mléčný kuskus s tvarohem a ovocem, ovocný čaj\n                                               A1-pšenice, A3, A7\n                       oběd:               pol. zeleninový vývar se šunkovým svítkem A1-pšenice,  A7\n                                                kuřecí maso na paprice, rýže, jablko, neslazený nápoj\n                                                A1-pšenice, A3, A7\n                      svačina:            celozrnná bulka, pomazánka z olejovek s lučinou, okurka, čaj\n                                               A1-pšenice, A7",
+            "weekday": "Úterý"
+          },
+          {
+            "date": "2026-11-11",
+            "text": "přesnídávka:    „Martinský rohlík\" blůma, neslazené kakao\n                                                 A1pšenice, A7\n                       oběd:                pol. zeleninový vývar s rýží a hráškem A1-pšenice, A3, A7, A9\n                                                 kachní prso na tymiánu, bramborový knedlík, červené zelí, \n                                                 banán, voda s citronem  A1-pšenice,  A7\n                      svačina:             lněná bagetka, žervé, kedlubna, ovocný čaj A1-pšenice, A3, A7",
+            "weekday": "Středa"
+          },
+          {
+            "date": "2026-11-12",
+            "text": "přesnídávka: chléb KEDR, tvarohová pomazánka s pečenou paprikou, rajče, \n                                               mléko A1- pšenice, A3, A7\n                       oběd:              pol. rajská s ovesnými vločkami A1-pšenice, A3, A7\n                                               holandský řízek se sýrem, bramborová kaše, kompot,\n                                               neslazený nápoj  A1-pšenice, A3, A7\n                       svačina:         pečivo KNUSPI, hermelínová pomazánka, kapie, čaj na imunitu\n                                               A1-pšenice, A7",
+            "weekday": "Čtvrtek"
+          },
+          {
+            "date": "2026-11-13",
+            "text": "přesnídávka: ovesná kaše sypaná skořicí, hruška, neslazený ovocný čaj \n                                              A1-pšenice, A7\n                        oběd:             pol. krkonošská bramboračka s houbami A1-pšenice, A7  \n                                              těstoviny farffale s peperonatou, sypané uzeným sýrem, ledový \n                                              salát s mrkví, voda s citronem A1-pšenice, A7\n                       svačina:        žitná kostka, žervé, ředkvička, čaj jahody se smetanou\n                                              A1 -pšenice, A7",
+            "weekday": "Pátek"
+          }
+        ],
+        "detail_fetched_at": "2026-11-10T15:22:24.214Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.214Z"
     },
     {
       "id": "1654",
@@ -2158,9 +2209,9 @@
             "title": "Vstupenky na SMS ticketu"
           }
         ],
-        "detail_fetched_at": "2026-11-10T11:06:01.495Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.161Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.495Z"
+      "last_seen_at": "2026-11-10T15:22:24.161Z"
     },
     {
       "id": "1653",
@@ -2193,9 +2244,599 @@
             "title": "Vstupenky na SMS ticketu"
           }
         ],
-        "detail_fetched_at": "2026-11-10T11:06:01.495Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.161Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.495Z"
+      "last_seen_at": "2026-11-10T15:22:24.161Z"
+    },
+    {
+      "id": "1666",
+      "source_key": "sms_areal",
+      "external_url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
+      "title": "QUEENIE, WALDA GANG a KABÁT(revival)",
+      "category": "Akce",
+      "event_date": "2027-07-16",
+      "published_at": null,
+      "summary": "Přírodní areál, Rtyně v Podkrkonoší · 16:00",
+      "payload": {
+        "body": [
+          "Přírodní areál, Rtyně v Podkrkonoší",
+          "WELCOME BACK, QUEENIE! A K TOMU WALDA GANG!Čeká nás večer plný energie, legendárních hitů a pořádné koncertní atmosféry!Po pár letech se k nám vrací Queenie – jedna z nejlepších tribute kapel legendárních Queen. Připravte se na ikonické skladby Freddieho Mercuryho a jeho kapely, strhující show a hudební zážitek, který vás pohltí od prvních tónů až po poslední potlesk.A to rozhodně není všechno! Druhou hlavní hvězdou večera bude Walda Gang, který přiveze svou nezaměnitelnou energii, pořádnou dávku rocku a hity, které vás nenechají stát v klidu!O rozjezd celého večera se postará předkapela Kábát"
+        ],
+        "days": [],
+        "kind": "event",
+        "time": "16:00",
+        "location": "Přírodní areál, Rtyně v Podkrkonoší",
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "ticket_url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
+        "source_name": "SMS ticket – Přírodní areál",
+        "detail_error": null,
+        "calendar_only": true,
+        "event_sources": [
+          {
+            "url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
+            "title": "Vstupenky na SMS ticketu"
+          }
+        ],
+        "detail_fetched_at": "2026-11-10T15:22:24.031Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.031Z"
+    },
+    {
+      "id": "254",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#cervnove-setkani-klubiku-sikulove",
+      "title": "Červnové setkání klubíku Šikulové",
+      "category": "Knihovna",
+      "event_date": "2026-06-29",
+      "published_at": null,
+      "summary": "Klubík Šikulové (3+) vás zve v pondělí 29. 6. 2026 od 16 hod. na pohádkový program podle pohádky Daniela Kulota „Léto v lese“. Po pohádce proběhne malá výtvarná dílna.",
+      "payload": {
+        "body": [
+          "Klubík Šikulové (3+) vás zve v pondělí 29. 6. 2026 od 16 hod. na pohádkový program podle pohádky Daniela Kulota „Léto v lese“. Po pohádce proběhne malá výtvarná dílna."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Klubík Šikulové (3+) vás zve v pondělí 29. 6. 2026 od 16 hod. na pohádkový program podle pohádky Daniela Kulota „Léto v lese“. Po pohádce proběhne malá výtvarná dílna.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Červnové setkání klubíku Šikulové",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-23-06-08-50-28-700-504-22-cervnove-setkani-klubiku-sikulove-3648.jpg"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "253",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#letni-ctenarska-vyzva-cti-tvor-sdilej",
+      "title": "Letní čtenářská výzva \"Čti, tvoř, sdílej\"",
+      "category": "Knihovna",
+      "event_date": null,
+      "published_at": null,
+      "summary": "Máte během prázdnin více času na čtení? Podělte se o své čtenářské zážitky a inspirujte ostatní! Naše knihovna vyhlašuje letní čtenářskou výzvu „Čti, tvoř a sdílej“, která je určena všem bez rozdílu věku. Stačí si během prázdnin přečíst libovolnou knihu a vytvořit originální digitální příspěvek, který ji představí ostatním čtenářům. Jakou podobu bu",
+      "payload": {
+        "body": [
+          "Máte během prázdnin více času na čtení? Podělte se o své čtenářské zážitky a inspirujte ostatní! Naše knihovna vyhlašuje letní čtenářskou výzvu „Čti, tvoř a sdílej“, která je určena všem bez rozdílu věku. Stačí si během prázdnin přečíst libovolnou knihu a vytvořit originální digitální příspěvek, který ji představí ostatním čtenářům. Jakou podobu bude mít váš výtvor, záleží jen na vás."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Máte během prázdnin více času na čtení? Podělte se o své čtenářské zážitky a inspirujte ostatní! Naše knihovna vyhlašuje letní čtenářskou výzvu „Čti, tvoř a sdílej“, která je určena všem bez rozdílu věku. Stačí si během prázdnin přečíst libovolnou knihu a vytvořit originální digitální příspěvek, který ji představí ostatním čtenářům. Jakou podobu bude mít váš výtvor, záleží jen na vás.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Letní čtenářská výzva ",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-25-06-13-08-43-700-504-22-letni-ctenarska-vyzva-3650.png"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "252",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#balime-skolni-ucebnice",
+      "title": "Balíme školní učebnice",
+      "category": "Knihovna",
+      "event_date": null,
+      "published_at": null,
+      "summary": "Naše knihovna přichází s aktuální nabídkou balení školních učebnic. Pokud nemůžete sehnat obaly na nestandardní velikosti učebnic, obraťte se na nás. Rádi Vám pomůžeme. Učebnice zabalíme za poplatek dle velikosti.",
+      "payload": {
+        "body": [
+          "Naše knihovna přichází s aktuální nabídkou balení školních učebnic. Pokud nemůžete sehnat obaly na nestandardní velikosti učebnic, obraťte se na nás. Rádi Vám pomůžeme. Učebnice zabalíme za poplatek dle velikosti."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Naše knihovna přichází s aktuální nabídkou balení školních učebnic. Pokud nemůžete sehnat obaly na nestandardní velikosti učebnic, obraťte se na nás. Rádi Vám pomůžeme. Učebnice zabalíme za poplatek dle velikosti.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Balíme školní učebnice",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-27-07-15-00-44-700-504-22-balime-skolni-ucebnice-3657.jpg"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "251",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#lovci-perel-zakoncili-celorocni-hru",
+      "title": "Lovci perel zakončili celoroční hru",
+      "category": "Knihovna",
+      "event_date": "2025-09-01",
+      "published_at": null,
+      "summary": "V průběhu celého roku měli malí čtenáři možnost se zapojit do soutěže „Lovci perel“, která zábavnou formou motivuje děti k rozvoji čtenářství. Do soutěže se zapojilo 36 děti různých věkových kategorií. Jejich snahou bylo posbírat co nejvíce knih, a získat co nejvíce perel. Pro ověření, zda knihu skutečně četly, sloužily speciálně připravené otázky ",
+      "payload": {
+        "body": [
+          "V průběhu celého roku měli malí čtenáři možnost se zapojit do soutěže „Lovci perel“, která zábavnou formou motivuje děti k rozvoji čtenářství. Do soutěže se zapojilo 36 děti různých věkových kategorií. Jejich snahou bylo posbírat co nejvíce knih, a získat co nejvíce perel. Pro ověření, zda knihu skutečně četly, sloužily speciálně připravené otázky ke každé knize označené perlou. Na všechny otázky týkající se děje knihy, musely děti správně odpovědět. V případě, že na všechny odpovědi čtenář odpověděl správně, získal perlu a zároveň obdržel speciální peníze zvané moriony. Tyto peníze čtenáři uplatní při výběru cen podle uvedené hodnoty. Perly i moriony měly děti možnost získávat od 1. září 2025 do 31. srpna 2026. Prvních pět nejúspěšnějších lovců bude oceněno dne 7. září 2026. Výherci budou kontaktováni a pozváni k vyzvednutí cen, které jsme si pro ně připravili. Pro všechny lovce, kteří se soutěže zúčastnili, bude v týdnu od 7. září do 10. září 2026 připraven „Morionský trh“. Děti si na něm za našetřené herní peníze – moriony – budou moci vybrat odměny, hračky, knížky a další drobnosti pro radost. Všem soutěžícím gratulujeme a máme radost, že se zapojili v tak hojném počtu."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "V průběhu celého roku měli malí čtenáři možnost se zapojit do soutěže „Lovci perel“, která zábavnou formou motivuje děti k rozvoji čtenářství. Do soutěže se zapojilo 36 děti různých věkových kategorií. Jejich snahou bylo posbírat co nejvíce knih, a získat co nejvíce perel. Pro ověření, zda knihu skutečně četly, sloužily speciálně připravené otázky ke každé knize označené perlou. Na všechny otázky týkající se děje knihy, musely děti správně odpovědět. V případě, že na všechny odpovědi čtenář odpověděl správně, získal perlu a zároveň obdržel speciální peníze zvané moriony. Tyto peníze čtenáři uplatní při výběru cen podle uvedené hodnoty. Perly i moriony měly děti možnost získávat od 1. září 2025 do 31. srpna 2026. Prvních pět nejúspěšnějších lovců bude oceněno dne 7. září 2026. Výherci budou kontaktováni a pozváni k vyzvednutí cen, které jsme si pro ně připravili. Pro všechny lovce, kteří se soutěže zúčastnili, bude v týdnu od 7. září do 10. září 2026 připraven „Morionský trh“. Děti si na něm za našetřené herní peníze – moriony – budou moci vybrat odměny, hračky, knížky a další drobnosti pro radost. Všem soutěžícím gratulujeme a máme radost, že se zapojili v tak hojném počtu.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Lovci perel zakončili celoroční hru",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-26-08-10-24-00-700-504-22-lovci-perel-zakoncili-celorocni-hru-3658.jpg"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "250",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#lovci-perel-zakonci-soutez-morionskym-trhem-od-7-do-10-zari-2026",
+      "title": "Lovci perel zakončí soutěž Morionským trhem od 7. do 10. září 2026",
+      "category": "Knihovna",
+      "event_date": "2026-09-10",
+      "published_at": null,
+      "summary": "Celoroční soutěž Lovci perel se pomalu chýlí ke svému závěru. Pro všechny děti, které se do soutěže zapojily, bude v týdnu od 7. do 10. září 2026 připraven oblíbený Morionský trh. Děti si zde budou moci za své poctivě nasbírané herní peníze – moriony – vybrat nejrůznější odměny. Čekat na ně budou hračky, knížky i další drobnosti pro radost. Slavnos",
+      "payload": {
+        "body": [
+          "Celoroční soutěž Lovci perel se pomalu chýlí ke svému závěru. Pro všechny děti, které se do soutěže zapojily, bude v týdnu od 7. do 10. září 2026 připraven oblíbený Morionský trh. Děti si zde budou moci za své poctivě nasbírané herní peníze – moriony – vybrat nejrůznější odměny. Čekat na ně budou hračky, knížky i další drobnosti pro radost. Slavnostní ocenění čeká také na pět nejúspěšnějších lovců perel, kteří budou vyhlášeni v pondělí 7. září 2026. Výherci již byli kontaktováni a pozváni k převzetí cen, které jsme pro ně připravili. Všem dětem, které se soutěže zúčastnily, srdečně gratulujeme a děkujeme za jejich nadšení, chuť číst a objevovat nové knihy. Máme velkou radost, že se do soutěže Lovci perel zapojilo tolik malých čtenářů, a věříme, že si společné putování za perlami užili."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Celoroční soutěž Lovci perel se pomalu chýlí ke svému závěru. Pro všechny děti, které se do soutěže zapojily, bude v týdnu od 7. do 10. září 2026 připraven oblíbený Morionský trh. Děti si zde budou moci za své poctivě nasbírané herní peníze – moriony – vybrat nejrůznější odměny. Čekat na ně budou hračky, knížky i další drobnosti pro radost. Slavnostní ocenění čeká také na pět nejúspěšnějších lovců perel, kteří budou vyhlášeni v pondělí 7. září 2026. Výherci již byli kontaktováni a pozváni k převzetí cen, které jsme pro ně připravili. Všem dětem, které se soutěže zúčastnily, srdečně gratulujeme a děkujeme za jejich nadšení, chuť číst a objevovat nové knihy. Máme velkou radost, že se do soutěže Lovci perel zapojilo tolik malých čtenářů, a věříme, že si společné putování za perlami užili.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Lovci perel zakončí soutěž Morionským trhem od 7. do 10. září 2026",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-11-09-09-57-17-700-504-22-lovci-perel-zakonci-soutez-morionskym-trhem-od-7-do-10-zari-2026-3659.jpg"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "249",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#rijnove-setkani-klubiku-kulihrasci-0-3",
+      "title": "Říjnové setkání klubíku Kulihrášci (0-3)",
+      "category": "Knihovna",
+      "event_date": "2026-10-12",
+      "published_at": null,
+      "summary": "Klubík Kulihrášci vás srdečně zve v pondělí 12. října 2026 od 9.00 nebo od 10.30 hodin na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Rádi mezi námi přivítáme i nové rodiče s dětmi, kteří se chtějí ke Kulihráškům přidat. Přijďte si s námi zazpívat, zacvičit a užít si společné dopoledne v knihovně. Prosíme rodiče, aby",
+      "payload": {
+        "body": [
+          "Klubík Kulihrášci vás srdečně zve v pondělí 12. října 2026 od 9.00 nebo od 10.30 hodin na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Rádi mezi námi přivítáme i nové rodiče s dětmi, kteří se chtějí ke Kulihráškům přidat. Přijďte si s námi zazpívat, zacvičit a užít si společné dopoledne v knihovně. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz"
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Klubík Kulihrášci vás srdečně zve v pondělí 12. října 2026 od 9.00 nebo od 10.30 hodin na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Rádi mezi námi přivítáme i nové rodiče s dětmi, kteří se chtějí ke Kulihráškům přidat. Přijďte si s námi zazpívat, zacvičit a užít si společné dopoledne v knihovně. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Říjnové setkání klubíku Kulihrášci (0-3)",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-05-10-11-04-53-700-504-22-rijnove-setkani-klubiku-kulihrasci-0-3-3661.jpg"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "248",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#rijnove-setkani-klubiku-sikulove-3",
+      "title": "Říjnové setkání klubíku Šikulové (3+)",
+      "category": "Knihovna",
+      "event_date": "2026-10-12",
+      "published_at": null,
+      "summary": "Klubík Šikulové (3+) vás zve v pondělí 12. října 2026 od 16 hodin na pohádkový program podle knížky Daniela Kulota: Podzim v lese. Společně se vydáme do barevného podzimního lesa, kde budeme pozorovat, co se v přírodě na podzim mění, kdo se chystá na zimu a jaká dobrodružství mohou v lese zažít jeho obyvatelé. Čeká nás pohádka, povídání, hádanky a ",
+      "payload": {
+        "body": [
+          "Klubík Šikulové (3+) vás zve v pondělí 12. října 2026 od 16 hodin na pohádkový program podle knížky Daniela Kulota: Podzim v lese. Společně se vydáme do barevného podzimního lesa, kde budeme pozorovat, co se v přírodě na podzim mění, kdo se chystá na zimu a jaká dobrodružství mohou v lese zažít jeho obyvatelé. Čeká nás pohádka, povídání, hádanky a drobné pohybové aktivity. Po pohádce proběhne malá výtvarná dílna. Těšíme se na všechny malé Šikuly!"
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Klubík Šikulové (3+) vás zve v pondělí 12. října 2026 od 16 hodin na pohádkový program podle knížky Daniela Kulota: Podzim v lese. Společně se vydáme do barevného podzimního lesa, kde budeme pozorovat, co se v přírodě na podzim mění, kdo se chystá na zimu a jaká dobrodružství mohou v lese zažít jeho obyvatelé. Čeká nás pohádka, povídání, hádanky a drobné pohybové aktivity. Po pohádce proběhne malá výtvarná dílna. Těšíme se na všechny malé Šikuly!",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Říjnové setkání klubíku Šikulové (3+)",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-05-10-10-51-38-700-504-22-rijnove-setkani-klubiku-sikulove-3-3662.jpg"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "247",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#cestopisna-prednaska-o-gronsku",
+      "title": "Cestopisná přednáška o Grónsku",
+      "category": "Knihovna",
+      "event_date": "2026-10-15",
+      "published_at": null,
+      "summary": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujícím Grónsku. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 15. října 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fo",
+      "payload": {
+        "body": [
+          "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujícím Grónsku. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 15. října 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujícím Grónsku. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 15. října 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Cestopisná přednáška o Grónsku",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-15-10-12-41-07-700-504-22-cestopisna-prednaska-o-gronsku-3663.png"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "246",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#podzimni-vytvarna-dilna-pro-deti",
+      "title": "Podzimní výtvarná dílna pro děti",
+      "category": "Knihovna",
+      "event_date": "2026-10-21",
+      "published_at": null,
+      "summary": "Zveme všechny tvořivé děti na podzimní výtvarnou dílnu, která se uskuteční ve středu 21. října 2026 od 12 do 16 hodin. Budeme vyrábět panáčky ze šišek, jablíčka z kartonu a vlny a podzimní dekoraci ve tvaru lišky. Přijďte si zavyrábět, těšíme se na vás.",
+      "payload": {
+        "body": [
+          "Zveme všechny tvořivé děti na podzimní výtvarnou dílnu, která se uskuteční ve středu 21. října 2026 od 12 do 16 hodin. Budeme vyrábět panáčky ze šišek, jablíčka z kartonu a vlny a podzimní dekoraci ve tvaru lišky. Přijďte si zavyrábět, těšíme se na vás."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Zveme všechny tvořivé děti na podzimní výtvarnou dílnu, která se uskuteční ve středu 21. října 2026 od 12 do 16 hodin. Budeme vyrábět panáčky ze šišek, jablíčka z kartonu a vlny a podzimní dekoraci ve tvaru lišky. Přijďte si zavyrábět, těšíme se na vás.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Podzimní výtvarná dílna pro děti",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-13-10-07-47-03-700-504-22-podzimni-vytvarna-dilna-pro-deti-3668.png"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "245",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#prednaska-o-tradicni-cinske-medicine",
+      "title": "Přednáška o tradiční čínské medicíně",
+      "category": "Knihovna",
+      "event_date": "2026-11-05",
+      "published_at": null,
+      "summary": "Zajímá Vás, jak se tradiční čínská medicína dívá na naše zdraví a jakou roli hraje prevence, stravování a životní styl? Na tyto otázky se zaměří přednáška s Petrou Nyklíčkovou, která se tradiční čínské medicíně věnuje již řadu let. Dozvíte se, jak tento tradiční přístup nahlíží na člověka jako celek, jaký význam přikládá rovnováze organismu, stravě",
+      "payload": {
+        "body": [
+          "Zajímá Vás, jak se tradiční čínská medicína dívá na naše zdraví a jakou roli hraje prevence, stravování a životní styl? Na tyto otázky se zaměří přednáška s Petrou Nyklíčkovou, která se tradiční čínské medicíně věnuje již řadu let. Dozvíte se, jak tento tradiční přístup nahlíží na člověka jako celek, jaký význam přikládá rovnováze organismu, stravě a přírodním prostředkům a čím může inspirovat lidi v různých etapách života. Přednáška je určena všem, kteří se zajímají o své zdraví a chtějí lépe poznat principy tradiční čínské medicíny. Přednáška se uskuteční ve čtvrtek 5. listopadu 2026 od 17 hodin, na kterou Vás srdečně zveme. Vstupné je dobrovolné."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Zajímá Vás, jak se tradiční čínská medicína dívá na naše zdraví a jakou roli hraje prevence, stravování a životní styl? Na tyto otázky se zaměří přednáška s Petrou Nyklíčkovou, která se tradiční čínské medicíně věnuje již řadu let. Dozvíte se, jak tento tradiční přístup nahlíží na člověka jako celek, jaký význam přikládá rovnováze organismu, stravě a přírodním prostředkům a čím může inspirovat lidi v různých etapách života. Přednáška je určena všem, kteří se zajímají o své zdraví a chtějí lépe poznat principy tradiční čínské medicíny. Přednáška se uskuteční ve čtvrtek 5. listopadu 2026 od 17 hodin, na kterou Vás srdečně zveme. Vstupné je dobrovolné.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Přednáška o tradiční čínské medicíně",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-21-10-12-22-48-700-504-22-prednaska-o-tradicni-cinske-medicine-3673.png"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "244",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#listopadove-setkani-klubiku-sikulove",
+      "title": "Listopadové setkání klubíku Šikulové",
+      "category": "Knihovna",
+      "event_date": "2026-11-09",
+      "published_at": null,
+      "summary": "Klubík Šikulové (3+) vás zve v pondělí 9. listopadu 2026 od 16 hod. na pohádkový program podle knížky Jory Johna „Hodné vajíčko“. Po pohádce proběhne malá výtvarná dílna.",
+      "payload": {
+        "body": [
+          "Klubík Šikulové (3+) vás zve v pondělí 9. listopadu 2026 od 16 hod. na pohádkový program podle knížky Jory Johna „Hodné vajíčko“. Po pohádce proběhne malá výtvarná dílna."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Klubík Šikulové (3+) vás zve v pondělí 9. listopadu 2026 od 16 hod. na pohádkový program podle knížky Jory Johna „Hodné vajíčko“. Po pohádce proběhne malá výtvarná dílna.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Listopadové setkání klubíku Šikulové",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-01-11-16-33-39-700-504-22-listopadove-setkani-klubiku-sikulove-3676.jpg"
+          }
+        ],
+        "cancelled": true,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "243",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#listopadove-setkani-klubiku-kulihrasci",
+      "title": "Listopadové setkání klubíku Kulihrášci",
+      "category": "Knihovna",
+      "event_date": "2026-11-09",
+      "published_at": null,
+      "summary": "Klubík Kulihrášci (0-3 roky) vás srdečně zve v pondělí 9. listopadu 2026 od 9.00 hod. nebo od 10.30 hod. na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz.",
+      "payload": {
+        "body": [
+          "Klubík Kulihrášci (0-3 roky) vás srdečně zve v pondělí 9. listopadu 2026 od 9.00 hod. nebo od 10.30 hod. na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Klubík Kulihrášci (0-3 roky) vás srdečně zve v pondělí 9. listopadu 2026 od 9.00 hod. nebo od 10.30 hod. na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Listopadové setkání klubíku Kulihrášci",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-01-11-16-35-32-700-504-22-listopadove-setkani-klubiku-kulihrasci-3677.jpg"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "242",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#pozvanka-na-deskovou-hru-hra-o-truny",
+      "title": "Pozvánka na deskovou hru Hra o trůny",
+      "category": "Knihovna",
+      "event_date": "2026-11-10",
+      "published_at": null,
+      "summary": "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategický",
+      "payload": {
+        "body": [
+          "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategických rozhodnutí a boje o moc. A pak už se můžete pustit do hry! Zájemci se musí předem přihlásit na e-mailu: info@mkrtyne.cz. Nemusíte být zkušenými hráči – stačí chuť poznat novou hru a užít si příjemný večer ve společnosti dalších nadšenců. Těšíme se na vás!"
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategických rozhodnutí a boje o moc. A pak už se můžete pustit do hry! Zájemci se musí předem přihlásit na e-mailu: info@mkrtyne.cz. Nemusíte být zkušenými hráči – stačí chuť poznat novou hru a užít si příjemný večer ve společnosti dalších nadšenců. Těšíme se na vás!",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Pozvánka na deskovou hru Hra o trůny",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-06-11-13-43-51-700-504-22-pozvanka-na-deskovou-hru-hra-o-truny-3679.png"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "241",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#cestopisna-prednaska-putovani-po-spicberkach",
+      "title": "Cestopisná přednáška „Putování po Špicberkách“",
+      "category": "Knihovna",
+      "event_date": "2026-11-12",
+      "published_at": null,
+      "summary": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím z",
+      "payload": {
+        "body": [
+          "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Cestopisná přednáška „Putování po Špicberkách“",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-06-11-13-45-42-700-504-22-cestopisna-prednaska-putovani-po-spicberkach-3680.png"
+          }
+        ],
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
+    },
+    {
+      "id": "240",
+      "source_key": "library",
+      "external_url": "https://www.mkrtyne.cz/akce.html#pondelni-setkani-klubiku-sikulove-se-nekona",
+      "title": "Pondělní setkání klubíku Šikulové se nekoná",
+      "category": "Knihovna",
+      "event_date": "2026-11-09",
+      "published_at": null,
+      "summary": "Omlouváme se, ale ze zdravotních důvodů musíme zrušit pondělní (9. 11. 2026) setkání klubíku Šikulové ze zdravotních důvodů. Děkujeme za pochopení a těšíme se příště na viděnou v naší knihovně.",
+      "payload": {
+        "body": [
+          "Omlouváme se, ale ze zdravotních důvodů musíme zrušit pondělní (9. 11. 2026) setkání klubíku Šikulové ze zdravotních důvodů. Děkujeme za pochopení a těšíme se příště na viděnou v naší knihovně."
+        ],
+        "days": [],
+        "kind": "event",
+        "blocks": [
+          {
+            "text": "Omlouváme se, ale ze zdravotních důvodů musíme zrušit pondělní (9. 11. 2026) setkání klubíku Šikulové ze zdravotních důvodů. Děkujeme za pochopení a těšíme se příště na viděnou v naší knihovně.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Pondělní setkání klubíku Šikulové se nekoná",
+            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-08-11-16-31-48-700-504-22-zruseni-setkani-klubiku-sikulove-3682.png"
+          }
+        ],
+        "cancelled": true,
+        "detail_ok": true,
+        "in_latest": true,
+        "attachments": [],
+        "source_name": "Městská knihovna",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-10T15:22:24.006Z"
+      },
+      "last_seen_at": "2026-11-10T15:22:24.006Z"
     },
     {
       "id": "228",
@@ -2313,650 +2954,9 @@
         "source_name": "Muzeum a infocentrum",
         "detail_error": null,
         "content_version": 2,
-        "detail_fetched_at": "2026-11-10T11:06:01.490Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.743Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.490Z"
-    },
-    {
-      "id": "254",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#cervnove-setkani-klubiku-sikulove",
-      "title": "Červnové setkání klubíku Šikulové",
-      "category": "Knihovna",
-      "event_date": "2026-06-29",
-      "published_at": null,
-      "summary": "Klubík Šikulové (3+) vás zve v pondělí 29. 6. 2026 od 16 hod. na pohádkový program podle pohádky Daniela Kulota „Léto v lese“. Po pohádce proběhne malá výtvarná dílna.",
-      "payload": {
-        "body": [
-          "Klubík Šikulové (3+) vás zve v pondělí 29. 6. 2026 od 16 hod. na pohádkový program podle pohádky Daniela Kulota „Léto v lese“. Po pohádce proběhne malá výtvarná dílna."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Klubík Šikulové (3+) vás zve v pondělí 29. 6. 2026 od 16 hod. na pohádkový program podle pohádky Daniela Kulota „Léto v lese“. Po pohádce proběhne malá výtvarná dílna.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Červnové setkání klubíku Šikulové",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-23-06-08-50-28-700-504-22-cervnove-setkani-klubiku-sikulove-3648.jpg"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "253",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#letni-ctenarska-vyzva-cti-tvor-sdilej",
-      "title": "Letní čtenářská výzva \"Čti, tvoř, sdílej\"",
-      "category": "Knihovna",
-      "event_date": null,
-      "published_at": null,
-      "summary": "Máte během prázdnin více času na čtení? Podělte se o své čtenářské zážitky a inspirujte ostatní! Naše knihovna vyhlašuje letní čtenářskou výzvu „Čti, tvoř a sdílej“, která je určena všem bez rozdílu věku. Stačí si během prázdnin přečíst libovolnou knihu a vytvořit originální digitální příspěvek, který ji představí ostatním čtenářům. Jakou podobu bu",
-      "payload": {
-        "body": [
-          "Máte během prázdnin více času na čtení? Podělte se o své čtenářské zážitky a inspirujte ostatní! Naše knihovna vyhlašuje letní čtenářskou výzvu „Čti, tvoř a sdílej“, která je určena všem bez rozdílu věku. Stačí si během prázdnin přečíst libovolnou knihu a vytvořit originální digitální příspěvek, který ji představí ostatním čtenářům. Jakou podobu bude mít váš výtvor, záleží jen na vás."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Máte během prázdnin více času na čtení? Podělte se o své čtenářské zážitky a inspirujte ostatní! Naše knihovna vyhlašuje letní čtenářskou výzvu „Čti, tvoř a sdílej“, která je určena všem bez rozdílu věku. Stačí si během prázdnin přečíst libovolnou knihu a vytvořit originální digitální příspěvek, který ji představí ostatním čtenářům. Jakou podobu bude mít váš výtvor, záleží jen na vás.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Letní čtenářská výzva ",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-25-06-13-08-43-700-504-22-letni-ctenarska-vyzva-3650.png"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "252",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#balime-skolni-ucebnice",
-      "title": "Balíme školní učebnice",
-      "category": "Knihovna",
-      "event_date": null,
-      "published_at": null,
-      "summary": "Naše knihovna přichází s aktuální nabídkou balení školních učebnic. Pokud nemůžete sehnat obaly na nestandardní velikosti učebnic, obraťte se na nás. Rádi Vám pomůžeme. Učebnice zabalíme za poplatek dle velikosti.",
-      "payload": {
-        "body": [
-          "Naše knihovna přichází s aktuální nabídkou balení školních učebnic. Pokud nemůžete sehnat obaly na nestandardní velikosti učebnic, obraťte se na nás. Rádi Vám pomůžeme. Učebnice zabalíme za poplatek dle velikosti."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Naše knihovna přichází s aktuální nabídkou balení školních učebnic. Pokud nemůžete sehnat obaly na nestandardní velikosti učebnic, obraťte se na nás. Rádi Vám pomůžeme. Učebnice zabalíme za poplatek dle velikosti.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Balíme školní učebnice",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-27-07-15-00-44-700-504-22-balime-skolni-ucebnice-3657.jpg"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "251",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#lovci-perel-zakoncili-celorocni-hru",
-      "title": "Lovci perel zakončili celoroční hru",
-      "category": "Knihovna",
-      "event_date": "2025-09-01",
-      "published_at": null,
-      "summary": "V průběhu celého roku měli malí čtenáři možnost se zapojit do soutěže „Lovci perel“, která zábavnou formou motivuje děti k rozvoji čtenářství. Do soutěže se zapojilo 36 děti různých věkových kategorií. Jejich snahou bylo posbírat co nejvíce knih, a získat co nejvíce perel. Pro ověření, zda knihu skutečně četly, sloužily speciálně připravené otázky ",
-      "payload": {
-        "body": [
-          "V průběhu celého roku měli malí čtenáři možnost se zapojit do soutěže „Lovci perel“, která zábavnou formou motivuje děti k rozvoji čtenářství. Do soutěže se zapojilo 36 děti různých věkových kategorií. Jejich snahou bylo posbírat co nejvíce knih, a získat co nejvíce perel. Pro ověření, zda knihu skutečně četly, sloužily speciálně připravené otázky ke každé knize označené perlou. Na všechny otázky týkající se děje knihy, musely děti správně odpovědět. V případě, že na všechny odpovědi čtenář odpověděl správně, získal perlu a zároveň obdržel speciální peníze zvané moriony. Tyto peníze čtenáři uplatní při výběru cen podle uvedené hodnoty. Perly i moriony měly děti možnost získávat od 1. září 2025 do 31. srpna 2026. Prvních pět nejúspěšnějších lovců bude oceněno dne 7. září 2026. Výherci budou kontaktováni a pozváni k vyzvednutí cen, které jsme si pro ně připravili. Pro všechny lovce, kteří se soutěže zúčastnili, bude v týdnu od 7. září do 10. září 2026 připraven „Morionský trh“. Děti si na něm za našetřené herní peníze – moriony – budou moci vybrat odměny, hračky, knížky a další drobnosti pro radost. Všem soutěžícím gratulujeme a máme radost, že se zapojili v tak hojném počtu."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "V průběhu celého roku měli malí čtenáři možnost se zapojit do soutěže „Lovci perel“, která zábavnou formou motivuje děti k rozvoji čtenářství. Do soutěže se zapojilo 36 děti různých věkových kategorií. Jejich snahou bylo posbírat co nejvíce knih, a získat co nejvíce perel. Pro ověření, zda knihu skutečně četly, sloužily speciálně připravené otázky ke každé knize označené perlou. Na všechny otázky týkající se děje knihy, musely děti správně odpovědět. V případě, že na všechny odpovědi čtenář odpověděl správně, získal perlu a zároveň obdržel speciální peníze zvané moriony. Tyto peníze čtenáři uplatní při výběru cen podle uvedené hodnoty. Perly i moriony měly děti možnost získávat od 1. září 2025 do 31. srpna 2026. Prvních pět nejúspěšnějších lovců bude oceněno dne 7. září 2026. Výherci budou kontaktováni a pozváni k vyzvednutí cen, které jsme si pro ně připravili. Pro všechny lovce, kteří se soutěže zúčastnili, bude v týdnu od 7. září do 10. září 2026 připraven „Morionský trh“. Děti si na něm za našetřené herní peníze – moriony – budou moci vybrat odměny, hračky, knížky a další drobnosti pro radost. Všem soutěžícím gratulujeme a máme radost, že se zapojili v tak hojném počtu.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Lovci perel zakončili celoroční hru",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-26-08-10-24-00-700-504-22-lovci-perel-zakoncili-celorocni-hru-3658.jpg"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "250",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#lovci-perel-zakonci-soutez-morionskym-trhem-od-7-do-10-zari-2026",
-      "title": "Lovci perel zakončí soutěž Morionským trhem od 7. do 10. září 2026",
-      "category": "Knihovna",
-      "event_date": "2026-09-10",
-      "published_at": null,
-      "summary": "Celoroční soutěž Lovci perel se pomalu chýlí ke svému závěru. Pro všechny děti, které se do soutěže zapojily, bude v týdnu od 7. do 10. září 2026 připraven oblíbený Morionský trh. Děti si zde budou moci za své poctivě nasbírané herní peníze – moriony – vybrat nejrůznější odměny. Čekat na ně budou hračky, knížky i další drobnosti pro radost. Slavnos",
-      "payload": {
-        "body": [
-          "Celoroční soutěž Lovci perel se pomalu chýlí ke svému závěru. Pro všechny děti, které se do soutěže zapojily, bude v týdnu od 7. do 10. září 2026 připraven oblíbený Morionský trh. Děti si zde budou moci za své poctivě nasbírané herní peníze – moriony – vybrat nejrůznější odměny. Čekat na ně budou hračky, knížky i další drobnosti pro radost. Slavnostní ocenění čeká také na pět nejúspěšnějších lovců perel, kteří budou vyhlášeni v pondělí 7. září 2026. Výherci již byli kontaktováni a pozváni k převzetí cen, které jsme pro ně připravili. Všem dětem, které se soutěže zúčastnily, srdečně gratulujeme a děkujeme za jejich nadšení, chuť číst a objevovat nové knihy. Máme velkou radost, že se do soutěže Lovci perel zapojilo tolik malých čtenářů, a věříme, že si společné putování za perlami užili."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Celoroční soutěž Lovci perel se pomalu chýlí ke svému závěru. Pro všechny děti, které se do soutěže zapojily, bude v týdnu od 7. do 10. září 2026 připraven oblíbený Morionský trh. Děti si zde budou moci za své poctivě nasbírané herní peníze – moriony – vybrat nejrůznější odměny. Čekat na ně budou hračky, knížky i další drobnosti pro radost. Slavnostní ocenění čeká také na pět nejúspěšnějších lovců perel, kteří budou vyhlášeni v pondělí 7. září 2026. Výherci již byli kontaktováni a pozváni k převzetí cen, které jsme pro ně připravili. Všem dětem, které se soutěže zúčastnily, srdečně gratulujeme a děkujeme za jejich nadšení, chuť číst a objevovat nové knihy. Máme velkou radost, že se do soutěže Lovci perel zapojilo tolik malých čtenářů, a věříme, že si společné putování za perlami užili.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Lovci perel zakončí soutěž Morionským trhem od 7. do 10. září 2026",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-11-09-09-57-17-700-504-22-lovci-perel-zakonci-soutez-morionskym-trhem-od-7-do-10-zari-2026-3659.jpg"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "249",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#rijnove-setkani-klubiku-kulihrasci-0-3",
-      "title": "Říjnové setkání klubíku Kulihrášci (0-3)",
-      "category": "Knihovna",
-      "event_date": "2026-10-12",
-      "published_at": null,
-      "summary": "Klubík Kulihrášci vás srdečně zve v pondělí 12. října 2026 od 9.00 nebo od 10.30 hodin na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Rádi mezi námi přivítáme i nové rodiče s dětmi, kteří se chtějí ke Kulihráškům přidat. Přijďte si s námi zazpívat, zacvičit a užít si společné dopoledne v knihovně. Prosíme rodiče, aby",
-      "payload": {
-        "body": [
-          "Klubík Kulihrášci vás srdečně zve v pondělí 12. října 2026 od 9.00 nebo od 10.30 hodin na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Rádi mezi námi přivítáme i nové rodiče s dětmi, kteří se chtějí ke Kulihráškům přidat. Přijďte si s námi zazpívat, zacvičit a užít si společné dopoledne v knihovně. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz"
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Klubík Kulihrášci vás srdečně zve v pondělí 12. října 2026 od 9.00 nebo od 10.30 hodin na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Rádi mezi námi přivítáme i nové rodiče s dětmi, kteří se chtějí ke Kulihráškům přidat. Přijďte si s námi zazpívat, zacvičit a užít si společné dopoledne v knihovně. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Říjnové setkání klubíku Kulihrášci (0-3)",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-05-10-11-04-53-700-504-22-rijnove-setkani-klubiku-kulihrasci-0-3-3661.jpg"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "248",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#rijnove-setkani-klubiku-sikulove-3",
-      "title": "Říjnové setkání klubíku Šikulové (3+)",
-      "category": "Knihovna",
-      "event_date": "2026-10-12",
-      "published_at": null,
-      "summary": "Klubík Šikulové (3+) vás zve v pondělí 12. října 2026 od 16 hodin na pohádkový program podle knížky Daniela Kulota: Podzim v lese. Společně se vydáme do barevného podzimního lesa, kde budeme pozorovat, co se v přírodě na podzim mění, kdo se chystá na zimu a jaká dobrodružství mohou v lese zažít jeho obyvatelé. Čeká nás pohádka, povídání, hádanky a ",
-      "payload": {
-        "body": [
-          "Klubík Šikulové (3+) vás zve v pondělí 12. října 2026 od 16 hodin na pohádkový program podle knížky Daniela Kulota: Podzim v lese. Společně se vydáme do barevného podzimního lesa, kde budeme pozorovat, co se v přírodě na podzim mění, kdo se chystá na zimu a jaká dobrodružství mohou v lese zažít jeho obyvatelé. Čeká nás pohádka, povídání, hádanky a drobné pohybové aktivity. Po pohádce proběhne malá výtvarná dílna. Těšíme se na všechny malé Šikuly!"
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Klubík Šikulové (3+) vás zve v pondělí 12. října 2026 od 16 hodin na pohádkový program podle knížky Daniela Kulota: Podzim v lese. Společně se vydáme do barevného podzimního lesa, kde budeme pozorovat, co se v přírodě na podzim mění, kdo se chystá na zimu a jaká dobrodružství mohou v lese zažít jeho obyvatelé. Čeká nás pohádka, povídání, hádanky a drobné pohybové aktivity. Po pohádce proběhne malá výtvarná dílna. Těšíme se na všechny malé Šikuly!",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Říjnové setkání klubíku Šikulové (3+)",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-05-10-10-51-38-700-504-22-rijnove-setkani-klubiku-sikulove-3-3662.jpg"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "247",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#cestopisna-prednaska-o-gronsku",
-      "title": "Cestopisná přednáška o Grónsku",
-      "category": "Knihovna",
-      "event_date": "2026-10-15",
-      "published_at": null,
-      "summary": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujícím Grónsku. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 15. října 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fo",
-      "payload": {
-        "body": [
-          "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujícím Grónsku. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 15. října 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujícím Grónsku. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 15. října 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Cestopisná přednáška o Grónsku",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-15-10-12-41-07-700-504-22-cestopisna-prednaska-o-gronsku-3663.png"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "246",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#podzimni-vytvarna-dilna-pro-deti",
-      "title": "Podzimní výtvarná dílna pro děti",
-      "category": "Knihovna",
-      "event_date": "2026-10-21",
-      "published_at": null,
-      "summary": "Zveme všechny tvořivé děti na podzimní výtvarnou dílnu, která se uskuteční ve středu 21. října 2026 od 12 do 16 hodin. Budeme vyrábět panáčky ze šišek, jablíčka z kartonu a vlny a podzimní dekoraci ve tvaru lišky. Přijďte si zavyrábět, těšíme se na vás.",
-      "payload": {
-        "body": [
-          "Zveme všechny tvořivé děti na podzimní výtvarnou dílnu, která se uskuteční ve středu 21. října 2026 od 12 do 16 hodin. Budeme vyrábět panáčky ze šišek, jablíčka z kartonu a vlny a podzimní dekoraci ve tvaru lišky. Přijďte si zavyrábět, těšíme se na vás."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Zveme všechny tvořivé děti na podzimní výtvarnou dílnu, která se uskuteční ve středu 21. října 2026 od 12 do 16 hodin. Budeme vyrábět panáčky ze šišek, jablíčka z kartonu a vlny a podzimní dekoraci ve tvaru lišky. Přijďte si zavyrábět, těšíme se na vás.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Podzimní výtvarná dílna pro děti",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-13-10-07-47-03-700-504-22-podzimni-vytvarna-dilna-pro-deti-3668.png"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "245",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#prednaska-o-tradicni-cinske-medicine",
-      "title": "Přednáška o tradiční čínské medicíně",
-      "category": "Knihovna",
-      "event_date": "2026-11-05",
-      "published_at": null,
-      "summary": "Zajímá Vás, jak se tradiční čínská medicína dívá na naše zdraví a jakou roli hraje prevence, stravování a životní styl? Na tyto otázky se zaměří přednáška s Petrou Nyklíčkovou, která se tradiční čínské medicíně věnuje již řadu let. Dozvíte se, jak tento tradiční přístup nahlíží na člověka jako celek, jaký význam přikládá rovnováze organismu, stravě",
-      "payload": {
-        "body": [
-          "Zajímá Vás, jak se tradiční čínská medicína dívá na naše zdraví a jakou roli hraje prevence, stravování a životní styl? Na tyto otázky se zaměří přednáška s Petrou Nyklíčkovou, která se tradiční čínské medicíně věnuje již řadu let. Dozvíte se, jak tento tradiční přístup nahlíží na člověka jako celek, jaký význam přikládá rovnováze organismu, stravě a přírodním prostředkům a čím může inspirovat lidi v různých etapách života. Přednáška je určena všem, kteří se zajímají o své zdraví a chtějí lépe poznat principy tradiční čínské medicíny. Přednáška se uskuteční ve čtvrtek 5. listopadu 2026 od 17 hodin, na kterou Vás srdečně zveme. Vstupné je dobrovolné."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Zajímá Vás, jak se tradiční čínská medicína dívá na naše zdraví a jakou roli hraje prevence, stravování a životní styl? Na tyto otázky se zaměří přednáška s Petrou Nyklíčkovou, která se tradiční čínské medicíně věnuje již řadu let. Dozvíte se, jak tento tradiční přístup nahlíží na člověka jako celek, jaký význam přikládá rovnováze organismu, stravě a přírodním prostředkům a čím může inspirovat lidi v různých etapách života. Přednáška je určena všem, kteří se zajímají o své zdraví a chtějí lépe poznat principy tradiční čínské medicíny. Přednáška se uskuteční ve čtvrtek 5. listopadu 2026 od 17 hodin, na kterou Vás srdečně zveme. Vstupné je dobrovolné.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Přednáška o tradiční čínské medicíně",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-21-10-12-22-48-700-504-22-prednaska-o-tradicni-cinske-medicine-3673.png"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "244",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#listopadove-setkani-klubiku-sikulove",
-      "title": "Listopadové setkání klubíku Šikulové",
-      "category": "Knihovna",
-      "event_date": "2026-11-09",
-      "published_at": null,
-      "summary": "Klubík Šikulové (3+) vás zve v pondělí 9. listopadu 2026 od 16 hod. na pohádkový program podle knížky Jory Johna „Hodné vajíčko“. Po pohádce proběhne malá výtvarná dílna.",
-      "payload": {
-        "body": [
-          "Klubík Šikulové (3+) vás zve v pondělí 9. listopadu 2026 od 16 hod. na pohádkový program podle knížky Jory Johna „Hodné vajíčko“. Po pohádce proběhne malá výtvarná dílna."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Klubík Šikulové (3+) vás zve v pondělí 9. listopadu 2026 od 16 hod. na pohádkový program podle knížky Jory Johna „Hodné vajíčko“. Po pohádce proběhne malá výtvarná dílna.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Listopadové setkání klubíku Šikulové",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-01-11-16-33-39-700-504-22-listopadove-setkani-klubiku-sikulove-3676.jpg"
-          }
-        ],
-        "cancelled": true,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "243",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#listopadove-setkani-klubiku-kulihrasci",
-      "title": "Listopadové setkání klubíku Kulihrášci",
-      "category": "Knihovna",
-      "event_date": "2026-11-09",
-      "published_at": null,
-      "summary": "Klubík Kulihrášci (0-3 roky) vás srdečně zve v pondělí 9. listopadu 2026 od 9.00 hod. nebo od 10.30 hod. na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz.",
-      "payload": {
-        "body": [
-          "Klubík Kulihrášci (0-3 roky) vás srdečně zve v pondělí 9. listopadu 2026 od 9.00 hod. nebo od 10.30 hod. na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Klubík Kulihrášci (0-3 roky) vás srdečně zve v pondělí 9. listopadu 2026 od 9.00 hod. nebo od 10.30 hod. na společné setkání v naší knihovně, doplněné pohybovými říkadly a písničkami. Prosíme rodiče, aby si registrovali jeden ze dvou nabízených časů na e-mailu: sehnalova@mkrtyne.cz.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Listopadové setkání klubíku Kulihrášci",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-01-11-16-35-32-700-504-22-listopadove-setkani-klubiku-kulihrasci-3677.jpg"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "242",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#pozvanka-na-deskovou-hru-hra-o-truny",
-      "title": "Pozvánka na deskovou hru Hra o trůny",
-      "category": "Knihovna",
-      "event_date": "2026-11-10",
-      "published_at": null,
-      "summary": "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategický",
-      "payload": {
-        "body": [
-          "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategických rozhodnutí a boje o moc. A pak už se můžete pustit do hry! Zájemci se musí předem přihlásit na e-mailu: info@mkrtyne.cz. Nemusíte být zkušenými hráči – stačí chuť poznat novou hru a užít si příjemný večer ve společnosti dalších nadšenců. Těšíme se na vás!"
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategických rozhodnutí a boje o moc. A pak už se můžete pustit do hry! Zájemci se musí předem přihlásit na e-mailu: info@mkrtyne.cz. Nemusíte být zkušenými hráči – stačí chuť poznat novou hru a užít si příjemný večer ve společnosti dalších nadšenců. Těšíme se na vás!",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Pozvánka na deskovou hru Hra o trůny",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-06-11-13-43-51-700-504-22-pozvanka-na-deskovou-hru-hra-o-truny-3679.png"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "241",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#cestopisna-prednaska-putovani-po-spicberkach",
-      "title": "Cestopisná přednáška „Putování po Špicberkách“",
-      "category": "Knihovna",
-      "event_date": "2026-11-12",
-      "published_at": null,
-      "summary": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím z",
-      "payload": {
-        "body": [
-          "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Cestopisná přednáška „Putování po Špicberkách“",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-06-11-13-45-42-700-504-22-cestopisna-prednaska-putovani-po-spicberkach-3680.png"
-          }
-        ],
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "240",
-      "source_key": "library",
-      "external_url": "https://www.mkrtyne.cz/akce.html#pondelni-setkani-klubiku-sikulove-se-nekona",
-      "title": "Pondělní setkání klubíku Šikulové se nekoná",
-      "category": "Knihovna",
-      "event_date": "2026-11-09",
-      "published_at": null,
-      "summary": "Omlouváme se, ale ze zdravotních důvodů musíme zrušit pondělní (9. 11. 2026) setkání klubíku Šikulové ze zdravotních důvodů. Děkujeme za pochopení a těšíme se příště na viděnou v naší knihovně.",
-      "payload": {
-        "body": [
-          "Omlouváme se, ale ze zdravotních důvodů musíme zrušit pondělní (9. 11. 2026) setkání klubíku Šikulové ze zdravotních důvodů. Děkujeme za pochopení a těšíme se příště na viděnou v naší knihovně."
-        ],
-        "days": [],
-        "kind": "event",
-        "blocks": [
-          {
-            "text": "Omlouváme se, ale ze zdravotních důvodů musíme zrušit pondělní (9. 11. 2026) setkání klubíku Šikulové ze zdravotních důvodů. Děkujeme za pochopení a těšíme se příště na viděnou v naší knihovně.",
-            "type": "paragraph"
-          }
-        ],
-        "images": [
-          {
-            "alt": "Pondělní setkání klubíku Šikulové se nekoná",
-            "url": "https://www.mkrtyne.cz/cs/images/content/news/2026-08-11-16-31-48-700-504-22-zruseni-setkani-klubiku-sikulove-3682.png"
-          }
-        ],
-        "cancelled": true,
-        "detail_ok": true,
-        "in_latest": true,
-        "attachments": [],
-        "source_name": "Městská knihovna",
-        "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.483Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.483Z"
-    },
-    {
-      "id": "1666",
-      "source_key": "sms_areal",
-      "external_url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
-      "title": "QUEENIE, WALDA GANG a KABÁT(revival)",
-      "category": "Akce",
-      "event_date": "2027-07-16",
-      "published_at": null,
-      "summary": "Přírodní areál, Rtyně v Podkrkonoší · 16:00",
-      "payload": {
-        "body": [
-          "Přírodní areál, Rtyně v Podkrkonoší",
-          "WELCOME BACK, QUEENIE! A K TOMU WALDA GANG!Čeká nás večer plný energie, legendárních hitů a pořádné koncertní atmosféry!Po pár letech se k nám vrací Queenie – jedna z nejlepších tribute kapel legendárních Queen. Připravte se na ikonické skladby Freddieho Mercuryho a jeho kapely, strhující show a hudební zážitek, který vás pohltí od prvních tónů až po poslední potlesk.A to rozhodně není všechno! Druhou hlavní hvězdou večera bude Walda Gang, který přiveze svou nezaměnitelnou energii, pořádnou dávku rocku a hity, které vás nenechají stát v klidu!O rozjezd celého večera se postará předkapela Kábát"
-        ],
-        "days": [],
-        "kind": "event",
-        "time": "16:00",
-        "location": "Přírodní areál, Rtyně v Podkrkonoší",
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "ticket_url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
-        "source_name": "SMS ticket – Přírodní areál",
-        "detail_error": null,
-        "calendar_only": true,
-        "event_sources": [
-          {
-            "url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
-            "title": "Vstupenky na SMS ticketu"
-          }
-        ],
-        "detail_fetched_at": "2026-11-10T11:06:01.397Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.397Z"
-    },
-    {
-      "id": "227",
-      "source_key": "preschool_menu",
-      "external_url": "https://www.msrtyne.cz/corexdeay/uploads/2026/11/09.11.-13.11.2026.doc",
-      "title": "Jídelníček MŠ 09. 11. – 13. 11. 2026",
-      "category": "Jídelníček MŠ",
-      "event_date": null,
-      "published_at": null,
-      "summary": "Přesnídávky, obědy a svačiny přímo z týdenního jídelníčku MŠ, včetně uvedených alergenů.",
-      "payload": {
-        "body": [],
-        "days": [],
-        "kind": "preschool_menu",
-        "week_end": "2026-11-13",
-        "detail_ok": true,
-        "in_latest": true,
-        "menu_note": "Změna jídelníčku a alergenů vyhrazena.\nDěti mají během celého dne zajištěn pitný režim - slazený, neslazený nápoj",
-        "week_start": "2026-11-09",
-        "source_name": "Jídelníček MŠ",
-        "detail_error": null,
-        "preschool_days": [
-          {
-            "date": "2026-11-09",
-            "text": "přesnídávka:  luštěninový chlebíček  obložený sýrem a zeleninou, mléko\n                                               A 1-pšenice, A7\n                         oběd:             pol. kuřecí rychlá s vejci\n                                               A1 - pšenice, A3, A7, A9\n                                               dukátové buchtičky s vanilkovým krémem, mandarinka \n                                               voda A1-pšenice, A3, A7     \n                        svačina:         chléb, ředkvičková pomazánka, čaj A1-pšenice, A3, A7",
-            "weekday": "Pondělí"
-          },
-          {
-            "date": "2026-11-10",
-            "text": "přesnídávka:  mléčný kuskus s tvarohem a ovocem, ovocný čaj\n                                               A1-pšenice, A3, A7\n                       oběd:               pol. zeleninový vývar se šunkovým svítkem A1-pšenice,  A7\n                                                kuřecí maso na paprice, rýže, jablko, neslazený nápoj\n                                                A1-pšenice, A3, A7\n                      svačina:            celozrnná bulka, pomazánka z olejovek s lučinou, okurka, čaj\n                                               A1-pšenice, A7",
-            "weekday": "Úterý"
-          },
-          {
-            "date": "2026-11-11",
-            "text": "přesnídávka:    „Martinský rohlík\" blůma, neslazené kakao\n                                                 A1pšenice, A7\n                       oběd:                pol. zeleninový vývar s rýží a hráškem A1-pšenice, A3, A7, A9\n                                                 kachní prso na tymiánu, bramborový knedlík, červené zelí, \n                                                 banán, voda s citronem  A1-pšenice,  A7\n                      svačina:             lněná bagetka, žervé, kedlubna, ovocný čaj A1-pšenice, A3, A7",
-            "weekday": "Středa"
-          },
-          {
-            "date": "2026-11-12",
-            "text": "přesnídávka: chléb KEDR, tvarohová pomazánka s pečenou paprikou, rajče, \n                                               mléko A1- pšenice, A3, A7\n                       oběd:              pol. rajská s ovesnými vločkami A1-pšenice, A3, A7\n                                               holandský řízek se sýrem, bramborová kaše, kompot,\n                                               neslazený nápoj  A1-pšenice, A3, A7\n                       svačina:         pečivo KNUSPI, hermelínová pomazánka, kapie, čaj na imunitu\n                                               A1-pšenice, A7",
-            "weekday": "Čtvrtek"
-          },
-          {
-            "date": "2026-11-13",
-            "text": "přesnídávka: ovesná kaše sypaná skořicí, hruška, neslazený ovocný čaj \n                                              A1-pšenice, A7\n                        oběd:             pol. krkonošská bramboračka s houbami A1-pšenice, A7  \n                                              těstoviny farffale s peperonatou, sypané uzeným sýrem, ledový \n                                              salát s mrkví, voda s citronem A1-pšenice, A7\n                       svačina:        žitná kostka, žervé, ředkvička, čaj jahody se smetanou\n                                              A1 -pšenice, A7",
-            "weekday": "Pátek"
-          }
-        ],
-        "detail_fetched_at": "2026-11-10T11:06:01.194Z"
-      },
-      "last_seen_at": "2026-11-10T11:06:01.194Z"
+      "last_seen_at": "2026-11-10T15:22:23.743Z"
     },
     {
       "id": "1941",
@@ -2977,9 +2977,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.581Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.845Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.581Z"
+      "last_seen_at": "2026-11-10T15:22:05.845Z"
     },
     {
       "id": "602",
@@ -3001,9 +3001,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.581Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.845Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.581Z"
+      "last_seen_at": "2026-11-10T15:22:05.845Z"
     },
     {
       "id": "1177",
@@ -3026,9 +3026,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:04.703Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.381Z"
       },
-      "last_seen_at": "2026-11-10T11:06:04.703Z"
+      "last_seen_at": "2026-11-10T15:22:24.381Z"
     },
     {
       "id": "1098",
@@ -3185,7 +3185,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:04.500Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "707",
@@ -3195,24 +3195,50 @@
       "category": "Akce",
       "event_date": "2026-11-11",
       "published_at": "2026-11-09T00:00:00.000Z",
-      "summary": "",
+      "summary": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest. Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny. Těšíme se na společné cestování alespoň prostřednictvím z",
       "payload": {
-        "body": [],
+        "body": [
+          "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest.",
+          "Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny.",
+          "Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění."
+        ],
         "days": [],
         "kind": "event",
         "time": "17:00",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "Vydejte se s námi na daleký sever! Seniorka Jarmila Olivová, vášnivá cestovatelka, se s vámi podělí o své nezapomenutelné zážitky z putování po fascinujících Špicbnerkách. Součástí setkání bude také cestopisný film z jejích cest.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Přijďte ve čtvrtek 12. listopadu 2026 od 17 hodin do knihovny.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Těšíme se na společné cestování alespoň prostřednictvím zážitků, fotografií a vyprávění.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Cestopisná přednáška po Špicberkách",
+            "url": "https://www.rtyne.cz/image/4664602/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "706",
@@ -3222,24 +3248,46 @@
       "category": "Akce",
       "event_date": "2026-11-10",
       "published_at": "2026-11-09T00:00:00.000Z",
-      "summary": "",
+      "summary": "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategický",
       "payload": {
-        "body": [],
+        "body": [
+          "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategických rozhodnutí a boje o moc. A pak už se můžete pustit do hry! Zájemci se musí předem přihlásit na e-mailu: info@mkrtyne.cz. Nemusíte být zkušenými hráči – stačí chuť poznat novou hru a užít si příjemný večer ve společnosti dalších nadšenců. Těšíme se na vás!"
+        ],
         "days": [],
         "kind": "event",
         "time": "17:00",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "Zajímá vás desková hra Hra o trůny, ale nevíte, jak na ni? Na základě dotazů našich čtenářů vás zveme na společné herní setkání, které se uskuteční v úterý 10. listopadu 2026 od 17.00 hodin v Městské knihovně Rtyně v Podkrkonoší. Pavel Janýr vás seznámí s pravidly hry, provede vás jejími úskalími a pomůže vám proniknout do světa intrik, strategických rozhodnutí a boje o moc. A pak už se můžete pustit do hry! Zájemci se musí předem přihlásit na e-mailu: info@mkrtyne.cz. Nemusíte být zkušenými hráči – stačí chuť poznat novou hru a užít si příjemný večer ve společnosti dalších nadšenců. Těšíme se na vás!",
+            "type": "paragraph",
+            "links": [
+              {
+                "url": "mailto:info@mkrtyne.cz",
+                "text": "info@mkrtyne.cz"
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "alt": "Hra o trůny – přijďte si zahrát!",
+            "url": "https://www.rtyne.cz/image/4664596/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "627",
@@ -3301,7 +3349,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:07.915Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "626",
@@ -3352,7 +3400,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:06.238Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "866",
@@ -3375,9 +3423,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:04.703Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.381Z"
       },
-      "last_seen_at": "2026-11-10T11:06:04.703Z"
+      "last_seen_at": "2026-11-10T15:22:24.381Z"
     },
     {
       "id": "865",
@@ -3400,9 +3448,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:04.703Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.381Z"
       },
-      "last_seen_at": "2026-11-10T11:06:04.703Z"
+      "last_seen_at": "2026-11-10T15:22:24.381Z"
     },
     {
       "id": "864",
@@ -3425,9 +3473,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:04.703Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.381Z"
       },
-      "last_seen_at": "2026-11-10T11:06:04.703Z"
+      "last_seen_at": "2026-11-10T15:22:24.381Z"
     },
     {
       "id": "22",
@@ -3473,7 +3521,7 @@
         "restriction_date": "2026-11-10",
         "detail_fetched_at": "2026-11-10T05:17:28.877Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "21",
@@ -3506,9 +3554,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:48.409Z"
+        "detail_fetched_at": "2026-11-10T15:22:10.769Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "20",
@@ -3541,9 +3589,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:46.665Z"
+        "detail_fetched_at": "2026-11-10T15:22:09.087Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "19",
@@ -3576,9 +3624,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:44.823Z"
+        "detail_fetched_at": "2026-11-10T15:22:07.401Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "18",
@@ -3611,9 +3659,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:43.151Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.702Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "17",
@@ -3664,7 +3712,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:09.580Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "213",
@@ -3809,7 +3857,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:32.299Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "24",
@@ -3876,7 +3924,7 @@
         "restriction_date": "2026-11-06",
         "detail_fetched_at": "2026-11-10T05:17:30.541Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "9",
@@ -3912,7 +3960,7 @@
         "restriction_date": "2026-11-10",
         "detail_fetched_at": "2026-11-10T05:17:03.336Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.205Z"
+      "last_seen_at": "2026-11-10T15:22:03.896Z"
     },
     {
       "id": "259",
@@ -3922,24 +3970,40 @@
       "category": "Akce",
       "event_date": "2026-11-29",
       "published_at": "2026-11-04T00:00:00.000Z",
-      "summary": "",
+      "summary": "V neděli 29. listopadu 2026 od 13:00 hodin v Orlovně ve Rtyni v Podkrkonoší se můžete těšit na tradiční předvánoční setkání plné vánoční atmosféry, zábavy a dobrot. Přijďte si užít tradiční předvánoční setkání plné vánoční atmosféry, zábavy a dobrot. Těšit se můžete na vánoční trhy, pestrý program pro děti i dospělé, tvořivé dílničky a speciálního ",
       "payload": {
-        "body": [],
+        "body": [
+          "V neděli 29. listopadu 2026 od 13:00 hodin v Orlovně ve Rtyni v Podkrkonoší se můžete těšit na tradiční předvánoční setkání plné vánoční atmosféry, zábavy a dobrot. Přijďte si užít tradiční předvánoční setkání plné vánoční atmosféry, zábavy a dobrot. Těšit se můžete na vánoční trhy, pestrý program pro děti i dospělé, tvořivé dílničky a speciálního hosta, zpěvačku Lindu Finkovou. Závěr akce bude patřit společnému rozsvícení vánočního stromečku."
+        ],
         "days": [],
         "kind": "event",
         "time": "13:00",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "V neděli 29. listopadu 2026 od 13:00 hodin v Orlovně ve Rtyni v Podkrkonoší se můžete těšit na tradiční předvánoční setkání plné vánoční atmosféry, zábavy a dobrot. Přijďte si užít tradiční předvánoční setkání plné vánoční atmosféry, zábavy a dobrot. Těšit se můžete na vánoční trhy, pestrý program pro děti i dospělé, tvořivé dílničky a speciálního hosta, zpěvačku Lindu Finkovou. Závěr akce bude patřit společnému rozsvícení vánočního stromečku.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "BARBORKA aneb sousedské předvánoční setkání ve Rtyni",
+            "url": "https://www.rtyne.cz/image/4648691/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "255",
@@ -3949,24 +4013,40 @@
       "category": "Akce",
       "event_date": "2026-11-14",
       "published_at": "2026-11-04T00:00:00.000Z",
-      "summary": "",
+      "summary": "V sobotu 14. listopadu od 15:00 do 18:00 hodin v zahradě Königovy vily ve Rtyni v Podkrkonoší čeká na malé i velké strašidelné odpoledne plné zábavy a dobrodružství. Děti se mohou těšit na plnění strašidelných úkolů a sladkou odměnu v podobě koláče Strašpidlíka. Občerstvení zajištěno, masky a kostýmy vítány!",
       "payload": {
-        "body": [],
+        "body": [
+          "V sobotu 14. listopadu od 15:00 do 18:00 hodin v zahradě Königovy vily ve Rtyni v Podkrkonoší čeká na malé i velké strašidelné odpoledne plné zábavy a dobrodružství. Děti se mohou těšit na plnění strašidelných úkolů a sladkou odměnu v podobě koláče Strašpidlíka. Občerstvení zajištěno, masky a kostýmy vítány!"
+        ],
         "days": [],
         "kind": "event",
         "time": "15:00",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "V sobotu 14. listopadu od 15:00 do 18:00 hodin v zahradě Königovy vily ve Rtyni v Podkrkonoší čeká na malé i velké strašidelné odpoledne plné zábavy a dobrodružství. Děti se mohou těšit na plnění strašidelných úkolů a sladkou odměnu v podobě koláče Strašpidlíka. Občerstvení zajištěno, masky a kostýmy vítány!",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "SVÁTEK STRAŠIDEL – kouzelné strašidelné odpoledne",
+            "url": "https://www.rtyne.cz/image/4648660/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "214",
@@ -4007,7 +4087,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:33.955Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "1",
@@ -4030,9 +4110,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.581Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.845Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.581Z"
+      "last_seen_at": "2026-11-10T15:22:05.845Z"
     },
     {
       "id": "2",
@@ -4055,9 +4135,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.581Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.845Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.581Z"
+      "last_seen_at": "2026-11-10T15:22:05.845Z"
     },
     {
       "id": "31",
@@ -4098,7 +4178,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:03.993Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.775Z"
+      "last_seen_at": "2026-11-10T15:22:04.375Z"
     },
     {
       "id": "868",
@@ -4121,9 +4201,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:04.703Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.381Z"
       },
-      "last_seen_at": "2026-11-10T11:06:04.703Z"
+      "last_seen_at": "2026-11-10T15:22:24.381Z"
     },
     {
       "id": "867",
@@ -4146,9 +4226,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:04.703Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.381Z"
       },
-      "last_seen_at": "2026-11-10T11:06:04.703Z"
+      "last_seen_at": "2026-11-10T15:22:24.381Z"
     },
     {
       "id": "869",
@@ -4171,9 +4251,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:04.703Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.381Z"
       },
-      "last_seen_at": "2026-11-10T11:06:04.703Z"
+      "last_seen_at": "2026-11-10T15:22:24.381Z"
     },
     {
       "id": "870",
@@ -4239,7 +4319,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:35.920Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "218",
@@ -4275,7 +4355,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:40.936Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "217",
@@ -4311,7 +4391,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:39.270Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "216",
@@ -4418,7 +4498,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:37.616Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "846",
@@ -4504,9 +4584,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "847",
@@ -4582,9 +4662,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "221",
@@ -4620,9 +4700,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "220",
@@ -4653,7 +4733,7 @@
         "restriction_date": "2026-10-27",
         "detail_fetched_at": "2026-11-10T05:17:44.397Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "219",
@@ -4681,9 +4761,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:06:00.381Z"
+        "detail_fetched_at": "2026-11-10T15:22:22.877Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "12",
@@ -4719,7 +4799,7 @@
         "restriction_date": "2026-10-27",
         "detail_fetched_at": "2026-11-10T05:17:03.812Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.205Z"
+      "last_seen_at": "2026-11-10T15:22:03.896Z"
     },
     {
       "id": "11",
@@ -4750,7 +4830,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:03.784Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.205Z"
+      "last_seen_at": "2026-11-10T15:22:03.896Z"
     },
     {
       "id": "10",
@@ -4781,7 +4861,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:03.311Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.205Z"
+      "last_seen_at": "2026-11-10T15:22:03.896Z"
     },
     {
       "id": "32",
@@ -5251,7 +5331,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:04.033Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.775Z"
+      "last_seen_at": "2026-11-10T15:22:04.375Z"
     },
     {
       "id": "33",
@@ -5318,7 +5398,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:05.277Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.775Z"
+      "last_seen_at": "2026-11-10T15:22:04.375Z"
     },
     {
       "id": "3",
@@ -5339,9 +5419,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.581Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.845Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.581Z"
+      "last_seen_at": "2026-11-10T15:22:05.845Z"
     },
     {
       "id": "25",
@@ -5369,9 +5449,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:50.081Z"
+        "detail_fetched_at": "2026-11-10T15:22:12.442Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "13",
@@ -5402,7 +5482,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:04.244Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.205Z"
+      "last_seen_at": "2026-11-10T15:22:03.896Z"
     },
     {
       "id": "257",
@@ -5414,22 +5494,58 @@
       "published_at": "2026-10-19T00:00:00.000Z",
       "summary": "V sobotu 21. listopadu 2026 se na náměstí ve Rtyni v Podkrkonoší uskuteční již 7. ročník Vánočního jarmarku.",
       "payload": {
-        "body": [],
+        "body": [
+          "Od 10:00 do 16:00 hodin se můžete těšit na příjemnou předvánoční atmosféru, tradiční řemeslné výrobky i nejrůznější dobroty.",
+          "Návštěvníci budou mít možnost zakoupit originální vánoční dárky, adventní svícny, svíčky, vánoční dekorace, keramické a textilní výrobky, ručně vyráběná mýdla, sýry, koření a mnoho dalšího z nabídky českých řemeslníků.",
+          "Chybět nebude ani občerstvení, voňavý vánoční svařák či medovina, které zpříjemní společně strávené chvíle.",
+          "Kdy: sobota 21. listopadu 2026, 10:00–16:00 hodin Kde: náměstí ve Rtyni v Podkrkonoší",
+          "Na setkání se těší Lada Vyskočilová z Batňovic a Město Rtyně v Podkrkonoší."
+        ],
         "days": [],
         "kind": "event",
         "time": "10:00",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "Od 10:00 do 16:00 hodin se můžete těšit na příjemnou předvánoční atmosféru, tradiční řemeslné výrobky i nejrůznější dobroty.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Návštěvníci budou mít možnost zakoupit originální vánoční dárky, adventní svícny, svíčky, vánoční dekorace, keramické a textilní výrobky, ručně vyráběná mýdla, sýry, koření a mnoho dalšího z nabídky českých řemeslníků.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Chybět nebude ani občerstvení, voňavý vánoční svařák či medovina, které zpříjemní společně strávené chvíle.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Kdy: sobota 21. listopadu 2026, 10:00–16:00 hodin Kde: náměstí ve Rtyni v Podkrkonoší",
+            "type": "paragraph"
+          },
+          {
+            "text": "Na setkání se těší Lada Vyskočilová z Batňovic a Město Rtyně v Podkrkonoší.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Vánoční jarmark ve Rtyni v Podkrkonoší",
+            "url": "https://www.rtyne.cz/image/4510355/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "14",
@@ -5465,7 +5581,7 @@
         "restriction_date": "2026-10-21",
         "detail_fetched_at": "2026-11-10T05:17:04.271Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.205Z"
+      "last_seen_at": "2026-11-10T15:22:03.896Z"
     },
     {
       "id": "261",
@@ -5477,22 +5593,69 @@
       "published_at": "2026-10-16T00:00:00.000Z",
       "summary": "Město Rtyně v Podkrkonoší zve v pátek 11. prosince 2026 od 18:00 hodin do kina Na rychtě na promítání velkolepého dobrodružného filmu ODYSSEA režiséra Christophera Nolana.",
       "payload": {
-        "body": [],
+        "body": [
+          "Jedno z nejslavnějších děl světové literatury, Homérova Odyssea, ožívá na filmovém plátně v monumentálním zpracování oceňovaného režiséra Christophera Nolana. Příběh sleduje osudy řeckého hrdiny Odyssea, který se po skončení trojské války vydává na dlouhou a nebezpečnou cestu domů, na rodnou Ithaku. Během svého putování musí čelit rozmarům bohů, bájným nestvůrám, zrádným nástrahám i vlastnímu osudu. Doma na něj mezitím čeká věrná manželka Pénelopé.",
+          "Film slibuje mimořádnou vizuální podívanou, dramatické souboje a nadčasový příběh o odvaze, vytrvalosti, věrnosti a touze po návratu domů.",
+          "Informace o promítání:",
+          "Datum: pátek 11. prosince 2026",
+          "Začátek: 18:00 hodin",
+          "Místo: kino Na rychtě, Rtyně v Podkrkonoší",
+          "Vstupné: 100 Kč",
+          "Přístupnost: Mládeži do 15 let nevhodné (15+)",
+          "Upozornění: Filmová produkce trvá přibližně 3 hodiny."
+        ],
         "days": [],
         "kind": "event",
         "time": "18:00",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "Jedno z nejslavnějších děl světové literatury, Homérova Odyssea, ožívá na filmovém plátně v monumentálním zpracování oceňovaného režiséra Christophera Nolana. Příběh sleduje osudy řeckého hrdiny Odyssea, který se po skončení trojské války vydává na dlouhou a nebezpečnou cestu domů, na rodnou Ithaku. Během svého putování musí čelit rozmarům bohů, bájným nestvůrám, zrádným nástrahám i vlastnímu osudu. Doma na něj mezitím čeká věrná manželka Pénelopé.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Film slibuje mimořádnou vizuální podívanou, dramatické souboje a nadčasový příběh o odvaze, vytrvalosti, věrnosti a touze po návratu domů.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Informace o promítání:",
+            "type": "paragraph"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Datum: pátek 11. prosince 2026",
+              "Začátek: 18:00 hodin",
+              "Místo: kino Na rychtě, Rtyně v Podkrkonoší",
+              "Vstupné: 100 Kč",
+              "Přístupnost: Mládeži do 15 let nevhodné (15+)"
+            ],
+            "ordered": false
+          },
+          {
+            "text": "Upozornění: Filmová produkce trvá přibližně 3 hodiny.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "ODYSSEA – velkolepý filmový epos v kině Na rychtě",
+            "url": "https://www.rtyne.cz/image/4506804/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "258",
@@ -5502,24 +5665,55 @@
       "category": "Akce",
       "event_date": "2026-11-24",
       "published_at": "2026-10-14T00:00:00.000Z",
-      "summary": "",
+      "summary": "Město Rtyně v Podkrkonoší zve na cestovatelskou přednášku Libora Drahoňovského s názvem U moře v Černé Hoře, která se uskuteční v úterý 24. listopadu 2026 od 18 hodin v kině Na rychtě ve Rtyni v Podkrkonoší. Během besedy se návštěvníci seznámí s pamětihodnostmi i přírodními krásami černohorského pobřeží. Řeč bude o starobylých městech Budva, Perast",
       "payload": {
-        "body": [],
+        "body": [
+          "Město Rtyně v Podkrkonoší zve na cestovatelskou přednášku Libora Drahoňovského s názvem U moře v Černé Hoře, která se uskuteční v úterý 24. listopadu 2026 od 18 hodin v kině Na rychtě ve Rtyni v Podkrkonoší.",
+          "Během besedy se návštěvníci seznámí s pamětihodnostmi i přírodními krásami černohorského pobřeží. Řeč bude o starobylých městech Budva, Perast, Herceg Nový a Risan, především však o malebném Kotoru s jeho úzkými uličkami, mohutnými hradbami a cennými kostely. Významná část promítání bude věnována také Boce Kotorské, nádhernému zálivu lemovanému strmými horskými svahy.",
+          "Přednáška zavede návštěvníky rovněž na památnou horu Lovčen a přiblíží mnohé zajímavosti z historie regionu i ze současného života místních obyvatel.",
+          "Vstupné je jednotné 50 Kč."
+        ],
         "days": [],
         "kind": "event",
         "time": "18:00",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "Město Rtyně v Podkrkonoší zve na cestovatelskou přednášku Libora Drahoňovského s názvem U moře v Černé Hoře, která se uskuteční v úterý 24. listopadu 2026 od 18 hodin v kině Na rychtě ve Rtyni v Podkrkonoší.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Během besedy se návštěvníci seznámí s pamětihodnostmi i přírodními krásami černohorského pobřeží. Řeč bude o starobylých městech Budva, Perast, Herceg Nový a Risan, především však o malebném Kotoru s jeho úzkými uličkami, mohutnými hradbami a cennými kostely. Významná část promítání bude věnována také Boce Kotorské, nádhernému zálivu lemovanému strmými horskými svahy.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Přednáška zavede návštěvníky rovněž na památnou horu Lovčen a přiblíží mnohé zajímavosti z historie regionu i ze současného života místních obyvatel.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Vstupné je jednotné 50 Kč.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Cestovatelská přednáška Libora Drahoňovského s názvem U moře v Černé Hoře",
+            "url": "https://www.rtyne.cz/image/4498887/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "16",
@@ -5550,7 +5744,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:04.748Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.205Z"
+      "last_seen_at": "2026-11-10T15:22:03.896Z"
     },
     {
       "id": "15",
@@ -5581,7 +5775,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:04.724Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.205Z"
+      "last_seen_at": "2026-11-10T15:22:03.896Z"
     },
     {
       "id": "4",
@@ -5602,9 +5796,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.581Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.845Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.581Z"
+      "last_seen_at": "2026-11-10T15:22:05.845Z"
     },
     {
       "id": "256",
@@ -5616,22 +5810,58 @@
       "published_at": "2026-10-12T00:00:00.000Z",
       "summary": "Úterý 17. listopadu 2026 od 18:00 hodin. Jednotné vstupné: 50 Kč",
       "payload": {
-        "body": [],
+        "body": [
+          "„Největší kouzla se skrývají v tom, čemu věříme.“",
+          "Přijďte si užít kouzelný filmový příběh plný dobrodružství, přátelství a odvahy. Kino Na rychtě ve Rtyni v Podkrkonoší uvede v úterý 17. listopadu od 18 hodin rodinný dobrodružný film Skřítek: Nový začátek.",
+          "Jedenáctiletá Hanka se po ztrátě maminky stěhuje do nového města, kde se musí vyrovnat s neznámým prostředím i posměchem ostatních dětí. Na rozdíl od svých vrstevníků totiž stále věří v existenci lesních skřítků. Společně s malým vynálezcem Michalem se proto vydává hluboko do lesa, aby našla tajemného skřítka Sindriho.",
+          "Dobrodružná výprava se však brzy promění v nečekanou zkoušku odvahy. Když v lese vypukne požár, musí se mladí hrdinové postavit nebezpečí a dokázat, že skutečná kouzla se skrývají především v přátelství, důvěře a odhodlání pomáhat druhým.",
+          "Srdečně zveme malé i velké diváky!"
+        ],
         "days": [],
         "kind": "event",
         "time": "18:00",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "„Největší kouzla se skrývají v tom, čemu věříme.“",
+            "type": "paragraph"
+          },
+          {
+            "text": "Přijďte si užít kouzelný filmový příběh plný dobrodružství, přátelství a odvahy. Kino Na rychtě ve Rtyni v Podkrkonoší uvede v úterý 17. listopadu od 18 hodin rodinný dobrodružný film Skřítek: Nový začátek.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Jedenáctiletá Hanka se po ztrátě maminky stěhuje do nového města, kde se musí vyrovnat s neznámým prostředím i posměchem ostatních dětí. Na rozdíl od svých vrstevníků totiž stále věří v existenci lesních skřítků. Společně s malým vynálezcem Michalem se proto vydává hluboko do lesa, aby našla tajemného skřítka Sindriho.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Dobrodružná výprava se však brzy promění v nečekanou zkoušku odvahy. Když v lese vypukne požár, musí se mladí hrdinové postavit nebezpečí a dokázat, že skutečná kouzla se skrývají především v přátelství, důvěře a odhodlání pomáhat druhým.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Srdečně zveme malé i velké diváky!",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Kino Na rychtě zve na film Skřítek: Nový začátek",
+            "url": "https://www.rtyne.cz/image/4473769/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "26",
@@ -5669,9 +5899,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:51.775Z"
+        "detail_fetched_at": "2026-11-10T15:22:14.423Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "34",
@@ -5698,9 +5928,9 @@
         "source_name": "ZŠ a ZUŠ Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.775Z"
+        "detail_fetched_at": "2026-11-10T15:22:04.375Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.775Z"
+      "last_seen_at": "2026-11-10T15:22:04.375Z"
     },
     {
       "id": "27",
@@ -5728,9 +5958,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:53.507Z"
+        "detail_fetched_at": "2026-11-10T15:22:16.101Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "35",
@@ -5776,7 +6006,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:06.551Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.775Z"
+      "last_seen_at": "2026-11-10T15:22:04.375Z"
     },
     {
       "id": "222",
@@ -5875,9 +6105,9 @@
             "title": "Podrobnosti od pořadatele"
           }
         ],
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "845",
@@ -5908,9 +6138,9 @@
         "attachments": [],
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:05.847Z"
+        "detail_fetched_at": "2026-11-10T15:22:28.675Z"
       },
-      "last_seen_at": "2026-11-10T11:06:05.847Z"
+      "last_seen_at": "2026-11-10T15:22:28.675Z"
     },
     {
       "id": "235",
@@ -5941,9 +6171,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.758Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.090Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.758Z"
+      "last_seen_at": "2026-11-10T15:22:25.090Z"
     },
     {
       "id": "848",
@@ -6021,9 +6251,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "36",
@@ -6064,7 +6294,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:06.713Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.775Z"
+      "last_seen_at": "2026-11-10T15:22:04.375Z"
     },
     {
       "id": "849",
@@ -6120,9 +6350,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "260",
@@ -6132,24 +6362,55 @@
       "category": "Akce",
       "event_date": "2026-12-05",
       "published_at": "2026-09-24T00:00:00.000Z",
-      "summary": "",
+      "summary": "Město Rtyně v Podkrkonoší připravuje adventní zájezd na adventní trhy v polské Wroclawi. Cena 800 Kč (v ceně: doprava, průvodce, vstupné do Haly století – památka UNESCO) Zájezd se uskuteční v sobotu 5. 12. 2026. Zájemci se mohou hlásit od 1. října. Součástí přihlášení je i zaplacení ceny zájezdu. Pokud bude zájezd stornován po 1. 11. bude účtován ",
       "payload": {
-        "body": [],
+        "body": [
+          "Město Rtyně v Podkrkonoší připravuje adventní zájezd na adventní trhy v polské Wroclawi.",
+          "Cena 800 Kč (v ceně: doprava, průvodce, vstupné do Haly století – památka UNESCO)",
+          "Zájezd se uskuteční v sobotu 5. 12. 2026.",
+          "Zájemci se mohou hlásit od 1. října. Součástí přihlášení je i zaplacení ceny zájezdu. Pokud bude zájezd stornován po 1. 11. bude účtován 100% storno poplatek."
+        ],
         "days": [],
         "kind": "event",
         "time": "7:30",
-        "blocks": [],
-        "images": [],
+        "blocks": [
+          {
+            "text": "Město Rtyně v Podkrkonoší připravuje adventní zájezd na adventní trhy v polské Wroclawi.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Cena 800 Kč (v ceně: doprava, průvodce, vstupné do Haly století – památka UNESCO)",
+            "type": "paragraph"
+          },
+          {
+            "text": "Zájezd se uskuteční v sobotu 5. 12. 2026.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Zájemci se mohou hlásit od 1. října. Součástí přihlášení je i zaplacení ceny zájezdu. Pokud bude zájezd stornován po 1. 11. bude účtován 100% storno poplatek.",
+            "type": "paragraph"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Adventní zájezd do Wroclawi",
+            "url": "https://www.rtyne.cz/image/4387976/800/600"
+          },
+          {
+            "alt": "iCal",
+            "url": "https://www.rtyne.cz/images/global/ical-ico.svg"
+          }
+        ],
         "end_time": null,
         "cancelled": false,
-        "detail_ok": false,
+        "detail_ok": true,
         "in_latest": true,
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:14.462Z"
+        "detail_fetched_at": "2026-11-10T15:22:35.166Z"
       },
-      "last_seen_at": "2026-11-10T11:06:14.462Z"
+      "last_seen_at": "2026-11-10T15:22:35.166Z"
     },
     {
       "id": "37",
@@ -6637,7 +6898,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:07.804Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.775Z"
+      "last_seen_at": "2026-11-10T15:22:04.375Z"
     },
     {
       "id": "38",
@@ -6704,7 +6965,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-10T05:17:07.994Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.775Z"
+      "last_seen_at": "2026-11-10T15:22:04.375Z"
     },
     {
       "id": "223",
@@ -6735,9 +6996,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "224",
@@ -6768,9 +7029,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "5",
@@ -6795,9 +7056,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.581Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.845Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.581Z"
+      "last_seen_at": "2026-11-10T15:22:05.845Z"
     },
     {
       "id": "225",
@@ -6848,9 +7109,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "229",
@@ -6958,9 +7219,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "230",
@@ -7068,9 +7329,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "6",
@@ -7098,9 +7359,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:05:41.581Z"
+        "detail_fetched_at": "2026-11-10T15:22:05.845Z"
       },
-      "last_seen_at": "2026-11-10T11:05:41.581Z"
+      "last_seen_at": "2026-11-10T15:22:05.845Z"
     },
     {
       "id": "850",
@@ -7221,9 +7482,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "7",
@@ -7330,9 +7591,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "664",
@@ -7364,9 +7625,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "663",
@@ -7398,9 +7659,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "662",
@@ -7432,9 +7693,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "661",
@@ -7466,9 +7727,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "660",
@@ -7500,9 +7761,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "659",
@@ -7534,9 +7795,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "658",
@@ -7568,9 +7829,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "657",
@@ -7602,9 +7863,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "656",
@@ -7636,9 +7897,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "655",
@@ -7669,9 +7930,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "665",
@@ -7702,9 +7963,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "29",
@@ -7732,9 +7993,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:56.968Z"
+        "detail_fetched_at": "2026-11-10T15:22:19.470Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "28",
@@ -7762,9 +8023,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:55.258Z"
+        "detail_fetched_at": "2026-11-10T15:22:17.800Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "30",
@@ -7792,9 +8053,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-10T11:05:58.683Z"
+        "detail_fetched_at": "2026-11-10T15:22:21.182Z"
       },
-      "last_seen_at": "2026-11-10T11:06:00.381Z"
+      "last_seen_at": "2026-11-10T15:22:22.877Z"
     },
     {
       "id": "667",
@@ -7830,9 +8091,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "666",
@@ -7867,9 +8128,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "851",
@@ -7945,9 +8206,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "668",
@@ -7971,9 +8232,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.058Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.477Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.058Z"
+      "last_seen_at": "2026-11-10T15:22:23.477Z"
     },
     {
       "id": "852",
@@ -8066,9 +8327,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "853",
@@ -8154,9 +8415,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "231",
@@ -8264,9 +8525,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "854",
@@ -8357,9 +8618,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "1073",
@@ -8413,9 +8674,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.758Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.090Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.758Z"
+      "last_seen_at": "2026-11-10T15:22:25.090Z"
     },
     {
       "id": "855",
@@ -8494,9 +8755,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.796Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.150Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.796Z"
+      "last_seen_at": "2026-11-10T15:22:25.150Z"
     },
     {
       "id": "232",
@@ -8525,9 +8786,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "237",
@@ -8558,9 +8819,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.758Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.090Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.758Z"
+      "last_seen_at": "2026-11-10T15:22:25.090Z"
     },
     {
       "id": "238",
@@ -8591,9 +8852,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.758Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.090Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.758Z"
+      "last_seen_at": "2026-11-10T15:22:25.090Z"
     },
     {
       "id": "233",
@@ -8753,9 +9014,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "239",
@@ -8786,9 +9047,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.758Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.090Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.758Z"
+      "last_seen_at": "2026-11-10T15:22:25.090Z"
     },
     {
       "id": "784",
@@ -8812,9 +9073,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "234",
@@ -8922,9 +9183,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "694",
@@ -9099,9 +9360,9 @@
         "source_name": "Orel Rtyně",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "693",
@@ -9276,9 +9537,9 @@
         "source_name": "Orel Rtyně",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "692",
@@ -9452,9 +9713,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "695",
@@ -9581,9 +9842,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "829",
@@ -9612,9 +9873,9 @@
         "attachments": [],
         "source_name": "TS Ballare",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.893Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.433Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.893Z"
+      "last_seen_at": "2026-11-10T15:22:24.433Z"
     },
     {
       "id": "696",
@@ -9643,9 +9904,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "697",
@@ -9669,9 +9930,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:03.243Z"
+        "detail_fetched_at": "2026-11-10T15:22:25.871Z"
       },
-      "last_seen_at": "2026-11-10T11:06:03.243Z"
+      "last_seen_at": "2026-11-10T15:22:25.871Z"
     },
     {
       "id": "785",
@@ -9695,9 +9956,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "786",
@@ -9721,9 +9982,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "787",
@@ -9747,9 +10008,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "788",
@@ -9773,9 +10034,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "789",
@@ -9799,9 +10060,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "790",
@@ -9825,9 +10086,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "791",
@@ -9851,9 +10112,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "792",
@@ -9877,9 +10138,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "793",
@@ -9903,9 +10164,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "794",
@@ -9929,9 +10190,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:01.186Z"
+        "detail_fetched_at": "2026-11-10T15:22:23.766Z"
       },
-      "last_seen_at": "2026-11-10T11:06:01.186Z"
+      "last_seen_at": "2026-11-10T15:22:23.766Z"
     },
     {
       "id": "871",
@@ -9966,9 +10227,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.444Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.034Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.444Z"
+      "last_seen_at": "2026-11-10T15:22:24.034Z"
     },
     {
       "id": "872",
@@ -10003,9 +10264,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.444Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.034Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.444Z"
+      "last_seen_at": "2026-11-10T15:22:24.034Z"
     },
     {
       "id": "874",
@@ -10040,9 +10301,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.444Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.034Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.444Z"
+      "last_seen_at": "2026-11-10T15:22:24.034Z"
     },
     {
       "id": "873",
@@ -10073,9 +10334,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.444Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.034Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.444Z"
+      "last_seen_at": "2026-11-10T15:22:24.034Z"
     },
     {
       "id": "875",
@@ -10108,9 +10369,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-10T11:06:02.444Z"
+        "detail_fetched_at": "2026-11-10T15:22:24.034Z"
       },
-      "last_seen_at": "2026-11-10T11:06:02.444Z"
+      "last_seen_at": "2026-11-10T15:22:24.034Z"
     }
   ],
   "posts": [
@@ -10167,8 +10428,8 @@
       "source_key": "ballare",
       "source_url": "https://ballare.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.893Z",
-      "last_success_at": "2026-11-10T11:06:01.893Z",
+      "checked_at": "2026-11-10T15:22:24.433Z",
+      "last_success_at": "2026-11-10T15:22:24.433Z",
       "last_error": null,
       "item_count": 1,
       "name": "TS Ballare",
@@ -10180,8 +10441,8 @@
       "source_key": "banik",
       "source_url": "http://www.banikrtyne-fotbal.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:05.847Z",
-      "last_success_at": "2026-11-10T11:06:05.847Z",
+      "checked_at": "2026-11-10T15:22:28.675Z",
+      "last_success_at": "2026-11-10T15:22:28.675Z",
       "last_error": null,
       "item_count": 1,
       "name": "TJ Baník – fotbal",
@@ -10193,8 +10454,8 @@
       "source_key": "bonifac",
       "source_url": "https://www.bonifac.eu/feed/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:02.796Z",
-      "last_success_at": "2026-11-10T11:06:02.796Z",
+      "checked_at": "2026-11-10T15:22:25.150Z",
+      "last_success_at": "2026-11-10T15:22:25.150Z",
       "last_error": null,
       "item_count": 10,
       "name": "TŠ Bonifác",
@@ -10206,8 +10467,8 @@
       "source_key": "calendar",
       "source_url": "https://www.rtyne.cz/kalendar-udalosti",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:14.462Z",
-      "last_success_at": "2026-11-10T11:06:14.462Z",
+      "checked_at": "2026-11-10T15:22:35.166Z",
+      "last_success_at": "2026-11-10T15:22:35.166Z",
       "last_error": null,
       "item_count": 9,
       "name": "Kalendář města",
@@ -10219,8 +10480,8 @@
       "source_key": "city",
       "source_url": "https://www.rtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:00.381Z",
-      "last_success_at": "2026-11-10T11:06:00.381Z",
+      "checked_at": "2026-11-10T15:22:22.877Z",
+      "last_success_at": "2026-11-10T15:22:22.877Z",
       "last_error": null,
       "item_count": 24,
       "name": "Město Rtyně",
@@ -10232,8 +10493,8 @@
       "source_key": "clubs",
       "source_url": "https://www.rtyne.cz/spolky-a-sdruzeni",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:15.044Z",
-      "last_success_at": "2026-11-10T11:06:15.044Z",
+      "checked_at": "2026-11-10T15:22:35.602Z",
+      "last_success_at": "2026-11-10T15:22:35.602Z",
       "last_error": null,
       "item_count": 14,
       "name": "Spolky a sportovní oddíly",
@@ -10245,8 +10506,8 @@
       "source_key": "contemporary",
       "source_url": "https://contemporary.cz/cs/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.650Z",
-      "last_success_at": "2026-11-10T11:06:01.650Z",
+      "checked_at": "2026-11-10T15:22:24.220Z",
+      "last_success_at": "2026-11-10T15:22:24.220Z",
       "last_error": null,
       "item_count": 0,
       "name": "Contemporary Region",
@@ -10270,8 +10531,8 @@
       "source_key": "florbal",
       "source_url": "https://www.fbcorelrtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:04.703Z",
-      "last_success_at": "2026-11-10T11:06:04.703Z",
+      "checked_at": "2026-11-10T15:22:24.381Z",
+      "last_success_at": "2026-11-10T15:22:24.381Z",
       "last_error": null,
       "item_count": 7,
       "name": "FBC Orel Rtyně",
@@ -10283,8 +10544,8 @@
       "source_key": "garden",
       "source_url": "https://www.zahradkari.cz/zo/rtyne/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:00.917Z",
-      "last_success_at": "2026-11-10T11:06:00.917Z",
+      "checked_at": "2026-11-10T15:22:23.427Z",
+      "last_success_at": "2026-11-10T15:22:23.427Z",
       "last_error": null,
       "item_count": 0,
       "name": "ČZS Rtyně",
@@ -10296,7 +10557,7 @@
       "source_key": "hasici",
       "source_url": "https://www.facebook.com/sdhrtyne",
       "status": "pending",
-      "checked_at": "2026-11-10T11:06:00.596Z",
+      "checked_at": "2026-11-10T15:22:23.095Z",
       "last_success_at": null,
       "last_error": null,
       "item_count": 0,
@@ -10309,8 +10570,8 @@
       "source_key": "koletovka",
       "source_url": "https://koletovka.cz/wp-json/wp/v2/posts?per_page=5",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:03.758Z",
-      "last_success_at": "2026-11-10T11:06:03.758Z",
+      "checked_at": "2026-11-10T15:22:25.090Z",
+      "last_success_at": "2026-11-10T15:22:25.090Z",
       "last_error": null,
       "item_count": 8,
       "name": "Koletova hornická hudba",
@@ -10322,8 +10583,8 @@
       "source_key": "library",
       "source_url": "https://www.mkrtyne.cz/akce.html",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.483Z",
-      "last_success_at": "2026-11-10T11:06:01.483Z",
+      "checked_at": "2026-11-10T15:22:24.006Z",
+      "last_success_at": "2026-11-10T15:22:24.006Z",
       "last_error": null,
       "item_count": 15,
       "name": "Městská knihovna",
@@ -10335,8 +10596,8 @@
       "source_key": "museum",
       "source_url": "https://www.muzeumrtyne.cz/akce",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.490Z",
-      "last_success_at": "2026-11-10T11:06:01.490Z",
+      "checked_at": "2026-11-10T15:22:23.743Z",
+      "last_success_at": "2026-11-10T15:22:23.743Z",
       "last_error": null,
       "item_count": 1,
       "name": "Muzeum a infocentrum",
@@ -10348,8 +10609,8 @@
       "source_key": "odolov",
       "source_url": "https://pechotni-srub-t-s-26.webnode.cz/rss/all.xml",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.186Z",
-      "last_success_at": "2026-11-10T11:06:01.186Z",
+      "checked_at": "2026-11-10T15:22:23.766Z",
+      "last_success_at": "2026-11-10T15:22:23.766Z",
       "last_error": null,
       "item_count": 11,
       "name": "KVH Odolov",
@@ -10361,8 +10622,8 @@
       "source_key": "orel",
       "source_url": "https://www.orelrtyne.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:03.243Z",
-      "last_success_at": "2026-11-10T11:06:03.243Z",
+      "checked_at": "2026-11-10T15:22:25.871Z",
+      "last_success_at": "2026-11-10T15:22:25.871Z",
       "last_error": null,
       "item_count": 12,
       "name": "Orel Rtyně",
@@ -10374,8 +10635,8 @@
       "source_key": "preschool",
       "source_url": "https://www.msrtyne.cz/aktuality/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:05:41.581Z",
-      "last_success_at": "2026-11-10T11:05:41.581Z",
+      "checked_at": "2026-11-10T15:22:05.845Z",
+      "last_success_at": "2026-11-10T15:22:05.845Z",
       "last_error": null,
       "item_count": 8,
       "name": "MŠ Rtyně",
@@ -10387,8 +10648,8 @@
       "source_key": "preschool_menu",
       "source_url": "https://www.msrtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.194Z",
-      "last_success_at": "2026-11-10T11:06:01.194Z",
+      "checked_at": "2026-11-10T15:22:24.214Z",
+      "last_success_at": "2026-11-10T15:22:24.214Z",
       "last_error": null,
       "item_count": 1,
       "name": "Jídelníček MŠ",
@@ -10400,8 +10661,8 @@
       "source_key": "school",
       "source_url": "https://www.zsrtyne.cz/pro-verejnost/aktuality",
       "status": "ok",
-      "checked_at": "2026-11-10T11:05:41.775Z",
-      "last_success_at": "2026-11-10T11:05:41.775Z",
+      "checked_at": "2026-11-10T15:22:04.375Z",
+      "last_success_at": "2026-11-10T15:22:04.375Z",
       "last_error": null,
       "item_count": 8,
       "name": "ZŠ a ZUŠ Rtyně",
@@ -10413,8 +10674,8 @@
       "source_key": "scouts",
       "source_url": "https://skaut-rtyne.skauting.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.058Z",
-      "last_success_at": "2026-11-10T11:06:01.058Z",
+      "checked_at": "2026-11-10T15:22:23.477Z",
+      "last_success_at": "2026-11-10T15:22:23.477Z",
       "last_error": null,
       "item_count": 20,
       "name": "Skaut – Permoník",
@@ -10426,8 +10687,8 @@
       "source_key": "services",
       "source_url": "https://www.rtyne.cz/svoz-odpadu-a-odpadove-hospodarstvi",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:31.566Z",
-      "last_success_at": "2026-11-10T11:06:31.566Z",
+      "checked_at": "2026-11-10T15:22:53.137Z",
+      "last_success_at": "2026-11-10T15:22:53.137Z",
       "last_error": null,
       "item_count": 9,
       "name": "Praktické informace města",
@@ -10439,8 +10700,8 @@
       "source_key": "sms_areal",
       "source_url": "https://www.smsticket.cz/mista/4699-prirodni-areal-rtyne-v-podkrkonosi",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.397Z",
-      "last_success_at": "2026-11-10T11:06:01.397Z",
+      "checked_at": "2026-11-10T15:22:24.031Z",
+      "last_success_at": "2026-11-10T15:22:24.031Z",
       "last_error": null,
       "item_count": 1,
       "name": "SMS ticket – Přírodní areál",
@@ -10452,8 +10713,8 @@
       "source_key": "sms_orlovna",
       "source_url": "https://www.smsticket.cz/mista/4478-sportovni-hala-orlovna-rtyne-v-podkrkonosi",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:01.495Z",
-      "last_success_at": "2026-11-10T11:06:01.495Z",
+      "checked_at": "2026-11-10T15:22:24.161Z",
+      "last_success_at": "2026-11-10T15:22:24.161Z",
       "last_error": null,
       "item_count": 2,
       "name": "SMS ticket – Orlovna",
@@ -10465,8 +10726,8 @@
       "source_key": "sokol",
       "source_url": "https://www.sokol.eu/sokolovna/tj-sokol-rtyne-v-podkrkonosi",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:00.812Z",
-      "last_success_at": "2026-11-10T11:06:00.812Z",
+      "checked_at": "2026-11-10T15:22:23.321Z",
+      "last_success_at": "2026-11-10T15:22:23.321Z",
       "last_error": null,
       "item_count": 0,
       "name": "T. J. Sokol Rtyně",
@@ -10478,8 +10739,8 @@
       "source_key": "volejbal",
       "source_url": "https://volejbal-rtyne.estranky.cz/clanky/clanky/",
       "status": "ok",
-      "checked_at": "2026-11-10T11:06:02.444Z",
-      "last_success_at": "2026-11-10T11:06:02.444Z",
+      "checked_at": "2026-11-10T15:22:24.034Z",
+      "last_success_at": "2026-11-10T15:22:24.034Z",
       "last_error": null,
       "item_count": 5,
       "name": "TJ Baník – volejbal",
@@ -10491,8 +10752,8 @@
       "source_key": "water",
       "source_url": "https://www.vakrtyne.cz/havarie-a-odstavky",
       "status": "ok",
-      "checked_at": "2026-11-10T11:05:41.205Z",
-      "last_success_at": "2026-11-10T11:05:41.205Z",
+      "checked_at": "2026-11-10T15:22:03.896Z",
+      "last_success_at": "2026-11-10T15:22:03.896Z",
       "last_error": null,
       "item_count": 8,
       "name": "VAK Rtyně",
@@ -10501,5 +10762,5 @@
       "news_note": null
     }
   ],
-  "generated_at": "2026-11-10T15:16:21.836Z"
+  "generated_at": "2026-11-10T15:22:59.703Z"
 }
