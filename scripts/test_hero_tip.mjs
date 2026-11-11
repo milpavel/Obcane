@@ -18,7 +18,7 @@ const notice={id:8,source_key:'water',title:'Přerušení dodávky vody 11. list
 assert.equal(selectHeroTip({items:[{...event(1),payload:{kind:'event',detail_error:'failed'}}]},[],now),null);
 const articles=[{id:'a',slug:'vlastni-clanek',title:'Naše zpráva',category:'original',excerpt:'Zpráva od redakce',published_at:'2026-11-11T08:00:00Z'}];assert.equal(selectHeroTip({items:[]},articles,now).href,'/zpravy/?clanek=vlastni-clanek');
 const {document}=parseHTML('<html><body><div id="hero-tip"></div></body></html>');global.document=document;const root=document.querySelector('#hero-tip');renderHeroTip(root,selectHeroTip(feed,[],now));assert.ok(root.querySelector('h1#intro-title'));assert.ok(root.querySelector('a').href.startsWith('/?zprava='));renderHeroTip(root,null);assert.equal(root.querySelector('a').href,'/#akce');
-const html=readFileSync(new URL('../index.html',import.meta.url),'utf8'),dom=parseHTML(html).document;assert.match(dom.querySelector('#o-nas').textContent,/Na Rtyni mě záleží/);assert.doesNotMatch(dom.querySelector('.intro-banner').textContent,/Nejen před volbami/);
+const html=readFileSync(new URL('../index.html',import.meta.url),'utf8'),dom=parseHTML(html).document;assert.match(dom.querySelector('#o-nas').textContent,/Na Rtyni mi záleží/);assert.doesNotMatch(dom.querySelector('.intro-banner').textContent,/Nejen před volbami/);
 console.log('PASS: Prague/DST clock, three-hour diverse rotation, current notices, expired/cancelled/unknown/failed exclusion, original articles, local detail links, safe fallback and moved introduction');
 
 assert.equal(resultScore({title:'Baník zvítězil 3:1',payload:{body:[]}}),'3:1');
