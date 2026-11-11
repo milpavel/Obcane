@@ -48,7 +48,8 @@ const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textCo
 export function renderHeroTip(root,tip){if(!root)return;const key=tip?tip.type+':'+tip.item.id:'fallback';if(root.dataset.tipKey===key)return;root.dataset.tipKey=key;
  const kicker=node('p',tip?tip.tag.toUpperCase()+' · VYBRÁNO PRO VÁS':'VÁŠ INFORMAČNÍ PORTÁL','intro-kicker'),h=node('h1',tip?.item.title||'Rtyně na jednom místě.');h.id='intro-title';
  const meta=node('p',undefined,'hero-tip-meta');if(tip?.date){const d=new Date(tip.date+'T12:00:00Z');meta.append(node('span',d.toLocaleDateString('cs-CZ',{timeZone:'Europe/Prague',weekday:'long',day:'numeric',month:'long'})+(tip.end&&tip.end!==tip.date?' – '+new Date(tip.end+'T12:00:00Z').toLocaleDateString('cs-CZ',{timeZone:'Europe/Prague',day:'numeric',month:'long'}):'')+(tip.time?' · '+tip.time:'')));}if(tip?.result)meta.append(node('span','Výsledek '+tip.result));if(tip?.item.payload?.location)meta.append(node('span',tip.item.payload.location));
- const summary=String(tip?.item.summary||'Aktuální zprávy, akce a praktické informace pro život ve Rtyni.').replace(/\s+/g,' ').trim();const p=node('p',summary,'intro-description');
+ const report=tip?.type==='result'?(tip.item.payload?.body||[]).find(t=>typeof t==='string'&&!/[<>]/.test(t)&&/vyhr|prohr|poraz|vítěz|vitez|remíz|remiz|skonč|skonc|zisk/.test(t)):null;
+ const summary=String(report||tip?.item.summary||'Aktuální zprávy, akce a praktické informace pro život ve Rtyni.').replace(/\s+/g,' ').trim();const p=node('p',summary,'intro-description');
  const a=node('a',tip?(tip.type==='event'?'Program a podrobnosti →':tip.type==='notice'?'Podrobnosti omezení →':'Přečíst zprávu →'):'Prohlédnout aktuální akce →','hero-tip-link');a.href=tip?.href||'/#akce';if(tip)a.setAttribute('aria-label',a.textContent+' '+tip.item.title);
  root.replaceChildren(kicker,h,meta,p,a);
 }

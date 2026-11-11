@@ -29,3 +29,5 @@ assert.ok(tipCandidates({items:[result]},[],now).some(x=>x.type==='result'&&x.re
 assert.ok([0,3,6,9,12,15,18,21].some(h=>selectHeroTip({items:[...feed.items,result]},[],new Date(`2026-11-11T${String(h).padStart(2,'0')}:00:00Z`))?.type==='result'),'Results get a dedicated rotation slot');
 
 const result1={...result,published_at:'2026-11-10T09:00:00Z'},result2={...result1,id:51,title:'Baník vyhrál 2:0'};assert.notEqual(selectHeroTip({items:[result1,result2]},[],new Date('2026-11-11T02:00:00Z')).item.id,selectHeroTip({items:[result1,result2]},[],new Date('2026-11-11T14:00:00Z')).item.id,'Reports from one source also rotate');
+
+renderHeroTip(root,{item:{...result,payload:{body:['Baník porazil soupeře 3:1.']}},type:'result',tag:'Výsledky sportu',result:'3:1',href:'/?zprava=50'});assert.match(root.textContent,/Výsledek 3:1/);assert.match(root.textContent,/Baník porazil soupeře 3:1/);
