@@ -14,7 +14,7 @@ export function feedInfo(x,today=new Date().toLocaleDateString('sv-SE',{timeZone
  const report=retrospective||knownEvent&&pub&&pub>end&&!invitation;
  const age=pub?Math.max(0,(Date.parse(today)-Date.parse(pub))/DAY):null;
  if(p.cancelled||p.archive)return {tier:2,score:pub||end||'',label:p.cancelled?'Zrušená akce':'Archiv',date:end||pub,expired:!!end&&end<today};
- if(knownEvent&&!report){const distance=(Date.parse(start)-Date.parse(today))/DAY;if(end<today)return {tier:2,score:end,label:'Akce již proběhla',date:end,expired:true};return {tier:distance<=14?0:1,score:100-Math.max(0,distance),label:start===today?'Dnes':start<today?'Právě probíhá':'Připravuje se',date:start,expired:false};}
+ if(knownEvent&&!report){const distance=(Date.parse(start)-Date.parse(today))/DAY;if(end<today)return {tier:2,score:end,label:p.restriction?'Omezení již skončilo':'Akce již proběhla',date:end,expired:true};return {tier:distance<=14?0:1,score:100-Math.max(0,distance),label:start===today?'Dnes':start<today?'Právě probíhá':'Připravuje se',date:start,expired:false};}
  if(report&&end&&(Date.parse(today)-Date.parse(end))/DAY>30)return {tier:2,score:end,label:'Starší událost',date:end,expired:false};
  if(pub&&pub<=today)return {tier:age<=14?0:age<=30?1:2,score:age<=30?100-age:pub,label:age>30?'Starší zpráva':'',date:pub,expired:false};
  return {tier:3,score:'',label:pub?'Datum zveřejnění je v budoucnosti':'Datum neuvedeno',date:pub,expired:false};
