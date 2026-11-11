@@ -13,6 +13,10 @@ def get(url):
 d=get(API)
 assert {'city','school','preschool','water','calendar','library','preschool_menu','clubs','services','scouts','orel','koletovka','museum'} <= {s['source_key'] for s in d['sources']}
 assert d['items'], 'No imported items'
+assert next(s for s in d['sources'] if s['source_key']=='banik')['source_url']=='https://banikrtyne.cz/clanky/vse'
+football=[x for x in d['items'] if x['source_key']=='banik' and x['payload'].get('in_latest') is not False]
+assert football and all(x['external_url'].startswith('https://banikrtyne.cz/') for x in football), 'New football source missing'
+assert next(x for x in d['items'] if x['title']=='TJ Baník Rtyně' and x['payload'].get('kind')=='club')['payload']['website']=='https://banikrtyne.cz/'
 radio=[x for x in d['items'] if x['source_key']=='radio' and x['payload'].get('in_latest') is not False]
 assert radio and all(x['payload'].get('broadcast_date') and x['payload'].get('body') for x in radio), 'Radio transcripts missing'
 keys=[(x['source_key'],x['external_url']) for x in d['items']]

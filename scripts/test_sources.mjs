@@ -5,6 +5,7 @@ import {pathToFileURL} from 'node:url';
 import {parseHTML} from 'linkedom';
 const require=createRequire(import.meta.url),tmp=await mkdtemp(new URL('../.source-test-',import.meta.url));
 try{
+ await writeFile(tmp+'/banik.mjs',await readFile(new URL('../supabase/functions/obcane-api/banik.mjs',import.meta.url),'utf8'));
  await writeFile(tmp+'/smsticket.mjs',await readFile(new URL('../supabase/functions/obcane-api/smsticket.mjs',import.meta.url),'utf8'));
  let source=await readFile(new URL('../supabase/functions/obcane-api/extra-sources.ts',import.meta.url),'utf8');
  source=source.replaceAll('npm:word-extractor@1.0.4',pathToFileURL(require.resolve('word-extractor')).href).replaceAll('npm:linkedom@0.18.12',pathToFileURL(require.resolve('linkedom')).href);

@@ -119,3 +119,7 @@ Počasí, termíny a odjezdy sdílejí `.daily-overview`: na větších obrazovk
 ### Městský rozhlas
 
 Zdroj `radio` načítá datovaná hlášení z první stránky městského archivu `/mestsky-rozhlas` a úplné přepisy z jednotlivých detailů při pravidelném importu. Jedno hlášení zůstává jednou kartou, i když obsahuje několik oznámení. Sekce `#rozhlas` řadí podle data hlášení a přidává karty po šesti. Přepisy jsou zahrnuté do celkového vyhledávání. Při chybě zdroje zůstává poslední uložená verze a upozornění; odkaz na úplný archiv města je vždy dostupný.
+
+### Baník – nový fotbalový web
+
+Od 11. 11. 2026 zdroj `banik` používá `https://banikrtyne.cz/clanky/vse`. Modul `banik.mjs` importuje devět datovaných novinek a galerií, odděluje vlastní obsah od partnerů a zachovává odkaz na originál i autora. Fotogalerie mají nejvýše osm náhledů; delší články mají ukázku do 175 slov. Termíny mládežnických turnajů a pozvánku na další Rtyně CUP čte samostatně, aby historická reportáž nevyrobila chybnou budoucí akci. Nevymýšlí časy ani místo; při rozporu data a dne v týdnu upozorní v detailu. Po úspěšném importu starý fotbalový zdroj zmizí z aktuálního přehledu. Profil oddílu obsahuje ověřené kontakty, historii a odkazy na tým a turnaje; volejbal zůstává samostatný.

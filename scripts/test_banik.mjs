@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {parseHTML} from 'linkedom';
+import {banikListing,banikDate,banikDetail,banikTournaments} from '../supabase/functions/obcane-api/banik.mjs';
+const doc=s=>parseHTML(s).document;
+const card=(href='/clanky/61',date='05.10.2026')=>`<div class="card"><div class="card-body"><h5><a href="${href}">Reportáž ze zápasu</a></h5></div><div class="card-footer">Autor • ${date}</div></div>`;
+assert.equal(banikDate('SO 7.2.2027 – U11'),'2027-02-07');assert.equal(banikDate('31.2.2027'),null);
+assert.equal(banikListing(doc('<main>'+card()+card()+card('https://other.example/clanky/1')+card('/galerie/21','25.10.2026')+'</main>'))[0].url,'https://banikrtyne.cz/galerie/21');
+assert.throws(()=>banikListing(doc('<main>'+card('/clanky/61','31.2.2027')+'</main>')));
+const detail=banikDetail(doc('<header><p>Menu</p></header><main><h1>Zápas</h1><div class="article-content"><p>'+Array(200).fill('slovo').join(' ')+'</p></div><div id="article-gallery"><img src="/obrazky/article/1/nahled"><img src="https://other.example/image.jpg"></div></main><footer><p>Partneři</p></footer>'),'https://banikrtyne.cz/clanky/1');assert.equal(detail.extra.images.length,1);assert.ok(!JSON.stringify(detail).includes('Partneři'));assert.ok(detail.body[0].split(' ').length<=175);assert.ok(detail.extra.blocks.at(-1).text.includes('Ukázka'));
+assert.ok(banikDetail(doc('<main><h1>Fotogalerie</h1><div id="article-gallery"><img src="/obrazky/gallery/1/nahled"></div></main>'),'https://banikrtyne.cz/galerie/1').body[0].includes('Fotografie'));
+assert.throws(()=>banikDetail(doc('<main><h1>Prázdný článek</h1></main>'),'https://banikrtyne.cz/clanky/1'));
+const youth=banikTournaments(doc('<main><div class="static-content"><p>SO 7.2.2027 – U11 8/8 pro přihlášky uzavřen!</p><ul><li>FA Podkrkonoší</li></ul><p>12.12.2026 – U9</p></div></main>'),'https://banikrtyne.cz/stranka/turnaje-mladeznicke','2026-11-11');assert.equal(youth.length,2);assert.ok(youth[0].body.some(t=>t.includes('odporují')));assert.equal(youth[0].extra.time,undefined);assert.ok(!JSON.stringify(youth).includes('Orlovna'));
+const cup=banikTournaments(doc('<main><div class="static-content"><p>Příští 20. ročník se bude konat 2.-3.1.2027.</p></div></main>'),'https://banikrtyne.cz/stranka/turnaje-rtyne-cup','2026-11-11');assert.equal(cup[0].event,'2027-01-02');assert.equal(cup[0].extra.end_date,'2027-01-03');assert.equal(banikTournaments(doc('<main><div class="static-content"><p>Historická reportáž z roku 2026.</p></div></main>'),'https://banikrtyne.cz/stranka/turnaje-rtyne-cup','2026-11-11').length,0);
+console.log('PASS: new Baník website, dated news and galleries, safe images, bounded article excerpts, real tournament dates, no invented times or venues, weekday conflict and 2027 rollover');

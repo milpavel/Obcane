@@ -1,3 +1,4 @@
+import {banikListing,banikDetail,banikTournaments} from './banik.mjs';
 import {parseSmsVenue} from './smsticket.mjs';
 import {communitySources,communityPublished} from './community-sources.ts';
 import {clubProfile} from './club-profiles.ts';
@@ -222,6 +223,12 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
    try{const detail=await page(item.url,s.url),root=detail.querySelector('[property="description"]');const description=clean(root?.textContent).slice(0,600);if(description)item.body.push(description);}catch{/* The dated venue listing remains usable when its detail is unavailable. */}
   }
   return items;
+ }
+ if(s.feed==='banik'){
+  const rows=banikListing(await page(s.url));
+  for(const item of rows){await pause(400);try{const detail=banikDetail(await page(item.url,s.url),item.url);Object.assign(item,detail,{extra:{...item.extra,...detail.extra}});}catch(e){item.detail_error=String(e).slice(0,160);}}
+  for(const path of ['turnaje-mladeznicke','turnaje-rtyne-cup']){const url='https://banikrtyne.cz/stranka/'+path;await pause(400);try{rows.push(...banikTournaments(await page(url,s.url),url));}catch(e){rows.push({title:'Turnaje Baníku',url,body:[],detail_error:String(e).slice(0,160),extra:{kind:'community',in_latest:false}});}}
+  return rows;
  }
  if(s.feed==='rss'||s.feed==='json'){
   const r=await fetch(s.url,{signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Spolkový zdroj HTTP '+r.status);const raw=await r.text();if(raw.length>3000000)throw Error('Zdroj je příliš velký');

@@ -187,31 +187,64 @@ const profiles:Record<string,any>={
   }
  },
  "TJ Baník Rtyně": {
-  "summary": "Místní tělovýchovná jednota s fotbalovým a volejbalovým oddílem. Fotbal pro děti, mládež i dospělé.",
-  "body": [],
+  "summary": "Fotbalový oddíl TJ Baník Rtyně: tým mužů, mládež, zápasy, halové turnaje a fotografie. Volejbal má samostatný profil.",
+  "body": [
+    "Fotbal ve Rtyni má podle klubové historie kořeny v roce 1922. Současné travnaté hřiště bylo po rekonstrukci otevřeno 23. června 2001.",
+    "Klubové barvy jsou zelená, žlutá a černá. IČO: 00529591; klubové číslo FAČR: 5250271."
+  ],
   "extra": {
-   "activities": [
-    "Fotbalový oddíl zveřejňuje zprávy o týmech, trénování mládeže i nejmenší kategorii U7. Zájemce o trénink nasměruje sekretář k trenérovi vhodné věkové kategorie.",
-    "Volejbal má v tomto přehledu samostatný profil. Volná místa, vybavení na první trénink i aktuální rozvrh ověřte u oddílu."
-   ],
-   "contacts": [
-    "Sekretariát: +420 724 794 843 · sekretar@banikrtyne-fotbal.cz",
-    "Adresa TJ: Školní 826, Rtyně v Podkrkonoší."
-   ],
-   "fees": null,
-   "profile_sources": [
-    {
-     "title": "Fotbalový oddíl – činnost",
-     "url": "http://www.banikrtyne-fotbal.cz/"
-    },
-    {
-     "title": "Sekretariát a adresa",
-     "url": "http://www.banikrtyne-fotbal.cz/kontakt/"
-    }
-   ],
-   "profile_checked": "2026-11-09"
+    "website": "https://banikrtyne.cz/",
+    "activities": [
+      "Oddíl provozuje nový oficiální web s novinkami, fotogaleriemi, zápasy, výsledky a tabulkou mužů A.",
+      "Pořádá halové turnaje mládeže U7, U9 a U11, Rtyně CUP a Memoriál Petra Tyla pro hráče 40+. Aktuální datované pozvánky přebíráme do kalendáře akcí.",
+      "Zájemce o dětský fotbal nasměruje sekretář klubu k odpovídající kategorii. Tréninkové časy a členské příspěvky je potřeba potvrdit u oddílu."
+    ],
+    "contacts": [
+      "Předseda Petr Garček: +420 608 205 468 · predseda@banikrtyne-fotbal.cz",
+      "Sekretář Vladimír Vasiljev: +420 724 794 843 · sekretar@banikrtyne-fotbal.cz",
+      "Správce Dušan Brát: +420 724 576 356 · dusan.brat@seznam.cz",
+      "Správce Pavel Středa: +420 606 335 892 · streda.p@seznam.cz",
+      "Trenér mužů A Ivo Šulitka: +420 732 974 977",
+      "Korespondenční adresa: TJ Baník Rtyně v Podkrkonoší z.s., Školní 826, 542 33 Rtyně v Podkrkonoší."
+    ],
+    "fees": null,
+    "profile_sources": [
+      {
+        "title": "Nový oficiální web",
+        "url": "https://banikrtyne.cz/"
+      },
+      {
+        "title": "Kontakty a adresa",
+        "url": "https://banikrtyne.cz/stranka/kontakty"
+      },
+      {
+        "title": "Informace o klubu",
+        "url": "https://banikrtyne.cz/stranka/info"
+      },
+      {
+        "title": "Historie fotbalu ve Rtyni",
+        "url": "https://banikrtyne.cz/stranka/historie"
+      },
+      {
+        "title": "Muži A – tým, zápasy a tabulka",
+        "url": "https://banikrtyne.cz/kategorie/11?tab=1"
+      },
+      {
+        "title": "Halové turnaje mládeže",
+        "url": "https://banikrtyne.cz/stranka/turnaje-mladeznicke"
+      },
+      {
+        "title": "Rtyně CUP",
+        "url": "https://banikrtyne.cz/stranka/turnaje-rtyne-cup"
+      },
+      {
+        "title": "Memoriál Petra Tyla",
+        "url": "https://banikrtyne.cz/stranka/turnaje-memorial-pt"
+      }
+    ],
+    "profile_checked": "2026-11-11"
   }
- },
+},
  "TJ Baník Rtyně - volejbal": {
   "summary": "Volejbalový oddíl TJ Baník. Týmový sport, tréninky, zápasy a turnaje pro mládež.",
   "body": [],

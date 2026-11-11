@@ -5,7 +5,7 @@ export const communitySources=[
  {key:'koletovka',name:'Koletova hornická hudba',profile:'Koletova hornická hudba Rtyně',url:'https://koletovka.cz/wp-json/wp/v2/posts?per_page=5',feed:'json'},
  {key:'bonifac',name:'TŠ Bonifác',profile:'TŠ Bonifác',url:'https://www.bonifac.eu/feed/',feed:'rss'},
  {key:'ballare',name:'TS Ballare',profile:'TS Ballare',url:'https://ballare.cz/feed/',feed:'rss',news_category:'Novinky'},
- {key:'banik',name:'TJ Baník – fotbal',profile:'TJ Baník Rtyně',url:'http://www.banikrtyne-fotbal.cz/feed/',feed:'rss'},
+ {key:'banik',name:'TJ Baník – fotbal',profile:'TJ Baník Rtyně',url:'https://banikrtyne.cz/clanky/vse',feed:'banik'},
  {key:'hasici',name:'SDH Rtyně',profile:'SDH Rtyně',url:'https://www.facebook.com/sdhrtyne',feed:'external',note:'Aktuální příspěvky sbor zveřejňuje na Facebooku. Automatické přebírání příspěvků zatím není napojené.'},
  {key:'odolov',name:'KVH Odolov',profile:'Klub vojenské historie Odolov z.s.',url:'https://pechotni-srub-t-s-26.webnode.cz/rss/all.xml',feed:'rss'},
  {key:'florbal',name:'FBC Orel Rtyně',profile:'Orel - Florbal',url:'https://www.fbcorelrtyne.cz/',feed:'florbal'},

@@ -98,7 +98,7 @@ async function extract(s:any) {
 async function importSource(s:any){
  if(s.feed==='external'){await sql`insert into obcane.sources(source_key,source_url,status,checked_at) values(${s.key},${s.url},'pending',now()) on conflict(source_key) do update set source_url=excluded.source_url,status='pending',last_error=null,checked_at=now(),updated_at=now()`;return {key:s.key,status:'skipped',reason:'Externí stránka; automatický import není napojený'};}
 
- await sql`insert into obcane.sources (source_key,source_url,status) values (${s.key},${s.url},'pending') on conflict (source_key) do nothing`;
+ await sql`insert into obcane.sources (source_key,source_url,status) values (${s.key},${s.url},'pending') on conflict (source_key) do update set source_url=excluded.source_url`;
  try {
   const items=await extract(s);const checked=new Date().toISOString();const detailFailures=items.filter(x=>x.detail_error||x.extra?.service_child_errors?.length).length;
   await sql.begin(async(tx:any)=>{
