@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {groupRestrictions,upcomingRestrictions} from '../assets/notices.js';
+import {groupRestrictions,upcomingRestrictions,restrictionKind,restrictionLabel} from '../assets/notices.js';
 const item=(id,source,title,body,event_date=null)=>({id:String(id),source_key:source,title,summary:body,payload:{body:[body]},event_date,external_url:'https://example.cz/'+id});
 const water=item(1,'water','Přerušení dodávky vody 10.11.2026','Dne 10. 11. 2026 nepoteče voda v ulici Vyšehradská, čp. 831, 862, 867.','2026-11-10');
 const cityWater=item(2,'city','Přerušení dodávky vody ve Vyšehradské ulici – 10. listopadu 2026','Dne 10. listopadu 2026 bude v ulici Vyšehradská přerušena dodávka vody.');
@@ -19,3 +19,14 @@ const otherRoad=item(7,'city','Pokládka asfaltu v Kostelecké ulici – 6. list
 assert.equal(groupRestrictions([asphalt,otherRoad]).length,2,'Different streets on the same road must remain separate');
 assert.equal(groupRestrictions([water,{...water}]).length,1,'Repeated source URL must collapse');
 console.log('PASS: duplicate water notices, overlapping asphalt announcements, original sources, expiry, distinct dates and streets');
+
+const office=item(10,'city','Uzavření městského úřadu v pondělí 16. listopadu 2026','Pokud plánujete návštěvu úřadu, zvolte prosím jiný den.');
+assert.equal(restrictionKind(office),'office');assert.equal(restrictionLabel('office'),'Úřad');
+assert.equal(restrictionKind(item(11,'city','Uzavření obecního úřadu z důvodu dovolené','Úřad bude uzavřen.')),'office');
+assert.equal(restrictionKind(item(12,'city','Uzavření silnice před městským úřadem','Informace z úřadu.')),'road-closure');
+assert.equal(restrictionKind(item(13,'city','Uzavření knihovny','Zavřeno 16. listopadu.')),'service');
+assert.equal(restrictionLabel('service'),'Provoz');
+assert.equal(restrictionKind(item(14,'city','Uzavření lékárny z důvodu dovolené','Zavřeno.')),'pharmacy');
+assert.equal(restrictionKind(item(15,'city','Uzavření ordinace','Městský úřad informuje o dovolené lékaře.')),'doctor');
+assert.equal(groupRestrictions([office,item(16,'city','Uzavření jiného úřadu 16. listopadu 2026','Ve stejné ulici.')]).length,2);
+console.log('PASS: office closures, subject-based road classification, generic service fallback and distinct institutions');
