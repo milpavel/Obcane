@@ -45,15 +45,51 @@ export function selectHeroTip(feed,articles=[],now=new Date()){
  return pool[turn%pool.length];
 }
 const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
-export function renderHeroTip(root,tip){if(!root)return;const key=tip?tip.type+':'+tip.item.id:'fallback';if(root.dataset.tipKey===key)return;root.dataset.tipKey=key;
- const kicker=node('p',tip?tip.tag.toUpperCase()+' · VYBRÁNO PRO VÁS':'VÁŠ INFORMAČNÍ PORTÁL','intro-kicker'),h=node('h1',tip?.item.title||'Rtyně na jednom místě.');h.id='intro-title';
+export function renderHeroTip(root,tip,headingTag="h1",headingID="intro-title"){if(!root)return;const key=tip?tip.type+':'+tip.item.id:'fallback';if(root.dataset.tipKey===key)return;root.dataset.tipKey=key;
+ const kicker=node('p',tip?tip.tag.toUpperCase()+' · VYBRÁNO PRO VÁS':'VÁŠ INFORMAČNÍ PORTÁL','intro-kicker'),h=node(headingTag,tip?.item.title||'Rtyně na jednom místě.');h.id=headingID;
  const meta=node('p',undefined,'hero-tip-meta');if(tip?.date){const d=new Date(tip.date+'T12:00:00Z');meta.append(node('span',d.toLocaleDateString('cs-CZ',{timeZone:'Europe/Prague',weekday:'long',day:'numeric',month:'long'})+(tip.end&&tip.end!==tip.date?' – '+new Date(tip.end+'T12:00:00Z').toLocaleDateString('cs-CZ',{timeZone:'Europe/Prague',day:'numeric',month:'long'}):'')+(tip.time?' · '+tip.time:'')));}if(tip?.result)meta.append(node('span','Výsledek '+tip.result));if(tip?.item.payload?.location)meta.append(node('span',tip.item.payload.location));
  const report=tip?.type==='result'?(tip.item.payload?.body||[]).find(t=>typeof t==='string'&&!/[<>]/.test(t)&&/vyhr|prohr|poraz|vítěz|vitez|remíz|remiz|skonč|skonc|zisk/.test(t)):null;
  const summary=String(report||tip?.item.summary||'Aktuální zprávy, akce a praktické informace pro život ve Rtyni.').replace(/\s+/g,' ').trim();const p=node('p',summary,'intro-description');
  const a=node('a',tip?(tip.type==='event'?'Program a podrobnosti →':tip.type==='notice'?'Podrobnosti omezení →':'Přečíst zprávu →'):'Prohlédnout aktuální akce →','hero-tip-link');a.href=tip?.href||'/#akce';if(tip)a.setAttribute('aria-label',a.textContent+' '+tip.item.title);
  root.replaceChildren(kicker,h,meta,p,a);
 }
-export function startHeroTips(feed){const root=document.getElementById('hero-tip');if(!root)return;let articles=[];const update=()=>{if(!document.hidden&&!root.contains(document.activeElement))renderHeroTip(root,selectHeroTip(feed,articles));};update();
+export function selectHeroSlides(feed,articles=[],now=new Date()){
+ const rows=tipCandidates(feed,articles,now),first=selectHeroTip(feed,articles,now);if(!first)return [];
+ const chosen=[first],slot=tipClock(now).slot,turn=Math.floor(slot/4),remaining=()=>rows.filter(r=>!chosen.some(c=>c.href===r.href));
+ for(const type of ['event','result','news','notice']){
+  if(chosen.length===3)break;if(chosen.some(c=>c.type===type))continue;
+  const pool=remaining().filter(r=>r.type===type),different=pool.filter(r=>!chosen.some(c=>family(c.item)===family(r.item))),pick=different.length?different:pool;
+  if(pick.length)chosen.push(pick[turn%Math.min(pick.length,4)]);
+ }
+ while(chosen.length<3){const pool=remaining(),different=pool.filter(r=>!chosen.some(c=>family(c.item)===family(r.item))),pick=different.length?different:pool;if(!pick.length)break;chosen.push(pick[turn%Math.min(pick.length,4)]);}
+ return chosen;
+}
+export function createHeroSlider(root,{reducedMotion=false}={}){
+ let slides=[],active=0,paused=reducedMotion,hover=false,focused=false,timer=null,signature=null,touch=null;
+ root.classList.add('hero-slider');root.setAttribute('aria-roledescription','prezentace');
+ const heading=node('h1','Vybráno pro vás ve Rtyni','hero-slider-heading');heading.id='intro-title';
+ const track=node('div',undefined,'hero-slides');track.setAttribute('aria-live','off');
+ const controls=node('div',undefined,'hero-slider-controls'),previous=node('button','←','hero-slider-arrow'),next=node('button','→','hero-slider-arrow'),dots=node('div',undefined,'hero-slider-dots'),pause=node('button',undefined,'hero-slider-pause');
+ previous.type=next.type=pause.type='button';previous.setAttribute('aria-label','Předchozí upoutávka');next.setAttribute('aria-label','Další upoutávka');dots.setAttribute('aria-label','Výběr upoutávky');
+ controls.append(previous,dots,next,pause);root.replaceChildren(heading,track,controls);
+ const stop=()=>{if(timer)clearTimeout(timer);timer=null;};
+ const schedule=()=>{stop();if(slides.length>1&&!paused&&!hover&&!focused&&!document.hidden)timer=setTimeout(()=>show(active+1),10000);};
+ function show(index){active=(index+slides.length)%slides.length;for(const [i,slide]of [...track.children].entries()){slide.hidden=i!==active;dots.children[i].setAttribute('aria-current',String(i===active));}schedule();}
+ function updatePause(){pause.textContent=paused?'Spustit střídání':'Pozastavit';pause.setAttribute('aria-label',paused?'Spustit automatické střídání':'Pozastavit automatické střídání');pause.setAttribute('aria-pressed',String(paused));}
+ previous.onclick=()=>show(active-1);next.onclick=()=>show(active+1);pause.onclick=()=>{paused=!paused;updatePause();schedule();};
+ root.addEventListener('pointerenter',()=>{hover=true;stop();});root.addEventListener('pointerleave',()=>{hover=false;schedule();});
+ root.addEventListener('focusin',()=>{focused=true;stop();});root.addEventListener('focusout',e=>{focused=root.contains(e.relatedTarget);schedule();});
+ root.addEventListener('touchstart',e=>{touch=e.touches?.[0]?{x:e.touches[0].clientX,y:e.touches[0].clientY}:null;stop();},{passive:true});
+ root.addEventListener('touchend',e=>{const p=e.changedTouches?.[0];if(touch&&p&&Math.abs(p.clientX-touch.x)>50&&Math.abs(p.clientY-touch.y)<40)show(active+(p.clientX<touch.x?1:-1));touch=null;schedule();},{passive:true});
+ document.addEventListener('visibilitychange',schedule);updatePause();
+ return {setTips(tips){if(focused||hover)return;const key=tips.map(t=>t.href+':'+t.date+':'+t.time).join('|');if(key===signature)return;signature=key;const old=slides[active]?.href;slides=tips.length?tips:[null];active=Math.max(0,slides.findIndex(t=>t?.href===old));track.replaceChildren();dots.replaceChildren();
+  for(const [i,tip]of slides.entries()){const slide=node('div',undefined,'hero-slide');slide.id='hero-slide-'+(i+1);slide.setAttribute('role','group');slide.setAttribute('aria-roledescription','snímek');slide.setAttribute('aria-label',(i+1)+' ze '+slides.length);renderHeroTip(slide,tip,'h2','hero-slide-title-'+(i+1));track.append(slide);const dot=node('button',String(i+1),'hero-slider-dot');dot.type='button';dot.setAttribute('aria-label','Zobrazit upoutávku '+(i+1)+(tip?': '+tip.item.title:''));dot.setAttribute('aria-controls',slide.id);dot.onclick=()=>show(i);dots.append(dot);}
+  controls.hidden=slides.length<2;show(active);
+ },getState(){return {active,count:slides.length,paused};}};
+}
+export function startHeroTips(feed){const root=document.getElementById('hero-tip');if(!root)return;let articles=[],currentFeed=feed;const slider=createHeroSlider(root,{reducedMotion:window.matchMedia('(prefers-reduced-motion: reduce)').matches});const update=()=>{if(!document.hidden)slider.setTips(selectHeroSlides(currentFeed,articles));};update();
  fetch('/data/editorial-news.json',{cache:'no-store',signal:AbortSignal.timeout(6000)}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{articles=d.articles||[];update();}).catch(()=>{});
  setInterval(update,60000);document.addEventListener('visibilitychange',update);
+ const refresh=async()=>{if(document.hidden)return;try{const r=await fetch('https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api',{cache:'no-store',signal:AbortSignal.timeout(12000)});if(r.ok){const next=await r.json();if(Array.isArray(next.items))currentFeed=next;}}catch{}try{const r=await fetch('/data/editorial-news.json',{cache:'no-store',signal:AbortSignal.timeout(6000)});if(r.ok){const next=await r.json();if(Array.isArray(next.articles))articles=next.articles;}}catch{}update();};
+ setInterval(refresh,15*60000);
 }

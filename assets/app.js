@@ -1,4 +1,4 @@
-import {startHeroTips} from './hero-tip.js?v=20261111-hero-3';
+import {startHeroTips} from './hero-tip.js?v=20261111-slider-1';
 import {fetchPosterEvents,mergePosterEvents} from './poster-events.js?v=20261111-calendar-1';
 import {orderFeed,feedInfo} from './feed-order.js?v=20261111-calendar-1';
 import {renderRadio} from './radio.js?v=20261110-radio-1';
