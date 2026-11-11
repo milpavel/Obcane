@@ -40,8 +40,9 @@ export function selectHeroTip(feed,articles=[],now=new Date()){
  const urgent=rows.filter(x=>x.urgent);if(urgent.length)return urgent[0];
  // Mix event invitations, recent sports reports and local news throughout the day.
  const slot=tipClock(now).slot,modes=['event','result','news','event'],preferred=rows.filter(x=>x.type===modes[slot%4]),candidates=preferred.length?preferred:rows;
- const pool=[],seen=new Set();for(const row of candidates){const key=family(row.item);if(seen.has(key))continue;pool.push(row);seen.add(key);if(pool.length===4)break;}
- return pool[Math.floor(slot/4)%pool.length];
+ const groups=new Map();for(const row of candidates){const key=family(row.item);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(row);}
+ const turn=Math.floor(slot/4),pool=[...groups.values()].slice(0,4).map(group=>group[turn%group.length]);
+ return pool[turn%pool.length];
 }
 const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
 export function renderHeroTip(root,tip){if(!root)return;const key=tip?tip.type+':'+tip.item.id:'fallback';if(root.dataset.tipKey===key)return;root.dataset.tipKey=key;
