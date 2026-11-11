@@ -54,9 +54,16 @@ export function renderHeroTip(root,tip,headingTag="h1",headingID="intro-title"){
  const a=node('a',tip?(tip.type==='event'?'Program a podrobnosti →':tip.type==='notice'?'Podrobnosti omezení →':'Přečíst zprávu →'):'Prohlédnout aktuální akce →','hero-tip-link');a.href=tip?.href||'/#akce';if(tip)a.setAttribute('aria-label',a.textContent+' '+tip.item.title);
  root.replaceChildren(kicker,h,meta,p,a);
 }
+export function latestMainTip(feed,articles=[],now=new Date()){
+ const merged=new Map();for(const article of [...articles,...(feed?.posts||[])]){if(!article?.title||!['original','media'].includes(article.category)||(!article.id&&!article.slug)||article.status&&article.status!=='published')continue;const stamp=Date.parse(article.published_at||'');if(!Number.isFinite(stamp)||stamp>+now)continue;merged.set(article.slug||String(article.id),article);}
+ // Use the same article date as the main-news section, with stable tie-breakers.
+ const when=x=>x.source_date||x.published_at.slice(0,10),rows=[...merged.values()].filter(x=>validDay(when(x))).sort((a,b)=>when(b).localeCompare(when(a))||String(b.published_at).localeCompare(String(a.published_at))||String(b.id).localeCompare(String(a.id),'en',{numeric:true}));
+ if(!rows.length)return null;const article=rows[0],item={...article,source_key:'editorial',hero_article:true,summary:article.excerpt||'',payload:{body:[article.body||'']}};
+ return {item,type:'news',tag:'Hlavní zprávy',date:when(article),href:localRoute(item),pinned:true};
+}
 export function selectHeroSlides(feed,articles=[],now=new Date()){
- const rows=tipCandidates(feed,articles,now),first=selectHeroTip(feed,articles,now);if(!first)return [];
- const chosen=[first],slot=tipClock(now).slot,turn=Math.floor(slot/4),remaining=()=>rows.filter(r=>!chosen.some(c=>c.href===r.href));
+ const rows=tipCandidates(feed,articles,now),first=selectHeroTip(feed,articles,now),pinned=latestMainTip(feed,articles,now);if(!first&&!pinned)return [];
+ const chosen=pinned?[pinned]:[first];if(pinned&&first&&first.href!==pinned.href)chosen.push(first);const slot=tipClock(now).slot,turn=Math.floor(slot/4),remaining=()=>rows.filter(r=>!chosen.some(c=>c.href===r.href));
  for(const type of ['event','result','news','notice']){
   if(chosen.length===3)break;if(chosen.some(c=>c.type===type))continue;
   const pool=remaining().filter(r=>r.type===type),different=pool.filter(r=>!chosen.some(c=>family(c.item)===family(r.item))),pick=different.length?different:pool;

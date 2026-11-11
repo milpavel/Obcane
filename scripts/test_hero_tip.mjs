@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {parseHTML} from 'linkedom';
 import {readFileSync} from 'node:fs';
-import {tipClock,tipCandidates,selectHeroTip,renderHeroTip,resultScore,selectHeroSlides,createHeroSlider} from '../assets/hero-tip.js';
+import {tipClock,tipCandidates,selectHeroTip,renderHeroTip,resultScore,selectHeroSlides,createHeroSlider,latestMainTip} from '../assets/hero-tip.js';
 const now=new Date('2026-11-11T11:00:00Z');
 const event=(id,source='school',date='2026-11-12')=>({id,source_key:source,title:'Koncert '+id,event_date:date,summary:'Pozvánka na koncert',payload:{kind:'event',time:'18:00',body:[]}});
 const news=(id,source='city',published='2026-11-11T09:00:00Z')=>({id,source_key:source,title:'Novinky '+id,summary:'Čerstvá zpráva',published_at:published,payload:{body:[]}});
@@ -40,3 +40,12 @@ const emptyRoot=document.createElement('div'),emptySlider=createHeroSlider(empty
 console.log('PASS: three unique mixed slides, manual arrows and dots, single active slide, reduced-motion pause and empty-feed fallback');
 
 assert.equal(sliderRoot.querySelector('.hero-slider-pause'),null,'Pause button removed from the page');
+
+const mainOld={id:90,slug:'starsiahlavni',title:'Poslední hlavní zpráva',category:'media',published_at:'2026-10-01T10:00:00Z',source_date:'2026-10-01',excerpt:'Hlavní zpráva i po sedmi dnech.'};
+for(const h of [0,3,6,9,12,15,18,21]){const slides=selectHeroSlides({...feed,posts:[mainOld]},[],new Date(`2026-11-11T${String(h).padStart(2,'0')}:00:00Z`));assert.equal(slides.length,3);assert.equal(slides.filter(x=>x.href==='/zpravy/?clanek=starsiahlavni').length,1,'Latest main article is always included once');assert.equal(slides[0].tag,'Hlavní zprávy');}
+const newer={...mainOld,id:91,slug:'nova-hlavni',title:'Nová hlavní zpráva',category:'original',published_at:'2026-11-10T10:00:00Z',source_date:null};
+assert.equal(latestMainTip({posts:[mainOld,newer]},[mainOld],now).item.id,91);
+assert.equal(latestMainTip({posts:[{...newer,status:'draft'},{...mainOld,published_at:'2027-01-01T10:00:00Z'}]},[],now),null);
+assert.equal(selectHeroSlides({items:[],posts:[mainOld]},[],now)[0].item.id,90);
+const urgentSlides=selectHeroSlides({items:[notice,...feed.items],posts:[newer]},[],now);assert.ok(urgentSlides.some(x=>x.type==='notice'));assert.equal(urgentSlides[0].item.id,91);assert.equal(new Set(urgentSlides.map(x=>x.href)).size,3);
+console.log('PASS: latest published main-news article pinned across every time slot, media/original, older than seven days, live overrides, no duplicates, urgent notices and empty general feed');
