@@ -1,3 +1,4 @@
+import {florbalTeams,florbalMatches} from './florbal-matches.mjs';
 import {banikListing,banikDetail,banikTournaments} from './banik.mjs';
 import {parseSmsVenue} from './smsticket.mjs';
 import {communitySources,communityPublished} from './community-sources.ts';
@@ -269,7 +270,10 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
    let published=communityPublished(text(card?.querySelector('.article-meta-date')),czDate),body:any[]=[],summary=text(card?.querySelector('.article-perex'));
    try{const d=await page(url,s.url),root=d.querySelector('h1.heading-2')?.closest('article');if(!root)throw Error('Chybí článek');body=richText(root.querySelector('.prose'),clean);summary=text(root.querySelector('.perex'))||summary;published=communityPublished(text(root.querySelector('.article-meta-date')),czDate)||published;}catch{/* The attributed list entry is still usable. */}
    out.push({title,url,published,summary,body,detail_ok:true,extra:{kind:'community'}});if(out.length>=8)break;
-  }if(!out.length)throw Error('Nenalezeny články florbalu');return out;
+  }if(!out.length)throw Error('Nenalezeny články florbalu');
+  const teams=florbalTeams(doc),queue=teams.slice(),matches:any[]=[];
+  async function schedules(){let team:any;while((team=queue.shift())){try{await pause(250);matches.push(...florbalMatches(await page(team.url,s.url),team.url,undefined,team.name));}catch(e){matches.push({title:'Rozpis florbalu: '+team.name,url:team.url,body:[],detail_error:String(e).slice(0,160),extra:{kind:'community',calendar_only:true,in_latest:false}});}}}
+  await Promise.all(Array.from({length:3},schedules));const seenMatches=new Set();for(const item of matches){if(seenMatches.has(item.url))continue;seenMatches.add(item.url);out.push(item);}return out;
  }
  if(s.feed==='estranky'){
   const seen=new Set();for(const a of Array.from(doc.querySelectorAll('a[href]')) as any[]){const href=a.getAttribute('href');if(!href?.startsWith('/clanky/clanky/')||!href.endsWith('.html')||seen.has(href)||!text(a)||/Celý příspěvek/.test(text(a)))continue;seen.add(href);const url=safeURL(href,s.url),container=a.closest('article,.article,.entry,.post')||a.parentElement?.parentElement,published=czDate(text(container));let body:any[]=[];try{const d=await page(url,s.url),root=d.querySelector('#main,#content,.article-content,.entry-content');body=richText(root,clean).filter(t=>!/^Celý příspěvek|Rubrika:|Komentáře|Menu$/.test(t));}catch{}out.push({title:text(a),url,published,summary:body[0]||'Příspěvek z oddílového archivu. Datum uvádíme podle původního webu.',body:body.slice(0,12),detail_ok:true,extra:{kind:'community',archive:true}});if(out.length>=5)break;}

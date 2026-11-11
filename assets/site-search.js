@@ -1,3 +1,4 @@
+import {fetchPosterEvents,mergePosterEvents} from './poster-events.js?v=20261111-calendar-1';
 import {fetchPracticalInfo,mergePracticalInfo} from './practical-info.js?v=20261110-local-services-1';
 import {fetchDoctorAnnouncements} from './doctor-data.js?v=20261109-1';
 const API='https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api';
@@ -37,6 +38,7 @@ async function load(){
   ]);
   for(let i=0;i<results.length;i++){const r=results[i];if(r.status!=='fulfilled'){partial=true;continue;}if(i===0)feed=r.value;else if(i===1)articles=[...r.value,...articles];else if(i===2)articles=[...articles,...r.value];else if(i===3)doctorRows=r.value;else pageText=r.value;}
   try{feed=mergePracticalInfo(feed||{},await fetchPracticalInfo());}catch{partial=true;}
+  try{feed=mergePosterEvents(feed||{items:[]},await fetchPosterEvents());}catch{}
   reindex();
  })();return loading;
 }

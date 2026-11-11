@@ -6,6 +6,7 @@ import {parseHTML} from 'linkedom';
 import {renderBlocks,renderAttachments,organizeDetail,cleanDetailText,fallbackBlocks,landfillBlocks,renderDetailContent} from '../assets/details.js';
 const require=createRequire(import.meta.url),tmp=await mkdtemp(new URL('../.details-test-',import.meta.url));
 try{
+ await writeFile(tmp+'/florbal-matches.mjs',await readFile(new URL('../supabase/functions/obcane-api/florbal-matches.mjs',import.meta.url),'utf8'));
  await writeFile(tmp+'/banik.mjs',await readFile(new URL('../supabase/functions/obcane-api/banik.mjs',import.meta.url),'utf8'));
  await writeFile(tmp+'/smsticket.mjs',await readFile(new URL('../supabase/functions/obcane-api/smsticket.mjs',import.meta.url),'utf8'));
  let source=await readFile(new URL('../supabase/functions/obcane-api/extra-sources.ts',import.meta.url),'utf8');

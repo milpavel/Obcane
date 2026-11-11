@@ -3,6 +3,7 @@ const generic=new Set('pozvanka prijdte zahrat pozvani prijemne spolecne setkani
 const topics=title=>[...new Set(normal(title).match(/[a-z]+/g)||[])].filter(w=>w.length>=3&&!generic.has(w));
 const venue=s=>{const n=normal(s);return /orlovna/.test(n)?'orlovna':n.replace(/\s*\(od [^)]+\)/g,'').replace(/[^a-z0-9]+/g,' ').trim();};
 function sameEvent(a,b){
+ if(a.payload?.sport==='florbal'||b.payload?.sport==='florbal')return a.payload?.sport===b.payload?.sport&&a.event_date===b.event_date&&a.payload?.fixture_id&&a.payload.fixture_id===b.payload?.fixture_id;
  if(a.payload?.location&&b.payload?.location&&venue(a.payload.location)!==venue(b.payload.location))return false;
  if(a.payload?.time&&b.payload?.time&&a.payload.time!==b.payload.time)return false;
  const koletovka=[a,b].find(x=>x.source_key==='koletovka'),ticket=[a,b].find(x=>x.source_key==='sms_orlovna');

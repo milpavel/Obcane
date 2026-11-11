@@ -1,0 +1,17 @@
+const BASE='https://www.fbcorelrtyne.cz',text=n=>String(n?.textContent||'').replace(/\s+/g,' ').trim(),norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function sourceURL(href){const u=new URL(href,BASE);if(u.origin!==BASE||u.username||u.password)throw Error('Nepovolený florbalový odkaz');return u;}
+export function florbalTeams(doc){const teams=new Map();for(const a of doc.querySelectorAll('a[href]')){try{const u=sourceURL(a.getAttribute('href'));if(!/^\/tym\/\d+-[a-z0-9-]+$/.test(u.pathname))continue;teams.set(u.pathname,{url:u.href+'/zapasy',name:text(a)});}catch{}}if(!teams.size)throw Error('Nenalezena družstva florbalu');if(teams.size>24)throw Error('Neočekávaný počet družstev');return [...teams.values()];}
+export function orlovnaVenue(value){return /\borlovna\b/.test(norm(value))&&/\brtyne\b.*podkrkonosi/.test(norm(value));}
+export function florbalMatches(doc,teamURL,today=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Prague'}),teamLabel=''){
+ const base=sourceURL(teamURL),main=doc.querySelector('main')||doc.querySelector('body')||doc;const cards=Array.from(main.querySelectorAll('a.team-game-item[href]'));if(!cards.length&&!/zatim zadne zapasy/.test(norm(text(main))))throw Error('Změněná struktura rozpisu florbalu');
+ const team=teamLabel||text(main.querySelector('h1'))?.replace(/\s*Zápasy$/i,'')||base.pathname.split('/')[2].replace(/^\d+-/,'').replaceAll('-',' '),out=[],seen=new Set();
+ for(const card of cards){const meta=card.querySelector('.team-game-meta'),stamp=text(meta?.querySelector('.date-small')),m=stamp.match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(20\d{2})(?:\s+(\d{1,2}:\d{2}))?/);if(!m)continue;const date=`${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}`;if(!Number.isFinite(Date.parse(date))||new Date(date+'T12:00:00Z').toISOString().slice(0,10)!==date||date<today||Date.parse(date)-Date.parse(today)>366*86400000)continue;
+ const spans=Array.from(meta?.children||[]).filter(n=>n.tagName==='SPAN'&&!n.classList.contains('date-small')&&!n.classList.contains('place-divider')&&!n.classList.contains('competition-divider'));const venue=text(spans[0]),competition=text(spans[1]);if(!orlovnaVenue(venue))continue;
+ const sides=Array.from(card.querySelectorAll('.game-detail-teams-names strong')).map(text);if(sides.length!==2||!sides.some(s=>/orel rtyne/.test(norm(s))))continue;
+ let link;try{link=sourceURL(card.getAttribute('href'));}catch{continue;}if(!/^\/tym\/\d+-[a-z0-9-]+\/zapas\/\d+$/.test(link.pathname)||seen.has(link.href))continue;seen.add(link.href);
+ // Some fixtures are nominally away games in a tournament held at the local venue.
+ const time=m[4]&&/^(?:[01]?\d|2[0-3]):[0-5]\d$/.test(m[4])&&m[4]!=='0:00'&&m[4]!=='00:00'?m[4].padStart(5,'0'):null;
+ const title=`Florbal – ${team}: ${sides.join(' × ')}`,body=[`Kategorie: ${team}.`,`${sides[0]} proti ${sides[1]}.`,`${date.split('-').reverse().join('. ')}${time?' od '+time:''} · ${venue}.`,...(competition?[competition]:[]),...(!time?['Čas zahájení dosud není v rozpisu potvrzen. Ověřte jej před cestou u pořadatele.']:[])];
+ out.push({title,url:link.href,event:date,body,summary:`${sides.join(' × ')} · ${team}. ${venue}.`,detail_ok:true,extra:{kind:'event',calendar_only:true,sport:'florbal',fixture_id:link.pathname.split('/').at(-1),team,time,location:venue,competition,venue_confirmed:true,blocks:[...body.map(text=>({type:'paragraph',text})),{type:'paragraph',text:'Oficiální rozpis FBC Orel Rtyně',links:[{text:'Detail zápasu a aktuální změny',url:link.href}]}]}});
+ }return out;
+}

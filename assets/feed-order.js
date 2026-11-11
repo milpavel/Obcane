@@ -1,4 +1,4 @@
-import {uniqueEvents} from './events.js?v=20261111-feed-1';
+import {uniqueEvents} from './events.js?v=20261111-calendar-1';
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const DAY=86400000,months=['ledna','unora','brezna','dubna','kvetna','cervna','cervence','srpna','zari','rijna','listopadu','prosince'];
 function day(value){const d=String(value||'').slice(0,10);return /^20\d\d-\d\d-\d\d$/.test(d)&&Number.isFinite(Date.parse(d))&&new Date(d+'T12:00:00Z').toISOString().slice(0,10)===d?d:null;}

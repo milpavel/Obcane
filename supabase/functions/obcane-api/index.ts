@@ -1,3 +1,4 @@
+import {applySchoolEvent} from './school-events.mjs';
 import {handleSuggestions} from './suggestions.ts';
 import {communitySources} from './community-sources.ts';
 import {dailyInfo} from './daily.ts';
@@ -28,7 +29,7 @@ async function page(url:string,base=url) {
    if(r.status===429&&n<2){await new Promise(resolve=>setTimeout(resolve,Math.min(5000,Number(r.headers.get('retry-after')||2)*1000)));continue;}
    if(!r.ok)throw Error('HTTP '+r.status);
    const raw=await r.text();if(raw.length>2_000_000)throw Error('Stránka je příliš velká');
-   const {document}=parseHTML(raw);document.querySelectorAll('script,style,nav:not(.tiles),footer,form,.share-container').forEach((x:any)=>x.remove());document.querySelectorAll('br').forEach((x:any)=>x.replaceWith(document.createTextNode(' ')));return document;
+   const {document}=parseHTML(raw);document.querySelectorAll('script,style,'+(new URL(url).hostname==='www.fbcorelrtyne.cz'?'':'nav:not(.tiles),')+'footer,form,.share-container').forEach((x:any)=>x.remove());document.querySelectorAll('br').forEach((x:any)=>x.replaceWith(document.createTextNode(' ')));return document;
   }catch(e){if(n===2)throw e;}
  } throw Error('Příliš mnoho přesměrování');
 }
@@ -67,11 +68,11 @@ async function extract(s:any) {
    items.push({title,url,summary:description.replace(/» více$/,''),published:pub,event});
   }
   // Bounded detail requests: failures preserve the previously stored detail.
-  const cached=await sql`select external_url,payload,last_seen_at,summary,published_at from obcane.items where source_key=${s.key}`;
+  const cached=await sql`select external_url,payload,last_seen_at,summary,published_at,event_date from obcane.items where source_key=${s.key}`;
   const queue=items.slice();
   async function details(){let item:any;while((item=queue.shift())){
    const prior=cached.find((x:any)=>x.external_url===item.url);
-   if(prior?.payload?.detail_ok&&Array.isArray(prior.payload.blocks)&&!prior.payload.detail_error&&(s.key!=='water'||prior.published_at)&&Date.now()-Date.parse(prior.payload.detail_fetched_at||'')<12*3600*1000){item.body=prior.payload.body;item.days=prior.payload.days;item.published=prior.published_at||item.published;item.summary=item.summary||prior.summary||(item.body||[]).join(' ').slice(0,500);item.extra={blocks:prior.payload.blocks||null,images:prior.payload.images||[],attachments:prior.payload.attachments||[],restriction_date:prior.payload.restriction_date||null};item.detail_fetched_at=prior.payload.detail_fetched_at;item.detail_ok=true;continue;}
+   if(prior?.payload?.detail_ok&&Array.isArray(prior.payload.blocks)&&!prior.payload.detail_error&&(s.key!=='water'||prior.published_at)&&Date.now()-Date.parse(prior.payload.detail_fetched_at||'')<12*3600*1000){item.body=prior.payload.body;item.days=prior.payload.days;item.published=prior.published_at||item.published;item.summary=item.summary||prior.summary||(item.body||[]).join(' ').slice(0,500);item.extra={blocks:prior.payload.blocks||null,images:prior.payload.images||[],attachments:prior.payload.attachments||[],restriction_date:prior.payload.restriction_date||null,...(s.key==='school'?{kind:prior.payload.kind,time:prior.payload.time,location:prior.payload.location,event_evidence:prior.payload.event_evidence}:{})};if(s.key==='school'&&prior.payload.kind==='event')item.event=prior.event_date||null;item.detail_fetched_at=prior.payload.detail_fetched_at;item.detail_ok=true;if(s.key==='school')applySchoolEvent(item);continue;}
    await new Promise(resolve=>setTimeout(resolve,s.key==='city'?1500:300));
    try {
     const detail=await page(item.url,s.url);
@@ -87,7 +88,7 @@ async function extract(s:any) {
      if(days.length)item.days=days;
     }
     item.extra={blocks:contentBlocks(root,item.url),...assets(detail.querySelector('article')||root,item.url),restriction_date:/odstáv|dodávk|uzav|fréz|asfalt|elektř|havár/i.test(item.title)?eventDate(item.title+' '+item.summary):null};
-    item.detail_fetched_at=new Date().toISOString();item.detail_ok=!!item.body.length;
+    item.detail_fetched_at=new Date().toISOString();item.detail_ok=!!(item.body.length||item.extra.images.length||item.extra.attachments.length);if(s.key==='school')applySchoolEvent(item);
    }catch(e){item.detail_error=String(e).slice(0,160);}
   }}
   await Promise.all(Array.from({length:s.key==='city'?1:2},()=>details()));
@@ -110,7 +111,7 @@ async function importSource(s:any){
       published_at=coalesce(excluded.published_at,obcane.items.published_at),summary=excluded.summary,
       payload=case when excluded.payload->>'detail_error' is not null then obcane.items.payload || jsonb_build_object('detail_error',excluded.payload->>'detail_error') else excluded.payload end,last_seen_at=excluded.last_seen_at`;
    }
-   if((['calendar','radio','clubs','library','sms_areal','sms_orlovna'].includes(s.key)||s.community))await tx`update obcane.items set payload=payload || '{"in_latest":false}'::jsonb where source_key=${s.key} and last_seen_at < ${checked}::timestamptz`;
+   if((['calendar','radio','clubs','library','sms_areal','sms_orlovna'].includes(s.key)||s.community)&&!(s.key==='florbal'&&detailFailures))await tx`update obcane.items set payload=payload || '{"in_latest":false}'::jsonb where source_key=${s.key} and last_seen_at < ${checked}::timestamptz`;
    await tx`update obcane.sources set checked_at=${checked},last_success_at=${checked},updated_at=${checked},status=${detailFailures?'error':'ok'},last_error=${detailFailures?'Nenačtené detaily: '+detailFailures:null},item_count=${items.length} where source_key=${s.key}`;
   });
   return {key:s.key,status:detailFailures?'partial':'ok',count:items.length,detail_failures:detailFailures};
