@@ -38,3 +38,5 @@ const sliderRoot=document.createElement('div');document.body.append(sliderRoot);
 slider.setTips([]);assert.equal(slider.getState().count,1);assert.ok(sliderRoot.querySelector('.hero-slider-controls').hidden);assert.ok(sliderRoot.querySelector('a[href="/#akce"]'));
 const emptyRoot=document.createElement('div'),emptySlider=createHeroSlider(emptyRoot,{reducedMotion:true});emptySlider.setTips([]);assert.ok(emptyRoot.querySelector('.hero-slide'),'Initial empty feed must render fallback');
 console.log('PASS: three unique mixed slides, manual arrows and dots, single active slide, reduced-motion pause and empty-feed fallback');
+
+assert.equal(sliderRoot.querySelector('.hero-slider-pause'),null,'Pause button removed from the page');

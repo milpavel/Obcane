@@ -1,4 +1,5 @@
-import {startHeroTips} from './hero-tip.js?v=20261111-slider-2';
+import {eventTopics,matchesEventTopic} from './event-topics.js?v=20261111-topics-1';
+import {startHeroTips} from './hero-tip.js?v=20261111-topics-1';
 import {fetchPosterEvents,mergePosterEvents} from './poster-events.js?v=20261111-calendar-1';
 import {orderFeed,feedInfo} from './feed-order.js?v=20261111-calendar-1';
 import {renderRadio} from './radio.js?v=20261110-radio-1';
@@ -20,7 +21,7 @@ function link(txt,href,cls){const n=el('a',txt,cls);n.href=href;return n;}
 function sourceLink(txt,href,cls){const n=link(txt,external(href)||'#',cls);n.target='_blank';n.rel='noopener noreferrer';return n;}
 function route(x){return x.source_key==='editorial'?'/?prispevek='+x.id:'/?zprava='+x.id;}
 let clubLimit=6,serviceLimit=6,radioLimit=6;
-let data={items:[],sources:[]},filter='all',limit=6,menuDays=[],menuIndex=0,nurseryDays=[],menuKind='school',menuRecords={},eventPeriod='all',eventLimit=6,nurseryIndex=0;
+let data={items:[],sources:[]},filter='all',limit=6,menuDays=[],menuIndex=0,nurseryDays=[],menuKind='school',menuRecords={},eventPeriod='all',eventTopic='all',eventLimit=6,nurseryIndex=0;
 $('today').textContent=new Date().toLocaleDateString('cs-CZ',{timeZone:'Europe/Prague',weekday:'long',day:'numeric',month:'long',year:'numeric'});
 if($('year'))$('year').textContent=new Date().getFullYear();
 if(new URLSearchParams(location.search).has('zprava')||new URLSearchParams(location.search).has('prispevek')){$('home').hidden=true;$('article').hidden=false;$('article').append(el('p','Načítáme zprávu…','muted'));}
@@ -69,9 +70,11 @@ function appendExtras(body,x){const p=x.payload||{};if(x.source_key==='fire_repo
 }
 function renderCalendar(){const source=$('event-source').value;const to=new Date(today+'T12:00:00');to.setDate(to.getDate()+7);const weekEnd=to.toISOString().slice(0,10);let rows=data.items.filter(x=>x.payload?.kind==='event'&&x.payload?.in_latest!==false&&x.event_date>=today&&!x.payload?.cancelled);
  rows=uniqueEvents(rows).filter(x=>(source==='all'||x.source_key===source||x.payload?.event_alternatives?.some(r=>r.source_key===source))&&(eventPeriod==='all'||eventPeriod==='week'&&x.event_date<weekEnd||eventPeriod==='month'&&x.event_date.slice(0,7)===today.slice(0,7))).sort((a,b)=>(a.event_date+' '+(a.payload?.time||'')).localeCompare(b.event_date+' '+(b.payload?.time||'')));
+ for(const button of document.querySelectorAll('[data-event-topic]')){const key=button.dataset.eventTopic,label=eventTopics.find(t=>t[0]===key)?.[1]||key,count=rows.filter(x=>matchesEventTopic(x,key)).length;button.replaceChildren(el('span',label,'filter-label'),el('span',String(count),'filter-count'));button.setAttribute('aria-controls','events');button.setAttribute('aria-label',label+' ('+count+')');}rows=rows.filter(x=>matchesEventTopic(x,eventTopic));
  $('events').replaceChildren();for(const x of rows.slice(0,eventLimit)){const n=el('article',undefined,'event'),d=el('div',undefined,'event-date'),dt=new Date(x.event_date+'T12:00:00');d.append(el('strong',dt.getDate()),el('span',dt.toLocaleDateString('cs-CZ',{month:'short'})));if(x.event_date.slice(0,4)!==today.slice(0,4))d.append(el('span',x.event_date.slice(0,4),'event-year'));const info=el('div'),h=el('h3');h.append(link(x.title,route(x)));info.append(el('div',communityName(x)||names[x.source_key],'meta'),h);if(x.payload?.time)info.append(el('div',x.payload.time,'event-time'));if(x.payload?.date_conflict)info.append(el('p','Pořadatel uvádí '+date(x.event_date)+', městský kalendář jiný termín. Ověřte datum v detailu.','event-conflict'));info.append(el('p',x.summary||'Podrobnosti a pozvánku najdete v detailu.'),link('Program a podrobnosti →',route(x),'text-link'));n.append(d,info);$('events').append(n);}$('events-more').hidden=rows.length<=eventLimit;if(!rows.length)$('events').append(el('p','Pro zvolené období zatím nemáme načtenou žádnou platnou pozvánku.','muted'));
  $('event-cancellations').replaceChildren();const cancelled=data.items.filter(x=>x.payload?.cancelled&&x.event_date>=today&&x.payload?.in_latest!==false);if(cancelled.length){const n=el('aside',undefined,'cancel-notice');n.append(el('strong','Změny a zrušené akce'));const seen=new Set();for(const x of cancelled){const k=x.event_date+'|'+x.source_key;if(seen.has(k))continue;seen.add(k);n.append(link(date(x.event_date)+' · '+x.title,route(x)));}$('event-cancellations').append(n);}
 }
+for(const b of document.querySelectorAll('[data-event-topic]'))b.onclick=()=>{eventTopic=b.dataset.eventTopic;eventLimit=6;document.querySelectorAll('[data-event-topic]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCalendar();};
 for(const b of document.querySelectorAll('[data-period]'))b.onclick=()=>{eventPeriod=b.dataset.period;eventLimit=6;document.querySelectorAll('[data-period]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCalendar();};$('event-source').onchange=()=>{eventLimit=6;renderCalendar();};
 $('events-more').onclick=()=>{eventLimit+=6;renderCalendar();};
 function renderCommunity(){renderClubs();const selected=$('event-source').value;for(const source of communitySources())if(![...$('event-source').options].some(o=>o.value===source.source_key)){const option=el('option',source.name);option.value=source.source_key;$('event-source').append(option);}$('event-source').value=selected;}

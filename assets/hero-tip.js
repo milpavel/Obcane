@@ -70,19 +70,18 @@ export function createHeroSlider(root,{reducedMotion=false}={}){
  root.classList.add('hero-slider');root.setAttribute('aria-roledescription','prezentace');
  const heading=node('h1','Vybráno pro vás ve Rtyni','hero-slider-heading');heading.id='intro-title';
  const track=node('div',undefined,'hero-slides');track.setAttribute('aria-live','off');
- const controls=node('div',undefined,'hero-slider-controls'),previous=node('button','←','hero-slider-arrow'),next=node('button','→','hero-slider-arrow'),dots=node('div',undefined,'hero-slider-dots'),pause=node('button',undefined,'hero-slider-pause');
- previous.type=next.type=pause.type='button';previous.setAttribute('aria-label','Předchozí upoutávka');next.setAttribute('aria-label','Další upoutávka');dots.setAttribute('aria-label','Výběr upoutávky');
- controls.append(previous,dots,next,pause);root.replaceChildren(heading,track,controls);
+ const controls=node('div',undefined,'hero-slider-controls'),previous=node('button','←','hero-slider-arrow'),next=node('button','→','hero-slider-arrow'),dots=node('div',undefined,'hero-slider-dots');
+ previous.type=next.type='button';previous.setAttribute('aria-label','Předchozí upoutávka');next.setAttribute('aria-label','Další upoutávka');dots.setAttribute('aria-label','Výběr upoutávky');
+ controls.append(previous,dots,next);root.replaceChildren(heading,track,controls);
  const stop=()=>{if(timer)clearTimeout(timer);timer=null;};
  const schedule=()=>{stop();if(slides.length>1&&!paused&&!hover&&!focused&&!document.hidden)timer=setTimeout(()=>show(active+1),10000);};
  function show(index){active=(index+slides.length)%slides.length;for(const [i,slide]of [...track.children].entries()){slide.hidden=i!==active;dots.children[i].setAttribute('aria-current',String(i===active));}schedule();}
- function updatePause(){pause.textContent=paused?'Spustit střídání':'Pozastavit';pause.setAttribute('aria-label',paused?'Spustit automatické střídání':'Pozastavit automatické střídání');pause.setAttribute('aria-pressed',String(paused));}
- previous.onclick=()=>show(active-1);next.onclick=()=>show(active+1);pause.onclick=()=>{paused=!paused;updatePause();schedule();};
+ previous.onclick=()=>show(active-1);next.onclick=()=>show(active+1);
  root.addEventListener('pointerenter',()=>{hover=true;stop();});root.addEventListener('pointerleave',()=>{hover=false;schedule();});
  root.addEventListener('focusin',()=>{focused=true;stop();});root.addEventListener('focusout',e=>{focused=root.contains(e.relatedTarget);schedule();});
  root.addEventListener('touchstart',e=>{touch=e.touches?.[0]?{x:e.touches[0].clientX,y:e.touches[0].clientY}:null;stop();},{passive:true});
  root.addEventListener('touchend',e=>{const p=e.changedTouches?.[0];if(touch&&p&&Math.abs(p.clientX-touch.x)>50&&Math.abs(p.clientY-touch.y)<40)show(active+(p.clientX<touch.x?1:-1));touch=null;schedule();},{passive:true});
- document.addEventListener('visibilitychange',schedule);updatePause();
+ document.addEventListener('visibilitychange',schedule);
  return {setTips(tips){if(focused||hover)return;const key=tips.map(t=>t.href+':'+t.date+':'+t.time).join('|');if(key===signature)return;signature=key;const old=slides[active]?.href;slides=tips.length?tips:[null];active=Math.max(0,slides.findIndex(t=>t?.href===old));track.replaceChildren();dots.replaceChildren();
   for(const [i,tip]of slides.entries()){const slide=node('div',undefined,'hero-slide');slide.id='hero-slide-'+(i+1);slide.setAttribute('role','group');slide.setAttribute('aria-roledescription','snímek');slide.setAttribute('aria-label',(i+1)+' ze '+slides.length);renderHeroTip(slide,tip,'h2','hero-slide-title-'+(i+1));track.append(slide);const dot=node('button',String(i+1),'hero-slider-dot');dot.type='button';dot.setAttribute('aria-label','Zobrazit upoutávku '+(i+1)+(tip?': '+tip.item.title:''));dot.setAttribute('aria-controls',slide.id);dot.onclick=()=>show(i);dots.append(dot);}
   controls.hidden=slides.length<2;show(active);
