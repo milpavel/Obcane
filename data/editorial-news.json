@@ -1,6 +1,30 @@
 {
-  "checked_at": "2026-11-09",
+  "checked_at": "2026-11-11",
   "articles": [
+    {
+      "title": "Vízmburk se zazimoval, jeho brány ale zůstávají otevřené. V sobotu zve za bludičkami",
+      "slug": "vizmburk-se-zazimoval-brany-zustavaji-otevrene-bludicky",
+      "category": "original",
+      "author": "Redakce Pro Rtyni",
+      "source_name": null,
+      "source_date": null,
+      "source_url": "https://www.vizmburk.cz/",
+      "source_refs": [
+        {
+          "title": "Hrad Vízmburk – zazimování hradu",
+          "url": "https://www.vizmburk.cz/"
+        },
+        {
+          "title": "Vízmburk – program připravovaných akcí",
+          "url": "https://www.vizmburk.cz/akce2/"
+        }
+      ],
+      "summary_points": [],
+      "excerpt": "Výlet na Vízmburk nemusíte odkládat až na jaro. Expozice jsou sice uklizené, samotný hrad však zůstává přes zimu volně přístupný. A ještě než přijde advent, nabídne také večerní dobrodružství: v sobotu 14. listopadu se návštěvníci vydají nočním lesem za bludičkami.",
+      "body": "Zazimování na Vízmburku neznamená zamčenou bránu. Při říjnovém úklidu dobrovolníci odvezli expozice právě proto, aby mohl hrad zůstat přístupný i během podzimu, zimy a časného jara. Návštěvníci tak mohou poznat památku také mimo hlavní turistickou sezonu.\n\n## S baterkou lesem až ke hradu\n\nNejbližší příležitostí k netradiční návštěvě budou **Bludičky na hradě v sobotu 14. listopadu 2026**. Cesta povede nočním lesem z parkoviště u Havlovic až k Vízmburku, kde budou čekat strašidla.\n\nVyrazit bude možné průběžně **od 17 do 19 hodin**. Stezka odvahy kolem hradu potrvá od 17 do 20 hodin a vstupné činí **50 korun**.\n\nPořadatelé doporučují vzít si kvalitní baterku a dobře se obléknout. Trasa je určena především pěším návštěvníkům; průchod s kočárkem podle jejich upozornění vyžaduje značné úsilí.\n\n## Na výlet i mimo pořádané akce\n\nKdo dává přednost klidnější procházce za denního světla, může využít zimního přístupu na hrad. Je však potřeba počítat s tím, že expozice jsou zazimované a občerstvení se v tomto období otevírá během akcí.\n\nVízmburk tak může zůstat cílem výletů i v měsících, kdy návštěvnická sezona na řadě památek končí. Před cestou se vyplatí zkontrolovat aktuální informace pořadatelů a přizpůsobit výbavu počasí i cestě lesem.",
+      "id": 6,
+      "published_at": "2026-11-11T21:02:47.422972Z"
+    },
     {
       "title": "Rtyně má nové vedení. Starostou je Karel Šafář, místostarostou Pavel Semerák",
       "slug": "rtyne-ma-nove-vedeni-starostou-je-karel-safar",
