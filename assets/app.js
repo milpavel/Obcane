@@ -1,4 +1,4 @@
-import {eventTopics,matchesEventTopic} from './event-topics.js?v=20261111-topics-1';
+import {eventTopics,matchesEventTopic} from './event-topics.js?v=20261111-topics-2';
 import {startHeroTips} from './hero-tip.js?v=20261111-topics-1';
 import {fetchPosterEvents,mergePosterEvents} from './poster-events.js?v=20261111-calendar-1';
 import {orderFeed,feedInfo} from './feed-order.js?v=20261111-calendar-1';

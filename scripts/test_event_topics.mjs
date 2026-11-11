@@ -14,3 +14,5 @@ const html=readFileSync(new URL('../index.html',import.meta.url),'utf8'),d=parse
 assert.equal(d.querySelectorAll('[data-event-topic]').length,eventTopics.length);assert.equal(d.querySelectorAll('[data-event-topic][aria-pressed="true"]').length,1);assert.ok(d.querySelector('.event-topics.news-filter-menu'));assert.ok(d.querySelector('.event-periods.news-filter-menu'));
 assert.match(d.querySelector('#o-nas').textContent,/Projekt Pavla Míla/);assert.match(d.querySelector('#o-nas').textContent,/jeho vlastní projekt/);assert.ok(d.querySelector('#o-nas .portal-author').textContent.includes('Pavel Míl'));assert.equal(d.querySelector('#site-menu a[href="/?zprava=info-skolni-rok"]'),null);assert.ok(d.querySelector('.daily-strip a[href="/?zprava=info-skolni-rok"]'));
 console.log('PASS: culture, sport, family, learning, community, multi-topic events, unknown fallback, filter controls, portal ownership and menu-only holiday removal');
+
+assert.ok(!matchesEventTopic(event('Kino zve na rodinný film', 'calendar','Přijďte na filmový příběh plný dobrodružství.'),'sport'),'A story is not a running event');
