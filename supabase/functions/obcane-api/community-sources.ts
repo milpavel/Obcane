@@ -1,5 +1,6 @@
 // Public local organizations. A profile-only source is checked, never relabelled as news.
 export const communitySources=[
+ {key:'vizmburk',name:'Hrad Vízmburk',profile:'Sdružení pro Vízmburk',url:'https://www.vizmburk.cz/',feed:'vizmburk'},
  {key:'scouts',name:'Skaut – Permoník',profile:'SKAUT Rtyně',url:'https://skaut-rtyne.skauting.cz/feed/',feed:'rss'},
  {key:'orel',name:'Orel Rtyně',profile:'Orel Rtyně',url:'https://www.orelrtyne.cz/feed/',feed:'rss'},
  {key:'koletovka',name:'Koletova hornická hudba',profile:'Koletova hornická hudba Rtyně',url:'https://koletovka.cz/wp-json/wp/v2/posts?per_page=5',feed:'json'},
@@ -13,7 +14,7 @@ export const communitySources=[
  {key:'contemporary',name:'Contemporary Region',profile:'Contemporary Region',url:'https://contemporary.cz/cs/',feed:'local',note:'Zveřejníme pouze datované zprávy týkající se pobočky ve Rtyni.'},
  {key:'garden',name:'ČZS Rtyně',profile:'Český zahrádkářský svaz Rtyně',url:'https://www.zahradkari.cz/zo/rtyne/',feed:'local',note:'Místní web nyní obsahuje hlavně historii a kontakty; bez nových datovaných zpráv.'},
  {key:'sokol',name:'T. J. Sokol Rtyně',profile:'T. J. Sokol Rtyně',url:'https://www.sokol.eu/sokolovna/tj-sokol-rtyne-v-podkrkonosi',feed:'local',note:'Oficiální adresář obsahuje profil jednoty; datované místní novinky zatím chybí.'},
-].map(s=>({...s,category:'Spolky a sport',community:true}));
+].map(s=>({...s,category:s.key==='vizmburk'?'Kultura':'Spolky a sport',community:true}));
 export function communityPublished(value:string,czDate:any,now=new Date()):string|null{
  const full=czDate(value);if(full)return full;
  const m=value.match(/^(dnes|včera)\b/i);if(!m)return null;

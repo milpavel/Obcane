@@ -1,4 +1,5 @@
 import {florbalTeams,florbalMatches} from './florbal-matches.mjs';
+import {vizNews,vizDetail,vizEvents,vizVisitor} from './vizmburk.mjs';
 import {banikListing,banikDetail,banikTournaments} from './banik.mjs';
 import {parseSmsVenue} from './smsticket.mjs';
 import {communitySources,communityPublished} from './community-sources.ts';
@@ -218,6 +219,13 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
  const {page,text,clean,eventDate,czDate,safeURL}=h;
  if(!extraSources.some(x=>x.key===s.key))return null;
  let out:any[]=[];
+ if(s.feed==='vizmburk'){
+  const rows=vizNews(await page(s.url));
+  for(const item of rows){try{await pause(250);const detail=vizDetail(await page(item.url,s.url));Object.assign(item,detail);}catch(e){item.detail_error=String(e).slice(0,160);}}
+  rows.push(...vizEvents(await page('https://www.vizmburk.cz/akce2/',s.url)));
+  rows.push(vizVisitor(await page('https://www.vizmburk.cz/kontakt/',s.url)));
+  return rows;
+ }
  if(s.feed==='smsticket'){
   const items=parseSmsVenue(await page(s.url),s);
   for(const item of items.slice(0,12)){

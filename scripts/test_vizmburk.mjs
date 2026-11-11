@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {parseHTML} from 'linkedom';
+import {vizDate,vizNews,vizDetail,vizEvents,vizVisitor} from '../supabase/functions/obcane-api/vizmburk.mjs';
+const doc=s=>parseHTML('<main>'+s+'</main><footer><p>Paticka 10:00–18:00</p></footer>').document;
+assert.equal(vizDate('31. 2. 2026'),null);
+const news=vizNews(doc('<div class="item-head"><h2><a href="/l/zima/">Zima</a></h2><div class="item-date">24.10.2026</div></div><div class="item-head"><h2><a href="https://evil.example/l/no/">Cizí</a></h2><div class="item-date">24.10.2026</div></div>'));
+assert.equal(news.length,1);assert.equal(news[0].published,'2026-10-24T12:00:00Z');assert.equal(news[0].extra.kind,'community');assert.throws(()=>vizNews(doc('<p>Změněná struktura</p>')));
+const event=(date,title,body)=>`<div class="b-text"><h3>${date} ${title}</h3><p>${body}</p></div>`;
+const events=vizEvents(doc(event('17.10.2026','Staré trhy','Proběhly')+event('14.11.2026','Bludičky na hradě','Start průběžně od 17 do 19 hodiny. Vstupné 50 Kč.')+event('5.12.2026','Mikuláš','Objednání na tel. 776470053. Cena za dítě 200 Kč.')),'2026-11-11');
+assert.equal(events.length,2);assert.notEqual(events[0].url,events[1].url);assert.equal(events[0].extra.time,'17:00');assert.equal(events[1].extra.time,null);assert.equal(events[1].published,null);assert.ok(!JSON.stringify(events).includes('Staré trhy'));assert.ok(events[1].body[0].includes('776470053'));assert.ok(events.every(x=>x.extra.calendar_only));
+assert.deepEqual(vizEvents(doc(event('17.10.2026','Trhy','Proběhly')),'2027-01-01'),[]);assert.throws(()=>vizEvents(doc('<p>Stránka nedostupná</p>')));
+const detail=vizDetail(doc('<div class="b-text"><p>'+Array(250).fill('slovo').join(' ')+'</p></div>'));assert.equal(detail.body[0].split(' ').length,170);assert.ok(!JSON.stringify(detail).includes('Paticka'));assert.throws(()=>vizDetail(doc('<p>nic</p>')));
+const visitor=vizVisitor(doc('<div class="b-text"><h2>Správce hradu</h2><p>776470053</p><h2>Zimní sezóna</h2><p>Volně přístupný.</p></div>'));assert.equal(visitor.extra.kind,'service');assert.ok(!JSON.stringify(visitor).includes('Paticka'));assert.throws(()=>vizVisitor(doc('<div class="b-text"><p>Neúplné</p></div>')));
+console.log('PASS: Vízmburk news dates, separate future programme entries, actual times, reservation details, visitor information and safe failure');

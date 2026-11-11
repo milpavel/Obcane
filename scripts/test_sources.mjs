@@ -6,6 +6,7 @@ import {parseHTML} from 'linkedom';
 const require=createRequire(import.meta.url),tmp=await mkdtemp(new URL('../.source-test-',import.meta.url));
 try{
  await writeFile(tmp+'/florbal-matches.mjs',await readFile(new URL('../supabase/functions/obcane-api/florbal-matches.mjs',import.meta.url),'utf8'));
+ await writeFile(tmp+'/vizmburk.mjs',await readFile(new URL('../supabase/functions/obcane-api/vizmburk.mjs',import.meta.url),'utf8'));
  await writeFile(tmp+'/banik.mjs',await readFile(new URL('../supabase/functions/obcane-api/banik.mjs',import.meta.url),'utf8'));
  await writeFile(tmp+'/smsticket.mjs',await readFile(new URL('../supabase/functions/obcane-api/smsticket.mjs',import.meta.url),'utf8'));
  let source=await readFile(new URL('../supabase/functions/obcane-api/extra-sources.ts',import.meta.url),'utf8');
@@ -42,7 +43,7 @@ try{
  assert.equal(scoutRows[0].event,'2026-11-21');assert.equal(scoutRows[0].extra.kind,'event');assert.ok(scoutRows[0].body.some(x=>x.includes('350')));assert.ok(scoutRows[0].published.startsWith('2026-10-04'));
  }finally{globalThis.fetch=originalFetch;}
  assert.equal(canonicalSourceURL('https://www.bonifac.eu/a/?utm_source=rss&id=2'),'https://www.bonifac.eu/a/?id=2');
- const {communityPublished,communitySources}=await import(pathToFileURL(tmp+'/community-sources.mjs'));assert.equal(communitySources.length,13);assert.equal(communityPublished('včera v 9:50',czDate,new Date('2026-11-09T09:00:00Z')),'2026-11-08');
+ const {communityPublished,communitySources}=await import(pathToFileURL(tmp+'/community-sources.mjs'));assert.equal(communitySources.length,14);assert.equal(communityPublished('včera v 9:50',czDate,new Date('2026-11-09T09:00:00Z')),'2026-11-08');
  const savedFetch=globalThis.fetch;
  try{globalThis.fetch=async()=>new Response('<rss><channel><item><title>Berušky</title><category>Skupiny</category><link>https://ballare.cz/berusky/</link><description>Seznam členů</description></item><item><title>Zvonice 2025</title><category>Novinky</category><link>https://ballare.cz/zvonice-2025/</link><pubDate>Thu, 15 May 2025 14:31:46 GMT</pubDate><description>Pozvánka.</description></item></channel></rss>');
  const news=await extractExtra(extraSources.find(x=>x.key==='ballare'),{page:async()=>null,text,clean,czDate,eventDate:czDate,safeURL:(u,b)=>new URL(u,b).href});assert.equal(news.length,1);assert.equal(news[0].title,'Zvonice 2025');
