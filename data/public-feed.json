@@ -230,10 +230,10 @@
           }
         ],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "2281",
@@ -382,10 +382,10 @@
           }
         ],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "283",
@@ -786,10 +786,10 @@
           }
         ],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "282",
@@ -820,10 +820,10 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "281",
@@ -865,10 +865,10 @@
           }
         ],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "280",
@@ -1272,15 +1272,15 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": [],
         "hours_source_hartmanova": {
           "url": "https://www.doktor-rtyne.cz/nadezda-hartmanova",
           "status": "ok",
-          "checked_at": "2026-11-11T11:35:00.860Z"
+          "checked_at": "2026-11-11T13:37:00.558Z"
         }
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "279",
@@ -1375,10 +1375,10 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "278",
@@ -1482,10 +1482,10 @@
           }
         ],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "277",
@@ -1516,10 +1516,10 @@
         "detail_error": null,
         "service_links": [],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "276",
@@ -1902,10 +1902,10 @@
           }
         ],
         "content_version": 3,
-        "detail_fetched_at": "2026-11-11T11:35:31.006Z",
+        "detail_fetched_at": "2026-11-11T13:37:31.678Z",
         "service_child_errors": []
       },
-      "last_seen_at": "2026-11-11T11:35:31.006Z"
+      "last_seen_at": "2026-11-11T13:37:31.678Z"
     },
     {
       "id": "275",
@@ -1947,9 +1947,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "274",
@@ -1996,9 +1996,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "273",
@@ -2041,9 +2041,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "272",
@@ -2085,9 +2085,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "271",
@@ -2133,9 +2133,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "270",
@@ -2174,9 +2174,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "269",
@@ -2218,9 +2218,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "268",
@@ -2258,9 +2258,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "267",
@@ -2299,9 +2299,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "266",
@@ -2343,9 +2343,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "265",
@@ -2419,9 +2419,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "264",
@@ -2464,9 +2464,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "263",
@@ -2504,9 +2504,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "262",
@@ -2547,9 +2547,9 @@
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
-        "detail_fetched_at": "2026-11-11T11:34:27.392Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.498Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.392Z"
+      "last_seen_at": "2026-11-11T13:36:24.498Z"
     },
     {
       "id": "4531",
@@ -2616,9 +2616,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4530",
@@ -2685,9 +2685,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4529",
@@ -2754,9 +2754,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4528",
@@ -2823,9 +2823,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4527",
@@ -2892,9 +2892,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4526",
@@ -2961,9 +2961,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4525",
@@ -3025,9 +3025,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4524",
@@ -3089,9 +3089,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4523",
@@ -3153,9 +3153,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4522",
@@ -3222,9 +3222,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4521",
@@ -3291,9 +3291,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4520",
@@ -3355,9 +3355,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4519",
@@ -3419,9 +3419,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4518",
@@ -3488,9 +3488,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4517",
@@ -3557,9 +3557,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4516",
@@ -3626,9 +3626,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4515",
@@ -3695,9 +3695,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4514",
@@ -3764,9 +3764,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4513",
@@ -3833,9 +3833,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4512",
@@ -3897,9 +3897,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4511",
@@ -3961,9 +3961,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4510",
@@ -4030,9 +4030,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4509",
@@ -4099,9 +4099,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4508",
@@ -4168,9 +4168,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4507",
@@ -4237,9 +4237,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4506",
@@ -4306,9 +4306,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4504",
@@ -4370,9 +4370,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4503",
@@ -4434,9 +4434,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4502",
@@ -4503,9 +4503,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4501",
@@ -4572,9 +4572,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4500",
@@ -4641,9 +4641,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4499",
@@ -4710,9 +4710,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4498",
@@ -4779,9 +4779,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4497",
@@ -4848,9 +4848,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4496",
@@ -4917,9 +4917,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4495",
@@ -4986,9 +4986,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4494",
@@ -5055,9 +5055,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4493",
@@ -5124,9 +5124,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4492",
@@ -5193,9 +5193,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4491",
@@ -5262,9 +5262,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4490",
@@ -5331,9 +5331,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4489",
@@ -5400,9 +5400,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4488",
@@ -5464,9 +5464,9 @@
         "detail_error": null,
         "calendar_only": true,
         "venue_confirmed": true,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "4276",
@@ -5511,9 +5511,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z"
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "4275",
@@ -5567,9 +5567,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z"
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "4274",
@@ -5618,9 +5618,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z"
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "4273",
@@ -5669,9 +5669,214 @@
         "in_latest": true,
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z"
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
+    },
+    {
+      "id": "4961",
+      "source_key": "vizmburk",
+      "external_url": "https://www.vizmburk.cz/kontakt/",
+      "title": "Hrad Vízmburk – návštěva a kontakty",
+      "category": "Kultura",
+      "event_date": null,
+      "published_at": null,
+      "summary": "Jak se dostat na hrad, sezónní otevírací doba, zimní přístup a kontakty na správce.",
+      "payload": {
+        "body": [],
+        "days": [],
+        "kind": "service",
+        "blocks": [
+          {
+            "text": "Hrad Vízmburk se nachází v lesích mezi obcemi Havlovice a Červený kostelec, v Královehradeckém kraji.",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Hrad",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Samotný hrad najdete na červené turistické stezce ,,Cesta Boženy Němcové\" mezi Červeným Kostelcem, Devíti Kříži a Havlovicemi.",
+            "type": "paragraph"
+          },
+          {
+            "text": "otevírací doba Duben, květen a Říjen - Víkendy od 10:00 do 18:00 Červen, Září - Všední dny od 10:00 do 18:00 Víkendy od 9:00 do 19:00 Červenec, Srpen - Každý den od 9:00 do 19:00",
+            "type": "paragraph"
+          },
+          {
+            "text": "Zimní sezóna Hrad je volně přístupný. Občerstvení je otevřené během akcí.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Muzeum hradu",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Expozici hradu najdete v:",
+            "type": "paragraph"
+          },
+          {
+            "text": "Městské muzeum a galerie J. W. Mezerové Náměstí T. G. Masaryka 30, 542 32 Úpice IČ: 434 64 114 Mobil: 605 297 943 E-mail: info@icupice.cz",
+            "type": "paragraph"
+          },
+          {
+            "text": "Sdružení pro Vízmburk, z.s.",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Havlovice 38",
+            "type": "paragraph"
+          },
+          {
+            "text": "54232 Úpice IČ: 26586860 Sdružení je evidováno v živnostenském rejstříku.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Správce hradu",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Lukáš Bunny Králík",
+            "type": "paragraph"
+          },
+          {
+            "text": "Tel. 776470053 hradvizmburk@email.cz",
+            "type": "paragraph"
+          },
+          {
+            "text": "Předseda sdružení",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Mgr. Jan Košťál",
+            "type": "paragraph"
+          },
+          {
+            "text": "Tel. 604134241 kostik@email.cz",
+            "type": "paragraph"
+          },
+          {
+            "text": "Místopředseda sdružení",
+            "type": "heading",
+            "level": 2
+          },
+          {
+            "text": "Mgr. Jaroslav Balcar",
+            "type": "paragraph"
+          },
+          {
+            "text": "Tel. 777005790 j.bekur@tiscali.cz",
+            "type": "paragraph"
+          }
+        ],
+        "club_key": "vizmburk",
+        "club_name": "Hrad Vízmburk",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Hrad Vízmburk",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-11T13:36:14.472Z"
+      },
+      "last_seen_at": "2026-11-11T13:36:14.472Z"
+    },
+    {
+      "id": "4960",
+      "source_key": "vizmburk",
+      "external_url": "https://www.vizmburk.cz/akce2/#akce-2026-12-05-Mikul%C3%A1%C5%A1%20na%20hrad%C4%9B",
+      "title": "Mikuláš na hradě",
+      "category": "Kultura",
+      "event_date": "2026-12-05",
+      "published_at": null,
+      "summary": "Na hradě proběhne již tradiční kontrola pekelných záznamů dětí. Ve sklepení děti uvidí peklo a s andělíčkem nakonec navštíví Mikuláše.",
+      "payload": {
+        "body": [
+          "Na hradě proběhne již tradiční kontrola pekelných záznamů dětí. Ve sklepení děti uvidí peklo a s andělíčkem nakonec navštíví Mikuláše.",
+          "Na akci je třeba děti objednat na tel: 776470053 nebo mail: hradvizmburk@email.cz",
+          "Cena za dítě 200,-"
+        ],
+        "days": [],
+        "kind": "event",
+        "time": null,
+        "blocks": [
+          {
+            "text": "Na hradě proběhne již tradiční kontrola pekelných záznamů dětí. Ve sklepení děti uvidí peklo a s andělíčkem nakonec navštíví Mikuláše.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Na akci je třeba děti objednat na tel: 776470053 nebo mail: hradvizmburk@email.cz",
+            "type": "paragraph"
+          },
+          {
+            "text": "Cena za dítě 200,-",
+            "type": "paragraph"
+          }
+        ],
+        "club_key": "vizmburk",
+        "location": "Hrad Vízmburk, Havlovice",
+        "club_name": "Hrad Vízmburk",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Hrad Vízmburk",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-11T13:36:14.472Z"
+      },
+      "last_seen_at": "2026-11-11T13:36:14.472Z"
+    },
+    {
+      "id": "4959",
+      "source_key": "vizmburk",
+      "external_url": "https://www.vizmburk.cz/akce2/#akce-2026-11-14-Bludi%C4%8Dky%20na%20hrad%C4%9B",
+      "title": "Bludičky na hradě",
+      "category": "Kultura",
+      "event_date": "2026-11-14",
+      "published_at": null,
+      "summary": "Cesta nočním lesem za bludičkami, která vás dovede až k hradu. A na hradě strašidla. Přijďte dokázat svou odvahu. Start z parkoviště u Havlovic průběžně od 17 do 19 hodiny.",
+      "payload": {
+        "body": [
+          "Cesta nočním lesem za bludičkami, která vás dovede až k hradu. A na hradě strašidla. Přijďte dokázat svou odvahu. Start z parkoviště u Havlovic průběžně od 17 do 19 hodiny.",
+          "S sebou vezměte kvalitní baterky, dobře se oblékněte a připravte se na trasu nočním lesem. Vhodné pro pěší, pro kočárky s velikým úsilým.",
+          "Stezka odvahy kolem hradu od 17 do 20 hodin.",
+          "Vstupné 50,-"
+        ],
+        "days": [],
+        "kind": "event",
+        "time": "17:00",
+        "blocks": [
+          {
+            "text": "Cesta nočním lesem za bludičkami, která vás dovede až k hradu. A na hradě strašidla. Přijďte dokázat svou odvahu. Start z parkoviště u Havlovic průběžně od 17 do 19 hodiny.",
+            "type": "paragraph"
+          },
+          {
+            "text": "S sebou vezměte kvalitní baterky, dobře se oblékněte a připravte se na trasu nočním lesem. Vhodné pro pěší, pro kočárky s velikým úsilým.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Stezka odvahy kolem hradu od 17 do 20 hodin.",
+            "type": "paragraph"
+          },
+          {
+            "text": "Vstupné 50,-",
+            "type": "paragraph"
+          }
+        ],
+        "club_key": "vizmburk",
+        "location": "Hrad Vízmburk, Havlovice",
+        "club_name": "Hrad Vízmburk",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Hrad Vízmburk",
+        "detail_error": null,
+        "calendar_only": true,
+        "detail_fetched_at": "2026-11-11T13:36:14.472Z"
+      },
+      "last_seen_at": "2026-11-11T13:36:14.472Z"
     },
     {
       "id": "705",
@@ -5703,9 +5908,9 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-11T11:34:17.171Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.409Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.171Z"
+      "last_seen_at": "2026-11-11T13:36:14.409Z"
     },
     {
       "id": "704",
@@ -5737,9 +5942,9 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-11T11:34:17.171Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.409Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.171Z"
+      "last_seen_at": "2026-11-11T13:36:14.409Z"
     },
     {
       "id": "703",
@@ -5771,44 +5976,79 @@
             "title": "Kalendář Koletovy hornické hudby"
           }
         ],
-        "detail_fetched_at": "2026-11-11T11:34:17.171Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.409Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.171Z"
+      "last_seen_at": "2026-11-11T13:36:14.409Z"
     },
     {
-      "id": "1666",
-      "source_key": "sms_areal",
-      "external_url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
-      "title": "QUEENIE, WALDA GANG a KABÁT(revival)",
+      "id": "1654",
+      "source_key": "sms_orlovna",
+      "external_url": "https://www.smsticket.cz/vstupenky/76598-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
+      "title": "Adventní koncert Koletovy hornické hudby",
       "category": "Akce",
-      "event_date": "2027-07-16",
+      "event_date": "2026-11-28",
       "published_at": null,
-      "summary": "Přírodní areál, Rtyně v Podkrkonoší · 16:00",
+      "summary": "Sportovní hala Orlovna, Rtyně v Podkrkonoší · 19:00",
       "payload": {
         "body": [
-          "Přírodní areál, Rtyně v Podkrkonoší",
-          "WELCOME BACK, QUEENIE! A K TOMU WALDA GANG!Čeká nás večer plný energie, legendárních hitů a pořádné koncertní atmosféry!Po pár letech se k nám vrací Queenie – jedna z nejlepších tribute kapel legendárních Queen. Připravte se na ikonické skladby Freddieho Mercuryho a jeho kapely, strhující show a hudební zážitek, který vás pohltí od prvních tónů až po poslední potlesk.A to rozhodně není všechno! Druhou hlavní hvězdou večera bude Walda Gang, který přiveze svou nezaměnitelnou energii, pořádnou dávku rocku a hity, které vás nenechají stát v klidu!O rozjezd celého večera se postará předkapela Kábát"
+          "Sportovní hala Orlovna, Rtyně v Podkrkonoší",
+          "Tradiční Adventní koncert Koletovy hornické hudby ze Rtyně v Podkrkonoší.Připraven je pro Vás pestrý hudební program, který si pro Vás Koletovka připravila se svými dirigenty, zpěváky a sólisty.Koncert je zakončením a vyvrcholením naší celoroční sezóny, proto se na něj moc těšíme stejně tak jako na Vás, naše posluchače!"
         ],
         "days": [],
         "kind": "event",
-        "time": "16:00",
-        "location": "Přírodní areál, Rtyně v Podkrkonoší",
+        "time": "19:00",
+        "location": "Sportovní hala Orlovna, Rtyně v Podkrkonoší",
         "cancelled": false,
         "detail_ok": true,
         "in_latest": true,
-        "ticket_url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
-        "source_name": "SMS ticket – Přírodní areál",
+        "ticket_url": "https://www.smsticket.cz/vstupenky/76598-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
+        "source_name": "SMS ticket – Orlovna",
         "detail_error": null,
         "calendar_only": true,
         "event_sources": [
           {
-            "url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
+            "url": "https://www.smsticket.cz/vstupenky/76598-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
             "title": "Vstupenky na SMS ticketu"
           }
         ],
-        "detail_fetched_at": "2026-11-11T11:34:16.670Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.504Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.670Z"
+      "last_seen_at": "2026-11-11T13:36:13.504Z"
+    },
+    {
+      "id": "1653",
+      "source_key": "sms_orlovna",
+      "external_url": "https://www.smsticket.cz/vstupenky/76597-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
+      "title": "Adventní koncert Koletovy hornické hudby",
+      "category": "Akce",
+      "event_date": "2026-11-27",
+      "published_at": null,
+      "summary": "Sportovní hala Orlovna, Rtyně v Podkrkonoší · 19:00",
+      "payload": {
+        "body": [
+          "Sportovní hala Orlovna, Rtyně v Podkrkonoší",
+          "Tradiční Adventní koncert Koletovy hornické hudby ze Rtyně v Podkrkonoší.Připraven je pro Vás pestrý hudební program, který si pro Vás Koletovka připravila se svými dirigenty, zpěváky a sólisty.Koncert je zakončením a vyvrcholením naší celoroční sezóny, proto se na něj moc těšíme stejně tak jako na Vás, naše posluchače!"
+        ],
+        "days": [],
+        "kind": "event",
+        "time": "19:00",
+        "location": "Sportovní hala Orlovna, Rtyně v Podkrkonoší",
+        "cancelled": false,
+        "detail_ok": true,
+        "in_latest": true,
+        "ticket_url": "https://www.smsticket.cz/vstupenky/76597-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
+        "source_name": "SMS ticket – Orlovna",
+        "detail_error": null,
+        "calendar_only": true,
+        "event_sources": [
+          {
+            "url": "https://www.smsticket.cz/vstupenky/76597-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
+            "title": "Vstupenky na SMS ticketu"
+          }
+        ],
+        "detail_fetched_at": "2026-11-11T13:36:13.504Z"
+      },
+      "last_seen_at": "2026-11-11T13:36:13.504Z"
     },
     {
       "id": "254",
@@ -5843,9 +6083,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "253",
@@ -5880,9 +6120,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "252",
@@ -5917,9 +6157,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "251",
@@ -5954,9 +6194,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "250",
@@ -5991,9 +6231,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "249",
@@ -6028,9 +6268,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "248",
@@ -6065,9 +6305,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "247",
@@ -6102,9 +6342,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "246",
@@ -6139,9 +6379,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "245",
@@ -6176,9 +6416,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "244",
@@ -6213,9 +6453,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "243",
@@ -6250,9 +6490,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "242",
@@ -6287,9 +6527,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "241",
@@ -6324,9 +6564,9 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
       "id": "240",
@@ -6361,79 +6601,44 @@
         "attachments": [],
         "source_name": "Městská knihovna",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.489Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.489Z"
     },
     {
-      "id": "1654",
-      "source_key": "sms_orlovna",
-      "external_url": "https://www.smsticket.cz/vstupenky/76598-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
-      "title": "Adventní koncert Koletovy hornické hudby",
+      "id": "1666",
+      "source_key": "sms_areal",
+      "external_url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
+      "title": "QUEENIE, WALDA GANG a KABÁT(revival)",
       "category": "Akce",
-      "event_date": "2026-11-28",
+      "event_date": "2027-07-16",
       "published_at": null,
-      "summary": "Sportovní hala Orlovna, Rtyně v Podkrkonoší · 19:00",
+      "summary": "Přírodní areál, Rtyně v Podkrkonoší · 16:00",
       "payload": {
         "body": [
-          "Sportovní hala Orlovna, Rtyně v Podkrkonoší",
-          "Tradiční Adventní koncert Koletovy hornické hudby ze Rtyně v Podkrkonoší.Připraven je pro Vás pestrý hudební program, který si pro Vás Koletovka připravila se svými dirigenty, zpěváky a sólisty.Koncert je zakončením a vyvrcholením naší celoroční sezóny, proto se na něj moc těšíme stejně tak jako na Vás, naše posluchače!"
+          "Přírodní areál, Rtyně v Podkrkonoší",
+          "WELCOME BACK, QUEENIE! A K TOMU WALDA GANG!Čeká nás večer plný energie, legendárních hitů a pořádné koncertní atmosféry!Po pár letech se k nám vrací Queenie – jedna z nejlepších tribute kapel legendárních Queen. Připravte se na ikonické skladby Freddieho Mercuryho a jeho kapely, strhující show a hudební zážitek, který vás pohltí od prvních tónů až po poslední potlesk.A to rozhodně není všechno! Druhou hlavní hvězdou večera bude Walda Gang, který přiveze svou nezaměnitelnou energii, pořádnou dávku rocku a hity, které vás nenechají stát v klidu!O rozjezd celého večera se postará předkapela Kábát"
         ],
         "days": [],
         "kind": "event",
-        "time": "19:00",
-        "location": "Sportovní hala Orlovna, Rtyně v Podkrkonoší",
+        "time": "16:00",
+        "location": "Přírodní areál, Rtyně v Podkrkonoší",
         "cancelled": false,
         "detail_ok": true,
         "in_latest": true,
-        "ticket_url": "https://www.smsticket.cz/vstupenky/76598-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
-        "source_name": "SMS ticket – Orlovna",
+        "ticket_url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
+        "source_name": "SMS ticket – Přírodní areál",
         "detail_error": null,
         "calendar_only": true,
         "event_sources": [
           {
-            "url": "https://www.smsticket.cz/vstupenky/76598-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
+            "url": "https://www.smsticket.cz/vstupenky/77130-queenie-walda-gang-a-kabat-revival-prirodni-areal-rtyne-v-podkrkonosi-queenie",
             "title": "Vstupenky na SMS ticketu"
           }
         ],
-        "detail_fetched_at": "2026-11-11T11:34:16.444Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.276Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.444Z"
-    },
-    {
-      "id": "1653",
-      "source_key": "sms_orlovna",
-      "external_url": "https://www.smsticket.cz/vstupenky/76597-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
-      "title": "Adventní koncert Koletovy hornické hudby",
-      "category": "Akce",
-      "event_date": "2026-11-27",
-      "published_at": null,
-      "summary": "Sportovní hala Orlovna, Rtyně v Podkrkonoší · 19:00",
-      "payload": {
-        "body": [
-          "Sportovní hala Orlovna, Rtyně v Podkrkonoší",
-          "Tradiční Adventní koncert Koletovy hornické hudby ze Rtyně v Podkrkonoší.Připraven je pro Vás pestrý hudební program, který si pro Vás Koletovka připravila se svými dirigenty, zpěváky a sólisty.Koncert je zakončením a vyvrcholením naší celoroční sezóny, proto se na něj moc těšíme stejně tak jako na Vás, naše posluchače!"
-        ],
-        "days": [],
-        "kind": "event",
-        "time": "19:00",
-        "location": "Sportovní hala Orlovna, Rtyně v Podkrkonoší",
-        "cancelled": false,
-        "detail_ok": true,
-        "in_latest": true,
-        "ticket_url": "https://www.smsticket.cz/vstupenky/76597-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
-        "source_name": "SMS ticket – Orlovna",
-        "detail_error": null,
-        "calendar_only": true,
-        "event_sources": [
-          {
-            "url": "https://www.smsticket.cz/vstupenky/76597-adventni-koncert-koletovy-hornicke-hudby-sportovni-hala-orlovna-rtyne-v-podkrkonosi-koletova-hornicka-hudba",
-            "title": "Vstupenky na SMS ticketu"
-          }
-        ],
-        "detail_fetched_at": "2026-11-11T11:34:16.444Z"
-      },
-      "last_seen_at": "2026-11-11T11:34:16.444Z"
+      "last_seen_at": "2026-11-11T13:36:13.276Z"
     },
     {
       "id": "228",
@@ -6551,9 +6756,9 @@
         "source_name": "Muzeum a infocentrum",
         "detail_error": null,
         "content_version": 2,
-        "detail_fetched_at": "2026-11-11T11:34:16.299Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.170Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.299Z"
+      "last_seen_at": "2026-11-11T13:36:13.170Z"
     },
     {
       "id": "227",
@@ -6602,9 +6807,9 @@
             "weekday": "Pátek"
           }
         ],
-        "detail_fetched_at": "2026-11-11T11:34:16.260Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.119Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.260Z"
+      "last_seen_at": "2026-11-11T13:36:13.119Z"
     },
     {
       "id": "4505",
@@ -6672,7 +6877,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:30:48.830Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.103Z"
+      "last_seen_at": "2026-11-11T13:36:06.857Z"
     },
     {
       "id": "3960",
@@ -6713,7 +6918,7 @@
         "restriction_date": "2026-11-16",
         "detail_fetched_at": "2026-11-11T10:17:06.497Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "3837",
@@ -6762,9 +6967,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:09.913Z"
+        "detail_fetched_at": "2026-11-11T13:36:07.716Z"
       },
-      "last_seen_at": "2026-11-11T11:34:09.913Z"
+      "last_seen_at": "2026-11-11T13:36:07.716Z"
     },
     {
       "id": "602",
@@ -6786,9 +6991,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:09.913Z"
+        "detail_fetched_at": "2026-11-11T13:36:07.716Z"
       },
-      "last_seen_at": "2026-11-11T11:34:09.913Z"
+      "last_seen_at": "2026-11-11T13:36:07.716Z"
     },
     {
       "id": "1177",
@@ -6811,9 +7016,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "1098",
@@ -6970,7 +7175,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:08.295Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "707",
@@ -7017,9 +7222,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:27.015Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.038Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.015Z"
+      "last_seen_at": "2026-11-11T13:36:24.038Z"
     },
     {
       "id": "706",
@@ -7126,7 +7331,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:11.677Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "626",
@@ -7177,7 +7382,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:09.970Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "866",
@@ -7200,9 +7405,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "865",
@@ -7225,9 +7430,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "864",
@@ -7250,9 +7455,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "22",
@@ -7298,7 +7503,7 @@
         "restriction_date": "2026-11-10",
         "detail_fetched_at": "2026-11-11T10:17:30.575Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "21",
@@ -7366,9 +7571,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-11T11:34:15.564Z"
+        "detail_fetched_at": "2026-11-11T13:36:12.430Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "19",
@@ -7401,9 +7606,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-11T11:34:13.817Z"
+        "detail_fetched_at": "2026-11-11T13:36:10.729Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "18",
@@ -7436,9 +7641,9 @@
         "source_name": "Město Rtyně",
         "detail_error": null,
         "restriction_date": null,
-        "detail_fetched_at": "2026-11-11T11:34:12.130Z"
+        "detail_fetched_at": "2026-11-11T13:36:08.972Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "17",
@@ -7489,7 +7694,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:13.350Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "3500",
@@ -7524,9 +7729,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-11-05",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "213",
@@ -7671,7 +7876,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:34.016Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "24",
@@ -7738,7 +7943,7 @@
         "restriction_date": "2026-11-06",
         "detail_fetched_at": "2026-11-11T10:17:32.250Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "9",
@@ -7774,7 +7979,7 @@
         "restriction_date": "2026-11-10",
         "detail_fetched_at": "2026-11-11T10:17:03.814Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.098Z"
+      "last_seen_at": "2026-11-11T13:36:07.372Z"
     },
     {
       "id": "259",
@@ -7811,9 +8016,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:27.015Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.038Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.015Z"
+      "last_seen_at": "2026-11-11T13:36:24.038Z"
     },
     {
       "id": "255",
@@ -7850,9 +8055,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:27.015Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.038Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.015Z"
+      "last_seen_at": "2026-11-11T13:36:24.038Z"
     },
     {
       "id": "214",
@@ -7893,7 +8098,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:35.784Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "1",
@@ -7916,9 +8121,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:09.913Z"
+        "detail_fetched_at": "2026-11-11T13:36:07.716Z"
       },
-      "last_seen_at": "2026-11-11T11:34:09.913Z"
+      "last_seen_at": "2026-11-11T13:36:07.716Z"
     },
     {
       "id": "2",
@@ -7941,9 +8146,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:09.913Z"
+        "detail_fetched_at": "2026-11-11T13:36:07.716Z"
       },
-      "last_seen_at": "2026-11-11T11:34:09.913Z"
+      "last_seen_at": "2026-11-11T13:36:07.716Z"
     },
     {
       "id": "31",
@@ -7984,7 +8189,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:04.161Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.103Z"
+      "last_seen_at": "2026-11-11T13:36:06.857Z"
     },
     {
       "id": "868",
@@ -8007,9 +8212,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "867",
@@ -8032,9 +8237,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "869",
@@ -8057,9 +8262,9 @@
         "in_latest": true,
         "source_name": "FBC Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:24.847Z"
+        "detail_fetched_at": "2026-11-11T13:36:21.992Z"
       },
-      "last_seen_at": "2026-11-11T11:34:24.847Z"
+      "last_seen_at": "2026-11-11T13:36:21.992Z"
     },
     {
       "id": "870",
@@ -8125,7 +8330,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:37.479Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "218",
@@ -8161,7 +8366,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:42.607Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "217",
@@ -8197,7 +8402,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:40.918Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "216",
@@ -8304,7 +8509,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:39.201Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "846",
@@ -8390,9 +8595,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "847",
@@ -8468,9 +8673,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "221",
@@ -8506,9 +8711,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "220",
@@ -8569,7 +8774,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:31:04.570Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "12",
@@ -8605,7 +8810,7 @@
         "restriction_date": "2026-10-27",
         "detail_fetched_at": "2026-11-11T10:17:04.292Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.098Z"
+      "last_seen_at": "2026-11-11T13:36:07.372Z"
     },
     {
       "id": "11",
@@ -8636,7 +8841,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:04.264Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.098Z"
+      "last_seen_at": "2026-11-11T13:36:07.372Z"
     },
     {
       "id": "10",
@@ -8667,7 +8872,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:03.788Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.098Z"
+      "last_seen_at": "2026-11-11T13:36:07.372Z"
     },
     {
       "id": "4265",
@@ -8746,10 +8951,10 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Vytvořeno: 25.10.2026 16:45 | Autor: dusanbrat",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Galerie"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "4264",
@@ -8828,10 +9033,41 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Vytvořeno: 25.10.2026 16:48 | Autor: dusanbrat",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Galerie"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
+    },
+    {
+      "id": "4955",
+      "source_key": "vizmburk",
+      "external_url": "https://www.vizmburk.cz/l/uklid-pred-zimou/",
+      "title": "Úklid před zimou",
+      "category": "Kultura",
+      "event_date": null,
+      "published_at": "2026-10-24T12:00:00.000Z",
+      "summary": "V sobotu jsme za krásného počasí zazimovali hrad. To znamená, že jsme uklidili a odvezli veškeré expozice, aby brány hradu mohli zůstat celou zimu otevřené a návštěvníci si mohli vychutnat atmosféru podzimního, zimního a jarního hradu kdykoli budou chtít. Práce nám šla od ruky, měli jsme pomoc jak o",
+      "payload": {
+        "body": [
+          "V sobotu jsme za krásného počasí zazimovali hrad. To znamená, že jsme uklidili a odvezli veškeré expozice, aby brány hradu mohli zůstat celou zimu otevřené a návštěvníci si mohli vychutnat atmosféru podzimního, zimního a jarního hradu kdykoli budou chtít. Práce nám šla od ruky, měli jsme pomoc jak od členů sdružení, tak od našich věrných návštěvníků, ale i od odsouzených z Odolovské věznice. Všichni se zapojili, jak jim síly dovolili a ve skutečně pěkném čase jsme stihli všechno, co jsme si předsevzali. Všem pomocníkům moc děkujeme. Během této mimosezóny bude občerstvení uzavřené, kromě několika akcí, které nás ještě čekají."
+        ],
+        "days": [],
+        "kind": "community",
+        "blocks": [
+          {
+            "text": "V sobotu jsme za krásného počasí zazimovali hrad. To znamená, že jsme uklidili a odvezli veškeré expozice, aby brány hradu mohli zůstat celou zimu otevřené a návštěvníci si mohli vychutnat atmosféru podzimního, zimního a jarního hradu kdykoli budou chtít. Práce nám šla od ruky, měli jsme pomoc jak od členů sdružení, tak od našich věrných návštěvníků, ale i od odsouzených z Odolovské věznice. Všichni se zapojili, jak jim síly dovolili a ve skutečně pěkném čase jsme stihli všechno, co jsme si předsevzali. Všem pomocníkům moc děkujeme. Během této mimosezóny bude občerstvení uzavřené, kromě několika akcí, které nás ještě čekají.",
+            "type": "paragraph"
+          }
+        ],
+        "club_key": "vizmburk",
+        "club_name": "Hrad Vízmburk",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Hrad Vízmburk",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-11T13:36:14.472Z"
+      },
+      "last_seen_at": "2026-11-11T13:36:14.472Z"
     },
     {
       "id": "32",
@@ -9301,7 +9537,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:04.203Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.103Z"
+      "last_seen_at": "2026-11-11T13:36:06.857Z"
     },
     {
       "id": "33",
@@ -9368,7 +9604,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:07.346Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.103Z"
+      "last_seen_at": "2026-11-11T13:36:06.857Z"
     },
     {
       "id": "3",
@@ -9389,9 +9625,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:09.913Z"
+        "detail_fetched_at": "2026-11-11T13:36:07.716Z"
       },
-      "last_seen_at": "2026-11-11T11:34:09.913Z"
+      "last_seen_at": "2026-11-11T13:36:07.716Z"
     },
     {
       "id": "3501",
@@ -9427,9 +9663,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-10-22",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "25",
@@ -9459,7 +9695,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:30:54.281Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "13",
@@ -9490,7 +9726,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:06.421Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.098Z"
+      "last_seen_at": "2026-11-11T13:36:07.372Z"
     },
     {
       "id": "257",
@@ -9547,9 +9783,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:27.015Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.038Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.015Z"
+      "last_seen_at": "2026-11-11T13:36:24.038Z"
     },
     {
       "id": "14",
@@ -9585,7 +9821,38 @@
         "restriction_date": "2026-10-21",
         "detail_fetched_at": "2026-11-11T10:17:06.427Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.098Z"
+      "last_seen_at": "2026-11-11T13:36:07.372Z"
+    },
+    {
+      "id": "4956",
+      "source_key": "vizmburk",
+      "external_url": "https://www.vizmburk.cz/l/remeslne-trhy3/",
+      "title": "Řemeslné trhy",
+      "category": "Kultura",
+      "event_date": null,
+      "published_at": "2026-10-17T12:00:00.000Z",
+      "summary": "V sobotu, 17 října, proběhly na hradě Vízmburk již tradiční řemeslné trhy. Byla to také poslední příležitost prohlédnout si letos hrad i s expozicemi. Počasí se nám vydařilo, jídlo i pití ještě bylo a tak nás navštívilo velké množství lidí. Všichni vypadali spokojeně. O zábavu se postarala Východoče",
+      "payload": {
+        "body": [
+          "V sobotu, 17 října, proběhly na hradě Vízmburk již tradiční řemeslné trhy. Byla to také poslední příležitost prohlédnout si letos hrad i s expozicemi. Počasí se nám vydařilo, jídlo i pití ještě bylo a tak nás navštívilo velké množství lidí. Všichni vypadali spokojeně. O zábavu se postarala Východočeská kumpanie se svým vysoupením, střelbou a dobovou kuchyní a potom mladá rocková kapela z Hradce Králové Maybe Band. Závěr sezóny se nám tak podařil a my teď budeme moci hrad připravit na zimní provoz."
+        ],
+        "days": [],
+        "kind": "community",
+        "blocks": [
+          {
+            "text": "V sobotu, 17 října, proběhly na hradě Vízmburk již tradiční řemeslné trhy. Byla to také poslední příležitost prohlédnout si letos hrad i s expozicemi. Počasí se nám vydařilo, jídlo i pití ještě bylo a tak nás navštívilo velké množství lidí. Všichni vypadali spokojeně. O zábavu se postarala Východočeská kumpanie se svým vysoupením, střelbou a dobovou kuchyní a potom mladá rocková kapela z Hradce Králové Maybe Band. Závěr sezóny se nám tak podařil a my teď budeme moci hrad připravit na zimní provoz.",
+            "type": "paragraph"
+          }
+        ],
+        "club_key": "vizmburk",
+        "club_name": "Hrad Vízmburk",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Hrad Vízmburk",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-11T13:36:14.472Z"
+      },
+      "last_seen_at": "2026-11-11T13:36:14.472Z"
     },
     {
       "id": "261",
@@ -9653,9 +9920,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:27.015Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.038Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.015Z"
+      "last_seen_at": "2026-11-11T13:36:24.038Z"
     },
     {
       "id": "258",
@@ -9707,9 +9974,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:27.015Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.038Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.015Z"
+      "last_seen_at": "2026-11-11T13:36:24.038Z"
     },
     {
       "id": "16",
@@ -9740,7 +10007,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:06.957Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.098Z"
+      "last_seen_at": "2026-11-11T13:36:07.372Z"
     },
     {
       "id": "15",
@@ -9771,7 +10038,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:06.941Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.098Z"
+      "last_seen_at": "2026-11-11T13:36:07.372Z"
     },
     {
       "id": "4",
@@ -9792,9 +10059,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:09.913Z"
+        "detail_fetched_at": "2026-11-11T13:36:07.716Z"
       },
-      "last_seen_at": "2026-11-11T11:34:09.913Z"
+      "last_seen_at": "2026-11-11T13:36:07.716Z"
     },
     {
       "id": "256",
@@ -9851,9 +10118,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:27.015Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.038Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.015Z"
+      "last_seen_at": "2026-11-11T13:36:24.038Z"
     },
     {
       "id": "26",
@@ -9893,7 +10160,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:30:56.064Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "3502",
@@ -9923,9 +10190,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-10-08",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "34",
@@ -9954,7 +10221,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:30:48.861Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.103Z"
+      "last_seen_at": "2026-11-11T13:36:06.857Z"
     },
     {
       "id": "27",
@@ -9984,7 +10251,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:30:57.751Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "35",
@@ -10030,7 +10297,38 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:08.760Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.103Z"
+      "last_seen_at": "2026-11-11T13:36:06.857Z"
+    },
+    {
+      "id": "4957",
+      "source_key": "vizmburk",
+      "external_url": "https://www.vizmburk.cz/l/seniorske-peceni-chleba/",
+      "title": "Seniorské pečení chleba",
+      "category": "Kultura",
+      "event_date": null,
+      "published_at": "2026-10-05T12:00:00.000Z",
+      "summary": "V pondělí, 5. října, dorazila na hrad skupinka seniorů z Domovu speciální péče z Tmavého Dolu. Správce hradu pro ně připravil chlebové těsto a roztopil pec, aby si každý ze zúčastněných mohl vlastnoručně udělat bochánek a potom si ho upéct ve středověké chlebové peci. Protože to je činnost na delší ",
+      "payload": {
+        "body": [
+          "V pondělí, 5. října, dorazila na hrad skupinka seniorů z Domovu speciální péče z Tmavého Dolu. Správce hradu pro ně připravil chlebové těsto a roztopil pec, aby si každý ze zúčastněných mohl vlastnoručně udělat bochánek a potom si ho upéct ve středověké chlebové peci. Protože to je činnost na delší dobu, hlavně když se čeká na řádné propečení chleba, mohli se senioři zatím projít podívat na hrad. Počasí přálo a na sluníčku bylo ještě teplo. Po vytažení chlebů z pece účastníci neodolali a hned jeden zakrojili, aby ho mohli ochutnat. Všem moc chutnal a ostatí bochánky si odvezli sebou, aby se mohli podělit i s těmi, kteří nemohli dorazit na hrad."
+        ],
+        "days": [],
+        "kind": "community",
+        "blocks": [
+          {
+            "text": "V pondělí, 5. října, dorazila na hrad skupinka seniorů z Domovu speciální péče z Tmavého Dolu. Správce hradu pro ně připravil chlebové těsto a roztopil pec, aby si každý ze zúčastněných mohl vlastnoručně udělat bochánek a potom si ho upéct ve středověké chlebové peci. Protože to je činnost na delší dobu, hlavně když se čeká na řádné propečení chleba, mohli se senioři zatím projít podívat na hrad. Počasí přálo a na sluníčku bylo ještě teplo. Po vytažení chlebů z pece účastníci neodolali a hned jeden zakrojili, aby ho mohli ochutnat. Všem moc chutnal a ostatí bochánky si odvezli sebou, aby se mohli podělit i s těmi, kteří nemohli dorazit na hrad.",
+            "type": "paragraph"
+          }
+        ],
+        "club_key": "vizmburk",
+        "club_name": "Hrad Vízmburk",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Hrad Vízmburk",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-11T13:36:14.472Z"
+      },
+      "last_seen_at": "2026-11-11T13:36:14.472Z"
     },
     {
       "id": "4266",
@@ -10109,10 +10407,10 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Publikováno: 5. října 2026 | Autor: petrlnenicka",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Muži A"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "222",
@@ -10211,9 +10509,9 @@
             "title": "Podrobnosti od pořadatele"
           }
         ],
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "845",
@@ -10272,9 +10570,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.171Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.409Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.171Z"
+      "last_seen_at": "2026-11-11T13:36:14.409Z"
     },
     {
       "id": "3503",
@@ -10309,9 +10607,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-10-01",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "848",
@@ -10389,9 +10687,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "36",
@@ -10432,7 +10730,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:08.785Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.103Z"
+      "last_seen_at": "2026-11-11T13:36:06.857Z"
     },
     {
       "id": "4268",
@@ -10511,10 +10809,10 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Vytvořeno: 27.09.2026 12:20 | Autor: petrlnenicka",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Galerie"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "4267",
@@ -10593,10 +10891,10 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Vytvořeno: 27.09.2026 19:29 | Autor: admin",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Galerie"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "849",
@@ -10652,9 +10950,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "3504",
@@ -10699,9 +10997,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-09-24",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "260",
@@ -10753,9 +11051,9 @@
         "attachments": [],
         "source_name": "Kalendář města",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:27.015Z"
+        "detail_fetched_at": "2026-11-11T13:36:24.038Z"
       },
-      "last_seen_at": "2026-11-11T11:34:27.015Z"
+      "last_seen_at": "2026-11-11T13:36:24.038Z"
     },
     {
       "id": "37",
@@ -11243,7 +11541,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T10:17:10.227Z"
       },
-      "last_seen_at": "2026-11-11T11:34:10.103Z"
+      "last_seen_at": "2026-11-11T13:36:06.857Z"
     },
     {
       "id": "38",
@@ -11313,6 +11611,37 @@
       "last_seen_at": "2026-11-11T10:17:10.227Z"
     },
     {
+      "id": "4958",
+      "source_key": "vizmburk",
+      "external_url": "https://www.vizmburk.cz/l/vizmburske-slavnosti4/",
+      "title": "Vízmburské slavnosti",
+      "category": "Kultura",
+      "event_date": null,
+      "published_at": "2026-09-19T12:00:00.000Z",
+      "summary": "Ani rok 2026 by nebyl úplný, kdybychom neoslavili existenci hradu. Letos nám počasí přálo, trhovců bylo habaděj, šermíři se tloukli, pěvci nám k tomu zpívali a lidé hodovali a slavili. Pana Tase jsme přivítali a celé odpoledne se neslo v duchu přátelském a slavnostním. Lidu nepřišlo tolik, kolik byc",
+      "payload": {
+        "body": [
+          "Ani rok 2026 by nebyl úplný, kdybychom neoslavili existenci hradu. Letos nám počasí přálo, trhovců bylo habaděj, šermíři se tloukli, pěvci nám k tomu zpívali a lidé hodovali a slavili. Pana Tase jsme přivítali a celé odpoledne se neslo v duchu přátelském a slavnostním. Lidu nepřišlo tolik, kolik bychom chtěli. Ale ti, kteří přišli, odcházeli spokojeně. Takže jsme si nakonec den užili všichni. Jenže: rok 2026 přesto úplný není - čeká nás toho ještě hodně, až moc! Trhy, Bludičky, Mikuláš..."
+        ],
+        "days": [],
+        "kind": "community",
+        "blocks": [
+          {
+            "text": "Ani rok 2026 by nebyl úplný, kdybychom neoslavili existenci hradu. Letos nám počasí přálo, trhovců bylo habaděj, šermíři se tloukli, pěvci nám k tomu zpívali a lidé hodovali a slavili. Pana Tase jsme přivítali a celé odpoledne se neslo v duchu přátelském a slavnostním. Lidu nepřišlo tolik, kolik bychom chtěli. Ale ti, kteří přišli, odcházeli spokojeně. Takže jsme si nakonec den užili všichni. Jenže: rok 2026 přesto úplný není - čeká nás toho ještě hodně, až moc! Trhy, Bludičky, Mikuláš...",
+            "type": "paragraph"
+          }
+        ],
+        "club_key": "vizmburk",
+        "club_name": "Hrad Vízmburk",
+        "detail_ok": true,
+        "in_latest": true,
+        "source_name": "Hrad Vízmburk",
+        "detail_error": null,
+        "detail_fetched_at": "2026-11-11T13:36:14.472Z"
+      },
+      "last_seen_at": "2026-11-11T13:36:14.472Z"
+    },
+    {
       "id": "223",
       "source_key": "scouts",
       "external_url": "https://skaut-rtyne.skauting.cz/2026/09/forum-mladsich-clenu-12-9-2026/",
@@ -11341,9 +11670,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "3505",
@@ -11378,9 +11707,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-09-17",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "224",
@@ -11411,9 +11740,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "4269",
@@ -11492,10 +11821,10 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Vytvořeno: 15.09.2026 6:50 | Autor: petrlnenicka",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Galerie"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "5",
@@ -11520,9 +11849,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:09.913Z"
+        "detail_fetched_at": "2026-11-11T13:36:07.716Z"
       },
-      "last_seen_at": "2026-11-11T11:34:09.913Z"
+      "last_seen_at": "2026-11-11T13:36:07.716Z"
     },
     {
       "id": "3506",
@@ -11557,9 +11886,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-09-10",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "225",
@@ -11610,9 +11939,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "229",
@@ -11641,9 +11970,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "230",
@@ -11672,9 +12001,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "6",
@@ -11702,9 +12031,9 @@
         "in_latest": true,
         "source_name": "MŠ Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:09.913Z"
+        "detail_fetched_at": "2026-11-11T13:36:07.716Z"
       },
-      "last_seen_at": "2026-11-11T11:34:09.913Z"
+      "last_seen_at": "2026-11-11T13:36:07.716Z"
     },
     {
       "id": "850",
@@ -11825,9 +12154,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "7",
@@ -11934,9 +12263,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "664",
@@ -11968,9 +12297,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "663",
@@ -12002,9 +12331,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "662",
@@ -12036,9 +12365,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "661",
@@ -12070,9 +12399,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "660",
@@ -12104,9 +12433,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "659",
@@ -12138,9 +12467,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "658",
@@ -12172,9 +12501,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "657",
@@ -12206,9 +12535,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "656",
@@ -12240,9 +12569,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "655",
@@ -12273,9 +12602,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "665",
@@ -12306,9 +12635,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "3507",
@@ -12348,9 +12677,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-06-26",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "29",
@@ -12380,7 +12709,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:31:01.196Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "28",
@@ -12410,7 +12739,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:30:59.447Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "30",
@@ -12440,7 +12769,7 @@
         "restriction_date": null,
         "detail_fetched_at": "2026-11-11T11:31:02.878Z"
       },
-      "last_seen_at": "2026-11-11T11:34:15.564Z"
+      "last_seen_at": "2026-11-11T13:36:12.430Z"
     },
     {
       "id": "3508",
@@ -12475,9 +12804,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-06-04",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "667",
@@ -12513,9 +12842,9 @@
         "source_name": "Skaut – Permoník",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "666",
@@ -12550,9 +12879,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "4270",
@@ -12607,10 +12936,10 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Publikováno: 2. června 2026 | Autor: admin",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Muži A"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "3509",
@@ -12655,9 +12984,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-05-28",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "851",
@@ -12733,9 +13062,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "3510",
@@ -12770,9 +13099,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-05-21",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "668",
@@ -12801,9 +13130,9 @@
         "attachments": [],
         "source_name": "Skaut – Permoník",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.257Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.157Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.257Z"
+      "last_seen_at": "2026-11-11T13:36:14.157Z"
     },
     {
       "id": "3511",
@@ -12833,9 +13162,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-05-07",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "852",
@@ -12928,9 +13257,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "853",
@@ -13016,9 +13345,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "231",
@@ -13047,9 +13376,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "3512",
@@ -13079,9 +13408,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-04-30",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "854",
@@ -13172,9 +13501,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "3513",
@@ -13210,9 +13539,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-04-23",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "3514",
@@ -13242,9 +13571,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-04-20",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "3515",
@@ -13274,9 +13603,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-04-16",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "1073",
@@ -13330,9 +13659,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.171Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.409Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.171Z"
+      "last_seen_at": "2026-11-11T13:36:14.409Z"
     },
     {
       "id": "3516",
@@ -13362,9 +13691,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-04-09",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "3517",
@@ -13394,9 +13723,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-04-02",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "3518",
@@ -13426,9 +13755,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-03-26",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "3519",
@@ -13458,9 +13787,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-03-19",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "855",
@@ -13539,9 +13868,9 @@
         "attachments": [],
         "source_name": "TŠ Bonifác",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.813Z"
+        "detail_fetched_at": "2026-11-11T13:36:16.274Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.813Z"
+      "last_seen_at": "2026-11-11T13:36:16.274Z"
     },
     {
       "id": "232",
@@ -13570,9 +13899,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "3520",
@@ -13602,9 +13931,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-03-12",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "3521",
@@ -13634,9 +13963,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-03-05",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "3522",
@@ -13666,9 +13995,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-02-26",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "3523",
@@ -13698,9 +14027,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-02-19",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "237",
@@ -13731,9 +14060,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.171Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.409Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.171Z"
+      "last_seen_at": "2026-11-11T13:36:14.409Z"
     },
     {
       "id": "3524",
@@ -13763,9 +14092,9 @@
         "source_name": "Městský rozhlas",
         "detail_error": null,
         "broadcast_date": "2026-02-12",
-        "detail_fetched_at": "2026-11-11T11:34:48.434Z"
+        "detail_fetched_at": "2026-11-11T13:36:47.647Z"
       },
-      "last_seen_at": "2026-11-11T11:34:48.434Z"
+      "last_seen_at": "2026-11-11T13:36:47.647Z"
     },
     {
       "id": "4271",
@@ -13820,10 +14149,10 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Publikováno: 9. února 2026 | Autor: admin",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Ostatní"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "238",
@@ -13854,9 +14183,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.171Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.409Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.171Z"
+      "last_seen_at": "2026-11-11T13:36:14.409Z"
     },
     {
       "id": "4272",
@@ -13912,10 +14241,10 @@
         "source_name": "TJ Baník – fotbal",
         "detail_error": null,
         "original_credit": "Publikováno: 7. ledna 2026 | Autor: admin | Aktualizováno: 17. července 2026",
-        "detail_fetched_at": "2026-11-11T11:34:21.444Z",
+        "detail_fetched_at": "2026-11-11T13:36:18.299Z",
         "football_category": "Ostatní"
       },
-      "last_seen_at": "2026-11-11T11:34:21.444Z"
+      "last_seen_at": "2026-11-11T13:36:18.299Z"
     },
     {
       "id": "233",
@@ -14075,9 +14404,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "239",
@@ -14108,9 +14437,9 @@
         "attachments": [],
         "source_name": "Koletova hornická hudba",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:17.171Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.409Z"
       },
-      "last_seen_at": "2026-11-11T11:34:17.171Z"
+      "last_seen_at": "2026-11-11T13:36:14.409Z"
     },
     {
       "id": "784",
@@ -14136,9 +14465,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "234",
@@ -14167,9 +14496,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "694",
@@ -14344,9 +14673,9 @@
         "source_name": "Orel Rtyně",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "693",
@@ -14521,9 +14850,9 @@
         "source_name": "Orel Rtyně",
         "detail_error": null,
         "calendar_only": true,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "692",
@@ -14697,9 +15026,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "695",
@@ -14826,9 +15155,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "829",
@@ -14857,9 +15186,9 @@
         "attachments": [],
         "source_name": "TS Ballare",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.058Z"
+        "detail_fetched_at": "2026-11-11T13:36:14.730Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.058Z"
+      "last_seen_at": "2026-11-11T13:36:14.730Z"
     },
     {
       "id": "696",
@@ -14888,9 +15217,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "697",
@@ -14919,9 +15248,9 @@
         "attachments": [],
         "source_name": "Orel Rtyně",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:25.391Z"
+        "detail_fetched_at": "2026-11-11T13:36:22.484Z"
       },
-      "last_seen_at": "2026-11-11T11:34:25.391Z"
+      "last_seen_at": "2026-11-11T13:36:22.484Z"
     },
     {
       "id": "785",
@@ -14947,9 +15276,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "786",
@@ -14975,9 +15304,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "787",
@@ -15003,9 +15332,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "788",
@@ -15031,9 +15360,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "789",
@@ -15059,9 +15388,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "790",
@@ -15087,9 +15416,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "791",
@@ -15115,9 +15444,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "792",
@@ -15142,9 +15471,9 @@
         "source_name": "KVH Odolov",
         "detail_error": null,
         "source_empty": true,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "793",
@@ -15170,9 +15499,9 @@
         "attachments": [],
         "source_name": "KVH Odolov",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "794",
@@ -15197,9 +15526,9 @@
         "source_name": "KVH Odolov",
         "detail_error": null,
         "source_empty": true,
-        "detail_fetched_at": "2026-11-11T11:34:18.243Z"
+        "detail_fetched_at": "2026-11-11T13:36:15.130Z"
       },
-      "last_seen_at": "2026-11-11T11:34:18.243Z"
+      "last_seen_at": "2026-11-11T13:36:15.130Z"
     },
     {
       "id": "871",
@@ -15234,9 +15563,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.836Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.836Z"
     },
     {
       "id": "872",
@@ -15271,9 +15600,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.836Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.836Z"
     },
     {
       "id": "874",
@@ -15308,9 +15637,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.836Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.836Z"
     },
     {
       "id": "873",
@@ -15341,9 +15670,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.836Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.836Z"
     },
     {
       "id": "875",
@@ -15376,9 +15705,9 @@
         "in_latest": true,
         "source_name": "TJ Baník – volejbal",
         "detail_error": null,
-        "detail_fetched_at": "2026-11-11T11:34:16.645Z"
+        "detail_fetched_at": "2026-11-11T13:36:13.836Z"
       },
-      "last_seen_at": "2026-11-11T11:34:16.645Z"
+      "last_seen_at": "2026-11-11T13:36:13.836Z"
     }
   ],
   "posts": [
@@ -15435,8 +15764,8 @@
       "source_key": "ballare",
       "source_url": "https://ballare.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:18.058Z",
-      "last_success_at": "2026-11-11T11:34:18.058Z",
+      "checked_at": "2026-11-11T13:36:14.730Z",
+      "last_success_at": "2026-11-11T13:36:14.730Z",
       "last_error": null,
       "item_count": 1,
       "name": "TS Ballare",
@@ -15448,8 +15777,8 @@
       "source_key": "banik",
       "source_url": "https://banikrtyne.cz/clanky/vse",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:21.444Z",
-      "last_success_at": "2026-11-11T11:34:21.444Z",
+      "checked_at": "2026-11-11T13:36:18.299Z",
+      "last_success_at": "2026-11-11T13:36:18.299Z",
       "last_error": null,
       "item_count": 13,
       "name": "TJ Baník – fotbal",
@@ -15461,8 +15790,8 @@
       "source_key": "bonifac",
       "source_url": "https://www.bonifac.eu/feed/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:17.813Z",
-      "last_success_at": "2026-11-11T11:34:17.813Z",
+      "checked_at": "2026-11-11T13:36:16.274Z",
+      "last_success_at": "2026-11-11T13:36:16.274Z",
       "last_error": null,
       "item_count": 10,
       "name": "TŠ Bonifác",
@@ -15474,8 +15803,8 @@
       "source_key": "calendar",
       "source_url": "https://www.rtyne.cz/kalendar-udalosti",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:27.015Z",
-      "last_success_at": "2026-11-11T11:34:27.015Z",
+      "checked_at": "2026-11-11T13:36:24.038Z",
+      "last_success_at": "2026-11-11T13:36:24.038Z",
       "last_error": null,
       "item_count": 8,
       "name": "Kalendář města",
@@ -15487,8 +15816,8 @@
       "source_key": "city",
       "source_url": "https://www.rtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:15.564Z",
-      "last_success_at": "2026-11-11T11:34:15.564Z",
+      "checked_at": "2026-11-11T13:36:12.430Z",
+      "last_success_at": "2026-11-11T13:36:12.430Z",
       "last_error": null,
       "item_count": 23,
       "name": "Město Rtyně",
@@ -15500,8 +15829,8 @@
       "source_key": "clubs",
       "source_url": "https://www.rtyne.cz/spolky-a-sdruzeni",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:27.392Z",
-      "last_success_at": "2026-11-11T11:34:27.392Z",
+      "checked_at": "2026-11-11T13:36:24.498Z",
+      "last_success_at": "2026-11-11T13:36:24.498Z",
       "last_error": null,
       "item_count": 14,
       "name": "Spolky a sportovní oddíly",
@@ -15513,8 +15842,8 @@
       "source_key": "contemporary",
       "source_url": "https://contemporary.cz/cs/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:16.717Z",
-      "last_success_at": "2026-11-11T11:34:16.717Z",
+      "checked_at": "2026-11-11T13:36:13.663Z",
+      "last_success_at": "2026-11-11T13:36:13.663Z",
       "last_error": null,
       "item_count": 0,
       "name": "Contemporary Region",
@@ -15538,8 +15867,8 @@
       "source_key": "florbal",
       "source_url": "https://www.fbcorelrtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:24.847Z",
-      "last_success_at": "2026-11-11T11:34:24.847Z",
+      "checked_at": "2026-11-11T13:36:21.992Z",
+      "last_success_at": "2026-11-11T13:36:21.992Z",
       "last_error": null,
       "item_count": 50,
       "name": "FBC Orel Rtyně",
@@ -15551,8 +15880,8 @@
       "source_key": "garden",
       "source_url": "https://www.zahradkari.cz/zo/rtyne/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:16.012Z",
-      "last_success_at": "2026-11-11T11:34:16.012Z",
+      "checked_at": "2026-11-11T13:36:12.911Z",
+      "last_success_at": "2026-11-11T13:36:12.911Z",
       "last_error": null,
       "item_count": 0,
       "name": "ČZS Rtyně",
@@ -15564,7 +15893,7 @@
       "source_key": "hasici",
       "source_url": "https://www.facebook.com/sdhrtyne",
       "status": "pending",
-      "checked_at": "2026-11-11T11:34:15.672Z",
+      "checked_at": "2026-11-11T13:36:12.551Z",
       "last_success_at": null,
       "last_error": null,
       "item_count": 0,
@@ -15577,8 +15906,8 @@
       "source_key": "koletovka",
       "source_url": "https://koletovka.cz/wp-json/wp/v2/posts?per_page=5",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:17.171Z",
-      "last_success_at": "2026-11-11T11:34:17.171Z",
+      "checked_at": "2026-11-11T13:36:14.409Z",
+      "last_success_at": "2026-11-11T13:36:14.409Z",
       "last_error": null,
       "item_count": 8,
       "name": "Koletova hornická hudba",
@@ -15590,8 +15919,8 @@
       "source_key": "library",
       "source_url": "https://www.mkrtyne.cz/akce.html",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:16.645Z",
-      "last_success_at": "2026-11-11T11:34:16.645Z",
+      "checked_at": "2026-11-11T13:36:13.489Z",
+      "last_success_at": "2026-11-11T13:36:13.489Z",
       "last_error": null,
       "item_count": 15,
       "name": "Městská knihovna",
@@ -15603,8 +15932,8 @@
       "source_key": "museum",
       "source_url": "https://www.muzeumrtyne.cz/akce",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:16.299Z",
-      "last_success_at": "2026-11-11T11:34:16.299Z",
+      "checked_at": "2026-11-11T13:36:13.170Z",
+      "last_success_at": "2026-11-11T13:36:13.170Z",
       "last_error": null,
       "item_count": 1,
       "name": "Muzeum a infocentrum",
@@ -15616,8 +15945,8 @@
       "source_key": "odolov",
       "source_url": "https://pechotni-srub-t-s-26.webnode.cz/rss/all.xml",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:18.243Z",
-      "last_success_at": "2026-11-11T11:34:18.243Z",
+      "checked_at": "2026-11-11T13:36:15.130Z",
+      "last_success_at": "2026-11-11T13:36:15.130Z",
       "last_error": null,
       "item_count": 11,
       "name": "KVH Odolov",
@@ -15629,8 +15958,8 @@
       "source_key": "orel",
       "source_url": "https://www.orelrtyne.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:25.391Z",
-      "last_success_at": "2026-11-11T11:34:25.391Z",
+      "checked_at": "2026-11-11T13:36:22.484Z",
+      "last_success_at": "2026-11-11T13:36:22.484Z",
       "last_error": null,
       "item_count": 12,
       "name": "Orel Rtyně",
@@ -15642,8 +15971,8 @@
       "source_key": "preschool",
       "source_url": "https://www.msrtyne.cz/aktuality/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:09.913Z",
-      "last_success_at": "2026-11-11T11:34:09.913Z",
+      "checked_at": "2026-11-11T13:36:07.716Z",
+      "last_success_at": "2026-11-11T13:36:07.716Z",
       "last_error": null,
       "item_count": 8,
       "name": "MŠ Rtyně",
@@ -15655,8 +15984,8 @@
       "source_key": "preschool_menu",
       "source_url": "https://www.msrtyne.cz/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:16.260Z",
-      "last_success_at": "2026-11-11T11:34:16.260Z",
+      "checked_at": "2026-11-11T13:36:13.119Z",
+      "last_success_at": "2026-11-11T13:36:13.119Z",
       "last_error": null,
       "item_count": 1,
       "name": "Jídelníček MŠ",
@@ -15668,8 +15997,8 @@
       "source_key": "radio",
       "source_url": "https://www.rtyne.cz/mestsky-rozhlas",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:48.434Z",
-      "last_success_at": "2026-11-11T11:34:48.434Z",
+      "checked_at": "2026-11-11T13:36:47.647Z",
+      "last_success_at": "2026-11-11T13:36:47.647Z",
       "last_error": null,
       "item_count": 25,
       "name": "Městský rozhlas",
@@ -15681,8 +16010,8 @@
       "source_key": "school",
       "source_url": "https://www.zsrtyne.cz/pro-verejnost/aktuality",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:10.103Z",
-      "last_success_at": "2026-11-11T11:34:10.103Z",
+      "checked_at": "2026-11-11T13:36:06.857Z",
+      "last_success_at": "2026-11-11T13:36:06.857Z",
       "last_error": null,
       "item_count": 8,
       "name": "ZŠ a ZUŠ Rtyně",
@@ -15694,8 +16023,8 @@
       "source_key": "scouts",
       "source_url": "https://skaut-rtyne.skauting.cz/feed/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:17.257Z",
-      "last_success_at": "2026-11-11T11:34:17.257Z",
+      "checked_at": "2026-11-11T13:36:14.157Z",
+      "last_success_at": "2026-11-11T13:36:14.157Z",
       "last_error": null,
       "item_count": 20,
       "name": "Skaut – Permoník",
@@ -15707,8 +16036,8 @@
       "source_key": "services",
       "source_url": "https://www.rtyne.cz/svoz-odpadu-a-odpadove-hospodarstvi",
       "status": "ok",
-      "checked_at": "2026-11-11T11:35:31.006Z",
-      "last_success_at": "2026-11-11T11:35:31.006Z",
+      "checked_at": "2026-11-11T13:37:31.678Z",
+      "last_success_at": "2026-11-11T13:37:31.678Z",
       "last_error": null,
       "item_count": 10,
       "name": "Praktické informace města",
@@ -15720,8 +16049,8 @@
       "source_key": "sms_areal",
       "source_url": "https://www.smsticket.cz/mista/4699-prirodni-areal-rtyne-v-podkrkonosi",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:16.670Z",
-      "last_success_at": "2026-11-11T11:34:16.670Z",
+      "checked_at": "2026-11-11T13:36:13.276Z",
+      "last_success_at": "2026-11-11T13:36:13.276Z",
       "last_error": null,
       "item_count": 1,
       "name": "SMS ticket – Přírodní areál",
@@ -15733,8 +16062,8 @@
       "source_key": "sms_orlovna",
       "source_url": "https://www.smsticket.cz/mista/4478-sportovni-hala-orlovna-rtyne-v-podkrkonosi",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:16.444Z",
-      "last_success_at": "2026-11-11T11:34:16.444Z",
+      "checked_at": "2026-11-11T13:36:13.504Z",
+      "last_success_at": "2026-11-11T13:36:13.504Z",
       "last_error": null,
       "item_count": 2,
       "name": "SMS ticket – Orlovna",
@@ -15746,8 +16075,8 @@
       "source_key": "sokol",
       "source_url": "https://www.sokol.eu/sokolovna/tj-sokol-rtyne-v-podkrkonosi",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:15.872Z",
-      "last_success_at": "2026-11-11T11:34:15.872Z",
+      "checked_at": "2026-11-11T13:36:12.826Z",
+      "last_success_at": "2026-11-11T13:36:12.826Z",
       "last_error": null,
       "item_count": 0,
       "name": "T. J. Sokol Rtyně",
@@ -15756,11 +16085,24 @@
       "news_note": "Oficiální adresář obsahuje profil jednoty; datované místní novinky zatím chybí."
     },
     {
+      "source_key": "vizmburk",
+      "source_url": "https://www.vizmburk.cz/",
+      "status": "ok",
+      "checked_at": "2026-11-11T13:36:14.472Z",
+      "last_success_at": "2026-11-11T13:36:14.472Z",
+      "last_error": null,
+      "item_count": 7,
+      "name": "Hrad Vízmburk",
+      "mode": "automatic",
+      "community": true,
+      "news_note": null
+    },
+    {
       "source_key": "volejbal",
       "source_url": "https://volejbal-rtyne.estranky.cz/clanky/clanky/",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:16.645Z",
-      "last_success_at": "2026-11-11T11:34:16.645Z",
+      "checked_at": "2026-11-11T13:36:13.836Z",
+      "last_success_at": "2026-11-11T13:36:13.836Z",
       "last_error": null,
       "item_count": 5,
       "name": "TJ Baník – volejbal",
@@ -15772,8 +16114,8 @@
       "source_key": "water",
       "source_url": "https://www.vakrtyne.cz/havarie-a-odstavky",
       "status": "ok",
-      "checked_at": "2026-11-11T11:34:10.098Z",
-      "last_success_at": "2026-11-11T11:34:10.098Z",
+      "checked_at": "2026-11-11T13:36:07.372Z",
+      "last_success_at": "2026-11-11T13:36:07.372Z",
       "last_error": null,
       "item_count": 8,
       "name": "VAK Rtyně",
@@ -15782,5 +16124,5 @@
       "news_note": null
     }
   ],
-  "generated_at": "2026-11-11T13:15:36.450Z"
+  "generated_at": "2026-11-11T13:38:26.728Z"
 }
