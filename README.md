@@ -123,3 +123,9 @@ Zdroj `radio` načítá datovaná hlášení z první stránky městského archi
 ### Baník – nový fotbalový web
 
 Od 11. 11. 2026 zdroj `banik` používá `https://banikrtyne.cz/clanky/vse`. Modul `banik.mjs` importuje devět datovaných novinek a galerií, odděluje vlastní obsah od partnerů a zachovává odkaz na originál i autora. Fotogalerie mají nejvýše osm náhledů; delší články mají ukázku do 175 slov. Termíny mládežnických turnajů a pozvánku na další Rtyně CUP čte samostatně, aby historická reportáž nevyrobila chybnou budoucí akci. Nevymýšlí časy ani místo; při rozporu data a dne v týdnu upozorní v detailu. Po úspěšném importu starý fotbalový zdroj zmizí z aktuálního přehledu. Profil oddílu obsahuje ověřené kontakty, historii a odkazy na tým a turnaje; volejbal zůstává samostatný.
+
+### Řazení městských zpráv
+
+`assets/feed-order.js` kombinuje datum zveřejnění a konání v časovém pásmu Praha. První skupinu tvoří zprávy nejvýše 14 dní staré a akce na příštích 14 dní. Následují vzdálenější akce a zprávy do 30 dní; proběhlé pozvánky, zrušené akce a starší obsah jsou až za nimi. Čerstvé výsledky a reportáže zůstávají novinkami, ale nově načtený záznam několik měsíců staré události se nevrátí na začátek. Čas importu není datem zveřejnění. Data bez roku u jednoznačných pozvánek se vztahují k nejbližšímu roku data zveřejnění (nejvýše půl roku), jinak se termín neodhaduje.
+
+Všechna zobrazení kromě výběru jednoho zdroje střídají zdroje v rámci stejné skupiny aktuálnosti, cílově nejvýše dva příspěvky jedné organizace v každé šestici. Pokud další stejně aktuální zdroje nejsou, omezení se uvolní; archiv se kvůli pestrosti neposouvá dopředu. Město a jeho kalendář sdílejí jeden limit. Stejné pozvánky se slučují včetně původních zdrojů a případného rozporu termínů. Pořadí je deterministické a přidávání dalších šesti karet neposouvá již zobrazené zprávy. Barevná tlačítka kategorií ukazují počty, aktivní stav a mají výrazné ovládání klávesnicí.

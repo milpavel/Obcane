@@ -261,3 +261,16 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 @media(max-width:760px){.daily-overview .departure-summary .departure-headline{flex-direction:column;align-items:flex-start;gap:1px}.daily-overview .departure-summary .departure-direction{flex:auto;padding-bottom:5px}.departure-footer{gap:6px;margin-top:8px}.daily-overview .departure-footer .departure-more{font-size:12px}}
 
 .radio-section{background:#f8f6fb;border-block:1px solid var(--line)}.radio-section .feed-heading{align-items:center}.radio-card p{line-height:1.7}.radio-card:hover{transform:none}.radio-section #radio-status{margin-top:18px}
+
+/* News categories are visible controls, with counts and keyboard focus. */
+#prehled .news-filter-menu{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#prehled .news-filter-menu::before{content:'Vyberte kategorii zpráv';flex-basis:100%;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:2px}
+#prehled .news-filter-menu button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 14px;border:1px solid #ded6eb;border-radius:9px;background:#f8f6fc;color:var(--purple);font-size:13px;font-weight:650;line-height:1.4;cursor:pointer;transition:background-color .15s,border-color .15s,box-shadow .15s;color-scheme:light}
+#prehled .news-filter-menu button:hover{border-color:var(--pink);background:#fff0f6;box-shadow:0 0 0 1px #ec17631a}
+#prehled .news-filter-menu button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+#prehled .news-filter-menu button[aria-pressed=true]{background:var(--purple);border-color:var(--purple);color:white;box-shadow:inset 0 -3px 0 var(--pink)}
+#prehled .filter-count{display:inline-flex;align-items:center;justify-content:center;min-width:24px;padding:2px 5px;border-radius:5px;background:#eae3f5;color:var(--purple);font-size:10px;font-variant-numeric:tabular-nums}
+#prehled button[aria-pressed=true] .filter-count{background:#ffffff26;color:white}
+.feed-order-note{line-height:1.7;margin:8px 0 20px}.feed-status{display:inline-block;align-self:flex-start;font-size:10px;font-weight:650;color:var(--teal);background:#edf7f7;padding:3px 7px;border-radius:4px;margin:0 0 9px}.feed-status.expired{color:#776d81;background:#f0edf4}
+@media(max-width:760px){#prehled .news-filter-menu{width:100%;gap:7px}#prehled .news-filter-menu button{flex:1 1 auto;font-size:12px;padding:9px 11px}#prehled .filter-row .search{width:100%;margin-top:12px}#prehled .filter-row .search input{width:100%;min-width:0}}
+@media(prefers-reduced-motion:reduce){#prehled .news-filter-menu button{transition:none}}

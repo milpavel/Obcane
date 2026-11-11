@@ -10,7 +10,7 @@ function sameEvent(a,b){
  const x=topics(a.title),y=topics(b.title),shared=x.filter(w=>y.includes(w)),distinctive=shared.some(w=>w.length>=7);
  if(a.event_date!==b.event_date){
   // Only reconcile adjacent conflicting dates when the library is the organizer.
-  return new Set([a.source_key,b.source_key]).size===2&&[a.source_key,b.source_key].every(k=>['calendar','library'].includes(k))&&Math.abs(Date.parse(a.event_date)-Date.parse(b.event_date))===86400000&&distinctive;
+  return new Set([a.source_key,b.source_key]).size===2&&[a.source_key,b.source_key].every(k=>['calendar','city','library'].includes(k)&&[a,b].some(x=>x.source_key==='library'))&&Math.abs(Date.parse(a.event_date)-Date.parse(b.event_date))===86400000&&distinctive;
  }
  const canonical=s=>normal(s).replace(/[^a-z0-9]+/g,' ').trim();
  return canonical(a.title)===canonical(b.title)||distinctive||shared.length>=2;

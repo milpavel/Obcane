@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import {feedInfo,orderFeed} from '../assets/feed-order.js';
+const today='2026-11-11';
+const news=(id,source='city',date='2026-11-11')=>({id,source_key:source,title:'Nová zpráva '+id,published_at:date,payload:{}});
+const event=(id,date,source='banik')=>({...news(id,source,null),title:'Pozvánka na turnaj '+id,event_date:date,payload:{kind:'event'}});
+assert.equal(feedInfo(event('past','2026-11-10'),today).tier,2);
+assert.equal(feedInfo(event('today',today),today).tier,0);
+assert.equal(feedInfo(event('far','2027-07-16'),today).tier,1);
+assert.equal(feedInfo({...event('range','2026-11-10'),payload:{kind:'event',end_date:'2026-11-12'}},today).tier,0);
+assert.equal(feedInfo({...news('f'),title:'Fotografování',payload:{body:['Uskuteční se 10. 11. 2026.']}},today).expired,true);
+assert.equal(feedInfo({...news('month'),title:'Pozvánka na setkání 10. listopadu 2026'},today).expired,true);
+assert.equal(feedInfo({...news('result'),title:'Výsledkový servis',event_date:'2026-11-09'},today).tier,0);
+assert.equal(feedInfo({...news('report'),title:'Ohlédnutí za utkáním 10. 11. 2026'},today).expired,false);
+assert.equal(feedInfo({...news('cancel'),payload:{cancelled:true},event_date:'2026-11-12'},today).tier,2);
+assert.equal(feedInfo({...news('old','city','2025-01-01'),last_seen_at:'2026-11-11'},today).tier,2);
+assert.equal(feedInfo(news('undated','city',null),today).tier,3);
+assert.equal(feedInfo(news('future','city','2027-01-01'),today).tier,3);
+assert.equal(feedInfo(news('tz','city','2026-11-10T23:30:00Z'),today).date,today);
+const items=[...Array.from({length:12},(_,i)=>news('city'+i)),...Array.from({length:5},(_,i)=>news('school'+i,'school')), ...Array.from({length:5},(_,i)=>news('sport'+i,'florbal')),event('far','2027-07-16'),event('past','2026-11-10')];
+const rows=orderFeed(items,{today});for(const batch of [rows.slice(0,6),rows.slice(6,12)]){const counts={};for(const x of batch)counts[x.source_key]=(counts[x.source_key]||0)+1;assert.ok(Object.values(counts).every(n=>n<=2));}
+assert.ok(rows.findIndex(x=>x.id==='far')>15);assert.equal(rows.at(-1).id,'past');assert.equal(new Set(rows.map(x=>x.id)).size,items.length);assert.equal(orderFeed(items.filter(x=>x.source_key==='city'),{today}).length,12);
+assert.deepEqual(orderFeed(items,{today}).slice(0,6),orderFeed(items,{today}).slice(0,12).slice(0,6));
+const a={...event('dupA','2026-11-14','city'),title:'Svátek strašidel ve Rtyni'},b={...event('dupB','2026-11-14','calendar'),title:'Svátek strašidel ve Rtyni'};assert.equal(orderFeed([a,b],{today}).length,1);
+const currentCity=Array.from({length:5},(_,i)=>news(i));assert.equal(orderFeed([...currentCity,news('oldother','school','2025-01-01')],{today})[5].id,'oldother');
+assert.equal(orderFeed([news('city'),event('far','2027-07-16')],{today,diverse:false})[0].id,'city');
+console.log('PASS: Prague dates, nearby events and fresh reports, expired invitations, multi-day events, cancellations, source balance in six-card batches, stable pagination, no archive promotion, event deduplication, no freshness from import time');
+
+assert.equal(feedInfo({...news('meeting'),title:'Záznam zasedání ze dne 22. 4. 2026'},today).tier,2);
+assert.equal(feedInfo({...news('sport'),title:'Ženy hrají doma!',payload:{body:['V neděli 8. 11. od 16:00 hodin odehrají ženy utkání.']}},today).expired,true);
+assert.equal(feedInfo({...news('newyear','school','2026-12-28'),title:'Pozvánka na závod',payload:{body:['Zveme vás 3. 1. od 14 hodin.']}},'2026-12-29').date,'2027-01-03');
+const lib={...event('lib','2026-11-12','library'),title:'Putování po Špicberkách'},city={...event('city','2026-11-11','city'),title:'Putování po Špicberkách'};assert.equal(orderFeed([lib,city],{today}).length,1);
