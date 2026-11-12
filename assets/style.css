@@ -366,3 +366,8 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 /* City news cards stay in place while browsing. */
 #prehled .news-card{transition:box-shadow .22s ease,border-color .22s ease,background-color .22s ease}
 #prehled .news-card:hover{transform:none}
+
+/* Lift only the three service shortcuts on pointer hover. */
+.portal-service-band .portal-service-link{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+@media(hover:hover) and (pointer:fine){.portal-service-band .portal-service-link:hover{transform:translateY(-4px);box-shadow:0 9px 22px #20173626}}
+@media(prefers-reduced-motion:reduce){.portal-service-band .portal-service-link{transition:none}.portal-service-band .portal-service-link:hover{transform:none}}
