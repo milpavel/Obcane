@@ -6,6 +6,9 @@ import {isHousingNotice,deadlineFromText,deadlineAtFromText,collectMunicipal} fr
 import {parseHTML} from 'linkedom';
 const ad={category:'bydleni',kind:'nabizim',title:'Pronájem bytu 2+1',description:'Byt ve Rtyni k dlouhodobému pronájmu, více po domluvě.',location:'Rtyně v Podkrkonoší',contact_name:'Test',contact_email:'test@example.com',price_mode:'castka',price:'10000',price_note:'+ služby',housing_type:'pronajem',consent:true};
 assert.equal(validateAd(ad).price,10000);
+assert.equal(validateAd({...ad,description:'1234567890'}).description,'1234567890');
+assert.throws(()=>validateAd({...ad,description:'123456789'}));
+assert.throws(()=>validateAd({...ad,description:'    123456789    '}));
 for(const patch of [{consent:false},{category:'inherited'},{category:'constructor'},{price:-1},{price:1.5},{price:''},{contact_email:'test@example.com\nBcc:bad@example.com'},{description:'short'},{housing_type:'bad'},{website:'bot'},{title:'x'.repeat(111)},{available_from:'2026-02-31'}])assert.throws(()=>validateAd({...ad,...patch}));
 assert.equal(validateAd({...ad,kind:'daruji'}).price_mode,'zdarma');
 assert.equal(validateAd({...ad,category:'deti',housing_type:'nonsense'}).housing_type,null);
@@ -38,5 +41,6 @@ assert.match(backend,/status='published' and expires_at>now\(\)/);
 assert.match(backend,/status='pending'/);
 const {document}=parseHTML(await readFile(new URL('../inzerce/index.html',import.meta.url),'utf8'));
 for(const label of document.querySelectorAll('label[for]'))assert.ok(document.getElementById(label.getAttribute('for')),label.outerHTML);
+assert.equal(document.getElementById('ad-description').getAttribute('minlength'),'10');
 for(const id of ['market-grid','ad-form','ad-photos','ad-success','owner-withdraw','market-detail'])assert.ok(document.getElementById(id));
 console.log('PASS: listing validation, public/private projection, signed form scope/expiry/tampering, photo limits, current municipal deadlines, source allowlist, frontend field labels and backend syntax');

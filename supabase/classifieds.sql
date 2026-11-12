@@ -5,7 +5,7 @@ create table if not exists obcane.classifieds (
  category text not null check(category in ('bydleni','dum','deti','sport','elektronika','sluzby','ostatni')),
  kind text not null check(kind in ('nabizim','poptavam','daruji')),
  title text not null check(length(title) between 5 and 110),
- description text not null check(length(description) between 20 and 4000),
+ description text not null check(length(description) between 10 and 4000),
  location text not null, contact_name text not null, contact_email text not null, contact_phone text not null default '',
  price_mode text not null check(price_mode in ('castka','dohodou','zdarma')), price integer check(price>=0), price_note text not null default '',
  housing_type text check(housing_type in ('pronajem','prodej','spolubydleni')),disposition text not null default '',area numeric,available_from date,

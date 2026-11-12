@@ -8,7 +8,7 @@ export function validateAd(raw){
  if(!raw||typeof raw!=='object'||Array.isArray(raw)||raw.website)throw new FormError('Formulář se nepodařilo zpracovat.');
  const category=text(raw.category,30),kind=text(raw.kind,20),title=text(raw.title,110),description=text(raw.description,4000,true),location=text(raw.location,100),contact_name=text(raw.contact_name,80),contact_email=text(raw.contact_email,254),contact_phone=text(raw.contact_phone||'',30),housing_type=text(raw.housing_type||'',20);
  if(!Object.hasOwn(categories,category)||!Object.hasOwn(kinds,kind))throw new FormError('Vyberte kategorii a typ inzerátu.');
- if(title.length<5||description.length<20)throw new FormError('Nadpis musí mít alespoň 5 a popis 20 znaků.');
+ if(title.length<5||description.length<10)throw new FormError('Nadpis musí mít alespoň 5 a popis 10 znaků.');
  if(location.length<2||contact_name.length<2)throw new FormError('Vyplňte místo a své jméno.');
  if(!/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(contact_email))throw new FormError('Zkontrolujte kontaktní e-mail.');
  if(contact_phone&&!/^\+?[0-9 ()-]{9,25}$/.test(contact_phone))throw new FormError('Zkontrolujte telefonní číslo.');
