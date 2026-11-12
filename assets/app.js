@@ -1,6 +1,6 @@
 import {publicContent,applyContent,applySections} from './content-management.js?v=20261112-admin-1';
 import {eventTopics,matchesEventTopic} from './event-topics.js?v=20261111-vizmburk-1';
-import {startHeroTips} from './hero-tip.js?v=20261112-admin-1';
+import {startHeroTips} from './hero-tip.js?v=20261112-five-1';
 import {fetchPosterEvents,mergePosterEvents} from './poster-events.js?v=20261111-calendar-1';
 import {orderFeed,feedInfo} from './feed-order.js?v=20261111-calendar-1';
 import {renderRadio} from './radio.js?v=20261110-radio-1';
