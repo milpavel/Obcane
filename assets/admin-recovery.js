@@ -1,0 +1,15 @@
+// Passwords are handled exclusively by Supabase Auth in the user's browser.
+export function installRecovery(db,{refresh,message}){
+ const $=id=>document.getElementById(id);let recovering=new URLSearchParams(location.hash.slice(1)).get('type')==='recovery';
+ const panel=document.createElement('section');panel.className='panel hidden';panel.id='password-recovery';
+ panel.innerHTML='<h2>Nastavení nového hesla</h2><p>Heslo zadejte pouze zde. Nikomu ho neposílejte.</p><form id="new-password-form"><label for="new-password">Nové heslo (alespoň 12 znaků)</label><input id="new-password" type="password" autocomplete="new-password" minlength="12" required><label for="confirm-password">Zopakujte heslo</label><input id="confirm-password" type="password" autocomplete="new-password" minlength="12" required><button>Uložit nové heslo</button></form>';
+ $('login').before(panel);
+ const show=()=>{recovering=true;$('login').classList.add('hidden');$('editor').classList.add('hidden');panel.classList.remove('hidden');};
+ const forgot=document.createElement('button');forgot.type='button';forgot.className='secondary';forgot.textContent='Zapomenuté heslo / první přihlášení';$('login').append(forgot);
+ forgot.onclick=async()=>{const email=$('email');if(!email.checkValidity()||!email.value.trim()){email.reportValidity();return;}forgot.disabled=true;try{const {error}=await db.auth.resetPasswordForEmail(email.value.trim(),{redirectTo:'https://prortyni.cz/admin/'});message(error?'Obnovu se nepodařilo odeslat. Zkuste to prosím později.':'Pokud je e-mail vedený u účtu, přijde vám odkaz pro nastavení hesla. Zkontrolujte také spam.',!!error);}catch{message('Odeslání se nepodařilo. Zkuste to prosím později.',true);}finally{forgot.disabled=false;}};
+ db.auth.onAuthStateChange(event=>{if(event==='PASSWORD_RECOVERY')show();});
+ if(recovering){show();db.auth.getSession().then(({data:{session},error})=>{if(error||!session){recovering=false;panel.classList.add('hidden');$('login').classList.remove('hidden');message('Odkaz pro obnovu je neplatný nebo vypršel. Vyžádejte si nový odkaz.',true);}});}
+ const params=new URLSearchParams(location.hash.slice(1));if(params.has('error')){history.replaceState(null,'',location.pathname);message('Odkaz pro obnovu je neplatný nebo vypršel. Vyžádejte si nový odkaz.',true);}
+ $('new-password-form').onsubmit=async e=>{e.preventDefault();const a=$('new-password'),b=$('confirm-password'),button=e.currentTarget.querySelector('button');if(a.value.length<12||a.value!==b.value){message('Hesla se musí shodovat a mít alespoň 12 znaků.',true);return;}button.disabled=true;try{const {data:{session}}=await db.auth.getSession();if(!session)throw Error('expired');const {error}=await db.auth.updateUser({password:a.value});if(error)throw error;a.value='';b.value='';recovering=false;panel.classList.add('hidden');history.replaceState(null,'',location.pathname);message('Nové heslo bylo uloženo.');await refresh();}catch{message('Heslo se nepodařilo změnit. Ověřte platnost odkazu nebo si vyžádejte nový.',true);}finally{button.disabled=false;}};
+ return ()=>recovering;
+}

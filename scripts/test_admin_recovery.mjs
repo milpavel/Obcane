@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {parseHTML} from 'linkedom';
+import {installRecovery} from '../assets/admin-recovery.js';
+const {document}=parseHTML('<main><form id="login"><input id="email" type="email"></form><div id="editor"></div></main>');globalThis.document=document;globalThis.location={hash:'',pathname:'/admin/'};globalThis.history={replaceState(){}};
+let listener,updates=0,refreshes=0,message='',session=null;
+const db={auth:{onAuthStateChange(fn){listener=fn;},async getSession(){return {data:{session}};},async updateUser(){updates++;return {};}}};
+const active=installRecovery(db,{refresh:async()=>{refreshes++;},message:s=>message=s});assert.equal(active(),false);assert.ok(document.getElementById('password-recovery').classList.contains('hidden'));
+listener('PASSWORD_RECOVERY');assert.equal(active(),true);assert.ok(document.getElementById('editor').classList.contains('hidden'));
+const form=document.getElementById('new-password-form'),a=document.getElementById('new-password'),b=document.getElementById('confirm-password');
+a.value='test-password-123';b.value='different-password';await form.onsubmit({preventDefault(){},currentTarget:form});assert.equal(updates,0);assert.match(message,/shodovat/);
+b.value=a.value;await form.onsubmit({preventDefault(){},currentTarget:form});assert.equal(updates,0);assert.match(message,/nepodařilo/);
+session={user:{id:'test'}};await form.onsubmit({preventDefault(){},currentTarget:form});assert.equal(updates,1);assert.equal(refreshes,1);assert.equal(a.value,'');assert.equal(b.value,'');assert.equal(active(),false);
+console.log('PASS: recovery mode, hidden inbox, mismatched passwords, expired session and successful browser-side password update');
