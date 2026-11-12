@@ -15,6 +15,6 @@ function detail(){const slug=new URLSearchParams(location.search).get('clanek');
 if($('year'))$('year').textContent=new Date().getFullYear();document.querySelectorAll('[data-news-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.newsFilter;limit=9;document.querySelectorAll('[data-news-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));render()});if($('news-search'))$('news-search').oninput=()=>{limit=9;render()};if($('news-more'))$('news-more').onclick=()=>{limit+=9;render()};
 if(typeof document!=='undefined'){
  const stored=fetch('/data/editorial-news.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>d.articles||[]).catch(()=>[]);
- const live=fetch(REST,{headers:{apikey:KEY},cache:'no-store',signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error();return r.json()}).catch(()=>{if($('news-load-status'))$('news-load-status').textContent='Živá redakční data jsou dočasně nedostupná. Zobrazuje se uložený přehled.';return []});
- stored.then(rows=>{articles=rows;render();detail()});Promise.all([stored,live]).then(([a,b])=>{articles=mergeArticles(a,b);render();detail()});
+ const live=fetch(REST,{headers:{apikey:KEY},cache:'no-store',signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error();return r.json()}).catch(()=>{if($('news-load-status'))$('news-load-status').textContent='Živá redakční data jsou dočasně nedostupná. Zobrazuje se uložený přehled.';return null});
+ stored.then(rows=>{articles=rows;render();detail()});Promise.all([stored,live]).then(([a,b])=>{articles=b===null?a:b;render();detail()});
 }

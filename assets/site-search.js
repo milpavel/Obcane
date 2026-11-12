@@ -1,3 +1,4 @@
+import {publicContent,applyContent} from './content-management.js?v=20261112-admin-1';
 import {fetchPosterEvents,mergePosterEvents} from './poster-events.js?v=20261111-calendar-1';
 import {fetchPracticalInfo,mergePracticalInfo} from './practical-info.js?v=20261110-local-services-1';
 import {fetchDoctorAnnouncements} from './doctor-data.js?v=20261109-1';
@@ -39,9 +40,10 @@ async function load(){
    fetchDoctorAnnouncements().then(d=>d.doctors||[]),
    fetch('/',{cache:'no-store',signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error();return r.text();}).then(html=>{const doc=new DOMParser().parseFromString(html,'text/html');return Object.fromEntries(sections.map(([id])=>[id,(id==='obsah'?doc.querySelector('.intro-banner'):doc.getElementById(id))?.textContent||'']));})
   ]);
-  for(let i=0;i<results.length;i++){const r=results[i];if(r.status!=='fulfilled'){partial=true;continue;}if(i===0)feed=r.value;else if(i===1)continue;else if(i===2)articles=[...r.value,...articles];else if(i===3)articles=[...articles,...r.value];else if(i===4)doctorRows=r.value;else pageText=r.value;}
+  for(let i=0;i<results.length;i++){const r=results[i];if(r.status!=='fulfilled'){partial=true;continue;}if(i===0)feed=r.value;else if(i===1)continue;else if(i===2)articles=[...r.value,...articles];else if(i===3)articles=r.value;else if(i===4)doctorRows=r.value;else pageText=r.value;}
   try{feed=mergePracticalInfo(feed||{},await fetchPracticalInfo());}catch{partial=true;}
   try{feed=mergePosterEvents(feed||{items:[]},await fetchPosterEvents());}catch{}
+  feed=applyContent(feed||{},await publicContent());
   reindex();
  })();return loading;
 }

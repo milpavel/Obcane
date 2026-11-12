@@ -1,3 +1,4 @@
+import {publicContent,applyContent} from './content-management.js?v=20261112-admin-1';
 import {uniqueEvents} from './events.js?v=20261111-calendar-1';
 import {feedInfo} from './feed-order.js?v=20261111-calendar-1';
 import {upcomingRestrictions,restrictionLabel} from './notices.js?v=20261111-office-1';
@@ -95,8 +96,10 @@ export function createHeroSlider(root,{reducedMotion=false}={}){
  },getState(){return {active,count:slides.length,paused};}};
 }
 export function startHeroTips(feed){const root=document.getElementById('hero-tip');if(!root)return;let articles=[],currentFeed=feed;const slider=createHeroSlider(root,{reducedMotion:window.matchMedia('(prefers-reduced-motion: reduce)').matches});const update=()=>{if(!document.hidden)slider.setTips(selectHeroSlides(currentFeed,articles));};update();
- fetch('/data/editorial-news.json',{cache:'no-store',signal:AbortSignal.timeout(6000)}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{articles=d.articles||[];update();}).catch(()=>{});
+ loadMainArticles().then(rows=>{articles=rows;update();}).catch(()=>{});
  setInterval(update,60000);document.addEventListener('visibilitychange',update);
- const refresh=async()=>{if(document.hidden)return;try{const r=await fetch('https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api',{cache:'no-store',signal:AbortSignal.timeout(12000)});if(r.ok){const next=await r.json();if(Array.isArray(next.items))currentFeed=next;}}catch{}try{const r=await fetch('/data/editorial-news.json',{cache:'no-store',signal:AbortSignal.timeout(6000)});if(r.ok){const next=await r.json();if(Array.isArray(next.articles))articles=next.articles;}}catch{}update();};
+ const refresh=async()=>{if(document.hidden)return;try{const r=await fetch('https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api',{cache:'no-store',signal:AbortSignal.timeout(12000)});if(r.ok){const next=await r.json();if(Array.isArray(next.items))currentFeed=applyContent(next,await publicContent());}}catch{}try{articles=await loadMainArticles();}catch{}update();};
  setInterval(refresh,15*60000);
 }
+
+async function loadMainArticles(){try{const r=await fetch('https://dvbaihwplzwljxrtkymi.supabase.co/rest/v1/obcane_posts?select=id,title,slug,excerpt,body,category,author,source_name,source_date,published_at&status=eq.published&order=published_at.desc&limit=100',{headers:{apikey:'sb_publishable_8Lr9Tnh1CnrB_ra6VCYrZQ_C4WDZ4l3'},cache:'no-store',signal:AbortSignal.timeout(7000)});if(!r.ok)throw Error();return await r.json();}catch{const r=await fetch('/data/editorial-news.json',{cache:'no-store',signal:AbortSignal.timeout(6000)});if(!r.ok)throw Error();return (await r.json()).articles||[];}}
