@@ -29,7 +29,7 @@ assert.ok(offline.boards.every(x=>x.status==='unavailable'&&x.departures.length=
 globalThis.fetch=originalFetch;
 const html=await readFile(new URL('../index.html',import.meta.url),'utf8'),{document}=parseHTML(html);
 for(const kind of ['train','bus'])assert.ok(document.getElementById('next-'+kind));
-for(const s of STOPS)assert.ok(document.querySelector(`option[value="${s.id}"]`));
+const {document:boardDocument}=parseHTML(await readFile(new URL('../odjezdy/index.html',import.meta.url),'utf8'));for(const s of STOPS)assert.ok(boardDocument.querySelector(`option[value="${s.id}"]`));
 assert.ok(document.querySelector('#doprava'));
 console.log('PASS: Prague timezone and DST, terminal arrivals, delayed/past departures, missing delay, deduplication, source errors, whitelist, caching, offline fallback, stop selectors');
 const priorDocument=globalThis.document;globalThis.document=parseHTML('<html><body></body></html>').document;

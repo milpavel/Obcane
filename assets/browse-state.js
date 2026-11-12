@@ -1,0 +1,9 @@
+import {runSection} from './progressive.js?v=20261112-progressive-1';
+const key='rtyne-browse-v1';
+export function restoreBrowse(){try{const value=JSON.parse(sessionStorage.getItem(key)||'null');return value&&value.path===location.pathname&&Date.now()-value.at<1800000&&!location.search?value:null;}catch{return null;}}
+export function saveBrowse(state){try{sessionStorage.setItem(key,JSON.stringify({...state,path:location.pathname,at:Date.now(),y:window.scrollY,hash:location.hash}));}catch{}}
+export function rememberListing(state){if(location.search)return;document.addEventListener('click',e=>{const a=e.target.closest?.('a[href]');if(!a)return;const u=new URL(a.href,location.href);if(u.origin===location.origin&&u.search)saveBrowse({...state(),returning:true,section:a.closest('section[id]')?.id,itemHref:a.getAttribute('href'),itemTop:a.getBoundingClientRect().top});});}
+export async function restoreListing(){const saved=restoreBrowse();if(!saved?.returning||saved.hash!==location.hash)return;const cancel=()=>{cancelled=true;};let cancelled=false;for(const type of ['wheel','touchstart','keydown'])window.addEventListener(type,cancel,{once:true,passive:true});
+ const sections=[...document.querySelectorAll('#home>section[id]')],target=sections.findIndex(x=>x.id===saved.section);
+ await Promise.all(sections.slice(0,target+1).map(x=>runSection(x.id)));
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!cancelled){const item=[...document.querySelectorAll('a[href]')].find(a=>a.getAttribute('href')===saved.itemHref&&a.closest('section[id]')?.id===saved.section);window.scrollTo({top:item?window.scrollY+item.getBoundingClientRect().top-(saved.itemTop||0):saved.y,behavior:'instant'});}for(const type of ['wheel','touchstart','keydown'])window.removeEventListener(type,cancel);}));saveBrowse({...saved,returning:false});}

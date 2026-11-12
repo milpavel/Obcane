@@ -17,13 +17,15 @@ export function delayExplanation(kind,minutes){
 export function delayBadge(minutes){if(!Number.isFinite(minutes)||minutes<=0)return null;const badge=node('span','+'+minutes+' min','departure-delay');badge.setAttribute('aria-label',delayExplanation('train',minutes).replace('Zpoždění vlaku','Hlášené zpoždění'));return badge;}
 function fresh(board){return board?.status==='ok'&&Date.parse(board.expires_at)>now();}
 function departures(board){return (board?.departures||[]).filter(d=>Date.parse(d.expected_at)>=now());}
+const stops={"train": [["K-5457440", "Rtyně v Podkrkonoší"], ["K-5457460", "Rtyně v Podkrkonoší zastávka"]], "bus": [["S-30377", "Rtyně v Podkr., aut. st."], ["S-30382", "Rtyně v Podkr., Kampelička"], ["S-30381", "Rtyně v Podkr., Kostelecká"], ["S-30380", "Rtyně v Podkr., Pančák"], ["S-20189", "Rtyně v Podkr., Tmavý Důl"], ["S-30378", "Rtyně v Podkr., u kříže"], ["S-30379", "Rtyně v Podkr., u mlýna"]]};
+function getStop(kind){const select=$('transport-stop-'+kind);if(select)return select;let saved;try{saved=localStorage.getItem('rtyne-transport-'+kind);}catch{}const [value,name]=stops[kind].find(x=>x[0]===saved)||stops[kind][0];return {value,selectedOptions:[{textContent:name}]};}
 function render(){
  for(const kind of ['train','bus']){
-  const board=data?.boards.find(b=>b.kind===kind),summary=$('next-'+kind),list=$('departures-'+kind),meta=$('transport-meta-'+kind),source=$('transport-source-'+kind);
+  const board=data?.boards.find(b=>b.kind===kind),summary=$('next-'+kind)||document.createElement('div'),list=$('departures-'+kind)||document.createElement('ul'),meta=$('transport-meta-'+kind)||document.createElement('p'),source=$('transport-source-'+kind)||document.createElement('a');
   summary.replaceChildren();list.replaceChildren();meta.replaceChildren();
   const updated=summary.closest('.departure-summary')?.querySelector('.departure-updated');
   if(updated)updated.textContent=fresh(board)?'Aktualizováno '+time.format(Date.parse(board.fetched_at))+' · IREDO':'';
-  const selected=$('transport-stop-'+kind),stopName=selected.selectedOptions[0]?.textContent||'';
+  const selected=getStop(kind),stopName=selected.selectedOptions[0]?.textContent||'';
   source.href=board?.source_url||'https://iredo.online/departures/'+selected.value;
   summary.append(node('small',stopName,'departure-stop'));
   if(!fresh(board)){
@@ -53,31 +55,31 @@ function render(){
   }
  }
  const status=$('transport-status');
- status.textContent=loading?'Ověřujeme aktuální odjezdy…':data?.boards.every(fresh)?'Automatická aktualizace každou minutu.':'Část odjezdů se nyní nepodařilo ověřit.';
+ if(status)status.textContent=loading?'Ověřujeme aktuální odjezdy…':data?.boards.every(fresh)?'Automatická aktualizace každou minutu.':'Část odjezdů se nyní nepodařilo ověřit.';
 }
 async function refresh(){
- const ticket=++sequence;loading=true;$('transport-refresh').disabled=true;
+ const ticket=++sequence;loading=true;if($('transport-refresh'))$('transport-refresh').disabled=true;
  // Old boards must not appear under a newly selected stop.
- if(data?.boards.some(b=>b.id!==$('transport-stop-'+b.kind).value))data=null;
+ if(data?.boards.some(b=>b.id!==getStop(b.kind).value))data=null;
  render();
  try{
-  const query=new URLSearchParams({train:$('transport-stop-train').value,bus:$('transport-stop-bus').value});
+  const query=new URLSearchParams({train:getStop('train').value,bus:getStop('bus').value});
   const r=await fetch(API+'&'+query,{cache:'no-store',signal:AbortSignal.timeout(12000)});
   if(!r.ok)throw Error('Transport unavailable');const result=await r.json();
   if(!Array.isArray(result.boards)||result.boards.length!==2||!Number.isFinite(Date.parse(result.generated_at)))throw Error('Invalid transport response');
-  for(const kind of ['train','bus']){const b=result.boards.find(x=>x.kind===kind);if(!b||b.id!==$('transport-stop-'+kind).value||!Array.isArray(b.departures))throw Error('Wrong departure stop');}
+  for(const kind of ['train','bus']){const b=result.boards.find(x=>x.kind===kind);if(!b||b.id!==getStop(kind).value||!Array.isArray(b.departures))throw Error('Wrong departure stop');}
   if(ticket!==sequence)return;
   data=result;received=performance.now();serverTime=Date.parse(result.generated_at);
  }catch{if(ticket===sequence)data=null;}
- finally{if(ticket===sequence){loading=false;$('transport-refresh').disabled=false;render();}}
+ finally{if(ticket===sequence){loading=false;if($('transport-refresh'))$('transport-refresh').disabled=false;render();}}
 }
-if(typeof document!=='undefined'&&$('doprava')){
+if(typeof document!=='undefined'&&($('doprava')||$('next-train'))&&!new URLSearchParams(location.search).has('zprava')&&!new URLSearchParams(location.search).has('prispevek')){
  for(const kind of ['train','bus']){
-  const select=$('transport-stop-'+kind);
+  const select=$('transport-stop-'+kind);if(!select)continue;
   try{const saved=localStorage.getItem('rtyne-transport-'+kind);if([...select.options].some(o=>o.value===saved))select.value=saved;}catch{}
   select.addEventListener('change',()=>{try{localStorage.setItem('rtyne-transport-'+kind,select.value);}catch{}refresh();});
  }
- $('transport-refresh').addEventListener('click',refresh);
+ $('transport-refresh')?.addEventListener('click',refresh);
  refresh();setInterval(()=>{if(!document.hidden&&!loading)refresh();},60000);
  setInterval(()=>{if(!document.hidden)render();},15000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden){render();refresh();}});

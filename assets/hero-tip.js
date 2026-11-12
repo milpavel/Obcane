@@ -1,4 +1,4 @@
-import {publicContent,applyContent} from './content-management.js?v=20261112-admin-1';
+import {publicContent,applyContent} from './content-management.js?v=20261112-progressive-1';
 import {uniqueEvents} from './events.js?v=20261111-calendar-1';
 import {feedInfo} from './feed-order.js?v=20261111-calendar-1';
 import {upcomingRestrictions,restrictionLabel} from './notices.js?v=20261111-office-1';
@@ -97,7 +97,7 @@ export function createHeroSlider(root,{reducedMotion=false}={}){
   controls.hidden=slides.length<2;show(active);
  },getState(){return {active,count:slides.length,paused};}};return api;
 }
-export function startHeroTips(feed){const root=document.getElementById('hero-tip');if(!root)return;let articles=null,currentFeed=feed;const slider=createHeroSlider(root,{reducedMotion:window.matchMedia('(prefers-reduced-motion: reduce)').matches});const update=()=>{if(!document.hidden)slider.setTips(selectHeroSlides(articles===null?currentFeed:{...currentFeed,posts:[]},articles||[]));};update();
+export function startHeroTips(feed){const root=document.getElementById('hero-tip');if(!root)return;if(root._heroUpdate){root._heroUpdate(feed);return;}let articles=null,currentFeed=feed;const slider=createHeroSlider(root,{reducedMotion:window.matchMedia('(prefers-reduced-motion: reduce)').matches});const update=()=>{if(!document.hidden)slider.setTips(selectHeroSlides(articles===null?currentFeed:{...currentFeed,posts:[]},articles||[]));};root._heroUpdate=next=>{currentFeed=next;update();};document.addEventListener('rtyne:feed-ready',e=>root._heroUpdate(e.detail));update();
  loadMainArticles().then(rows=>{articles=rows;update();}).catch(()=>{});
  setInterval(update,60000);document.addEventListener('visibilitychange',update);
  const refresh=async()=>{if(document.hidden)return;try{const r=await fetch('https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api',{cache:'no-store',signal:AbortSignal.timeout(12000)});if(r.ok){const next=await r.json();if(Array.isArray(next.items))currentFeed=applyContent(next,await publicContent());}}catch{}try{articles=await loadMainArticles();}catch{}update();};

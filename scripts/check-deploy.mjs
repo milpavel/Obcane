@@ -7,3 +7,5 @@ if(branch==='main'){
  if(!/^[a-f0-9]{40}$/.test(head)||sha!==head)throw Error('Outdated deployment stopped: this commit is no longer main HEAD.');
 }
 console.log('Deployment commit verified: '+sha);
+
+await import('./build-home-feed.mjs');

@@ -1,4 +1,4 @@
-import {publicContent,applyContent} from './content-management.js?v=20261112-admin-1';
+import {publicContent,applyContent} from './content-management.js?v=20261112-progressive-1';
 import {fetchPosterEvents,mergePosterEvents} from './poster-events.js?v=20261111-calendar-1';
 import {fetchPracticalInfo,mergePracticalInfo} from './practical-info.js?v=20261110-local-services-1';
 import {fetchDoctorAnnouncements} from './doctor-data.js?v=20261109-1';

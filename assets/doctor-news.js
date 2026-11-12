@@ -1,3 +1,4 @@
+import {watchSection} from './progressive.js?v=20261112-progressive-1';
 import {fetchDoctorAnnouncements} from './doctor-data.js?v=20261109-1';
 const labels={provoz:'Provoz ordinace',ockovani:'Očkování',informace:'Sdělení ordinace'};
 const make=(tag,value,cls)=>{const n=document.createElement(tag);if(value!==undefined)n.textContent=value;if(cls)n.className=cls;return n;};
@@ -21,4 +22,10 @@ function render(){
 
 }
 async function load(){if(pending)return pending;pending=(async()=>{try{const d=await fetchDoctorAnnouncements();if(!Array.isArray(d.doctors))throw Error();data=d;document.dispatchEvent(new CustomEvent('rtyne:doctor-news-ready',{detail:d.doctors}));}catch{data={doctors:[{id:'hartman',name:'MUDr. Jan Hartman',source_url:'https://www.doktor-rtyne.cz/jan-hartman',status:'unavailable',notices:[]},{id:'hartmanova',name:'MUDr. Naděžda Hartmanová',source_url:'https://www.doktor-rtyne.cz/nadezda-hartmanova',status:'unavailable',notices:[]}]};document.dispatchEvent(new CustomEvent('rtyne:doctor-news-ready',{detail:data.doctors}));}render();})().finally(()=>{pending=null;});return pending;}
-if(typeof document!=='undefined'&&document.getElementById('home')){document.addEventListener('rtyne:content-ready',()=>{render();load();});if(document.getElementById('doctor-news-grid'))load();setInterval(()=>{if(!document.hidden)load();},600000);}
+if(typeof document!=='undefined'&&document.getElementById('home')){
+ let started=false;const start=()=>{started=true;return load();};
+ document.addEventListener('rtyne:content-ready',()=>{render();if(new URLSearchParams(location.search).get('zprava')==='280')start();});
+ if(document.getElementById('restrictions'))watchSection('omezeni',start);
+ if(document.getElementById('doctor-news-grid'))watchSection('aktuality-lekaru',start);
+ setInterval(()=>{if(started&&!document.hidden)load();},600000);
+}

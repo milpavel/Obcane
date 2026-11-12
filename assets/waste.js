@@ -19,4 +19,4 @@ export function renderCollections(data,today=isoNow()){
  for(const [id,date] of [['waste-bio-day',next.bio],['waste-communal-day',next.communal?.start]]){const label=document.getElementById(id);if(label)label.textContent=date?new Date(date+'T12:00:00Z').toLocaleDateString('cs-CZ',{weekday:'long'})+(id==='waste-communal-day'?' od 7:00':''):'';}
 }
 export async function loadCollections(){try{const r=await fetch('/data/waste-calendar.json',{cache:'no-store'});if(!r.ok)throw Error('Calendar');renderCollections(await r.json());}catch{for(const id of ['waste-bio','waste-communal']){const n=document.getElementById(id);if(n)n.textContent='Termín se nepodařilo načíst';}}}
-if(typeof document!=='undefined'&&document.getElementById('waste-bio')){loadCollections();setInterval(loadCollections,15*60*1000);}
+if(typeof document!=='undefined'&&document.getElementById('waste-bio')&&!new URLSearchParams(location.search).has('zprava')&&!new URLSearchParams(location.search).has('prispevek')){loadCollections();setInterval(loadCollections,15*60*1000);}

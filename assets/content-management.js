@@ -1,6 +1,16 @@
 export const CONTENT_API='https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-admin';
 let pending;
-export function publicContent(){return pending??=(fetch(CONTENT_API+'?action=public',{cache:'no-store',signal:AbortSignal.timeout(7000)}).then(r=>{if(!r.ok)throw Error();return r.json();}).catch(()=>({overrides:[],sections:[]})));}
+export function publicContent(){
+ if(pending)return pending;
+ pending=(async()=>{
+  const stored=fetch('/data/public-content.json',{cache:'no-cache',signal:AbortSignal.timeout(3000)}).then(r=>{if(!r.ok)throw Error();return r.json();}).catch(()=>null);
+  const live=fetch(CONTENT_API+'?action=public',{cache:'no-store',signal:AbortSignal.timeout(7000)}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{document.dispatchEvent(new CustomEvent('rtyne:config-ready',{detail:d}));return d;}).catch(()=>null);
+  // A successful current response wins, otherwise use the deployed public settings.
+  const first=await Promise.race([stored,live]);
+  if(first)return first;
+  return (await stored)||(await live)||{overrides:[],sections:[]};
+ })();return pending;
+}
 export function applyContent(feed,config){const overrides=new Map((config.overrides||[]).map(x=>[String(x.target),x.data])),base=[...(feed.items||[])],ids=new Set(base.map(x=>String(x.id)));
  for(const x of feed.events||[]){const d=new Date(x.starts_at),id='manual-event-'+x.id;if(!Number.isFinite(+d)||ids.has(id))continue;ids.add(id);base.push({id,source_key:'editorial',title:x.title,summary:x.description,category:'Akce',external_url:x.source_url||null,event_date:d.toLocaleDateString('sv-SE',{timeZone:'Europe/Prague'}),published_at:x.starts_at,payload:{kind:'event',time:d.toLocaleTimeString('cs-CZ',{timeZone:'Europe/Prague',hour:'2-digit',minute:'2-digit'}),location:x.location||'',body:(x.description||'').split(/\n\s*\n/),in_latest:true}});}
  const items=base.map(x=>{const o=overrides.get(String(x.id));if(!o)return x;if(o.hidden)return null;const p={...x.payload,redaction_override:true};if(o.body!==undefined){p.body=o.body.split(/\n\s*\n/).filter(Boolean);p.blocks=p.body.map(text=>({type:'paragraph',text}));p.attachments=[...(p.attachments||[]),...(p.sections||[]).flatMap(s=>s.attachments||[])];p.sections=[];}if(o.kind&&o.kind!=='news')p.kind=o.kind;else if(o.kind==='news')delete p.kind;if(o.time)p.time=o.time;if(o.location)p.location=o.location;return {...x,title:o.title,summary:o.summary,category:o.category||x.category,event_date:o.kind==='news'?null:(o.event_date||x.event_date),payload:p};}).filter(Boolean);

@@ -7,3 +7,10 @@ node_modules/
 .env.*
 
 .details-test-*/
+
+# Local portal QA
+node_modules
+preview-dist/
+.openai/
+data/home-feed.json
+sitemap.xml
