@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {stripTypeScriptTypes} from 'node:module';
 import {validateAd,decodePhotos,hash,sign,issueToken,verifyToken,publicAd} from '../supabase/functions/obcane-market/rules.mjs';
-import {isHousingNotice,deadlineFromText,collectMunicipal} from '../supabase/functions/obcane-market/municipal.mjs';
+import {isHousingNotice,deadlineFromText,deadlineAtFromText,collectMunicipal} from '../supabase/functions/obcane-market/municipal.mjs';
 import {parseHTML} from 'linkedom';
 const ad={category:'bydleni',kind:'nabizim',title:'Pronájem bytu 2+1',description:'Byt ve Rtyni k dlouhodobému pronájmu, více po domluvě.',location:'Rtyně v Podkrkonoší',contact_name:'Test',contact_email:'test@example.com',price_mode:'castka',price:'10000',price_note:'+ služby',housing_type:'pronajem',consent:true};
 assert.equal(validateAd(ad).price,10000);
@@ -22,6 +22,8 @@ assert.ok(!isHousingNotice('Pronájem nebytových prostor'));
 assert.ok(!isHousingNotice('Pronájem garáže'));
 assert.equal(deadlineFromText('Uzávěrka žádostí – 12.05.2025 v 17:00 hod.'),'2025-05-12');
 assert.equal(deadlineFromText('Nastěhování 1. 6. 2027'),null);
+assert.equal(deadlineAtFromText('Uzávěrka žádostí – 12.05.2027 v 17:00 hod.'),'2027-05-12T15:00:00.000Z');
+assert.equal(deadlineAtFromText('Uzávěrka žádostí – 12.11.2026 v 17:00 hod.'),'2026-11-12T16:00:00.000Z');
 const pages={
  'https://www.rtyne.cz/':'<a href="/stary-byt">Pronájem bytu</a><a href="/novy-byt">Město pronajme byt</a><a href="/nejasny-byt">Volný byt k pronájmu</a><a href="/garaz">Pronájem garáže</a><a href="https://evil.example/byt">Pronájem bytu</a>',
  'https://www.rtyne.cz/uredni-deska':'',

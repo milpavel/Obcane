@@ -19,3 +19,5 @@ try{
 }finally{await rm(tmp,{recursive:true,force:true});}
 const home=await readFile(new URL('../index.html',import.meta.url),'utf8'),news=await readFile(new URL('../zpravy/index.html',import.meta.url),'utf8');for(const html of [home,news]){const {document}=parseHTML(html);assert.equal(document.querySelectorAll('#site-search-form').length,1);assert.ok(document.querySelector('#site-search-input'));assert.ok(document.querySelector('#site-search-results[hidden]'));}assert.ok(home.includes('doctor-news-grid'));
 console.log('PASS: full-text search across sections, nested services, events, articles, finances and doctors; Czech accents; doctor sections, dated restrictions, vaccination context, offline failures and search headers');
+
+const ads=buildSearchIndex({classifieds:[{id:'test-ad',title:'Daruji kočárek',description:'Dětský kočárek ve Rtyni.',category:'deti',kind:'daruji',location:'Rtyně'}]});assert.ok(searchIndex(ads,'kocarek').some(r=>r.href==='/inzerce/?inzerat=test-ad'));assert.ok(searchIndex(ads,'městské byty').some(r=>r.href==='/bydleni/'));
