@@ -232,27 +232,28 @@
       "category": "Spolky",
       "event_date": null,
       "published_at": null,
-      "summary": "Pobočka tanečního studia Contemporary ve Rtyni. Současný a pouliční tanec i další pohybové kurzy.",
+      "summary": "Contemporary Region je rtyňský spolek pořádající kulturní akce pro rodiny s dětmi. Věnuje se také tanečnímu vzdělávání a výuce angličtiny dětí a dospělých.",
       "payload": {
         "body": [],
         "days": [],
-        "fees": "Ceník pro pobočku Rtyně uvádí 2 390 Kč při jedné lekci týdně a 3 590 Kč při dvou lekcích týdně. U těchto řádků není výslovně uvedeno účtované období; před platbou si potvrďte období i konečnou cenu konkrétního kurzu.",
+        "fees": "Ceník pro pobočku Rtyně je od 2 090 Kč na pololetí dle typu a počtu kurzů.",
         "kind": "club",
         "website": "https://contemporary.cz/",
         "contacts": [
           "Regionální kurzy: Petra Dědková · peta@contemporary.cz",
-          "Informace: info@contemporary.cz · +420 773 751 545"
+          "Informace: peta@contemporary.cz · +420 777 699 664"
         ],
         "detail_ok": true,
         "in_latest": true,
         "activities": [
-          "Rtyňské kurzy zprostředkovává také Bonifác. Jeho nabídka 2026/2027 uvádí contemporary, street dance, latino a kurzy pro děti od 7 let i dospělé.",
-          "Konkrétní otevřené skupiny, věk účastníků a rozvrh ve Rtyni potvrďte s manažerkou regionů. Nabídka hlavního studia zahrnuje také pražské kurzy, které nejsou automaticky dostupné ve Rtyni."
+          "PROSTOR PRO TANEC: Východočeská pobočka renomovaného pražského tanečního studia Contemporary – prostor pro tanec ve Rtyni. Současný tanec (contemporary dance), street dance a latino pro děti i dospělé.",
+          "PRO ART – tematické Artování: Speciální tematické kreativní dílny pro všechny generace.",
+          "PRO EDU – výuka angličtiny: Výuka angličtiny metodou WOW! pro děti a individuální lekce pro dospělé."
         ],
         "source_name": "Spolky a sportovní oddíly",
         "detail_error": null,
         "news_source_key": "contemporary",
-        "profile_checked": "2026-11-09",
+        "profile_checked": "2026-11-12",
         "profile_sources": [
           {
             "url": "https://contemporary.cz/cs/",
@@ -261,10 +262,6 @@
           {
             "url": "https://contemporary.cz/cs/cenik/",
             "title": "Pobočka Rtyně – ceník"
-          },
-          {
-            "url": "https://www.bonifac.eu/aktivity/krouzky/",
-            "title": "Rtyňská nabídka 2026/2027"
           }
         ],
         "directory_source": "https://www.rtyne.cz/spolky-a-sdruzeni",
@@ -16359,5 +16356,5 @@
       "news_note": null
     }
   ],
-  "generated_at": "2026-11-12T11:38:18.605Z"
+  "generated_at": "2026-11-12T11:50:11.318Z"
 }
