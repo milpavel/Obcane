@@ -356,3 +356,9 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 /* Full-width divider between the portal introduction and footer. */
 .portal-footer-divider{border-top:0}
 .portal-footer-divider::before{content:"";display:block;width:100%;height:6px;background:linear-gradient(110deg,#098c9c 0%,#39118b 54%,#ec1763 100%)}
+
+/* About principles use the three portal accent colours. */
+.about-principles article:nth-child(2){border-top-color:var(--purple)}
+.about-principles article:nth-child(2)>.eyebrow{color:var(--purple)}
+.about-principles article:nth-child(3){border-top-color:var(--pink)}
+.about-principles article:nth-child(3)>.eyebrow{color:var(--pink)}
