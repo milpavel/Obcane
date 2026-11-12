@@ -157,34 +157,31 @@ const profiles:Record<string,any>={
   }
  },
  "Contemporary Region": {
-  "summary": "Pobočka tanečního studia Contemporary ve Rtyni. Současný a pouliční tanec i další pohybové kurzy.",
-  "body": [],
-  "extra": {
-   "activities": [
-    "Rtyňské kurzy zprostředkovává také Bonifác. Jeho nabídka 2026/2027 uvádí contemporary, street dance, latino a kurzy pro děti od 7 let i dospělé.",
-    "Konkrétní otevřené skupiny, věk účastníků a rozvrh ve Rtyni potvrďte s manažerkou regionů. Nabídka hlavního studia zahrnuje také pražské kurzy, které nejsou automaticky dostupné ve Rtyni."
-   ],
-   "contacts": [
-    "Regionální kurzy: Petra Dědková · peta@contemporary.cz",
-    "Informace: info@contemporary.cz · +420 773 751 545"
-   ],
-   "fees": "Ceník pro pobočku Rtyně uvádí 2 390 Kč při jedné lekci týdně a 3 590 Kč při dvou lekcích týdně. U těchto řádků není výslovně uvedeno účtované období; před platbou si potvrďte období i konečnou cenu konkrétního kurzu.",
-   "profile_sources": [
-    {
-     "title": "Studio a regionální kontakty",
-     "url": "https://contemporary.cz/cs/"
-    },
-    {
-     "title": "Pobočka Rtyně – ceník",
-     "url": "https://contemporary.cz/cs/cenik/"
-    },
-    {
-     "title": "Rtyňská nabídka 2026/2027",
-     "url": "https://www.bonifac.eu/aktivity/krouzky/"
-    }
-   ],
-   "profile_checked": "2026-11-09"
-  }
+   "summary": "Contemporary Region je rtyňský spolek pořádající kulturní akce pro rodiny s dětmi. Věnuje se také tanečnímu vzdělávání a výuce angličtiny dětí a dospělých.",
+   "body": [],
+   "extra": {
+     "activities": [
+       "PROSTOR PRO TANEC: Východočeská pobočka renomovaného pražského tanečního studia Contemporary – prostor pro tanec ve Rtyni. Současný tanec (contemporary dance), street dance a latino pro děti i dospělé.",
+       "PRO ART – tematické Artování: Speciální tematické kreativní dílny pro všechny generace.",
+       "PRO EDU – výuka angličtiny: Výuka angličtiny metodou WOW! pro děti a individuální lekce pro dospělé."
+     ],
+     "contacts": [
+       "Regionální kurzy: Petra Dědková · peta@contemporary.cz",
+       "Informace: peta@contemporary.cz · +420 777 699 664"
+     ],
+     "fees": "Ceník pro pobočku Rtyně je od 2 090 Kč na pololetí dle typu a počtu kurzů.",
+     "profile_sources": [
+       {
+         "title": "Studio a regionální kontakty",
+         "url": "https://contemporary.cz/cs/"
+       },
+       {
+         "title": "Pobočka Rtyně – ceník",
+         "url": "https://contemporary.cz/cs/cenik/"
+       }
+     ],
+     "profile_checked": "2026-11-12"
+   }
  },
  "TJ Baník Rtyně": {
   "summary": "Fotbalový oddíl TJ Baník Rtyně: tým mužů, mládež, zápasy, halové turnaje a fotografie. Volejbal má samostatný profil.",
