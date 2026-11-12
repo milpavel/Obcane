@@ -9,6 +9,6 @@ assert.equal(radioItems(items).length,14);assert.equal(radioItems(items)[0].id,1
 renderRadio(feed,6,document);assert.equal(document.querySelectorAll('article').length,6);assert.equal(document.getElementById('radio-more').hidden,false);assert.equal(document.querySelector('h3 a').getAttribute('href'),'/?zprava=14');assert.equal(document.querySelector('time').dateTime,'2026-10-14');
 renderRadio(feed,12,document);assert.equal(document.querySelectorAll('article').length,12);assert.equal(document.getElementById('radio-more').hidden,false);
 renderRadio(feed,18,document);assert.equal(document.querySelectorAll('article').length,14);assert.equal(document.getElementById('radio-more').hidden,true);
-renderRadio({...feed,sources:[{source_key:'radio',status:'error'}]},6,document);assert.ok(document.getElementById('radio-status').textContent.includes('dříve načtená'));
+renderRadio({...feed,sources:[{source_key:'radio',status:'error'}]},6,document);assert.equal(document.getElementById('radio-status').textContent,'','Source diagnostics belong only in administration');
 renderRadio({items:[]},6,document);assert.equal(document.querySelectorAll('article').length,0);assert.ok(document.getElementById('radio-grid').textContent.includes('archiv města'));assert.equal(document.getElementById('radio-more').hidden,true);
 console.log('PASS: one broadcast per card, dates, newest first, six-card batches, complete detail links and source failure fallback');
