@@ -362,3 +362,7 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 .about-principles article:nth-child(2)>.eyebrow{color:var(--purple)}
 .about-principles article:nth-child(3){border-top-color:var(--pink)}
 .about-principles article:nth-child(3)>.eyebrow{color:var(--pink)}
+
+/* City news cards stay in place while browsing. */
+#prehled .news-card{transition:box-shadow .22s ease,border-color .22s ease,background-color .22s ease}
+#prehled .news-card:hover{transform:none}
