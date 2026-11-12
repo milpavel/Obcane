@@ -266,7 +266,7 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 :is(#prehled,#akce) .news-filter-menu{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 :is(#prehled,#akce) .news-filter-menu::before{content:'Vyberte kategorii zpráv';flex-basis:100%;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:2px}
 :is(#prehled,#akce) .news-filter-menu button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:8px 11px;border:1px solid transparent;border-radius:6px;background:transparent;color:#686173;font-size:12px;font-weight:550;line-height:1.4;cursor:pointer;transition:background-color .15s,border-color .15s;color-scheme:light}
-:is(#prehled,#akce) .news-filter-menu button:hover{border-color:#e4dfeb;background:#f7f5fa;box-shadow:none}
+:is(#prehled,#akce) .news-filter-menu button:hover{border-color:#efc9d9;background:#fce7ef;box-shadow:none}
 :is(#prehled,#akce) .news-filter-menu button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
 :is(#prehled,#akce) .news-filter-menu button[aria-pressed=true]{background:#edf7f7;border-color:#b8d9dc;color:#006f7b;box-shadow:none;font-weight:700}
 :is(#prehled,#akce) .filter-count{display:inline-flex;align-items:center;justify-content:center;min-width:18px;padding:1px 3px;border-radius:3px;background:#f0edf4;color:#746b80;font-size:10px;font-variant-numeric:tabular-nums}
