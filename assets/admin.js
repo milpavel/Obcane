@@ -1,4 +1,4 @@
-import {mountReplies} from './admin-replies.js?v=20261112-replies-1';
+import {mountReplies} from './admin-replies.js?v=20261112-replies-2';
 import {installMailAdmin} from './admin-mail.js?v=20261112-replies-1';
 import{createClient}from'https://esm.sh/@supabase/supabase-js@2.99.1';
 import{installRecovery}from'./admin-recovery.js?v=20261112-admin-2';

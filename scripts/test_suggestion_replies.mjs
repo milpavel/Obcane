@@ -30,3 +30,14 @@ current=s;assert.deepEqual(await dispatchReplies(deliverySql,'test-password',asy
 current={...s,contact_email:'changed@example.com'};await dispatchReplies(deliverySql,'test-password',async()=>{throw Error('must not send');});assert.equal(finalState,'superseded');
 current=s;deliveryRow.attempts=5;await dispatchReplies(deliverySql,'test-password',async()=>{throw Error('connection failure');});assert.equal(finalState,'failed');
 console.log('PASS: reply delivery records SMTP acceptance, revalidates recipient, caps retry attempts, keeps history on failure');
+
+const {parseHTML}=await import('linkedom');
+const {document}=parseHTML('<html><body><details id="thread"></details></body></html>');globalThis.document=document;
+const {mountReplies}=await import('../assets/admin-replies.js');
+let uiReady=false,uiCanReply=true,uiWrites=0;
+const box=document.getElementById('thread'),ui=mountReplies(box,s,{request:async(_,body)=>{if(body){uiWrites++;return {ok:true};}return {items:[],configured:uiReady,can_reply:uiCanReply};}});
+await ui.load();assert.ok(box.querySelector('textarea'),'Composer remains visible without SMTP');assert.equal(box.querySelector('button[type="button"]')?.textContent,'Přejít do nastavení e-mailů');assert.equal(box.querySelector('.reply-form button').disabled,true);
+await box.querySelector('form').onsubmit({preventDefault(){}});assert.equal(uiWrites,0,'Unconfigured submit does not call API');
+uiReady=true;await ui.load();assert.equal(box.querySelector('.reply-form button').disabled,false);
+uiCanReply=false;await ui.load();assert.equal(box.querySelector('textarea'),null,'Anonymous suggestions have no composer');delete globalThis.document;
+console.log('PASS: visible composer with SMTP disabled, disabled send guarded, enabled send after activation, no anonymous composer');
