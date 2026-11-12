@@ -4,6 +4,7 @@ create table if not exists obcane.analytics_pages(page_id uuid primary key,route
 create table if not exists obcane.analytics_seen(page_id uuid not null references obcane.analytics_pages(page_id) on delete cascade,event text not null,target text not null default '',primary key(page_id,event,target));
 create table if not exists obcane.analytics_rate(bucket text primary key,hits integer not null,created_at timestamptz not null default now());
 create table if not exists obcane.analytics_settings(id boolean primary key default true check(id),started_at timestamptz not null default now());
+alter table obcane.analytics_settings add column if not exists history jsonb;
 insert into obcane.analytics_settings(id) values(true) on conflict do nothing;
 create index if not exists analytics_pages_created on obcane.analytics_pages(created_at);
 create index if not exists analytics_rate_created on obcane.analytics_rate(created_at);

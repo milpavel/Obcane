@@ -26,7 +26,11 @@ Schema: `scripts/analytics-schema.sql`. Skript je opakovatelný, nemění jiné 
 
 ## Historie a Cloudflare
 
-Již zapnutý Cloudflare Web Analytics má vlastní historii a metodiku. Administrace nabízí odkaz, nesčítá jeho počty s novým měřením a nevydává je za synchronizované. Nové detaily začínají nasazením. Podrobnosti o sekcích a formulářích před nasazením nelze rekonstruovat.
+Cloudflare Web Analytics je jednorázově importován do soukromého `analytics_settings.history` (JSON agregace, bez osobních údajů). Původní snapshot se neukládá do veřejného repozitáře. Backend připojí historické page_view řádky s origin=cloudflare ke stávajícím řádkům origin=portal. Stávající KPI, graf, stránky, zdroje a zařízení používají dohromady jednu časovou řadu; denní tabulka a CSV rozlišují oba zdroje.
+
+Historie je od 9. 11. 2026 do přesného času nasazení 2026-11-12T23:40:43.840703Z (13. 11. 00:40:43 Europe/Prague), exclusive. Nové záznamy vznikaly až po nasazení; žádné existující kladné záznamy před importem nebyly. Historické query mají Prague denní hranice, filtr konkrétního siteTag a hostů prortyni.cz/www. Administrace, testovací cesty a neznámé cesty jsou vyloučeny. Zdroj i zařízení jsou převedeny do stejných kategorií. Import je náhrada jednoho snapshotu, nikdy přírůstkové přičítání při obnovení administrace. Žádný API klíč Cloudflare se neukládá a živá synchronizace neběží.
+
+Cloudflare neuchovává v importovaných requestPath detailové parametry, proto staré zobrazení detailu nelze rozlišit. Typ zařízení Cloudflare se liší od viewportové klasifikace nového měření. Podíl 15 s se počítá jen z nových page_view, ne z historie. Procentní srovnání období překračující dvě metodiky se nezobrazuje. Před nejstarším dostupným dnem je v denní tabulce a CSV Neměřeno, nikoli nula. Detaily sekcí a kliknutí začínají nasazením. Databázové výsledky formulářů mají původní časové údaje a nejsou předmětem importu.
 
 ## Návrat před změnu
 

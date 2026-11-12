@@ -1,4 +1,4 @@
-import {installStatisticsAdmin} from './admin-statistics.js?v=20261112-statistics-1';
+import {installStatisticsAdmin} from './admin-statistics.js?v=20261113-statistics-history-1';
 import {renderSourceQuality} from './source-quality.js?v=20261112-progressive-1';
 import {mountReplies} from './admin-replies.js?v=20261112-forward-1';
 import {installMailAdmin} from './admin-mail.js?v=20261112-newsletter-1';
