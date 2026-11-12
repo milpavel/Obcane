@@ -1,3 +1,4 @@
+import {statistics} from './statistics.ts';
 import postgres from 'npm:postgres@3.4.7';
 import {InputError,target,validateRecord,validateOverride,validateSection,readBody} from './rules.mjs';
 const sql=postgres(Deno.env.get('SUPABASE_DB_URL')!,{max:1,prepare:false,idle_timeout:15,connect_timeout:10});
@@ -12,6 +13,7 @@ Deno.serve(async(req:Request)=>{if(req.method==='OPTIONS')return new Response(nu
  const u=await user(req);
  if(req.method==='GET'&&action==='session')return response({user:u});
  if(!u.editor)throw new InputError('Tato část vyžaduje oprávnění redaktora.',403);
+ if(req.method==='GET'&&action==='statistics'){const result=await statistics(sql,q);return response(result,result.error?400:200);}
  if(req.method==='GET'&&action==='overview'){const rows=await sql`select (select count(*) from obcane.suggestions where status='new') as suggestions,(select count(*) from obcane.classifieds where status='pending') as pending,(select count(*) from public.obcane_posts where status='draft') as drafts,(select count(*) from public.obcane_posts where status='published') as published`;return response(rows[0]);}
  if(req.method==='GET'&&action==='records'){const kind=q.get('kind')||'';if(!tables[kind])throw new InputError('Neplatná sekce.');const rows=await sql`select * from ${sql('public.'+tables[kind])} order by id desc limit 500`;return response({items:rows});}
  if(req.method==='GET'&&action==='catalog'){const rows=await sql`select id::text,source_key,title,category,summary,event_date::text,published_at,payload,external_url from obcane.items order by last_seen_at desc limit 2000`;const overrides=await sql`select * from obcane.content_overrides`;return response({items:rows,overrides});}

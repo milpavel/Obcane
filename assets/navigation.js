@@ -1,3 +1,4 @@
+import './statistics.js?v=20261112-statistics-1';
 const header=document.querySelector('.site-header'),toggle=header?.querySelector('.menu-toggle'),menu=header?.querySelector('#site-menu');
 if(header&&toggle&&menu){
  const wide=matchMedia('(min-width:1051px)'),groups=[...header.querySelectorAll('.nav-group-toggle')];
