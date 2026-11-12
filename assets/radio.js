@@ -8,5 +8,5 @@ export function renderRadio(feed,limit=6,doc=document){
  }
  more.hidden=limit>=rows.length;
  if(!rows.length)grid.append(make('p','Hlášení se nyní nepodařilo načíst. Dostupný je archiv města.','muted'));
- const source=feed.sources?.find(s=>s.source_key==='radio');if(status)status.textContent=source?.status==='error'?'Aktualizaci se nepodařilo dokončit. Zobrazujeme dříve načtená hlášení.':source?.last_success_at?'Poslední kontrola '+new Date(source.last_success_at).toLocaleString('cs-CZ',{timeZone:'Europe/Prague',day:'numeric',month:'numeric',hour:'2-digit',minute:'2-digit'})+'.':'';
+ if(status)status.textContent='';
 }
