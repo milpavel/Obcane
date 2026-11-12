@@ -1,3 +1,4 @@
+import {dispatchReplies} from './suggestion-replies.ts';
 import {adMail,mimeMail} from './mail-template.mjs';
 import {sendSMTP,MailError} from './smtp.mjs';
 import {FormError,sign,hash,equalHash,readJSON} from './rules.mjs';
@@ -11,11 +12,11 @@ export async function dispatchMail(req:Request,sql:any,secret:string){const toke
  const [settings]=await sql`select enabled from obcane.market_mail_settings where id=true`;if(!settings?.enabled)return {ok:true,configured:false,sent:0};const creds=await sql`select decrypted_secret from vault.decrypted_secrets where name=${secretName}`;if(!creds.length)return {ok:true,configured:false,sent:0};let sent=0,failed=0;
  await sql`update obcane.market_mail_outbox set status='queued',lease_until=null,retry_at=now() where status='sending' and lease_until<now() and attempts<5`;
  await sql`update obcane.market_mail_outbox set status='failed',last_error='delivery_uncertain' where status='sending' and lease_until<now() and attempts>=5`;
- for(let i=0;i<3;i++){const rows=await sql.begin(async(tx:any)=>{const [r]=await tx`select * from obcane.market_mail_outbox where status='queued' and retry_at<=now() and attempts<5 order by created_at,id for update skip locked limit 1`;if(!r)return [];return tx`update obcane.market_mail_outbox set status='sending',attempts=attempts+1,lease_until=now()+interval '2 minutes' where id=${r.id} returning *`;});if(!rows.length)break;const row=rows[0];
+ for(let i=0;i<2;i++){const rows=await sql.begin(async(tx:any)=>{const [r]=await tx`select * from obcane.market_mail_outbox where status='queued' and retry_at<=now() and attempts<5 order by created_at,id for update skip locked limit 1`;if(!r)return [];return tx`update obcane.market_mail_outbox set status='sending',attempts=attempts+1,lease_until=now()+interval '2 minutes' where id=${r.id} returning *`;});if(!rows.length)break;const row=rows[0];
   try{const [ad]=await sql`select id,request_key,manage_hash,contact_email,status,expires_at from obcane.classifieds where id=${row.ad_id}`;if(!ad||ad.contact_email!==row.recipient){await sql`update obcane.market_mail_outbox set status='superseded',lease_until=null,last_error='recipient_changed' where id=${row.id}`;continue;}
    if(row.event==='approved'&&(ad.status!=='published'||ad.expires_at&&Date.parse(ad.expires_at)<=Date.now())){await sql`update obcane.market_mail_outbox set status='superseded',lease_until=null where id=${row.id}`;continue;}
    const key=await sign(secret,'manage:'+ad.request_key);if(!await equalHash(await hash(key),ad.manage_hash))throw new MailError('management_key_changed');
    const content=adMail({id:ad.id,event:row.event,...row.snapshot,key});const mime=mimeMail({to:row.recipient,id:row.id,...content});await sendSMTP(creds[0].decrypted_secret,{to:row.recipient,mime});
    await sql`update obcane.market_mail_outbox set status='sent',sent_at=now(),lease_until=null,last_error=null where id=${row.id}`;sent++;
   }catch(e){const code=e instanceof MailError?e.code:'mail_preparation';const permanent=code==='invalid_recipient'||code==='management_key_changed'||/^smtp_recipient_5/.test(code);await sql`update obcane.market_mail_outbox set status=${permanent||row.attempts>=5?'failed':'queued'},lease_until=null,retry_at=now()+interval '5 minutes',last_error=${code} where id=${row.id}`;await sql`update obcane.market_mail_settings set last_error=${code} where id=true`;failed++;if(code.startsWith('smtp_auth'))break;}
- }return {ok:true,configured:true,sent,failed};}
+ }const replies=await dispatchReplies(sql,creds[0].decrypted_secret);return {ok:true,configured:true,sent,failed,replies};}
