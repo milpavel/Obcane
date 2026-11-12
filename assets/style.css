@@ -336,3 +336,12 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 #inzerce .market-mini,#inzerce .market-mini-grid .market-empty{background:#fff;border-color:#ffffff70;color:#231637}
 #inzerce .market-mini:hover,#inzerce .market-mini:focus-visible{background:#f0fffb;border-color:#c9fff5}
 #inzerce .market-mini-join{background:#ffffffed;border-color:#fff}
+
+/* Full-width service ribbon; the original white cards stay readable. */
+.portal-service-band{background:linear-gradient(110deg,#098c9c 0%,#39118b 54%,#ec1763 100%)}
+.portal-service-band .portal-service-links{border-bottom:0}
+.portal-service-band .portal-service-link{background:#fff;border-color:#ffffff70}
+/* Consistent, unmistakable 'show more' actions. */
+.load-more>.button,#market-more,#news-more,.market-home-links>.button,#inzerce .market-home-links>.button{background:#fce7ef;border:2px solid #bd0b53;color:#9f1248;min-height:44px;padding:11px 20px;border-radius:8px;text-decoration:none;line-height:1.4}
+.load-more>.button:hover,#market-more:hover,#news-more:hover,.market-home-links>.button:hover,#inzerce .market-home-links>.button:hover{background:#f9d3e3;border-color:#9f1248;color:#86103d}
+.load-more>.button:focus-visible,#market-more:focus-visible,#news-more:focus-visible,.market-home-links>.button:focus-visible,#inzerce .market-home-links>.button:focus-visible{outline:3px solid #008d9a;outline-offset:4px}
