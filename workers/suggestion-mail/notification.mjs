@@ -1,5 +1,5 @@
 const encoder=new TextEncoder();
-export const recipient='mil.pavel@icloud.com';
+export const recipient='redakce@prortyni.cz';
 export const sender='podnety@prortyni.cz';
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const b64=s=>btoa(String.fromCharCode(...encoder.encode(s)));
