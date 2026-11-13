@@ -13,3 +13,5 @@ Pro další samostatné veřejné stránky kategorií používejte společné z�
 Příklady i seznam zahrnutých stránek jsou v `docs/design-standard.md`.
 
 - Při změně veřejného JavaScriptu aktualizujte také verzi `?v=` u vstupního skriptu v HTML a u změněných importů. Starší otevřené mobilní prohlížeče jinak mohou zachovat předchozí funkce.
+
+- Filtry kategorií sjednocujte s úvodem: aktivní filtr světle zelený/tyrkysový (`#edf7f7`, text `#006f7b`), hover světle růžový (`#fce7ef`). Sdílená pravidla jsou v `assets/page-layout.css`.

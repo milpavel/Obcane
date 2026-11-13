@@ -39,3 +39,9 @@
  [data-portal-page="jidelnicky"] .service-grid{grid-template-columns:minmax(0,1fr)}
  [data-portal-page="finance"] .finance-docs a{font-size:16px;padding:19px}
 }
+
+/* Category filters share the homepage's teal selection and pink hover. */
+.market-categories button,.news-tools .filters button,.community-hub .community-hub-controls button{background:#fff;color:#716b7c;border:1px solid #e4e0e9;box-shadow:none;transition:background .15s,border-color .15s,color .15s}
+.market-categories button[aria-pressed=true],.news-tools .filters button[aria-pressed=true],.community-hub .community-hub-controls button:not([aria-pressed]),.community-hub .community-hub-controls button[aria-pressed=true]{background:#edf7f7;border-color:#b8d9dc;color:#006f7b;font-weight:700}
+.market-categories button:hover,.news-tools .filters button:hover,.community-hub .community-hub-controls button:hover{background:#fce7ef;border-color:#efc9d9;color:#716b7c;filter:none;box-shadow:none}
+.market-categories button:focus-visible,.news-tools .filters button:focus-visible,.community-hub .community-hub-controls button:focus-visible{outline:3px solid #ec1763;outline-offset:3px}
