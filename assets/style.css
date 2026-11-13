@@ -403,9 +403,3 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
  .daily-overview .departure-footer .departure-more,.daily-overview .departure-footer .departure-updated{font-size:10px;line-height:1.5}
 }
 @media(max-width:360px){.daily-overview .departure-summary .departure-headline{column-gap:10px}.daily-overview .departure-summary .departure-time{font-size:26px}.daily-overview .departure-summary .departure-direction{font-size:16px}}
-
-/* Editorial photos: stay inside article width on desktop and mobile. */
-.article-body figure.article-inline-photo{display:block;width:100%;max-width:760px;margin:24px auto;box-sizing:border-box;overflow:hidden}
-.article-body figure.article-inline-photo img{display:block;width:100%;max-width:100%;height:auto;max-height:520px;object-fit:contain;margin:0 auto;border-radius:12px}
-.article-body figure.article-inline-photo figcaption{font-size:13px;line-height:1.5;color:#736a7d;text-align:center;margin:8px 0 0}
-@media(max-width:650px){.article-body figure.article-inline-photo{max-width:100%;margin:18px auto}.article-body figure.article-inline-photo img{max-height:360px;border-radius:8px}}
