@@ -24,5 +24,7 @@ export function detailHTML(meta,item,editorial=false){const e=escapeHTML,p=item.
  let body=editorial?String(item.body||'').split(/\n\s*\n/).map(paragraph).join(''):blocks(p.blocks?.length?p.blocks:p.body)+(p.sections||[]).map(s=>'<section class="detail-section"><h2>'+e(plain(s.title))+'</h2>'+blocks(s.blocks)+'</section>').join('');
  if(p.days?.length)body+=p.days.map(d=>'<h2>'+e(d.date)+'</h2>'+paragraph(d.soup)+(d.meals||[]).map(paragraph).join('')).join('');
  const source=safeImage(item.external_url||item.source_url);if(source)body+='<p><a href="'+e(source)+'" rel="noopener noreferrer">Původní zdroj informací ↗</a></p>';
- return '<a class="detail-back-button" href="'+(editorial?'/zpravy/':'/')+'">← Zpět na přehled</a><h1>'+e(plain(item.title))+'</h1><p class="article-lead">'+e(plain(item.summary||item.excerpt))+'</p><div class="article-body">'+body+'</div>';
+ const key=editorial&&/^[1-9]\d*$/.test(String(item.id||''))?'post:'+item.id:null;
+ const discussion=editorial?'<section id="diskuze" class="community" data-article-discussion-fallback><span class="eyebrow">MÍSTO PRO SOUSEDY</span><h2>Pojďme si o tom promluvit</h2><p class="community-intro">Co si o tom myslíte? Zapojte se do sousedské diskuze.</p><a class="button" href="'+(key?'/komunita/?tema='+encodeURIComponent(key):'/komunita/')+'">Otevřít diskuzi v komunitě →</a><p class="community-status" role="status">Načítáme komentáře…</p></section>':'';
+ return '<a class="detail-back-button" href="'+(editorial?'/zpravy/':'/')+'">← Zpět na přehled</a><h1>'+e(plain(item.title))+'</h1><p class="article-lead">'+e(plain(item.summary||item.excerpt))+'</p><div class="article-body">'+body+'</div>'+discussion;
 }
