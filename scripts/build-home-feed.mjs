@@ -6,6 +6,8 @@ let feed=await read('public-feed');for(const name of ['practical-info','local-se
 const items=feed.items.map(x=>{const payload={...x.payload};for(const key of ['blocks','sections','attachments','images','contacts','activities','days','preschool_days','fees','profile_sources','opening_hours'])delete payload[key];if(payload.body)payload.body=payload.body.filter(x=>typeof x==='string').slice(0,2).map(x=>x.slice(0,300));return {...x,payload};});
 const compact={...feed,items,posts:(feed.posts||[]).map(({body,...x})=>x)};
 await writeFile('data/home-feed.json',JSON.stringify(compact));
+// Full public detail text is fetched only by the server renderer, not the home page.
+await writeFile('data/seo-feed.json',JSON.stringify(feed));
 console.log('Compact initial feed:',Buffer.byteLength(JSON.stringify(compact)),'bytes');
 // Public discoverability: focused pages and individual detail URLs only.
 const escape=x=>String(x).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');

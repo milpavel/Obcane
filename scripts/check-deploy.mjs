@@ -9,3 +9,5 @@ if(branch==='main'){
 console.log('Deployment commit verified: '+sha);
 
 await import('./build-home-feed.mjs');
+
+await import('./build-seo.mjs');
