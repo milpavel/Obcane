@@ -2,7 +2,7 @@ import {keepViewport} from './progressive.js?v=20261113-scroll-stable-1';
 import {pageSize,restoreLimit,onPageSizeChange} from './page-size.js?v=20261112-mobile-three-1';
 import {restoreBrowse,rememberListing,restoreListing} from './browse-state.js?v=20261113-scroll-stable-1';
 import {backLink} from './back-links.js?v=20261112-progressive-1';
-import {renderNewsBody} from './news-body.js?v=20261113-images-1';
+import {renderNewsBody} from './news-body.js?v=20261113-no-photo-captions-1';
 const REST='https://dvbaihwplzwljxrtkymi.supabase.co/rest/v1/obcane_posts?select=id,title,slug,excerpt,body,category,author,source_name,source_date,source_url,source_refs,summary_points,published_at&status=eq.published&order=published_at.desc&limit=100';
 const KEY='sb_publishable_8Lr9Tnh1CnrB_ra6VCYrZQ_C4WDZ4l3';
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};
