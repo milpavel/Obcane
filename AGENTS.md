@@ -11,3 +11,5 @@ Pro další samostatné veřejné stránky kategorií používejte společné z�
 - Hlavní navigace má pořadí Akce, Odjezdy, Zprávy, Komunita, Více. Komunita sdružuje komunitní síť a inzerci.
 
 Příklady i seznam zahrnutých stránek jsou v `docs/design-standard.md`.
+
+- Při změně veřejného JavaScriptu aktualizujte také verzi `?v=` u vstupního skriptu v HTML a u změněných importů. Starší otevřené mobilní prohlížeče jinak mohou zachovat předchozí funkce.
