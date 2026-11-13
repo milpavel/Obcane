@@ -6,7 +6,7 @@ import {installMailAdmin} from './admin-mail.js?v=20261112-newsletter-1';
 import{createClient}from'https://esm.sh/@supabase/supabase-js@2.99.1';
 import{installRecovery}from'./admin-recovery.js?v=20261112-admin-2';
 import{installMarketAdmin}from'./admin-market.js?v=20261112-progressive-1';
-import{renderNewsBody}from'./news-body.js?v=20261109-article-1';
+import{renderNewsBody}from'./news-body.js?v=20261113-no-photo-captions-2';
 import{CONTENT_API}from'./content-management.js?v=20261112-progressive-1';
 const db=createClient('https://dvbaihwplzwljxrtkymi.supabase.co','sb_publishable_8Lr9Tnh1CnrB_ra6VCYrZQ_C4WDZ4l3',{auth:{persistSession:true,storageKey:'prortyni-redakce-auth'}});
 const API='https://dvbaihwplzwljxrtkymi.supabase.co/functions/v1/obcane-api';
