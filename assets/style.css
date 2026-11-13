@@ -381,10 +381,25 @@ html{scroll-padding-top:110px}.site-header{position:sticky;top:0;z-index:80;back
 .portal-service-band .portal-service-link>strong,.portal-service-band .portal-service-link>span{grid-column:2;min-width:0}
 @media(max-width:700px){.portal-service-band .portal-service-link{grid-template-columns:40px minmax(0,1fr) 20px;column-gap:12px;row-gap:4px}.portal-service-icon{width:40px;height:40px;grid-row:1/3}.portal-service-band .portal-service-link>strong{grid-row:1}.portal-service-band .portal-service-link>span:not(.text-link){grid-row:2}.portal-service-band .portal-service-link>.text-link{grid-column:3;grid-row:1/3}}
 
-/* Center mobile groups by their actual content width, preserving left-aligned text. */
+/* Keep the mobile footer logo centered. */
 @media(max-width:760px){
  .footer-inner>a:first-child{display:block;width:fit-content;margin-inline:auto}
- .daily-overview .departure-summary,.daily-overview .departure-summary+.departure-summary{grid-template-columns:46px fit-content(260px);justify-content:center;text-align:left}
 }
 
-@media(max-width:760px){.daily-overview .departure-footer{flex-direction:column;align-items:flex-start}}
+/* Mobile departures use the full width below a compact icon and heading. */
+@media(max-width:760px){
+ .daily-overview .departure-summary,.daily-overview .departure-summary+.departure-summary{grid-template-columns:34px minmax(0,1fr);justify-content:stretch;align-items:center;gap:4px 10px;padding:14px 0;text-align:left}
+ .daily-overview .departure-symbol{grid-column:1;grid-row:1;width:34px;height:34px;margin:0}
+ .daily-overview .departure-summary-content{display:contents}
+ .daily-overview .departure-summary-content>.eyebrow{grid-column:2;grid-row:1;margin:0}
+ .daily-overview .departure-summary-content>div,.daily-overview .departure-footer{grid-column:1/-1;min-width:0}
+ .daily-overview .departure-summary .departure-stop{margin:0 0 5px;line-height:1.4}
+ .daily-overview .departure-summary .departure-headline{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:6px 14px;margin-bottom:5px}
+ .daily-overview .departure-summary .departure-clock{gap:6px}
+ .daily-overview .departure-summary .departure-time{font-size:28px}
+ .daily-overview .departure-summary .departure-direction{font-size:17px;line-height:1.3;padding:0}
+ .daily-overview .departure-summary-content small{line-height:1.4}
+ .daily-overview .departure-footer{flex-direction:row;align-items:center;justify-content:space-between;gap:3px 10px;margin-top:3px}
+ .daily-overview .departure-footer .departure-more,.daily-overview .departure-footer .departure-updated{font-size:10px;line-height:1.5}
+}
+@media(max-width:360px){.daily-overview .departure-summary .departure-headline{column-gap:10px}.daily-overview .departure-summary .departure-time{font-size:26px}.daily-overview .departure-summary .departure-direction{font-size:16px}}
