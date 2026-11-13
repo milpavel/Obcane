@@ -1,4 +1,4 @@
-import {mountDiscussion,discussionKey} from './community.js?v=20261113-community-1';
+import {mountDiscussion,discussionKey} from './community.js?v=20261113-auto-publish-1';
 import {pageSize,restoreLimit,onPageSizeChange} from './page-size.js?v=20261112-mobile-three-1';
 import {backLink,returnTarget} from './back-links.js?v=20261112-progressive-1';
 import {publicContent,applyContent,applySections} from './content-management.js?v=20261112-progressive-1';

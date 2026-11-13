@@ -61,20 +61,18 @@ Deno.serve(async(req:Request)=>{if(req.method==='OPTIONS')return new Response(nu
  if(a==='new-topic'){
   const client=uuid(raw.client_id),key='neighbor:'+client;const [existing]=await tx`select id,author_id,state from community.topics where source_key=${key}`;if(existing){if(existing.author_id!==u.id)throw new InputError('Neplatný požadavek.',409);return {key,pending:existing.state==='pending'};}
   await rate(tx,u,'topic-day',3,86400);const title=text(raw.title,5,160,'Nadpis'),body=content(raw.body),cat=category(raw.category);
-  const trusted=u.editor||(await tx`select 1 from community.comments where author_id=${u.id} and status='approved' and reviewed_at is not null limit 1`).length>0;
-  const state=trusted?'published':'pending';const [t]=await tx`insert into community.topics(source_key,kind,category,title,source_url,author_id,state) values(${key},'neighbor',${cat},${title},'/komunita/?tema='||${key},${u.id},${state}) returning *`;
-  const [c]=await tx`insert into community.comments(topic_id,author_id,body,status,client_id) values(${t.id},${u.id},${body},${trusted?'approved':'pending'},${client}) returning *`;
-  await tx`insert into community.follows(topic_id,user_id) values(${t.id},${u.id}) on conflict do nothing`;return {key,pending:!trusted,id:String(c.id)};
+  const state='published';const [t]=await tx`insert into community.topics(source_key,kind,category,title,source_url,author_id,state) values(${key},'neighbor',${cat},${title},'/komunita/?tema='||${key},${u.id},${state}) returning *`;
+  const [c]=await tx`insert into community.comments(topic_id,author_id,body,status,client_id) values(${t.id},${u.id},${body},'approved',${client}) returning *`;
+  await tx`insert into community.follows(topic_id,user_id) values(${t.id},${u.id}) on conflict do nothing`;return {key,pending:false,id:String(c.id)};
  }
  if(a==='comment'){
   const client=uuid(raw.client_id),body=content(raw.body),key=String(raw.key||'');let t=await topic(tx,key,u,true);[t]=await tx`select * from community.topics where id=${t.id} for update`;if(t.locked||t.state==='hidden')throw new InputError('Tato diskuze je uzavřená.',403);
   const [old]=await tx`select id,topic_id,status from community.comments where author_id=${u.id} and client_id=${client}`;if(old){if(old.topic_id!==t.id)throw new InputError('Neplatný opakovaný požadavek.',409);return {id:String(old.id),pending:old.status==='pending'};}
   await rate(tx,u,'comments',5);await rate(tx,u,'comments-day',80,86400);
   let parent=null;if(raw.parent_id){[parent]=await tx`select * from community.comments where id=${id(raw.parent_id)} and topic_id=${t.id} and status='approved'`;if(!parent)throw new InputError('Na tento komentář nyní nelze odpovědět.');}
-  const trusted=u.editor||(await tx`select 1 from community.comments where author_id=${u.id} and status='approved' and reviewed_at is not null limit 1`).length>0;
-  const [c]=await tx`insert into community.comments(topic_id,author_id,parent_id,root_id,body,status,client_id,reviewed_at,reviewed_by) values(${t.id},${u.id},${parent?.id||null},${parent?.root_id||parent?.id||null},${body},${trusted?'approved':'pending'},${client},${u.editor?new Date():null},${u.editor?u.id:null}) returning *`;
+  const [c]=await tx`insert into community.comments(topic_id,author_id,parent_id,root_id,body,status,client_id,reviewed_at,reviewed_by) values(${t.id},${u.id},${parent?.id||null},${parent?.root_id||parent?.id||null},${body},'approved',${client},${u.editor?new Date():null},${u.editor?u.id:null}) returning *`;
   await tx`insert into community.follows(topic_id,user_id) values(${t.id},${u.id}) on conflict do nothing`;
-  if(trusted){await tx`update community.topics set activity_at=now() where id=${t.id}`;await notify(tx,c);}return {id:String(c.id),pending:!trusted};
+  await tx`update community.topics set activity_at=now() where id=${t.id}`;await notify(tx,c);return {id:String(c.id),pending:false};
  }
  if(a==='topic-reaction'){const t=await topic(tx,String(raw.key||''),u,true);if(t.state!=='published')throw new InputError('Téma zatím není veřejné.',403);const kind=reaction(raw.kind);if(typeof raw.active!=='boolean')throw new InputError('Neplatná reakce.');if(raw.active)await tx`insert into community.topic_reactions(topic_id,user_id,kind) values(${t.id},${u.id},${kind}) on conflict do nothing`;else await tx`delete from community.topic_reactions where topic_id=${t.id} and user_id=${u.id} and kind=${kind}`;return {ok:true};}
  if(a==='follow'){const t=await topic(tx,String(raw.key||''),u,true);if(typeof raw.follow!=='boolean')throw new InputError('Neplatný požadavek.');if(raw.follow)await tx`insert into community.follows(topic_id,user_id) values(${t.id},${u.id}) on conflict do nothing`;else await tx`delete from community.follows where topic_id=${t.id} and user_id=${u.id}`;return {following:raw.follow};}

@@ -1,4 +1,4 @@
-import {mountDiscussion,discussionKey} from './community.js?v=20261113-community-1';
+import {mountDiscussion,discussionKey} from './community.js?v=20261113-auto-publish-1';
 import {keepViewport} from './progressive.js?v=20261113-scroll-stable-1';
 import {pageSize,restoreLimit,onPageSizeChange} from './page-size.js?v=20261112-mobile-three-1';
 import {restoreBrowse,rememberListing,restoreListing} from './browse-state.js?v=20261113-scroll-stable-1';

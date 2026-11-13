@@ -27,7 +27,7 @@ begin
  if TG_OP='INSERT' then typ:='received';
  elsif new.status is distinct from old.status then typ:=case new.status when 'published' then 'approved' when 'rejected' then 'rejected' when 'withdrawn' then case when new.completion_state='sold' then 'sold' else 'inactive' end when 'expired' then 'expired' when 'pending' then 'updated' else null end;
  elsif new.status='withdrawn' and new.completion_state is distinct from old.completion_state then typ:=case when new.completion_state='sold' then 'sold' else 'inactive' end;
- elsif new.status='pending' and (new.title,new.description,new.contact_email,new.images) is distinct from (old.title,old.description,old.contact_email,old.images) then typ:='updated';
+ elsif new.status in ('pending','published') and (new.title,new.description,new.contact_email,new.images) is distinct from (old.title,old.description,old.contact_email,old.images) then typ:='updated';
  end if;
  if typ is null then return new;end if;
  insert into obcane.market_mail_outbox(ad_id,event,version,recipient,snapshot)

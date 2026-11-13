@@ -20,7 +20,7 @@ Jde o návrh použití, nikoliv o slib zvýšení návštěvnosti. Ověřit jej 
 
 Diskuze jsou zapnuté u článků, importovaných místních zpráv, akcí a spolků. Nezapojují jídelníčky, ordinační hodiny a kontaktní katalog, hlášení rozhlasu ani záznamy zásahů hasičů. Inzerce používá vlastní kontaktní tok. Čtení je veřejné; psaní, reakce a nahlášení vyžadují účet a potvrzený e-mail podle Supabase Auth. Jméno účastníka je přezdívka, nikoliv ověřená totožnost občana.
 
-První příspěvky nového účtu čekají na schválení. Po prvním ručně schváleném příspěvku mohou další vycházet ihned. Nové i automaticky zveřejněné příspěvky se objeví v redakční frontě do označení za vyřízené. Redakce může příspěvek skrýt s důvodem, obnovit, pozastavit přispívání autora, uzavřít vlákno a připnout užitečné téma. Moderace má soukromou historii. Nahlášení je soukromé a samo příspěvek automaticky neschová.
+Příspěvky i nová témata všech přihlášených uživatelů s potvrzeným e-mailem se zveřejňují ihned. Nové příspěvky se objeví v redakční frontě do označení za vyřízené. Moderace probíhá dodatečně. Redakce může příspěvek skrýt s důvodem, obnovit, pozastavit přispívání autora, uzavřít vlákno a připnout užitečné téma. Moderace má soukromou historii. Nahlášení je soukromé a samo příspěvek automaticky neschová.
 
 ## Technická struktura
 
@@ -39,6 +39,6 @@ První příspěvky nového účtu čekají na schválení. Po prvním ručně s
 
 ## Ověření a provoz
 
-`node scripts/test_community.mjs` spouští skutečný handler na místním PostgreSQL v paměti (PGlite). Nezakládá žádné účty v produkci. Ověřuje oprávnění, schvalování, reakce, odpovědi, soukromá upozornění, moderaci, blokování, zamykání, vlastnictví, odstranění a stažení zdroje. Čtení živého API a zamítnutí nepřihlášeného zápisu lze ověřit bez testovacích účtů.
+`node scripts/test_community.mjs` spouští skutečný handler na místním PostgreSQL v paměti (PGlite). Nezakládá žádné účty v produkci. Ověřuje oprávnění, dodatečnou moderaci, reakce, odpovědi, soukromá upozornění, moderaci, blokování, zamykání, vlastnictví, odstranění a stažení zdroje. Čtení živého API a zamítnutí nepřihlášeného zápisu lze ověřit bez testovacích účtů.
 
 Před spuštěním je nutné mít aktivní e-mailové přihlášení Supabase Auth. Samotné odeslání a doručení registračního e-mailu nebylo bez skutečného příjemce testováno. Veřejné nastavení projektu při implementaci: e-mailové přihlášení povolené, registrace povolená, potvrzování e-mailu zapnuté. Přihlášení, založení profilu, anonymní zobrazení a chybové stavy byly prověřeny v rozhraní a lokálních testech v rozsahu zaznamenaném v závěru práce.

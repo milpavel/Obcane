@@ -28,8 +28,8 @@ await call('me',null,null,401);await call('admin',null,'a',403);await call('me',
 for(const token of ['a','b','editor'])await call('profile',{name:token==='editor'?'Redakce':'Soused '+token,notify_replies:true},token);
 await call('profile',{name:'Redakce Pro Rtyni',notify_replies:true},'a',400);
 await call('topic-reaction',{key:'post:1',kind:'heart',active:true},'b');await call('topic-reaction',{key:'post:1',kind:'heart',active:true},'b');assert.equal((await call({action:'thread',key:'post:1'},null,'b')).reactions.hearts,1);await call('topic-reaction',{key:'post:1',kind:'heart',active:false},'b');assert.equal((await call({action:'thread',key:'post:1'})).reactions.hearts,0);
-const first=await call('comment',{key:'post:1',body:'První názor souseda',client_id:crypto.randomUUID()},'a');assert.equal(first.pending,true);
-assert.equal((await call({action:'thread',key:'post:1'})).comments.length,0);
+const first=await call('comment',{key:'post:1',body:'První názor souseda',client_id:crypto.randomUUID()},'a');assert.equal(first.pending,false);
+assert.equal((await call({action:'thread',key:'post:1'})).comments.length,1);
 assert.equal((await call({action:'thread',key:'post:1'},null,'a')).comments[0].body,'První názor souseda');
 await call('moderate',{id:first.id,mode:'approve'},'a',403);
 await call('moderate',{id:first.id,mode:'approve'},'editor');
@@ -44,7 +44,7 @@ await call('report',{id:trusted.id,reason:'Zkontrolujte prosím obsah.'},'b');as
 await call('moderate',{id:trusted.id,mode:'hide',reason:'Test moderace'},'editor');d=await call({action:'thread',key:'post:1'});assert.equal(d.comments.find(c=>c.id===trusted.id).body,'');
 await call('moderate',{id:first.id,mode:'block',reason:'Test pozastavení'},'editor');await call('comment',{key:'post:1',body:'Nemá projít',client_id:crypto.randomUUID()},'a',403);await call('moderate',{id:first.id,mode:'unblock'},'editor');
 await call('topic-settings',{key:'post:1',locked:true},'editor');await call('comment',{key:'post:1',body:'Nemá projít',client_id:crypto.randomUUID()},'a',403);await call('topic-settings',{key:'post:1',locked:false},'editor');
-const own=await call('new-topic',{title:'Pomoc se zahradou',body:'Může mi někdo poradit?',category:'help',client_id:crypto.randomUUID()},'b');assert.equal(own.pending,true);assert.ok(!(await call('feed')).topics.some(t=>t.source_key===own.key));await call('moderate',{id:own.id,mode:'approve'},'editor');assert.ok((await call('feed')).topics.some(t=>t.source_key===own.key));
+const own=await call('new-topic',{title:'Pomoc se zahradou',body:'Může mi někdo poradit?',category:'help',client_id:crypto.randomUUID()},'b');assert.equal(own.pending,false);assert.ok((await call('feed')).topics.some(t=>t.source_key===own.key));await call('moderate',{id:own.id,mode:'approve'},'editor');assert.ok((await call('feed')).topics.some(t=>t.source_key===own.key));
 await call('topic-settings',{key:own.key,resolved:true},'a',403);await call('topic-settings',{key:own.key,resolved:true},'b');assert.equal((await call({action:'thread',key:own.key})).topic.resolved,true);
 await call('comment',{key:'post:1',parent_id:own.id,body:'Cizí vlákno',client_id:crypto.randomUUID()},'editor',400);
 await call('delete',{id:first.id},'b',403);await call('delete',{id:first.id},'a');assert.equal((await call({action:'thread',key:'post:1'})).comments.find(c=>c.id===first.id).body,'');
@@ -53,4 +53,4 @@ await pg.exec('set role anon');await assert.rejects(()=>pg.query('select * from 
 await call('reaction',{id:own.id,kind:'angry',active:true},'a',400);
 await call('comment',{key:own.key,body:'x'.repeat(3001),client_id:crypto.randomUUID()},'a',400);
 await pg.exec(`insert into community.comments(topic_id,author_id,body,status,client_id) select t.id,'${ids[1]}'::uuid,'Příspěvek '||n,'approved',gen_random_uuid() from community.topics t cross join generate_series(1,35) n where t.source_key='${own.key}';delete from community.rate_limits;`);const page=await call({action:'thread',key:own.key});assert.equal(page.comments.length,30);assert.equal(page.more,true);const next=await call({action:'thread',key:own.key,after:page.comments.at(-1).id});assert.equal(page.comments.length+next.comments.length,36);assert.equal(new Set([...page.comments,...next.comments].map(c=>c.id)).size,36);for(let i=0;i<30;i++)await call('read',{},'a');await call('read',{},'a',429);
-await pg.close();console.log('PASS: real PostgreSQL handler tests — private drafts, verified accounts, role separation, first-post review, trust, idempotency, hearts, replies, private notifications, reports, moderation, block/unblock, lock, neighbor topics, resolution, ownership, cross-thread rejection, source withdrawal and denied browser table access');
+await pg.close();console.log('PASS: real PostgreSQL handler tests — private drafts, verified accounts, role separation, immediate first-post and topic publication, retrospective moderation, idempotency, hearts, replies, private notifications, reports, moderation, block/unblock, lock, neighbor topics, resolution, ownership, cross-thread rejection, source withdrawal and denied browser table access');

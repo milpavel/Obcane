@@ -11,8 +11,8 @@ create table if not exists obcane.classifieds (
  housing_type text check(housing_type in ('pronajem','prodej','spolubydleni')),disposition text not null default '',area numeric,available_from date,
  images jsonb not null default '[]'::jsonb check(jsonb_typeof(images)='array' and jsonb_array_length(images)<=3),
  origin text not null default 'private' check(origin in ('private','municipal')),source_url text unique,deadline date,
- status text not null default 'pending' check(status in ('pending','published','rejected','withdrawn','expired')),
- moderation_note text not null default '',created_at timestamptz not null default now(),updated_at timestamptz not null default now(),published_at timestamptz,expires_at timestamptz,
+ status text not null default 'published' check(status in ('pending','published','rejected','withdrawn','expired')),
+ moderation_locked boolean not null default false,moderation_note text not null default '',created_at timestamptz not null default now(),updated_at timestamptz not null default now(),published_at timestamptz,expires_at timestamptz,
  consent_at timestamptz not null default now()
 );
 create index if not exists obcane_classifieds_public on obcane.classifieds(status,published_at desc);

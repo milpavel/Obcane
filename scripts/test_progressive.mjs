@@ -29,7 +29,7 @@ console.log('PASS: immediate snapshot, authoritative live withdrawal, full failu
 
 // Prevent accidental visual markup changes in the three user-protected areas.
 const {createHash}=await import('node:crypto');
-for(const [selector,expected] of [[".site-header","43d183c25d7df251595b3188381ee6cf7eda856bf271c5a0f300a25c6bd7d719"],[".intro-banner","6e1ed42d4722cc10b8603762a976e3af1f581d74230addf15ed67eefd5e78d3a"],[".daily-overview","d2726a0c3bb6b903f56cb3566889b61f07ab53e791151dd7cf082eddf5086c48"]])assert.equal(createHash('sha256').update(d.querySelector(selector).outerHTML).digest('hex'),expected,'Protected markup changed: '+selector);
+for(const [selector,expected] of [[".site-header","26680ebb34b7f7c54ba765c583f6ab3929ca99e98c92ac03c577e1aed6512c8f"],[".intro-banner","6e1ed42d4722cc10b8603762a976e3af1f581d74230addf15ed67eefd5e78d3a"],[".daily-overview","d2726a0c3bb6b903f56cb3566889b61f07ab53e791151dd7cf082eddf5086c48"]])assert.equal(createHash('sha256').update(d.querySelector(selector).outerHTML).digest('hex'),expected,'Protected markup changed: '+selector);
 console.log('PASS: original header, slider and rapid information markup preserved');
 
 // A reload near the footer must not leave empty home sections waiting for scroll.

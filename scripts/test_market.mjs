@@ -38,7 +38,7 @@ const result=await collectMunicipal({parseHTML,today:'2026-11-12',page:async u=>
 assert.equal(result.offers.length,1);assert.equal(result.offers[0].deadline,'2027-02-01');assert.equal(result.unverified.length,1);
 const backend=await readFile(new URL('../supabase/functions/obcane-market/index.ts',import.meta.url),'utf8');assert.doesNotThrow(()=>stripTypeScriptTypes(backend,{mode:'transform'}));
 assert.match(backend,/status='published' and expires_at>now\(\)/);
-assert.match(backend,/status='pending'/);
+assert.match(backend,/status='published'.*expires_at=now\(\)\+interval '30 days'/);assert.ok(backend.includes('and not moderation_locked'));assert.ok(!backend.includes('await notify('));
 const {document}=parseHTML(await readFile(new URL('../inzerce/index.html',import.meta.url),'utf8'));
 for(const label of document.querySelectorAll('label[for]'))assert.ok(document.getElementById(label.getAttribute('for')),label.outerHTML);
 assert.equal(document.getElementById('ad-description').getAttribute('minlength'),'10');
