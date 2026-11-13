@@ -1,0 +1,41 @@
+/* Shared category-page standard. Load after section-specific styles. */
+.page-masthead{padding:42px 0 36px;margin:0;background:linear-gradient(120deg,#f5f1f8 0%,#f0f6f6 100%);border-bottom:1px solid #e4deeb;color:#251a3c}
+.page-masthead .page-breadcrumb{display:inline-block;margin:0 0 22px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;min-height:0;font-size:13px;font-weight:500;line-height:1.5;color:#756b80;text-decoration:none}
+.page-masthead .page-breadcrumb:hover{color:#39118b;text-decoration:underline;text-underline-offset:4px}
+.page-masthead .eyebrow{display:block;margin:0 0 12px;color:#008997;font-size:11px;font-weight:800;line-height:1.5;letter-spacing:.14em}
+.page-masthead h1{font-size:clamp(34px,4.8vw,58px);line-height:1.12;letter-spacing:-.045em;margin:0 0 18px;color:#251a3c;font-weight:800;overflow-wrap:anywhere}
+.page-masthead p{max-width:710px;margin:0;font-size:16px;line-height:1.8;color:#665d72}
+.page-masthead .market-intro-actions p{font-size:12px}
+.page-masthead .community-values{margin-top:24px}
+.page-masthead .news-masthead-bottom{margin-top:26px}
+.page-masthead .market-intro-grid{grid-template-columns:minmax(0,1fr) auto;gap:42px}
+.page-masthead .market-intro-actions{max-width:290px}
+.page-masthead .market-intro-actions .button{white-space:nowrap}
+.page-content{padding-top:34px;padding-bottom:60px}
+.page-content-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin:0 0 24px}
+.page-content-heading h2{font-size:24px;line-height:1.35;margin:0;color:#251a3c}
+.page-content-heading p{margin:0;color:#756b80;font-size:13px}
+[data-portal-page] .service-section,[data-portal-page] .transport-section,[data-portal-page] .finance-section{padding:34px 0 60px;background:#fff;border:0;color:#251a3c}
+[data-portal-page="finance"] .finance-section p{max-width:none;color:#756b80;font-size:14px}
+[data-portal-page="finance"] .finance-docs{max-width:100%}
+[data-portal-page="finance"] .finance-docs a{padding:22px 24px;border:1px solid #e5dfee;border-radius:12px;background:#faf9fc;margin-bottom:12px;font-size:18px;color:#39118b;line-height:1.5}
+[data-portal-page="finance"] .finance-docs a:hover{background:#f2edf8;border-color:#bdb0d3}
+[data-portal-page="finance"] .finance-docs small{color:#007f8b;margin-bottom:7px;font-size:11px}
+[data-portal-page="jidelnicky"] .service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+[data-portal-page="jidelnicky"] .menu-panel{border-radius:12px}
+.page-masthead~.nl-layout{padding-top:34px}
+@media(max-width:740px){
+ .page-masthead{padding:28px 0 30px}
+ .page-masthead .page-breadcrumb{margin-bottom:18px}
+ .page-masthead .eyebrow{font-size:10px;margin-bottom:10px}
+ .page-masthead h1{font-size:34px;margin-bottom:15px}
+ .page-masthead p{font-size:15px;line-height:1.75}
+ .page-masthead .market-intro-grid{grid-template-columns:minmax(0,1fr);gap:24px}
+ .page-masthead .market-intro-actions{max-width:100%}
+ .page-masthead .news-masthead-bottom{flex-direction:column;gap:12px;align-items:flex-start}
+ .page-content-heading{align-items:flex-start;gap:15px}
+ .page-content-heading h2{font-size:22px}
+ [data-portal-page] .service-section,[data-portal-page] .transport-section,[data-portal-page] .finance-section{padding:26px 0 42px}
+ [data-portal-page="jidelnicky"] .service-grid{grid-template-columns:minmax(0,1fr)}
+ [data-portal-page="finance"] .finance-docs a{font-size:16px;padding:19px}
+}

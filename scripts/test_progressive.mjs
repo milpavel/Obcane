@@ -19,7 +19,7 @@ await shared.ready;await Promise.all([shared.enrich(),shared.enrich(),shared.enr
 const html=await readFile(new URL('../index.html',import.meta.url),'utf8'),{document:d}=parseHTML(html);
 assert.equal(d.querySelector('#doprava').tagName,'A');assert.equal(d.querySelector('#servis').tagName,'A');assert.equal(d.querySelector('#aktuality-lekaru'),null);
 assert.ok([...d.querySelectorAll('#home>section')].findIndex(x=>x.id==='hlavni-zpravy')<[...d.querySelectorAll('#home>section')].findIndex(x=>x.id==='prehled'));
-for(const path of ['odjezdy','jidelnicky','finance']){const page=parseHTML(await readFile(new URL('../'+path+'/index.html',import.meta.url),'utf8')).document;assert.ok(page.querySelector('.subpage-back a'));assert.notEqual(page.querySelector('.subpage-back a').getAttribute('href'),' /#'+path);}
+for(const path of ['odjezdy','jidelnicky','finance']){const page=parseHTML(await readFile(new URL('../'+path+'/index.html',import.meta.url),'utf8')).document;assert.ok(page.querySelector('.page-masthead .page-breadcrumb'));assert.notEqual(page.querySelector('.page-masthead .page-breadcrumb').getAttribute('href'),' /#'+path);}
 const source={items:[{id:'255',title:'Strašidla <b>ve Rtyni</b>',summary:'Pozvánka pro rodiny',payload:{}}]};
 const meta=detailMeta('https://prortyni.cz/?zprava=255&fbclid=tracking',source);assert.equal(meta.canonical,'https://prortyni.cz/?zprava=255');assert.equal(meta.title,'Strašidla ve Rtyni | Pro Rtyni');assert.equal(detailMeta('https://prortyni.cz/?zprava=255',source,[],{overrides:[{target:'255',data:{hidden:true}}]}),null);
 assert.equal(detailMeta('https://prortyni.cz/?zprava=missing',source),null);
