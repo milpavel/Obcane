@@ -1,4 +1,4 @@
-import {runSection} from './progressive.js?v=20261112-progressive-1';
+import {runSection} from './progressive.js?v=20261113-scroll-stable-1';
 const key='rtyne-browse-v1';
 export function restoreBrowse(){try{const value=JSON.parse(sessionStorage.getItem(key)||'null');return value&&value.path===location.pathname&&Date.now()-value.at<1800000&&!location.search?value:null;}catch{return null;}}
 export function saveBrowse(state){try{sessionStorage.setItem(key,JSON.stringify({...state,path:location.pathname,at:Date.now(),y:window.scrollY,hash:location.hash}));}catch{}}

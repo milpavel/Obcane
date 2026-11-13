@@ -1,4 +1,4 @@
-import {watchSection} from './progressive.js?v=20261112-progressive-1';
+import {watchSection,keepViewport} from './progressive.js?v=20261113-scroll-stable-1';
 import {fetchDoctorAnnouncements} from './doctor-data.js?v=20261109-1';
 const labels={provoz:'Provoz ordinace',ockovani:'Očkování',informace:'Sdělení ordinace'};
 const make=(tag,value,cls)=>{const n=document.createElement(tag);if(value!==undefined)n.textContent=value;if(cls)n.className=cls;return n;};
@@ -12,7 +12,8 @@ function notices(doctor,limit){
  return box;
 }
 function stamp(doctor){return doctor.checked_at?'Ověřeno '+new Date(doctor.checked_at).toLocaleString('cs-CZ',{timeZone:'Europe/Prague',day:'numeric',month:'numeric',hour:'2-digit',minute:'2-digit'})+' · sdělení z webu ordinace':'Zdroj nyní není dostupný';}
-function render(){
+function render(){return keepViewport(renderNotices);}
+function renderNotices(){
  for(const doctor of [{id:'hartman',name:'MUDr. Jan Hartman'},{id:'hartmanova',name:'MUDr. Naděžda Hartmanová'}]){const section=[...document.querySelectorAll('#article .detail-section')].find(s=>s.querySelector('h2')?.textContent.trim()===doctor.name);if(section){section.id='ordinace-'+doctor.id;document.querySelectorAll('.detail-contents a').forEach(a=>{if(a.textContent===doctor.name)a.href='#'+section.id;});}}
  if(!data)return;
  const restrictions=document.getElementById('restrictions');

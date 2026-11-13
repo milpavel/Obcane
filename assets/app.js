@@ -8,9 +8,9 @@ import {orderFeed,feedInfo} from './feed-order.js?v=20261111-calendar-1';
 import {renderRadio} from './radio.js?v=20261112-public-status-1';
 import {fetchPracticalInfo,mergePracticalInfo,renderPracticalExtras} from './practical-info.js?v=20261110-local-services-1';
 import './anchors.js?v=20261112-progressive-1';
-import {watchSection,runSection} from './progressive.js?v=20261112-progressive-1';
-import {streamFeed,json} from './feed-client.js?v=20261112-progressive-1';
-import {restoreBrowse,saveBrowse,rememberListing,restoreListing} from './browse-state.js?v=20261112-progressive-1';
+import {watchSection,runSection,keepViewport} from './progressive.js?v=20261113-scroll-stable-1';
+import {streamFeed,json} from './feed-client.js?v=20261113-scroll-stable-1';
+import {restoreBrowse,saveBrowse,rememberListing,restoreListing} from './browse-state.js?v=20261113-scroll-stable-1';
 import {cleanDetailText,renderDetailContent,renderAttachments,organizeDetail} from './details.js?v=20261110-pdf-preview-1';
 import {uniqueEvents} from './events.js?v=20261111-calendar-1';
 import {isRestriction,groupRestrictions,upcomingRestrictions,noticeDate,restrictionLabel} from './notices.js?v=20261111-office-1';
@@ -125,13 +125,13 @@ function display(next,state){
  data={...next,items:[...next.items]};
  for(const p of data.posts||[])if(!['media','original'].includes(p.category))data.items.unshift({id:p.id,source_key:'editorial',title:p.title,category:p.category||'Od Občanů',summary:p.excerpt,external_url:p.source_url,published_at:p.published_at,payload:{body:(p.body||'').split(/\n\s*\n/)}});
  document.dispatchEvent(new CustomEvent('rtyne:feed-ready',{detail:data}));
- applySections(currentConfig);renderHome();renderArticle();
+ keepViewport(()=>{applySections(currentConfig);renderHome();renderArticle();});
  if(!state.live&&$('global-status'))$('global-status').textContent='Zobrazuje se uložený přehled; na pozadí ověřujeme aktuální informace.';
  if(!loadedOnce){loadedOnce=true;startHeroTips(data);restoreListing();}
  document.dispatchEvent(new Event('rtyne:content-ready'));
  if(requested&&!requestedLookup&&/^\d{1,16}$/.test(requested)&&!data.items.some(x=>String(x.id)===requested)){requestedLookup=true;json(API+'?id='+requested).then(one=>{if(one.items?.length){data.items.push(...one.items);renderArticle();document.dispatchEvent(new Event('rtyne:content-ready'));}}).catch(()=>{});}
 }
-let currentConfig={overrides:[],sections:[]};publicContent().then(config=>{currentConfig=config;applySections(config);});document.addEventListener('rtyne:config-ready',e=>{currentConfig=e.detail;applySections(currentConfig);});
+let currentConfig={overrides:[],sections:[]};publicContent().then(config=>{currentConfig=config;keepViewport(()=>applySections(config));});document.addEventListener('rtyne:config-ready',e=>{currentConfig=e.detail;keepViewport(()=>applySections(currentConfig));});
 const stream=streamFeed(display,{detail:!!location.search});
 const saved=restoreBrowse();
 if(saved){for(const key of ['limit','clubLimit','serviceLimit','radioLimit','eventLimit'])saved[key]=restoreLimit(saved[key],saved.pageSize);({filter=filter,limit=limit,clubLimit=clubLimit,serviceLimit=serviceLimit,radioLimit=radioLimit,eventPeriod=eventPeriod,eventTopic=eventTopic,eventLimit=eventLimit}=saved);for(const [id,value] of Object.entries(saved.controls||{})){const control=$(id);if(control)control.value=value;}document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===filter)));document.querySelectorAll('[data-period]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.period===eventPeriod)));document.querySelectorAll('[data-event-topic]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.eventTopic===eventTopic)));}
