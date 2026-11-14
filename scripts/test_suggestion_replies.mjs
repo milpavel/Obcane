@@ -6,7 +6,8 @@ import {mimeMail} from '../supabase/functions/obcane-market/mail-template.mjs';
 const folder=new URL('../supabase/functions/obcane-market/',import.meta.url);
 const s={id:'00000000-0000-4000-8000-000000000001',title:'Dotaz občana',contact_name:'Jana',contact_email:'jana@example.com'};
 assert.equal(canReply(s),true);
-for(const patch of [{contact_name:''},{contact_name:'Anonymně'},{contact_email:''},{contact_email:'bad'},{contact_email:'x@example.com\r\nBcc:y@example.com'}])assert.equal(canReply({...s,...patch}),false);
+for(const contact_name of ['', 'Anonymně', 'Anonymní'])assert.equal(canReply({...s,contact_name}),true);
+for(const patch of [{contact_email:''},{contact_email:'bad'},{contact_email:'x@example.com\r\nBcc:y@example.com'}])assert.equal(canReply({...s,...patch}),false);
 assert.equal(replyText('  Díky.\r\nOzveme se.  '),'Díky.\nOzveme se.');
 for(const text of ['', ' ', 'x','x'.repeat(8001),null])assert.throws(()=>replyText(text));
 const mail=replyMail({title:'<script>x</script>',body:'<img src=x>\nDobrý den.'});assert.ok(!mail.html.includes('<script>'));assert.ok(!mail.html.includes('<img src=x>'));assert.match(mail.html,/&lt;img src=x&gt;<br>/);assert.match(mail.text,/Dobrý den/);assert.match(mimeMail({to:s.contact_email,id:s.id,...mail}),/multipart\/alternative/);
@@ -19,10 +20,11 @@ const request=p=>new Request('https://example.org',{method:'POST',headers:{'Cont
 await suggestionReplies(request(payload),sql,actor,'suggestion-reply');assert.equal(queue.length,1);assert.equal(queue[0].recipient,s.contact_email);assert.equal(queue[0].actor,actor.id);
 await suggestionReplies(request(payload),sql,actor,'suggestion-reply');assert.equal(queue.length,1);
 await assert.rejects(()=>suggestionReplies(request({...payload,body:'Jiná odpověď.'}),sql,actor,'suggestion-reply'),e=>e.status===409);
-current={...s,contact_name:''};await assert.rejects(()=>suggestionReplies(request({...payload,request_id:crypto.randomUUID()}),sql,actor,'suggestion-reply'),e=>e.status===422);
 current={...s,contact_email:''};await assert.rejects(()=>suggestionReplies(request({...payload,request_id:crypto.randomUUID()}),sql,actor,'suggestion-reply'),e=>e.status===422);
 current=s;ready=false;await assert.rejects(()=>suggestionReplies(request({...payload,request_id:crypto.randomUUID()}),sql,actor,'suggestion-reply'),e=>e.status===422);assert.equal(queue.length,1);
-console.log('PASS: anonymous/no-email block, server-selected recipient, immutable/idempotent reply queue, SMTP activation required, safe branded multipart message, input boundaries');
+ready=true;for(const contact_name of ['', 'Anonymně']){current={...s,contact_name};await suggestionReplies(request({...payload,request_id:crypto.randomUUID()}),sql,actor,'suggestion-reply');assert.equal(queue.at(-1).recipient,s.contact_email);}
+current=s;
+console.log('PASS: unnamed email-only replies, no-email block, server-selected recipient, immutable/idempotent reply queue, SMTP activation required, safe branded multipart message, input boundaries');
 
 let deliveryRow={id:payload.request_id,suggestion_id:s.id,recipient:s.contact_email,title:s.title,body:payload.body,attempts:1},delivered=0,finalState='';
 const deliverySql=async(strings,...values)=>{const q=strings.join('?');if(q.includes("select id from obcane.suggestion_replies"))return [{id:deliveryRow.id}];if(q.includes("attempts=attempts+1"))return [deliveryRow];if(q.includes('from obcane.suggestions'))return [current];if(q.includes("set status='sent'")){finalState='sent';return [];}if(q.includes("set status='superseded'")){finalState='superseded';return [];}if(q.includes('set status=?')){finalState=values[0];return [];}if(q.includes('update obcane.suggestion_replies'))return [];throw Error('Unexpected delivery query '+q);};deliverySql.begin=cb=>cb(deliverySql);
@@ -39,8 +41,10 @@ const box=document.getElementById('thread'),ui=mountReplies(box,s,{request:async
 await ui.load();assert.ok(box.querySelector('textarea'),'Composer remains visible without SMTP');assert.equal(box.querySelector('button[type="button"]')?.textContent,'Přejít do nastavení e-mailů');assert.equal(box.querySelector('.reply-form button').disabled,true);
 await box.querySelector('form').onsubmit({preventDefault(){}});assert.equal(uiWrites,0,'Unconfigured submit does not call API');
 uiReady=true;await ui.load();assert.equal(box.querySelector('.reply-form button').disabled,false);
-uiCanReply=false;await ui.load();assert.equal(box.querySelector('textarea'),null,'Anonymous suggestions have no composer');delete globalThis.document;
-console.log('PASS: visible composer with SMTP disabled, disabled send guarded, enabled send after activation, no anonymous composer');
+const unnamedBox=document.createElement('details');const unnamedUI=mountReplies(unnamedBox,{...s,contact_name:''},{request:async()=>({items:[],configured:true,can_reply:canReply({...s,contact_name:''})})});await unnamedUI.load();assert.ok(unnamedBox.querySelector('textarea'));assert.equal(unnamedBox.querySelector('.reply-form label').textContent,'Odpověď autorovi podnětu');assert.equal(unnamedBox.querySelector('.reply-form button').disabled,false);
+
+uiCanReply=false;await ui.load();assert.equal(box.querySelector('textarea'),null,'Suggestions without a usable email have no composer');delete globalThis.document;
+console.log('PASS: visible composer with SMTP disabled, disabled send guarded, enabled send after activation, no composer without email');
 
 const anonymous={...s,title:'Nová lavička',message:'Prosím o novou lavičku u cesty.',contact_name:'',contact_email:'',category:'prostor',location:'Park',internal_note:'INTERNAL-NOTE-SECRET'};
 const forwardedText=forwardBody(anonymous),forwardedMail=forwardMail({title:anonymous.title,body:forwardedText});assert.ok(forwardedText.includes(anonymous.message));assert.ok(forwardedText.includes('Anonymně'));for(const content of [forwardedMail.text,forwardedMail.html]){assert.ok(!content.includes('INTERNAL-NOTE-SECRET'));assert.ok(!content.includes('https://prortyni.cz/admin/'));assert.ok(!content.includes('Podnět zůstává uložený v soukromé administraci'));}assert.ok(forwardedMail.subject.includes('Podnět občana'));

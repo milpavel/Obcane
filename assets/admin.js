@@ -2,7 +2,7 @@ import {installCommunityAdmin} from './admin-community.js?v=20261113-community-1
 import{pragueInput,pragueInstant,postStateLabel}from'./article-schedule.js?v=20261113-1';
 import {installStatisticsAdmin} from './admin-statistics.js?v=20261113-statistics-history-1';
 import {renderSourceQuality} from './source-quality.js?v=20261112-progressive-1';
-import {mountReplies} from './admin-replies.js?v=20261112-forward-1';
+import {mountReplies} from './admin-replies.js?v=20261114-email-only-replies-1';
 import {installMailAdmin} from './admin-mail.js?v=20261112-newsletter-1';
 import{createClient}from'https://esm.sh/@supabase/supabase-js@2.99.1';
 import{installRecovery}from'./admin-recovery.js?v=20261112-admin-2';

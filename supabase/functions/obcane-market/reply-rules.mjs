@@ -1,4 +1,4 @@
-export function canReply(s){return Boolean(s&&String(s.contact_name||'').trim()&&!/^anonym(?:ně|ni|ní)?$/i.test(String(s.contact_name).trim())&&/^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(s.contact_email||''));}
+export function canReply(s){return Boolean(s&&/^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(s.contact_email||''));}
 export function replyText(value){if(typeof value!=='string')throw Error('Napište odpověď.');const s=value.replace(/\r\n?/g,'\n').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g,'').trim();if(s.length<2||s.length>8000)throw Error('Odpověď musí mít 2 až 8 000 znaků.');return s;}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const mayorEmail='starosta@mestortyne.cz';
