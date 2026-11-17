@@ -1,4 +1,4 @@
-/* Shared by published articles and every editorial preview. Never crop article photos. */
+/* Shared by published articles and every editorial preview. Preserve full photos unless an explicit editorial crop is requested. */
 :is(.article-body,.article-preview){min-width:0;overflow-wrap:anywhere}
 :is(.article-body,.article-preview) figure.article-inline-photo{display:block;width:100%;max-width:760px;min-width:0;margin:24px auto;box-sizing:border-box}
 :is(.article-body,.article-preview) img{display:block;width:auto;max-width:100%;height:auto;max-height:520px;object-fit:contain;margin:0 auto;border-radius:12px;box-sizing:border-box}
@@ -7,3 +7,9 @@
  :is(.article-body,.article-preview) figure.article-inline-photo{margin:18px auto}
  :is(.article-body,.article-preview) img{max-height:360px;border-radius:8px}
 }
+
+/* Explicit editorial crop: remove the 250px browser chrome from the
+   3024px-wide screenshot of Vize Rtyně 2035 in the König villa article. */
+:is(.article-body,.article-preview) figure.article-inline-photo:has(>img[src*="/articles/12/70f73ceb-7e50-44df-8bdb-c14481399a74.png"]){overflow:hidden;border-radius:12px}
+:is(.article-body,.article-preview) figure.article-inline-photo>img[src*="/articles/12/70f73ceb-7e50-44df-8bdb-c14481399a74.png"]{width:100%;max-height:none;margin:-8.26719577% 0 0;border-radius:0}
+@media(max-width:650px){:is(.article-body,.article-preview) figure.article-inline-photo:has(>img[src*="/articles/12/70f73ceb-7e50-44df-8bdb-c14481399a74.png"]){border-radius:8px}}
