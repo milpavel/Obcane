@@ -1,4 +1,4 @@
-import {MARKET_API,categories,kinds,symbols,el,date,price,imageURL,tags,card,request,empty} from './market-shared.js?v=20261112-1';
+import {MARKET_API,categories,kinds,symbols,el,date,price,imageURL,tags,card,request,empty} from './market-shared.js?v=20261117-housing-icon-1';
 const $=id=>document.getElementById(id),housingPage=location.pathname.startsWith('/bydleni');
 let category=new URLSearchParams(location.search).get('kategorie')||(housingPage?'bydleni':''),offset=0,token='',tokenReadyAt=0,loading=0,editing=null,ownerKey=null,currentOwner=null,compressed=[];
 if(!Object.hasOwn(categories,category))category='';
