@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {groupRestrictions,upcomingRestrictions,restrictionKind,restrictionLabel} from '../assets/notices.js';
+import {isRestriction,groupRestrictions,upcomingRestrictions,restrictionKind,restrictionLabel} from '../assets/notices.js';
 const item=(id,source,title,body,event_date=null)=>({id:String(id),source_key:source,title,summary:body,payload:{body:[body]},event_date,external_url:'https://example.cz/'+id});
 const water=item(1,'water','Přerušení dodávky vody 10.11.2026','Dne 10. 11. 2026 nepoteče voda v ulici Vyšehradská, čp. 831, 862, 867.','2026-11-10');
 const cityWater=item(2,'city','Přerušení dodávky vody ve Vyšehradské ulici – 10. listopadu 2026','Dne 10. listopadu 2026 bude v ulici Vyšehradská přerušena dodávka vody.');
@@ -30,3 +30,17 @@ assert.equal(restrictionKind(item(14,'city','Uzavření lékárny z důvodu dovo
 assert.equal(restrictionKind(item(15,'city','Uzavření ordinace','Městský úřad informuje o dovolené lékaře.')),'doctor');
 assert.equal(groupRestrictions([office,item(16,'city','Uzavření jiného úřadu 16. listopadu 2026','Ve stejné ulici.')]).length,2);
 console.log('PASS: office closures, subject-based road classification, generic service fallback and distinct institutions');
+
+const meals={...item(20,'school','Změna jídelníčku','Od středy do pátku vaříme pouze oběd č.1.'),published_at:'2026-11-17T15:53:17.000Z'};
+assert.equal(isRestriction(meals),true);
+assert.equal(restrictionKind(meals),'school-meals');assert.equal(restrictionLabel('school-meals'),'Školní jídelna');
+const mealNotice=upcomingRestrictions([meals],'2026-11-18')[0];
+assert.equal(mealNotice.payload.restriction.start,'2026-11-18');assert.equal(mealNotice.payload.restriction.end,'2026-11-20');
+assert.equal(upcomingRestrictions([meals],'2026-11-21').length,0,'Finished weekday ranges expire');
+const lastMeal={...meals,published_at:'2026-11-02T14:58:51Z',summary:'V úterý 3.11. vaříme pouze oběd č. 1.',payload:{body:['V úterý 3.11. vaříme pouze oběd č. 1.']}};
+assert.equal(upcomingRestrictions([lastMeal],'2026-11-18').length,0,'Old school notices without an explicit year expire');
+assert.equal(isRestriction(item(21,'school','Jídelníček na příští týden','Změna jídelníčku vyhrazena.')),false);
+assert.equal(isRestriction({...meals,payload:{kind:'preschool_menu',body:[meals.summary]}}),false);
+assert.equal(isRestriction(item(22,'school','Uzavření školní jídelny','Ve dnech 18. 11. 2026 až 20. 11. 2026 bude jídelna uzavřena.')),true);
+assert.equal(groupRestrictions([meals,{...meals,id:'23',external_url:'https://example.cz/23'}]).length,2,'Distinct canteen notices are not merged');
+console.log('PASS: canteen restrictions, weekday validity, historical expiry and ordinary menu exclusions');

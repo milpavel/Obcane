@@ -1,7 +1,7 @@
 import {publicContent,applyContent} from './content-management.js?v=20261112-progressive-1';
 import {uniqueEvents} from './events.js?v=20261111-calendar-1';
 import {feedInfo} from './feed-order.js?v=20261111-calendar-1';
-import {upcomingRestrictions,restrictionLabel} from './notices.js?v=20261111-office-1';
+import {upcomingRestrictions,restrictionLabel} from './notices.js?v=20261118-school-notices-1';
 const DAY=86400000,fmt=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Prague',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
 export function tipClock(now=new Date()){const p=Object.fromEntries(fmt.formatToParts(now).map(x=>[x.type,x.value]));return {day:`${p.year}-${p.month}-${p.day}`,time:`${p.hour}:${p.minute}`,slot:Math.floor(Date.parse(`${p.year}-${p.month}-${p.day}`)/DAY)*8+Math.floor(Number(p.hour)/3)};}
 const validDay=d=>/^20\d\d-\d\d-\d\d$/.test(d||'')&&Number.isFinite(Date.parse(d+'T12:00:00Z'))&&new Date(d+'T12:00:00Z').toISOString().slice(0,10)===d;
