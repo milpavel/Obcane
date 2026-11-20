@@ -12,7 +12,7 @@ const allowed=new Set([new URL(Z).hostname,new URL(M).hostname,new URL(V).hostna
 const tidy=v=>String(v||'').replace(/\s+/g,' ').trim();
 export function safeSource(value,base){try{const u=new URL(value,base);return u.protocol==='https:'&&allowed.has(u.hostname)&&!u.username&&!u.password?u.href:null;}catch{return null;}}
 const cache=new Map();
-async function get(url){if(!safeSource(url))throw Error('Unapproved source');if(!cache.has(url))cache.set(url,(async()=>{let error;for(let attempt=0;attempt<2;attempt++){try{const r=await fetch(url,{signal:AbortSignal.timeout(30000)});if(!r.ok||!safeSource(r.url))throw Error('Source HTTP '+r.status);const buffer=Buffer.from(await r.arrayBuffer());if(buffer.length>12000000)throw Error('Source too large');return buffer;}catch(e){error=e;}}throw error;})());return cache.get(url);}
+async function get(url){if(!safeSource(url))throw Error('Unapproved source');if(!cache.has(url))cache.set(url,(async()=>{let error;for(let attempt=0;attempt<2;attempt++){try{const r=await fetch(url,{signal:AbortSignal.timeout(30000)});if(!r.ok||!safeSource(r.url))throw Error('Source HTTP '+r.status);if(r.headers.get('cf-mitigated')==='challenge')throw Error('Source returned a verification page: '+url);const buffer=Buffer.from(await r.arrayBuffer());if(buffer.length>12000000)throw Error('Source too large');return buffer;}catch(e){error=e;}}throw error;})());return cache.get(url);}
 function root(doc){return doc.querySelector('.entry-content,.page_content,.download_content')||doc.querySelector('main');}
 function decodeEmailScripts(doc){
  // Decode only known literal email encodings; never execute downloaded JavaScript.
@@ -20,7 +20,17 @@ function decodeEmailScripts(doc){
  doc.querySelectorAll('noscript,style,form,iframe,img').forEach(n=>n.remove());
  for(const br of doc.querySelectorAll('br'))br.replaceWith(doc.createTextNode('\n'));
 }
-async function page(url){const doc=parseHTML((await get(url)).toString('utf8')).document;decodeEmailScripts(doc);const content=root(doc);if(!content||tidy(content.textContent).length<40)throw Error('Missing content: '+url);return {doc,content,url};}
+export function parseSourcePage(html,url){
+ const doc=parseHTML(html).document;
+ const verificationPage=[...doc.querySelectorAll('title,h1,h2,h3')].some(node=>
+  /^(?:verify you are human\b|just a moment\b|checking your browser\b|attention required\b)/i.test(tidy(node.textContent)));
+ if(verificationPage)throw Error('Source returned a verification page: '+url);
+ decodeEmailScripts(doc);
+ const content=root(doc);
+ if(!content||tidy(content.textContent).length<40)throw Error('Missing content: '+url);
+ return {doc,content,url};
+}
+async function page(url){return parseSourcePage((await get(url)).toString('utf8'),url);}
 export function blocksFrom(content,base){
  const blocks=[];
  function walk(n){if(n.nodeType!==1)return;const tag=n.tagName.toLowerCase(),text=tidy(n.textContent);if(!text)return;
