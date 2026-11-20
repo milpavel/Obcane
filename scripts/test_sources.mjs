@@ -5,6 +5,7 @@ import {pathToFileURL} from 'node:url';
 import {parseHTML} from 'linkedom';
 const require=createRequire(import.meta.url),tmp=await mkdtemp(new URL('../.source-test-',import.meta.url));
 try{
+ await writeFile(tmp+'/regional-events.mjs',await readFile(new URL('../supabase/functions/obcane-api/regional-events.mjs',import.meta.url),'utf8'));
  await writeFile(tmp+'/florbal-matches.mjs',await readFile(new URL('../supabase/functions/obcane-api/florbal-matches.mjs',import.meta.url),'utf8'));
  await writeFile(tmp+'/vizmburk.mjs',await readFile(new URL('../supabase/functions/obcane-api/vizmburk.mjs',import.meta.url),'utf8'));
  await writeFile(tmp+'/banik.mjs',await readFile(new URL('../supabase/functions/obcane-api/banik.mjs',import.meta.url),'utf8'));

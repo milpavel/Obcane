@@ -1,3 +1,4 @@
+import {regionalEvents,regionalListingURL} from './regional-events.mjs';
 import {florbalTeams,florbalMatches} from './florbal-matches.mjs';
 import {vizNews,vizDetail,vizEvents,vizVisitor} from './vizmburk.mjs';
 import {banikListing,banikDetail,banikTournaments} from './banik.mjs';
@@ -9,6 +10,8 @@ import { DOMParser, parseHTML } from 'npm:linkedom@0.18.12';
 import { Buffer } from 'node:buffer';
 export const extraSources = [
  ...communitySources,
+ {key:'region_kjh',name:'KJH – akce v okolí',url:'https://www.kjh.cz/cs/akce/index',category:'Akce',feed:'regional'},
+ {key:'region_klad',name:'Kladské pomezí – akce v okolí',url:'https://kladskepomezi.cz/kalendar-akci',category:'Akce',feed:'regional'},
  {key:'sms_areal',name:'SMS ticket – Přírodní areál',url:'https://www.smsticket.cz/mista/4699-prirodni-areal-rtyne-v-podkrkonosi',category:'Akce',feed:'smsticket',venue_name:'Přírodní areál'},
  {key:'sms_orlovna',name:'SMS ticket – Orlovna',url:'https://www.smsticket.cz/mista/4478-sportovni-hala-orlovna-rtyne-v-podkrkonosi',category:'Akce',feed:'smsticket',venue_name:'Sportovní hala Orlovna'},
  {key:'calendar',name:'Kalendář města',url:'https://www.rtyne.cz/kalendar-udalosti',category:'Akce'},
@@ -219,6 +222,7 @@ export async function extractExtra(s:any,h:any):Promise<any[]|null>{
  const {page,text,clean,eventDate,czDate,safeURL}=h;
  if(!extraSources.some(x=>x.key===s.key))return null;
  let out:any[]=[];
+ if(s.feed==='regional'){const today=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Prague'});return regionalEvents(await page(regionalListingURL(s,today),s.url),s,today);}
  if(s.feed==='vizmburk'){
   const rows=vizNews(await page(s.url));
   for(const item of rows){try{await pause(250);const detail=vizDetail(await page(item.url,s.url));Object.assign(item,detail);}catch(e){item.detail_error=String(e).slice(0,160);}}

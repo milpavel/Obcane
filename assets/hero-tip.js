@@ -1,6 +1,6 @@
 import {publicContent,applyContent} from './content-management.js?v=20261112-progressive-1';
-import {uniqueEvents} from './events.js?v=20261111-calendar-1';
-import {feedInfo} from './feed-order.js?v=20261111-calendar-1';
+import {uniqueEvents} from './events.js?v=20261120-regional-1';
+import {feedInfo} from './feed-order.js?v=20261120-regional-1';
 import {upcomingRestrictions,restrictionLabel} from './notices.js?v=20261118-school-notices-1';
 const DAY=86400000,fmt=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Prague',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
 export function tipClock(now=new Date()){const p=Object.fromEntries(fmt.formatToParts(now).map(x=>[x.type,x.value]));return {day:`${p.year}-${p.month}-${p.day}`,time:`${p.hour}:${p.minute}`,slot:Math.floor(Date.parse(`${p.year}-${p.month}-${p.day}`)/DAY)*8+Math.floor(Number(p.hour)/3)};}
@@ -18,7 +18,7 @@ export function resultScore(x){
 }
 function sportsResult(x){const text=[x.title,...(x.payload?.body||[]).slice(0,2)].join(' ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();const sport=['banik','florbal','volejbal','orel','odolov'].includes(x.source_key)||x.payload?.sport||/fotbal|florbal|volejbal|hokej|banik|utkani|zapas|turnaj/.test(text);return Boolean(sport&&(/vysledkov|zvitez|vyhr|prohr|poraz|remiz|utkani skonc|zapas skonc/.test(text)||resultScore(x)));}
 export function tipCandidates(feed,articles=[],now=new Date()){
- const clock=tipClock(now),items=(feed?.items||[]).filter(useful),out=[];
+ const clock=tipClock(now),items=(feed?.items||[]).filter(x=>useful(x)&&!x.payload?.regional),out=[];
  const restrictions=upcomingRestrictions(items,clock.day);
  for(const x of restrictions){const r=x.payload.restriction;if(!validDay(r.start)||!validDay(r.end))continue;const days=(Date.parse(r.start)-Date.parse(clock.day))/DAY;if(days>2||r.end<clock.day)continue;out.push({item:x,type:'notice',score:105-Math.max(0,days)*10,urgent:days<=0,tag:restrictionLabel(r.kind),date:r.start,end:r.end,href:localRoute(x)});}
  for(const x of uniqueEvents(items.filter(x=>x.payload?.kind==='event'&&validDay(x.event_date)))){

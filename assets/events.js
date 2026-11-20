@@ -4,6 +4,8 @@ const topics=title=>[...new Set(normal(title).match(/[a-z]+/g)||[])].filter(w=>w
 const venue=s=>{const n=normal(s);return /orlovna/.test(n)?'orlovna':n.replace(/\s*\(od [^)]+\)/g,'').replace(/[^a-z0-9]+/g,' ').trim();};
 function sameEvent(a,b){
  if(a.payload?.sport==='florbal'||b.payload?.sport==='florbal')return a.payload?.sport===b.payload?.sport&&a.event_date===b.event_date&&a.payload?.fixture_id&&a.payload.fixture_id===b.payload?.fixture_id;
+ if(!!a.payload?.nearby!==!!b.payload?.nearby)return false;
+ if(a.payload?.municipality&&b.payload?.municipality&&normal(a.payload.municipality)!==normal(b.payload.municipality))return false;
  if(a.payload?.location&&b.payload?.location&&venue(a.payload.location)!==venue(b.payload.location))return false;
  if(a.payload?.time&&b.payload?.time&&a.payload.time!==b.payload.time)return false;
  const koletovka=[a,b].find(x=>x.source_key==='koletovka'),ticket=[a,b].find(x=>x.source_key==='sms_orlovna');
@@ -17,7 +19,7 @@ function sameEvent(a,b){
  return canonical(a.title)===canonical(b.title)||distinctive||shared.length>=2;
 }
 export function uniqueEvents(items){
- const priority={library:0,calendar:1,scouts:2,orel:3,koletovka:4},result=[];
+ const priority={library:0,calendar:1,scouts:2,orel:3,koletovka:4,region_kjh:10,region_klad:11},result=[];
  for(const item of [...items].sort((a,b)=>(priority[a.source_key]??5)-(priority[b.source_key]??5))){
   const index=result.findIndex(x=>sameEvent(x,item));
   if(index<0){result.push({...item,payload:{...item.payload}});continue;}
